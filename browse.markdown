@@ -30,7 +30,7 @@ let INDEX_composer    = "Composer";
 let INDEX_title       = "Title";
 let INDEX_genre       = "Genre";
 let INDEX_voice       = "Voices";
-let INDEX_firstsourcedate = "Date of First Source";
+let INDEX_firstsourcedate = "First Source Date";
 
 document.addEventListener("DOMContentLoaded", function () {
 	var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
