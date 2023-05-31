@@ -98,8 +98,6 @@ function displayBrowseTable(data, selector) {
 	element.innerHTML = contents;
 }
 
-
-
 //////////////////////////////
 //
 // makeTableHeader -- Generate HTML content for browse table header.
