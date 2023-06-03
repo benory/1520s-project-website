@@ -134,7 +134,11 @@ function makeTableBody(headings, data) {
 				value = entry[headings[i]];
 			}
 			output += "<td>";
-			if (headings[i] == INDEX_firstsource) {
+			if (headings[i] == INDEX_title) {
+				let title = getTitle(entry);
+				output += title;
+			}
+			else if (headings[i] == INDEX_firstsource) {
 				let url = getSource(entry);
 				let sourcevalue = value;
 				output += `<a target="_blank" href="${url}">${sourcevalue}</a>`;
@@ -147,6 +151,35 @@ function makeTableBody(headings, data) {
 		output += "</tr>\n";
 	}
 	return output;
+}
+
+//////////////////////////////
+//
+// getTitle -- Generate Title + Subtitle 
+//
+
+function getTitle(entry) {
+	console.warn(entry);
+	let title = "";
+	if (typeof entry["Title"] !== "undefined") {
+		title = entry["Title"];
+	}
+	let subtitle = "";
+	if (typeof entry["Subtitle"] !== "undefined") {
+		subtitle = entry["Subtitle"];
+	}
+	if (!subtitle.match(/^\s*$/)) {
+		if (!title.match(/^\s*$/)) {
+			return `${title}, ${subtitle}`;
+		} else {
+			return `${subtitle}`;
+		}
+	}
+	if (title.match(/^\s*$/)) {
+		return "";
+	} else {
+		return title;
+	}
 }
 
 
@@ -204,8 +237,6 @@ function getSource(entry) {
 
 	return "";
 }
-
-
 
 //////////////////////////////
 //
