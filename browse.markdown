@@ -12,7 +12,7 @@ permalink: /browse/
 	body {font: 400 12px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
 	h1 { font-size: 40px; }
 	th { text-align: left; }
-	table.browse { min-width: 1000px; }
+	table.browse { min-width: 1000px; white-space: nowrap;}
 	table.browse { margin-left: auto; margin-right: auto; } /* center table */
 	table.browse { border-collapse: collapse; } /* don't put gaps between cells */
 	table.browse th { background:skyblue; }
@@ -21,9 +21,6 @@ permalink: /browse/
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
-	table.browse td:nth-child(2) {white-space: nowrap;}
-	table.browse td:nth-child(3) {white-space: nowrap;}
-	table.browse td:nth-child(4) {white-space: nowrap;}
 </style>
 
 <script>
