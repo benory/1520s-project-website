@@ -30,13 +30,15 @@ permalink: /browse/
 // vim: ts=3:nowrap
 
 let METADATA = [];
-let INDEX_id          = "ID";
-let INDEX_composer    = "Composer";
-let INDEX_title       = "Title";
-let INDEX_genre       = "Genre";
-let INDEX_voice       = "Voices";
+let INDEX_id         	  = "ID";
+let INDEX_composer    	  = "Composer";
+let INDEX_title       	  = "Title";
+let INDEX_genre      	  = "Genre";
+let INDEX_voice      	  = "Voices";
 let INDEX_firstsourcedate = "First Source Date";
-let INDEX_firstsource = "First Source";
+let INDEX_firstsource 	  = "First Source";
+let INDEX_RISMlink 	  	  = "RISM Source Link";
+let INDEX_DIAMMlink	  	  = "DIAMM source link";
 
 document.addEventListener("DOMContentLoaded", function () {
 	var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
@@ -135,12 +137,75 @@ function makeTableBody(headings, data) {
 				value = entry[headings[i]];
 			}
 			output += "<td>";
-			output += value;
+			if (headings[i] == INDEX_firstsource) {
+				let url = getSource(entry);
+				let sourcevalue = value;
+				output += `<a target="_blank" href="${url}">${sourcevalue}</a>`;
+			}
+			else {
+				output += value;
+			}
 			output += "</td>";
 		}
 		output += "</tr>\n";
 	}
 	return output;
+}
+
+
+//////////////////////////////
+//
+// getSource -- Generate a source link based on "DIAMM Source Link" or "RISM Source Link".
+//
+
+function getSource(entry) {
+	let diammurl = "";
+	if (typeof entry["DIAMM Source Link"] !== "undefined") {
+		diammurl = entry["DIAMM Source Link"];
+	}
+	if (!diammurl.match(/^https?:\/\/.*diamm\.ac\.uk\//)) {
+		if (diammurl) {
+			console.warn("DIAMM URL is invalid:", diammurl);
+		}
+		diammurl = "";
+	}
+
+	let rismurl = "";
+	if (typeof entry["RISM Source Link"] !== "undefined") {
+		rismurl = entry["RISM Source Link"];
+	}
+	if (!rismurl.match(/^https?:\/\/opac\.rism\.info\//)) {
+		if (rismurl) {
+			console.warn("RISM URL is invalid:", rismurl);
+		}
+		rismurl = "";
+	}
+
+	if (!diammurl && !rismurl) {
+		console.error("Cannot find DIAMM or RISM source link in", entry);
+		return "";
+	}
+
+
+	if (diammurl) {
+		let text = "DIAMM";
+		let matches = diammurl.match(/diamm\.ac\.uk\/sources\/(.*?)\//);
+		if (matches) {
+			text += ` ${matches[1]}`;
+		}
+		return diammurl;
+	}
+
+	if (rismurl) {
+		let text = "RISM";
+		let matches = rismurl.match(/opac\.rism\.info\/search\?.*id=(\d+)/);
+		if (matches) {
+			text += ` ${matches[1]}`;
+		}
+		return rismurl;
+	}
+
+	return "";
 }
 
 
