@@ -26,7 +26,7 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 Summary of repertoire:
 + Current number of works: 259
 + Current number of notes: 264,066
-+ Works by genre: 31 mass movements, 174 motets, 54 secular works
++ Works by genre: 24 mass movements, 181 motets, 54 secular works
 
 <br>
 
