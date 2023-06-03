@@ -230,7 +230,7 @@ function buildSourceSelect(data) {
 	let slist = Object.keys(counter).sort();
 	let sourceCount = slist.length;
 	let output = "<select class='source' onchange='doSearch()'>\n";
-	output += `<option value="">Any source [${sourceCount}]</option>`;
+	output += `<option value="">Earliest source [${sourceCount}]</option>`;
 	for (let i=0; i<slist.length; i++) {
 		let name = slist[i];
 		let count = counter[slist[i]];
