@@ -23,6 +23,7 @@ permalink: /browse/
 	.wrapper {margin-left: 10px;}
 	table.browse td:nth-child(2) {white-space: nowrap;}
 	table.browse td:nth-child(3) {white-space: nowrap;}
+	table.browse td:nth-child(4) {white-space: nowrap;}
 </style>
 
 <script>
@@ -72,6 +73,8 @@ function buildSearchInterface(data, selector) {
 	output += buildComposerSelect(data);
 	output += buildVoiceSelect(data);
 	output += buildYearSelect(data);
+	output += buildGenreSelect(data);
+	output += buildSourceSelect(data);
 	element.innerHTML = output;
 }
 
@@ -174,6 +177,69 @@ function buildComposerSelect(data) {
 }
 
 
+//////////////////////////////
+//
+// buildGenreSelect --
+//
+
+function buildGenreSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let genre = entry[INDEX_genre];
+		if (!genre) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A GENRE");
+			continue;
+		}
+		counter[genre] = (counter[genre] === undefined) ? 1 : counter[genre] + 1;
+	}
+
+	let glist = Object.keys(counter).sort();
+	let genreCount = glist.length;
+	let output = "<select class='genre' onchange='doSearch()'>\n";
+	output += `<option value="">Any genre [${genreCount}]</option>`;
+	for (let i=0; i<glist.length; i++) {
+		let name = glist[i];
+		let count = counter[glist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
+// buildSourceSelect --
+//
+
+function buildSourceSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let source = entry[INDEX_firstsource];
+		if (!source) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A SOURCE");
+			continue;
+		}
+		counter[source] = (counter[source] === undefined) ? 1 : counter[source] + 1;
+	}
+
+	let slist = Object.keys(counter).sort();
+	let sourceCount = slist.length;
+	let output = "<select class='source' onchange='doSearch()'>\n";
+	output += `<option value="">Any source [${sourceCount}]</option>`;
+	for (let i=0; i<slist.length; i++) {
+		let name = slist[i];
+		let count = counter[slist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
 
 //////////////////////////////
 //
@@ -258,6 +324,20 @@ function doSearch(data) {
 	}
 	let composerQuery = composerField.value;
 
+	let genreField = searchInterface.querySelector("select.genre");
+	if (!genreField) {
+		console.log("Problem finding composer field in search interface");
+		return;
+	}
+	let genreQuery = genreField.value;
+
+	let sourceField = searchInterface.querySelector("select.source");
+	if (!sourceField) {
+		console.log("Problem finding source field in search interface");
+		return;
+	}
+	let sourceQuery = sourceField.value;
+
 	let voiceField = searchInterface.querySelector("select.voice");
 	if (!voiceField) {
 		console.log("Problem finding voice-count field in search interface");
@@ -278,6 +358,30 @@ function doSearch(data) {
 			let entry = data[i];
 			let composer = entry[INDEX_composer];
 			if (composer === composerQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (genreQuery) {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let genre = entry[INDEX_genre];
+			if (genre === genreQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (sourceQuery) {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let source = entry[INDEX_firstsource];
+			if (source === sourceQuery) {
 				tempdata.push(entry);
 			}
 		}

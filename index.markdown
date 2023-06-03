@@ -18,6 +18,7 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 
 [Adrian Willaert, _Verbum bonum_]()
 
+
 ![Sample score](/images/sample_score.png)
 
 ### Project data
