@@ -9,13 +9,13 @@ layout: page
 
 ## The 1520s Project
 
-The 1520s Project is an open-source repository of more than 250 scores of European polyphonic music from ca. 1510 through ca. 1530. Founded in 2019 by [Benjamin Ory](https://www.benjaminory.com){:target="_blank"}, it seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s.
-+ Learn more [about the project and its editorial standards](about)
+The 1520s Project is an open-source repository of more than 250 scores of European polyphonic music from ca. 1510 through ca. 1530. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s.
++ Learn [about the project](about)
 + [Browse scores](browse)
 
 ### Sample score
 
-[Adrian Willaert, _Verbum bonum_]()
+Adrian Willaert, _Verbum bonum_
 
 ![Sample score](/images/sample_score.png)
 
