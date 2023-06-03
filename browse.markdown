@@ -9,16 +9,19 @@ permalink: /browse/
 <div id="list"></div>
 
 <style>
+	body {font: 400 12px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
 	h1 { font-size: 40px; }
 	th { text-align: left; }
 	table.browse { min-width: 1000px; }
 	table.browse { margin-left: auto; margin-right: auto; } /* center table */
 	table.browse { border-collapse: collapse; } /* don't put gaps between cells */
 	table.browse th { background:skyblue; }
-	table.browse td, table.browse th { padding-left: 10px; padding-top: 5px; }
+	table.browse td, table.browse th { padding-left: 2px; padding-top: 2px; padding: 2px}
 	table.browse tr:hover { background:#ff000011; }
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
+	.wrapper {margin-left: 10px;}
+	table.browse td:nth-child(3) {white-space: nowrap;}
 </style>
 
 <script>
@@ -31,6 +34,7 @@ let INDEX_title       = "Title";
 let INDEX_genre       = "Genre";
 let INDEX_voice       = "Voices";
 let INDEX_firstsourcedate = "First Source Date";
+let INDEX_firstsource = "First Source";
 
 document.addEventListener("DOMContentLoaded", function () {
 	var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
@@ -66,6 +70,7 @@ function buildSearchInterface(data, selector) {
 	let output = "";
 	output += buildComposerSelect(data);
 	output += buildVoiceSelect(data);
+	output += buildYearSelect(data);
 	element.innerHTML = output;
 }
 
@@ -85,7 +90,7 @@ function displayBrowseTable(data, selector) {
 		console.error(`Error: cannot find ${selector} element to display work table`);
 		return;
 	}
-	let headings = [INDEX_id, INDEX_composer, INDEX_title, INDEX_genre, INDEX_voice, INDEX_firstsourcedate];
+	let headings = [INDEX_id, INDEX_composer, INDEX_title, INDEX_genre, INDEX_voice, INDEX_firstsource, INDEX_firstsourcedate];
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
@@ -198,6 +203,36 @@ function buildVoiceSelect(data) {
 
 //////////////////////////////
 //
+// buildYearSelect --
+//
+
+function buildYearSelect(data) {
+	let counter = {};
+	let fileCount = data.length;
+	for (let i=0; i<fileCount; i++) {
+		let entry = data[i];
+		let year = entry[INDEX_firstsourcedate];
+		if (!year) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A YEAR");
+			continue;
+		}
+		counter[year] = (counter[year] === undefined) ? 1 : counter[year] + 1;
+	}
+
+	let ylist = Object.keys(counter).sort();
+	let output = "<select class='year' onchange='doSearch()'>\n";
+	output += `<option value="">Any year</option>`;
+	for (let i=0; i<ylist.length; i++) {
+		let ycount = ylist[i];
+		output += `<option value="${ycount}">${ycount}</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
 // doSearch --
 //
 
@@ -226,6 +261,13 @@ function doSearch(data) {
 	}
 	let voiceQuery = voiceField.value;
 
+	let yearField = searchInterface.querySelector("select.year");
+	if (!yearField) {
+		console.log("Problem finding year field in search interface");
+		return;
+	}
+	let yearQuery = yearField.value;
+
 	if (composerQuery) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
@@ -244,6 +286,18 @@ function doSearch(data) {
 			let entry = data[i];
 			let voice = entry[INDEX_voice];
 			if (voice == voiceQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (yearQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let year = entry[INDEX_firstsourcedate];
+			if (year == yearQuery) {
 				tempdata.push(entry);
 			}
 		}
