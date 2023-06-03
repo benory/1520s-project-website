@@ -1,6 +1,5 @@
 ---
 layout: page
-title: data
 permalink: /data/
 ---
 
