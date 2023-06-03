@@ -21,6 +21,7 @@ permalink: /browse/
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
+	table.browse td:nth-child(2) {white-space: nowrap;}
 	table.browse td:nth-child(3) {white-space: nowrap;}
 </style>
 
@@ -125,8 +126,11 @@ function makeTableBody(headings, data) {
 	for (let i=0; i<data.length; i++) {
 		let entry = data[i];
 		output += "<tr>";
-		for (let i=0; i<headings.length; i++) {
-			let value = entry[headings[i]];
+				for (let i=0; i<headings.length; i++) {
+			let value = "";
+			if (typeof entry[headings[i]] !== "undefined") {
+				value = entry[headings[i]];
+			}
 			output += "<td>";
 			output += value;
 			output += "</td>";
