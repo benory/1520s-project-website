@@ -94,7 +94,7 @@ function displayBrowseTable(data, selector) {
 		console.error(`Error: cannot find ${selector} element to display work table`);
 		return;
 	}
-	let headings = [INDEX_id, INDEX_composer, INDEX_title, INDEX_genre, INDEX_voice, INDEX_firstsource, INDEX_firstsourcedate];
+	let headings = [INDEX_composer, INDEX_title, INDEX_genre, INDEX_voice, INDEX_firstsource, INDEX_firstsourcedate];
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
