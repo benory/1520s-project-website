@@ -203,7 +203,7 @@ function getSource(entry) {
 	if (typeof entry["RISM Source Link"] !== "undefined") {
 		rismurl = entry["RISM Source Link"];
 	}
-	if (!rismurl.match(/^https?:\/\/opac\.rism\.info\//)) {
+	if (!rismurl.match(/^https?:\/\/rism\.online\//)) {
 		if (rismurl) {
 			console.warn("RISM URL is invalid:", rismurl);
 		}
