@@ -10,8 +10,8 @@ layout: page
 ## The 1520s Project
 
 The 1520s Project is an open-source repository of more than 250 scores of European polyphonic music from ca. 1510 through ca. 1530. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s.
-+ Learn [about the project](about)
-+ [Browse scores](browse)
++ Learn more [about the project](about).
++ [Browse the project's scores](browse).
 
 ### Sample score
 
@@ -20,16 +20,10 @@ Adrian Willaert, _Verbum bonum_
 ![Sample score](/images/sample_score.png)
 
 ### Project data
-
-Summary of repertoire:
 + Current number of works: 259
 + Current number of notes: 264,066
 + Works by genre: 24 mass movements, 181 motets, 54 secular works
 
-<br>
-
-**Number of works by the best-represented composers in this project’s corpus**
-
-![Project corpus](/images/corpus.png)
+![Project summary](/images/project_summary.png)
 
 For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the overlap between the projects, see [about this project](about).
