@@ -12,11 +12,11 @@ Musical sources from this decade evince a decisive stylistic change: in place of
 
 This new style, although easy enough to lay out in general terms, is not so easy to analyze. Making matters still more difficult is that scholars have long been unsure exactly how, when, and where these stylistic changes occurred, owing to limited information about composer biographies and a fuzzy understanding of seminal musical sources from the 1520s. As a result, historians have tended to tell an oversimplified story that prioritizes the major composers at the chronological edges of this period at the expense of those in between. 
 
-The problem gets only more complicated: more works from during this decade survive than from any previous one in Western music history. Indeed, more works survive than any individual scholar can hope to control.
+The problem gets only more complicated: more works from during this decade survive than from any previous one in Western music history. There are more extant works than any individual scholar can hope to control.
 
 ## Meeting the challenge
 
-The 1520s Project aims to meet this challenge head on. Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, the corpus already has more than 250 scores and more than 250,000 notes available. Indeed, this is the largest online database of music for this period in the world.
+The 1520s Project aims to meet this challenge head on by making this repertoire available. Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, the corpus already has more than 250 scores and more than 250,000 notes available. Indeed, this is the largest online database of music for this period in the world. And the corpus can easily be analyzed using [Humdrum tools](https://www.humdrum.org/).
 
 The project takes advantage of [editorial and encoding standards](https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards){:target="_blank"} developed by the [Josquin Research Project](https://josquin.stanford.edu){:target="_blank"} (JRP). This enables the data from the projects to be shared, and this is especially useful with respect to composers active roughly ca. 1520, such as Jean Mouton and Noel Bauldeweyn.
 
