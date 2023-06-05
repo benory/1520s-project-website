@@ -6,17 +6,21 @@ permalink: /about/
 
 ## A new aesthetic paradigm
 
-Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold. Musical sources from this decade evince a decisive stylistic change: in place of the contrastive aesthetic preferred by earlier composers, with individual lines coming and going, we now find nearly pervasive sonic saturation–-that is, music for five or six independent voices with relatively few rests. 
+Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold. 
 
-This new style, although easy enough to describe in general terms, is not so easy to analyze. Making matters still more difficult is that scholars have long been unsure exactly how, when, and where these stylistic changes occurred, owing to limited information about composer biographies and a fuzzy understanding of seminal musical sources from the 1520s. As a result, historians have tended to tell an oversimplified story that prioritizes the major composers at the chronological edges of this period at the expense of those in between. 
+Musical sources from this decade evince a decisive stylistic change: in place of what might be described as a contrastive aesthetic preferred by earlier composers, with individual lines coming and going, we now find nearly pervasive sonic saturation–that is, music for five or six independent voices with relatively few rests. 
+
+This new style, although easy enough to lay out in general terms, is not so easy to analyze. Making matters still more difficult is that scholars have long been unsure exactly how, when, and where these stylistic changes occurred, owing to limited information about composer biographies and a fuzzy understanding of seminal musical sources from the 1520s. As a result, historians have tended to tell an oversimplified story that prioritizes the major composers at the chronological edges of this period at the expense of those in between. 
 
 The problem gets only more complicated: more works from during this decade survive than from any previous one in Western music history. Indeed, more works survive than any individual scholar can hope to control.
 
-Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, The 1520s Project aims to meet this challenge head on. And with 250 scores and more than 250,000 notes already available, it’s the largest online database of music for this period in the world.
+## Meeting the challenge
 
-## Editorial and encoding standards
+The 1520s Project aims to meet this challenge head on. Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, the corpus already has more than 250 scores and more than 250,000 notes available. Indeed, this is the largest online database of music for this period in the world.
 
-The 1520s Project and the JRP follow similar editorial and encoding guidelines to enable repertoires to be shared. See [this guide](https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards){:target="_blank"} for most encoding standards. 
+The project takes advantage of [editorial and encoding standards](https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards){:target="_blank"} developed by the [Josquin Research Project](https://josquin.stanford.edu){:target="_blank"} (JRP). This enables the data from the projects to be shared, and this is especially useful with respect to composers active roughly ca. 1520, such as Jean Mouton and Noel Bauldeweyn.
+
+## Editorial process
 
 To upload music, Ory:
 + enters the music into Sibelius, using facsimiles and modern editions. Each note is checked for accuracy. Mensuration signs and section headings are added as appropriate.
@@ -33,7 +37,9 @@ Would you like a particular score to be texted? [Let Ory know.](mailto:benjamino
 
 ## Support
 
-This project has been supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"} and the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
+This project has been generously supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"} and the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
+
+[![CESTA logo](/images/CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"} [![CCARH logo](/images/CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}
 
 ## People
 
