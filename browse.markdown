@@ -38,17 +38,19 @@ let INDEX_RISMlink 	  	  = "RISM Source Link";
 let INDEX_DIAMMlink	  	  = "DIAMM source link";
 
 document.addEventListener("DOMContentLoaded", function () {
-	var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
-	var url = `https://script.google.com/macros/s/${id}/exec`;
+	// var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
+	// var url = `https://script.google.com/macros/s/${id}/exec`;
 
-	fetch(url)
-	.then((response) => response.json())
-	.then((data) => {
-		METADATA = data;
-		buildSearchInterface(data, "#search-interface");
-		displayBrowseTable(data, "#list"); 
-	})
-	.catch((error) => console.error("Error downloading metadata: ", error));
+	METADATA = {% include_relative browse.json %};
+
+	//fetch(url)
+	//.then((response) => response.json())
+	//.then((data) => {
+	//	METADATA = data;
+		buildSearchInterface(METADATA, "#search-interface");
+		displayBrowseTable(METADATA, "#list"); 
+	//})
+	//.catch((error) => console.error("Error downloading metadata: ", error));
 
 });
 
@@ -326,7 +328,7 @@ function buildSourceSelect(data) {
 	for (let i=0; i<slist.length; i++) {
 		let name = slist[i];
 		let count = counter[slist[i]];
-		output += `<option value="${name}">${name} (${count})</option>`;
+		output += `<option value='${name}'>${name} (${count})</option>`;
 	}
 	output += "</select>\n";
 	return output;
