@@ -39,7 +39,7 @@ Would you like a particular score to be texted? [Let Ory know.](mailto:benjamino
 
 This project has been generously supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"} and the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
 
-[![CESTA logo](/images/CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"} [![CCARH logo](/images/CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}
+[![CESTA logo](CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"} [![CCARH logo](CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}
 
 ## People
 
