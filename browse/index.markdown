@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
 //////////////////////////////
 //
 // buildSearchInterface --
@@ -371,27 +370,86 @@ function buildVoiceSelect(data) {
 //
 
 function buildYearSelect(data) {
-	let counter = {};
-	let fileCount = data.length;
-	for (let i=0; i<fileCount; i++) {
-		let entry = data[i];
-		let year = entry[INDEX_firstsourcedate];
-		if (!year) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A YEAR");
+	let years = {};
+	for (let entry of data) {
+		let parameter = "First Source Exact Date";
+		let year = entry[parameter];
+		let matches = year.match(/(\d{4})/);
+		if (matches) {
+			digits = matches[1];
+		} else {
 			continue;
 		}
-		counter[year] = (counter[year] === undefined) ? 1 : counter[year] + 1;
+		let circa = year.match(/~/) ? true : false;
+		let tag = (circa ? "~" : "") + digits;
+		if (typeof years[tag] !== "undefined") {
+			years[tag]++;
+		} else {
+			years[tag] = 1;
+		}
 	}
+	let keys = Object.getOwnPropertyNames(years);
+	keys.sort((a, b) => {
+		let yearA = a;
+		let yearB = b;
+		if (typeof yearA === "undefined") {
+			return +1;
+		}
+		if (typeof yearB === "undefined") {
+			return -1;
+		}
 
-	let ylist = Object.keys(counter).sort();
-	let output = "<select class='year' onchange='doSearch()'>\n";
-	output += `<option value="">Any year</option>`;
-	for (let i=0; i<ylist.length; i++) {
-		let ycount = ylist[i];
-		output += `<option value="${ycount}">${ycount}</option>`;
+		let matches;
+
+		matches = yearA.match(/(\d{4})/);
+		if (matches) {
+			digitsA = matches[1];
+		} else {
+			return 1;
+		}
+		matches = yearB.match(/(\d{4})/);
+		if (matches) {
+			digitsB = matches[1];
+		} else {
+			return -1;
+		}
+	
+		if (digitsA != digitsB) {
+			return parseInt(digitsA) - parseInt(digitsB);
+		}
+
+		// years are the same, so sort by circa
+		let circaA = false;
+		let circaB = false;
+		if (yearA.match(/~/)) {
+			circaA = true;
+		}
+		if (yearB.match(/~/)) {
+			circaB = true;
+		}
+		if (circaA) {
+			return +1;
+		}
+		if (circaB) {
+			return -1;
+		}
+		return 0;
+	});
+	let yearCount = keys.length;
+
+	let output = "";
+	output += "<select class='year' onchange='doSearch()'>\n";
+	output += `<option value=''>Any year [${yearCount}]</options>`;
+	for (let year of keys) {
+		if (!year.match(/~/)) {
+			output += `<option value="${year}">&nbsp;&nbsp;&thinsp;${year} (${years[year]})</option>`;
+		} else {
+			output += `<option value="${year}">${year} (${years[year]})</option>`;
+		}
 	}
-	output += "</select>\n";
+	output += "</select>";
 	return output;
+
 }
 
 
