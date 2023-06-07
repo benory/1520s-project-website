@@ -20,6 +20,6 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 + Current number of notes: 264,066
 + Works by genre: 24 mass movements, 181 motets, 54 secular works
 
-![Project summary](project_summary.png)
+![Project summary](project_summary.svg)
 
 For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the overlap between the projects, see [about this project](about).
