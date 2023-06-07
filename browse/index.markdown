@@ -1,7 +1,6 @@
 ---
 layout: page
 title: browse
-permalink: /browse/
 ---
 
 <div id="search-interface"></div>
