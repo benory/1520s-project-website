@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /data/
 ---
 
 All data for The 1520s Project is available on [Github](https://github.com/benory/1520s-Project).
