@@ -2,7 +2,7 @@
 layout: page
 ---
 
-{% includes_relative scripts-local.html %}
+{% include_relative scripts-local.html %}
 
 <style>
    .wrapper {margin-left: 10px;}
