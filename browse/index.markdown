@@ -135,8 +135,10 @@ function makeTableBody(headings, data) {
 			output += "<td>";
 			if (headings[i] == INDEX_title) {
 				let title = getTitle(entry);
-				output += title;
+				let scoreURL = getScoreURL(entry);
+				output += `<a target="_blank" href=${scoreURL}>${title}</a>`;
 			}
+
 			else if (headings[i] == INDEX_firstsource) {
 				let url = getSource(entry);
 				let sourcevalue = value;
@@ -151,6 +153,8 @@ function makeTableBody(headings, data) {
 	}
 	return output;
 }
+
+			
 
 //////////////////////////////
 //
@@ -179,6 +183,23 @@ function getTitle(entry) {
 	} else {
 		return title;
 	}
+}
+
+
+//////////////////////////////
+//
+// getScoreURL -- Generate URL
+//
+
+function getScoreURL(entry) {
+	let ID = "";
+	if (typeof entry["ID"] !== "undefined") {
+		ID = entry["ID"];
+		let url = `"http://www.1520s-project.com/work/?=${ID}"`;
+		console.warn("print URL", url);
+		return url;
+	}
+	return "";
 }
 
 
