@@ -25,6 +25,9 @@ function displayWork(id) {
 		autoResize: "true"
 	};
 	// See https://plugin.humdrum.org/options/#list for more display options.
+	if (DATA1520.filter) {
+		hnpOptions.filter = DATA1520.filter;
+	}
 
 	displayHumdrum(hnpOptions);
 	displayWorkInfo(id);

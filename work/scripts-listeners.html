@@ -13,6 +13,7 @@ DATA1520.metadata.composers = {% include metadata/composers.json %};
 DATA1520.metadata.modern_editions = {% include metadata/modern_editions.json %};
 DATA1520.lookup = {};
 DATA1520.workid = "";
+DATA1520.filter = "";
 
 
 //////////////////////////////
@@ -33,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// The ID is "Jac2001".
 	let cgi = getCgiParameters(); 
 	DATA1520.workid = cgi.id;
+	if (cgi.filter) {
+		DATA1520.filter = cgi.filter;
+	}
 	if (!DATA1520.workid) {
 		// display this score if none specified in the URL.
 		// Or an error could be displayed if there is no ID
