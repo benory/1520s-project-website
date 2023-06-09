@@ -194,7 +194,12 @@ function displayWorkFooter(id) {
 		output += `<div class="work-item"><a target='_blank' href='${github}'>View on Github<a></div>`;
 
 		let urlParam = encodeURIComponent(github);
-		output += `<div class="work-item"><a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}'>View on VHV<a></div>`;
+		let efilter = "";
+		if (DATA1520.filter) {
+			efilter = encodeURIComponent(DATA1520.filter);
+			efilter = `&filter=${efilter}`;
+		}
+		output += `<div class="work-item"><a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>View on VHV<a></div>`;
 	}
 
 	element.innerHTML = output;
