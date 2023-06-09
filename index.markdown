@@ -11,11 +11,11 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 + Learn more [about the project](about).
 + [Browse the project's scores](browse).
 
-### Sample score
+<br>
 
-[Adrian Willaert, _Verbum bonum_](http://www.1520s-project.com/work/?id=Wil2011){:target="_blank"}
+**Sample Score**: [Adrian Willaert, _Verbum bonum_](http://www.1520s-project.com/work/?id=Wil2011){:target="_blank"}
 
-[![Sample score](/images/sample_score.png)](http://www.1520s-project.com/work/?id=Wil2011){:target="_blank"}
+[![Sample score](/images/sample_score.svg)](http://www.1520s-project.com/work/?id=Wil2011){:target="_blank"}
 
 ### Project data
 + Current number of works: 259
