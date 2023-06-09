@@ -195,7 +195,7 @@ function getScoreURL(entry) {
 	let ID = "";
 	if (typeof entry["ID"] !== "undefined") {
 		ID = entry["ID"];
-		let url = `"http://www.1520s-project.com/work/?=${ID}"`;
+		let url = `"http://www.1520s-project.com/work?=${ID}"`;
 		console.warn("print URL", url);
 		return url;
 	}
