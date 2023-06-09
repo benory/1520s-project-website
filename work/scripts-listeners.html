@@ -1,0 +1,49 @@
+
+<script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin-worker.js"></script>
+
+<script>
+// vim: ts=3:nowrap
+// Initializations for the work page.
+
+// First load metadata for 1520's project (from _include/metadata directory):
+let DATA1520 = {};
+DATA1520.metadata = {};
+DATA1520.metadata.works = {% include metadata/works.json %};
+DATA1520.metadata.composers = {% include metadata/composers.json %};
+DATA1520.metadata.modern_editions = {% include metadata/modern_editions.json %};
+DATA1520.lookup = {};
+DATA1520.workid = "";
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- Run the following function when the webpage
+//     has finished loading.  This function extracts the "id" parameter
+//     from the URL which specifies which score to display.
+//
+
+document.addEventListener("DOMContentLoaded", function (event) {
+	// Create lookup tables for metadata:
+	DATA1520.lookup.works = createLookup(DATA1520.metadata.works);
+	DATA1520.lookup.composers = createLookup(DATA1520.metadata.composers);
+	DATA1520.lookup.modern_editions = createLookup(DATA1520.metadata.modern_editions);
+
+	// Get the work ID that should be displayed.  Example URL:
+	//     www.1520s-project.com/work?id=Jac2001
+	// The ID is "Jac2001".
+	let cgi = getCgiParameters(); 
+	DATA1520.workid = cgi.id;
+	if (!DATA1520.workid) {
+		// display this score if none specified in the URL.
+		// Or an error could be displayed if there is no ID
+		// or the ID is invalid.
+		DATA1520.workid = "Jac2001";
+	}
+	console.warn("WORK ID", DATA1520.workid);
+	displayWork(DATA1520.workid);
+
+});
+
+</script>
+
+
