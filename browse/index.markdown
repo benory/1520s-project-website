@@ -31,6 +31,7 @@ let INDEX_composer    	  = "Composer";
 let INDEX_title       	  = "Title";
 let INDEX_genre      	  = "Genre";
 let INDEX_voice      	  = "Voices";
+let INDEX_text            = "Texted";
 let INDEX_firstsourcedate = "First Source Date";
 let INDEX_firstsource 	  = "First Source";
 let INDEX_RISMlink 	  	  = "RISM Source Link";
@@ -70,6 +71,7 @@ function buildSearchInterface(data, selector) {
 	let output = "";
 	output += buildComposerSelect(data);
 	output += buildVoiceSelect(data);
+	output += buildTextSelect(data);
 	output += buildYearSelect(data);
 	output += buildGenreSelect(data);
 	output += buildSourceSelect(data);
@@ -162,7 +164,6 @@ function makeTableBody(headings, data) {
 //
 
 function getTitle(entry) {
-	console.warn(entry);
 	let title = "";
 	if (typeof entry["Title"] !== "undefined") {
 		title = entry["Title"];
@@ -196,7 +197,6 @@ function getScoreURL(entry) {
 	if (typeof entry["ID"] !== "undefined") {
 		ID = entry["ID"];
 		let url = `"/work?id=${ID}"`;
-		console.warn("print URL", url);
 		return url;
 	}
 	return "";
@@ -386,6 +386,36 @@ function buildVoiceSelect(data) {
 
 //////////////////////////////
 //
+// buildTextSelect --
+//
+
+function buildTextSelect(data) {
+	let counter = {};
+	let fileCount = data.length;
+	for (let i=0; i<fileCount; i++) {
+		let entry = data[i];
+		let text = entry[INDEX_text];
+		if (!text) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE AN ENTRY AS TO WHETHER IT IS TEXTED");
+			continue;
+		}
+		counter[text] = (counter[text] === undefined) ? 1 : counter[text] + 1;
+	}
+
+	let tlist = Object.keys(counter).sort();
+	let output = "<select class='text' onchange='doSearch()'>\n";
+	output += `<option value="">Texted?</option>`;
+	for (let i=0; i<tlist.length; i++) {
+		let tcount = tlist[i];
+		output += `<option value="${tcount}">${tcount}</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
 // buildYearSelect --
 //
 
@@ -517,6 +547,13 @@ function doSearch(data) {
 	}
 	let voiceQuery = voiceField.value;
 
+	let textField = searchInterface.querySelector("select.text");
+	if (!textField) {
+		console.log("Problem finding text field in search interface");
+		return;
+	}
+	let textQuery = textField.value;
+
 	let yearField = searchInterface.querySelector("select.year");
 	if (!yearField) {
 		console.log("Problem finding year field in search interface");
@@ -566,6 +603,18 @@ function doSearch(data) {
 			let entry = data[i];
 			let voice = entry[INDEX_voice];
 			if (voice == voiceQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (textQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let text = entry[INDEX_text];
+			if (text == textQuery) {
 				tempdata.push(entry);
 			}
 		}

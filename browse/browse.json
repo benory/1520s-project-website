@@ -11,6 +11,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114954",
 		"First Source Exact Date": "~1526",
 		"First Source Date": "~1526",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001a-Nigra_sum.krn",
 		"FILEBASE": "Ano2001a-Nigra_sum"
 	},
@@ -26,6 +27,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114954",
 		"First Source Exact Date": "~1526",
 		"First Source Date": "~1526",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001b-Nigra_sum.krn",
 		"FILEBASE": "Ano2001b-Nigra_sum"
 	},
@@ -41,6 +43,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114954",
 		"First Source Exact Date": "~1526",
 		"First Source Date": "~1526",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001c-Nigra_sum.krn",
 		"FILEBASE": "Ano2001c-Nigra_sum"
 	},
@@ -56,6 +59,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103917",
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II.krn",
 		"FILEBASE": "Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II"
 	},
@@ -71,6 +75,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni.krn",
 		"FILEBASE": "Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni"
 	},
@@ -86,6 +91,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2004-Congratulamini_mihi_omnes.krn",
 		"FILEBASE": "Ano2004-Congratulamini_mihi_omnes"
 	},
@@ -101,6 +107,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2005-Ecce_tu_pulcra_es.krn",
 		"FILEBASE": "Ano2005-Ecce_tu_pulcra_es"
 	},
@@ -116,6 +123,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bar/Bar2001-Peccantem_me_cotidie.krn",
 		"FILEBASE": "Bar2001-Peccantem_me_cotidie"
 	},
@@ -134,6 +142,7 @@
 		"IIIF Manifest": "https://collections.thulb.uni-jena.de/api/iiif/presentation/v2/HisBest_derivate_00002711/manifest",
 		"First Source Exact Date": "1516/03",
 		"First Source Date": "1516",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1001a-Missa_Inviolata-Kyrie.krn",
 		"FILEBASE": "Bau1001a-Missa_Inviolata-Kyrie",
 		"Internal Notes": "two different options for image viewer"
@@ -153,6 +162,7 @@
 		"IIIF Manifest": "https://collections.thulb.uni-jena.de/api/iiif/presentation/v2/HisBest_derivate_00002715/manifest",
 		"First Source Exact Date": "1517/09",
 		"First Source Date": "1517",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1002a-Missa_En_douleur_en_tristesse-Kyrie.krn",
 		"FILEBASE": "Bau1002a-Missa_En_douleur_en_tristesse-Kyrie",
 		"Internal Notes": "two different options for image viewer"
@@ -172,6 +182,7 @@
 		"IIIF Manifest": "https://collections.thulb.uni-jena.de/api/iiif/presentation/v2/HisBest_derivate_00002715/manifest",
 		"First Source Exact Date": "1517/09",
 		"First Source Date": "1517",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1002b-Missa_En_douleur_en_tristesse-Gloria.krn",
 		"FILEBASE": "Bau1002b-Missa_En_douleur_en_tristesse-Gloria",
 		"Internal Notes": "two different options for image viewer"
@@ -191,6 +202,7 @@
 		"IIIF Manifest": "https://collections.thulb.uni-jena.de/api/iiif/presentation/v2/HisBest_derivate_00002715/manifest",
 		"First Source Exact Date": "1517/09",
 		"First Source Date": "1517",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1002e-Missa_En_douleur_en_tristesse-Agnus.krn",
 		"FILEBASE": "Bau1002e-Missa_En_douleur_en_tristesse-Agnus",
 		"Internal Notes": "two different options for image viewer"
@@ -209,6 +221,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077435/manifest",
 		"First Source Exact Date": "1519/10/31",
 		"First Source Date": "1519",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau2003-Quam_pulchra_es.krn",
 		"FILEBASE": "Bau2003-Quam_pulchra_es"
 	},
@@ -226,6 +239,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077435/manifest",
 		"First Source Exact Date": "1519/10/31",
 		"First Source Date": "1519",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau2004-Gloriosus_Dei_apostolus_Bartholomeus--Motetti_de_la_corona_IV.krn",
 		"FILEBASE": "Bau2004-Gloriosus_Dei_apostolus_Bartholomeus--Motetti_de_la_corona_IV"
 	},
@@ -241,6 +255,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2072/#/",
 		"First Source Exact Date": "1523",
 		"First Source Date": "1523",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau3001-En_douleur_en_tristesse.krn",
 		"FILEBASE": "Bau3001-En_douleur_en_tristesse"
 	},
@@ -256,6 +271,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bis/Bis2001-Confirma_hoc_Deus.krn",
 		"FILEBASE": "Bis2001-Confirma_hoc_Deus"
 	},
@@ -273,6 +289,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00083822/manifest",
 		"First Source Exact Date": "1520",
 		"First Source Date": "1520",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Cha/Cha2001-De_profundis_clamavi.krn",
 		"FILEBASE": "Cha2001-De_profundis_clamavi"
 	},
@@ -288,6 +305,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Con/Con2001-Assumpta_est_Maria.krn",
 		"FILEBASE": "Con2001-Assumpta_est_Maria"
 	},
@@ -303,6 +321,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Con/Con2004-Ego_sum_qui_sum.krn",
 		"FILEBASE": "Con2004-Ego_sum_qui_sum"
 	},
@@ -318,6 +337,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104115",
 		"First Source Exact Date": "1534",
 		"First Source Date": "1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Con/Con2006-Nigra_sum.krn",
 		"FILEBASE": "Con2006-Nigra_sum"
 	},
@@ -333,6 +353,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Era/Era2001-Gloriosi_principes.krn",
 		"FILEBASE": "Era2001-Gloriosi_principes"
 	},
@@ -348,6 +369,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2001-Quis_dabit_oculis.krn",
 		"FILEBASE": "Fsc2001-Quis_dabit_oculis"
 	},
@@ -363,6 +385,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2002-O_pulcherrima_virgo.krn",
 		"FILEBASE": "Fsc2002-O_pulcherrima_virgo"
 	},
@@ -378,6 +401,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2003-Elisabeth_beatissima.krn",
 		"FILEBASE": "Fsc2003-Elisabeth_beatissima"
 	},
@@ -393,6 +417,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2004-Regem_regum_Dominum--BolC_Q19.krn",
 		"FILEBASE": "Fsc2004-Regem_regum_Dominum--BolC_Q19"
 	},
@@ -408,6 +433,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2005-Regem_archangelorum.krn",
 		"FILEBASE": "Fsc2005-Regem_archangelorum"
 	},
@@ -424,6 +450,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2006-Super_flumina_babilonis--Medici_Codex.krn",
 		"FILEBASE": "Fsc2006-Super_flumina_babilonis--Medici_Codex"
 	},
@@ -440,6 +467,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2007-Deduc_me_Domine.krn",
 		"FILEBASE": "Fsc2007-Deduc_me_Domine"
 	},
@@ -456,6 +484,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2008-Angelus_ad_pastores.krn",
 		"FILEBASE": "Fsc2008-Angelus_ad_pastores"
 	},
@@ -472,6 +501,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2009-Regina_celi_letare.krn",
 		"FILEBASE": "Fsc2009-Regina_celi_letare"
 	},
@@ -489,6 +519,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077435/manifest",
 		"First Source Exact Date": "1519/10/31",
 		"First Source Date": "1519",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2010-Tribus_miraculis.krn",
 		"FILEBASE": "Fsc2010-Tribus_miraculis"
 	},
@@ -504,6 +535,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2011-Maria_virgo_prescripta.krn",
 		"FILEBASE": "Fsc2011-Maria_virgo_prescripta"
 	},
@@ -519,6 +551,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103935",
 		"First Source Exact Date": "1521/09",
 		"First Source Date": "1521",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2012-Quam_pulchra_es.krn",
 		"FILEBASE": "Fsc2012-Quam_pulchra_es"
 	},
@@ -534,6 +567,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103935",
 		"First Source Exact Date": "1521/09",
 		"First Source Date": "1521",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2013-Nunc_dimittis.krn",
 		"FILEBASE": "Fsc2013-Nunc_dimittis"
 	},
@@ -549,6 +583,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2014-Felix_Anna.krn",
 		"FILEBASE": "Fsc2014-Felix_Anna"
 	},
@@ -564,6 +599,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2015-Vidi_speciosam.krn",
 		"FILEBASE": "Fsc2015-Vidi_speciosam"
 	},
@@ -579,6 +615,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2016-Congratulamini_mihi.krn",
 		"FILEBASE": "Fsc2016-Congratulamini_mihi"
 	},
@@ -596,6 +633,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.46/manifest.json",
 		"First Source Exact Date": "1527",
 		"First Source Date": "1527",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2018-Inviolata_integra_et_casta_es.krn",
 		"FILEBASE": "Fsc2018-Inviolata_integra_et_casta_es"
 	},
@@ -613,6 +651,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.46/manifest.json",
 		"First Source Exact Date": "1527",
 		"First Source Date": "1527",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2019-In_illo_tempore.krn",
 		"FILEBASE": "Fsc2019-In_illo_tempore"
 	},
@@ -628,6 +667,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/974/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2020-Sub_tuum_presedium.krn",
 		"FILEBASE": "Fsc2020-Sub_tuum_presedium"
 	},
@@ -645,6 +685,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.20/manifest.json",
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2021-Ecce_Deus_salvator_meus.krn",
 		"FILEBASE": "Fsc2021-Ecce_Deus_salvator_meus"
 	},
@@ -662,6 +703,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.20/manifest.json",
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2022-Regina_celi.krn",
 		"FILEBASE": "Fsc2022-Regina_celi"
 	},
@@ -677,6 +719,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1464/#/",
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2023-Petrus_apostolus.krn",
 		"FILEBASE": "Fsc2023-Petrus_apostolus"
 	},
@@ -692,6 +735,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/244/#/",
 		"First Source Exact Date": "~1520",
 		"First Source Date": "~1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc3001-Lieto_non_hebbi_mai.krn",
 		"FILEBASE": "Fsc3001-Lieto_non_hebbi_mai"
 	},
@@ -707,6 +751,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss2001-Angele_Dei.krn",
 		"FILEBASE": "Fss2001-Angele_Dei"
 	},
@@ -722,6 +767,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss2002-Hec_est_illa_dulcis_rosa.krn",
 		"FILEBASE": "Fss2002-Hec_est_illa_dulcis_rosa"
 	},
@@ -737,6 +783,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss2003-In_illo_tempore_postquam.krn",
 		"FILEBASE": "Fss2003-In_illo_tempore_postquam"
 	},
@@ -752,6 +799,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/244/#/",
 		"First Source Exact Date": "~1520",
 		"First Source Date": "~1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss3007-O_passi_sparsi.krn",
 		"FILEBASE": "Fss3007-O_passi_sparsi"
 	},
@@ -769,6 +817,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077432/manifest",
 		"First Source Exact Date": "1514/08/17",
 		"First Source Date": "1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fva/Fva2001-Sancta_trinitas.krn",
 		"FILEBASE": "Fva2001-Sancta_trinitas"
 	},
@@ -785,6 +834,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom1002a-Missa_Quam_pulchra_es-Kyrie.krn",
 		"FILEBASE": "Gom1002a-Missa_Quam_pulchra_es-Kyrie"
 	},
@@ -801,6 +851,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom1002b-Missa_Quam_pulchra_es-Gloria.krn",
 		"FILEBASE": "Gom1002b-Missa_Quam_pulchra_es-Gloria"
 	},
@@ -817,6 +868,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104338",
 		"First Source Exact Date": "1542",
 		"First Source Date": "1542",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom1006a-Missa_Media_vita-Kyrie.krn",
 		"FILEBASE": "Gom1006a-Missa_Media_vita-Kyrie"
 	},
@@ -834,6 +886,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00073120/manifest",
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2001-Dicite_in_magni.krn",
 		"FILEBASE": "Gom2001-Dicite_in_magni"
 	},
@@ -851,6 +904,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00083128/manifest",
 		"First Source Exact Date": "1529/10/1",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2002-Angelus_Domini.krn",
 		"FILEBASE": "Gom2002-Angelus_Domini"
 	},
@@ -868,6 +922,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00074768/manifest",
 		"First Source Exact Date": "1549",
 		"First Source Date": "1549",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2004-Qui_colis_Ausoniam.krn",
 		"FILEBASE": "Gom2004-Qui_colis_Ausoniam"
 	},
@@ -885,6 +940,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00075641/manifest",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2005-Aspice_Domine.krn",
 		"FILEBASE": "Gom2005-Aspice_Domine"
 	},
@@ -902,6 +958,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00082726/manifest",
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom3001-Gris_et_tanne_me_fault_porter.krn",
 		"FILEBASE": "Gom3001-Gris_et_tanne_me_fault_porter"
 	},
@@ -919,6 +976,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00082711/manifest",
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom3002-Alleluya_my_fault_chanter.krn",
 		"FILEBASE": "Gom3002-Alleluya_my_fault_chanter"
 	},
@@ -934,6 +992,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jac/Jac2001-Rogamus_te.krn",
 		"FILEBASE": "Jac2001-Rogamus_te"
 	},
@@ -949,6 +1008,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103917",
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jac/Jac2003-Interveniat_pro_Gabrieli.krn",
 		"FILEBASE": "Jac2003-Interveniat_pro_Gabrieli"
 	},
@@ -964,6 +1024,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2001-Lauda_Jerusalem_Dominum.krn",
 		"FILEBASE": "Jan2001-Lauda_Jerusalem_Dominum"
 	},
@@ -979,6 +1040,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2002-Vox_de_celis--BolC_Q19.krn",
 		"FILEBASE": "Jan2002-Vox_de_celis--BolC_Q19"
 	},
@@ -994,6 +1056,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2003-O_sacrum_convivium--BolC_Q19.krn",
 		"FILEBASE": "Jan2003-O_sacrum_convivium--BolC_Q19"
 	},
@@ -1009,6 +1072,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2004-O_magnum_misterium--BolC_Q19.krn",
 		"FILEBASE": "Jan2004-O_magnum_misterium--BolC_Q19"
 	},
@@ -1026,6 +1090,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077433/manifest",
 		"First Source Exact Date": "1519/06/17",
 		"First Source Date": "1519",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2005-O_benignissime_Domine_Jesu.krn",
 		"FILEBASE": "Jan2005-O_benignissime_Domine_Jesu"
 	},
@@ -1041,6 +1106,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103917",
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2006-Ave_stella_matutina.krn",
 		"FILEBASE": "Jan2006-Ave_stella_matutina"
 	},
@@ -1056,6 +1122,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2007-O_Domine_Jesu_Christe.krn",
 		"FILEBASE": "Jan2007-O_Domine_Jesu_Christe"
 	},
@@ -1071,6 +1138,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2008-Ave_gloriose_beatissime_Antoni.krn",
 		"FILEBASE": "Jan2008-Ave_gloriose_beatissime_Antoni"
 	},
@@ -1086,6 +1154,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2009-Johannes_Jesu_Christo.krn",
 		"FILEBASE": "Jan2009-Johannes_Jesu_Christo"
 	},
@@ -1101,6 +1170,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2001-Noe_noe_hodie_salvator_mundi.krn",
 		"FILEBASE": "Jom2001-Noe_noe_hodie_salvator_mundi"
 	},
@@ -1116,6 +1186,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2002-O_vos_qui_transitis.krn",
 		"FILEBASE": "Jom2002-O_vos_qui_transitis"
 	},
@@ -1131,6 +1202,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2003-Veni_sancte_spiritus.krn",
 		"FILEBASE": "Jom2003-Veni_sancte_spiritus"
 	},
@@ -1146,6 +1218,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2004-Ecclesiam_tuam_Deus--BolC_Q19.krn",
 		"FILEBASE": "Jom2004-Ecclesiam_tuam_Deus--BolC_Q19"
 	},
@@ -1161,6 +1234,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2005-Sufficiebat_nobis_paupertas.krn",
 		"FILEBASE": "Jom2005-Sufficiebat_nobis_paupertas"
 	},
@@ -1176,6 +1250,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2006-Ave_mater_matris_Dei--BolC_Q19.krn",
 		"FILEBASE": "Jom2006-Ave_mater_matris_Dei--BolC_Q19"
 	},
@@ -1192,6 +1267,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2007-O_Jesu_Christe_miserere_mei.krn",
 		"FILEBASE": "Jom2007-O_Jesu_Christe_miserere_mei"
 	},
@@ -1207,6 +1283,7 @@
 		"RISM Source Link": "https://rism.online/sources/990032111",
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2008-Ploremus_omnes_et_lacrimemur.krn",
 		"FILEBASE": "Jom2008-Ploremus_omnes_et_lacrimemur"
 	},
@@ -1222,6 +1299,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2009-Alleluia_surrexit_Dominus.krn",
 		"FILEBASE": "Jom2009-Alleluia_surrexit_Dominus"
 	},
@@ -1237,6 +1315,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2010-Domine_bonum_est_nos.krn",
 		"FILEBASE": "Jom2010-Domine_bonum_est_nos"
 	},
@@ -1253,6 +1332,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2011-Cantate_Domino.krn",
 		"FILEBASE": "Jom2011-Cantate_Domino"
 	},
@@ -1268,6 +1348,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2012-Visita_quesumus_Domine.krn",
 		"FILEBASE": "Jom2012-Visita_quesumus_Domine"
 	},
@@ -1283,6 +1364,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2013-Retribuere_dignare_Domine.krn",
 		"FILEBASE": "Jom2013-Retribuere_dignare_Domine"
 	},
@@ -1299,6 +1381,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103993",
 		"First Source Exact Date": "1526",
 		"First Source Date": "1526",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2014-Omnes_sancti_tui_quesumus.krn",
 		"FILEBASE": "Jom2014-Omnes_sancti_tui_quesumus"
 	},
@@ -1314,6 +1397,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2022-Ave_regina_celorum.krn",
 		"FILEBASE": "Jom2022-Ave_regina_celorum"
 	},
@@ -1329,6 +1413,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2023-Sancta_Trinitas.krn",
 		"FILEBASE": "Jom2023-Sancta_Trinitas"
 	},
@@ -1344,6 +1429,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103935",
 		"First Source Exact Date": "1521/08",
 		"First Source Date": "1521",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lfg/Lfg2004-Partus_et_integritas.krn",
 		"FILEBASE": "Lfg2004-Partus_et_integritas"
 	},
@@ -1359,6 +1445,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2001-Te_matrem.krn",
 		"FILEBASE": "Lhe2001-Te_matrem"
 	},
@@ -1374,6 +1461,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2002-Dum_complerentur.krn",
 		"FILEBASE": "Lhe2002-Dum_complerentur"
 	},
@@ -1389,6 +1477,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2004-Sancta_Maria_succurre_miseris.krn",
 		"FILEBASE": "Lhe2004-Sancta_Maria_succurre_miseris"
 	},
@@ -1404,6 +1493,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2005-Ave_Domina_mea.krn",
 		"FILEBASE": "Lhe2005-Ave_Domina_mea"
 	},
@@ -1419,6 +1509,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2006-Salvator_mundi.krn",
 		"FILEBASE": "Lhe2006-Salvator_mundi"
 	},
@@ -1436,6 +1527,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.26/manifest.json",
 		"First Source Exact Date": "1521",
 		"First Source Date": "1521",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2007-Ave_regina_celorum.krn",
 		"FILEBASE": "Lhe2007-Ave_regina_celorum"
 	},
@@ -1451,6 +1543,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2015-Ascendens_Christus.krn",
 		"FILEBASE": "Lhe2015-Ascendens_Christus"
 	},
@@ -1466,6 +1559,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2016-Deus_in_nomine_tuo.krn",
 		"FILEBASE": "Lhe2016-Deus_in_nomine_tuo"
 	},
@@ -1483,6 +1577,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00028154/manifest",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2017-Nigra_sum.krn",
 		"FILEBASE": "Lhe2017-Nigra_sum",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -1499,6 +1594,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/974/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2021-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Lhe2021-Ave_Maria_gratia_plena"
 	},
@@ -1514,6 +1610,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/974/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2022-Virgo_Christi_egregia.krn",
 		"FILEBASE": "Lhe2022-Virgo_Christi_egregia"
 	},
@@ -1529,6 +1626,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/974/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2023-Nigra_sum.krn",
 		"FILEBASE": "Lhe2023-Nigra_sum"
 	},
@@ -1544,6 +1642,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104099",
 		"First Source Exact Date": "1534",
 		"First Source Date": "1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2032-Nigra_sum.krn",
 		"FILEBASE": "Lhe2032-Nigra_sum"
 	},
@@ -1560,6 +1659,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1663/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lpi/Lpi1001a-Missa_Philomena-Kyrie.krn",
 		"FILEBASE": "Lpi1001a-Missa_Philomena-Kyrie"
 	},
@@ -1576,6 +1676,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1663/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lpi/Lpi1001b-Missa_Philomena-Gloria.krn",
 		"FILEBASE": "Lpi1001b-Missa_Philomena-Gloria"
 	},
@@ -1592,6 +1693,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1663/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lpi/Lpi1001c-Missa_Philomena-Credo.krn",
 		"FILEBASE": "Lpi1001c-Missa_Philomena-Credo"
 	},
@@ -1607,6 +1709,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2001-Esto_nobis.krn",
 		"FILEBASE": "Lps2001-Esto_nobis"
 	},
@@ -1622,6 +1725,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2002-In_nomine_Jesu.krn",
 		"FILEBASE": "Lps2002-In_nomine_Jesu"
 	},
@@ -1638,6 +1742,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2003-Miserere_mei_Domine.krn",
 		"FILEBASE": "Lps2003-Miserere_mei_Domine"
 	},
@@ -1654,6 +1759,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2004-Miserere_mei_Deus.krn",
 		"FILEBASE": "Lps2004-Miserere_mei_Deus"
 	},
@@ -1669,6 +1775,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2005-In_convertendo_Dominus.krn",
 		"FILEBASE": "Lps2005-In_convertendo_Dominus"
 	},
@@ -1686,6 +1793,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077433/manifest",
 		"First Source Exact Date": "1519/06/17",
 		"First Source Date": "1519",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2007-Postquam_consummati_sunt.krn",
 		"FILEBASE": "Lps2007-Postquam_consummati_sunt"
 	},
@@ -1701,6 +1809,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lsa/Lsa2001-Alma_redemptoris_mater.krn",
 		"FILEBASE": "Lsa2001-Alma_redemptoris_mater"
 	},
@@ -1716,6 +1825,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2001-Mater_floreat.krn",
 		"FILEBASE": "Mlu2001-Mater_floreat"
 	},
@@ -1731,6 +1841,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2002-Fiere_tropos.krn",
 		"FILEBASE": "Mlu2002-Fiere_tropos"
 	},
@@ -1746,6 +1857,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2003-Vulnerasti_cor_meum.krn",
 		"FILEBASE": "Mlu2003-Vulnerasti_cor_meum"
 	},
@@ -1761,6 +1873,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2004-Salve_regina_Barbara.krn",
 		"FILEBASE": "Mlu2004-Salve_regina_Barbara"
 	},
@@ -1777,6 +1890,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077432/manifest",
 		"First Source Exact Date": "1514/08/17",
 		"First Source Date": "1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2001-Benedicta_es_celorum_regina.krn",
 		"FILEBASE": "Mou2001-Benedicta_es_celorum_regina"
 	},
@@ -1792,6 +1906,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2003-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Mou2003-Ave_Maria_gratia_plena"
 	},
@@ -1807,6 +1922,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2004-Salva_nos_Domine.krn",
 		"FILEBASE": "Mou2004-Salva_nos_Domine"
 	},
@@ -1822,6 +1938,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2005-Per_lignum_salvi_facti_sumus.krn",
 		"FILEBASE": "Mou2005-Per_lignum_salvi_facti_sumus"
 	},
@@ -1837,6 +1954,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2006-Tua_est_potentia.krn",
 		"FILEBASE": "Mou2006-Tua_est_potentia"
 	},
@@ -1855,6 +1973,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077432/manifest",
 		"First Source Exact Date": "1514/08/17",
 		"First Source Date": "1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2007-Gaude_Barbara.krn",
 		"FILEBASE": "Mou2007-Gaude_Barbara"
 	},
@@ -1870,6 +1989,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2008-Peccata_mea.krn",
 		"FILEBASE": "Mou2008-Peccata_mea"
 	},
@@ -1885,6 +2005,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2009-Moriens_lux.krn",
 		"FILEBASE": "Mou2009-Moriens_lux"
 	},
@@ -1900,6 +2021,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2010-Lectio_actuum_apostolorum.krn",
 		"FILEBASE": "Mou2010-Lectio_actuum_apostolorum"
 	},
@@ -1915,6 +2037,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2011-Puer_natus_est.krn",
 		"FILEBASE": "Mou2011-Puer_natus_est"
 	},
@@ -1930,6 +2053,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1671/#/",
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2012-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Mou2012-Ave_Maria_gratia_plena"
 	},
@@ -1945,6 +2069,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2013-Alleluia_confitemini_Domino.krn",
 		"FILEBASE": "Mou2013-Alleluia_confitemini_Domino"
 	},
@@ -1960,6 +2085,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2014-Missus_est_angelus_Gabriel.krn",
 		"FILEBASE": "Mou2014-Missus_est_angelus_Gabriel"
 	},
@@ -1975,6 +2101,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2015-Nesciens_mater.krn",
 		"FILEBASE": "Mou2015-Nesciens_mater"
 	},
@@ -1990,6 +2117,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103935",
 		"First Source Exact Date": "1521/08",
 		"First Source Date": "1521",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2016-Jocundare_Jerusalem.krn",
 		"FILEBASE": "Mou2016-Jocundare_Jerusalem"
 	},
@@ -2005,6 +2133,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1897/#/",
 		"First Source Exact Date": "~1506",
 		"First Source Date": "~1506",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3001-Je_le_laray_puisquil_my_bat.krn",
 		"FILEBASE": "Mou3001-Je_le_laray_puisquil_my_bat"
 	},
@@ -2020,6 +2149,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1897/#/",
 		"First Source Exact Date": "~1506",
 		"First Source Date": "~1506",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3002-Dieu_gard_de_mal_de_deshonneur.krn",
 		"FILEBASE": "Mou3002-Dieu_gard_de_mal_de_deshonneur"
 	},
@@ -2035,6 +2165,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3003-Lort_vilain_jaloux--BolC_Q19.krn",
 		"FILEBASE": "Mou3003-Lort_vilain_jaloux--BolC_Q19"
 	},
@@ -2050,6 +2181,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3004-En_venant_de_Lyon.krn",
 		"FILEBASE": "Mou3004-En_venant_de_Lyon"
 	},
@@ -2065,6 +2197,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3005-Qui_ne_regrettroit_le_gentil_Fevin.krn",
 		"FILEBASE": "Mou3005-Qui_ne_regrettroit_le_gentil_Fevin"
 	},
@@ -2080,6 +2213,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3006-Adieu_mes_amours.krn",
 		"FILEBASE": "Mou3006-Adieu_mes_amours"
 	},
@@ -2095,6 +2229,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ren/Ren2001-Regina_celi.krn",
 		"FILEBASE": "Ren2001-Regina_celi"
 	},
@@ -2110,6 +2245,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ren/Ren2002-Hec_dies_quam_fecit.krn",
 		"FILEBASE": "Ren2002-Hec_dies_quam_fecit"
 	},
@@ -2126,6 +2262,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002a-Requiem-Introit.krn",
 		"FILEBASE": "Ric1002a-Requiem-Introit"
 	},
@@ -2142,6 +2279,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002b-Requiem-Kyrie.krn",
 		"FILEBASE": "Ric1002b-Requiem-Kyrie"
 	},
@@ -2158,6 +2296,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002c-Requiem-Gradual.krn",
 		"FILEBASE": "Ric1002c-Requiem-Gradual"
 	},
@@ -2174,6 +2313,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002d-Requiem-Offertory.krn",
 		"FILEBASE": "Ric1002d-Requiem-Offertory"
 	},
@@ -2190,6 +2330,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002e-Requiem-Sanctus.krn",
 		"FILEBASE": "Ric1002e-Requiem-Sanctus"
 	},
@@ -2206,6 +2347,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002f-Requiem-Agnus.krn",
 		"FILEBASE": "Ric1002f-Requiem-Agnus"
 	},
@@ -2222,6 +2364,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104078",
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002g-Requiem-Communion.krn",
 		"FILEBASE": "Ric1002g-Requiem-Communion"
 	},
@@ -2237,6 +2380,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1671/#/",
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2001-Sufficiebat.krn",
 		"FILEBASE": "Ric2001-Sufficiebat"
 	},
@@ -2253,6 +2397,7 @@
 		"RISM Source Link": "https://rism.online/sources/990054665",
 		"First Source Exact Date": "1556",
 		"First Source Date": "1556",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2002-Consolator_captivorum.krn",
 		"FILEBASE": "Ric2002-Consolator_captivorum"
 	},
@@ -2268,6 +2413,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2003-Veni_sponsa_Christi.krn",
 		"FILEBASE": "Ric2003-Veni_sponsa_Christi"
 	},
@@ -2283,6 +2429,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2004-Emendemus_in_melius.krn",
 		"FILEBASE": "Ric2004-Emendemus_in_melius"
 	},
@@ -2300,6 +2447,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077433/manifest",
 		"First Source Exact Date": "1519/06/17",
 		"First Source Date": "1519",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2005-Miseremini_mei.krn",
 		"FILEBASE": "Ric2005-Miseremini_mei"
 	},
@@ -2315,6 +2463,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103917",
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2006-Philomena_praevia.krn",
 		"FILEBASE": "Ric2006-Philomena_praevia"
 	},
@@ -2330,6 +2479,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2007-Cognoscimus_Domine.krn",
 		"FILEBASE": "Ric2007-Cognoscimus_Domine"
 	},
@@ -2345,6 +2495,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2008-Christus_resurgens.krn",
 		"FILEBASE": "Ric2008-Christus_resurgens"
 	},
@@ -2360,6 +2511,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2009-Exaudiat_te_Dominus.krn",
 		"FILEBASE": "Ric2009-Exaudiat_te_Dominus"
 	},
@@ -2375,6 +2527,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103918",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2010-Pater_noster.krn",
 		"FILEBASE": "Ric2010-Pater_noster"
 	},
@@ -2390,6 +2543,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2011-Gloriosi_principes.krn",
 		"FILEBASE": "Ric2011-Gloriosi_principes"
 	},
@@ -2405,6 +2559,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2012-Jam_non_dicam.krn",
 		"FILEBASE": "Ric2012-Jam_non_dicam"
 	},
@@ -2420,6 +2575,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2013-Quem_dicunt_homines.krn",
 		"FILEBASE": "Ric2013-Quem_dicunt_homines"
 	},
@@ -2435,6 +2591,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1436/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2014-O_beata_infantia.krn",
 		"FILEBASE": "Ric2014-O_beata_infantia"
 	},
@@ -2450,6 +2607,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2016-Jerusalem_luge.krn",
 		"FILEBASE": "Ric2016-Jerusalem_luge"
 	},
@@ -2465,6 +2623,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1183/#/",
 		"First Source Exact Date": "~1535",
 		"First Source Date": "~1535",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2017-Ego_sum_qui_sum.krn",
 		"FILEBASE": "Ric2017-Ego_sum_qui_sum"
 	},
@@ -2480,6 +2639,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1183/#/",
 		"First Source Exact Date": "~1535",
 		"First Source Date": "~1535",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2018-Homo_quidam.krn",
 		"FILEBASE": "Ric2018-Homo_quidam"
 	},
@@ -2495,6 +2655,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1671/#/",
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3001-Damours_je_suis_desheritee.krn",
 		"FILEBASE": "Ric3001-Damours_je_suis_desheritee"
 	},
@@ -2510,6 +2671,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2072/#/",
 		"First Source Exact Date": "1523",
 		"First Source Date": "1523",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3002-Ne_vous_chaille_mon_cueur.krn",
 		"FILEBASE": "Ric3002-Ne_vous_chaille_mon_cueur"
 	},
@@ -2527,6 +2689,7 @@
 		"IIIF Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b550071421/manifest.json",
 		"First Source Exact Date": "1529/01/23",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3003-De_mon_triste_et_desplaisir.krn",
 		"FILEBASE": "Ric3003-De_mon_triste_et_desplaisir"
 	},
@@ -2542,6 +2705,7 @@
 		"RISM Source Link": "https://rism.online/sources/993104095",
 		"First Source Exact Date": "1533/04",
 		"First Source Date": "1533",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3004-Sur_tous_regretz.krn",
 		"FILEBASE": "Ric3004-Sur_tous_regretz"
 	},
@@ -2557,6 +2721,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2001-Vox_in_rama.krn",
 		"FILEBASE": "Ser2001-Vox_in_rama"
 	},
@@ -2572,6 +2737,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2002-Aspice_Domine.krn",
 		"FILEBASE": "Ser2002-Aspice_Domine"
 	},
@@ -2587,6 +2753,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2003-In_te_Domine_speravi.krn",
 		"FILEBASE": "Ser2003-In_te_Domine_speravi"
 	},
@@ -2602,6 +2769,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2004-Impetum_inimicorum.krn",
 		"FILEBASE": "Ser2004-Impetum_inimicorum"
 	},
@@ -2617,6 +2785,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2007-Quosque_non_reverteris_pax.krn",
 		"FILEBASE": "Ser2007-Quosque_non_reverteris_pax"
 	},
@@ -2632,6 +2801,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/974/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2008-Si_bona_suscepimus.krn",
 		"FILEBASE": "Ser2008-Si_bona_suscepimus"
 	},
@@ -2647,6 +2817,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1701/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3001-Hau_hau_hau_le_boys.krn",
 		"FILEBASE": "Ser3001-Hau_hau_hau_le_boys"
 	},
@@ -2662,6 +2833,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1701/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3002-Je_ne_fais_rien_que_requerir.krn",
 		"FILEBASE": "Ser3002-Je_ne_fais_rien_que_requerir"
 	},
@@ -2678,6 +2850,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1701/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3003-Languir_me_fais.krn",
 		"FILEBASE": "Ser3003-Languir_me_fais"
 	},
@@ -2694,6 +2867,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1701/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3004-Jouyssance_vous_donneray.krn",
 		"FILEBASE": "Ser3004-Jouyssance_vous_donneray"
 	},
@@ -2709,6 +2883,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1701/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3005-Secourez_moy_ma_dame.krn",
 		"FILEBASE": "Ser3005-Secourez_moy_ma_dame"
 	},
@@ -2724,6 +2899,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2003-Tota_pulchra_es.krn",
 		"FILEBASE": "Sil2003-Tota_pulchra_es"
 	},
@@ -2739,6 +2915,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2004-Intonuit_de_celo_Dominus.krn",
 		"FILEBASE": "Sil2004-Intonuit_de_celo_Dominus"
 	},
@@ -2754,6 +2931,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2005-In_illo_tempore.krn",
 		"FILEBASE": "Sil2005-In_illo_tempore"
 	},
@@ -2769,6 +2947,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2006-Omnis_pulchritudo_Domini.krn",
 		"FILEBASE": "Sil2006-Omnis_pulchritudo_Domini"
 	},
@@ -2784,6 +2963,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2007-Puer_natus_est.krn",
 		"FILEBASE": "Sil2007-Puer_natus_est"
 	},
@@ -2799,6 +2979,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103917",
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2010-Ave_ancilla_trinitatis.krn",
 		"FILEBASE": "Sil2010-Ave_ancilla_trinitatis"
 	},
@@ -2816,6 +2997,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.46/manifest.json",
 		"First Source Exact Date": "1527",
 		"First Source Date": "1527",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2021-Ave_regina_celorum_II.krn",
 		"FILEBASE": "Sil2021-Ave_regina_celorum_II"
 	},
@@ -2831,6 +3013,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1671/#/",
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/The/The2001-Verbum_bonum_et_suave.krn",
 		"FILEBASE": "The2001-Verbum_bonum_et_suave"
 	},
@@ -2846,6 +3029,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2001-Sancta_Maria_succurre_miseris.krn",
 		"FILEBASE": "Ver2001-Sancta_Maria_succurre_miseris"
 	},
@@ -2861,6 +3045,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114948",
 		"First Source Exact Date": "1523",
 		"First Source Date": "1523",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2004-Ave_sanctissima_Maria.krn",
 		"FILEBASE": "Ver2004-Ave_sanctissima_Maria"
 	},
@@ -2876,6 +3061,7 @@
 		"RISM Source Link": "https://rism.online/sources/993103993",
 		"First Source Exact Date": "1526",
 		"First Source Date": "1526",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2007-Tanto_tempore.krn",
 		"FILEBASE": "Ver2007-Tanto_tempore"
 	},
@@ -2891,6 +3077,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2008-O_dulcissime_Domine_Jesu_Christe.krn",
 		"FILEBASE": "Ver2008-O_dulcissime_Domine_Jesu_Christe"
 	},
@@ -2906,6 +3093,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2010-Gaudeamus_omnes_in_Domino.krn",
 		"FILEBASE": "Ver2010-Gaudeamus_omnes_in_Domino"
 	},
@@ -2921,6 +3109,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2011-Victime_pascali_laudes.krn",
 		"FILEBASE": "Ver2011-Victime_pascali_laudes"
 	},
@@ -2936,6 +3125,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2012-Ad_Dominum_cum_tribularer.krn",
 		"FILEBASE": "Ver2012-Ad_Dominum_cum_tribularer"
 	},
@@ -2951,6 +3141,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2013-Hesterna_die.krn",
 		"FILEBASE": "Ver2013-Hesterna_die"
 	},
@@ -2966,6 +3157,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2014-Si_bona_suscepimus.krn",
 		"FILEBASE": "Ver2014-Si_bona_suscepimus"
 	},
@@ -2981,6 +3173,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2015-In_te_Domine_speravi.krn",
 		"FILEBASE": "Ver2015-In_te_Domine_speravi"
 	},
@@ -2996,6 +3189,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2016-Ave_gratia_plena.krn",
 		"FILEBASE": "Ver2016-Ave_gratia_plena"
 	},
@@ -3011,6 +3205,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2017-Recordare_Domine.krn",
 		"FILEBASE": "Ver2017-Recordare_Domine"
 	},
@@ -3026,6 +3221,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2018-Sancta_Maria_virgo_virginum.krn",
 		"FILEBASE": "Ver2018-Sancta_Maria_virgo_virginum"
 	},
@@ -3041,6 +3237,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1392/#/",
 		"First Source Exact Date": "~1527",
 		"First Source Date": "~1527",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3004-Con_suave_parlar.krn",
 		"FILEBASE": "Ver3004-Con_suave_parlar"
 	},
@@ -3056,6 +3253,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1392/#/",
 		"First Source Exact Date": "~1527",
 		"First Source Date": "~1527",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3009-Madonna_quando_io_vodo_cantar.krn",
 		"FILEBASE": "Ver3009-Madonna_quando_io_vodo_cantar"
 	},
@@ -3071,6 +3269,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3011-Quando_nascesti_amore.krn",
 		"FILEBASE": "Ver3011-Quando_nascesti_amore"
 	},
@@ -3086,6 +3285,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3012-Con_langelico_riso.krn",
 		"FILEBASE": "Ver3012-Con_langelico_riso"
 	},
@@ -3101,6 +3301,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3013-Donna_ligiadra_e_bella.krn",
 		"FILEBASE": "Ver3013-Donna_ligiadra_e_bella"
 	},
@@ -3116,6 +3317,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3014-Amor_io_sento_lalma.krn",
 		"FILEBASE": "Ver3014-Amor_io_sento_lalma"
 	},
@@ -3131,6 +3333,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3015-I_vostri_acuti_dardi.krn",
 		"FILEBASE": "Ver3015-I_vostri_acuti_dardi"
 	},
@@ -3146,6 +3349,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3016-Quanto_sia_lieto_il_giorno.krn",
 		"FILEBASE": "Ver3016-Quanto_sia_lieto_il_giorno"
 	},
@@ -3161,6 +3365,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3017-Con_lacrim_et_sospir.krn",
 		"FILEBASE": "Ver3017-Con_lacrim_et_sospir"
 	},
@@ -3176,6 +3381,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3018-Madonna_per_voi_ardo.krn",
 		"FILEBASE": "Ver3018-Madonna_per_voi_ardo"
 	},
@@ -3191,6 +3397,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3019-Piove_da_li_occhi.krn",
 		"FILEBASE": "Ver3019-Piove_da_li_occhi"
 	},
@@ -3206,6 +3413,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3020-La_bella_donna.krn",
 		"FILEBASE": "Ver3020-La_bella_donna"
 	},
@@ -3221,6 +3429,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3021-Afflicti_spiriti_mei.krn",
 		"FILEBASE": "Ver3021-Afflicti_spiriti_mei"
 	},
@@ -3236,6 +3445,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3022-Donna_che_sete.krn",
 		"FILEBASE": "Ver3022-Donna_che_sete"
 	},
@@ -3251,6 +3461,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3023-Lasso_che_se_creduto.krn",
 		"FILEBASE": "Ver3023-Lasso_che_se_creduto"
 	},
@@ -3266,6 +3477,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3024-Madonna_qual_certeca.krn",
 		"FILEBASE": "Ver3024-Madonna_qual_certeca"
 	},
@@ -3281,6 +3493,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3025-Altro_non_e_el_mio_amor.krn",
 		"FILEBASE": "Ver3025-Altro_non_e_el_mio_amor"
 	},
@@ -3296,6 +3509,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3026-Madonna_io_vamo_et_taccio.krn",
 		"FILEBASE": "Ver3026-Madonna_io_vamo_et_taccio"
 	},
@@ -3311,6 +3525,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3027-Italia_mia_benchel_parlar.krn",
 		"FILEBASE": "Ver3027-Italia_mia_benchel_parlar"
 	},
@@ -3326,6 +3541,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3028-Donna_se_fera_stella.krn",
 		"FILEBASE": "Ver3028-Donna_se_fera_stella"
 	},
@@ -3341,6 +3557,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3029-Pur_troppo_donna.krn",
 		"FILEBASE": "Ver3029-Pur_troppo_donna"
 	},
@@ -3356,6 +3573,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3030-Ultimi_mei_sospiri.krn",
 		"FILEBASE": "Ver3030-Ultimi_mei_sospiri"
 	},
@@ -3371,6 +3589,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3031-O_dolce_nocte.krn",
 		"FILEBASE": "Ver3031-O_dolce_nocte"
 	},
@@ -3389,6 +3608,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00028444/manifest",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Vin/Vin1001b-Missa_Stabat_mater-Gloria.krn",
 		"FILEBASE": "Vin1001b-Missa_Stabat_mater-Gloria",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -3408,6 +3628,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00028444/manifest",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Vin/Vin1001a-Missa_Stabat_mater-Kyrie.krn",
 		"FILEBASE": "Vin1001a-Missa_Stabat_mater-Kyrie",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -3427,6 +3648,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00028444/manifest",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Vin/Vin1001e-Missa_Stabat_mater-Agnus.krn",
 		"FILEBASE": "Vin1001e-Missa_Stabat_mater-Agnus",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -3445,6 +3667,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.16/manifest.json",
 		"First Source Exact Date": "1517",
 		"First Source Date": "1517",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1001a-Missa_Mente_tota-Kyrie.krn",
 		"FILEBASE": "Wil1001a-Missa_Mente_tota-Kyrie"
 	},
@@ -3462,6 +3685,7 @@
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.16/manifest.json",
 		"First Source Exact Date": "1517",
 		"First Source Date": "1517",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1001b-Missa_Mente_tota-Gloria.krn",
 		"FILEBASE": "Wil1001b-Missa_Mente_tota-Gloria"
 	},
@@ -3478,6 +3702,7 @@
 		"RISM Source Link": "https://rism.online/sources/990068528",
 		"First Source Exact Date": "1536",
 		"First Source Date": "1536",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1002a-Missa_Laudate_Deum-Kyrie.krn",
 		"FILEBASE": "Wil1002a-Missa_Laudate_Deum-Kyrie"
 	},
@@ -3494,6 +3719,7 @@
 		"RISM Source Link": "https://rism.online/sources/990068528",
 		"First Source Exact Date": "1536",
 		"First Source Date": "1536",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie.krn",
 		"FILEBASE": "Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie"
 	},
@@ -3509,6 +3735,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2002-Saluto_te.krn",
 		"FILEBASE": "Wil2002-Saluto_te"
 	},
@@ -3524,6 +3751,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2005-Veni_sancte_spiritus.krn",
 		"FILEBASE": "Wil2005-Veni_sancte_spiritus"
 	},
@@ -3539,6 +3767,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2006-Beatus_Johannes_apostolus.krn",
 		"FILEBASE": "Wil2006-Beatus_Johannes_apostolus"
 	},
@@ -3554,6 +3783,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2007-Intercessio_quesumus_Domine.krn",
 		"FILEBASE": "Wil2007-Intercessio_quesumus_Domine"
 	},
@@ -3569,6 +3799,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2008-O_gemma_clarissima.krn",
 		"FILEBASE": "Wil2008-O_gemma_clarissima"
 	},
@@ -3585,6 +3816,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/#/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2009-Dominus_regit_me.krn",
 		"FILEBASE": "Wil2009-Dominus_regit_me"
 	},
@@ -3603,6 +3835,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00077435/manifest",
 		"First Source Exact Date": "1519",
 		"First Source Date": "1519",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2011-Verbum_bonum.krn",
 		"FILEBASE": "Wil2011-Verbum_bonum"
 	},
@@ -3618,6 +3851,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2016-Beata_dei_genitrix.krn",
 		"FILEBASE": "Wil2016-Beata_dei_genitrix"
 	},
@@ -3633,6 +3867,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2017-Omnipotens_sempiterne_Deus.krn",
 		"FILEBASE": "Wil2017-Omnipotens_sempiterne_Deus"
 	},
@@ -3648,6 +3883,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1449/#/",
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
+		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2019-In_tua_patientia.krn",
 		"FILEBASE": "Wil2019-In_tua_patientia"
 	},
@@ -3663,6 +3899,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1701/#/",
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2020-Congratulamini_mihi_omnes.krn",
 		"FILEBASE": "Wil2020-Congratulamini_mihi_omnes"
 	},
@@ -3678,6 +3915,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/#/",
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2023-Pater_noster.krn",
 		"FILEBASE": "Wil2023-Pater_noster"
 	},
@@ -3693,6 +3931,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1436/#/",
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2026-Salva_nos_ab_excidio.krn",
 		"FILEBASE": "Wil2026-Salva_nos_ab_excidio"
 	},
@@ -3708,6 +3947,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2033-Domine_Jesu_Christe_fili_dei.krn",
 		"FILEBASE": "Wil2033-Domine_Jesu_Christe_fili_dei"
 	},
@@ -3723,6 +3963,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2037-O_Salutaris_hostia.krn",
 		"FILEBASE": "Wil2037-O_Salutaris_hostia"
 	},
@@ -3738,6 +3979,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1021/#/",
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2041-Beata_viscera_Maria_virginis.krn",
 		"FILEBASE": "Wil2041-Beata_viscera_Maria_virginis"
 	},
@@ -3753,6 +3995,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2128/#/",
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2044-Mirabile_misterium.krn",
 		"FILEBASE": "Wil2044-Mirabile_misterium"
 	},
@@ -3768,6 +4011,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2128/#/",
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2046-Videns_Dominus.krn",
 		"FILEBASE": "Wil2046-Videns_Dominus"
 	},
@@ -3783,6 +4027,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2128/#/",
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2050-Ave_regina_celorum.krn",
 		"FILEBASE": "Wil2050-Ave_regina_celorum"
 	},
@@ -3798,6 +4043,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2128/#/",
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2052-Patefacte_sunt.krn",
 		"FILEBASE": "Wil2052-Patefacte_sunt"
 	},
@@ -3813,6 +4059,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2128/#/",
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2056-Salve_crux_sancta.krn",
 		"FILEBASE": "Wil2056-Salve_crux_sancta"
 	},
@@ -3828,6 +4075,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2128/#/",
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2057-O_magnum_misterium.krn",
 		"FILEBASE": "Wil2057-O_magnum_misterium"
 	},
@@ -3843,6 +4091,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3001-Petite_Camusette.krn",
 		"FILEBASE": "Wil3001-Petite_Camusette"
 	},
@@ -3858,6 +4107,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3002-Irons_nous_tous_jours_coucher.krn",
 		"FILEBASE": "Wil3002-Irons_nous_tous_jours_coucher"
 	},
@@ -3873,6 +4123,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3003-Mon_petit_cueur.krn",
 		"FILEBASE": "Wil3003-Mon_petit_cueur"
 	},
@@ -3888,6 +4139,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3004-Jayme_bien_mon_amy_I.krn",
 		"FILEBASE": "Wil3004-Jayme_bien_mon_amy_I"
 	},
@@ -3903,6 +4155,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3005-Jayme_bien_mon_amy_II.krn",
 		"FILEBASE": "Wil3005-Jayme_bien_mon_amy_II"
 	},
@@ -3918,6 +4171,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114949",
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3006-Mon_mary_ma_diffamee.krn",
 		"FILEBASE": "Wil3006-Mon_mary_ma_diffamee"
 	},
@@ -3933,6 +4187,7 @@
 		"RISM Source Link": "https://rism.online/sources/993114947",
 		"First Source Exact Date": "~1521",
 		"First Source Date": "~1521",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3007-Je_lay_aymee_bien_sept_ans_et_demy.krn",
 		"FILEBASE": "Wil3007-Je_lay_aymee_bien_sept_ans_et_demy"
 	},
@@ -3948,6 +4203,7 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1392/#/",
 		"First Source Exact Date": "~1527",
 		"First Source Date": "~1527",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3009-Si_je_ne_voy_mamie.krn",
 		"FILEBASE": "Wil3009-Si_je_ne_voy_mamie"
 	},
@@ -3965,6 +4221,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00082711/manifest",
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3010-A_laventure_lentrepris.krn",
 		"FILEBASE": "Wil3010-A_laventure_lentrepris"
 	},
@@ -3982,6 +4239,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00082711/manifest",
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3011-Mon_cueur_mon_corps.krn",
 		"FILEBASE": "Wil3011-Mon_cueur_mon_corps"
 	},
@@ -3999,6 +4257,7 @@
 		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00082711/manifest",
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
+		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3012-Dessus_le_marche_darras.krn",
 		"FILEBASE": "Wil3012-Dessus_le_marche_darras"
 	}
