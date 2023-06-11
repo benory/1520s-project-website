@@ -1,6 +1,6 @@
 [
 	{
-		"ID": "Ano2001a",
+		"ID": "Ano2001",
 		"Composer": "Anonymous",
 		"Title": "Nigra sum",
 		"Genre": "motet",
@@ -14,38 +14,6 @@
 		"Texted": "yes",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001a-Nigra_sum.krn",
 		"FILEBASE": "Ano2001a-Nigra_sum"
-	},
-	{
-		"ID": "Ano2001b",
-		"Composer": "Anonymous",
-		"Title": "Nigra sum",
-		"Genre": "motet",
-		"Voices": "4",
-		"Source of Edition": "I-VEc MS DCCLX; I-Bc R.142",
-		"First Source": "Libro primo de la fortuna (Rome: Nicolo de Judici)",
-		"RISM or CC Source Sigla": "[c.1530]|1",
-		"RISM Source Link": "https://rism.online/sources/993114954",
-		"First Source Exact Date": "~1526",
-		"First Source Date": "~1526",
-		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001b-Nigra_sum.krn",
-		"FILEBASE": "Ano2001b-Nigra_sum"
-	},
-	{
-		"ID": "Ano2001c",
-		"Composer": "Anonymous",
-		"Title": "Nigra sum",
-		"Genre": "motet",
-		"Voices": "4",
-		"Source of Edition": "I-VEc MS DCCLX; I-Bc R.142",
-		"First Source": "Libro primo de la fortuna (Rome: Nicolo de Judici)",
-		"RISM or CC Source Sigla": "[c.1530]|1",
-		"RISM Source Link": "https://rism.online/sources/993114954",
-		"First Source Exact Date": "~1526",
-		"First Source Date": "~1526",
-		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001c-Nigra_sum.krn",
-		"FILEBASE": "Ano2001c-Nigra_sum"
 	},
 	{
 		"ID": "Ano2002",
