@@ -275,8 +275,9 @@ function buildComposerSelect(data) {
 		}
 		counter[composer] = (counter[composer] === undefined) ? 1 : counter[composer] + 1;
 	}
-
+	
 	let clist = Object.keys(counter).sort();
+	clist.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 	let composerCount = clist.length;
 	let output = "<select class='composer' onchange='doSearch()'>\n";
 	output += `<option value="">Any composers [${composerCount}]</option>`;
