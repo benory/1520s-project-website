@@ -164,6 +164,16 @@ function displayWorkInfo(id) {
 		output += `<div class="work-item"><span class="key">First source date</span>${date}</div>`;
 	}
 
+	let sibelius = workinfo["Humdrum URL"];
+
+//https://github.com/benory/1520s-project/blob/main/humdrum/Ano/Ano2001-Nigra_sum.krn
+//https://raw.githubusercontent.com/benory/1520s-project/main/humdrum/Ano/Ano2001-Nigra_sum.krn
+
+	if (sibelius) {
+	   sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	   output += `<div class="work-item"><a target=_"blank" href="${sibelius}">Sibelius</a></div>`;
+	}
+
 	element.innerHTML = output;
 
 }
