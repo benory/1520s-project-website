@@ -1,6 +1,6 @@
 [
 	{
-		"ID": "Ano2001a",
+		"ID": "Ano2001",
 		"Composer": "Anonymous",
 		"Title": "Nigra sum",
 		"Genre": "motet",
@@ -11,8 +11,8 @@
 		"RISM Source Link": "https://rism.online/sources/993114954",
 		"First Source Exact Date": "~1526",
 		"First Source Date": "~1526",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001a-Nigra_sum.krn",
-		"FILEBASE": "Ano2001a-Nigra_sum"
+		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001-Nigra_sum.krn",
+		"FILEBASE": "Ano2001-Nigra_sum"
 	},
 	{
 		"ID": "Ano2001b",
