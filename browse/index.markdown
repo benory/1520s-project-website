@@ -8,7 +8,7 @@ title: browse
 <div id="list"></div>
 
 <style>
-	body {font: 400 12px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
+	body {font: 400 14px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
 	h1 { font-size: 40px; }
 	th { text-align: left; }
 	table.browse { min-width: 1000px; white-space: nowrap;}

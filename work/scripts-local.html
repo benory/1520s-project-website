@@ -126,12 +126,19 @@ function displayWorkInfo(id) {
 	let output = "";
 
 	let title = workinfo.Title;
+	let subtitle = workinfo["Subtitle"];
+	console.warn("subtitle", subtitle);
 	if (title) {
 		let diamm = workinfo["DIAMM Source Link"];
 		/*if (diamm) {
 			title += ` <span class="info-link">(<a target="_blank" href="${diamm}">DIAMM</a>)</span>`;
 		}*/
-		output += `<div class="work-item"><span class="key">Title</span>${title}</div>`;
+		if (subtitle){
+				output += `<div class="work-item"><span class="key">Title</span>${title}, ${subtitle}</div>`;
+		}
+		else {
+			output += `<div class="work-item"><span class="key">Title</span>${title}</div>`;
+		}
 	}
 
 	let composer = workinfo.Composer;
@@ -172,7 +179,7 @@ function displayWorkInfo(id) {
 	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	output += `<div class="work-item"><span class="key">Download</span><a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a></div>`;
+	output += `<div class="work-item"><span class="key">Download</span><a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a></div>`;
 
 	let github = workinfo["Humdrum URL"];
 		let urlParam = encodeURIComponent(github);
