@@ -174,6 +174,15 @@ function displayWorkInfo(id) {
 	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	output += `<div class="work-item"><span class="key">Download</span><a target="_blank" href="${pdf}" download>PDF</a> | <a target="_blank" href="${sibelius}">Sibelius</a> | <a target="_blank" href="${musicxml}">MusicXML</a> | <a target="_blank" href="${humdrum}">Humdrum</a></div>`;
 
+	let github = workinfo["Humdrum URL"];
+		let urlParam = encodeURIComponent(github);
+		let efilter = "";
+		if (DATA1520.filter) {
+			efilter = encodeURIComponent(DATA1520.filter);
+			efilter = `&filter=${efilter}`;
+		}
+		output += `<div class="work-item"><span class="key">View on</span><a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a> | <a target='_blank' href='${github}'>Github</a></div>`;
+
 	element.innerHTML = output;
 
 }
@@ -199,18 +208,6 @@ function displayWorkFooter(id) {
 
 	let output = "";
 
-	let github = workinfo["Humdrum URL"];
-	if (github) {
-		output += `<div class="work-item"><a target='_blank' href='${github}'>View on Github<a></div>`;
-
-		let urlParam = encodeURIComponent(github);
-		let efilter = "";
-		if (DATA1520.filter) {
-			efilter = encodeURIComponent(DATA1520.filter);
-			efilter = `&filter=${efilter}`;
-		}
-		output += `<div class="work-item"><a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>View on VHV<a></div>`;
-	}
 
 	element.innerHTML = output;
 }
