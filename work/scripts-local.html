@@ -164,15 +164,15 @@ function displayWorkInfo(id) {
 		output += `<div class="work-item"><span class="key">First source date</span>${date}</div>`;
 	}
 
+	let pdf = workinfo["Humdrum URL"];
 	let sibelius = workinfo["Humdrum URL"];
-
-//https://github.com/benory/1520s-project/blob/main/humdrum/Ano/Ano2001-Nigra_sum.krn
-//https://raw.githubusercontent.com/benory/1520s-project/main/humdrum/Ano/Ano2001-Nigra_sum.krn
-
-	if (sibelius) {
-	   sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	   output += `<div class="work-item"><a target=_"blank" href="${sibelius}">Sibelius</a></div>`;
-	}
+	let musicxml = workinfo["Humdrum URL"];
+	let humdrum = workinfo["Humdrum URL"];
+	pdf = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	output += `<div class="work-item"><span class="key">Download</span><a target="_blank" href="${pdf}" download>PDF</a> | <a target="_blank" href="${sibelius}">Sibelius</a> | <a target="_blank" href="${musicxml}">MusicXML</a> | <a target="_blank" href="${humdrum}">Humdrum</a></div>`;
 
 	element.innerHTML = output;
 
