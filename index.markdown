@@ -4,6 +4,9 @@
 
 layout: page
 ---
+<style>
+	main.page-content {padding: 0px;}
+</style>
 
 ![1520s Project banner](/images/1520s_banner.png)
 
@@ -13,10 +16,6 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 
 <br>
 
-**Sample Score**: [Adrian Willaert, _Verbum bonum_](http://www.1520s-project.com/work/?id=Wil2011)
-
-[![Sample score](/images/sample_score.svg)](http://www.1520s-project.com/work/?id=Wil2011)
-
 ### Project data
 + Current number of works: 257
 + Current number of notes: 262,728
@@ -25,3 +24,5 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 ![Project summary](/images/project_summary.svg)
 
 For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the overlap between the projects, see [about this project](about).
+
+[![Sample score](/images/sample_score.svg)](http://www.1520s-project.com/work/?id=Wil2011) *Sample Score*: [Adrian Willaert, _Verbum bonum_](http://www.1520s-project.com/work/?id=Wil2011)

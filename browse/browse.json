@@ -1800,7 +1800,7 @@
 	{
 		"ID": "Mlu2002",
 		"Composer": "Moulu, Pierre",
-		"Title": "Fiere tropos",
+		"Title": "Fiere attropos",
 		"Genre": "motet",
 		"Voices": "5",
 		"Modern Editions": "Lowinsky_1968",
@@ -1811,7 +1811,7 @@
 		"First Source Date": "1518",
 		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2002-Fiere_tropos.krn",
-		"FILEBASE": "Mlu2002-Fiere_tropos"
+		"FILEBASE": "Mlu2002-Fiere_attropos"
 	},
 	{
 		"ID": "Mlu2003",
