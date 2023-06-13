@@ -172,7 +172,7 @@ function displayWorkInfo(id) {
 	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	output += `<div class="work-item"><span class="key">Download</span><a target="_blank" href="${pdf}" download>PDF</a> | <a target="_blank" href="${sibelius}">Sibelius</a> | <a target="_blank" href="${musicxml}">MusicXML</a> | <a target="_blank" href="${humdrum}">Humdrum</a></div>`;
+	output += `<div class="work-item"><span class="key">Download</span><a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a></div>`;
 
 	let github = workinfo["Humdrum URL"];
 		let urlParam = encodeURIComponent(github);
@@ -188,6 +188,40 @@ function displayWorkInfo(id) {
 }
 
 
+//////////////////////////////
+//
+// forceDownload --
+//
+
+function forceDownload(event) {
+  event.stopPropagation();   // Do not open the hyperlink.
+  event.preventDefault();    // Prevent default behavior for <a>
+  let target = event.target;
+  let url = target.getAttribute("href");
+  let filename = url.replace(/.*\//, "");
+  downloadFile(url, filename);
+}
+
+//////////////////////////////
+//
+// downloadFile --
+//
+
+function downloadFile(url, filename) {
+  fetch(url)
+    .then(response => response.blob())
+    .then(blob => {
+      const a = document.createElement('a');
+      const objectURL = URL.createObjectURL(blob);
+      a.href = objectURL;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(objectURL);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
 
 //////////////////////////////
 //
