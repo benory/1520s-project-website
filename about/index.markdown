@@ -30,9 +30,9 @@ To upload music, Ory:
 + updates the metadata to the [Google Sheet](https://docs.google.com/spreadsheets/d/1rVevNfKXd0g4NWOZdm2dG9sbQgOh5nOr_5G_2nizAgY/edit?usp=sharing){:target="_blank"}.
 + populates the relevant files in the [Github repository](https://github.com/benory/1520s-project){:target="_blank"}.
 
-Do you see an mistake in a score? Do you disagree with the proposed editorial accidentals? Please feel free to email Ory with an [error report](mailto:benjaminory@gmail.com).
+Do you see an mistake in a score? Do you disagree with the proposed editorial accidentals? Please feel free to email Ory with an [error report](mailto:the1520sproject@gmail.com).
 
-Would you like a particular score to be texted? [Let Ory know.](mailto:benjaminory@gmail.com)
+Would you like a particular score to be texted? [Let us know.](mailto:the1520sproject@gmail.com)
 
 ## Support
 
