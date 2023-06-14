@@ -45,9 +45,3 @@ This project has been generously supported by the [Stanford Center for Spatial a
 Benjamin Ory, Project Director ([benjaminory@gmail.com](mailto:benjaminory@gmail.com))
 
 Craig Sapp, Technical Director ([craigsapp@stanford.edu](mailto:craigsapp@stanford.edu))
-
-<br>
-
-### Advisory board
-
-Jesse Rodin (Stanford University)
