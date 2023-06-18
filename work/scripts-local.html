@@ -129,10 +129,6 @@ function displayWorkInfo(id) {
 	let subtitle = workinfo["Subtitle"];
 	console.warn("subtitle", subtitle);
 	if (title) {
-		let diamm = workinfo["DIAMM Source Link"];
-		/*if (diamm) {
-			title += ` <span class="info-link">(<a target="_blank" href="${diamm}">DIAMM</a>)</span>`;
-		}*/
 		if (subtitle){
 				output += `<div class="work-item"><span class="key">Title</span>${title}, ${subtitle}</div>`;
 		}
@@ -148,11 +144,15 @@ function displayWorkInfo(id) {
 			composer = `${matches[2]} ${matches[1]}`;
 		}
 
-		let diamm = cominfo["Composer DIAMM page"];
-		/*if (diamm) {
-			composer += ` <span class="info-link">(<a target="_blank" href="${diamm}">DIAMM</a>)</span>`;
-		}*/
-
+		let diammcomp = cominfo["Composer DIAMM page"];
+		let rismid = cominfo["Composer RISM ID"];
+		let rismurl = rismid.substring(2);
+		if (diammcomp) {
+			composer += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
+		}
+		if (rismid) {
+			composer += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismurl}">RISM</a>)</span>`
+		}
 		output += `<div class="work-item"><span class="key">Composer</span>${composer}</div>`;
 	}
 
@@ -162,8 +162,17 @@ function displayWorkInfo(id) {
 	}
 
 	let source = workinfo["First Source"];
+
 	if (source) {
-		output += `<div class="work-item"><span class="key">First source</span>${source}</div>`;
+		let diammsource = workinfo["DIAMM Source Link"];
+		let rismsource = workinfo["RISM Source Link"];
+		if (diammsource) {
+			output += `<div class="work-item"><span class="key">First source</span><a target="_blank" href="${diammsource}">${source}</a></div>`;
+		} else if (rismsource) {
+			output += `<div class="work-item"><span class="key">First source</span><a target="_blank" href="${rismsource}">${source}</a></div>`;
+		} else {
+			output += `<div class="work-item"><span class="key">First source</span>${source}</div>`;
+		}
 	}
 
 	let date = workinfo["First Source Date"];
