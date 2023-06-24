@@ -146,7 +146,9 @@ function displayWorkInfo(id) {
 
 		let diammcomp = cominfo["Composer DIAMM page"];
 		let rismid = cominfo["Composer RISM ID"];
-		let rismurl = rismid.substring(2);
+		if (rismid) {
+			let rismurl = rismid.substring(2);
+		}
 		if (diammcomp) {
 			composer += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
 		}
