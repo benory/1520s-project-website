@@ -25,4 +25,4 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 
 For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the overlap between the projects, see [about this project](about).
 
-[![Sample score](/images/sample_score.svg)](http://www.1520s-project.com/work/?id=Wil2011) *Sample Score*: [Adrian Willaert, _Verbum bonum_](http://www.1520s-project.com/work/?id=Wil2011)
+[![Sample score](/images/sample_score.svg)](/work/?id=Wil2011) *Sample Score*: [Adrian Willaert, _Verbum bonum_](/work/?id=Wil2011)
