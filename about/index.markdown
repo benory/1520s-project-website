@@ -15,9 +15,9 @@ Complicating matters further: more works from during the 1520s survive than from
 
 ## Meeting the challenge
 
-The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, the project provides high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features more than 250 scores and more than 250,000 notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date.
+The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, the project provides high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features more than 250 scores and more than 250,000 notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date of the first surviving source.
 
-![Number of Works by Year](number_of_works_by_year.svg)
+![Number of Works by Date of First Source](number_of_works_by_year.svg)
 
 The project takes advantage of [editorial and encoding standards](https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards){:target="_blank"} developed by the [Josquin Research Project](https://josquin.stanford.edu){:target="_blank"} (JRP) over the past decade. This standardization enables the data from both projects to be shared; such interoperability is especially useful with respect to composers active right around 1520, such as Jean Mouton, Noel Bauldeweyn, or Jean Richafort.
 
