@@ -405,7 +405,7 @@ function buildTextSelect(data) {
 
 	let tlist = Object.keys(counter).sort();
 	let output = "<select class='text' onchange='doSearch()'>\n";
-	output += `<option value="">Texted?</option>`;
+	output += `<option value="">Texted score?</option>`;
 	for (let i=0; i<tlist.length; i++) {
 		let tcount = tlist[i];
 		output += `<option value="${tcount}">${tcount}</option>`;
