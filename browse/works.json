@@ -12,7 +12,7 @@
 		"First Source Exact Date": "~1526",
 		"First Source Date": "~1526",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2001-Nigra_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2001-Nigra_sum.krn",
 		"FILEBASE": "Ano2001-Nigra_sum"
 	},
 	{
@@ -28,7 +28,7 @@
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II.krn",
 		"FILEBASE": "Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II"
 	},
 	{
@@ -44,7 +44,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni.krn",
 		"FILEBASE": "Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni"
 	},
 	{
@@ -60,7 +60,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2004-Congratulamini_mihi_omnes.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2004-Congratulamini_mihi_omnes.krn",
 		"FILEBASE": "Ano2004-Congratulamini_mihi_omnes"
 	},
 	{
@@ -76,7 +76,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ano/Ano2005-Ecce_tu_pulcra_es.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2005-Ecce_tu_pulcra_es.krn",
 		"FILEBASE": "Ano2005-Ecce_tu_pulcra_es"
 	},
 	{
@@ -92,7 +92,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bar/Bar2001-Peccantem_me_cotidie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bar/Bar2001-Peccantem_me_cotidie.krn",
 		"FILEBASE": "Bar2001-Peccantem_me_cotidie"
 	},
 	{
@@ -106,12 +106,12 @@
 		"First Source": "D-Ju MS 2",
 		"RISM or CC Source Sigla": "JenaU 2",
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1147/#/",
-		"IIIF Source": "https://collections.thulb.uni-jena.de/rsc/viewer/HisBest_derivate_00002711/BE_1035_0000_00.tif",
+		"IIIF Source": "https://collections.thulb.uni-jena.de/rsc/viewer/HisBest_derivate_00002711/BE_1035_0098.tif?logicalDiv=log000008",
 		"IIIF Manifest": "https://collections.thulb.uni-jena.de/api/iiif/presentation/v2/HisBest_derivate_00002711/manifest",
 		"First Source Exact Date": "1516/03",
 		"First Source Date": "1516",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1001a-Missa_Inviolata-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau1001a-Missa_Inviolata-Kyrie.krn",
 		"FILEBASE": "Bau1001a-Missa_Inviolata-Kyrie",
 		"Internal Notes": "two different options for image viewer"
 	},
@@ -131,7 +131,7 @@
 		"First Source Exact Date": "1517/09",
 		"First Source Date": "1517",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1002a-Missa_En_douleur_en_tristesse-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau1002a-Missa_En_douleur_en_tristesse-Kyrie.krn",
 		"FILEBASE": "Bau1002a-Missa_En_douleur_en_tristesse-Kyrie",
 		"Internal Notes": "two different options for image viewer"
 	},
@@ -151,7 +151,7 @@
 		"First Source Exact Date": "1517/09",
 		"First Source Date": "1517",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1002b-Missa_En_douleur_en_tristesse-Gloria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau1002b-Missa_En_douleur_en_tristesse-Gloria.krn",
 		"FILEBASE": "Bau1002b-Missa_En_douleur_en_tristesse-Gloria",
 		"Internal Notes": "two different options for image viewer"
 	},
@@ -171,7 +171,7 @@
 		"First Source Exact Date": "1517/09",
 		"First Source Date": "1517",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau1002e-Missa_En_douleur_en_tristesse-Agnus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau1002e-Missa_En_douleur_en_tristesse-Agnus.krn",
 		"FILEBASE": "Bau1002e-Missa_En_douleur_en_tristesse-Agnus",
 		"Internal Notes": "two different options for image viewer"
 	},
@@ -190,7 +190,7 @@
 		"First Source Exact Date": "1519/10/31",
 		"First Source Date": "1519",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau2003-Quam_pulchra_es.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau2003-Quam_pulchra_es.krn",
 		"FILEBASE": "Bau2003-Quam_pulchra_es"
 	},
 	{
@@ -208,7 +208,7 @@
 		"First Source Exact Date": "1519/10/31",
 		"First Source Date": "1519",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau2004-Gloriosus_Dei_apostolus_Bartholomeus--Motetti_de_la_corona_IV.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau2004-Gloriosus_Dei_apostolus_Bartholomeus--Motetti_de_la_corona_IV.krn",
 		"FILEBASE": "Bau2004-Gloriosus_Dei_apostolus_Bartholomeus--Motetti_de_la_corona_IV"
 	},
 	{
@@ -224,7 +224,7 @@
 		"First Source Exact Date": "1523",
 		"First Source Date": "1523",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bau/Bau3001-En_douleur_en_tristesse.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau3001-En_douleur_en_tristesse.krn",
 		"FILEBASE": "Bau3001-En_douleur_en_tristesse"
 	},
 	{
@@ -240,7 +240,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Bis/Bis2001-Confirma_hoc_Deus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bis/Bis2001-Confirma_hoc_Deus.krn",
 		"FILEBASE": "Bis2001-Confirma_hoc_Deus"
 	},
 	{
@@ -258,7 +258,7 @@
 		"First Source Exact Date": "1520",
 		"First Source Date": "1520",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Cha/Cha2001-De_profundis_clamavi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Cha/Cha2001-De_profundis_clamavi.krn",
 		"FILEBASE": "Cha2001-De_profundis_clamavi"
 	},
 	{
@@ -274,7 +274,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Con/Con2001-Assumpta_est_Maria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Con/Con2001-Assumpta_est_Maria.krn",
 		"FILEBASE": "Con2001-Assumpta_est_Maria"
 	},
 	{
@@ -290,7 +290,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Con/Con2004-Ego_sum_qui_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Con/Con2004-Ego_sum_qui_sum.krn",
 		"FILEBASE": "Con2004-Ego_sum_qui_sum"
 	},
 	{
@@ -306,7 +306,7 @@
 		"First Source Exact Date": "1534",
 		"First Source Date": "1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Con/Con2006-Nigra_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Con/Con2006-Nigra_sum.krn",
 		"FILEBASE": "Con2006-Nigra_sum"
 	},
 	{
@@ -322,7 +322,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Era/Era2001-Gloriosi_principes.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Era/Era2001-Gloriosi_principes.krn",
 		"FILEBASE": "Era2001-Gloriosi_principes"
 	},
 	{
@@ -338,7 +338,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2001-Quis_dabit_oculis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2001-Quis_dabit_oculis.krn",
 		"FILEBASE": "Fsc2001-Quis_dabit_oculis"
 	},
 	{
@@ -354,7 +354,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2002-O_pulcherrima_virgo.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2002-O_pulcherrima_virgo.krn",
 		"FILEBASE": "Fsc2002-O_pulcherrima_virgo"
 	},
 	{
@@ -370,7 +370,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2003-Elisabeth_beatissima.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2003-Elisabeth_beatissima.krn",
 		"FILEBASE": "Fsc2003-Elisabeth_beatissima"
 	},
 	{
@@ -386,7 +386,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2004-Regem_regum_Dominum--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2004-Regem_regum_Dominum--BolC_Q19.krn",
 		"FILEBASE": "Fsc2004-Regem_regum_Dominum--BolC_Q19"
 	},
 	{
@@ -402,7 +402,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2005-Regem_archangelorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2005-Regem_archangelorum.krn",
 		"FILEBASE": "Fsc2005-Regem_archangelorum"
 	},
 	{
@@ -419,7 +419,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2006-Super_flumina_babilonis--Medici_Codex.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2006-Super_flumina_babilonis--Medici_Codex.krn",
 		"FILEBASE": "Fsc2006-Super_flumina_babilonis--Medici_Codex"
 	},
 	{
@@ -436,7 +436,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2007-Deduc_me_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2007-Deduc_me_Domine.krn",
 		"FILEBASE": "Fsc2007-Deduc_me_Domine"
 	},
 	{
@@ -453,7 +453,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2008-Angelus_ad_pastores.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2008-Angelus_ad_pastores.krn",
 		"FILEBASE": "Fsc2008-Angelus_ad_pastores"
 	},
 	{
@@ -470,7 +470,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2009-Regina_celi_letare.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2009-Regina_celi_letare.krn",
 		"FILEBASE": "Fsc2009-Regina_celi_letare"
 	},
 	{
@@ -488,7 +488,7 @@
 		"First Source Exact Date": "1519/10/31",
 		"First Source Date": "1519",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2010-Tribus_miraculis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2010-Tribus_miraculis.krn",
 		"FILEBASE": "Fsc2010-Tribus_miraculis"
 	},
 	{
@@ -504,7 +504,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2011-Maria_virgo_prescripta.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2011-Maria_virgo_prescripta.krn",
 		"FILEBASE": "Fsc2011-Maria_virgo_prescripta"
 	},
 	{
@@ -520,7 +520,7 @@
 		"First Source Exact Date": "1521/09",
 		"First Source Date": "1521",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2012-Quam_pulchra_es.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2012-Quam_pulchra_es.krn",
 		"FILEBASE": "Fsc2012-Quam_pulchra_es"
 	},
 	{
@@ -536,7 +536,7 @@
 		"First Source Exact Date": "1521/09",
 		"First Source Date": "1521",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2013-Nunc_dimittis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2013-Nunc_dimittis.krn",
 		"FILEBASE": "Fsc2013-Nunc_dimittis"
 	},
 	{
@@ -552,7 +552,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2014-Felix_Anna.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2014-Felix_Anna.krn",
 		"FILEBASE": "Fsc2014-Felix_Anna"
 	},
 	{
@@ -568,7 +568,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2015-Vidi_speciosam.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2015-Vidi_speciosam.krn",
 		"FILEBASE": "Fsc2015-Vidi_speciosam"
 	},
 	{
@@ -584,7 +584,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2016-Congratulamini_mihi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2016-Congratulamini_mihi.krn",
 		"FILEBASE": "Fsc2016-Congratulamini_mihi"
 	},
 	{
@@ -602,7 +602,7 @@
 		"First Source Exact Date": "1527",
 		"First Source Date": "1527",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2018-Inviolata_integra_et_casta_es.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2018-Inviolata_integra_et_casta_es.krn",
 		"FILEBASE": "Fsc2018-Inviolata_integra_et_casta_es"
 	},
 	{
@@ -620,7 +620,7 @@
 		"First Source Exact Date": "1527",
 		"First Source Date": "1527",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2019-In_illo_tempore.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2019-In_illo_tempore.krn",
 		"FILEBASE": "Fsc2019-In_illo_tempore"
 	},
 	{
@@ -636,7 +636,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2020-Sub_tuum_presedium.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2020-Sub_tuum_presedium.krn",
 		"FILEBASE": "Fsc2020-Sub_tuum_presedium"
 	},
 	{
@@ -654,7 +654,7 @@
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2021-Ecce_Deus_salvator_meus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2021-Ecce_Deus_salvator_meus.krn",
 		"FILEBASE": "Fsc2021-Ecce_Deus_salvator_meus"
 	},
 	{
@@ -672,7 +672,7 @@
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2022-Regina_celi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2022-Regina_celi.krn",
 		"FILEBASE": "Fsc2022-Regina_celi"
 	},
 	{
@@ -688,7 +688,7 @@
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc2023-Petrus_apostolus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc2023-Petrus_apostolus.krn",
 		"FILEBASE": "Fsc2023-Petrus_apostolus"
 	},
 	{
@@ -704,7 +704,7 @@
 		"First Source Exact Date": "~1520",
 		"First Source Date": "~1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fsc/Fsc3001-Lieto_non_hebbi_mai.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fsc/Fsc3001-Lieto_non_hebbi_mai.krn",
 		"FILEBASE": "Fsc3001-Lieto_non_hebbi_mai"
 	},
 	{
@@ -720,7 +720,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss2001-Angele_Dei.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss2001-Angele_Dei.krn",
 		"FILEBASE": "Fss2001-Angele_Dei"
 	},
 	{
@@ -736,7 +736,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss2002-Hec_est_illa_dulcis_rosa.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss2002-Hec_est_illa_dulcis_rosa.krn",
 		"FILEBASE": "Fss2002-Hec_est_illa_dulcis_rosa"
 	},
 	{
@@ -752,7 +752,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss2003-In_illo_tempore_postquam.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss2003-In_illo_tempore_postquam.krn",
 		"FILEBASE": "Fss2003-In_illo_tempore_postquam"
 	},
 	{
@@ -768,7 +768,7 @@
 		"First Source Exact Date": "~1520",
 		"First Source Date": "~1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fss/Fss3007-O_passi_sparsi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss3007-O_passi_sparsi.krn",
 		"FILEBASE": "Fss3007-O_passi_sparsi"
 	},
 	{
@@ -786,7 +786,7 @@
 		"First Source Exact Date": "1514/08/17",
 		"First Source Date": "1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Fva/Fva2001-Sancta_trinitas.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fva/Fva2001-Sancta_trinitas.krn",
 		"FILEBASE": "Fva2001-Sancta_trinitas"
 	},
 	{
@@ -803,7 +803,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom1002a-Missa_Quam_pulchra_es-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom1002a-Missa_Quam_pulchra_es-Kyrie.krn",
 		"FILEBASE": "Gom1002a-Missa_Quam_pulchra_es-Kyrie"
 	},
 	{
@@ -820,7 +820,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom1002b-Missa_Quam_pulchra_es-Gloria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom1002b-Missa_Quam_pulchra_es-Gloria.krn",
 		"FILEBASE": "Gom1002b-Missa_Quam_pulchra_es-Gloria"
 	},
 	{
@@ -837,7 +837,7 @@
 		"First Source Exact Date": "1542",
 		"First Source Date": "1542",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom1006a-Missa_Media_vita-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom1006a-Missa_Media_vita-Kyrie.krn",
 		"FILEBASE": "Gom1006a-Missa_Media_vita-Kyrie"
 	},
 	{
@@ -855,7 +855,7 @@
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2001-Dicite_in_magni.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom2001-Dicite_in_magni.krn",
 		"FILEBASE": "Gom2001-Dicite_in_magni"
 	},
 	{
@@ -873,7 +873,7 @@
 		"First Source Exact Date": "1529/10/1",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2002-Angelus_Domini.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom2002-Angelus_Domini.krn",
 		"FILEBASE": "Gom2002-Angelus_Domini"
 	},
 	{
@@ -891,7 +891,7 @@
 		"First Source Exact Date": "1549",
 		"First Source Date": "1549",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2004-Qui_colis_Ausoniam.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom2004-Qui_colis_Ausoniam.krn",
 		"FILEBASE": "Gom2004-Qui_colis_Ausoniam"
 	},
 	{
@@ -909,7 +909,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom2005-Aspice_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom2005-Aspice_Domine.krn",
 		"FILEBASE": "Gom2005-Aspice_Domine"
 	},
 	{
@@ -927,7 +927,7 @@
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom3001-Gris_et_tanne_me_fault_porter.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom3001-Gris_et_tanne_me_fault_porter.krn",
 		"FILEBASE": "Gom3001-Gris_et_tanne_me_fault_porter"
 	},
 	{
@@ -945,7 +945,7 @@
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Gom/Gom3002-Alleluya_my_fault_chanter.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom3002-Alleluya_my_fault_chanter.krn",
 		"FILEBASE": "Gom3002-Alleluya_my_fault_chanter"
 	},
 	{
@@ -961,7 +961,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jac/Jac2001-Rogamus_te.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jac/Jac2001-Rogamus_te.krn",
 		"FILEBASE": "Jac2001-Rogamus_te"
 	},
 	{
@@ -977,7 +977,7 @@
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jac/Jac2003-Interveniat_pro_Gabrieli.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jac/Jac2003-Interveniat_pro_Gabrieli.krn",
 		"FILEBASE": "Jac2003-Interveniat_pro_Gabrieli"
 	},
 	{
@@ -993,7 +993,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2001-Lauda_Jerusalem_Dominum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2001-Lauda_Jerusalem_Dominum.krn",
 		"FILEBASE": "Jan2001-Lauda_Jerusalem_Dominum"
 	},
 	{
@@ -1009,7 +1009,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2002-Vox_de_celis--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2002-Vox_de_celis--BolC_Q19.krn",
 		"FILEBASE": "Jan2002-Vox_de_celis--BolC_Q19"
 	},
 	{
@@ -1025,7 +1025,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2003-O_sacrum_convivium--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2003-O_sacrum_convivium--BolC_Q19.krn",
 		"FILEBASE": "Jan2003-O_sacrum_convivium--BolC_Q19"
 	},
 	{
@@ -1041,7 +1041,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2004-O_magnum_misterium--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2004-O_magnum_misterium--BolC_Q19.krn",
 		"FILEBASE": "Jan2004-O_magnum_misterium--BolC_Q19"
 	},
 	{
@@ -1059,7 +1059,7 @@
 		"First Source Exact Date": "1519/06/17",
 		"First Source Date": "1519",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2005-O_benignissime_Domine_Jesu.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2005-O_benignissime_Domine_Jesu.krn",
 		"FILEBASE": "Jan2005-O_benignissime_Domine_Jesu"
 	},
 	{
@@ -1075,7 +1075,7 @@
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2006-Ave_stella_matutina.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2006-Ave_stella_matutina.krn",
 		"FILEBASE": "Jan2006-Ave_stella_matutina"
 	},
 	{
@@ -1091,7 +1091,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2007-O_Domine_Jesu_Christe.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2007-O_Domine_Jesu_Christe.krn",
 		"FILEBASE": "Jan2007-O_Domine_Jesu_Christe"
 	},
 	{
@@ -1107,7 +1107,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2008-Ave_gloriose_beatissime_Antoni.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2008-Ave_gloriose_beatissime_Antoni.krn",
 		"FILEBASE": "Jan2008-Ave_gloriose_beatissime_Antoni"
 	},
 	{
@@ -1123,7 +1123,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jan/Jan2009-Johannes_Jesu_Christo.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan2009-Johannes_Jesu_Christo.krn",
 		"FILEBASE": "Jan2009-Johannes_Jesu_Christo"
 	},
 	{
@@ -1139,7 +1139,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2001-Noe_noe_hodie_salvator_mundi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2001-Noe_noe_hodie_salvator_mundi.krn",
 		"FILEBASE": "Jom2001-Noe_noe_hodie_salvator_mundi"
 	},
 	{
@@ -1155,7 +1155,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2002-O_vos_qui_transitis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2002-O_vos_qui_transitis.krn",
 		"FILEBASE": "Jom2002-O_vos_qui_transitis"
 	},
 	{
@@ -1171,7 +1171,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2003-Veni_sancte_spiritus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2003-Veni_sancte_spiritus.krn",
 		"FILEBASE": "Jom2003-Veni_sancte_spiritus"
 	},
 	{
@@ -1187,7 +1187,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2004-Ecclesiam_tuam_Deus--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2004-Ecclesiam_tuam_Deus--BolC_Q19.krn",
 		"FILEBASE": "Jom2004-Ecclesiam_tuam_Deus--BolC_Q19"
 	},
 	{
@@ -1203,7 +1203,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2005-Sufficiebat_nobis_paupertas.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2005-Sufficiebat_nobis_paupertas.krn",
 		"FILEBASE": "Jom2005-Sufficiebat_nobis_paupertas"
 	},
 	{
@@ -1219,7 +1219,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2006-Ave_mater_matris_Dei--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2006-Ave_mater_matris_Dei--BolC_Q19.krn",
 		"FILEBASE": "Jom2006-Ave_mater_matris_Dei--BolC_Q19"
 	},
 	{
@@ -1236,7 +1236,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2007-O_Jesu_Christe_miserere_mei.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2007-O_Jesu_Christe_miserere_mei.krn",
 		"FILEBASE": "Jom2007-O_Jesu_Christe_miserere_mei"
 	},
 	{
@@ -1252,7 +1252,7 @@
 		"First Source Exact Date": "1539",
 		"First Source Date": "1539",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2008-Ploremus_omnes_et_lacrimemur.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2008-Ploremus_omnes_et_lacrimemur.krn",
 		"FILEBASE": "Jom2008-Ploremus_omnes_et_lacrimemur"
 	},
 	{
@@ -1268,7 +1268,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2009-Alleluia_surrexit_Dominus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2009-Alleluia_surrexit_Dominus.krn",
 		"FILEBASE": "Jom2009-Alleluia_surrexit_Dominus"
 	},
 	{
@@ -1284,7 +1284,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2010-Domine_bonum_est_nos.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2010-Domine_bonum_est_nos.krn",
 		"FILEBASE": "Jom2010-Domine_bonum_est_nos"
 	},
 	{
@@ -1301,7 +1301,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2011-Cantate_Domino.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2011-Cantate_Domino.krn",
 		"FILEBASE": "Jom2011-Cantate_Domino"
 	},
 	{
@@ -1317,7 +1317,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2012-Visita_quesumus_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2012-Visita_quesumus_Domine.krn",
 		"FILEBASE": "Jom2012-Visita_quesumus_Domine"
 	},
 	{
@@ -1333,7 +1333,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2013-Retribuere_dignare_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2013-Retribuere_dignare_Domine.krn",
 		"FILEBASE": "Jom2013-Retribuere_dignare_Domine"
 	},
 	{
@@ -1350,7 +1350,7 @@
 		"First Source Exact Date": "1526",
 		"First Source Date": "1526",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2014-Omnes_sancti_tui_quesumus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2014-Omnes_sancti_tui_quesumus.krn",
 		"FILEBASE": "Jom2014-Omnes_sancti_tui_quesumus"
 	},
 	{
@@ -1366,7 +1366,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2022-Ave_regina_celorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2022-Ave_regina_celorum.krn",
 		"FILEBASE": "Jom2022-Ave_regina_celorum"
 	},
 	{
@@ -1382,7 +1382,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Jom/Jom2023-Sancta_Trinitas.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2023-Sancta_Trinitas.krn",
 		"FILEBASE": "Jom2023-Sancta_Trinitas"
 	},
 	{
@@ -1398,7 +1398,7 @@
 		"First Source Exact Date": "1521/08",
 		"First Source Date": "1521",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lfg/Lfg2004-Partus_et_integritas.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lfg/Lfg2004-Partus_et_integritas.krn",
 		"FILEBASE": "Lfg2004-Partus_et_integritas"
 	},
 	{
@@ -1414,7 +1414,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2001-Te_matrem.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2001-Te_matrem.krn",
 		"FILEBASE": "Lhe2001-Te_matrem"
 	},
 	{
@@ -1430,7 +1430,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2002-Dum_complerentur.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2002-Dum_complerentur.krn",
 		"FILEBASE": "Lhe2002-Dum_complerentur"
 	},
 	{
@@ -1446,7 +1446,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2004-Sancta_Maria_succurre_miseris.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2004-Sancta_Maria_succurre_miseris.krn",
 		"FILEBASE": "Lhe2004-Sancta_Maria_succurre_miseris"
 	},
 	{
@@ -1462,7 +1462,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2005-Ave_Domina_mea.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2005-Ave_Domina_mea.krn",
 		"FILEBASE": "Lhe2005-Ave_Domina_mea"
 	},
 	{
@@ -1478,7 +1478,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2006-Salvator_mundi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2006-Salvator_mundi.krn",
 		"FILEBASE": "Lhe2006-Salvator_mundi"
 	},
 	{
@@ -1496,7 +1496,7 @@
 		"First Source Exact Date": "1521",
 		"First Source Date": "1521",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2007-Ave_regina_celorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2007-Ave_regina_celorum.krn",
 		"FILEBASE": "Lhe2007-Ave_regina_celorum"
 	},
 	{
@@ -1512,7 +1512,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2015-Ascendens_Christus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2015-Ascendens_Christus.krn",
 		"FILEBASE": "Lhe2015-Ascendens_Christus"
 	},
 	{
@@ -1528,7 +1528,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2016-Deus_in_nomine_tuo.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2016-Deus_in_nomine_tuo.krn",
 		"FILEBASE": "Lhe2016-Deus_in_nomine_tuo"
 	},
 	{
@@ -1546,7 +1546,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2017-Nigra_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2017-Nigra_sum.krn",
 		"FILEBASE": "Lhe2017-Nigra_sum",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
 	},
@@ -1563,7 +1563,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2021-Ave_Maria_gratia_plena.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2021-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Lhe2021-Ave_Maria_gratia_plena"
 	},
 	{
@@ -1579,7 +1579,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2022-Virgo_Christi_egregia.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2022-Virgo_Christi_egregia.krn",
 		"FILEBASE": "Lhe2022-Virgo_Christi_egregia"
 	},
 	{
@@ -1595,7 +1595,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2023-Nigra_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2023-Nigra_sum.krn",
 		"FILEBASE": "Lhe2023-Nigra_sum"
 	},
 	{
@@ -1611,7 +1611,7 @@
 		"First Source Exact Date": "1534",
 		"First Source Date": "1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lhe/Lhe2032-Nigra_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2032-Nigra_sum.krn",
 		"FILEBASE": "Lhe2032-Nigra_sum"
 	},
 	{
@@ -1628,7 +1628,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lpi/Lpi1001a-Missa_Philomena-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lpi/Lpi1001a-Missa_Philomena-Kyrie.krn",
 		"FILEBASE": "Lpi1001a-Missa_Philomena-Kyrie"
 	},
 	{
@@ -1645,7 +1645,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lpi/Lpi1001b-Missa_Philomena-Gloria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lpi/Lpi1001b-Missa_Philomena-Gloria.krn",
 		"FILEBASE": "Lpi1001b-Missa_Philomena-Gloria"
 	},
 	{
@@ -1662,7 +1662,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lpi/Lpi1001c-Missa_Philomena-Credo.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lpi/Lpi1001c-Missa_Philomena-Credo.krn",
 		"FILEBASE": "Lpi1001c-Missa_Philomena-Credo"
 	},
 	{
@@ -1678,7 +1678,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2001-Esto_nobis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2001-Esto_nobis.krn",
 		"FILEBASE": "Lps2001-Esto_nobis"
 	},
 	{
@@ -1694,7 +1694,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2002-In_nomine_Jesu.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2002-In_nomine_Jesu.krn",
 		"FILEBASE": "Lps2002-In_nomine_Jesu"
 	},
 	{
@@ -1711,7 +1711,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2003-Miserere_mei_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2003-Miserere_mei_Domine.krn",
 		"FILEBASE": "Lps2003-Miserere_mei_Domine"
 	},
 	{
@@ -1728,7 +1728,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2004-Miserere_mei_Deus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2004-Miserere_mei_Deus.krn",
 		"FILEBASE": "Lps2004-Miserere_mei_Deus"
 	},
 	{
@@ -1744,7 +1744,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2005-In_convertendo_Dominus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2005-In_convertendo_Dominus.krn",
 		"FILEBASE": "Lps2005-In_convertendo_Dominus"
 	},
 	{
@@ -1762,7 +1762,7 @@
 		"First Source Exact Date": "1519/06/17",
 		"First Source Date": "1519",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lps/Lps2007-Postquam_consummati_sunt.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2007-Postquam_consummati_sunt.krn",
 		"FILEBASE": "Lps2007-Postquam_consummati_sunt"
 	},
 	{
@@ -1778,7 +1778,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Lsa/Lsa2001-Alma_redemptoris_mater.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lsa/Lsa2001-Alma_redemptoris_mater.krn",
 		"FILEBASE": "Lsa2001-Alma_redemptoris_mater"
 	},
 	{
@@ -1794,7 +1794,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2001-Mater_floreat.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2001-Mater_floreat.krn",
 		"FILEBASE": "Mlu2001-Mater_floreat"
 	},
 	{
@@ -1810,7 +1810,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2002-Fiere_attropos.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2002-Fiere_attropos.krn",
 		"FILEBASE": "Mlu2002-Fiere_attropos"
 	},
 	{
@@ -1826,7 +1826,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2003-Vulnerasti_cor_meum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2003-Vulnerasti_cor_meum.krn",
 		"FILEBASE": "Mlu2003-Vulnerasti_cor_meum"
 	},
 	{
@@ -1842,7 +1842,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mlu/Mlu2004-Salve_regina_Barbara.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2004-Salve_regina_Barbara.krn",
 		"FILEBASE": "Mlu2004-Salve_regina_Barbara"
 	},
 	{
@@ -1859,7 +1859,7 @@
 		"First Source Exact Date": "1514/08/17",
 		"First Source Date": "1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2001-Benedicta_es_celorum_regina.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2001-Benedicta_es_celorum_regina.krn",
 		"FILEBASE": "Mou2001-Benedicta_es_celorum_regina"
 	},
 	{
@@ -1875,7 +1875,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2003-Ave_Maria_gratia_plena.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2003-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Mou2003-Ave_Maria_gratia_plena"
 	},
 	{
@@ -1891,7 +1891,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2004-Salva_nos_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2004-Salva_nos_Domine.krn",
 		"FILEBASE": "Mou2004-Salva_nos_Domine"
 	},
 	{
@@ -1907,7 +1907,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2005-Per_lignum_salvi_facti_sumus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2005-Per_lignum_salvi_facti_sumus.krn",
 		"FILEBASE": "Mou2005-Per_lignum_salvi_facti_sumus"
 	},
 	{
@@ -1923,7 +1923,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2006-Tua_est_potentia.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2006-Tua_est_potentia.krn",
 		"FILEBASE": "Mou2006-Tua_est_potentia"
 	},
 	{
@@ -1942,7 +1942,7 @@
 		"First Source Exact Date": "1514/08/17",
 		"First Source Date": "1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2007-Gaude_Barbara.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2007-Gaude_Barbara.krn",
 		"FILEBASE": "Mou2007-Gaude_Barbara"
 	},
 	{
@@ -1958,7 +1958,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2008-Peccata_mea.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2008-Peccata_mea.krn",
 		"FILEBASE": "Mou2008-Peccata_mea"
 	},
 	{
@@ -1974,7 +1974,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2009-Moriens_lux.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2009-Moriens_lux.krn",
 		"FILEBASE": "Mou2009-Moriens_lux"
 	},
 	{
@@ -1990,7 +1990,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2010-Lectio_actuum_apostolorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2010-Lectio_actuum_apostolorum.krn",
 		"FILEBASE": "Mou2010-Lectio_actuum_apostolorum"
 	},
 	{
@@ -2006,7 +2006,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2011-Puer_natus_est.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2011-Puer_natus_est.krn",
 		"FILEBASE": "Mou2011-Puer_natus_est"
 	},
 	{
@@ -2022,7 +2022,7 @@
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2012-Ave_Maria_gratia_plena.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2012-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Mou2012-Ave_Maria_gratia_plena"
 	},
 	{
@@ -2038,7 +2038,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2013-Alleluia_confitemini_Domino.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2013-Alleluia_confitemini_Domino.krn",
 		"FILEBASE": "Mou2013-Alleluia_confitemini_Domino"
 	},
 	{
@@ -2054,7 +2054,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2014-Missus_est_angelus_Gabriel.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2014-Missus_est_angelus_Gabriel.krn",
 		"FILEBASE": "Mou2014-Missus_est_angelus_Gabriel"
 	},
 	{
@@ -2070,7 +2070,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2015-Nesciens_mater.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2015-Nesciens_mater.krn",
 		"FILEBASE": "Mou2015-Nesciens_mater"
 	},
 	{
@@ -2086,7 +2086,7 @@
 		"First Source Exact Date": "1521/08",
 		"First Source Date": "1521",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou2016-Jocundare_Jerusalem.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2016-Jocundare_Jerusalem.krn",
 		"FILEBASE": "Mou2016-Jocundare_Jerusalem"
 	},
 	{
@@ -2102,7 +2102,7 @@
 		"First Source Exact Date": "~1506",
 		"First Source Date": "~1506",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3001-Je_le_laray_puisquil_my_bat.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3001-Je_le_laray_puisquil_my_bat.krn",
 		"FILEBASE": "Mou3001-Je_le_laray_puisquil_my_bat"
 	},
 	{
@@ -2118,7 +2118,7 @@
 		"First Source Exact Date": "~1506",
 		"First Source Date": "~1506",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3002-Dieu_gard_de_mal_de_deshonneur.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3002-Dieu_gard_de_mal_de_deshonneur.krn",
 		"FILEBASE": "Mou3002-Dieu_gard_de_mal_de_deshonneur"
 	},
 	{
@@ -2134,7 +2134,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3003-Lort_vilain_jaloux--BolC_Q19.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3003-Lort_vilain_jaloux--BolC_Q19.krn",
 		"FILEBASE": "Mou3003-Lort_vilain_jaloux--BolC_Q19"
 	},
 	{
@@ -2150,7 +2150,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3004-En_venant_de_Lyon.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3004-En_venant_de_Lyon.krn",
 		"FILEBASE": "Mou3004-En_venant_de_Lyon"
 	},
 	{
@@ -2158,7 +2158,7 @@
 		"Composer": "Mouton, Jean",
 		"Title": "Qui ne regrettroit le gentil Fevin",
 		"Genre": "secular work",
-		"Voices": "3",
+		"Voices": "4",
 		"Modern Editions": "Thomas_1972b; MacCracken_2014",
 		"First Source": "Motetti novi e chanzoni (Venice: Andrea Antico)",
 		"RISM or CC Source Sigla": "1520|3",
@@ -2166,7 +2166,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3005-Qui_ne_regrettroit_le_gentil_Fevin.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3005-Qui_ne_regrettroit_le_gentil_Fevin.krn",
 		"FILEBASE": "Mou3005-Qui_ne_regrettroit_le_gentil_Fevin"
 	},
 	{
@@ -2182,7 +2182,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Mou/Mou3006-Adieu_mes_amours.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3006-Adieu_mes_amours.krn",
 		"FILEBASE": "Mou3006-Adieu_mes_amours"
 	},
 	{
@@ -2198,7 +2198,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ren/Ren2001-Regina_celi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren2001-Regina_celi.krn",
 		"FILEBASE": "Ren2001-Regina_celi"
 	},
 	{
@@ -2214,7 +2214,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ren/Ren2002-Hec_dies_quam_fecit.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren2002-Hec_dies_quam_fecit.krn",
 		"FILEBASE": "Ren2002-Hec_dies_quam_fecit"
 	},
 	{
@@ -2231,7 +2231,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002a-Requiem-Introit.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002a-Requiem-Introit.krn",
 		"FILEBASE": "Ric1002a-Requiem-Introit"
 	},
 	{
@@ -2248,7 +2248,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002b-Requiem-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002b-Requiem-Kyrie.krn",
 		"FILEBASE": "Ric1002b-Requiem-Kyrie"
 	},
 	{
@@ -2265,7 +2265,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002c-Requiem-Gradual.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002c-Requiem-Gradual.krn",
 		"FILEBASE": "Ric1002c-Requiem-Gradual"
 	},
 	{
@@ -2282,7 +2282,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002d-Requiem-Offertory.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002d-Requiem-Offertory.krn",
 		"FILEBASE": "Ric1002d-Requiem-Offertory"
 	},
 	{
@@ -2299,7 +2299,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002e-Requiem-Sanctus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002e-Requiem-Sanctus.krn",
 		"FILEBASE": "Ric1002e-Requiem-Sanctus"
 	},
 	{
@@ -2316,7 +2316,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002f-Requiem-Agnus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002f-Requiem-Agnus.krn",
 		"FILEBASE": "Ric1002f-Requiem-Agnus"
 	},
 	{
@@ -2333,7 +2333,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric1002g-Requiem-Communion.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002g-Requiem-Communion.krn",
 		"FILEBASE": "Ric1002g-Requiem-Communion"
 	},
 	{
@@ -2349,7 +2349,7 @@
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2001-Sufficiebat.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2001-Sufficiebat.krn",
 		"FILEBASE": "Ric2001-Sufficiebat"
 	},
 	{
@@ -2366,7 +2366,7 @@
 		"First Source Exact Date": "1556",
 		"First Source Date": "1556",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2002-Consolator_captivorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2002-Consolator_captivorum.krn",
 		"FILEBASE": "Ric2002-Consolator_captivorum"
 	},
 	{
@@ -2382,7 +2382,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2003-Veni_sponsa_Christi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2003-Veni_sponsa_Christi.krn",
 		"FILEBASE": "Ric2003-Veni_sponsa_Christi"
 	},
 	{
@@ -2398,7 +2398,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2004-Emendemus_in_melius.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2004-Emendemus_in_melius.krn",
 		"FILEBASE": "Ric2004-Emendemus_in_melius"
 	},
 	{
@@ -2416,7 +2416,7 @@
 		"First Source Exact Date": "1519/06/17",
 		"First Source Date": "1519",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2005-Miseremini_mei.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2005-Miseremini_mei.krn",
 		"FILEBASE": "Ric2005-Miseremini_mei"
 	},
 	{
@@ -2432,7 +2432,7 @@
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2006-Philomena_praevia.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2006-Philomena_praevia.krn",
 		"FILEBASE": "Ric2006-Philomena_praevia"
 	},
 	{
@@ -2448,7 +2448,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2007-Cognoscimus_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2007-Cognoscimus_Domine.krn",
 		"FILEBASE": "Ric2007-Cognoscimus_Domine"
 	},
 	{
@@ -2464,7 +2464,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2008-Christus_resurgens.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2008-Christus_resurgens.krn",
 		"FILEBASE": "Ric2008-Christus_resurgens"
 	},
 	{
@@ -2480,7 +2480,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2009-Exaudiat_te_Dominus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2009-Exaudiat_te_Dominus.krn",
 		"FILEBASE": "Ric2009-Exaudiat_te_Dominus"
 	},
 	{
@@ -2496,7 +2496,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2010-Pater_noster.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2010-Pater_noster.krn",
 		"FILEBASE": "Ric2010-Pater_noster"
 	},
 	{
@@ -2512,7 +2512,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2011-Gloriosi_principes.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2011-Gloriosi_principes.krn",
 		"FILEBASE": "Ric2011-Gloriosi_principes"
 	},
 	{
@@ -2528,7 +2528,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2012-Jam_non_dicam.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2012-Jam_non_dicam.krn",
 		"FILEBASE": "Ric2012-Jam_non_dicam"
 	},
 	{
@@ -2544,7 +2544,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2013-Quem_dicunt_homines.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2013-Quem_dicunt_homines.krn",
 		"FILEBASE": "Ric2013-Quem_dicunt_homines"
 	},
 	{
@@ -2560,7 +2560,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2014-O_beata_infantia.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2014-O_beata_infantia.krn",
 		"FILEBASE": "Ric2014-O_beata_infantia"
 	},
 	{
@@ -2576,7 +2576,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2016-Jerusalem_luge.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2016-Jerusalem_luge.krn",
 		"FILEBASE": "Ric2016-Jerusalem_luge"
 	},
 	{
@@ -2592,7 +2592,7 @@
 		"First Source Exact Date": "~1535",
 		"First Source Date": "~1535",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2017-Ego_sum_qui_sum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2017-Ego_sum_qui_sum.krn",
 		"FILEBASE": "Ric2017-Ego_sum_qui_sum"
 	},
 	{
@@ -2608,7 +2608,7 @@
 		"First Source Exact Date": "~1535",
 		"First Source Date": "~1535",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric2018-Homo_quidam.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2018-Homo_quidam.krn",
 		"FILEBASE": "Ric2018-Homo_quidam"
 	},
 	{
@@ -2624,7 +2624,7 @@
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3001-Damours_je_suis_desheritee.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3001-Damours_je_suis_desheritee.krn",
 		"FILEBASE": "Ric3001-Damours_je_suis_desheritee"
 	},
 	{
@@ -2640,7 +2640,7 @@
 		"First Source Exact Date": "1523",
 		"First Source Date": "1523",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3002-Ne_vous_chaille_mon_cueur.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3002-Ne_vous_chaille_mon_cueur.krn",
 		"FILEBASE": "Ric3002-Ne_vous_chaille_mon_cueur"
 	},
 	{
@@ -2658,7 +2658,7 @@
 		"First Source Exact Date": "1529/01/23",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3003-De_mon_triste_et_desplaisir.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3003-De_mon_triste_et_desplaisir.krn",
 		"FILEBASE": "Ric3003-De_mon_triste_et_desplaisir"
 	},
 	{
@@ -2674,7 +2674,7 @@
 		"First Source Exact Date": "1533/04",
 		"First Source Date": "1533",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ric/Ric3004-Sur_tous_regretz.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3004-Sur_tous_regretz.krn",
 		"FILEBASE": "Ric3004-Sur_tous_regretz"
 	},
 	{
@@ -2690,7 +2690,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2001-Vox_in_rama.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2001-Vox_in_rama.krn",
 		"FILEBASE": "Ser2001-Vox_in_rama"
 	},
 	{
@@ -2706,7 +2706,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2002-Aspice_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2002-Aspice_Domine.krn",
 		"FILEBASE": "Ser2002-Aspice_Domine"
 	},
 	{
@@ -2722,7 +2722,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2003-In_te_Domine_speravi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2003-In_te_Domine_speravi.krn",
 		"FILEBASE": "Ser2003-In_te_Domine_speravi"
 	},
 	{
@@ -2738,7 +2738,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2004-Impetum_inimicorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2004-Impetum_inimicorum.krn",
 		"FILEBASE": "Ser2004-Impetum_inimicorum"
 	},
 	{
@@ -2754,7 +2754,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2007-Quosque_non_reverteris_pax.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2007-Quosque_non_reverteris_pax.krn",
 		"FILEBASE": "Ser2007-Quosque_non_reverteris_pax"
 	},
 	{
@@ -2770,7 +2770,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser2008-Si_bona_suscepimus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2008-Si_bona_suscepimus.krn",
 		"FILEBASE": "Ser2008-Si_bona_suscepimus"
 	},
 	{
@@ -2786,7 +2786,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3001-Hau_hau_hau_le_boys.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3001-Hau_hau_hau_le_boys.krn",
 		"FILEBASE": "Ser3001-Hau_hau_hau_le_boys"
 	},
 	{
@@ -2802,7 +2802,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3002-Je_ne_fais_rien_que_requerir.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3002-Je_ne_fais_rien_que_requerir.krn",
 		"FILEBASE": "Ser3002-Je_ne_fais_rien_que_requerir"
 	},
 	{
@@ -2819,7 +2819,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3003-Languir_me_fais.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3003-Languir_me_fais.krn",
 		"FILEBASE": "Ser3003-Languir_me_fais"
 	},
 	{
@@ -2836,7 +2836,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3004-Jouyssance_vous_donneray.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3004-Jouyssance_vous_donneray.krn",
 		"FILEBASE": "Ser3004-Jouyssance_vous_donneray"
 	},
 	{
@@ -2852,7 +2852,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ser/Ser3005-Secourez_moy_ma_dame.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3005-Secourez_moy_ma_dame.krn",
 		"FILEBASE": "Ser3005-Secourez_moy_ma_dame"
 	},
 	{
@@ -2868,7 +2868,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2003-Tota_pulchra_es.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2003-Tota_pulchra_es.krn",
 		"FILEBASE": "Sil2003-Tota_pulchra_es"
 	},
 	{
@@ -2884,7 +2884,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2004-Intonuit_de_celo_Dominus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2004-Intonuit_de_celo_Dominus.krn",
 		"FILEBASE": "Sil2004-Intonuit_de_celo_Dominus"
 	},
 	{
@@ -2900,7 +2900,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2005-In_illo_tempore.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2005-In_illo_tempore.krn",
 		"FILEBASE": "Sil2005-In_illo_tempore"
 	},
 	{
@@ -2916,7 +2916,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2006-Omnis_pulchritudo_Domini.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2006-Omnis_pulchritudo_Domini.krn",
 		"FILEBASE": "Sil2006-Omnis_pulchritudo_Domini"
 	},
 	{
@@ -2932,7 +2932,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2007-Puer_natus_est.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2007-Puer_natus_est.krn",
 		"FILEBASE": "Sil2007-Puer_natus_est"
 	},
 	{
@@ -2948,8 +2948,24 @@
 		"First Source Exact Date": "1520/11/30",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2010-Ave_ancilla_trinitatis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2010-Ave_ancilla_trinitatis.krn",
 		"FILEBASE": "Sil2010-Ave_ancilla_trinitatis"
+	},
+	{
+		"ID": "Sil2012",
+		"Composer": "Silva, Andreas de",
+		"Title": "Virgo carens criminibus",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Smijers_1960; Kirsch_1970",
+		"First Source": "Motetti libro secundo",
+		"RISM or CC Source Sigla": "1521|4",
+		"RISM Source Link": "https://rism.online/sources/993103934",
+		"First Source Exact Date": "~1521",
+		"First Source Date": "~1521",
+		"Texted": "no",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2012-Virgo_carens_criminibus.krn",
+		"FILEBASE": "Sil2012-Virgo_carens_criminibus"
 	},
 	{
 		"ID": "Sil2021",
@@ -2966,7 +2982,7 @@
 		"First Source Exact Date": "1527",
 		"First Source Date": "1527",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Sil/Sil2021-Ave_regina_celorum_II.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2021-Ave_regina_celorum_II.krn",
 		"FILEBASE": "Sil2021-Ave_regina_celorum_II"
 	},
 	{
@@ -2982,7 +2998,7 @@
 		"First Source Exact Date": "~1514",
 		"First Source Date": "~1514",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/The/The2001-Verbum_bonum_et_suave.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/The/The2001-Verbum_bonum_et_suave.krn",
 		"FILEBASE": "The2001-Verbum_bonum_et_suave"
 	},
 	{
@@ -2998,7 +3014,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2001-Sancta_Maria_succurre_miseris.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2001-Sancta_Maria_succurre_miseris.krn",
 		"FILEBASE": "Ver2001-Sancta_Maria_succurre_miseris"
 	},
 	{
@@ -3014,7 +3030,7 @@
 		"First Source Exact Date": "1523",
 		"First Source Date": "1523",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2004-Ave_sanctissima_Maria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2004-Ave_sanctissima_Maria.krn",
 		"FILEBASE": "Ver2004-Ave_sanctissima_Maria"
 	},
 	{
@@ -3030,7 +3046,7 @@
 		"First Source Exact Date": "1526",
 		"First Source Date": "1526",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2007-Tanto_tempore.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2007-Tanto_tempore.krn",
 		"FILEBASE": "Ver2007-Tanto_tempore"
 	},
 	{
@@ -3046,7 +3062,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2008-O_dulcissime_Domine_Jesu_Christe.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2008-O_dulcissime_Domine_Jesu_Christe.krn",
 		"FILEBASE": "Ver2008-O_dulcissime_Domine_Jesu_Christe"
 	},
 	{
@@ -3062,7 +3078,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2010-Gaudeamus_omnes_in_Domino.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2010-Gaudeamus_omnes_in_Domino.krn",
 		"FILEBASE": "Ver2010-Gaudeamus_omnes_in_Domino"
 	},
 	{
@@ -3078,7 +3094,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2011-Victime_pascali_laudes.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2011-Victime_pascali_laudes.krn",
 		"FILEBASE": "Ver2011-Victime_pascali_laudes"
 	},
 	{
@@ -3094,7 +3110,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2012-Ad_Dominum_cum_tribularer.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2012-Ad_Dominum_cum_tribularer.krn",
 		"FILEBASE": "Ver2012-Ad_Dominum_cum_tribularer"
 	},
 	{
@@ -3110,7 +3126,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2013-Hesterna_die.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2013-Hesterna_die.krn",
 		"FILEBASE": "Ver2013-Hesterna_die"
 	},
 	{
@@ -3126,7 +3142,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2014-Si_bona_suscepimus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2014-Si_bona_suscepimus.krn",
 		"FILEBASE": "Ver2014-Si_bona_suscepimus"
 	},
 	{
@@ -3142,7 +3158,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2015-In_te_Domine_speravi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2015-In_te_Domine_speravi.krn",
 		"FILEBASE": "Ver2015-In_te_Domine_speravi"
 	},
 	{
@@ -3158,7 +3174,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2016-Ave_gratia_plena.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2016-Ave_gratia_plena.krn",
 		"FILEBASE": "Ver2016-Ave_gratia_plena"
 	},
 	{
@@ -3174,7 +3190,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2017-Recordare_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2017-Recordare_Domine.krn",
 		"FILEBASE": "Ver2017-Recordare_Domine"
 	},
 	{
@@ -3190,7 +3206,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver2018-Sancta_Maria_virgo_virginum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2018-Sancta_Maria_virgo_virginum.krn",
 		"FILEBASE": "Ver2018-Sancta_Maria_virgo_virginum"
 	},
 	{
@@ -3206,7 +3222,7 @@
 		"First Source Exact Date": "~1527",
 		"First Source Date": "~1527",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3004-Con_suave_parlar.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3004-Con_suave_parlar.krn",
 		"FILEBASE": "Ver3004-Con_suave_parlar"
 	},
 	{
@@ -3222,7 +3238,7 @@
 		"First Source Exact Date": "~1527",
 		"First Source Date": "~1527",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3009-Madonna_quando_io_vodo_cantar.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3009-Madonna_quando_io_vodo_cantar.krn",
 		"FILEBASE": "Ver3009-Madonna_quando_io_vodo_cantar"
 	},
 	{
@@ -3238,7 +3254,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3011-Quando_nascesti_amore.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3011-Quando_nascesti_amore.krn",
 		"FILEBASE": "Ver3011-Quando_nascesti_amore"
 	},
 	{
@@ -3254,7 +3270,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3012-Con_langelico_riso.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3012-Con_langelico_riso.krn",
 		"FILEBASE": "Ver3012-Con_langelico_riso"
 	},
 	{
@@ -3270,7 +3286,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3013-Donna_ligiadra_e_bella.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3013-Donna_ligiadra_e_bella.krn",
 		"FILEBASE": "Ver3013-Donna_ligiadra_e_bella"
 	},
 	{
@@ -3286,7 +3302,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3014-Amor_io_sento_lalma.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3014-Amor_io_sento_lalma.krn",
 		"FILEBASE": "Ver3014-Amor_io_sento_lalma"
 	},
 	{
@@ -3302,7 +3318,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3015-I_vostri_acuti_dardi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3015-I_vostri_acuti_dardi.krn",
 		"FILEBASE": "Ver3015-I_vostri_acuti_dardi"
 	},
 	{
@@ -3318,7 +3334,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3016-Quanto_sia_lieto_il_giorno.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3016-Quanto_sia_lieto_il_giorno.krn",
 		"FILEBASE": "Ver3016-Quanto_sia_lieto_il_giorno"
 	},
 	{
@@ -3334,7 +3350,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3017-Con_lacrim_et_sospir.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3017-Con_lacrim_et_sospir.krn",
 		"FILEBASE": "Ver3017-Con_lacrim_et_sospir"
 	},
 	{
@@ -3350,7 +3366,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3018-Madonna_per_voi_ardo.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3018-Madonna_per_voi_ardo.krn",
 		"FILEBASE": "Ver3018-Madonna_per_voi_ardo"
 	},
 	{
@@ -3366,7 +3382,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3019-Piove_da_li_occhi.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3019-Piove_da_li_occhi.krn",
 		"FILEBASE": "Ver3019-Piove_da_li_occhi"
 	},
 	{
@@ -3382,7 +3398,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3020-La_bella_donna.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3020-La_bella_donna.krn",
 		"FILEBASE": "Ver3020-La_bella_donna"
 	},
 	{
@@ -3398,7 +3414,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3021-Afflicti_spiriti_mei.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3021-Afflicti_spiriti_mei.krn",
 		"FILEBASE": "Ver3021-Afflicti_spiriti_mei"
 	},
 	{
@@ -3414,7 +3430,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3022-Donna_che_sete.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3022-Donna_che_sete.krn",
 		"FILEBASE": "Ver3022-Donna_che_sete"
 	},
 	{
@@ -3430,7 +3446,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3023-Lasso_che_se_creduto.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3023-Lasso_che_se_creduto.krn",
 		"FILEBASE": "Ver3023-Lasso_che_se_creduto"
 	},
 	{
@@ -3446,7 +3462,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3024-Madonna_qual_certeca.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3024-Madonna_qual_certeca.krn",
 		"FILEBASE": "Ver3024-Madonna_qual_certeca"
 	},
 	{
@@ -3462,7 +3478,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3025-Altro_non_e_el_mio_amor.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3025-Altro_non_e_el_mio_amor.krn",
 		"FILEBASE": "Ver3025-Altro_non_e_el_mio_amor"
 	},
 	{
@@ -3478,7 +3494,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3026-Madonna_io_vamo_et_taccio.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3026-Madonna_io_vamo_et_taccio.krn",
 		"FILEBASE": "Ver3026-Madonna_io_vamo_et_taccio"
 	},
 	{
@@ -3494,7 +3510,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3027-Italia_mia_benchel_parlar.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3027-Italia_mia_benchel_parlar.krn",
 		"FILEBASE": "Ver3027-Italia_mia_benchel_parlar"
 	},
 	{
@@ -3510,7 +3526,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3028-Donna_se_fera_stella.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3028-Donna_se_fera_stella.krn",
 		"FILEBASE": "Ver3028-Donna_se_fera_stella"
 	},
 	{
@@ -3526,7 +3542,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3029-Pur_troppo_donna.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3029-Pur_troppo_donna.krn",
 		"FILEBASE": "Ver3029-Pur_troppo_donna"
 	},
 	{
@@ -3542,7 +3558,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3030-Ultimi_mei_sospiri.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3030-Ultimi_mei_sospiri.krn",
 		"FILEBASE": "Ver3030-Ultimi_mei_sospiri"
 	},
 	{
@@ -3558,7 +3574,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Ver/Ver3031-O_dolce_nocte.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3031-O_dolce_nocte.krn",
 		"FILEBASE": "Ver3031-O_dolce_nocte"
 	},
 	{
@@ -3577,7 +3593,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Vin/Vin1001b-Missa_Stabat_mater-Gloria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Vin/Vin1001b-Missa_Stabat_mater-Gloria.krn",
 		"FILEBASE": "Vin1001b-Missa_Stabat_mater-Gloria",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
 	},
@@ -3597,7 +3613,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Vin/Vin1001a-Missa_Stabat_mater-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Vin/Vin1001a-Missa_Stabat_mater-Kyrie.krn",
 		"FILEBASE": "Vin1001a-Missa_Stabat_mater-Kyrie",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
 	},
@@ -3617,7 +3633,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Vin/Vin1001e-Missa_Stabat_mater-Agnus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Vin/Vin1001e-Missa_Stabat_mater-Agnus.krn",
 		"FILEBASE": "Vin1001e-Missa_Stabat_mater-Agnus",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
 	},
@@ -3636,7 +3652,7 @@
 		"First Source Exact Date": "1517",
 		"First Source Date": "1517",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1001a-Missa_Mente_tota-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1001a-Missa_Mente_tota-Kyrie.krn",
 		"FILEBASE": "Wil1001a-Missa_Mente_tota-Kyrie"
 	},
 	{
@@ -3654,7 +3670,7 @@
 		"First Source Exact Date": "1517",
 		"First Source Date": "1517",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1001b-Missa_Mente_tota-Gloria.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1001b-Missa_Mente_tota-Gloria.krn",
 		"FILEBASE": "Wil1001b-Missa_Mente_tota-Gloria"
 	},
 	{
@@ -3671,7 +3687,7 @@
 		"First Source Exact Date": "1536",
 		"First Source Date": "1536",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1002a-Missa_Laudate_Deum-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1002a-Missa_Laudate_Deum-Kyrie.krn",
 		"FILEBASE": "Wil1002a-Missa_Laudate_Deum-Kyrie"
 	},
 	{
@@ -3688,7 +3704,7 @@
 		"First Source Exact Date": "1536",
 		"First Source Date": "1536",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie.krn",
 		"FILEBASE": "Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie"
 	},
 	{
@@ -3704,7 +3720,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2002-Saluto_te.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2002-Saluto_te.krn",
 		"FILEBASE": "Wil2002-Saluto_te"
 	},
 	{
@@ -3720,7 +3736,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2005-Veni_sancte_spiritus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2005-Veni_sancte_spiritus.krn",
 		"FILEBASE": "Wil2005-Veni_sancte_spiritus"
 	},
 	{
@@ -3736,7 +3752,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2006-Beatus_Johannes_apostolus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2006-Beatus_Johannes_apostolus.krn",
 		"FILEBASE": "Wil2006-Beatus_Johannes_apostolus"
 	},
 	{
@@ -3752,7 +3768,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2007-Intercessio_quesumus_Domine.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2007-Intercessio_quesumus_Domine.krn",
 		"FILEBASE": "Wil2007-Intercessio_quesumus_Domine"
 	},
 	{
@@ -3768,7 +3784,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2008-O_gemma_clarissima.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2008-O_gemma_clarissima.krn",
 		"FILEBASE": "Wil2008-O_gemma_clarissima"
 	},
 	{
@@ -3785,7 +3801,7 @@
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2009-Dominus_regit_me.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2009-Dominus_regit_me.krn",
 		"FILEBASE": "Wil2009-Dominus_regit_me"
 	},
 	{
@@ -3804,7 +3820,7 @@
 		"First Source Exact Date": "1519",
 		"First Source Date": "1519",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2011-Verbum_bonum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2011-Verbum_bonum.krn",
 		"FILEBASE": "Wil2011-Verbum_bonum"
 	},
 	{
@@ -3820,7 +3836,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2016-Beata_dei_genitrix.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2016-Beata_dei_genitrix.krn",
 		"FILEBASE": "Wil2016-Beata_dei_genitrix"
 	},
 	{
@@ -3836,7 +3852,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2017-Omnipotens_sempiterne_Deus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2017-Omnipotens_sempiterne_Deus.krn",
 		"FILEBASE": "Wil2017-Omnipotens_sempiterne_Deus"
 	},
 	{
@@ -3852,7 +3868,7 @@
 		"First Source Exact Date": "1522",
 		"First Source Date": "1522",
 		"Texted": "yes",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2019-In_tua_patientia.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2019-In_tua_patientia.krn",
 		"FILEBASE": "Wil2019-In_tua_patientia"
 	},
 	{
@@ -3868,7 +3884,7 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2020-Congratulamini_mihi_omnes.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2020-Congratulamini_mihi_omnes.krn",
 		"FILEBASE": "Wil2020-Congratulamini_mihi_omnes"
 	},
 	{
@@ -3884,7 +3900,7 @@
 		"First Source Exact Date": "1529",
 		"First Source Date": "1529",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2023-Pater_noster.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2023-Pater_noster.krn",
 		"FILEBASE": "Wil2023-Pater_noster"
 	},
 	{
@@ -3900,7 +3916,7 @@
 		"First Source Exact Date": "~1530",
 		"First Source Date": "~1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2026-Salva_nos_ab_excidio.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2026-Salva_nos_ab_excidio.krn",
 		"FILEBASE": "Wil2026-Salva_nos_ab_excidio"
 	},
 	{
@@ -3916,7 +3932,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2033-Domine_Jesu_Christe_fili_dei.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2033-Domine_Jesu_Christe_fili_dei.krn",
 		"FILEBASE": "Wil2033-Domine_Jesu_Christe_fili_dei"
 	},
 	{
@@ -3932,7 +3948,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2037-O_Salutaris_hostia.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2037-O_Salutaris_hostia.krn",
 		"FILEBASE": "Wil2037-O_Salutaris_hostia"
 	},
 	{
@@ -3948,7 +3964,7 @@
 		"First Source Exact Date": "~1531",
 		"First Source Date": "~1531",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2041-Beata_viscera_Maria_virginis.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2041-Beata_viscera_Maria_virginis.krn",
 		"FILEBASE": "Wil2041-Beata_viscera_Maria_virginis"
 	},
 	{
@@ -3964,7 +3980,7 @@
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2044-Mirabile_misterium.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2044-Mirabile_misterium.krn",
 		"FILEBASE": "Wil2044-Mirabile_misterium"
 	},
 	{
@@ -3980,7 +3996,7 @@
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2046-Videns_Dominus.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2046-Videns_Dominus.krn",
 		"FILEBASE": "Wil2046-Videns_Dominus"
 	},
 	{
@@ -3996,7 +4012,7 @@
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2050-Ave_regina_celorum.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2050-Ave_regina_celorum.krn",
 		"FILEBASE": "Wil2050-Ave_regina_celorum"
 	},
 	{
@@ -4012,7 +4028,7 @@
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2052-Patefacte_sunt.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2052-Patefacte_sunt.krn",
 		"FILEBASE": "Wil2052-Patefacte_sunt"
 	},
 	{
@@ -4028,7 +4044,7 @@
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2056-Salve_crux_sancta.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2056-Salve_crux_sancta.krn",
 		"FILEBASE": "Wil2056-Salve_crux_sancta"
 	},
 	{
@@ -4044,7 +4060,7 @@
 		"First Source Exact Date": "~1534",
 		"First Source Date": "~1534",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil2057-O_magnum_misterium.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2057-O_magnum_misterium.krn",
 		"FILEBASE": "Wil2057-O_magnum_misterium"
 	},
 	{
@@ -4060,7 +4076,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3001-Petite_Camusette.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3001-Petite_Camusette.krn",
 		"FILEBASE": "Wil3001-Petite_Camusette"
 	},
 	{
@@ -4076,7 +4092,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3002-Irons_nous_tous_jours_coucher.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3002-Irons_nous_tous_jours_coucher.krn",
 		"FILEBASE": "Wil3002-Irons_nous_tous_jours_coucher"
 	},
 	{
@@ -4092,7 +4108,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3003-Mon_petit_cueur.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3003-Mon_petit_cueur.krn",
 		"FILEBASE": "Wil3003-Mon_petit_cueur"
 	},
 	{
@@ -4108,7 +4124,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3004-Jayme_bien_mon_amy_I.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3004-Jayme_bien_mon_amy_I.krn",
 		"FILEBASE": "Wil3004-Jayme_bien_mon_amy_I"
 	},
 	{
@@ -4124,7 +4140,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3005-Jayme_bien_mon_amy_II.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3005-Jayme_bien_mon_amy_II.krn",
 		"FILEBASE": "Wil3005-Jayme_bien_mon_amy_II"
 	},
 	{
@@ -4140,7 +4156,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3006-Mon_mary_ma_diffamee.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3006-Mon_mary_ma_diffamee.krn",
 		"FILEBASE": "Wil3006-Mon_mary_ma_diffamee"
 	},
 	{
@@ -4156,7 +4172,7 @@
 		"First Source Exact Date": "~1521",
 		"First Source Date": "~1521",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3007-Je_lay_aymee_bien_sept_ans_et_demy.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3007-Je_lay_aymee_bien_sept_ans_et_demy.krn",
 		"FILEBASE": "Wil3007-Je_lay_aymee_bien_sept_ans_et_demy"
 	},
 	{
@@ -4172,7 +4188,7 @@
 		"First Source Exact Date": "~1527",
 		"First Source Date": "~1527",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3009-Si_je_ne_voy_mamie.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3009-Si_je_ne_voy_mamie.krn",
 		"FILEBASE": "Wil3009-Si_je_ne_voy_mamie"
 	},
 	{
@@ -4190,7 +4206,7 @@
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3010-A_laventure_lentrepris.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3010-A_laventure_lentrepris.krn",
 		"FILEBASE": "Wil3010-A_laventure_lentrepris"
 	},
 	{
@@ -4208,7 +4224,7 @@
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3011-Mon_cueur_mon_corps.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3011-Mon_cueur_mon_corps.krn",
 		"FILEBASE": "Wil3011-Mon_cueur_mon_corps"
 	},
 	{
@@ -4226,7 +4242,7 @@
 		"First Source Exact Date": "1530",
 		"First Source Date": "1530",
 		"Texted": "no",
-		"Humdrum URL": "https://github.com/benory/1520s-project/tree/main/humdrum/Wil/Wil3012-Dessus_le_marche_darras.krn",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3012-Dessus_le_marche_darras.krn",
 		"FILEBASE": "Wil3012-Dessus_le_marche_darras"
 	}
 ]

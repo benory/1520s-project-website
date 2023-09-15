@@ -1,1 +1,281 @@
-<!DOCTYPE html><html><head><link rel="shortcut icon" href="//ssl.gstatic.com/docs/script/images/favicon.ico"><title>Error</title><style type="text/css" nonce="j9bu7hquOdwwOpTPncOLIQ">body {background-color: #fff; margin: 0; padding: 0;}.errorMessage {font-family: Arial,sans-serif; font-size: 12pt; font-weight: bold; line-height: 150%; padding-top: 25px;}</style></head><body style="margin:20px"><div><img alt="Google Apps Script" src="//ssl.gstatic.com/docs/script/images/logo.png"></div><div style="text-align:center;font-family:monospace;margin:50px auto 0;max-width:600px">Exception: Bad request: https://docs.google.com/spreadsheets/d/1rVevNfKXd0g4NWOZdm2dG9sbQgOh5nOr_5G_2nizAgY/export?gid=1743139407&amp;format=tsv (line 29, file &quot;Code&quot;)</div></body></html>
+[
+	{
+		"ID": "Ano",
+		"Composer": "Anonymous",
+		"Composer RISM ID": "pe30004985"
+	},
+	{
+		"ID": "Bar",
+		"Composer": "Barra, Hotinet",
+		"Composer RISM ID": "pe30002116",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/211/",
+		"Start of CYA": "1510",
+		"End of CYA": "1523",
+		"Flourished": "1510–1523",
+		"Places Active": "Paris, Langres"
+	},
+	{
+		"ID": "Bau",
+		"Composer": "Bauldeweyn, Noel",
+		"Composer RISM ID": "pe30001642",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/265/",
+		"Start of CYA": "1509",
+		"End of CYA": "1519",
+		"Flourished": "1509–1519",
+		"Places Active": "Mechelen, Antwerp"
+	},
+	{
+		"ID": "Bis",
+		"Composer": "Bisgueria",
+		"Composer RISM ID": "pe30102210",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/1106/",
+		"Flourished": "–"
+	},
+	{
+		"ID": "Cha",
+		"Composer": "Champion, Nicolas",
+		"Composer RISM ID": "pe30102560",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/627/",
+		"Start of CYA": "1510",
+		"End of CYA": "1530",
+		"Death Date": "20 September 1533",
+		"Flourished": "1510–1530",
+		"Places Active": "Low Countries"
+	},
+	{
+		"ID": "Con",
+		"Composer": "Conseil, Jean",
+		"Composer RISM ID": "pe30025536",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/232/",
+		"Start of CYA": "1520",
+		"End of CYA": "1534",
+		"Flourished": "1520–1534",
+		"Places Active": "Paris, Rome, Cambrai"
+	},
+	{
+		"ID": "Era",
+		"Composer": "Erasmus",
+		"Flourished": "–"
+	},
+	{
+		"ID": "Fsc",
+		"Composer": "Festa, Costanzo",
+		"Composer RISM ID": "pe30004621",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/213/",
+		"Start of CYA": "1516",
+		"End of CYA": "1524",
+		"Death Date": "31 July 1524",
+		"Flourished": "1516–1524",
+		"Places Active": "Turin, Rome"
+	},
+	{
+		"ID": "Fss",
+		"Composer": "Festa, Sebastiano",
+		"Composer RISM ID": "pe30006139",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/207/",
+		"Start of CYA": "1517",
+		"End of CYA": "1545",
+		"Death Date": "10 April 1545",
+		"Flourished": "1517–1545",
+		"Places Active": "Turin, Rome"
+	},
+	{
+		"ID": "Fva",
+		"Composer": "Fevin, Antoine de",
+		"Composer RISM ID": "pe30006140",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/228/",
+		"Start of CYA": "1507",
+		"End of CYA": "1512",
+		"Flourished": "1507–1512",
+		"Places Active": "France"
+	},
+	{
+		"ID": "Gom",
+		"Composer": "Gombert, Nicolas",
+		"Composer RISM ID": "pe30006168",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/263/",
+		"Start of CYA": "1525",
+		"End of CYA": "1547",
+		"Flourished": "1525–1547",
+		"Places Active": "Spain, Low Countries, Germany, Bologna"
+	},
+	{
+		"ID": "Jac",
+		"Composer": "Jacotin",
+		"Flourished": "–"
+	},
+	{
+		"ID": "Jan",
+		"Composer": "Jan, Maistre",
+		"Composer RISM ID": "pe30005590",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/218/",
+		"Start of CYA": "1512",
+		"End of CYA": "1538",
+		"Death Date": "October 1538",
+		"Flourished": "1512–1538",
+		"Places Active": "Ferrara"
+	},
+	{
+		"ID": "Jom",
+		"Composer": "Jachet of Mantua",
+		"Composer RISM ID": "pe30003816",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/215/",
+		"Start of CYA": "1519",
+		"End of CYA": "1559",
+		"Death Date": "2 October 1559",
+		"Flourished": "1519–1559",
+		"Places Active": "Ferrara, Mantua, Modena"
+	},
+	{
+		"ID": "Lfg",
+		"Composer": "de la Fage, Jean",
+		"Composer RISM ID": "pe30018710",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/282/",
+		"Start of CYA": "1518",
+		"End of CYA": "1530",
+		"Flourished": "1518–1530",
+		"Places Active": "Rome"
+	},
+	{
+		"ID": "Lhe",
+		"Composer": "Lheritier, Jean",
+		"Composer RISM ID": "pe30012541",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/219/",
+		"Start of CYA": "1506",
+		"End of CYA": "1525",
+		"Flourished": "1506–1525",
+		"Places Active": "Ferrara, Rome, Mantua"
+	},
+	{
+		"ID": "Lpi",
+		"Composer": "Lupi, Johannes",
+		"Composer RISM ID": "pe30012552",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/2370/",
+		"Start of CYA": "1526",
+		"End of CYA": "1539",
+		"Death Date": "20 December 1539",
+		"Flourished": "1526–1539",
+		"Places Active": "Cambrai"
+	},
+	{
+		"ID": "Lps",
+		"Composer": "Hellinck, Lupus",
+		"Composer RISM ID": "pe30006996",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/264/",
+		"Start of CYA": "1518",
+		"End of CYA": "1541",
+		"Death Date": "14 January 1541",
+		"Flourished": "1518–1541",
+		"Places Active": "Ferrara, Rome, Bruges"
+	},
+	{
+		"ID": "Lsa",
+		"Composer": "Le Santier, Jean",
+		"Flourished": "–"
+	},
+	{
+		"ID": "Mlu",
+		"Composer": "Moulu, Pierre",
+		"Composer RISM ID": "pe30016304",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/208/",
+		"Start of CYA": "1514",
+		"End of CYA": "1535",
+		"Flourished": "1514–1535",
+		"Places Active": "Paris, Meaux"
+	},
+	{
+		"ID": "Mou",
+		"Composer": "Mouton, Jean",
+		"Composer RISM ID": "pe30005489",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/318/",
+		"Start of CYA": "1483",
+		"End of CYA": "1522",
+		"Death Date": "30 October 1522",
+		"Flourished": "1483–1522",
+		"Places Active": "Nesle, Amiens, Grenoble, Paris, Bologna"
+	},
+	{
+		"ID": "Ren",
+		"Composer": "Renaldo",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/78/",
+		"Start of CYA": "1515",
+		"End of CYA": "1521",
+		"Death Date": "13 January 1521",
+		"Flourished": "1515–1521",
+		"Places Active": "Padua",
+		"Source of Information": "Robert Nosow, \"The Dating and Provenance of Bologna, Civico Museo Bibliografico Musicale, MS Q 19,\" Journal of Musicology 9 (1991), 92–108, at 101."
+	},
+	{
+		"ID": "Ric",
+		"Composer": "Richafort, Jean",
+		"Composer RISM ID": "pe30012751",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/214/",
+		"Start of CYA": "1509",
+		"End of CYA": "1550",
+		"Flourished": "1509–1550",
+		"Places Active": "Mechelen, Nantes, Paris, Bologna, Bruges"
+	},
+	{
+		"ID": "Ser",
+		"Composer": "Sermisy, Claudin de",
+		"Composer RISM ID": "pe20000369",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/222/",
+		"Start of CYA": "1508",
+		"End of CYA": "1555",
+		"Death Date": "13 October 1562",
+		"Flourished": "1508–1555",
+		"Places Active": "Paris, Bologna, Rouen, Camberon, Troyes"
+	},
+	{
+		"ID": "Sil",
+		"Composer": "Silva, Andreas de",
+		"Composer RISM ID": "pe30024652",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/209/",
+		"Start of CYA": "1513",
+		"End of CYA": "1530",
+		"Flourished": "1513–1530",
+		"Places Active": "Rome, Mantua"
+	},
+	{
+		"ID": "The",
+		"Composer": "Therache, Pierrequin de",
+		"Composer RISM ID": "pe30102136",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/315/",
+		"Start of CYA": "1492",
+		"End of CYA": "1527",
+		"Death Date": "30 March 1528",
+		"Flourished": "1492–1527",
+		"Places Active": "Nancy"
+	},
+	{
+		"ID": "Ver",
+		"Composer": "Verdelot, Philippe",
+		"Composer RISM ID": "pe30013948",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/249/",
+		"Start of CYA": "1521",
+		"End of CYA": "1529",
+		"Flourished": "1521–1529",
+		"Places Active": "Florence"
+	},
+	{
+		"ID": "Vin",
+		"Composer": "Vinders, Jheronimus",
+		"Composer RISM ID": "pe30007720",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/508/",
+		"Start of CYA": "1525",
+		"End of CYA": "1526",
+		"Flourished": "1525–1526",
+		"Places Active": "Ghent"
+	},
+	{
+		"ID": "Wil",
+		"Composer": "Willaert, Adrian",
+		"Composer RISM ID": "pe30005312",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/217/",
+		"Start of CYA": "1515",
+		"End of CYA": "1560",
+		"Death Date": "7 December 1562",
+		"Flourished": "1515–1560",
+		"Places Active": "Ferrara, Venice"
+	}
+]
