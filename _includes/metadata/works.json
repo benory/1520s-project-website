@@ -2986,6 +2986,24 @@
 		"FILEBASE": "Sil2021-Ave_regina_celorum_II"
 	},
 	{
+		"ID": "Sil2025",
+		"Composer": "Silva, Andreas de",
+		"Title": "O virgo benedicta",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Kirsch_1970",
+		"First Source": "Primus Liber cum quatuor vocibus. Motteti del Fiore (Lyon: Moderne)",
+		"RISM or CC Source Sigla": "1532|10",
+		"RISM Source Link": "https://rism.online/sources/993104066",
+		"IIIF Source": "https://www.digitale-sammlungen.de/en/view/bsb00075641",
+		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00075641/manifest",
+		"First Source Exact Date": "1532",
+		"First Source Date": "1532",
+		"Texted": "no",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2025-O_virgo_benedicta.krn",
+		"FILEBASE": "Sil2025-O_virgo_benedicta"
+	},
+	{
 		"ID": "The2001",
 		"Composer": "Therache, Pierrequin de",
 		"Title": "Verbum bonum et suave",
