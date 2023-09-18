@@ -1500,6 +1500,22 @@
 		"FILEBASE": "Lhe2007-Ave_regina_celorum"
 	},
 	{
+		"ID": "Lhe2012",
+		"Composer": "Lheritier, Jean",
+		"Title": "Ave mater matris Dei",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Perkins_1969a",
+		"First Source": "I-Bc Q.20",
+		"RISM or CC Source Sigla": "BolC Q20",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/#/",
+		"First Source Exact Date": "~1525",
+		"First Source Date": "~1525",
+		"Texted": "no",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2012-Ave_mater_matris_Dei.krn",
+		"FILEBASE": "Lhe2012-Ave_mater_matris_Dei"
+	},
+	{
 		"ID": "Lhe2015",
 		"Composer": "Lheritier, Jean",
 		"Title": "Ascendens Christus",
