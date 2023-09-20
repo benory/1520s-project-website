@@ -1403,7 +1403,7 @@
 	},
 	{
 		"ID": "Lhe2001",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Te Matrem",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1419,7 +1419,7 @@
 	},
 	{
 		"ID": "Lhe2002",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Dum complerentur",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1435,7 +1435,7 @@
 	},
 	{
 		"ID": "Lhe2004",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Sancta Maria succurre miseris",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1451,7 +1451,7 @@
 	},
 	{
 		"ID": "Lhe2005",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Ave Domina Mea",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1467,7 +1467,7 @@
 	},
 	{
 		"ID": "Lhe2006",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Salvator mundi",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1483,7 +1483,7 @@
 	},
 	{
 		"ID": "Lhe2007",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Ave regina celorum",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1501,7 +1501,7 @@
 	},
 	{
 		"ID": "Lhe2011",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Sub tuum presidium",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1512,12 +1512,13 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
+		"Date Added": "2023-9-19",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2011-Sub_tuum_presidium.krn",
 		"FILEBASE": "Lhe2011-Sub_tuum_presidium"
 	},
 	{
 		"ID": "Lhe2012",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Ave mater matris Dei",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1528,12 +1529,13 @@
 		"First Source Exact Date": "~1525",
 		"First Source Date": "~1525",
 		"Texted": "no",
+		"Date Added": "2023-9-18",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2012-Ave_mater_matris_Dei.krn",
 		"FILEBASE": "Lhe2012-Ave_mater_matris_Dei"
 	},
 	{
 		"ID": "Lhe2015",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Ascendens Christus",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1549,7 +1551,7 @@
 	},
 	{
 		"ID": "Lhe2016",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Deus in nomine tuo",
 		"Genre": "motet",
 		"Voices": "5",
@@ -1565,7 +1567,7 @@
 	},
 	{
 		"ID": "Lhe2017",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Nigra sum sed fomosa",
 		"Genre": "motet",
 		"Voices": "5",
@@ -1584,7 +1586,7 @@
 	},
 	{
 		"ID": "Lhe2021",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Ave Maria gratia plena",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1600,7 +1602,7 @@
 	},
 	{
 		"ID": "Lhe2022",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Virgo Christi egregia",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1616,7 +1618,7 @@
 	},
 	{
 		"ID": "Lhe2023",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Nigra sum sed fomosa",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1632,7 +1634,7 @@
 	},
 	{
 		"ID": "Lhe2032",
-		"Composer": "Lheritier, Jean",
+		"Composer": "Lhéritier, Jean",
 		"Title": "Nigra sum sed fomosa",
 		"Genre": "motet",
 		"Voices": "6",
@@ -2996,6 +2998,7 @@
 		"First Source Exact Date": "~1521",
 		"First Source Date": "~1521",
 		"Texted": "no",
+		"Date Added": "2023-9-15",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2012-Virgo_carens_criminibus.krn",
 		"FILEBASE": "Sil2012-Virgo_carens_criminibus"
 	},
@@ -3032,6 +3035,7 @@
 		"First Source Exact Date": "1532",
 		"First Source Date": "1532",
 		"Texted": "no",
+		"Date Added": "2023-9-16",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2025-O_virgo_benedicta.krn",
 		"FILEBASE": "Sil2025-O_virgo_benedicta"
 	},
@@ -4112,6 +4116,22 @@
 		"Texted": "no",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2057-O_magnum_misterium.krn",
 		"FILEBASE": "Wil2057-O_magnum_misterium"
+	},
+	{
+		"ID": "Wil2062",
+		"Composer": "Willaert, Adrian",
+		"Title": "Precatus est Moyses",
+		"Genre": "motet",
+		"Voices": "5",
+		"Modern Editions": "Zenck_1950c; Smijers_1960",
+		"First Source": "Liber quartus. xxix. musicales quatuor vel quinque parium vocum (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1534|6",
+		"RISM Source Link": "https://rism.online/sources/993104115",
+		"First Source Exact Date": "1534/6",
+		"First Source Date": "1534",
+		"Texted": "no",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2062-Precatus_est_moyses.krn",
+		"FILEBASE": "Wil2062-Precatus_est_moyses"
 	},
 	{
 		"ID": "Wil3001",
