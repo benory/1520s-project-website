@@ -4332,5 +4332,22 @@
 		"Date Added": "2023-9-26",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3024-Jayme_par_amours.krn",
 		"FILEBASE": "Wil3024-Jayme_par_amours"
+	},
+	{
+		"ID": "Wil3025",
+		"Composer": "Willaert, Adrian",
+		"Title": "Qui la dira la peine de mon cueur",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell' Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-9-27",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3025-Qui_la_dira_la_peine_de_mon_cueur.krn",
+		"FILEBASE": "Wil3025-Qui_la_dira_la_peine_de_mon_cueur"
 	}
 ]
