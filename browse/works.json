@@ -4366,5 +4366,22 @@
 		"Date Added": "2023-9-28",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3028-Qui_est_celuy_qui_a_dit_mal_du_con.krn",
 		"FILEBASE": "Wil3028-Qui_est_celuy_qui_a_dit_mal_du_con"
+	},
+	{
+		"ID": "Wil3032",
+		"Composer": "Willaert, Adrian",
+		"Title": "Qui veult aymer il fault estre joyeulx",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell' Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-9-29",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3032-Qui_veult_aymer_il_fault_estre_joyeulx.krn",
+		"FILEBASE": "Wil3032-Qui_veult_aymer_il_fault_estre_joyeulx"
 	}
 ]
