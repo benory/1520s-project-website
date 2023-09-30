@@ -3,6 +3,13 @@ layout: page
 title: about
 ---
 
+<style>
+img {
+  max-width: 100%;
+  padding: 15px;
+}
+</style>
+
 ## A new aesthetic paradigm
 
 Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold. 
@@ -38,7 +45,7 @@ Would you like a particular score to be texted? [Let us know.](mailto:The1520sPr
 
 ## Support
 
-This project has been generously supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, and the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
+This project has been generously supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
 
 [![CESTA logo](CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"} [![CCARH logo](CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}[![Propel Grant logo](Propel_logo.png)](https://propelgrants.stanford.edu){:target="_blank"}
 
