@@ -70,6 +70,7 @@ function fillInCensusData(data) {
 	for (let i=0; i<data.length; i++) {
 		let genre = data[i]["Genre"];
 		workCount++;
+
 		if (genre == "mass"){
 			massCount++;
 		}
