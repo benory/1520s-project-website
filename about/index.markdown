@@ -10,6 +10,8 @@ img {
 }
 </style>
 
+{% include_relative scripts-local.html %}
+
 ## A new aesthetic paradigm
 
 Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold. 
@@ -22,7 +24,7 @@ Complicating matters further: more works from during the 1520s survive than from
 
 ## Meeting the challenge
 
-The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded by [Benjamin Ory](https://benjaminory.com){:target="_blank"} in 2019, the project provides high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features more than 250 scores and more than 250,000 notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date of the first surviving source.
+The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded in 2019 by [Benjamin Ory](https://benjaminory.com){:target="_blank"}, the project provides high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features <span id="work-count"></span> scores and <span id="note-count"></span> notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date of the first surviving source.
 
 ![Number of Works by Date of First Source](number_of_works_by_year.svg)
 

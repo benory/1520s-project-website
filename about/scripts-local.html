@@ -1,0 +1,48 @@
+<script>
+
+let METADATA = {% include_relative works.json %};
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- run after webpage has finished loading.
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+  fillInCensusData(METADATA);
+});
+
+//////////////////////////////
+//
+// fillInCensusData --
+//
+
+function fillInCensusData(data) {
+  let workCount = 0;
+  let noteCount = 0;
+  let massCount = 0;
+  let motetCount = 0;
+  let secularCount = 0;
+
+  for (let i=0; i<data.length; i++) {
+    let count = data[i]["Note Count"];
+    if (count) {
+      noteCount += parseInt(count);
+    }
+  }
+
+  for (let i=0; i<data.length; i++) {
+    workCount++;
+  }
+
+  let noteElement = document.querySelector("#note-count");
+  if (noteElement) {
+    noteElement.innerHTML = noteCount;
+  }
+
+  let workElement = document.querySelector("#work-count");
+  if (workElement) {
+    workElement.innerHTML = workCount;
+  }
+}
+
+</script>
