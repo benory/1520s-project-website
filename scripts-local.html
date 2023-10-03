@@ -210,8 +210,8 @@ function compareByDateAdded(a, b) {
   if (!b["Date Added"]) return -1;
 
   // Convert date strings to Date objects for comparison
-  const dateA = new Date(a["Date Added"]);
-  const dateB = new Date(b["Date Added"]);
+  const dateA = new Date(a["Date Added"].replace(/-/g, "/"));
+  const dateB = new Date(b["Date Added"].replace(/-/g, "/"));
 
   // Compare the dates
   if (dateA < dateB) return 1;
