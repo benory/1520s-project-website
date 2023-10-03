@@ -4614,6 +4614,23 @@
 		"FILEBASE": "Wil3025-Qui_la_dira_la_peine_de_mon_cueur"
 	},
 	{
+		"ID": "Wil3026",
+		"Composer": "Willaert, Adrian",
+		"Title": "La rousé du moys de may",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell' Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-10-3",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3026-La_rouse_du_moys_de_may.krn",
+		"FILEBASE": "Wil3026-La_rouse_du_moys_de_may"
+	},
+	{
 		"ID": "Wil3028",
 		"Composer": "Willaert, Adrian",
 		"Title": "Qui est celuy qui a dit mal du con",
@@ -4662,7 +4679,7 @@
 		"First Source Exact Date": "1536",
 		"First Source Date": "1536",
 		"Texted": "no",
-		"Date Added": "2023-10-1",
+		"Date Added": "2023-10-2",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3031-Je_ne_scaroys_chanter_ne_rire.krn",
 		"FILEBASE": "Wil3031-Je_ne_scaroys_chanter_ne_rire"
 	},
