@@ -1,6 +1,6 @@
 ---
 layout: page
-title: browse
+title: browse scores
 ---
 
 <div id="search-interface"></div>
