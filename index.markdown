@@ -6,10 +6,11 @@ layout: page
 ---
 <style>
 	main.page-content {padding: 0px;}
-	table.most-recent {text-align: left;}
-	table.most-recent {font: 400 14px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
-	table.most-recent { border-collapse: collapse; }
-	table.most-recent { padding-left: 2px; padding-top: 2px; padding: 2px}
+	table {text-align: left;}
+	table {font: 400 14px/0.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
+	table { border-collapse: collapse; }
+	table { padding-left: 1px; padding-top: 1px; padding: 1px}
+	table { margin-left: auto; margin-right: auto; } /* center table */
 </style>
 
 ![1520s Project banner](/images/1520s_banner.png)
@@ -20,7 +21,7 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 #### Project data
 + Number of works: <span id="work-count"></span>
 + Number of notes: <span id="note-count"></span>
-+ By genre: 24 mass movements, 182 motets, 54 secular works
++ By genre: <span id="mass-count"></span> mass movements, <span id="motet-count"></span> motets, <span id="secular-count"></span> secular works
 
 ![Project summary](/images/project_summary.svg)
 
@@ -32,7 +33,10 @@ For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research
 <script>
 // vim: ts=3
 
-document.addEventListener("DOMContentLoaded", fillMostRecentList);
+document.addEventListener("DOMContentLoaded", function () {
+	METADATA = {% include_relative works.json %};
+	fillMostRecentList(METADATA);
+});
 
 //////////////////////////////
 //
@@ -40,25 +44,9 @@ document.addEventListener("DOMContentLoaded", fillMostRecentList);
 //
 
 function fillMostRecentList() {
-	let mid = "AKfycbwuHJlO-idyGmlaHBhNshmSCtiOau1QsXwN3K7PHyJDZ47qvPMEvv-uACFzJCBLB7iWXw";
-	let metadata = `https://script.google.com/macros/s/${mid}/exec`;
-	fetch(metadata)
-		.then(response => {
-			if (!response.ok) {
-				throw new Error(`HTTP error! Status: ${response.status}`);
-			}
-			return response.json();
-		})
-		.then(data => {
-			displayMostRecent(data);
-			fillInCensusData(data);
-		})
-		.catch(error => {
-			console.error("Fetch error: ", error);
-		});
+	displayMostRecent(METADATA);
+	fillInCensusData(METADATA);
 }
-
-
 
 //////////////////////////////
 //
@@ -68,11 +56,28 @@ function fillMostRecentList() {
 function fillInCensusData(data) {
 	let workCount = 0;
 	let noteCount = 0;
+	let massCount = 0;
+	let motetCount = 0;
+	let secularCount = 0;
+
 	for (let i=0; i<data.length; i++) {
 		let count = data[i]["Note Count"];
 		if (count) {
 			noteCount += parseInt(count);
 			workCount++;
+		}
+	}
+
+	for (let i=0; i<data.length; i++) {
+		let genre = data[i]["Genre"];
+		if (genre == "mass"){
+			massCount++;
+		}
+		if (genre == "motet"){
+			motetCount++;
+		}
+		if (genre == "secular work"){
+			secularCount++;
 		}
 	}
 
@@ -86,8 +91,22 @@ function fillInCensusData(data) {
 		workElement.innerHTML = workCount;
 	}
 
-}
+	let massElement = document.querySelector("#mass-count");
+	if (massElement) {
+		massElement.innerHTML = massCount;
+	}
 
+	let motetElement = document.querySelector("#motet-count");
+	if (motetElement) {
+		motetElement.innerHTML = motetCount;
+	}
+
+	let secularElement = document.querySelector("#secular-count");
+	if (secularElement) {
+		secularElement.innerHTML = secularCount;
+	}
+
+}
 
 //////////////////////////////
 //
@@ -124,7 +143,6 @@ function displayMostRecent(metadata) {
 	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
 	for (let i=0; i<count; i++) {
 		let entry = metadata[i];
-		let date = entry["Date Added"];
 		let scoreURL = getScoreURL(entry);
 		output += "<tr>";
 		output += `<td>${entry["Date Added"]}</td>`;
