@@ -12,7 +12,6 @@ layout: page
 
 The 1520s Project is an open-source repository of more than 250 scores of European polyphonic music from ca. 1510 through ca. 1530. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s. Read [about the project](about) or [browse the project's scores](browse). <br><br>
 
-
 #### Project data
 + Number of works: <span id="work-count"></span>
 + Number of notes: <span id="note-count"></span>
@@ -24,7 +23,3 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 <div data-count="10" id="most-recent"></div>
 
 For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the overlap between the projects, see [about this project](about).
-
-
-
-
