@@ -5,12 +5,22 @@
 layout: page
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38882FHV3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38882FHV3H');
+</script>
+
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
 
 ![1520s Project banner](/images/1520s_banner.png)
 
-The 1520s Project is an open-source repository of more than 250 scores of European polyphonic music from ca. 1510 through ca. 1530. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s. Read [about the project](about) or [browse the project's scores](browse). <br><br>
+The 1520s Project is an open-source repository of more than 250 scores of European polyphonic music from ca. 1510 through ca. 1540. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s. Read [about the project](about) or [browse the project's scores](browse). <br><br>
 
 #### Project data
 + Number of works: <span id="work-count"></span>

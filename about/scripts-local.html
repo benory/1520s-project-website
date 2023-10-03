@@ -30,13 +30,15 @@ function fillInCensusData(data) {
     }
   }
 
+  let roundCount = Math.floor(noteCount / 5000) * 5000;
+
   for (let i=0; i<data.length; i++) {
     workCount++;
   }
 
   let noteElement = document.querySelector("#note-count");
   if (noteElement) {
-    noteElement.innerHTML = noteCount;
+    noteElement.innerHTML = roundCount;
   }
 
   let workElement = document.querySelector("#work-count");
