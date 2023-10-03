@@ -20,6 +20,9 @@ all: download
 download:
 	(cd _includes/metadata && make download)
 
+download:
+	(cd browse && make download)
+
 ## Download works file in order to display "recently added" works on the home page
 
 SID = AKfycbwuHJlO-idyGmlaHBhNshmSCtiOau1QsXwN3K7PHyJDZ47qvPMEvv-uACFzJCBLB7iWXw
