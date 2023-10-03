@@ -3,20 +3,31 @@
 <script>
 // vim: ts=3
 
+let METADATA = {% include_relative works.json %};
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- run after webpage has finished loading.
+//
+
 document.addEventListener("DOMContentLoaded", function () {
-	METADATA = {% include_relative works.json %};
 	fillMostRecentList(METADATA);
 });
+
+
 
 //////////////////////////////
 //
 // fillMostRecentList --
 //
 
-function fillMostRecentList() {
-	displayMostRecent(METADATA);
-	fillInCensusData(METADATA);
+function fillMostRecentList(metadata) {
+	displayMostRecent(metadata);
+	fillInCensusData(metadata);
 }
+
+
 
 //////////////////////////////
 //
@@ -80,6 +91,8 @@ function fillInCensusData(data) {
 
 }
 
+
+
 //////////////////////////////
 //
 // formatBigNumber -- avoid using commas to make Europeans happier
@@ -90,9 +103,14 @@ function formatBigNumber(number) {
 }
 
 
+
 //////////////////////////////
 //
-// displayMostRecent --
+// displayMostRecent --  Display the most recently added works.   The
+//    number of works displayed is controled by a data parameter in the
+//    HTML code where the table will be displayed:
+//        <div data-count="10" id="most-recent"></div>
+//    in this case the 10 most recent works will be displayed in the list.
 //
 
 function displayMostRecent(metadata) {
@@ -114,32 +132,15 @@ function displayMostRecent(metadata) {
 	let output = "<table class='most-recent'>";
 	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
 	for (let i=0; i<count; i++) {
-
 		let entry = metadata[i];
+		let date = prepareDate(entry["Date Added"]);
+		let composer = prepareComposer(entry.Composer);
+		let title = prepareTitle(entry);
 
-		// Input date string in the format "2023-10-1"
-		let inputDateString = entry["Date Added"];
-
-		// Parse the input date string
-		let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
-
-		// Create an array of month names
-		let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-		// Format the date in "Date Month Year" format
-		let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
-
-		console.log(formattedDate); // Output: "1-Oct-2023"
-
-		let scoreURL = getScoreURL(entry);
 		output += "<tr>";
-		output += `<td>${formattedDate}</td>`;
-		output += `<td>${stylizeComposer(entry.Composer)}</td>`;
-		if (!entry.Subtitle) {
-			output += `<td><a target="_blank" href=${scoreURL}>${entry.Title}</a></td>`;
-		} else {
-			output += `<td><a target="_blank" href=${scoreURL}>${entry.Title} <i>${entry.Subtitle}</i></a></td>`;
-		}
+		output += `<td>${date}</td>`;
+		output += `<td>${composer}</td>`;
+		output += `<td>${title}</td>`;
 		output += "</tr>";
 	}
 	output += "</table>";
@@ -150,10 +151,46 @@ function displayMostRecent(metadata) {
 
 //////////////////////////////
 //
-// stylizeComposer -- Make "first last" from "last, first".
+// prepareTitle -- Merge title and subtitle fields and apply URL.
 //
 
-function stylizeComposer(name) {
+function prepareTitle(entry) {
+	let output = entry.Title;
+	if (entry.Subtitle) {
+		output += ` <i>${entry.Subtitle}</i>`;
+	}
+	let id = entry.ID || "";
+	if (id) {
+		output = `<a target="_blank" href="/work?id=${id}">${output}</a>`;
+	}
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// prepareDate -- convert YYYY-M-D to D MMM YYYY
+//
+
+function prepareDate(inputDateString) {
+	if (!inputDateString) {
+		return "";
+	}
+	let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
+	let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	return formattedDate;
+}
+
+
+
+//////////////////////////////
+//
+// prepareComposer -- Make "first last" from "last, first".
+//
+
+function prepareComposer(name) {
 	let matches = name.match(/^\s*([^,]+)\s*,\s*([^,]+)\s*$/);
 	if (!matches) {
 		return name;
@@ -185,19 +222,10 @@ function compareByDateAdded(a, b) {
   return 0;
 }
 
-//////////////////////////////
-//
-// getScoreURL -- Generate URL
-//
 
-function getScoreURL(entry) {
-	let ID = "";
-	if (typeof entry["ID"] !== "undefined") {
-		ID = entry["ID"];
-		let url = `"/work?id=${ID}"`;
-		return url;
-	}
-	return "";
-}
+
 
 </script>
+
+
+
