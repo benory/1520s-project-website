@@ -66,6 +66,7 @@ function fillInCensusData(data) {
 			noteCount += parseInt(count);
 		}
 	}
+	let formattednotecount = noteCount.toLocaleString("en-US");
 
 	for (let i=0; i<data.length; i++) {
 		let genre = data[i]["Genre"];
@@ -84,7 +85,7 @@ function fillInCensusData(data) {
 
 	let noteElement = document.querySelector("#note-count");
 	if (noteElement) {
-		noteElement.innerHTML = formatBigNumber(noteCount);
+		noteElement.innerHTML = formattednotecount;
 	}
 
 	let workElement = document.querySelector("#work-count");
@@ -143,10 +144,26 @@ function displayMostRecent(metadata) {
 	let output = "<table class='most-recent'>";
 	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
 	for (let i=0; i<count; i++) {
+
 		let entry = metadata[i];
+
+		// Input date string in the format "2023-10-1"
+		let inputDateString = entry["Date Added"];
+
+		// Parse the input date string
+		let parsedDate = new Date(inputDateString);
+
+		// Create an array of month names
+		let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+		// Format the date in "D-MMM-YYYY" format
+		let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+
+		console.log(formattedDate); // Output: "1-Oct-2023"
+
 		let scoreURL = getScoreURL(entry);
 		output += "<tr>";
-		output += `<td>${entry["Date Added"]}</td>`;
+		output += `<td>${formattedDate}</td>`;
 		output += `<td>${stylizeComposer(entry.Composer)}</td>`;
 		if (!entry.Subtitle) {
 			output += `<td><a target="_blank" href=${scoreURL}>${entry.Title}</a></td>`;
