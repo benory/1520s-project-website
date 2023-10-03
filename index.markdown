@@ -151,12 +151,12 @@ function displayMostRecent(metadata) {
 		let inputDateString = entry["Date Added"];
 
 		// Parse the input date string
-		let parsedDate = new Date(inputDateString);
+		let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
 
 		// Create an array of month names
 		let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-		// Format the date in "D-MMM-YYYY" format
+		// Format the date in "Date Month Year" format
 		let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
 
 		console.log(formattedDate); // Output: "1-Oct-2023"
