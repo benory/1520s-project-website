@@ -24,7 +24,7 @@ The 1520s Project is an open-source repository of more than 250 scores of Europe
 
 ![Project summary](/images/project_summary.svg)
 
-#### Recently Added Works
+#### Recently added works
 <div data-count="10" id="most-recent"></div>
 
 For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the overlap between the projects, see [about this project](about).
