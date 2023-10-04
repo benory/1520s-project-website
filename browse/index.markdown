@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
 	// var url = `https://script.google.com/macros/s/${id}/exec`;
 
-	METADATA = {% include_relative works.json %};
+	METADATA = {% include metadata/works.json %};
 
 	//fetch(url)
 	//.then((response) => response.json())
