@@ -62,6 +62,8 @@ function fillInCensusData(data) {
 		}
 	}
 
+  let roundworkCount = Math.floor(workCount / 25) * 25;
+
 	let noteElement = document.querySelector("#note-count");
 	if (noteElement) {
 		noteElement.innerHTML = noteCount;
@@ -70,6 +72,11 @@ function fillInCensusData(data) {
 	let workElement = document.querySelector("#work-count");
 	if (workElement) {
 		workElement.innerHTML = workCount;
+	}
+
+	let roundworkElement = document.querySelector("#roundwork-count");
+	if (roundworkElement) {
+		roundworkElement.innerHTML = roundworkCount;
 	}
 
 	let massElement = document.querySelector("#mass-count");
