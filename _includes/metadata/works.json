@@ -3462,6 +3462,22 @@
 		"FILEBASE": "Ver2018-Sancta_Maria_virgo_virginum"
 	},
 	{
+		"ID": "Ver3003",
+		"Composer": "Verdelot, Philippe",
+		"Title": "Se mai provasti donna",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Owens_1989",
+		"First Source": "US-NH Miscellaneous MS 179",
+		"RISM or CC Source Sigla": "NHavY 179",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2255/#/",
+		"First Source Exact Date": "~1525",
+		"First Source Date": "~1525",
+		"Texted": "no",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3003-Se_mai_provasti_donna.krn",
+		"FILEBASE": "Ver3003-Se_mai_provasti_donna"
+	},
+	{
 		"ID": "Ver3004",
 		"Composer": "Verdelot, Philippe",
 		"Title": "Con suave parlar",
