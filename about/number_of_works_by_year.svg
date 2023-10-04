@@ -74,14 +74,14 @@
 <rect x='145.72' y='217.98' width='7.48' height='14.90' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3E4989;' />
 <rect x='162.35' y='212.02' width='7.48' height='20.87' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #3A548C;' />
 <rect x='195.59' y='223.94' width='7.48' height='8.94' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #306A8E;' />
-<rect x='212.22' y='185.19' width='7.48' height='47.70' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2C738E;' />
+<rect x='212.22' y='179.23' width='7.48' height='53.66' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2C738E;' />
 <rect x='245.47' y='122.59' width='7.48' height='110.30' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #24868E;' />
-<rect x='287.02' y='209.04' width='7.48' height='23.85' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #1F9F88;' />
-<rect x='178.97' y='215.00' width='7.48' height='17.89' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #35608D;' />
+<rect x='287.02' y='206.06' width='7.48' height='26.83' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #1F9F88;' />
+<rect x='178.97' y='212.02' width='7.48' height='20.87' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #35608D;' />
 <rect x='228.84' y='215.00' width='7.48' height='17.89' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #287D8E;' />
 <rect x='328.58' y='217.98' width='7.48' height='14.90' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #33B67A;' />
 <rect x='120.79' y='212.02' width='7.48' height='20.87' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #453882;' />
-<rect x='270.40' y='200.10' width='7.48' height='32.79' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #1F958B;' />
+<rect x='270.40' y='197.12' width='7.48' height='35.77' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #1F958B;' />
 <rect x='353.52' y='229.91' width='7.48' height='2.98' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #4DC36B;' />
 <rect x='411.70' y='229.91' width='7.48' height='2.98' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #A1DA38;' />
 <rect x='253.78' y='188.17' width='7.48' height='44.71' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #228B8D;' />
@@ -91,7 +91,7 @@
 <rect x='469.89' y='229.91' width='7.48' height='2.98' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FDE725;' />
 <rect x='295.34' y='226.93' width='7.48' height='5.96' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #20A386;' />
 <rect x='278.71' y='229.91' width='7.48' height='2.98' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #1F9A8A;' />
-<rect x='303.65' y='226.93' width='7.48' height='5.96' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #22A884;' />
+<rect x='303.65' y='203.08' width='7.48' height='29.81' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #22A884;' />
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwyODguMDA=)'>
 <text x='28.21' y='236.04' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>0</text>
@@ -134,7 +134,7 @@
 <text x='465.31' y='254.11' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='19.58px' lengthAdjust='spacingAndGlyphs'>1555</text>
 <text x='265.83' y='266.57' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='22.23px' lengthAdjust='spacingAndGlyphs'>Year</text>
 <text transform='translate(13.36,133.03) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='85.40px' lengthAdjust='spacingAndGlyphs'>Number of Works</text>
-<text x='265.83' y='14.93' text-anchor='middle' style='font-size: 13.20px; font-family: "Arial";' textLength='363.90px' lengthAdjust='spacingAndGlyphs'>Number of Works in The 1520s Project by Year of First Source</text>
+<text x='265.83' y='14.93' text-anchor='middle' style='font-size: 13.20px; font-family: "Arial";' textLength='239.49px' lengthAdjust='spacingAndGlyphs'>Number of Works by Year of First Source</text>
 <text x='498.52' y='280.67' text-anchor='end' style='font-size: 8.80px; font-family: "Arial";' textLength='153.65px' lengthAdjust='spacingAndGlyphs'>approximate and exact dates combined</text>
 </g>
 </svg>
