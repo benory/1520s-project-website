@@ -3,6 +3,8 @@ layout: page
 title: browse scores
 ---
 
+<input type="text" id="input" onkeyup="UserSearch()" placeholder="Enter title, composer, source, or date">
+
 <div id="search-interface"></div>
 
 <div id="list"></div>
@@ -20,6 +22,18 @@ title: browse scores
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
+
+	#input {
+	  background-image: url('/browse/searchicon.png'); /* Add a search icon to input */
+	  background-position: 10px 12px; /* Position the search icon */
+	  background-repeat: no-repeat; /* Do not repeat the icon image */
+	  width: 37%; /* Full-width */
+	  font-size: 16px; /* Increase font-size */
+	  padding: 12px 20px 12px 40px; /* Add some padding */
+	  border: 1px solid #ddd; /* Add a grey border */
+	  margin-bottom: 12px; /* Add some space below the input */
+	}
+
 </style>
 
 <script>
@@ -38,20 +52,10 @@ let INDEX_RISMlink 	  	  = "RISM Source Link";
 let INDEX_DIAMMlink	  	  = "DIAMM source link";
 
 document.addEventListener("DOMContentLoaded", function () {
-	// var id = "AKfycbybB9k5Omv7Fv_e5qpLyjPXwZgJbRxSk4Fn9ZgXp3Nl7sR9JTSac-yauOKKK4aldNo48Q";
-	// var url = `https://script.google.com/macros/s/${id}/exec`;
-
 	METADATA = {% include metadata/works.json %};
-
-	//fetch(url)
-	//.then((response) => response.json())
-	//.then((data) => {
-	//	METADATA = data;
-		buildSearchInterface(METADATA, "#search-interface");
-		displayBrowseTable(METADATA, "#list"); 
-	//})
-	//.catch((error) => console.error("Error downloading metadata: ", error));
-
+	
+	buildSearchInterface(METADATA, "#search-interface");
+	displayBrowseTable(METADATA, "#list"); 
 });
 
 //////////////////////////////
@@ -256,6 +260,32 @@ function getSource(entry) {
 	}
 
 	return "";
+}
+
+//////////////////////////////
+//
+// UserSearch --
+//
+
+function UserSearch() {
+  let input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("list");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
 }
 
 //////////////////////////////
