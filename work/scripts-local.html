@@ -266,7 +266,38 @@ function displayWorkFooter(id) {
 	element.innerHTML = output;
 }
 
+//////////////////////////////
+//
+// displayNoAccidentals --
+//
+
+function displayNoAccidentals() {
+	displayHumdrum({
+		source: "my-score",
+		autoResize: "true",
+		filter: "shed -ke s/X?i/y/g"
+	});
+	let elements = document.querySelectorAll("#accidentalSelect span");
+	for (let i=0; i<elements.length; i++) {
+		elements[i].classList.toggle("hidden");
+	}
+}
+
+//////////////////////////////
+//
+// displayAccidentals --
+//
+
+function displayAccidentals() {
+	displayHumdrum({
+		source: "my-score",
+		autoResize: "true",
+		filter: "",
+	});
+	let elements = document.querySelectorAll("#accidentalSelect span");
+	for (let i=0; i<elements.length; i++) {
+		elements[i].classList.toggle("hidden");
+	}
+}
+
 </script>
-
-
-
