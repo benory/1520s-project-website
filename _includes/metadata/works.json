@@ -4666,6 +4666,23 @@
 		"FILEBASE": "Wil3028-Qui_est_celuy_qui_a_dit_mal_du_con"
 	},
 	{
+		"ID": "Wil3029",
+		"Composer": "Willaert, Adrian",
+		"Title": "Sire dondieu",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell' Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-10-5",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3029-Sire_dondieu.krn",
+		"FILEBASE": "Wil3029-Sire_dondieu"
+	},
+	{
 		"ID": "Wil3030",
 		"Composer": "Willaert, Adrian",
 		"Title": "Jan, Jan, quant tu t'en iras",
