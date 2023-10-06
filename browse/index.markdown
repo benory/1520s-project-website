@@ -268,25 +268,25 @@ function getSource(entry) {
 //
 
 function UserSearch() {
-  let input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("input");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("list");
-  tr = table.getElementsByTagName("tr");
+	  let tr    = document.querySelectorAll("#list tr");
+	  let input = document.querySelector("#input");
+	  let regex = new RegExp(input.value, 'i');
 
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
+	  // Loop through all table rows, hiding those that don't match the search query:
+	  // i=1: skip the first tr which is the header row for the table.
+	  for (let i=1; i<tr.length; i++) {
+	      let td = tr[i].querySelectorAll("td");
+	      let found = false;
+	      for (let j=0; j<td.length; j++) {
+	          if (td.innerText.match(regex)) {
+	            found = true;
+	            break;
+	          }
+	      }
+	  tr[i].style.display = found ? "block" : "none";
+	  }
 }
+
 
 //////////////////////////////
 //
