@@ -4,7 +4,6 @@
 let METADATA = {% include metadata/works.json %};
 
 
-
 //////////////////////////////
 //
 // DOMContentLoaded event -- run after webpage has finished loading.
@@ -26,6 +25,17 @@ function fillMostRecentList(metadata) {
 	fillInCensusData(metadata);
 }
 
+
+//////////////////////////////
+//
+// UserSearch --
+//
+
+function UserSearch() {
+	let input = document.querySelector("#input");
+	let url = `"/browse?q=${input}"`;
+	window.open(url);
+}
 
 
 //////////////////////////////

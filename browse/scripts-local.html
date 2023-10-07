@@ -265,9 +265,11 @@ function UserSearch() {
 		}
 		tr[i].style.display = found ? "" : "none";
 	}
-
-	searchString = `[${searchCount} results]`;
-
+	if (searchCount == 1){
+		searchString = `[${searchCount} result]`;
+	} else {
+		searchString = `[${searchCount} results]`;
+	}
 	let searchStringElement = document.querySelector("#search-count");
 	if (searchStringElement) {
 		searchStringElement.innerHTML = searchString;
