@@ -249,6 +249,8 @@ function UserSearch() {
 	let tr    = document.querySelectorAll("#list tbody tr");
 	let input = document.querySelector("#input");
 	let regex = new RegExp(input.value, 'i');
+	let searchCount = 0;
+	let searchString = "";
 
 	// Loop through all table rows, hiding those that don't match the search query:
 	for (let i=0; i<tr.length; i++) {
@@ -257,10 +259,18 @@ function UserSearch() {
 		for (let j=0; j<td.length; j++) {
 			if (td[j].innerText.match(regex)) {
 				found = true;
+				searchCount++;
 				break;
 			}
 		}
 		tr[i].style.display = found ? "" : "none";
+	}
+
+	searchString = `[${searchCount} results]`;
+
+	let searchStringElement = document.querySelector("#search-count");
+	if (searchStringElement) {
+		searchStringElement.innerHTML = searchString;
 	}
 }
 
