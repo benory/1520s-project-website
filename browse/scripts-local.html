@@ -1,34 +1,8 @@
 
+{% include_relative scripts-listeners.html %}
 
 <script>
-// vim: ts=3:nowrap
-
-let METADATA = [];
-let INDEX_id         	  = "ID";
-let INDEX_composer    	  = "Composer";
-let INDEX_title       	  = "Title";
-let INDEX_genre      	  = "Genre";
-let INDEX_voice      	  = "Voices";
-let INDEX_text            = "Texted";
-let INDEX_firstsourcedate = "First Source Date";
-let INDEX_firstsource 	  = "First Source";
-let INDEX_RISMlink 	  = "RISM Source Link";
-let INDEX_DIAMMlink	   = "DIAMM source link";
-
-
-
-//////////////////////////////
-//
-// DOMContentLoaded event handler -- Runs after webpage finishes loading.
-//
-
-document.addEventListener("DOMContentLoaded", function () {
-	METADATA = {% include metadata/works.json %};
-	
-	buildSearchInterface(METADATA, "#search-interface");
-	displayBrowseTable(METADATA, "#list"); 
-});
-
+// vim: ts=3
 
 
 //////////////////////////////
@@ -135,11 +109,11 @@ function makeTableBody(headings, data) {
 	return output;
 }
 
-			
+
 
 //////////////////////////////
 //
-// getTitle -- Generate Title + Subtitle 
+// getTitle -- Generate Title + Subtitle
 //
 
 function getTitle(entry) {
@@ -242,42 +216,6 @@ function getSource(entry) {
 
 //////////////////////////////
 //
-// UserSearch --
-//
-
-function UserSearch() {
-	let tr    = document.querySelectorAll("#list tbody tr");
-	let input = document.querySelector("#input");
-	let regex = new RegExp(input.value, 'i');
-	let searchCount = 0;
-	let searchString = "";
-
-	// Loop through all table rows, hiding those that don't match the search query:
-	for (let i=0; i<tr.length; i++) {
-		let td = tr[i].querySelectorAll("td");
-		let found = false;
-		for (let j=0; j<td.length; j++) {
-			if (td[j].innerText.match(regex)) {
-				found = true;
-				searchCount++;
-				break;
-			}
-		}
-		tr[i].style.display = found ? "" : "none";
-	}
-	if (searchCount == 1){
-		searchString = `[${searchCount} result]`;
-	} else {
-		searchString = `[${searchCount} results]`;
-	}
-	let searchStringElement = document.querySelector("#search-count");
-	if (searchStringElement) {
-		searchStringElement.innerHTML = searchString;
-	}
-}
-
-//////////////////////////////
-//
 // buildComposerSelect --
 //
 
@@ -293,7 +231,7 @@ function buildComposerSelect(data) {
 		}
 		counter[composer] = (counter[composer] === undefined) ? 1 : counter[composer] + 1;
 	}
-	
+
 	let clist = Object.keys(counter).sort();
 	clist.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 	let composerCount = clist.length;
@@ -487,7 +425,7 @@ function buildYearSelect(data) {
 		} else {
 			return -1;
 		}
-	
+
 		if (digitsA != digitsB) {
 			return parseInt(digitsA) - parseInt(digitsB);
 		}
@@ -659,9 +597,123 @@ function doSearch(data) {
 	}
 
 	displayBrowseTable(data);
+	FreeTextSearch();
 }
 
+
+
+//////////////////////////////
+//
+// FreeTextSearch --  Search for any text within the browse table and hide
+//    rows that do not have the searched text.
+//
+
+function FreeTextSearch(query) {
+	let tr    = document.querySelectorAll("#list tbody tr");
+	let input = document.querySelector("#input");
+	if (query) {
+		input.value = query;
+	} else {
+		query = input.value;
+	}
+	if (!query) {
+		displaySearchCount(tr.length);
+console.warn("SHOWING ALL BROWSE ROWS");
+		showAllBrowseRows();
+		return;
+	}
+	let regex = new RegExp(query, 'i');
+
+	let searchCount = 0;
+
+	// Loop through all table rows, hiding those that don't match the search query:
+	for (let i=0; i<tr.length; i++) {
+		let td = tr[i].querySelectorAll("td");
+		let found = false;
+		for (let j=0; j<td.length; j++) {
+			if (td[j].innerText.match(regex)) {
+				found = true;
+				searchCount++;
+				break;
+			}
+		}
+		tr[i].style.display = found ? "" : "none";
+	}
+
+	displaySearchCount(searchCount);
+}
+
+
+
+//////////////////////////////
+//
+// showAllBrowseRows -- Used to display all rows (again) in browse table when
+//    the free-text search is not being used.
+//
+
+function showAllBrowseRows() {
+	let tr = document.querySelectorAll("#list tbody tr");
+	for (let i=0; i<tr.length; i++) {
+		tr[i].style.display = "";
+	}
+}
+
+
+
+//////////////////////////////
+//
+// displaySearchCount --
+//
+
+function displaySearchCount(count) {
+	let output = "";
+	if (count == 1) {
+		output = `[${count} result]`;
+	} else {
+		output = `[${count} results]`;
+	}
+	let searchCountElement = document.querySelector("#search-count");
+	if (searchCountElement) {
+		searchCountElement.innerHTML = output;
+	}
+}
+
+
+
+/////////////////////////////
+//
+// getCgiParameters -- Extract the CGI parameters from the URL of the page.
+//     id = File ID for the work to display, such as Jac2001.
+//
+
+function getCgiParameters() {
+  let url = window.location.search.substring(1);
+  let output = {};
+  if (!url) {
+    return output;
+  }
+
+  let settings = url.split('&');
+  for (let setting of settings) {
+    let [key, value] = setting.split('=');
+    let decodedKey = decodeURIComponent(key);
+    if (!decodedKey) {
+      continue;
+    }
+    let decodedValue = decodeURIComponent(value);
+
+    if (typeof output[decodedKey] === 'undefined') {
+      output[decodedKey] = decodedValue;
+    } else if (typeof output[decodedKey] === 'string') {
+      output[decodedKey] = [output[decodedKey], decodedValue];
+    } else {
+      output[decodedKey].push(decodedValue);
+    }
+  }
+
+  return output;
+}
+
+
 </script>
-
-
 

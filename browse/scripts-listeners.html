@@ -1,0 +1,47 @@
+
+
+<script>
+// vim: ts=3:nowrap
+
+let METADATA              = {% include metadata/works.json %};
+let INDEX_id         	  = "ID";
+let INDEX_composer    	  = "Composer";
+let INDEX_title       	  = "Title";
+let INDEX_genre      	  = "Genre";
+let INDEX_voice      	  = "Voices";
+let INDEX_text            = "Texted";
+let INDEX_firstsourcedate = "First Source Date";
+let INDEX_firstsource 	  = "First Source";
+let INDEX_RISMlink 	     = "RISM Source Link";
+let INDEX_DIAMMlink	     = "DIAMM source link";
+
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event handler -- Runs after webpage finishes loading.
+//     Builds the select menus from the METADATA object and displays the
+//     browse table.
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	buildSearchInterface(METADATA, "#search-interface");
+	displayBrowseTable(METADATA, "#list");
+	let cgi = getCgiParameters();
+	if (cgi.q) {
+		FreeTextSearch(cgi.q);
+	} else if (cgi.query) {
+		FreeTextSearch(cgi.query);
+	} else if (cgi.s) {
+		FreeTextSearch(cgi.s);
+	} else if (cgi.search) {
+		FreeTextSearch(cgi.search);
+	}
+});
+
+
+</script>
+
+
+
+
