@@ -6,8 +6,6 @@
 
 let METADATA = {% include metadata/works.json %};
 
-
-
 //////////////////////////////
 //
 // DOMContentLoaded event -- run after webpage has finished loading.
@@ -15,7 +13,7 @@ let METADATA = {% include metadata/works.json %};
 
 document.addEventListener("DOMContentLoaded", function () {
 	fillMostRecentList(METADATA);
-
+	displayComposerPlot(METADATA);
 	setupUserSearchEnterKey();
 });
 
@@ -37,8 +35,6 @@ function setupUserSearchEnterKey() {
 		});
 	}
 }
-
-
 
 </script>
 

@@ -5,6 +5,10 @@
 layout: page
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
 
@@ -19,7 +23,7 @@ The 1520s Project is an open-source repository of more than <span id="roundwork-
 + Number of notes: <span id="note-count"></span>
 + By genre: <span id="mass-count"></span> mass movements, <span id="motet-count"></span> motets, <span id="secular-count"></span> secular works
 
-![Project summary](/images/project_summary.svg)
+<div data-threshold="10" id="composer-plot"></div>
 
 #### Recently added works
 <div data-count="10" id="most-recent"></div>
