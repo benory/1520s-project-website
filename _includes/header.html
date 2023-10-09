@@ -26,5 +26,10 @@
         </div>
       </nav>
     {%- endif -%}
+    {% if page.url == "/" or page.url == "/index.html" %}
+    <div class="banner">
+      <img src="{{ '/images/1520s_banner.png' | relative_url }}" alt="Banner Image">
+    </div> <br>
+    {% endif %}
   </div>
 </header>
