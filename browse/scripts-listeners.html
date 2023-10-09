@@ -35,6 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	} else if (cgi.search) {
 		FreeTextSearch(cgi.search);
 	}
+
+	// Move the cursor to the search box when the page is loaded:
+	let searchElement = document.querySelector("#input");
+	if (searchElement) {
+		searchElement.focus();
+	}
+
 });
 
 
