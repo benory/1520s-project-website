@@ -23,7 +23,7 @@ The 1520s Project is an open-source repository of more than <span id="roundwork-
 + Number of notes: <span id="note-count"></span>
 + By genre: <span id="mass-count"></span> mass movements, <span id="motet-count"></span> motets, <span id="secular-count"></span> secular works
 
-<div data-threshold="10" id="composer-plot"></div>
+<div data-threshold="14" id="composer-plot"></div>
 
 #### Recently added works
 <div data-count="10" id="most-recent"></div>
