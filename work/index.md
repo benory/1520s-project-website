@@ -1,5 +1,6 @@
 ---
 layout: work
+vim:    ts=3:nowrap
 ---
 
 {% include_relative scripts-listeners.html %}
@@ -11,10 +12,13 @@ layout: work
 <br>
 
 <div id="accidentalSelect">
-<span onclick="displayNoAccidentals()" class="button">Hide Editorial Accidentals</span>
-<span onclick="displayAccidentals()" class="button hidden">Show Editorial Accidentals</span>
+   <div onclick="displayNoAccidentals()" class="button">Hide Editorial Accidentals</div>
+   <div onclick="displayAccidentals()" class="button hidden">Show Editorial Accidentals</div>
 </div>
 
 <script type="text/x-humdrum" id="my-score"></script>
 
 <div id="work-footer"></div>
+
+
+
