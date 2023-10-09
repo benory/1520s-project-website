@@ -276,7 +276,6 @@ function displayComposerPlot(data) {
 		"layer": [{
 				"mark": {
 					"type": "bar",
-					"color": "lightblue"
 				},
 				"encoding": {
 					"x": {
@@ -299,6 +298,15 @@ function displayComposerPlot(data) {
 							"labels": false,
 							"ticks": false
 						}
+					},
+					"color": {
+				    "field": "Count",
+				    "type": "quantitative",
+				    "scale": {
+				        "scheme": "viridis",
+				        "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
+				    },
+				    "legend": null
 					}
 				}
 			},
@@ -310,7 +318,7 @@ function displayComposerPlot(data) {
 				},
 				"encoding": {
 					"x": {
-						"value": 3
+						"value": -90
 					},
 					"y": {
 						"field": "Composer",
