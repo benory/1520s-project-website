@@ -1,5 +1,9 @@
 
+
 <script>
+
+{% include scripts/getCgiParameters.js %}
+
 
 //////////////////////////////
 //
@@ -32,42 +36,6 @@ function displayWork(id) {
 	displayHumdrum(hnpOptions);
 	displayWorkInfo(id);
 	displayWorkFooter(id);
-}
-
-
-
-/////////////////////////////
-//
-// getCgiParameters -- Extract the CGI parameters from the URL of the page.
-//     id = File ID for the work to display, such as Jac2001.
-//
-
-function getCgiParameters() {
-  let url = window.location.search.substring(1);
-  let output = {};
-  if (!url) {
-    return output;
-  }
-
-  let settings = url.split('&');
-  for (let setting of settings) {
-    let [key, value] = setting.split('=');
-    let decodedKey = decodeURIComponent(key);
-    if (!decodedKey) {
-      continue;
-    }
-    let decodedValue = decodeURIComponent(value);
-
-    if (typeof output[decodedKey] === 'undefined') {
-      output[decodedKey] = decodedValue;
-    } else if (typeof output[decodedKey] === 'string') {
-      output[decodedKey] = [output[decodedKey], decodedValue];
-    } else {
-      output[decodedKey].push(decodedValue);
-    }
-  }
-
-  return output;
 }
 
 
@@ -208,6 +176,7 @@ function displayWorkInfo(id) {
 }
 
 
+
 //////////////////////////////
 //
 // forceDownload --
@@ -221,6 +190,8 @@ function forceDownload(event) {
   let filename = url.replace(/.*\//, "");
   downloadFile(url, filename);
 }
+
+
 
 //////////////////////////////
 //
@@ -242,6 +213,8 @@ function downloadFile(url, filename) {
       console.error('Error:', error);
     });
 }
+
+
 
 //////////////////////////////
 //
@@ -266,6 +239,8 @@ function displayWorkFooter(id) {
 	element.innerHTML = output;
 }
 
+
+
 //////////////////////////////
 //
 // displayNoAccidentals --
@@ -282,6 +257,8 @@ function displayNoAccidentals() {
 		elements[i].classList.toggle("hidden");
 	}
 }
+
+
 
 //////////////////////////////
 //
@@ -301,3 +278,6 @@ function displayAccidentals() {
 }
 
 </script>
+
+
+
