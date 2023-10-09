@@ -1,8 +1,4 @@
-
-
-
 {% include_relative scripts-listeners.html %}
-
 
 <script>
 // vim: ts=3
@@ -250,7 +246,7 @@ function displayComposerPlot(data) {
 		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 		"config": {
 			"view": {
-				"width": 600,
+				"width": 550,
 				"height": 600
 			}
 		},
@@ -281,9 +277,11 @@ function displayComposerPlot(data) {
 					"x": {
 						"field": "Count",
 						"type": "quantitative",
-						"title": "Work count",
+						"title": "Number of Works",
 						"axis": {
-							"tickMinStep": 5
+							"tickMinStep": 5,
+							"labelFontSize": 14,
+							"titleFontSize": 14
 						}
 					},
 					"y": {
@@ -314,11 +312,12 @@ function displayComposerPlot(data) {
 				"mark": {
 					"type": "text",
 					"align": "left",
-					"baseline": "middle"
+					"baseline": "middle",
+					"fontSize": 14
 				},
 				"encoding": {
 					"x": {
-						"value": -90
+						"value": -140
 					},
 					"y": {
 						"field": "Composer",
@@ -342,10 +341,10 @@ function displayComposerPlot(data) {
 		],
 		"title": {
 			"text": "Best-Represented Composers in The 1520s Project",
-			"fontSize": 18
+			"fontSize": 16
 		},
 		"height": {
-			"step": 20
+			"step": 25
 		}
 	};
 

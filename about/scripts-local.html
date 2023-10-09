@@ -1,6 +1,6 @@
-<script>
+{% include_relative scripts-listeners.html %}
 
-let METADATA = {% include metadata/works.json %};
+<script>
 
 //////////////////////////////
 //
@@ -45,6 +45,128 @@ function fillInCensusData(data) {
   if (workElement) {
     workElement.innerHTML = workCount;
   }
+}
+
+function displayComposerPlot(data) {
+
+  let element = document.querySelector("#composer-plot");
+  if (!element) {
+    console.error("ERROR: Cannot find #composer-plot");
+    return;
+  }
+
+  let threshold = element.dataset.threshold;
+  if (threshold < 1) {
+    threshold = 10;
+  } else if (threshold > 50) {
+    threshold = 50;
+  }
+
+  let plotInfo = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "view": {
+        "width": 600,
+        "height": 600
+      }
+    },
+    "data": {
+      "values": data
+    },
+    "transform": [{
+        "aggregate": [{
+          "op": "count",
+          "field": "Composer",
+          "as": "Count"
+        }],
+        "groupby": ["Composer"]
+      },
+      {
+        "filter": `datum.Count > ${threshold}`
+      },
+      {
+        "calculate": "datum.Composer + ' (' + datum.Count + ')'",
+        "as": "ComposerCount"
+      }
+    ],
+    "layer": [{
+        "mark": {
+          "type": "bar",
+        },
+        "encoding": {
+          "x": {
+            "field": "Count",
+            "type": "quantitative",
+            "title": "Work count",
+            "axis": {
+              "tickMinStep": 5
+            }
+          },
+          "y": {
+            "field": "Composer",
+            "type": "nominal",
+            "title": "",
+            "sort": {
+              "field": "Count",
+              "order": "descending"
+            },
+            "axis": {
+              "labels": false,
+              "ticks": false
+            }
+          },
+          "color": {
+            "field": "Count",
+            "type": "quantitative",
+            "scale": {
+                "scheme": "viridis",
+                "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
+            },
+            "legend": null
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle"
+        },
+        "encoding": {
+          "x": {
+            "value": -90
+          },
+          "y": {
+            "field": "Composer",
+            "type": "nominal",
+            "title": "",
+            "sort": {
+              "field": "Count",
+              "order": "descending"
+            },
+            "axis": {
+              "labels": false,
+              "ticks": false
+            }
+          },
+          "text": {
+            "field": "Composer",
+            "type": "nominal"
+          }
+        }
+      }
+    ],
+    "title": {
+      "text": "Best-Represented Composers in The 1520s Project",
+      "fontSize": 18
+    },
+    "height": {
+      "step": 20
+    }
+  };
+
+  vegaEmbed('#composer-plot', plotInfo);
+
 }
 
 </script>

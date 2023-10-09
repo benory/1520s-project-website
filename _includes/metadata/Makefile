@@ -13,11 +13,11 @@
 ##              Type "make" in this directory to download the JSON files for the metadata.
 ##
 
-SID = AKfycbwuHJlO-idyGmlaHBhNshmSCtiOau1QsXwN3K7PHyJDZ47qvPMEvv-uACFzJCBLB7iWXw
+SID = AKfycbwVWxjbsUS_K98S6Ge1JEuJZQHrY5jyOJwO5JyRH15kZWPnj_wh5NAnObJGnRpvCZDsHQ
 
 all: download
 
-download: works composers modern_editions
+download: works composers modern_editions statistics
 
 works:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=works" > works.json
@@ -28,5 +28,6 @@ composers:
 modern_editions:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=modern_editions" > modern_editions.json
 
-
+statistics:
+	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=statistics" > statistics.json
 
