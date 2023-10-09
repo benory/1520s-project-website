@@ -18,4 +18,3 @@ layout: work
 <script type="text/x-humdrum" id="my-score"></script>
 
 <div id="work-footer"></div>
-

@@ -12,7 +12,7 @@ layout: page
 
 The 1520s Project is an open-source repository of more than <span id="roundwork-count"></span> scores of European polyphonic music, ca. 1510–1540. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s. Read [about the project](about) or [browse the project's scores](browse). <br><br>
 
- <!--<input type="text" id="input" onenter="UserSearch()" placeholder="Search the project"><span onclick="UserSearch()" class="button">Enter</span> -->
+<input type="text" id="input" placeholder="Search the project"><span onclick="UserSearch()" class="button" id="inputbutton">Enter</span>
 
 #### Project data
 + Number of works: <span id="work-count"></span>
