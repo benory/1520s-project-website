@@ -4,15 +4,6 @@
 
 //////////////////////////////
 //
-// DOMContentLoaded event -- run after webpage has finished loading.
-//
-
-document.addEventListener("DOMContentLoaded", function () {
-  fillInCensusData(METADATA);
-});
-
-//////////////////////////////
-//
 // fillInCensusData --
 //
 
@@ -47,11 +38,11 @@ function fillInCensusData(data) {
   }
 }
 
-function displayComposerPlot(data) {
+function displayYearsPlot(data) {
 
-  let element = document.querySelector("#composer-plot");
+  let element = document.querySelector("#years-plot");
   if (!element) {
-    console.error("ERROR: Cannot find #composer-plot");
+    console.error("ERROR: Cannot find #years-plot");
     return;
   }
 
@@ -62,111 +53,85 @@ function displayComposerPlot(data) {
     threshold = 50;
   }
 
+  const mergedData = {};
+
+  // Iterate through the original data
+  for (const entry of data) {
+    let year = entry["Date"];
+    
+    // Remove the "~" character if it exists
+    year = year.replace("~", "");
+
+    // If the year already exists in the merged data, add the counts
+    if (mergedData[year]) {
+      mergedData[year]["Number of Works"] += parseInt(entry["Number of Works"]);
+    } else {
+      mergedData[year] = {
+        "Date": year,
+        "Number of Works": parseInt(entry["Number of Works"])
+      };
+    }
+  }
+
+  // Convert the merged data object back into an array
+  const mergedDataArray = Object.values(mergedData);
+
+
   let plotInfo = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "config": {
       "view": {
         "width": 600,
-        "height": 600
+        "height": 300
       }
     },
     "data": {
-      "values": data
+      "values": mergedDataArray
     },
-    "transform": [{
-        "aggregate": [{
-          "op": "count",
-          "field": "Composer",
-          "as": "Count"
-        }],
-        "groupby": ["Composer"]
-      },
-      {
-        "filter": `datum.Count > ${threshold}`
-      },
-      {
-        "calculate": "datum.Composer + ' (' + datum.Count + ')'",
-        "as": "ComposerCount"
-      }
-    ],
-    "layer": [{
-        "mark": {
-          "type": "bar",
-        },
-        "encoding": {
-          "x": {
-            "field": "Count",
-            "type": "quantitative",
-            "title": "Work count",
-            "axis": {
-              "tickMinStep": 5
-            }
-          },
-          "y": {
-            "field": "Composer",
-            "type": "nominal",
-            "title": "",
-            "sort": {
-              "field": "Count",
-              "order": "descending"
-            },
-            "axis": {
-              "labels": false,
-              "ticks": false
-            }
-          },
-          "color": {
-            "field": "Count",
-            "type": "quantitative",
-            "scale": {
-                "scheme": "viridis",
-                "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
-            },
-            "legend": null
-          }
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "ordinal",
+      "title": "Year of First Source",
+      "axis": {
+          "tickMinStep": 5,
+          "labelFontSize": 12,
+          "titleFontSize": 14
         }
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "baseline": "middle"
-        },
-        "encoding": {
-          "x": {
-            "value": -90
-          },
-          "y": {
-            "field": "Composer",
-            "type": "nominal",
-            "title": "",
-            "sort": {
-              "field": "Count",
-              "order": "descending"
-            },
-            "axis": {
-              "labels": false,
-              "ticks": false
-            }
-          },
-          "text": {
-            "field": "Composer",
-            "type": "nominal"
-          }
-        }
-      }
-    ],
-    "title": {
-      "text": "Best-Represented Composers in The 1520s Project",
-      "fontSize": 18
     },
-    "height": {
-      "step": 20
-    }
-  };
+    "y": {
+      "field": "Number of Works",
+      "type": "quantitative",
+      "title": "Number of Works",
+      "axis": {
+          "tickMinStep": 5,
+          "labelFontSize": 12,
+          "titleFontSize": 14
+      }
 
-  vegaEmbed('#composer-plot', plotInfo);
+    },
+    "color": {
+        "field": "Date",
+        "type": "ordinal",
+        "scale": {
+            "scheme": "viridis",
+            "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
+        },
+        "legend": null
+      }
+  },
+  "title": {
+      "text": "Number of Works by Year of First Source",
+      "fontSize": 16
+  },
+  "height": {
+      "step": 40
+    }
+}
+  vegaEmbed('#years-plot', plotInfo);
 
 }
+
 
 </script>
