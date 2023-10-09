@@ -76,17 +76,19 @@ function displayYearsPlot(data) {
   // Convert the merged data object back into an array
   const mergedDataArray = Object.values(mergedData);
 
+  //add null values for years without works
+  let yearData = prepareYearData(mergedDataArray);
 
   let plotInfo = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
       "config": {
       "view": {
-        "width": 600,
+        "width": 725,
         "height": 300
       }
     },
     "data": {
-      "values": mergedDataArray
+      "values": yearData
     },
   "mark": "bar",
   "encoding": {
@@ -95,9 +97,8 @@ function displayYearsPlot(data) {
       "type": "ordinal",
       "title": "Year of First Source",
       "axis": {
-          "tickMinStep": 5,
-          "labelFontSize": 12,
-          "titleFontSize": 14
+          "labelFontSize": 14,
+          "titleFontSize": 16
         }
     },
     "y": {
@@ -106,8 +107,8 @@ function displayYearsPlot(data) {
       "title": "Number of Works",
       "axis": {
           "tickMinStep": 5,
-          "labelFontSize": 12,
-          "titleFontSize": 14
+          "labelFontSize": 14,
+          "titleFontSize": 16
       }
 
     },
@@ -123,15 +124,46 @@ function displayYearsPlot(data) {
   },
   "title": {
       "text": "Number of Works by Year of First Source",
-      "fontSize": 16
-  },
-  "height": {
-      "step": 40
-    }
+      "fontSize": 18
+  }
 }
   vegaEmbed('#years-plot', plotInfo);
 
 }
 
+
+//////////////////////////////
+//
+// prepareYearData -- Extract number of concerts for each year, adding
+//     entries for years in which there are no concert notes.  This function
+//     is for use to generate a vega-lite bar chart that functions like a yearly
+//     histogram chart.
+//
+
+function prepareYearData(input) {
+       let min = 100000;
+       let max = -1;
+       let counts = {};
+       for (let i=0; i<input.length; i++) {
+          let year = parseInt(input[i]["Date"]);
+          let count = parseInt(input[i]["Number of Works"]);
+          if (min > year) {
+             min = year;
+          }
+          if (max < year) {
+             max = year;
+          }
+          counts[year] = count;
+       }
+       let output = [];
+       for (let i=min; i<=max; i++) {
+          let obj = {
+             "Date": i,
+             "Number of Works": counts[i] || 0
+          }
+          output.push(obj);
+       }
+    return output;
+}
 
 </script>
