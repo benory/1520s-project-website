@@ -227,6 +227,16 @@
 		"Places Active": "Paris, Bologna, Rouen, Camberon, Troyes"
 	},
 	{
+		"ID": "Snf",
+		"Composer": "Senfl, Ludwig",
+		"Composer RISM ID": "pe20000370",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/3599/",
+		"Start of CYA": "1507",
+		"End of CYA": "1543",
+		"Flourished": "1507–1543",
+		"Places Active": "Vienna, Konstanz, Augsburg, Passau, Munich"
+	},
+	{
 		"ID": "Sil",
 		"Composer": "Silva, Andreas de",
 		"Composer RISM ID": "pe30024652",
