@@ -11,6 +11,8 @@ vim:    ts=3:nowrap
 
 <br>
 
+<div id="external-info"></div>
+
 <div id="accidentalSelect">
    <div onclick="displayNoAccidentals()" class="button">Hide Editorial Accidentals</div>
    <div onclick="displayAccidentals()" class="button hidden">Show Editorial Accidentals</div>

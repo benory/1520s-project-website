@@ -36,6 +36,7 @@ function displayWork(id) {
 
 	displayHumdrum(hnpOptions);
 	displayWorkInfo(id);
+	displayExternalInfo(id);
 	displayWorkFooter(id);
 }
 
@@ -241,6 +242,33 @@ function displayWorkFooter(id) {
 }
 
 
+//////////////////////////////
+//
+// displayExternalInfo --
+//
+
+function displayExternalInfo(id) {
+	let element = document.querySelector("#external-info");
+	if (!element) {
+		console.error("ERROR: no #external-info element");
+		return;
+	}
+	if (!id) {
+		id = DATA1520.workid;
+	}
+	let workinfo = DATA1520.lookup.works[id];
+	let output = "";
+
+	let title = workinfo["Title"];
+	let externalURL = workinfo["External Project URL"];
+	let externalName = workinfo["External Project Name"];
+	
+	if (externalURL && externalName) {
+		output += `<center>For more information on <i>${title}</i>, see <a target="_blank" href="${externalURL}">${externalName}</a>.</center>`;
+	}
+	element.innerHTML = output;
+
+}
 
 //////////////////////////////
 //
