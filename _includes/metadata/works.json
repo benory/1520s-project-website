@@ -4895,6 +4895,23 @@
 		"FILEBASE": "Wil3033-Baises_moy_tant_tant"
 	},
 	{
+		"ID": "Wil3035",
+		"Composer": "Willaert, Adrian",
+		"Title": "Quant le joly Robinet",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell’ Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-10-12",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3035-Quant_le_joly_Robinet.krn",
+		"FILEBASE": "Wil3035-Quant_le_joly_Robinet"
+	},
+	{
 		"ID": "Wil3037",
 		"Composer": "Willaert, Adrian",
 		"Title": "Vous marchez du bout du pié",
