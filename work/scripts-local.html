@@ -262,9 +262,14 @@ function displayExternalInfo(id) {
 	let title = workinfo["Title"];
 	let externalURL = workinfo["External Project URL"];
 	let externalName = workinfo["External Project Name"];
-	
+	let criticalCommentary = workinfo["Critical Commentary"];
+
 	if (externalURL && externalName) {
-		output += `<center>For more information on <i>${title}</i>, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center>`;
+			if (criticalCommentary == "yes") {
+					output += `<center>For more information on <i>${title}</i> and the critical commentary, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center>`;
+			} else {
+				output += `<center>For more information on <i>${title}</i>, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center>`;
+			}
 	}
 	element.innerHTML = output;
 

@@ -112,12 +112,12 @@
 		"Number of Works": "1"
 	},
 	{
-		"Date": "~1550",
-		"Number of Works": "1"
-	},
-	{
 		"Date": "~1521",
 		"Number of Works": "2"
+	},
+	{
+		"Date": "~1550",
+		"Number of Works": "1"
 	},
 	{
 		"Date": "~1527",
@@ -128,6 +128,7 @@
 		"Number of Works": "14"
 	},
 	{
-		"Date": "~1534"
+		"Date": "~1534",
+		"Number of Works": "6"
 	}
 ]
