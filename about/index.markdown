@@ -43,6 +43,12 @@ Do you see an mistake in a score? Do you disagree with the proposed editorial ac
 
 Would you like a particular score to be texted? [Let us know.](mailto:The1520sProject@gmail.com)
 
+<!-- ## New Senfl Edition
+
+Thanks to Stefan Gasch, Birgit Lodes, and the [New Senfl Edition](https://senflonline-eng.com/new-senfl-edition/) at the Universität für Musik und darstellende Kunst Wien for generously agreeing to incorporate their scores in The 1520s Project.
+
+[![Senfl Banner](/images/Senfl_banner.png)](https://senflonline-eng.com/new-senfl-edition/) -->
+
 ## Support
 
 This project has been generously supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
