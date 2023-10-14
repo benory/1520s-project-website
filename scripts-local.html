@@ -263,7 +263,11 @@ function displayTopComposers() {
 			{
 				"calculate": "datum.Composer + ' (' + datum.Count + ')'",
 				"as": "ComposerCount"
-			}
+			},
+			{
+        "calculate": " 'https://1520s-project.org/browse/?c=' + datum.Composer", // Combine the fixed URL and composer name
+        "as": "ComposerURL"
+	    }
 		],
 		"layer": [{
 				"mark": {
@@ -328,6 +332,10 @@ function displayTopComposers() {
 							"ticks": false
 						}
 					},
+					"href": {
+              "field": "ComposerURL", // Add a new field for the URL
+              "type": "nominal"
+          },
 					"text": {
 						"field": "Composer",
 						"type": "nominal"
@@ -394,7 +402,11 @@ function displayAllComposers() {
 			{
 				"calculate": "datum.Composer + ' (' + datum.Count + ')'",
 				"as": "ComposerCount"
-			}
+			},
+			{
+        "calculate": " 'https://1520s-project.org/browse/?c=' + datum.Composer", // Combine the fixed URL and composer name
+        "as": "ComposerURL"
+	    }
 		],
 		"layer": [{
 				"mark": {
@@ -459,10 +471,18 @@ function displayAllComposers() {
 							"ticks": false
 						}
 					},
+					"href": {
+            "field": "ComposerURL", // Add a new field for the URL
+            "type": "nominal"
+        	},
 					"text": {
 						"field": "Composer",
-						"type": "nominal"
-					}
+						"type": "nominal",
+					},
+					"style": {
+            "cursor": "pointer", // Change the cursor to a pointer on hover
+            "font-weight": "normal" // Set the font-weight to normal by default
+        	},
 				}
 			}
 		],
