@@ -4506,6 +4506,23 @@
 		"FILEBASE": "Wil2062-Precatus_est_Moyses"
 	},
 	{
+		"ID": "Wil2099",
+		"Composer": "Willaert, Adrian",
+		"Title": "Pater noster",
+		"Genre": "motet",
+		"Voices": "6",
+		"Modern Editions": "Zenck_1952",
+		"First Source": "Adriani Willaert... musicorum sex vocum (Venice: Antonio Gardano)",
+		"RISM or CC Source Sigla": "W1112",
+		"RISM Source Link": "https://rism.online/sources/993104328",
+		"First Source Exact Date": "1542",
+		"First Source Date": "1542",
+		"Texted": "no",
+		"Date Added": "2023-10-14",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2099-Pater_noster.krn",
+		"FILEBASE": "Wil2099-Pater_noster"
+	},
+	{
 		"ID": "Wil3001",
 		"Composer": "Willaert, Adrian",
 		"Title": "Petite camusette a la mort",
