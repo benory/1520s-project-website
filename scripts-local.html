@@ -227,7 +227,9 @@ function compareByDateAdded(a, b) {
 // displayTopComposers --
 //
 
-function displayTopComposers(data) {
+function displayTopComposers() {
+
+	let data = METADATA;
 
 	let element = document.querySelector("#composer-plot");
 	if (!element) {

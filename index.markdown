@@ -22,8 +22,8 @@ The 1520s Project is an open-source repository of more than <span id="roundwork-
 + By genre: <span id="mass-count"></span> mass movements, <span id="motet-count"></span> motets, <span id="secular-count"></span> secular works
 
 <div id="composerSelect">
-   <div onclick="displayAllComposers()" class="button">Show All Composers</div>
-   <div onclick="displayTopComposers()" class="button hidden">Show Top Composers</div>
+   <div onclick="displayAllComposers()" class="button hidden">Show All Composers</div>
+   <div onclick="displayTopComposers()" class="button">Show Top Composers</div>
 </div><br><br>
 
 <div id="composer-plot"></div>
