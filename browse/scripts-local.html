@@ -681,5 +681,102 @@ function displaySearchCount(count) {
 }
 
 
+//////////////////////////////
+//
+// setComposerSelectMenu -- Used to set the composer from the "c" CGI input parameter.
+// First search for exact match, then for composer ID, then partial matches for multiple
+// or single words (or pieces of words) in the composer's name.  Does not deal with
+// adding or removing accents from characters when comparing text.  If length of input
+// is 3 it is assumed to be a composer ID.
+//
+// Here are examples:
+//
+// Exact match to name in option list:
+//      http://www.1520s-project.org/browse/?c=Willaert,%20Adrian
+// Alias of "composer" for "c":
+//      http://www.1520s-project.org/browse/?composer=Willaert,%20Adrian
+// Reversing name to "first last":
+//      http://www.1520s-project.org/browse/?c=Adrian%20Willaert
+// Using composer ID (case insensitive)
+//      http://www.1520s-project.org/browse/?c=Wil
+// Using partial name (will select the first composer that matches:
+//      http://www.1520s-project.org/browse/?c=Adrian
+//
+
+function setComposerSelectMenu(input) {
+	if (!input) {
+		return;
+	}
+
+	// Convert composer ID to exact name ("last, first"):
+	if (input.length = 3) {
+		for (let i=0; i<COMPOSERS.length; i++) {
+			if (COMPOSERS[i].ID.toLowerCase() === input.toLowerCase()) {
+				input = COMPOSERS[i].Composer;
+				break;
+			}
+		}
+	}
+
+	let composerSelect = document.querySelector("select.composer");
+	if (!composerSelect) {
+		return;
+	}
+
+	let options = composerSelect.querySelectorAll("option");
+
+	// Search for exact composer name match:
+	for (let i=0; i<options.length; i++) {
+		let value = options[i].value;
+		if (value === input) {
+			options[i].selected = true;
+			var changeEvent = new Event("change");
+			composerSelect.dispatchEvent(changeEvent);
+			return;
+		}
+	}
+
+	input = input.replace(/^\s+/, "").replace(/\s+$/, "").replace(/\s+/, " ", "g");
+	if (input.match(/\s/)) {
+		// Search for multiple pieces of composer name (all pieces must match):
+		let pieces = input.split(/\s/);
+		for (let i=0; i<options.length; i++) {
+			let value = options[i].value;
+			let allMatch = true;
+			let regexes = [];
+			for (let j=0; j<pieces.length; j++) {
+				regexes[j] = new RegExp(pieces[j], "i");
+			}
+			for (let j=0; j<pieces.length; j++) {
+				if (!value.match(regexes[j])) {
+					allMatch = false;
+					break;
+				}
+			}
+			if (allMatch) {
+				options[i].selected = true;
+				var changeEvent = new Event("change");
+				composerSelect.dispatchEvent(changeEvent);
+				return;
+			}
+		}
+	} else {
+		// Search for single piece of composer name (all pieces must match,
+		// and only the first match will be used):
+		let regex = new RegExp(input, "i");
+		for (let i=0; i<options.length; i++) {
+			let value = options[i].value;
+			if (value.match(regex)) {
+				options[i].selected = true;
+				var changeEvent = new Event("change");
+				composerSelect.dispatchEvent(changeEvent);
+				return;
+			}
+		}
+	}
+
+}
+
+
 </script>
 

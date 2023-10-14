@@ -1,6 +1,7 @@
 <script>
 // vim: ts=3:nowrap
 
+let COMPOSERS             = {% include metadata/composers.json %}
 let METADATA              = {% include metadata/works.json %};
 let INDEX_id         	  = "ID";
 let INDEX_composer    	  = "Composer";
@@ -26,6 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterface(METADATA, "#search-interface");
 	displayBrowseTable(METADATA, "#list");
 	let cgi = getCgiParameters();
+	if (cgi.c) {
+		setComposerSelectMenu(cgi.c);
+	} else if (cgi.composer) {
+		setComposerSelectMenu(cgi.composer);
+	}
+
 	if (cgi.q) {
 		FreeTextSearch(cgi.q);
 	} else if (cgi.query) {
