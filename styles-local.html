@@ -46,21 +46,37 @@ table {
 .button {
 	background: #ffffff;
 	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+#inputbutton {
 	font-size: 16px; /* Increase font-size */
 	margin-left: 10px;
 	padding: 12px; /* Add some padding */
-	width: 100%; /* Full-width */
-	cursor: pointer;
 }
 
 .button:hover {
 	background: #eeeeee;
 }
 
+.hidden {
+	display: none;
+}
+
 #composer-plot {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+}
+
+#composerSelect {
+	float: right;
+}
+
+#composerSelect .button {
+	width: 145px;
+	font-size: 14px;
+	padding: 5px; /* Add some padding */
 }
 
 </style>
