@@ -59,6 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		runSearch = true;
 	}
 
+	// Set the year select menu:
+	if (cgi.y) {
+		setYearSelectMenu(cgi.y);
+		runSearch = true;
+	} else if (cgi.genre) {
+		setYearSelectMenu(cgi.year);
+		runSearch = true;
+	}
+
 	// Run a search based on the select menu settings:
 	if (runSearch) {
 		doSearch();

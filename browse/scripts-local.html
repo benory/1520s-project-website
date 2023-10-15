@@ -862,9 +862,52 @@ function setGenreSelectMenu(input) {
 }
 
 
+
+//////////////////////////////
+//
+// setYearSelectMenu -- Used to set the year from the "y" CGI input parameter.
+//
+// Here are examples:
+//
+// Search for works in 1518:
+//      http://www.1520s-project.org/browse/?y=1518
+// Search by approximate year 1518:
+//      http://www.1520s-project.org/browse/?y=~1518
+// Long form of y parameter:
+//      http://www.1520s-project.org/browse/?year=1518
+// Can be mixed with other CGI search parameters:
+//      http://www.1520s-project.org/browse/?v=4&c=Willaert&g=motet&y=1518
+//
+
+function setYearSelectMenu(input) {
+	if (!input) {
+		return;
+	}
+
+	input = input.replace(/^\s+/, "").replace(/\s+$/, "").replace(/\s+/, " ", "g");
+
+	let yearSelect = document.querySelector("select.year");
+	if (!yearSelect) {
+		return;
+	}
+
+	let options = yearSelect.querySelectorAll("option");
+
+	// Search for exact match for year (or approximate year):
+	for (let i=0; i<options.length; i++) {
+		let value = options[i].value;
+		if (value === input) {
+			options[i].selected = true;
+			return;
+		}
+
+	}
+
+	// Cannot find exact given year.
+}
+
+
 </script>
-
-
 
 
 
