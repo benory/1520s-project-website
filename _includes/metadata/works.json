@@ -4961,5 +4961,22 @@
 		"Date Added": "2023-10-12",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3038-Perot_viendras_tu_aux_nopces.krn",
 		"FILEBASE": "Wil3038-Perot_viendras_tu_aux_nopces"
+	},
+	{
+		"ID": "Wil3039",
+		"Composer": "Willaert, Adrian",
+		"Title": "N'a tu point veu la viscontine",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell’ Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-10-15",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3039-Na_tu_point_veu_la_viscontine.krn",
+		"FILEBASE": "Wil3039-Na_tu_point_veu_la_viscontine"
 	}
 ]
