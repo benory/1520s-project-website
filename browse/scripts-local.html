@@ -334,12 +334,17 @@ function buildVoiceSelect(data) {
 		counter[voice] = (counter[voice] === undefined) ? 1 : counter[voice] + 1;
 	}
 
+	// May need to sort numerically if 10 or more voices in any work:
 	let vlist = Object.keys(counter).sort();
 	let output = "<select class='voice' onchange='doSearch()'>\n";
 	output += `<option value="">Any voice count</option>`;
 	for (let i=0; i<vlist.length; i++) {
 		let vcount = vlist[i];
-		output += `<option value="${vcount}">${vcount}</option>`;
+		let text = "voices";
+		if (vcount === "1") {
+			text = "voice";
+		}
+		output += `<option value="${vcount}">${vcount} ${text}</option>`;
 	}
 	output += "</select>\n";
 	return output;
