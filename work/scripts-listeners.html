@@ -14,6 +14,16 @@ DATA1520.lookup = {};
 DATA1520.workid = "";
 DATA1520.filter = "";
 
+// Humdrum Notation Plugin options:
+let INITIALIZED = false;
+let HNP_OPTIONS = {
+	source: "my-score",
+	spacingLinear: 0.4,
+	spacingNonLinear: 0.45,
+	spacingSystem: 10,
+	autoResize: "true"
+};
+
 
 //////////////////////////////
 //
@@ -23,6 +33,8 @@ DATA1520.filter = "";
 //
 
 document.addEventListener("DOMContentLoaded", function (event) {
+	initializeAccidentalStateButton();
+
 	// Create lookup tables for metadata:
 	DATA1520.lookup.works = createLookup(DATA1520.metadata.works);
 	DATA1520.lookup.composers = createLookup(DATA1520.metadata.composers);

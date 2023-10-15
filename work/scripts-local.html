@@ -10,26 +10,31 @@
 //
 
 function displayWork(id) {
+	if (!id) {
+		id = DATA1520.workid;
+	}
 	DATA1520.workid = id;
 	if (typeof id !== "string") {
 		console.error("ERROR: Work ID is not a string:", string);
 		return;
 	}
 
-	let url = DATA1520.lookup.works[id]["Humdrum URL"];
-	console.warn("Humdrum URL", url);
-
-	let hnpOptions = {
-		source: "my-score",
-		url: url,
-		spacingLinear: 0.4,
-		spacingNonLinear: 0.45,
-		spacingSystem: 10,
-		autoResize: "true"
-	};
 	// See https://plugin.humdrum.org/options/#list for more display options.
+	let hnpOptions = JSON.parse(JSON.stringify(HNP_OPTIONS));
+
+	if (!INITIALIZED) {
+		let url = DATA1520.lookup.works[id]["Humdrum URL"];
+		hnpOptions.url = url;
+		INITIALIZED = true;
+	}
+
+	// Set display options:
+	hnpOptions.filter = [];
 	if (DATA1520.filter) {
-		hnpOptions.filter = DATA1520.filter;
+		hnpOptions.filter.push(DATA1520.filter);
+	}
+	if (window.localStorage.AccidentalState === "hide") {
+		hnpOptions.filter.push("shed -ke s/X?i/y/g");
 	}
 
 	displayHumdrum(hnpOptions);
@@ -37,6 +42,7 @@ function displayWork(id) {
 	displayExternalInfo(id);
 	displayWorkFooter(id);
 }
+
 
 
 //////////////////////////////
@@ -278,15 +284,12 @@ function displayExternalInfo(id) {
 //
 
 function displayNoAccidentals() {
-	displayHumdrum({
-		source: "my-score",
-		autoResize: "true",
-		filter: "shed -ke s/X?i/y/g"
-	});
 	let elements = document.querySelectorAll("#accidentalSelect .button");
 	for (let i=0; i<elements.length; i++) {
 		elements[i].classList.toggle("hidden");
 	}
+	window.localStorage.AccidentalState = "hide";
+	displayWork();
 }
 
 
@@ -297,15 +300,53 @@ function displayNoAccidentals() {
 //
 
 function displayAccidentals() {
-	displayHumdrum({
-		source: "my-score",
-		autoResize: "true",
-		filter: "",
-	});
 	let elements = document.querySelectorAll("#accidentalSelect .button");
 	for (let i=0; i<elements.length; i++) {
 		elements[i].classList.toggle("hidden");
 	}
+	window.localStorage.AccidentalState = "show";
+	displayWork();
 }
 
+
+
+//////////////////////////////
+//
+// initializeAccidentalStateButton --
+//
+
+function initializeAccidentalStateButton() {
+	let state = window.localStorage.AccidentalState;
+	if (!state) {
+		state = "show";
+		window.localStorage.AccidentalState = "show";
+	}
+	let element = document.querySelector("#accidentalSelect");
+	if (!element) {
+		return;
+	}
+	let showElement = element.querySelector(".show");
+	if (!showElement) {
+		console.error("Cannot find accidental show button");
+		return;
+	}
+	let hideElement = element.querySelector(".hide");
+	if (!showElement) {
+		console.error("Cannot find accidental hide button");
+		return;
+	}
+
+	if (state === "show") {
+		showElement.classList.add("hidden");
+		hideElement.classList.remove("hidden");
+	} else {
+		showElement.classList.remove("hidden");
+		hideElement.classList.add("hidden");
+	}
+}
+
+
 </script>
+
+
+

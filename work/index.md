@@ -14,8 +14,8 @@ vim:    ts=3:nowrap
 <div id="external-info"></div>
 
 <div id="accidentalSelect">
-   <div onclick="displayNoAccidentals()" class="button">Hide Editorial Accidentals</div>
-   <div onclick="displayAccidentals()" class="button hidden">Show Editorial Accidentals</div>
+   <div class="button hide" onclick="displayNoAccidentals()">Hide Editorial Accidentals</div>
+   <div class="button show hidden" onclick="displayAccidentals()">Show Editorial Accidentals</div>
 </div>
 
 <script type="text/x-humdrum" id="my-score"></script>
