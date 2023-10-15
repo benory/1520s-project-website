@@ -635,6 +635,7 @@ function FreeTextSearch(query) {
 	if (!query) {
 		displaySearchCount(tr.length);
 		showAllBrowseRows();
+		updateBrowseUrlDisplay();
 		return;
 	}
 	let regex = new RegExp(query, 'i');
@@ -1009,7 +1010,7 @@ function setEarliestSourceSelectMenu(input) {
 //
 
 function updateBrowseUrlDisplay() {
-	let url = `${window.location.origin}${window.location.pathname}`;
+	let url      = `${window.location.origin}${window.location.pathname}`;
 	let freetext = document.querySelector("input#input").value.trim();
 	let composer = document.querySelector("select.composer").value.trim();
 	let voice    = document.querySelector("select.voice").value.trim();
@@ -1095,6 +1096,35 @@ function makeComposer2Id(cindex) {
 		output[composer] = id;
 	}
 	return output;
+}
+
+
+
+//////////////////////////////
+//
+// clearSearchFields -- Clear all search fields on the browse page.
+//     Done by pressing delete/backspace key when not in #input, or
+//     otherwise when #input is empty.
+//
+
+function clearSearchFields() {
+	let freetextElement = document.querySelector("input#input");
+	let composerElement = document.querySelector("select.composer");
+	let voiceElement    = document.querySelector("select.voice");
+	let textElement     = document.querySelector("select.text");
+	let yearElement     = document.querySelector("select.year");
+	let genreElement    = document.querySelector("select.genre");
+	let sourceElement   = document.querySelector("select.source");
+
+	freetextElement.value = "";
+	composerElement.value = "";
+	voiceElement.value    = "";
+	textElement.value     = "";
+	yearElement.value     = "";
+	genreElement.value    = "";
+	sourceElement.value   = "";
+
+	doSearch();
 }
 
 

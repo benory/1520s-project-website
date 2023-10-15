@@ -117,6 +117,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+//////////////////////////////
+//
+// keydown event listener == clear select menus if delete/backspace
+//    pressed (or press backspace/delete when freetext search is empty
+//    when in #input).
+//
+
+document.addEventListener('keydown', function(event) {
+	if ((event.key !== "Delete") && (event.key !== "Backspace")) {
+		// Only checking delete/backspace keys for now.
+		return;
+	}
+	let activeElement = document.activeElement;
+	if (activeElement.id === "input") {
+		let value = activeElement.value;
+		if (value) {
+			// Do nothing unless contents of #input is empty.
+			return;
+		}
+		clearSearchFields();
+	} else {
+		clearSearchFields();
+	}
+});
+
+
+
 </script>
 
 
