@@ -27,12 +27,35 @@ document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterface(METADATA, "#search-interface");
 	displayBrowseTable(METADATA, "#list");
 	let cgi = getCgiParameters();
+	let runSearch = false;
+
+	// Set the composer select menu:
 	if (cgi.c) {
 		setComposerSelectMenu(cgi.c);
+		runSearch = true;
 	} else if (cgi.composer) {
 		setComposerSelectMenu(cgi.composer);
+		runSearch = true;
 	}
 
+	// Set the voice-count select menu:
+	if (cgi.v) {
+		setVoiceSelectMenu(cgi.v);
+		runSearch = true;
+	} else if (cgi.voice) {
+		setVoiceSelectMenu(cgi.voice);
+		runSearch = true;
+	} else if (cgi.voice) {
+		setVoiceSelectMenu(cgi.voices);
+		runSearch = true;
+	}
+
+	// Run a search based on the select menu settings:
+	if (runSearch) {
+		doSearch();
+	}
+
+	// Check for a free-text search to run on the search-results table:
 	if (cgi.q) {
 		FreeTextSearch(cgi.q);
 	} else if (cgi.query) {
@@ -53,3 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </script>
+
+
+

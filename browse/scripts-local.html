@@ -730,8 +730,6 @@ function setComposerSelectMenu(input) {
 		let value = options[i].value;
 		if (value === input) {
 			options[i].selected = true;
-			var changeEvent = new Event("change");
-			composerSelect.dispatchEvent(changeEvent);
 			return;
 		}
 	}
@@ -755,8 +753,6 @@ function setComposerSelectMenu(input) {
 			}
 			if (allMatch) {
 				options[i].selected = true;
-				var changeEvent = new Event("change");
-				composerSelect.dispatchEvent(changeEvent);
 				return;
 			}
 		}
@@ -768,8 +764,6 @@ function setComposerSelectMenu(input) {
 			let value = options[i].value;
 			if (value.match(regex)) {
 				options[i].selected = true;
-				var changeEvent = new Event("change");
-				composerSelect.dispatchEvent(changeEvent);
 				return;
 			}
 		}
@@ -778,5 +772,49 @@ function setComposerSelectMenu(input) {
 }
 
 
+
+//////////////////////////////
+//
+// setVoiceSelectMenu -- Used to set the voice count from the "v" CGI input parameter.
+//
+// Here are examples:
+//
+// Search for three voice works:
+//      http://www.1520s-project.org/browse/?v=3
+// Long form of v parameter:
+//      http://www.1520s-project.org/browse/?voices=3
+// Can be mixed with other CGI search parameters:
+//      http://www.1520s-project.org/browse/?v=3&c=Willaert
+//
+
+function setVoiceSelectMenu(input) {
+	if (!input) {
+		return;
+	}
+
+	input = input.replace(/^\s+/, "").replace(/\s+$/, "");
+
+	let voiceSelect = document.querySelector("select.voice");
+	if (!voiceSelect) {
+		return;
+	}
+
+	let options = voiceSelect.querySelectorAll("option");
+
+	// Search for exact voice-count match:
+	for (let i=0; i<options.length; i++) {
+		let value = options[i].value;
+		if (value === input) {
+			options[i].selected = true;
+			return;
+		}
+	}
+
+	// Cannot find the given voice count
+}
+
+
 </script>
+
+
 
