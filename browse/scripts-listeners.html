@@ -50,6 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		runSearch = true;
 	}
 
+	// Set the genre select menu:
+	if (cgi.g) {
+		setGenreSelectMenu(cgi.g);
+		runSearch = true;
+	} else if (cgi.genre) {
+		setGenreSelectMenu(cgi.genre);
+		runSearch = true;
+	}
+
 	// Run a search based on the select menu settings:
 	if (runSearch) {
 		doSearch();

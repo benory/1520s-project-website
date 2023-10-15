@@ -810,11 +810,56 @@ function setVoiceSelectMenu(input) {
 		}
 	}
 
-	// Cannot find the given voice count
+	// Cannot find the given voice count.
+}
+
+
+
+//////////////////////////////
+//
+// setGenreSelectMenu -- Used to set the genre from the "g" CGI input parameter.
+//
+// Here are examples:
+//
+// Search for three voice works:
+//      http://www.1520s-project.org/browse/?g=3
+// Long form of g parameter:
+//      http://www.1520s-project.org/browse/?genre=3
+// Can be mixed with other CGI search parameters:
+//      http://www.1520s-project.org/browse/?v=3&c=Willaert&g=motet
+//
+
+function setGenreSelectMenu(input) {
+	if (!input) {
+		return;
+	}
+
+	input = input.replace(/^\s+/, "").replace(/\s+$/, "").replace(/\s+/, " ", "g");
+
+	let genreSelect = document.querySelector("select.genre");
+	if (!genreSelect) {
+		return;
+	}
+
+	let options = genreSelect.querySelectorAll("option");
+
+	// Search for exact best genre match:
+	let regex = new RegExp(input, "i");
+	for (let i=0; i<options.length; i++) {
+		let value = options[i].value;
+		if (value.match(regex)) {
+			options[i].selected = true;
+			return;
+		}
+	}
+
+	// Cannot find the given genre.
 }
 
 
 </script>
+
+
 
 
 
