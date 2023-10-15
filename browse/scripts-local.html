@@ -613,6 +613,7 @@ function doSearch(data) {
 
 	displayBrowseTable(data);
 	FreeTextSearch();
+	updateBrowseUrlDisplay();
 }
 
 
@@ -633,7 +634,6 @@ function FreeTextSearch(query) {
 	}
 	if (!query) {
 		displaySearchCount(tr.length);
-console.warn("SHOWING ALL BROWSE ROWS");
 		showAllBrowseRows();
 		return;
 	}
@@ -656,6 +656,7 @@ console.warn("SHOWING ALL BROWSE ROWS");
 	}
 
 	displaySearchCount(searchCount);
+	updateBrowseUrlDisplay();
 }
 
 
@@ -996,6 +997,104 @@ function setEarliestSourceSelectMenu(input) {
 		}
 
 	}
+}
+
+
+
+//////////////////////////////
+//
+// updateBrowseUrlDisplay --
+//
+// Order of CGI parameters: qcvxygs
+//
+
+function updateBrowseUrlDisplay() {
+	let url = `${window.location.origin}${window.location.pathname}`;
+	let freetext = document.querySelector("input#input").value.trim();
+	let composer = document.querySelector("select.composer").value.trim();
+	let voice    = document.querySelector("select.voice").value.trim();
+	let text     = document.querySelector("select.text").value.trim();
+	let year     = document.querySelector("select.year").value.trim();
+	let genre    = document.querySelector("select.genre").value.trim();
+	let source   = document.querySelector("select.source").value.trim();
+
+	let cgi = "";
+
+	if (freetext) {
+		cgi += "q=" + encodeURIComponent(freetext);
+	}
+
+	if (composer) {
+		if (cgi) {
+			cgi += "&";
+		}
+		let cid = COMPOSER2ID[composer];
+		if (cid) {
+			cgi += "v=" + encodeURIComponent(composer);
+		}
+	}
+
+	if (voice) {
+		if (cgi) {
+			cgi += "&";
+		}
+		cgi += "v=" + encodeURIComponent(voice);
+	}
+
+	if (text) {
+		if (cgi) {
+			cgi += "&";
+		}
+		cgi += "x=" + encodeURIComponent(text);
+	}
+
+	if (year) {
+		if (cgi) {
+			cgi += "&";
+		}
+		cgi += "y=" + encodeURIComponent(year);
+	}
+
+	if (genre) {
+		if (cgi) {
+			cgi += "&";
+		}
+		cgi += "g=" + encodeURIComponent(genre);
+	}
+
+	if (source) {
+		if (cgi) {
+			cgi += "&";
+		}
+		cgi += "e=" + encodeURIComponent(source);
+	}
+
+	if (cgi) {
+		url += "?" + cgi;
+	}
+
+	if (url !== window.location.href) {
+		// Update the CGI search parameters in the URL if they have changed:
+		window.history.pushState(null, null, url);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// makeComposer2Id -- Create a lookup table from composer name (last, first)
+//    to Coposer ID (such as "Willaert, Adrian" to "Wil").
+//
+
+function makeComposer2Id(cindex) {
+	let output = {};
+	for (let i=0; i<cindex.length; i++) {
+		let composer = cindex[i].Composer;
+		let id = cindex[i].ID;
+		output[composer] = id;
+	}
+	return output;
 }
 
 

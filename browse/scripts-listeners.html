@@ -2,6 +2,7 @@
 // vim: ts=3:nowrap
 
 let COMPOSERS             = {% include metadata/composers.json %}
+let COMPOSER2ID           = {};
 let METADATA              = {% include metadata/works.json %};
 let INDEX_id         	  = "ID";
 let INDEX_composer    	  = "Composer";
@@ -26,6 +27,7 @@ let INDEX_DIAMMlink	     = "DIAMM source link";
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterface(METADATA, "#search-interface");
 	displayBrowseTable(METADATA, "#list");
+	COMPOSER2ID = makeComposer2Id(COMPOSERS);
 	let cgi = getCgiParameters();
 	let runSearch = false;
 
