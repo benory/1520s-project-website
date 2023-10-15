@@ -2,7 +2,7 @@
 {% include_relative scripts-listeners.html %}
 
 <script>
-// vim: ts=3
+// vim: ts=3:nowrap
 
 {% include scripts/getCgiParameters.js %}
 
@@ -89,7 +89,8 @@ function makeTableBody(headings, data) {
 			if (typeof entry[headings[i]] !== "undefined") {
 				value = entry[headings[i]];
 			}
-			output += "<td>";
+			let tdClass = headings[i].replace(/\s+/, "-", "g").replace(/[^a-zA-Z0-9_-]/, "", "g").toLowerCase();
+			output += `<td class="${tdClass}">`;
 			if (headings[i] == INDEX_title) {
 				let title = getTitle(entry);
 				let scoreURL = getScoreURL(entry);
@@ -364,7 +365,7 @@ function buildTextSelect(data) {
 		let entry = data[i];
 		let text = entry[INDEX_text];
 		if (!text) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE AN ENTRY AS TO WHETHER IT IS TEXTED");
+			// console.error("WARNING: ", entry, " DOES NOT HAVE AN ENTRY AS TO WHETHER IT IS TEXTED");
 			continue;
 		}
 		counter[text] = (counter[text] === undefined) ? 1 : counter[text] + 1;
@@ -373,9 +374,16 @@ function buildTextSelect(data) {
 	let tlist = Object.keys(counter).sort();
 	let output = "<select class='text' onchange='doSearch()'>\n";
 	output += `<option value="">Texted score?</option>`;
-	for (let i=0; i<tlist.length; i++) {
-		let tcount = tlist[i];
-		output += `<option value="${tcount}">${tcount}</option>`;
+	// reverse order so "yes" is first, then "no":
+	for (let i=tlist.length - 1; i>=0;  i--) {
+		let state = tlist[i];
+		let text = state;
+		if (state === "yes") {
+			text = "has text";
+		} else if (state === "no") {
+			text = "no text";
+		}
+		output += `<option value="${state}">${text} (${counter[state]})</option>`;
 	}
 	output += "</select>\n";
 	return output;
@@ -904,6 +912,90 @@ function setYearSelectMenu(input) {
 	}
 
 	// Cannot find exact given year.
+}
+
+
+
+//////////////////////////////
+//
+// setTextAvailableSelectMenu -- Used to set the text-available select
+//     menu from the CGI "x" parameter.
+//
+// Here are examples:
+//
+// Search for works without text:
+//      http://www.1520s-project.org/browse/?x=no
+// Search for works width text:
+//      http://www.1520s-project.org/browse/?x=yes
+//
+// Any input containing "y" will be presumed to be yes, other
+// values excluding empty text will be presumbed to be no.
+//
+
+function setTextAvailableSelectMenu(input) {
+	if (!input) {
+		return;
+	}
+
+	input = input.match(/y/, "i") ? "yes" : "no";
+
+	let textSelect = document.querySelector("select.text");
+	if (!textSelect) {
+		return;
+	}
+
+	let options = textSelect.querySelectorAll("option");
+
+	// Search for exact match for year (or approximate year):
+	for (let i=0; i<options.length; i++) {
+		let value = options[i].value;
+		if (value === input) {
+			options[i].selected = true;
+			return;
+		}
+
+	}
+}
+
+
+
+//////////////////////////////
+//
+// setEarliestSourceSelectMenu -- Used to set the earliest source select
+//     menu from the CGI "e" parameter.   The text of the source must
+//     be excact.
+//
+// Here are examples:
+//
+// Search for works without text:
+//      http://www.1520s-project.org/browse/?x=no
+// Search for works width text:
+//      http://www.1520s-project.org/browse/?x=yes
+//
+
+function setEarliestSourceSelectMenu(input) {
+	if (!input) {
+		return;
+	}
+
+	input = input.replace(/^\s+/, "").replace(/\s+$/, "");
+
+	let sourceSelect = document.querySelector("select.source");
+	if (!sourceSelect) {
+		return;
+	}
+
+	let options = sourceSelect.querySelectorAll("option");
+
+	// Search for exact match for earliest source:
+	for (let i=0; i<options.length; i++) {
+		let value = options[i].value;
+		if (value === input) {
+			options[i].selected = true;
+			return;
+		}
+
+	}
 }
 
 

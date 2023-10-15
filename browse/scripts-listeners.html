@@ -50,6 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		runSearch = true;
 	}
 
+	// Set the text-available select menu:
+	if (cgi.x) {
+		setTextAvailableSelectMenu(cgi.x);
+		runSearch = true;
+	} else if (cgi.text) {
+		setTextAvailableSelectMenu(cgi.text);
+		runSearch = true;
+	}
+
 	// Set the genre select menu:
 	if (cgi.g) {
 		setGenreSelectMenu(cgi.g);
@@ -68,6 +77,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		runSearch = true;
 	}
 
+	// Set the earliest source select menu:
+	if (cgi.e) {
+		setEarliestSourceSelectMenu(cgi.e);
+		runSearch = true;
+	} else if (cgi.earliest) {
+		setEarliestSourceSelectMenu(cgi.earliest);
+		runSearch = true;
+	} else if (cgi.s) {
+		setEarliestSourceSelectMenu(cgi.s);
+		runSearch = true;
+	} else if (cgi.source) {
+		setEarliestSourceSelectMenu(cgi.source);
+		runSearch = true;
+	}
+
 	// Run a search based on the select menu settings:
 	if (runSearch) {
 		doSearch();
@@ -78,8 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		FreeTextSearch(cgi.q);
 	} else if (cgi.query) {
 		FreeTextSearch(cgi.query);
-	} else if (cgi.s) {
-		FreeTextSearch(cgi.s);
 	} else if (cgi.search) {
 		FreeTextSearch(cgi.search);
 	}
