@@ -269,9 +269,9 @@ function displayExternalInfo(id) {
 
 	if (externalURL && externalName) {
 			if (criticalCommentary == "yes") {
-					output += `<center>For more information on <i>${title}</i> and the critical commentary, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center>`;
+					output += `<center>For more information on <i>${title}</i> and the critical commentary, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center><br><br>`;
 			} else {
-				output += `<center>For more information on <i>${title}</i>, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center>`;
+				output += `<center>For more information on <i>${title}</i>, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center><br><br>`;
 			}
 	}
 	element.innerHTML = output;
