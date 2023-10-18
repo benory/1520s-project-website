@@ -1022,6 +1022,24 @@
 		"FILEBASE": "Gom3002-Alleluya_my_fault_chanter"
 	},
 	{
+		"ID": "Gsc2014",
+		"Composer": "Gascongne, Mathieu",
+		"Title": "Letatus sum",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Merritt_1962b",
+		"First Source": "Liber nonus xviii. daviticos musicales pslamos habet (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1535|1",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"RISM Source Link": "https://rism.online/sources/993104124",
+		"First Source Exact Date": "1535",
+		"First Source Date": "1535",
+		"Texted": "no",
+		"Date Added": "2023-10-18",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gsc/Gsc2014-Letatus_sum.krn",
+		"FILEBASE": "Gsc2014-Letatus_sum"
+	},
+	{
 		"ID": "Jac2001",
 		"Composer": "Jacotin",
 		"Title": "Rogamus te",

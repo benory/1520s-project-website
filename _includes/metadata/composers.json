@@ -100,6 +100,16 @@
 		"Places Active": "Spain, Low Countries, Germany, Bologna"
 	},
 	{
+		"ID": "Gsc",
+		"Composer": "Gascongne, Mathieu",
+		"Composer RISM ID": "pe30022179",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/227/",
+		"Start of CYA": "1517",
+		"End of CYA": "1518",
+		"Flourished": "1517–1518",
+		"Places Active": "Tours, France"
+	},
+	{
 		"ID": "Jac",
 		"Composer": "Jacotin",
 		"Flourished": "–"
