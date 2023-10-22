@@ -3344,6 +3344,28 @@
 		"FILEBASE": "Snf0101-A_Subitanea_et_improvisa_morte--Zwickau_1676_1788"
 	},
 	{
+		"ID": "Snf0102",
+		"Composer": "Senfl, Ludwig",
+		"Title": "Assumpta est Maria",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Edwards_2021",
+		"Source of Edition": "Edwards_2021",
+		"First Source": "D-Rp C 120",
+		"RISM or CC Source Sigla": "RegB C120",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2435/",
+		"External Project Name": "New Senfl Edition",
+		"Critical Commentary": "yes",
+		"External Project URL": "https://senflonline.com/sc-m-7/",
+		"First Source Exact Date": "~1520",
+		"First Source Date": "~1520",
+		"Texted": "yes",
+		"Date Added": "2023-10-22",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0102-Assumpta_est_Maria.krn",
+		"FILEBASE": "Snf0102-Assumpta_est_Maria"
+	},
+	{
 		"ID": "Snf0109",
 		"Composer": "Senfl, Ludwig",
 		"Title": "Completi sunt dies Mariae",
