@@ -1975,6 +1975,25 @@
 		"FILEBASE": "Lps2007-Postquam_consummati_sunt"
 	},
 	{
+		"ID": "Lps2016",
+		"Composer": "Hellinck, Lupus",
+		"Title": "Letetur omne seculum",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1998",
+		"First Source": "Secundus liber cum quatuor vocibus (Lyon: Jacques Moderne)",
+		"RISM or CC Source Sigla": "1532|11",
+		"RISM Source Link": "https://rism.online/sources/993104067",
+		"IIIF Source": "https://www.digitale-sammlungen.de/en/view/bsb00075669",
+		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00075669/manifest",
+		"First Source Exact Date": "1532",
+		"First Source Date": "1532",
+		"Texted": "no",
+		"Date Added": "2023-10-22",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2016-Letetur_omne_seculum.krn",
+		"FILEBASE": "Lps2016-Letetur_omne_seculum"
+	},
+	{
 		"ID": "Lsa2001",
 		"Composer": "Le Santier, Jean",
 		"Title": "Alma redemptoris mater",
