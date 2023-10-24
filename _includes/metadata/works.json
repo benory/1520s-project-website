@@ -1042,6 +1042,24 @@
 		"FILEBASE": "Gsc2014-Letatus_sum"
 	},
 	{
+		"ID": "Gsc2016",
+		"Composer": "Gascongne, Mathieu",
+		"Title": "Quare tristis",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Merritt_1962c",
+		"First Source": "Lib. undecimus xxvi. musicales habet (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1535|3",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"RISM Source Link": "https://rism.online/sources/993104131",
+		"First Source Exact Date": "1535",
+		"First Source Date": "1535",
+		"Texted": "no",
+		"Date Added": "2023-10-24",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gsc/Gsc2016-Quare_tristis.krn",
+		"FILEBASE": "Gsc2016-Quare_tristis"
+	},
+	{
 		"ID": "Jac2001",
 		"Composer": "Jacotin",
 		"Title": "Rogamus te",
