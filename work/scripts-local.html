@@ -25,6 +25,7 @@ function displayWork(id) {
 	if (!INITIALIZED) {
 		let url = DATA1520.lookup.works[id]["Humdrum URL"];
 		hnpOptions.url = url;
+		hnpOptions.postFunction = removeWait;
 		INITIALIZED = true;
 	}
 

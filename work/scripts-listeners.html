@@ -4,6 +4,8 @@
 // vim: ts=3:nowrap
 // Initializations for the work page.
 
+document.body.classList.add("wait");
+
 // First load metadata for 1520's project (from _include/metadata directory):
 let DATA1520 = {};
 DATA1520.metadata = {};
@@ -14,6 +16,7 @@ DATA1520.lookup = {};
 DATA1520.workid = "";
 DATA1520.filter = "";
 
+
 // Humdrum Notation Plugin options:
 let INITIALIZED = false;
 let HNP_OPTIONS = {
@@ -22,8 +25,9 @@ let HNP_OPTIONS = {
 	spacingNonLinear: 0.45,
 	spacingSystem: 10,
 	mnumInterval: 5,
-	autoResize: "true"
+	autoResize: "true",
 };
+
 
 
 //////////////////////////////
@@ -60,4 +64,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 });
 
+
+
+//////////////////////////////
+//
+// removeWait -- Callback function for stopping the spinning
+//    cursor (after notation is displayed).
+//
+
+function removeWait() {
+	document.body.classList.remove("wait");
+}
+
 </script>
+
+
+
