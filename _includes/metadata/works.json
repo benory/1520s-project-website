@@ -3531,6 +3531,23 @@
 		"FILEBASE": "The2001-Verbum_bonum_et_suave"
 	},
 	{
+		"ID": "The2002",
+		"Composer": "Therache, Pierrequin de",
+		"Title": "Clare sanctorum",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1991",
+		"First Source": "Motetti de la corona, libro primo (Fossombrone: Ottaviano Petrucci)",
+		"RISM or CC Source Sigla": "1514|1",
+		"RISM Source Link": "https://rism.online/sources/993103869",
+		"First Source Exact Date": "1514/08/17",
+		"First Source Date": "1514",
+		"Texted": "no",
+		"Date Added": "2023-10-29",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/The/The2002-Clare_sanctorum.krn",
+		"FILEBASE": "The2002-Clare_sanctorum"
+	},
+	{
 		"ID": "Ver2001",
 		"Composer": "Verdelot, Philippe",
 		"Title": "Sancta maria succurre miseris",
