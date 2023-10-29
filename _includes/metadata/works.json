@@ -3427,7 +3427,7 @@
 	{
 		"ID": "Snf0112",
 		"Composer": "Senfl, Ludwig",
-		"Title": "De profundis clamavi",
+		"Title": "De profundis clamavi I",
 		"Genre": "motet",
 		"Voices": "3",
 		"Details on Voices": "missing altus",
@@ -3446,6 +3446,28 @@
 		"Date Added": "2023-10-28",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0112-De_profundis_clamavi_I--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0112-De_profundis_clamavi_I--Zwickau_1676_1788"
+	},
+	{
+		"ID": "Snf0116",
+		"Composer": "Senfl, Ludwig",
+		"Title": "Dum steteritis",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Edwards_2021",
+		"Source of Edition": "Edwards_2021",
+		"First Source": "D-LEu MS Thomaskirche 49/50",
+		"RISM or CC Source Sigla": "LeipU 49/50",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1151/",
+		"External Project Name": "New Senfl Edition",
+		"Critical Commentary": "yes",
+		"External Project URL": "https://senflonline.com/sc-m-34/",
+		"First Source Exact Date": "~1558",
+		"First Source Date": "~1558",
+		"Texted": "yes",
+		"Date Added": "2023-10-29",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0116-Dum_steteritis.krn",
+		"FILEBASE": "Snf0116-Dum_steteritis"
 	},
 	{
 		"ID": "Snf0119",
