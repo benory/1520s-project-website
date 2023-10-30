@@ -4723,6 +4723,23 @@
 		"FILEBASE": "Wil2057-O_magnum_misterium"
 	},
 	{
+		"ID": "Wil2060",
+		"Composer": "Willaert, Adrian",
+		"Title": "Beatus Stephanus",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Smijers_1934; Zenck_1950b",
+		"First Source": "Liber primus quinque et viginti musicales (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1534|3",
+		"RISM Source Link": "https://rism.online/sources/993104109",
+		"First Source Exact Date": "1534/4",
+		"First Source Date": "1534",
+		"Texted": "no",
+		"Date Added": "2023-10-30",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2060-Beatus_Stephanus.krn",
+		"FILEBASE": "Wil2060-Beatus_Stephanus"
+	},
+	{
 		"ID": "Wil2062",
 		"Composer": "Willaert, Adrian",
 		"Title": "Precatus est Moyses",
