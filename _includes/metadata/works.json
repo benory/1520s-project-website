@@ -332,6 +332,24 @@
 		"FILEBASE": "Con2006-Nigra_sum"
 	},
 	{
+		"ID": "Con2013",
+		"Composer": "Conseil, Jean",
+		"Title": "Adiuva me, Domine",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Merritt_1962c",
+		"First Source": "Lib. undecimus xxvi. musicales habet (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1535|3",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"RISM Source Link": "https://rism.online/sources/993104131",
+		"First Source Exact Date": "1535",
+		"First Source Date": "1535",
+		"Texted": "no",
+		"Date Added": "2023-10-30",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Con/Con2013-Adiuva_me_Domine.krn",
+		"FILEBASE": "Con2013-Adiuva_me_Domine"
+	},
+	{
 		"ID": "Era2001",
 		"Composer": "Erasmus",
 		"Title": "Gloriosa principes",
