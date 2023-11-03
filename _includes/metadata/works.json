@@ -1079,7 +1079,7 @@
 	},
 	{
 		"ID": "Jac2001",
-		"Composer": "Jacotin?",
+		"Composer": "Jacotin Frontin?",
 		"Title": "Rogamus te",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1096,8 +1096,8 @@
 		"FILEBASE": "Jac2001-Rogamus_te"
 	},
 	{
-		"ID": "Jac2003",
-		"Composer": "Jacotin?",
+		"ID": "Jac2004",
+		"Composer": "Jacotin Frontin?",
 		"Title": "Interveniat pro Gabrieli",
 		"Genre": "motet",
 		"Voices": "4",
@@ -1109,8 +1109,8 @@
 		"First Source Date": "1520",
 		"Texted": "no",
 		"Note Count": "1198",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jac/Jac2003-Interveniat_pro_Gabrieli.krn",
-		"FILEBASE": "Jac2003-Interveniat_pro_Gabrieli"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jac/Jac2004-Interveniat_pro_Gabrieli.krn",
+		"FILEBASE": "Jac2004-Interveniat_pro_Gabrieli"
 	},
 	{
 		"ID": "Jan2001",
