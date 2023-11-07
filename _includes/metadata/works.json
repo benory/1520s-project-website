@@ -1130,6 +1130,23 @@
 		"FILEBASE": "Jac3001-A_tout_jamais"
 	},
 	{
+		"ID": "Jac3002",
+		"Composer": "Jacotin Frontin?",
+		"Title": "Hellas, pourquoy",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Courone et fleur des chansons a troys (Venice: Andrea Antico and A. dell’ Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Texted": "no",
+		"Date Added": "2023-11-7",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jac/Jac3002-Hellas_pourquoy.krn",
+		"FILEBASE": "Jac3002-Hellas_pourquoy"
+	},
+	{
 		"ID": "Jan2001",
 		"Composer": "Jan, Maistre",
 		"Title": "Lauda Jerusalem Dominum",
