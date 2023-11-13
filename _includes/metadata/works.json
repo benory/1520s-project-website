@@ -3573,6 +3573,28 @@
 		"FILEBASE": "Snf0116-Dum_steteritis"
 	},
 	{
+		"ID": "Snf0118",
+		"Composer": "Senfl, Ludwig",
+		"Title": "Ecce Maria genuit I",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Edwards_2021",
+		"Source of Edition": "Edwards_2021",
+		"First Source": "D-Rp C 120",
+		"RISM or CC Source Sigla": "RegB C120",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2435/",
+		"External Project Name": "New Senfl Edition",
+		"Critical Commentary": "yes",
+		"External Project URL": "https://senflonline.com/sc-m-36/",
+		"First Source Exact Date": "~1520",
+		"First Source Date": "~1520",
+		"Texted": "yes",
+		"Date Added": "2023-11-12",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0118-Ecce_Maria_genuit_I--Regensburg_C120.krn",
+		"FILEBASE": "Snf0118-Ecce_Maria_genuit_I--Regensburg_C120"
+	},
+	{
 		"ID": "Snf0119",
 		"Composer": "Senfl, Ludwig",
 		"Title": "Ecce Maria genuit II",
