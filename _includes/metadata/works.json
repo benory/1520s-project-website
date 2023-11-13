@@ -3528,6 +3528,28 @@
 		"FILEBASE": "Snf0109-Completi_sunt_dies_Mariae"
 	},
 	{
+		"ID": "Snf0111",
+		"Composer": "Senfl, Ludwig",
+		"Title": "Da pacem Domine I",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Edwards_2021",
+		"Source of Edition": "Edwards_2021",
+		"First Source": "D-Rp B. 211-215",
+		"RISM or CC Source Sigla": "RegB B211-5",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2427/",
+		"External Project Name": "New Senfl Edition",
+		"Critical Commentary": "yes",
+		"External Project URL": "https://senflonline.com/sc-m-25/",
+		"First Source Exact Date": "1543",
+		"First Source Date": "1543",
+		"Texted": "yes",
+		"Date Added": "2023-11-12",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0111-Da_pacem_Domine_I.krn",
+		"FILEBASE": "Snf0111-Da_pacem_Domine_I"
+	},
+	{
 		"ID": "Snf0112",
 		"Composer": "Senfl, Ludwig",
 		"Title": "De profundis clamavi I",
