@@ -145,22 +145,18 @@ function displayWorkInfo(id) {
 		let diammsource = workinfo["DIAMM Source Link"];
 		let rismsource = workinfo["RISM Source Link"];
 		let uniquesource = workinfo["Unique Source"];
-		if (uniquesource == "yes") {
-			if (diammsource) {
-				output += `<div class="work-item"><span class="key">Unique source</span><a target="_blank" href="${diammsource}">${source}</a></div>`;
-			} else if (rismsource) {
-				output += `<div class="work-item"><span class="key">Unique source</span><a target="_blank" href="${rismsource}">${source}</a></div>`;
-			} else {
-				output += `<div class="work-item"><span class="key">Unique source</span>${source}</div>`;
-			}
-		} else if (uniquesource == "no") {
-			if (diammsource) {
-				output += `<div class="work-item"><span class="key">First source</span><a target="_blank" href="${diammsource}">${source}</a></div>`;
-			} else if (rismsource) {
-				output += `<div class="work-item"><span class="key">First source</span><a target="_blank" href="${rismsource}">${source}</a></div>`;
-			} else {
-				output += `<div class="work-item"><span class="key">First source</span>${source}</div>`;
-			}
+		let sourcetype = "";
+		if (uniquesource = "yes") {
+			sourcetype = "Unique"; 
+		} else if (uniquesource = "no"){
+			sourcetype = "First";
+		}
+		if (diammsource) {
+			output += `<div class="work-item"><span class="key">${sourcetype} source</span><a target="_blank" href="${diammsource}">${source}</a></div>`;
+		} else if (rismsource) {
+			output += `<div class="work-item"><span class="key">${sourcetype} source</span><a target="_blank" href="${rismsource}">${source}</a></div>`;
+		} else {
+			output += `<div class="work-item"><span class="key">${sourcetype} source</span>${source}</div>`;
 		}
 	}
 
