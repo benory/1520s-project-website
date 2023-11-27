@@ -146,9 +146,9 @@ function displayWorkInfo(id) {
 		let rismsource = workinfo["RISM Source Link"];
 		let uniquesource = workinfo["Unique Source"];
 		let sourcetype = "";
-		if (uniquesource = "yes") {
+		if (uniquesource == "yes") {
 			sourcetype = "Unique"; 
-		} else if (uniquesource = "no"){
+		} else {
 			sourcetype = "First";
 		}
 		if (diammsource) {
