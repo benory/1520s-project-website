@@ -13,17 +13,20 @@ vim:    ts=3:nowrap
 
 <div id="external-info"></div>
 
+<div id="analysis-plots">
+	<div id="activity-merged-display" class="analysis-plot hidden"></div>
+	<div id="activity-separate-display" class="analysis-plot hidden"></div>
+	<div id="prange-duration-display" class="analysis-plot hidden"></div>   
+</div>
+
 <div id="button-container" class="button-container">
     <div id="accidentalSelect">
        <div class="button hide" onclick="displayNoAccidentals()">Hide Editorial Accidentals</div>
        <div class="button show hidden" onclick="displayAccidentals()">Show Editorial Accidentals</div>
     </div>
-    <div id="activity-merged" data-ext="png" class="analysis-toggle button">Activity Plots</div>
-    <div id="activity-merged-display" class="hidden"></div>
-    <div id="activity-separate" data-ext="png" class="analysis-toggle button">Activity Plots by Voice</div>
-    <div id="activity-separate-display" class="hidden"></div>
+    <div id="activity-merged" data-ext="png" class="analysis-toggle button">Activity</div>
+    <div id="activity-separate" data-ext="png" class="analysis-toggle button">Activity by Voice</div>
     <div id="prange-duration" data-ext="svg" class="analysis-toggle button">Vocal Ranges by Note Durations</div>
-    <div id="prange-duration-display" class="hidden"></div>   
 </div>
 
 <script type="text/x-humdrum" id="my-score"></script>
