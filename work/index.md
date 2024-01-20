@@ -20,9 +20,9 @@ vim:    ts=3:nowrap
     </div>
     <div id="activity-merged" data-ext="png" class="analysis-toggle button">Activity Plots</div>
     <div id="activity-merged-display" class="hidden"></div>
-    <div id="activity-separate" data-ext="png" class="analysis-toggle button">Activity Plots by voice</div>
+    <div id="activity-separate" data-ext="png" class="analysis-toggle button">Activity Plots by Voice</div>
     <div id="activity-separate-display" class="hidden"></div>
-    <div id="prange-duration" data-ext="svg" class="analysis-toggle button">Vocal ranges by note durations</div>
+    <div id="prange-duration" data-ext="svg" class="analysis-toggle button">Vocal Ranges by Note Durations</div>
     <div id="prange-duration-display" class="hidden"></div>   
 </div>
 
