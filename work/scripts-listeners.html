@@ -92,10 +92,19 @@ function toggleAnalysisDisplay(event) {
 	console.warn("TARGET", event.target);
 	let target = event.target;
 	if (!target.classList.contains("analysis-toggle")) {
-		console.warn("Not an analysis-tobble button");
+		console.warn("Not an analysis-toggle button");
 		return;
 	}
 	let analysisId = target.id;
+
+	if (event.target.classList.contains("analysis-toggle")) {
+		if (event.target.classList.contains("active")) {
+			event.target.classList.remove("active");
+		} else {
+			event.target.classList.add("active");
+		}
+	}
+
 	if (!analysisId) {
 		console.warn("Analysis ID is not given");
 		return;
@@ -123,6 +132,9 @@ function toggleAnalysisDisplay(event) {
 	}
 }
 
+document.querySelector('#image').addEventListener('click', () => {
+  document.querySelector('#foo').classList.add('myClass');
+}); 
 
 function downloadData(container, elementId, ext, ID) {
 	let url = `${URL_BASE}/${DATA1520.workid}-${elementId}.${ext}`;

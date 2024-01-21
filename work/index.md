@@ -25,8 +25,8 @@ vim:    ts=3:nowrap
        <div class="button show hidden" onclick="displayAccidentals()">Show Editorial Accidentals</div>
     </div>
     <div id="activity-merged" data-ext="png" class="analysis-toggle button">Activity</div>
-    <div id="activity-separate" data-ext="png" class="analysis-toggle button">Activity by Voice</div>
-    <div id="prange-duration" data-ext="svg" class="analysis-toggle button">Vocal Ranges by Note Durations</div>
+    <div id="activity-separate" data-ext="png" class="analysis-toggle button">Activity by voice</div>
+    <div id="prange-duration" data-ext="svg" class="analysis-toggle button">Vocal ranges by note durations</div>
 </div>
 
 <script type="text/x-humdrum" id="my-score"></script>
