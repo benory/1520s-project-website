@@ -147,11 +147,12 @@ function downloadData(container, elementId, ext, ID) {
 
 async function downloadAndDisplayInlinePng(url, container) {
 	try {
+		let titleurl = url.replace(/-notitle/, "");
 		const response = await fetch(url);
 		const blob = await response.blob();
 		const reader = new FileReader();
 		reader.onloadend = function () {
-			container.innerHTML = "<img>";
+			container.innerHTML = `<a target="_blank" href="${titleurl}"><img style="cursor:pointer"></a>`;
 			let imgDiv = container.querySelector("img");
 			imgDiv.src = reader.result;
 		};
@@ -165,7 +166,7 @@ async function downloadAndDisplayInlineSvg(url, container) {
 	try {
 		const response = await fetch(url);
 		const text = await response.text();
-		container.innerHTML = text;
+		container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
 	} catch (error) {
 		console.error("Error fetching or displaying the image:", error);
 	}
