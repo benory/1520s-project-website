@@ -22,3 +22,17 @@
   </div>
 
 </footer>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function (event) {
+	let element = document.querySelector(".social-media-list > li > a");
+	if (!element) {
+		return;
+	}
+	let href = element.href;
+	href = href.replace(/%2f/ig, "/");
+	element.href = href;
+});
+
+</script>
