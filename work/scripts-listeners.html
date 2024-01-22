@@ -132,10 +132,6 @@ function toggleAnalysisDisplay(event) {
 	}
 }
 
-document.querySelector('#image').addEventListener('click', () => {
-  document.querySelector('#foo').classList.add('myClass');
-}); 
-
 function downloadData(container, elementId, ext, ID) {
 	let url = `${URL_BASE}/${DATA1520.workid}-${elementId}.${ext}`;
 	if (ext === "png") {
