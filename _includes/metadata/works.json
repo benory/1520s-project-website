@@ -6025,5 +6025,25 @@
 		"Note Count": "799",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3040-Jay_veu_le_regnart_II.krn",
 		"FILEBASE": "Wil3040-Jay_veu_le_regnart_II"
+	},
+	{
+		"ID": "Wil3041",
+		"Composer": "Willaert, Adrian",
+		"Title": "He Dieu, Helayne",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "La Couronne et fleur des chansons a troys (Venice: Andrea Antico and A. dell’ Abbate)",
+		"RISM or CC Source Sigla": "1536|1",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-1-24",
+		"Note Count": "565",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3041-He_Dieu_Helayne.krn",
+		"FILEBASE": "Wil3041-He_Dieu_Helayne"
 	}
 ]
