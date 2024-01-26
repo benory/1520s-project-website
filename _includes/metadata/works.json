@@ -2405,6 +2405,26 @@
 		"FILEBASE": "Mlu2005-O_dulcis_amica"
 	},
 	{
+		"ID": "Mlu2007",
+		"Composer": "Moulu, Pierre",
+		"Title": "Quam pulchra es",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1989a",
+		"First Source": "I-Bc Q.19",
+		"RISM or CC Source Sigla": "BolC Q19",
+		"Mensuration Signs in Earliest Source": "Cut-C; Cut-C3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-1-26",
+		"Note Count": "1067",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2007-Quam_pulchra_es.krn",
+		"FILEBASE": "Mlu2007-Quam_pulchra_es"
+	},
+	{
 		"ID": "Mlu3004",
 		"Composer": "Moulu, Pierre",
 		"Title": "N'aymés jamais ces gens",
