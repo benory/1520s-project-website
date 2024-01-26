@@ -169,11 +169,16 @@ function displayWorkInfo(id) {
 	let sibelius = workinfo["Humdrum URL"];
 	let musicxml = workinfo["Humdrum URL"];
 	let humdrum = workinfo["Humdrum URL"];
+	let URL_BASE = "https://data.1520s-project.org";
+	let midi = `${URL_BASE}/${DATA1520.workid}.mid`;
+	let mei = `${URL_BASE}/${DATA1520.workid}.mei`;
+
 	pdf = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	output += `<div class="work-item"><span class="key">Download</span><a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a></div>`;
+
+	output += `<div class="work-item"><span class="key">Download</span><a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a></div>`;
 
 	let github = workinfo["Humdrum URL"];
 		let urlParam = encodeURIComponent(github);
