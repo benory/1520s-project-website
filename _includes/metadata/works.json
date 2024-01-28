@@ -1124,6 +1124,25 @@
 		"FILEBASE": "Gom3002-Alleluya_my_fault_chanter"
 	},
 	{
+		"ID": "Gsc2010",
+		"Composer": "Gascongne, Mathieu",
+		"Title": "Christus vincit, Christus regnat",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Smijers_1936a",
+		"First Source": "Liber secundus quatuor et viginti musicales quatyuor vocum (Paris: Pierre Attaignant)",
+		"RISM or CC Source Sigla": "1534|4",
+		"RISM Source Link": "https://rism.online/sources/993104111",
+		"First Source Exact Date": "1534/5",
+		"First Source Date": "1534",
+		"Unique Source": "no",
+		"Texted": "yes",
+		"Date Added": "2024-1-28",
+		"Note Count": "1478",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gsc/Gsc2010-Christus_vincit_Christus_regnat.krn",
+		"FILEBASE": "Gsc2010-Christus_vincit_Christus_regnat"
+	},
+	{
 		"ID": "Gsc2014",
 		"Composer": "Gascongne, Mathieu",
 		"Title": "Letatus sum",
