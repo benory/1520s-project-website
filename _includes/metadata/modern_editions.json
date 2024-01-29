@@ -379,7 +379,29 @@
 		"Publication Year": "2013"
 	},
 	{
-		"ID": "Owens_1989",
+		"ID": "Owens_1989a",
+		"Composer/Author": "Philippe Verdelot",
+		"Name of Volume": "Madrigals for Four and Five Voices",
+		"Editor": "Jessie Ann Owens",
+		"Volume": "28",
+		"Series": "Sixteenth-century Madrigal",
+		"Location": "New York",
+		"Publisher": "Garland",
+		"Publication Year": "1989"
+	},
+	{
+		"ID": "Owens_1989b",
+		"Composer/Author": "Philippe Verdelot",
+		"Name of Volume": "Madrigals for Four and Five Voices",
+		"Editor": "Jessie Ann Owens",
+		"Volume": "29",
+		"Series": "Sixteenth-century Madrigal",
+		"Location": "New York",
+		"Publisher": "Garland",
+		"Publication Year": "1989"
+	},
+	{
+		"ID": "Owens_1989c",
 		"Composer/Author": "Philippe Verdelot",
 		"Name of Volume": "Madrigals for Four and Five Voices",
 		"Editor": "Jessie Ann Owens",
