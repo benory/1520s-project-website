@@ -43,11 +43,13 @@ Do you see an mistake in a score? Do you disagree with the proposed editorial ac
 
 Would you like a particular score to be texted? [Let us know.](mailto:The1520sProject@gmail.com)
 
-<!-- ## New Senfl Edition
+## Collaborators 
 
-Thanks to Stefan Gasch, Birgit Lodes, and the [New Senfl Edition](https://senflonline-eng.com/new-senfl-edition/) at the Universität für Musik und darstellende Kunst Wien for generously agreeing to incorporate their scores in The 1520s Project.
+### New Senfl Edition
 
-[![Senfl Banner](/images/Senfl_banner.png)](https://senflonline-eng.com/new-senfl-edition/) -->
+Thanks to Stefan Gasch, Birgit Lodes, and the [New Senfl Edition](https://senflonline-eng.com/new-senfl-edition/) at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the [currently available pieces](/browse/?q=senfl), each of which links to the New Senfl Edition's critical commentary.
+
+[![Senfl Banner](/images/Senfl_banner.png)](https://senflonline-eng.com/new-senfl-edition/)
 
 ## Support
 
