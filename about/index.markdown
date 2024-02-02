@@ -43,7 +43,7 @@ Do you see an mistake in a score? Do you disagree with the proposed editorial ac
 
 Would you like a particular score to be texted? [Let us know.](mailto:The1520sProject@gmail.com)
 
-## Collaborators 
+## Collaborations
 
 ### New Senfl Edition
 
