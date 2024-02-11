@@ -642,30 +642,19 @@ function FreeTextSearch(query) {
 
 	let searchCount = 0;
 
-	METADATA.forEach(record => {
-        // Iterate over each property of the object
-        for (let key in record) {
-            if (record.hasOwnProperty(key)) {
-                // Check if the property value matches the search query
-                if (String(record[key]).toLowerCase().includes(query.toLowerCase())) {
-                    searchCount++;
-                    // Find the corresponding row in the table and show it
-                    for (let i = 0; i < tr.length; i++) {
-                        let td = tr[i].querySelectorAll("td");
-                        let found = false;
-                        for (let j = 0; j < td.length; j++) {
-                            if (td[j].innerText.match(regex)) {
-                                found = true;
-                                break;
-                            }
-                        }
-                        tr[i].style.display = found ? "" : "none";
-                    }
-                    break; // Break out of the loop once a match is found in this object
-                }
-            }
-        }
-    });
+	// Loop through all table rows, hiding those that don't match the search query:
+	for (let i=0; i<tr.length; i++) {
+		let td = tr[i].querySelectorAll("td");
+		let found = false;
+		for (let j=0; j<td.length; j++) {
+			if (td[j].innerText.match(regex)) {
+				found = true;
+				searchCount++;
+				break;
+			}
+		}
+		tr[i].style.display = found ? "" : "none";
+	}
 
 	displaySearchCount(searchCount);
 	updateBrowseUrlDisplay();
