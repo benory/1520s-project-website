@@ -3229,7 +3229,7 @@
 		"First Source Exact Date": "1520/10/15",
 		"First Source Date": "1520",
 		"Unique Source": "no",
-		"Texted": "no",
+		"Texted": "yes",
 		"Note Count": "936",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2010-Pater_noster.krn",
 		"FILEBASE": "Ric2010-Pater_noster"
