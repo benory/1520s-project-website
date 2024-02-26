@@ -5,6 +5,16 @@
 		"Composer RISM ID": "pe30004985"
 	},
 	{
+		"ID": "Arc",
+		"Composer": "Arcadelt, Jacques",
+		"Composer RISM ID": "pe30004860",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/286/",
+		"Start of CYA": "1530",
+		"End of CYA": "1568",
+		"Flourished": "1530–1568",
+		"Places Active": "Florence, Rome, France"
+	},
+	{
 		"ID": "Bar",
 		"Composer": "Barra, Hotinet",
 		"Composer RISM ID": "pe30002116",

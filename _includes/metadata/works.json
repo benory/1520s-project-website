@@ -117,6 +117,26 @@
 		"FILEBASE": "Ano2006-Dies_est_laetitiae"
 	},
 	{
+		"ID": "Arc3013",
+		"Composer": "Arcadelt, Jacques",
+		"Title": "Il bianco e dolce cigno",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Seay_1970",
+		"First Source": "Il primo libro di madrigali d'Archadelt (Venice: Antonio Gardano)",
+		"RISM or CC Source Sigla": "1539|22",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"RISM Source Link": "https://rism.online/sources/993104245",
+		"First Source Exact Date": "1539",
+		"First Source Date": "1539",
+		"Unique Source": "no",
+		"Texted": "yes",
+		"Date Added": "2024-2-26",
+		"Note Count": "499",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Arc/Arc3013-Il_bianco_e_dolce_cigno.krn",
+		"FILEBASE": "Arc3013-Il_bianco_e_dolce_cigno"
+	},
+	{
 		"ID": "Bar2001",
 		"Composer": "Barra, Hotinet",
 		"Title": "Peccantem me cotidie",
