@@ -117,6 +117,28 @@
 		"FILEBASE": "Ano2006-Dies_est_laetitiae"
 	},
 	{
+		"ID": "Ano2007",
+		"Composer": "Anonymous",
+		"Title": "Pavane III",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Source of Edition": "Second livre contenant trois Gaillardes (Paris: Pierre Attaingnant)",
+		"First Source": "Second livre contenant trois Gaillardes (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "G 1673",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"RISM Source Link": "https://rism.online/sources/993104526",
+		"IIIF Source": "https://gallica.bnf.fr/view3if/ga/ark:/12148/bpt6k4500339w",
+		"IIIF Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k4500339w/manifest.json",
+		"First Source Exact Date": "1547",
+		"First Source Date": "1547",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Date Added": "2024-2-28",
+		"Note Count": "564",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2007-Pavane_III--Second_livre_contenant_trois_Gaillardes.krn",
+		"FILEBASE": "Ano2007-Pavane_III--Second_livre_contenant_trois_Gaillardes"
+	},
+	{
 		"ID": "Arc3013",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Il bianco e dolce cigno",
