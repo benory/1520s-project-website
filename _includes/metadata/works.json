@@ -4964,6 +4964,25 @@
 		"FILEBASE": "Ver2018-Sancta_Maria_virgo_virginum"
 	},
 	{
+		"ID": "Ver2019",
+		"Composer": "Verdelot, Philippe",
+		"Title": "Congregati sunt",
+		"Genre": "motet",
+		"Voices": "6",
+		"Modern Editions": "Slim_1972; Bragard_1973",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-3-9",
+		"Note Count": "1378",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2019-Congregati_sunt.krn",
+		"FILEBASE": "Ver2019-Congregati_sunt"
+	},
+	{
 		"ID": "Ver3001",
 		"Composer": "Verdelot, Philippe",
 		"Title": "Vita della mia vita",
