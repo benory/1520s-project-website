@@ -362,8 +362,8 @@ function initializeAccidentalStateButton() {
 // PlayAudioFile -- play/pause an audio file.
 //
 
-function PlayAudioFile(id, element, starttime) {
-	// The id is not the same as the currently playing file
+function PlayAudioFile(ID1520s, element, starttime) {
+	// The ID1520s is not the same as the currently playing file
 	// (or there is no file playing).  So start the new one.
 	if (!AUDIO) {
 	   AUDIO = document.getElementById('audio');
@@ -384,15 +384,18 @@ function PlayAudioFile(id, element, starttime) {
 	AUDIO.style.zIndex = '1';
 
 	AUDIO.onpause = function () {
-		//TurnOffAllNotes();
+		TurnOffAllNotes();
 	}
 
 
 	let audiobutton;
-   if (id != AUDIO1520sid) {
+	 console.warn(ID1520s, "ID1520s 1");
+	 console.warn(AUDIO1520sid, "AUDIO1520sid 1");
+	 console.warn(AUDIOid, "AUDIOid 1");
+	 if (ID1520s != AUDIO1520sid) {
 		if (!!AUDIOid) {
-			// turn of previously playing audio file:
-			audiobutton = document.getElementById(AUDIOid);
+			// turn off previously playing audio file:
+			audiobutton = document.getElementById(audiobutton);
 			if (!!audiobutton && !!audiobutton.className) {
 				if (audiobutton.className.match(/mp3/)) {
 					audiobutton.className = 'mp3play';
@@ -404,31 +407,30 @@ function PlayAudioFile(id, element, starttime) {
 		AUDIO.removeAttribute('controls');
       AUDIO.pause();
 		
-    AUDIOid = id;
-    console.warn (AUDIOid, "AUDIOid");
+    AUDIOid = ID1520s;
 		let source = '';
 		// Can't have seekable dynamic content in audio element:
-		//source += '<source src="/data?a=mp3&id=' + jrpid + '" ';
-		//if (window.location.href.match(/tasso/i)) {
-		//	source += '<source src="https://data.1520s-project.org' + id + '.mp3" ';
-		//} else {
-			source += '<source src="https://data.1520s-project.org/' + id + '.mp3" ';
-			console.warn(source, "source");
-		//}
+		//source += '<source src="/data?a=mp3&id=' + ID1520s + '" ';
+		source += '<source src="http://data.1520s-project.org/' + ID1520s + '.mp3" ';
 		source += 'type="audio/mpeg"/>\n';
 		AUDIO.innerHTML = source;
 
-		AUDIO1520sid = id;
+		AUDIO1520sid = ID1520s;
 		AUDIO.load();
 		if (starttime) {
 			AUDIO.currentTime = starttime;
 		}
 
+	 console.warn(ID1520s, "ID1520s 2");
+	 console.warn(AUDIO1520sid, "AUDIO1520sid 2");
+	 console.warn(AUDIOid, "AUDIOid 2");
+	 console.warn(source);
+
 		AUDIO.play();
 		//InitializeTimemap();
 
 		AUDIO.setAttribute('controls', 'controls');
-		let newelement = document.getElementById(AUDIOid);
+		let newelement = document.getElementById(audiobutton);
 
 		AUDIO.addEventListener("ended", function() {
 			newelement.className = "play";

@@ -32,7 +32,7 @@ let HNP_OPTIONS = {
 let AUDIO          		= null;					// HTML5 audio interface ID.
 let AUDIO1520sid     	= '';  					// currently playing audio file.
 let AUDIOid        		= '';                   // currently playing audio button.
-let id 					= '';
+let ID1520s 			= '';					// work ID
 
 
 //////////////////////////////
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}
 	console.warn("WORK ID", DATA1520.workid);
 	displayWork(DATA1520.workid);
-	id = DATA1520.workid;
+	ID1520s = DATA1520.workid;
 
 });
 
