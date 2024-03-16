@@ -21,6 +21,7 @@ vim:    ts=3:nowrap
 </div>
 
 <div id="button-container" class="button-container">
+    <div id="audio_$id" style="cursor:pointer;" onclick="PlayAudioFile('$id', this);" class="play">play</div>
     <div id="accidentalSelect">
        <div class="button hide" onclick="displayNoAccidentals()">Hide Editorial Accidentals</div>
        <div class="button show hidden" onclick="displayAccidentals()">Show Editorial Accidentals</div>

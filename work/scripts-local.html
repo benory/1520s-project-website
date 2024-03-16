@@ -357,5 +357,128 @@ function initializeAccidentalStateButton() {
 	}
 }
 
+//////////////////////////////
+//
+// PlayAudioFile -- play/pause an audio file.
+//
+
+function PlayAudioFile(id, element, starttime) {
+	// The id is not the same as the currently playing file
+	// (or there is no file playing).  So start the new one.
+	if (!AUDIO) {
+	   AUDIO = document.getElementById('audio');
+   }
+	if (!AUDIO) {
+		AUDIO = document.createElement("AUDIO");
+		AUDIO.id = "audio";
+		document.body.appendChild(AUDIO);
+	}
+   if (!AUDIO) {
+		console.log('Error: could not set up audio interface\n');
+		return false;
+   }
+	AUDIO.setAttribute('controls', 'controls');
+	AUDIO.style.position = 'fixed';
+	AUDIO.style.bottom = '0';
+	AUDIO.style.right = '0';
+	AUDIO.style.zIndex = '1';
+
+	AUDIO.onpause = function () {
+		//TurnOffAllNotes();
+	}
+
+
+	let audiobutton;
+   if (id != AUDIO1520sid) {
+		if (!!AUDIOid) {
+			// turn of previously playing audio file:
+			audiobutton = document.getElementById(AUDIOid);
+			if (!!audiobutton && !!audiobutton.className) {
+				if (audiobutton.className.match(/mp3/)) {
+					audiobutton.className = 'mp3play';
+				} else {
+					audiobutton.className = 'play';
+				}
+			}
+		}
+		AUDIO.removeAttribute('controls');
+      AUDIO.pause();
+		
+    AUDIOid = id;
+    console.warn (AUDIOid, "AUDIOid");
+		let source = '';
+		// Can't have seekable dynamic content in audio element:
+		//source += '<source src="/data?a=mp3&id=' + jrpid + '" ';
+		//if (window.location.href.match(/tasso/i)) {
+		//	source += '<source src="https://data.1520s-project.org' + id + '.mp3" ';
+		//} else {
+			source += '<source src="https://data.1520s-project.org/' + id + '.mp3" ';
+			console.warn(source, "source");
+		//}
+		source += 'type="audio/mpeg"/>\n';
+		AUDIO.innerHTML = source;
+
+		AUDIO1520sid = id;
+		AUDIO.load();
+		if (starttime) {
+			AUDIO.currentTime = starttime;
+		}
+
+		AUDIO.play();
+		//InitializeTimemap();
+
+		AUDIO.setAttribute('controls', 'controls');
+		let newelement = document.getElementById(AUDIOid);
+
+		AUDIO.addEventListener("ended", function() {
+			newelement.className = "play";
+		});
+
+		if (newelement.className.match(/mp3/)) {
+			newelement.className = 'mp3pause';
+		} else {
+			newelement.className = 'pause';
+		}
+
+		return;
+	}
+
+
+	// The audio file is the same, so start it or pause it depending
+	// on its current state:
+	if (AUDIO.paused) {
+		audiobutton = document.getElementById(AUDIOid);
+ 		if (!audiobutton) {
+			return;
+		}
+
+		if (audiobutton.className.match(/mp3/)) {
+			audiobutton.className = 'mp3play';
+		} else {
+			audiobutton.className = 'play';
+		}
+		AUDIO.play();
+		//InitializeTimemap();
+		AUDIO.setAttribute('controls', 'controls');
+	} else {
+		audiobutton = document.getElementById(AUDIOid);
+ 		if (!audiobutton) {
+			return;
+		}
+
+		if (audiobutton.className.match(/mp3/)) {
+			audiobutton.className = 'mp3pause';
+		} else {
+			audiobutton.className = 'pause';
+		}
+		if (element.className.match(/mp3/)) {
+			element.className = 'mp3play';
+		} else {
+			element.className = 'play';
+		}
+		AUDIO.pause();
+		AUDIO.removeAttribute('controls');
+	}
+}
 
 </script>
