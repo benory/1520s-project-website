@@ -249,7 +249,6 @@ function displayWorkFooter(id) {
 		id = DATA1520.workid;
 	}
 	let workinfo = DATA1520.lookup.works[id];
-	console.log("WORKINFO", workinfo);
 
 	let output = "";
 
@@ -384,65 +383,56 @@ function PlayAudioFile(ID1520s, element, starttime) {
 	AUDIO.style.zIndex = '1';
 
 	AUDIO.onpause = function () {
-		TurnOffAllNotes();
+		//TurnOffAllNotes();
 	}
 
 
 	let audiobutton;
-	 console.warn(ID1520s, "ID1520s 1");
-	 console.warn(AUDIO1520sid, "AUDIO1520sid 1");
-	 console.warn(AUDIOid, "AUDIOid 1");
 	 if (ID1520s != AUDIO1520sid) {
-		if (!!AUDIOid) {
-			// turn off previously playing audio file:
-			audiobutton = document.getElementById(audiobutton);
-			if (!!audiobutton && !!audiobutton.className) {
-				if (audiobutton.className.match(/mp3/)) {
-					audiobutton.className = 'mp3play';
-				} else {
-					audiobutton.className = 'play';
+			if (!!AUDIOid) {
+				// turn off previously playing audio file:
+				audiobutton = document.getElementById(AUDIOid);
+				if (!!audiobutton && !!audiobutton.className) {
+					if (audiobutton.className.match(/mp3/)) {
+						audiobutton.className = 'mp3play';
+					} else {
+						audiobutton.className = 'play';
+					}
 				}
 			}
-		}
-		AUDIO.removeAttribute('controls');
-      AUDIO.pause();
-		
-    AUDIOid = ID1520s;
-		let source = '';
-		// Can't have seekable dynamic content in audio element:
-		//source += '<source src="/data?a=mp3&id=' + ID1520s + '" ';
-		source += '<source src="http://data.1520s-project.org/' + ID1520s + '.mp3" ';
-		source += 'type="audio/mpeg"/>\n';
-		AUDIO.innerHTML = source;
+			AUDIO.removeAttribute('controls');
+	    AUDIO.pause();
+			
+	    AUDIOid = element.id;
+			let source = '';
+			// Can't have seekable dynamic content in audio element:
+			source += '<source src="http://data.1520s-project.org/' + ID1520s + '.mp3" ';
+			source += 'type="audio/mpeg"/>\n';
+			AUDIO.innerHTML = source;
 
-		AUDIO1520sid = ID1520s;
-		AUDIO.load();
-		if (starttime) {
-			AUDIO.currentTime = starttime;
-		}
+			AUDIO1520sid = ID1520s;
+			AUDIO.load();
+			if (starttime) {
+				AUDIO.currentTime = starttime;
+			}
 
-	 console.warn(ID1520s, "ID1520s 2");
-	 console.warn(AUDIO1520sid, "AUDIO1520sid 2");
-	 console.warn(AUDIOid, "AUDIOid 2");
-	 console.warn(source);
+			AUDIO.play();
+			//InitializeTimemap();
 
-		AUDIO.play();
-		//InitializeTimemap();
+			AUDIO.setAttribute('controls', 'controls');
+			let newelement = document.getElementById(AUDIOid);
 
-		AUDIO.setAttribute('controls', 'controls');
-		let newelement = document.getElementById(audiobutton);
+			AUDIO.addEventListener("ended", function() {
+				newelement.className = "play";
+			});
 
-		AUDIO.addEventListener("ended", function() {
-			newelement.className = "play";
-		});
+			if (newelement.className.match(/mp3/)) {
+				newelement.className = 'mp3pause';
+			} else {
+				newelement.className = 'pause';
+			}
 
-		if (newelement.className.match(/mp3/)) {
-			newelement.className = 'mp3pause';
-		} else {
-			newelement.className = 'pause';
-		}
-
-		return;
+			return;
 	}
 
 

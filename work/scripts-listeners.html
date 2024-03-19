@@ -95,10 +95,8 @@ let URL_BASE = "https://data.1520s-project.org";
 document.addEventListener("click", toggleAnalysisDisplay);
 
 function toggleAnalysisDisplay(event) {
-	console.warn("TARGET", event.target);
 	let target = event.target;
 	if (!target.classList.contains("analysis-toggle")) {
-		console.warn("Not an analysis-toggle button");
 		return;
 	}
 	let analysisId = target.id;
