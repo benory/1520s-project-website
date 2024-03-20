@@ -449,6 +449,12 @@ function PlayAudioFile(ID1520s, element, starttime) {
 		} else {
 			audiobutton.className = 'play';
 		}
+		if (element.className.match(/mp3/)) {
+			element.className = 'mp3pause';
+		} else {
+			element.className = 'pause';
+		}
+		console.warn(audiobutton.className, "audiobutton.className");
 		AUDIO.play();
 		//InitializeTimemap();
 		AUDIO.setAttribute('controls', 'controls');
@@ -468,6 +474,7 @@ function PlayAudioFile(ID1520s, element, starttime) {
 		} else {
 			element.className = 'play';
 		}
+		console.warn(audiobutton.className, "audiobutton.className");
 		AUDIO.pause();
 		AUDIO.removeAttribute('controls');
 	}
