@@ -5198,6 +5198,26 @@
 		"FILEBASE": "Ver3004-Con_suave_parlar"
 	},
 	{
+		"ID": "Ver3005",
+		"Composer": "Verdelot, Philippe",
+		"Title": "Occhi infelici ch'a mirar",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Owens_1989b",
+		"First Source": "US-NH Miscellaneous MS 179",
+		"RISM or CC Source Sigla": "NHavY 179",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2255/",
+		"First Source Exact Date": "~1525",
+		"First Source Date": "~1525",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-1",
+		"Note Count": "603",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3005-Occhi_infelici_cha_mirar.krn",
+		"FILEBASE": "Ver3005-Occhi_infelici_cha_mirar"
+	},
+	{
 		"ID": "Ver3009",
 		"Composer": "Verdelot, Philippe",
 		"Title": "Madonna quando io v'odo cantar",
