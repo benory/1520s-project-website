@@ -2488,6 +2488,26 @@
 		"FILEBASE": "Mlu2005-O_dulcis_amica"
 	},
 	{
+		"ID": "Mlu2006",
+		"Composer": "Moulu, Pierre",
+		"Title": "In illo tempore",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1989b",
+		"First Source": "I-Bc Q.19",
+		"RISM or CC Source Sigla": "BolC Q19",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-3",
+		"Note Count": "1279",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2006-In_illo_tempore.krn",
+		"FILEBASE": "Mlu2006-In_illo_tempore"
+	},
+	{
 		"ID": "Mlu2007",
 		"Composer": "Moulu, Pierre",
 		"Title": "Quam pulchra es",
