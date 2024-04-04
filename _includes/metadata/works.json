@@ -953,6 +953,25 @@
 		"FILEBASE": "Fss2003-In_illo_tempore_postquam"
 	},
 	{
+		"ID": "Fss2004",
+		"Composer": "Festa, Sebastiano",
+		"Title": "Virgo gloriosa Christi",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1990",
+		"First Source": "I-Bc Q.20",
+		"RISM or CC Source Sigla": "BolC Q20",
+		"Mensuration Signs in Earliest Source": "Cut-C; Cut-O over 3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/",
+		"First Source Exact Date": "~1525",
+		"First Source Date": "~1525",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Note Count": "1386",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss2004-Virgo_gloriosa_Christi.krn",
+		"FILEBASE": "Fss2004-Virgo_gloriosa_Christi"
+	},
+	{
 		"ID": "Fss3007",
 		"Composer": "Festa, Sebastiano",
 		"Title": "O passi sparsi",
