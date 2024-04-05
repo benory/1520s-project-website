@@ -417,7 +417,7 @@ function PlayAudioFile(ID1520s, element, starttime) {
 			}
 
 			AUDIO.play();
-			//InitializeTimemap();
+			InitializeTimemap();
 
 			AUDIO.setAttribute('controls', 'controls');
 			let newelement = document.getElementById(AUDIOid);
@@ -456,7 +456,7 @@ function PlayAudioFile(ID1520s, element, starttime) {
 		}
 		console.warn(audiobutton.className, "audiobutton.className");
 		AUDIO.play();
-		//InitializeTimemap();
+		InitializeTimemap();
 		AUDIO.setAttribute('controls', 'controls');
 	} else {
 		audiobutton = document.getElementById(AUDIOid);
@@ -477,6 +477,97 @@ function PlayAudioFile(ID1520s, element, starttime) {
 		console.warn(audiobutton.className, "audiobutton.className");
 		AUDIO.pause();
 		AUDIO.removeAttribute('controls');
+	}
+}
+
+//////////////////////////////
+//
+// InitializeTimemap --
+//
+
+function InitializeTimemap() {
+	if (typeof REFRESH === "undefined") {
+		console.warn("REFRESH is undefined");
+		return;
+	}
+	let increment = 20;
+	REFRESH = setInterval(function() {
+		if (AUDIO && AUDIO.paused) {
+			clearInterval(REFRESH);
+			return;
+		}
+		if (!AUDIO) {
+			clearInterval(REFRESH);
+			return;
+		}
+		let currenttime = AUDIO.currentTime;
+		//console.warn(TIMEMAP);
+		//console.warn(ID1520s);
+		CheckTimeMap(TIMEMAP[ID1520s], QEVENTS, currenttime, increment/1000.0 * 2);
+	}, increment);
+}
+
+//////////////////////////////
+//
+// CheckTimeMap --
+//
+
+function CheckTimeMap(timemap, events, currenttime, increment) {
+	let target = null;
+	let diff;
+	for (let i=0; i<timemap.length; i++) {
+		if (Math.abs(timemap[i].tstamp - currenttime) < increment) {
+			target = timemap[i];
+		}
+	}
+
+	if (!target) {
+		return;
+	}
+
+	if (target.tstamp == LASTTIME) {
+		return;
+	}
+	LASTTIME = target.tstamp;
+	// console.log("TIMEENTRY", target);
+	CheckEventMap(target.qstamp, events);
+}
+
+//////////////////////////////
+//
+// CheckEventMap --
+//
+
+function CheckEventMap(etime, events) {
+	for (let i=0; i<events.length; i++) {
+		if (Math.abs(etime - events[i].qstamp) < 0.01) {
+			ProcessNoteEvents(events[i]);
+		}
+	}
+}
+
+//////////////////////////////
+//
+// ProcessNoteEvents --
+//
+
+function ProcessNoteEvents(event) {
+	let ons = event.on;
+	let offs = event.off;
+	let i;
+
+	for (i=0; i<ons.length; i++) {
+		// ons[i].style.stroke = "red";
+		// ons[i].style.fill = "red";
+		// have to re-find on page in case the image has changed:
+		let xon = document.querySelector("#" + ons[i].id);
+		xon.style.fill = "red";
+	}
+
+	for (i=0; i<offs.length; i++) {
+		// have to re-find on page in case the image has changed:
+		let xoff = document.querySelector("#" + offs[i].id);
+		xoff.style.fill = "";
 	}
 }
 

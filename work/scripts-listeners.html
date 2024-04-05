@@ -33,6 +33,10 @@ let AUDIO          		= null;					// HTML5 audio interface ID.
 let AUDIO1520sid     	= '';  					// currently playing audio file.
 let AUDIOid        		= '';                   // currently playing audio button.
 let ID1520s 			= '';					// work ID
+let REFRESH 			= null;
+let TIMEMAP 			= {};
+let QEVENTS 			= [];
+
 
 
 //////////////////////////////
@@ -93,6 +97,76 @@ let ID = DATA1520.workid;
 let URL_BASE = "https://data.1520s-project.org";
 
 document.addEventListener("click", toggleAnalysisDisplay);
+
+
+//////////////////////////////
+//
+// click event listener -- event delegate listener for starting playback at a certain note.
+// 
+//
+
+window.addEventListener("click", function(event) {
+	var target = event.target;
+	target = target.parentNode;
+	var note = null;
+	if (target && target.id && target.id.match(/^note-/)) {
+		note = target;
+	} else {
+		while ((!note) && target) {
+			target = target.parentNode;
+			if (!target) {
+				break;
+			}
+			if (target && target.id && target.id.match(/^note-/)) {
+				note = target;
+				break;
+			}
+		}
+	}
+	if (!note) {
+		console.log("Not a note");
+		return;
+	}
+	var matches;
+	var ques = 0;
+	if (matches = note.className.baseVal.match(/qon-([^\s]+)/)) {
+		ques = getQstampFloat(matches[1]);
+	} else {
+		return;
+	}
+	let timemap = TIMEMAP[ID1520s];
+	if (!timemap) {
+		return;
+	}
+	var i;
+	var tstamp = -1;
+	var qstamp = -1;
+	for (i=0; i<timemap.length; i++) {
+		if (Math.abs(timemap[i].qstamp - ques) < 0.01) {
+			tstamp = timemap[i].tstamp;
+			qstamp = timemap[i].qstamp;
+		}
+	}
+	if (tstamp < 0) {
+		return;
+	}
+
+	var anticipation = 0.0;
+	if (!AUDIO) {
+		var element = document.querySelector("#audio_" + ID1520s);
+		PlayAudioFile(ID, element, tstamp - anticipation);
+	} else if (AUDIO.paused) {
+		TurnOffAllNotes();
+		AUDIO.currentTime = tstamp - anticipation;
+		PlayAudioFile(ID, element, tstamp - anticipation);
+	} else {
+		AUDIO.pause();
+		TurnOffAllNotes();
+		AUDIO.currentTime = tstamp - anticipation;
+		AUDIO.play();
+	}
+
+});
 
 function toggleAnalysisDisplay(event) {
 	let target = event.target;
