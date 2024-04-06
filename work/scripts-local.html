@@ -515,6 +515,7 @@ function InitializeTimemap() {
 function CheckTimeMap(timemap, events, currenttime, increment) {
 	let target = null;
 	let diff;
+	console.warn("timemap", timemap);
 	for (let i=0; i<timemap.length; i++) {
 		if (Math.abs(timemap[i].tstamp - currenttime) < increment) {
 			target = timemap[i];

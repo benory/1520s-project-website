@@ -106,9 +106,9 @@ document.addEventListener("click", toggleAnalysisDisplay);
 //
 
 window.addEventListener("click", function(event) {
-	var target = event.target;
+	let target = event.target;
 	target = target.parentNode;
-	var note = null;
+	let note = null;
 	if (target && target.id && target.id.match(/^note-/)) {
 		note = target;
 	} else {
@@ -127,20 +127,21 @@ window.addEventListener("click", function(event) {
 		console.log("Not a note");
 		return;
 	}
-	var matches;
-	var ques = 0;
+	let matches;
+	let ques = 0;
 	if (matches = note.className.baseVal.match(/qon-([^\s]+)/)) {
 		ques = getQstampFloat(matches[1]);
 	} else {
 		return;
 	}
 	let timemap = TIMEMAP[ID1520s];
+	console.warn("timemap", timemap);
 	if (!timemap) {
 		return;
 	}
-	var i;
-	var tstamp = -1;
-	var qstamp = -1;
+	let i;
+	let tstamp = -1;
+	let qstamp = -1;
 	for (i=0; i<timemap.length; i++) {
 		if (Math.abs(timemap[i].qstamp - ques) < 0.01) {
 			tstamp = timemap[i].tstamp;
@@ -151,9 +152,9 @@ window.addEventListener("click", function(event) {
 		return;
 	}
 
-	var anticipation = 0.0;
+	let anticipation = 0.0;
 	if (!AUDIO) {
-		var element = document.querySelector("#audio_" + ID1520s);
+		let element = document.querySelector("#audio_" + ID1520s);
 		PlayAudioFile(ID, element, tstamp - anticipation);
 	} else if (AUDIO.paused) {
 		TurnOffAllNotes();
