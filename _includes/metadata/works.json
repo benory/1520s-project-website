@@ -5191,6 +5191,28 @@
 		"FILEBASE": "Ver2019-Congregati_sunt"
 	},
 	{
+		"ID": "Ver2020",
+		"Composer": "Verdelot, Philippe",
+		"Title": "Salve Barbara",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Smijers_1934",
+		"First Source": "Xii. Motetz a quatre et cinq voix (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1529|1",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"RISM Source Link": "https://rism.online/sources/993104017",
+		"IIIF Source": "https://www.digitale-sammlungen.de/en/view/bsb00083128?page=,1",
+		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00083128/manifest",
+		"First Source Exact Date": "1529/10/1",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-8",
+		"Note Count": "961",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2020-Salve_Barbara.krn",
+		"FILEBASE": "Ver2020-Salve_Barbara"
+	},
+	{
 		"ID": "Ver3001",
 		"Composer": "Verdelot, Philippe",
 		"Title": "Vita della mia vita",
