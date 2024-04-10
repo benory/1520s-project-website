@@ -3823,11 +3823,11 @@
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/",
 		"First Source Exact Date": "1518",
 		"First Source Date": "1518",
-		"Unique Source": "no",
+		"Unique Source": "yes",
 		"Texted": "no",
 		"Note Count": "365",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2003-Tota_pulchra_es.krn",
-		"FILEBASE": "Sil2003-Tota_pulchra_es"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2003-Tota_pulchra_es--Medici_Codex.krn",
+		"FILEBASE": "Sil2003-Tota_pulchra_es--Medici_Codex"
 	},
 	{
 		"ID": "Sil2004",
