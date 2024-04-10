@@ -3963,6 +3963,26 @@
 		"FILEBASE": "Sil2015-Attendite_populi_de_longe--Bologna_Q20"
 	},
 	{
+		"ID": "Sil2019",
+		"Composer": "Silva, Andreas de",
+		"Title": "Inviolata, integra et casta es",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1990; Kirsch_2012",
+		"First Source": "I-Bc Q.20",
+		"RISM or CC Source Sigla": "BolC Q20",
+		"Mensuration Signs in Earliest Source": "Cut-C; Cut-O over 3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1391/",
+		"First Source Exact Date": "~1525",
+		"First Source Date": "~1525",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Date Added": "2024-4-10",
+		"Note Count": "1178",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2019-Inviolata_integra_et_casta_es--Bologna_Q20.krn",
+		"FILEBASE": "Sil2019-Inviolata_integra_et_casta_es--Bologna_Q20"
+	},
+	{
 		"ID": "Sil2021",
 		"Composer": "Silva, Andreas de",
 		"Title": "Ave regina celorum II",
