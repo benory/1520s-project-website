@@ -32,6 +32,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+the1520sProject_data_url: https://data.1520s-project.org
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

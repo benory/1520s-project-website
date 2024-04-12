@@ -509,6 +509,30 @@ function InitializeTimemap() {
 
 //////////////////////////////
 //
+// getTimemap --
+//
+
+function getTimemap(id) {
+	if (!id) {
+		id = ID;
+	}
+	if (TIMEMAP[id]) {
+		return;
+	}
+
+	let request = new XMLHttpRequest();
+	request.open("GET", "{{site.the1520sProject_data_url}}?a=timemap&f=" + id);
+	request.addEventListener("load", function() {
+		TIMEMAP[id] = JSON.parse(this.responseText);
+		interpolateIntegers(id);
+	});
+	request.send();
+}
+
+
+
+//////////////////////////////
+//
 // CheckTimeMap --
 //
 
