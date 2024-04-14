@@ -23,20 +23,19 @@ let HNP_OPTIONS = {
 	source: "my-score",
 	spacingLinear: 0.4,
 	spacingNonLinear: 0.45,
+	humType: 1,
 	spacingSystem: 10,
 	mnumInterval: 5,
 	autoResize: "true",
 };
 
 //global variables for audio
-let AUDIO          		= null;					// HTML5 audio interface ID.
-let AUDIO1520sid     	= '';  					// currently playing audio file.
-let AUDIOid        		= '';                   // currently playing audio button.
-let ID1520s 			= '';					// work ID
-let REFRESH 			= null;
-let TIMEMAP 			= {};
-let QEVENTS 			= [];
-
+let AUDIO         = null; // HTML5 audio interface ID.
+let AUDIO1520sid  = '';   // currently playing audio file.
+let AUDIOid       = '';   // currently playing audio button.
+let ID1520s       = '';   // work ID
+let ID = DATA1520.workid; // redundant?
+let URL_BASE = "https://data.1520s-project.org";
 
 
 //////////////////////////////
@@ -94,9 +93,6 @@ function removeWait() {
 // 
 //
 
-let ID = DATA1520.workid;
-let URL_BASE = "https://data.1520s-project.org";
-
 document.addEventListener("click", toggleAnalysisDisplay);
 
 
@@ -125,7 +121,7 @@ window.addEventListener("click", function(event) {
 		}
 	}
 	if (!note) {
-		console.log("Not a note");
+		// console.log("Not a note");
 		return;
 	}
 	let matches;
@@ -167,85 +163,10 @@ window.addEventListener("click", function(event) {
 		AUDIO.currentTime = tstamp - anticipation;
 		AUDIO.play();
 	}
-
 });
 
-function toggleAnalysisDisplay(event) {
-	let target = event.target;
-	if (!target.classList.contains("analysis-toggle")) {
-		return;
-	}
-	let analysisId = target.id;
-
-	if (event.target.classList.contains("analysis-toggle")) {
-		if (event.target.classList.contains("active")) {
-			event.target.classList.remove("active");
-		} else {
-			event.target.classList.add("active");
-		}
-	}
-
-	if (!analysisId) {
-		console.warn("Analysis ID is not given");
-		return;
-	}
-	let ext = target.dataset.ext;
-	if (!ext) {
-		console.warn("File extension is not given.");
-		return;
-	}
-	let container = document.querySelector(`#${analysisId}-display`);
-	if (!container) {
-		console.warn("No analysis container", `#${analysisId}-display`);
-		return;
-	}
-	let contents = container.innerHTML;
-	let empty = contents.length ? false : true;
-	if (empty) {
-		// need to download data
-		downloadData(container, analysisId, ext, ID);
-	}
-	if (container.classList.contains("hidden")) {
-		container.classList.remove("hidden");
-	} else {
-		container.classList.add("hidden");
-	}
-}
-
-function downloadData(container, elementId, ext, ID) {
-	let url = `${URL_BASE}/${DATA1520.workid}-${elementId}.${ext}`;
-	if (ext === "png") {
-		downloadAndDisplayInlinePng(url, container);
-	} else if (ext === "svg") {
-		downloadAndDisplayInlineSvg(url, container);
-	}
-}
-
-async function downloadAndDisplayInlinePng(url, container) {
-	try {
-		let titleurl = url //.replace(/-notitle/, "");
-		const response = await fetch(url);
-		const blob = await response.blob();
-		const reader = new FileReader();
-		reader.onloadend = function () {
-			container.innerHTML = `<a target="_blank" href="${titleurl}"><img style="cursor:pointer"></a>`;
-			let imgDiv = container.querySelector("img");
-			imgDiv.src = reader.result;
-		};
-		reader.readAsDataURL(blob);
-	} catch (error) {
-		console.error("Error fetching or displaying the image:", error);
-	}
-}
-
-async function downloadAndDisplayInlineSvg(url, container) {
-	try {
-		const response = await fetch(url);
-		const text = await response.text();
-		container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
-	} catch (error) {
-		console.error("Error fetching or displaying the image:", error);
-	}
-}
 
 </script>
+
+
+

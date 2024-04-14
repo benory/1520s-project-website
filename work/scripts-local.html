@@ -2,6 +2,7 @@
 // vim: ts=3:nowrap
 
 {% include scripts/getCgiParameters.js %}
+{% include_relative scripts-notation-highlighting.js %}
 
 
 //////////////////////////////
@@ -25,7 +26,10 @@ function displayWork(id) {
 	if (!INITIALIZED) {
 		let url = DATA1520.lookup.works[id]["Humdrum URL"];
 		hnpOptions.url = url;
-		hnpOptions.postFunction = removeWait;
+		hnpOptions.postFunction = function() {
+			removeWait();
+			prepareQEvents(id);
+		};
 		INITIALIZED = true;
 	}
 
@@ -190,7 +194,6 @@ function displayWorkInfo(id) {
 		output += `<div class="work-item"><span class="key">View on</span><a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a> | <a target='_blank' href='${github}'>Github</a></div>`;
 
 	element.innerHTML = output;
-
 }
 
 
@@ -201,12 +204,12 @@ function displayWorkInfo(id) {
 //
 
 function forceDownload(event) {
-  event.stopPropagation();   // Do not open the hyperlink.
-  event.preventDefault();    // Prevent default behavior for <a>
-  let target = event.target;
-  let url = target.getAttribute("href");
-  let filename = url.replace(/.*\//, "");
-  downloadFile(url, filename);
+	event.stopPropagation();   // Do not open the hyperlink.
+	event.preventDefault();    // Prevent default behavior for <a>
+	let target = event.target;
+	let url = target.getAttribute("href");
+	let filename = url.replace(/.*\//, "");
+	downloadFile(url, filename);
 }
 
 
@@ -217,19 +220,19 @@ function forceDownload(event) {
 //
 
 function downloadFile(url, filename) {
-  fetch(url)
-    .then(response => response.blob())
-    .then(blob => {
-      const a = document.createElement('a');
-      const objectURL = URL.createObjectURL(blob);
-      a.href = objectURL;
-      a.download = filename;
-      a.click();
-      URL.revokeObjectURL(objectURL);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+	fetch(url)
+	.then(response => response.blob())
+	.then(blob => {
+		const a = document.createElement('a');
+		const objectURL = URL.createObjectURL(blob);
+		a.href = objectURL;
+		a.download = filename;
+		a.click();
+		URL.revokeObjectURL(objectURL);
+	})
+	.catch(error => {
+		console.error('Error:', error);
+	});
 }
 
 
@@ -249,12 +252,11 @@ function displayWorkFooter(id) {
 		id = DATA1520.workid;
 	}
 	let workinfo = DATA1520.lookup.works[id];
-
 	let output = "";
-
-
 	element.innerHTML = output;
 }
+
+
 
 //////////////////////////////
 //
@@ -272,12 +274,10 @@ function displayExternalInfo(id) {
 	}
 	let workinfo = DATA1520.lookup.works[id];
 	let output = "";
-
 	let title = workinfo["Title"];
 	let externalURL = workinfo["External Project URL"];
 	let externalName = workinfo["External Project Name"];
 	let criticalCommentary = workinfo["Critical Commentary"];
-
 	if (externalURL && externalName) {
 			if (criticalCommentary == "yes") {
 					output += `<center>For more information on <i>${title}</i> and the critical commentary, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center><br><br>`;
@@ -286,8 +286,9 @@ function displayExternalInfo(id) {
 			}
 	}
 	element.innerHTML = output;
-
 }
+
+
 
 //////////////////////////////
 //
@@ -346,7 +347,6 @@ function initializeAccidentalStateButton() {
 		console.error("Cannot find accidental hide button");
 		return;
 	}
-
 	if (state === "show") {
 		showElement.classList.add("hidden");
 		hideElement.classList.remove("hidden");
@@ -355,6 +355,8 @@ function initializeAccidentalStateButton() {
 		hideElement.classList.add("hidden");
 	}
 }
+
+
 
 //////////////////////////////
 //
@@ -366,16 +368,16 @@ function PlayAudioFile(ID1520s, element, starttime) {
 	// (or there is no file playing).  So start the new one.
 	if (!AUDIO) {
 	   AUDIO = document.getElementById('audio');
-   }
+	}
 	if (!AUDIO) {
 		AUDIO = document.createElement("AUDIO");
 		AUDIO.id = "audio";
 		document.body.appendChild(AUDIO);
 	}
-   if (!AUDIO) {
+	if (!AUDIO) {
 		console.log('Error: could not set up audio interface\n');
 		return false;
-   }
+	}
 	AUDIO.setAttribute('controls', 'controls');
 	AUDIO.style.position = 'fixed';
 	AUDIO.style.bottom = '0';
@@ -386,9 +388,8 @@ function PlayAudioFile(ID1520s, element, starttime) {
 		//TurnOffAllNotes();
 	}
 
-
 	let audiobutton;
-	 if (ID1520s != AUDIO1520sid) {
+	if (ID1520s != AUDIO1520sid) {
 			if (!!AUDIOid) {
 				// turn off previously playing audio file:
 				audiobutton = document.getElementById(AUDIOid);
@@ -401,9 +402,9 @@ function PlayAudioFile(ID1520s, element, starttime) {
 				}
 			}
 			AUDIO.removeAttribute('controls');
-	    AUDIO.pause();
+			AUDIO.pause();
 			
-	    AUDIOid = element.id;
+			AUDIOid = element.id;
 			let source = '';
 			// Can't have seekable dynamic content in audio element:
 			source += '<source src="https://data.1520s-project.org/' + ID1520s + '.mp3" ';
@@ -434,7 +435,6 @@ function PlayAudioFile(ID1520s, element, starttime) {
 
 			return;
 	}
-
 
 	// The audio file is the same, so start it or pause it depending
 	// on its current state:
@@ -480,120 +480,111 @@ function PlayAudioFile(ID1520s, element, starttime) {
 	}
 }
 
+
+
 //////////////////////////////
 //
-// InitializeTimemap --
+// downloadAndDisplayInlinePng --
 //
 
-function InitializeTimemap() {
-	if (typeof REFRESH === "undefined") {
-		console.warn("REFRESH is undefined");
+async function downloadAndDisplayInlinePng(url, container) {
+	try {
+		let titleurl = url //.replace(/-notitle/, "");
+		const response = await fetch(url);
+		const blob = await response.blob();
+		const reader = new FileReader();
+		reader.onloadend = function () {
+			container.innerHTML = `<a target="_blank" href="${titleurl}"><img style="cursor:pointer"></a>`;
+			let imgDiv = container.querySelector("img");
+			imgDiv.src = reader.result;
+		};
+		reader.readAsDataURL(blob);
+	} catch (error) {
+		console.error("Error fetching or displaying the image:", error);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// downloadAndDisplayInlineSvg --
+//
+
+async function downloadAndDisplayInlineSvg(url, container) {
+	try {
+		const response = await fetch(url);
+		const text = await response.text();
+		container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
+	} catch (error) {
+		console.error("Error fetching or displaying the image:", error);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// toggleAnalysisDisplay --
+//
+
+function toggleAnalysisDisplay(event) {
+	let target = event.target;
+	if (!target.classList.contains("analysis-toggle")) {
 		return;
 	}
-	let increment = 20;
-	REFRESH = setInterval(function() {
-		if (AUDIO && AUDIO.paused) {
-			clearInterval(REFRESH);
-			return;
+	let analysisId = target.id;
+	if (event.target.classList.contains("analysis-toggle")) {
+		if (event.target.classList.contains("active")) {
+			event.target.classList.remove("active");
+		} else {
+			event.target.classList.add("active");
 		}
-		if (!AUDIO) {
-			clearInterval(REFRESH);
-			return;
-		}
-		let currenttime = AUDIO.currentTime;
-		//console.warn(TIMEMAP);
-		//console.warn(ID1520s);
-		CheckTimeMap(TIMEMAP[ID1520s], QEVENTS, currenttime, increment/1000.0 * 2);
-	}, increment);
-}
-
-//////////////////////////////
-//
-// getTimemap --
-//
-
-function getTimemap(id) {
-	if (!id) {
-		id = ID;
 	}
-	if (TIMEMAP[id]) {
+	if (!analysisId) {
+		console.warn("Analysis ID is not given");
 		return;
 	}
-
-	let request = new XMLHttpRequest();
-	request.open("GET", "{{site.the1520sProject_data_url}}?a=timemap&f=" + id);
-	request.addEventListener("load", function() {
-		TIMEMAP[id] = JSON.parse(this.responseText);
-		interpolateIntegers(id);
-	});
-	request.send();
-}
-
-
-
-//////////////////////////////
-//
-// CheckTimeMap --
-//
-
-function CheckTimeMap(timemap, events, currenttime, increment) {
-	let target = null;
-	let diff;
-	console.warn("timemap", timemap);
-	for (let i=0; i<timemap.length; i++) {
-		if (Math.abs(timemap[i].tstamp - currenttime) < increment) {
-			target = timemap[i];
-		}
-	}
-
-	if (!target) {
+	let ext = target.dataset.ext;
+	if (!ext) {
+		console.warn("File extension is not given.");
 		return;
 	}
-
-	if (target.tstamp == LASTTIME) {
+	let container = document.querySelector(`#${analysisId}-display`);
+	if (!container) {
+		console.warn("No analysis container", `#${analysisId}-display`);
 		return;
 	}
-	LASTTIME = target.tstamp;
-	// console.log("TIMEENTRY", target);
-	CheckEventMap(target.qstamp, events);
+	let contents = container.innerHTML;
+	let empty = contents.length ? false : true;
+	if (empty) {
+		// need to download data
+		downloadData(container, analysisId, ext, ID);
+	}
+	if (container.classList.contains("hidden")) {
+		container.classList.remove("hidden");
+	} else {
+		container.classList.add("hidden");
+	}
 }
+
 
 //////////////////////////////
 //
-// CheckEventMap --
+// downloadData --
 //
 
-function CheckEventMap(etime, events) {
-	for (let i=0; i<events.length; i++) {
-		if (Math.abs(etime - events[i].qstamp) < 0.01) {
-			ProcessNoteEvents(events[i]);
-		}
+function downloadData(container, elementId, ext, ID) {
+	let url = `${URL_BASE}/${DATA1520.workid}-${elementId}.${ext}`;
+	if (ext === "png") {
+		downloadAndDisplayInlinePng(url, container);
+	} else if (ext === "svg") {
+		downloadAndDisplayInlineSvg(url, container);
 	}
 }
 
-//////////////////////////////
-//
-// ProcessNoteEvents --
-//
-
-function ProcessNoteEvents(event) {
-	let ons = event.on;
-	let offs = event.off;
-	let i;
-
-	for (i=0; i<ons.length; i++) {
-		// ons[i].style.stroke = "red";
-		// ons[i].style.fill = "red";
-		// have to re-find on page in case the image has changed:
-		let xon = document.querySelector("#" + ons[i].id);
-		xon.style.fill = "red";
-	}
-
-	for (i=0; i<offs.length; i++) {
-		// have to re-find on page in case the image has changed:
-		let xoff = document.querySelector("#" + offs[i].id);
-		xoff.style.fill = "";
-	}
-}
 
 </script>
+
+
+
