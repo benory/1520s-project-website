@@ -120,6 +120,31 @@
 	{
 		"ID": "Ano2007",
 		"Composer": "Anonymous",
+		"Title": "Ave, sanctissima Maria",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Edwards_2021",
+		"Source of Edition": "Edwards_2021",
+		"First Source": "D-Rp C 120 (\"Pernner Codex\")",
+		"RISM or CC Source Sigla": "RegB C120",
+		"Mensuration Signs in Earliest Source": "O2; Cut-C3; Cut-C; Cut-O; 3",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2435/",
+		"Linkage": "Senfl, Ludwig",
+		"External Project Name": "New Senfl Edition",
+		"Critical Commentary": "yes",
+		"External Project URL": "https://senflonline.com/sc-m-11/",
+		"First Source Exact Date": "~1520",
+		"First Source Date": "~1520",
+		"Unique Source": "yes",
+		"Texted": "yes",
+		"Date Added": "2024-4-17",
+		"Note Count": "1533",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2007-Ave_sanctissima_Maria--Regensburg_C120.krn",
+		"FILEBASE": "Ano2007-Ave_sanctissima_Maria--Regensburg_C120"
+	},
+	{
+		"ID": "Ano3001",
+		"Composer": "Anonymous",
 		"Title": "Pavane III",
 		"Genre": "secular work",
 		"Voices": "4",
@@ -137,8 +162,8 @@
 		"Texted": "no",
 		"Date Added": "2024-2-28",
 		"Note Count": "564",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2007-Pavane_III--Second_livre_contenant_trois_Gaillardes.krn",
-		"FILEBASE": "Ano2007-Pavane_III--Second_livre_contenant_trois_Gaillardes"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3001-Pavane_III--Second_livre_contenant_trois_Gaillardes.krn",
+		"FILEBASE": "Ano3001-Pavane_III--Second_livre_contenant_trois_Gaillardes"
 	},
 	{
 		"ID": "Arc3013",
