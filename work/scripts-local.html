@@ -521,55 +521,6 @@ async function downloadAndDisplayInlineSvg(url, container) {
 	}
 }
 
-
-
-//////////////////////////////
-//
-// toggleAnalysisDisplay --
-//
-
-function toggleAnalysisDisplay(event) {
-	console.warn("got here AAA");
-	let target = event.target;
-	if (!target.classList.contains("analysis-toggle")) {
-		return;
-	}
-	let analysisId = target.id;
-	if (event.target.classList.contains("analysis-toggle")) {
-		if (event.target.classList.contains("active")) {
-			event.target.classList.remove("active");
-		} else {
-			event.target.classList.add("active");
-		}
-	}
-	if (!analysisId) {
-		console.warn("Analysis ID is not given");
-		return;
-	}
-	let ext = target.dataset.ext;
-	if (!ext) {
-		console.warn("File extension is not given.");
-		return;
-	}
-	let container = document.querySelector(`#${analysisId}-display`);
-	if (!container) {
-		console.warn("No analysis container", `#${analysisId}-display`);
-		return;
-	}
-	let contents = container.innerHTML;
-	let empty = contents.length ? false : true;
-	if (empty) {
-		// need to download data
-		downloadData(container, analysisId, ext, ID);
-	}
-	if (container.classList.contains("hidden")) {
-		container.classList.remove("hidden");
-	} else {
-		container.classList.add("hidden");
-	}
-}
-
-
 //////////////////////////////
 //
 // downloadData --
