@@ -1973,6 +1973,25 @@
 		"FILEBASE": "Jom2023-Sancta_Trinitas"
 	},
 	{
+		"ID": "Lfg2003",
+		"Composer": "de la Fage, Jean",
+		"Title": "Vide, Domine, afflictionem nostram",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Picker_1987",
+		"First Source": "Motetti novi libro tertio (Venice: Andrea Antico)",
+		"RISM or CC Source Sigla": "1520|2",
+		"RISM Source Link": "https://rism.online/sources/993103918",
+		"First Source Exact Date": "1520/10/15",
+		"First Source Date": "1520",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-20",
+		"Note Count": "1386",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lfg/Lfg2003-Vide_Domine_afflictionem_nostram.krn",
+		"FILEBASE": "Lfg2003-Vide_Domine_afflictionem_nostram"
+	},
+	{
 		"ID": "Lfg2004",
 		"Composer": "de la Fage, Jean",
 		"Title": "Partus et integritas",
