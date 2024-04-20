@@ -3183,6 +3183,25 @@
 		"FILEBASE": "Mou3006-Adieu_mes_amours"
 	},
 	{
+		"ID": "Mou3007",
+		"Composer": "Mouton, Jean",
+		"Title": "Mais que ce fust le plaisir d'elle",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Modern Editions": "MacCracken_2014",
+		"First Source": "GB-Lbl Harley 5242",
+		"RISM or CC Source Sigla": "LonBLH 5242",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1907/",
+		"First Source Exact Date": "~1514",
+		"First Source Date": "~1514",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-20",
+		"Note Count": "309",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3007-Mais_que_ce_fust_le_plaisir_delle.krn",
+		"FILEBASE": "Mou3007-Mais_que_ce_fust_le_plaisir_delle"
+	},
+	{
 		"ID": "Ren2001",
 		"Composer": "Renaldo",
 		"Title": "Regina celi letare",
