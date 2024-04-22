@@ -100,7 +100,12 @@ function makeTableBody(headings, data) {
 			else if (headings[i] == INDEX_firstsource) {
 				let url = getSource(entry);
 				let sourcevalue = value;
-				output += `<a target="_blank" href="${url}">${sourcevalue}</a>`;
+				if (url) {
+					output += `<a target="_blank" href="${url}">${sourcevalue}</a>`;
+				}
+				else {
+					output += `${sourcevalue}`;
+				}
 			}
 			else {
 				output += value;

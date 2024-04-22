@@ -129,13 +129,24 @@ function displayWorkInfo(id) {
 		if (rismid) {
 			let rismurl = rismid.substring(2);
 		}
+
+		let composerprint = "";
+
 		if (diammcomp) {
-			composer += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
+			composerprint += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
 		}
 		if (rismid) {
-			composer += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismurl}">RISM</a>)</span>`
+			composerprint += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismurl}">RISM</a>)</span>`
 		}
 		output += `<div class="work-item"><span class="key">Composer</span>${composer}</div>`;
+	}
+
+	// Add line in work info for implausible attributions with anonymous works
+	let attrimplausible = workinfo["Implausible Attribution"];
+	if (composer == "Anonymous") {
+		if (attrimplausible) {
+			output += `<div class="work-item"><span class="key">Implausible attribution</span>${attrimplausible}</div>`;
+		}
 	}
 
 	let genre = workinfo.Genre;
@@ -144,11 +155,11 @@ function displayWorkInfo(id) {
 	}
 
 	let source = workinfo["First Source"];
+	let uniquesource = workinfo["Unique Source"];
 
 	if (source) {
 		let diammsource = workinfo["DIAMM Source Link"];
 		let rismsource = workinfo["RISM Source Link"];
-		let uniquesource = workinfo["Unique Source"];
 		let sourcetype = "";
 		if (uniquesource == "yes") {
 			sourcetype = "Unique"; 
@@ -167,6 +178,40 @@ function displayWorkInfo(id) {
 	let date = workinfo["First Source Date"];
 	if (date) {
 		output += `<div class="work-item"><span class="key">First source date</span>${date}</div>`;
+	}
+
+	let editionsource = workinfo["Edition Source"];
+	let editionsourceURL = workinfo["Edition Source URL"];
+
+	console.warn(editionsource);
+
+	if (editionsource && !editionsource.includes('_')){
+		if (editionsource.match(";")){
+			editionsource = editionsource.trim().split(/\s*;\s*/);
+			editionsourceURL = editionsourceURL.trim().split(/\s*;\s*/);
+		} else {
+			editionsource = [ editionsource ];
+			editionsourceURL = [ editionsourceURL ];
+		}
+		for (let i=0; i<editionsource.length; i++){
+			let editionentry = editionsource[i];
+			let editionURLentry = editionsourceURL[i];
+			let editionname = editionsource.length === 1 ? "Edition source" : "Edition sources";
+			if (i == 0){
+				if (uniquesource == "no" && editionURLentry){
+				output += `<div class="work-item"><span class="key">${editionname}<a target="_blank" href="${editionURLentry}"></span>${editionentry}</a>`;
+				} else {
+				output += `<div class="work-item"><span class="key">${editionname}</span>${editionentry}`;
+				}
+			} else {
+				if (uniquesource == "no" && editionURLentry){
+					output += `; <a target="_blank" href="${editionURLentry}"></span>${editionentry}</a>`;
+				} else {
+					output += `; ${editionentry}`;
+				}
+			}
+		}
+		output += `</div>`;
 	}
 
 	let pdf = workinfo["Humdrum URL"];
