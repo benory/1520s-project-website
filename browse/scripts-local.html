@@ -630,39 +630,45 @@ function doSearch(data) {
 //
 
 function FreeTextSearch(query) {
-	let tr    = document.querySelectorAll("#list tbody tr");
-	let input = document.querySelector("#input");
-	if (query) {
-		input.value = query;
-	} else {
-		query = input.value;
-	}
-	if (!query) {
-		displaySearchCount(tr.length);
-		showAllBrowseRows();
-		updateBrowseUrlDisplay();
-		return;
-	}
-	let regex = new RegExp(query, 'i');
+    let tr = document.querySelectorAll("#list tbody tr");
+    let input = document.querySelector("#input");
+    if (query) {
+        input.value = query;
+    } else {
+        query = input.value;
+    }
+    if (!query) {
+        displaySearchCount(tr.length);
+        showAllBrowseRows();
+        updateBrowseUrlDisplay();
+        return;
+    }
+    let regex = new RegExp(query, 'i');
 
-	let searchCount = 0;
+    let searchCount = 0;
 
-	// Loop through all table rows, hiding those that don't match the search query:
-	for (let i=0; i<tr.length; i++) {
-		let td = tr[i].querySelectorAll("td");
-		let found = false;
-		for (let j=0; j<td.length; j++) {
-			if (td[j].innerText.match(regex)) {
-				found = true;
-				searchCount++;
-				break;
-			}
-		}
-		tr[i].style.display = found ? "" : "none";
-	}
+    // Loop through all table rows, hiding those that don't match the search query:
+    for (let i = 0; i < tr.length; i++) {
+        let td = tr[i].querySelectorAll("td");
+        let found = false;
+        for (let j = 0; j < td.length; j++) {
+            if (td[j].innerText.match(regex)) {
+                found = true;
+                searchCount++;
+                break;
+            }
+            let rowData = METADATA[i];
+            if (rowData && rowData.Linkage && rowData.Linkage.match(regex)) {
+                found = true;
+                searchCount++;
+                break;
+            }
+        }
+        tr[i].style.display = found ? "" : "none";
+    }
 
-	displaySearchCount(searchCount);
-	updateBrowseUrlDisplay();
+    displaySearchCount(searchCount);
+    updateBrowseUrlDisplay();
 }
 
 
