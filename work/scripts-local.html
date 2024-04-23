@@ -143,10 +143,8 @@ function displayWorkInfo(id) {
 
 	// Add line in work info for implausible attributions with anonymous works
 	let attrimplausible = workinfo["Implausible Attribution"];
-	if (composer == "Anonymous") {
-		if (attrimplausible) {
-			output += `<div class="work-item"><span class="key">Implausible attribution</span>${attrimplausible}</div>`;
-		}
+	if (attrimplausible) {
+		output += `<div class="work-item"><span class="key">Implausible attribution</span>${attrimplausible}</div>`;
 	}
 
 	let genre = workinfo.Genre;
