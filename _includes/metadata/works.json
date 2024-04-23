@@ -882,6 +882,7 @@
 		"Modern Editions": "Seay_1977b",
 		"First Source": "V-CVbav MS Capp. Sist. 46",
 		"RISM or CC Source Sigla": "VatS 46",
+		"Mensuration Signs in Earliest Source": "Cut-C",
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1477/",
 		"IIIF Source": "https://digi.vatlib.it/view/MSS_Capp.Sist.46",
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.46/manifest.json",
@@ -902,6 +903,7 @@
 		"Modern Editions": "Seay_1979",
 		"First Source": "V-CVbav MS Capp. Sist. 46",
 		"RISM or CC Source Sigla": "VatS 46",
+		"Mensuration Signs in Earliest Source": "Cut-C",
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1477/",
 		"IIIF Source": "https://digi.vatlib.it/view/MSS_Capp.Sist.46",
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.46/manifest.json",
@@ -1992,6 +1994,8 @@
 		"RISM or CC Source Sigla": "[1526]|7",
 		"Mensuration Signs in Earliest Source": "Cut-C",
 		"RISM Source Link": "https://rism.online/sources/993103993",
+		"Linkage": "Willaert, Adrian",
+		"Implausible Attribution": "Adrian Willaert",
 		"First Source Exact Date": "1526",
 		"First Source Date": "1526",
 		"Unique Source": "no",
@@ -4190,6 +4194,7 @@
 		"Modern Editions": "Kirsch_1971; Slim_1972",
 		"First Source": "V-CVbav MS Capp. Sist. 46",
 		"RISM or CC Source Sigla": "VatS 46",
+		"Mensuration Signs in Earliest Source": "Cut-C; Cut-C3",
 		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1477/",
 		"IIIF Source": "https://digi.vatlib.it/view/MSS_Capp.Sist.46",
 		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.46/manifest.json",
@@ -6520,8 +6525,8 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Note Count": "752",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2037-O_Salutaris_hostia.krn",
-		"FILEBASE": "Wil2037-O_Salutaris_hostia"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2037-O_salutaris_hostia.krn",
+		"FILEBASE": "Wil2037-O_salutaris_hostia"
 	},
 	{
 		"ID": "Wil2041",
