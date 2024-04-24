@@ -143,8 +143,18 @@ function displayWorkInfo(id) {
 
 	// Add line in work info for implausible attributions with anonymous works
 	let attrimplausible = workinfo["Implausible Attribution"];
+	let attrimplausiblename = "";
+
 	if (attrimplausible) {
-		output += `<div class="work-item"><span class="key">Implausible attribution</span>${attrimplausible}</div>`;
+		if (attrimplausible.includes(";")) {
+			attrimplausiblename = "Implausible attributions";
+		} else {
+			attrimplausiblename = "Implausible attribution";
+		}
+	}
+
+	if (attrimplausible) {
+		output += `<div class="work-item"><span class="key">${attrimplausiblename}</span>${attrimplausible}</div>`;
 	}
 
 	let genre = workinfo.Genre;
