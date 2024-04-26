@@ -143,7 +143,14 @@ function displayWorkInfo(id) {
 
 	// Add line in work info for implausible attributions with anonymous works
 	let attrimplausible = workinfo["Implausible Attribution"];
+	let attrimprobable = workinfo["Improbable Attribution"];
+	let attrplausible = workinfo["Plausible Attribution"];
+	
 	let attrimplausiblename = "";
+	let attrimprobablename = "";
+	let attrplausiblename = "";
+
+	//Adjust name of category for singular/plural
 
 	if (attrimplausible) {
 		if (attrimplausible.includes(";")) {
@@ -153,9 +160,37 @@ function displayWorkInfo(id) {
 		}
 	}
 
+	if (attrimprobable) {
+		if (attrimprobable.includes(";")) {
+			attrimprobablename = "Improbable attributions";
+		} else {
+			attrimprobablename = "Improbable attribution";
+		}
+	}
+
+	if (attrplausible) {
+		if (attrplausible.includes(";")) {
+			attrplausiblename = "Plausible attributions";
+		} else {
+			attrplausiblename = "Plausible attribution";
+		}
+	}
+
+	//Add work items for unlikely/false attributions
+
+	if (attrplausible) {
+		output += `<div class="work-item"><span class="key">${attrplausiblename}</span>${attrplausible}</div>`;
+	}
+
+	if (attrimprobable) {
+		output += `<div class="work-item"><span class="key">${attrimprobablename}</span>${attrimprobable}</div>`;
+	}
+
 	if (attrimplausible) {
 		output += `<div class="work-item"><span class="key">${attrimplausiblename}</span>${attrimplausible}</div>`;
 	}
+
+	//Add work item for genre
 
 	let genre = workinfo.Genre;
 	if (genre) {
