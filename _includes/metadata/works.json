@@ -1754,6 +1754,25 @@
 		"FILEBASE": "Jan2009-Johannes_Jesu_Christo"
 	},
 	{
+		"ID": "Jan3001",
+		"Composer": "Jan, Maistre",
+		"Title": "Deh, quant'è dolc'amor",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Slim_1972",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-28",
+		"Note Count": "550",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jan/Jan3001-Deh_quante_dolcamor.krn",
+		"FILEBASE": "Jan3001-Deh_quante_dolcamor"
+	},
+	{
 		"ID": "Jom2001",
 		"Composer": "Jachet of Mantua",
 		"Title": "Noe noe hodie salvator mundi",
