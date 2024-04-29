@@ -262,6 +262,26 @@
 		"FILEBASE": "Ano3002-Ce_que_mon_cueur_pense"
 	},
 	{
+		"ID": "Ano3003",
+		"Composer": "Anonymous",
+		"Title": "Si suave è l'inghanno",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Slim_1972",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"Linkage": "Verdelot, Philippe",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-29",
+		"Note Count": "410",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3003-Si_suave_e_linghanno.krn",
+		"FILEBASE": "Ano3003-Si_suave_e_linghanno"
+	},
+	{
 		"ID": "Arc3013",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Il bianco e dolce cigno",
