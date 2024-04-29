@@ -282,6 +282,26 @@
 		"FILEBASE": "Ano3003-Si_suave_e_linghanno"
 	},
 	{
+		"ID": "Ano3004",
+		"Composer": "Anonymous",
+		"Title": "Chi non fa prova, amore",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Slim_1972",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"Linkage": "Verdelot, Philippe",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-4-29",
+		"Note Count": "521",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3004-Chi_non_fa_prove_amore.krn",
+		"FILEBASE": "Ano3004-Chi_non_fa_prove_amore"
+	},
+	{
 		"ID": "Arc3013",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Il bianco e dolce cigno",
