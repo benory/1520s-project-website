@@ -27,7 +27,7 @@ layout: default
 
 ## Download The 1520s Project's data {#download-data}
 
-<div id="paragraph"><li><a href="https://1520s-project.org/work/?id=Bau3001">The project's Github repository</a> hosts Sibelius files, MusicXML files, Humdrum files, and PDFs.</li></div>
+<div id="paragraph"><li><a href="https://github.com/benory/1520s-project-scores">The project's Github repository</a> hosts Sibelius files, MusicXML files, Humdrum files, and PDFs.</li></div>
 
 <br>
 
