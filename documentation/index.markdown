@@ -15,7 +15,7 @@ layout: default
 	- [Sections](#sections)
 	- [Note values and Mensurstriche](#notes)
 	- [Mensuration signs](#mensuration-signs)
-	- [Terminal notes and fermatas](#final-notes)
+	- [Terminal notes and fermatas](#terminal-notes)
 	- [Editorial accidentals](#editorial-accidentals)
 - [Technical documentation](#technical-documentation)
 	- [Filenames](#filenames)
