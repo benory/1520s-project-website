@@ -199,7 +199,7 @@ function ProcessNoteEvents(event) {
 //
 
 function unhighlightAllNotes() {
-	let notes = document.querySelector("#verovio-svg g.note");
+	let notes = document.querySelectorAll(".verovio-svg g.note");
 	for (let i=0; i<notes.length; i++) {
 		notes[i].classList.remove("highlight");
 	}
@@ -209,10 +209,11 @@ function unhighlightAllNotes() {
 
 //////////////////////////////
 //
-// turnOffAllNotes --
+// TurnOffAllNotes --
 //
 
-function turnOffAllNotes() {
+function TurnOffAllNotes() {
+	console.warn("TURNING OF ALL NOTE HIGHLIGHTING");
 	unhighlightAllNotes();
 }
 

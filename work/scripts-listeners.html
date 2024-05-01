@@ -189,7 +189,8 @@ window.addEventListener("click", function(event) {
 
 	let anticipation = 0.0;
 	if (!AUDIO) {
-		let element = document.querySelector("#audio_" + ID1520s);
+		TurnOffAllNotes();
+		let element = document.querySelector("audio");
 		PlayAudioFile(ID, element, tstamp - anticipation);
 	} else if (AUDIO.paused) {
 		TurnOffAllNotes();
