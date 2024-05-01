@@ -1,6 +1,5 @@
 ---
-layout: page
-title: documentation
+layout: default
 
 ---
 
