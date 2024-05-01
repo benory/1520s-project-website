@@ -64,7 +64,7 @@ layout: default
 
 ### Note values and Mensurstriche {#notes}
 
-<div id="paragraph">All scores appear in unreduced note values. This means that a breve is equal to a double whole note; a minim, a half note.<br><br><i>Mensurstriche</i>, a scholarly practice that allows note values to cross over a modern bar line without using a tie, is avoided as this format creates challenges for computer-based analysis.</div>
+<div id="paragraph">All scores appear in unreduced note values. This means that a breve is equal to a double whole note; a minim, a half note.<br><br><i>Mensurstriche</i>, a scholarly practice that allows note values to cross over a modern bar line without using a tie, is avoided. Programs such as Finale and Sibelius cannot properly render <i>Mensurstriche</i>, and so any workarounds used in these programs by scholars are lost when exporting to MusicXML.</div>
 
 <br>
 
