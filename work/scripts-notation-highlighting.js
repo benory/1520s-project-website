@@ -6,6 +6,7 @@ let QEVENTS   = [];
 let LASTTIME  = -1;
 let REFRESH   = null;
 
+
 //////////////////////////////
 //
 // InitializeTimemap --
@@ -33,6 +34,8 @@ function InitializeTimemap() {
 	}, increment);
 }
 
+
+
 //////////////////////////////
 //
 // getTimemap --
@@ -58,6 +61,7 @@ function getTimemap(id) {
 	});
 	request.send();
 }
+
 
 
 //////////////////////////////
@@ -88,6 +92,8 @@ function interpolateIntegers(id) {
 	}
 	TIMEMAP[id] = timemap.concat(newpoints);
 }
+
+
 
 //////////////////////////////
 //
@@ -122,6 +128,8 @@ function interpolateTstamp(timemap, qtime) {
 	return newpoint;
 }
 
+
+
 //////////////////////////////
 //
 // CheckTimeMap --
@@ -146,6 +154,8 @@ function CheckTimeMap(timemap, events, currenttime, increment) {
 	CheckEventMap(target.qstamp, events);
 }
 
+
+
 //////////////////////////////
 //
 // CheckEventMap --
@@ -159,6 +169,8 @@ function CheckEventMap(etime, events) {
 	}
 }
 
+
+
 //////////////////////////////
 //
 // ProcessNoteEvents --
@@ -168,18 +180,43 @@ function ProcessNoteEvents(event) {
 	let ons = event.on;
 	let offs = event.off;
 	for (let i=0; i<ons.length; i++) {
-		// ons[i].style.stroke = "red";
-		// ons[i].style.fill = "red";
 		// have to re-find on page in case the image has changed:
 		let xon = document.querySelector("#" + ons[i].id);
-		xon.style.fill = "red";
+		xon.classList.add("highlight");
 	}
 	for (let i=0; i<offs.length; i++) {
 		// have to re-find on page in case the image has changed:
 		let xoff = document.querySelector("#" + offs[i].id);
-		xoff.style.fill = "";
+		xoff.classList.remove("highlight");
 	}
 }
+
+
+
+//////////////////////////////
+//
+// unhighlightAllNotes --
+//
+
+function unhighlightAllNotes() {
+	let notes = document.querySelector("#verovio-svg g.note");
+	for (let i=0; i<notes.length; i++) {
+		notes[i].classList.remove("highlight");
+	}
+}
+
+
+
+//////////////////////////////
+//
+// turnOffAllNotes --
+//
+
+function turnOffAllNotes() {
+	unhighlightAllNotes();
+}
+
+
 
 //////////////////////////////
 //
@@ -221,6 +258,7 @@ function prepareQEvents(target) {
 }
 
 
+
 //////////////////////////////
 //
 // getQstampFloat --
@@ -240,7 +278,6 @@ function getQstampFloat(str) {
 	}
 	return ques;
 }
-
 
 
 

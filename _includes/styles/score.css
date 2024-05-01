@@ -1,0 +1,50 @@
+
+
+
+/* Score playback highlighting: */
+.highlight {
+        color: #c00;
+        fill: #c00;
+        stroke: #c00;
+        filter: url(#highlight-shadow);
+}       
+.highlight [stroke] {
+        stroke: #c00;
+        fill: #c00;
+        stroke-width: 50px;
+}
+
+
+/* Make it easier to select open notes in Chrome */
+g[id^="note-"],
+g[id^="rest-"],
+g[id^="chord-"] {
+    pointer-events: bounding-box;
+}       
+        
+/* Make notation elements orange when Hovering over them */
+g[id^="clef-"]:hover,
+g[id^="ksig-"]:hover,
+g[id^="msig-"]:hover,
+g[id^="note-"]:hover,
+g[id^="hairpin-"]:hover,
+g[id^="accid-"]:hover,
+g[id^="trill-"]:hover,
+g[id^="artic-"]:hover,
+g[id^="slur-"]:hover,
+g[id^="tie-"]:hover,
+g[id^="slur-"]:hover,
+g[id^="fermata-"]:hover,
+g[id^="rest-"]:hover {
+        fill: orange;
+        stroke: orange;
+        filter: url(#hover-shadow);
+}
+
+g[id^="slur-"] path:hover
+{
+        stroke: orange;
+}
+
+
+

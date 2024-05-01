@@ -6,6 +6,7 @@ vim:    ts=3:nowrap
 {% include_relative scripts-listeners.html %}
 {% include_relative scripts-local.html %}
 {% include_relative styles-local.html %}
+{% include styles/svgdefs.html %}
 
 <div id="work-info"></div>
 
