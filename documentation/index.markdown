@@ -111,13 +111,24 @@ Users can see scores without <i>ficta</i> by toggling on/off the suggested edito
 
 ### Filenames {#filenames}
 
-<div id="paragraph">Each piece is assigned a three-letter composer code, <a href="https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards#Composer_codes">assigned in close coordination with the Josquin Research Project</a>. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre——typically, moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert. <br><br>
+<div id="paragraph">
 
-If a piece, such as a mass, consists of multiple parts, each section additionally has a letter. For instance, Wil1001a is the Kyrie from Willaert's <i>Missa Mente tota</i>; Will1001b is the Gloria.<br><br>
+<b>Composer codes and numbering</b><br>
 
-Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/"><i>New Senfl Edition</i></a>. In this case, Snf0101 is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, Snf0238 is no. 38 in the overall series, found in the second volume.</div>
+<ul>Each piece is assigned a three-letter composer code, <a href="https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards#Composer_codes">assigned in close coordination with the Josquin Research Project</a>. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre——typically, moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert. <br><br>
 
-<br>
+If a piece, such as a mass, consists of multiple parts, each section additionally has a letter. For instance, Wil1001a is the Kyrie from Willaert's <i>Missa Mente tota</i>; Wil1001b is the Gloria.<br><br>
+
+Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/"><i>New Senfl Edition</i></a>. In this case, Snf0101 is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, Snf0238 is no. 38 in the overall series, found in the second volume.</ul>
+
+<b>Work name</b><br>
+
+<ul>After the composer code and number, the filename continues with a dash, followed by the name of the work, using only the characters A-Z and 0-9, with underscores separating individual words, then (if applicable) followed by a dash and then the section name. For example, the Kyrie of Willaert's <i>Missa Mente tota</i> would be Wil1001a-Missa_Mente_tota-Kyrie. All special characters (e.g., apostrophes and accents) are removed.</ul>
+
+<b>Unique sources</b><br>
+
+<ul>If a piece survives uniquely in one source (<i>unicum</i>), these naming conventions are followed by two dashes (--) and then the name of the source, written in an easy-to-read shorthand. For instance, Maistre Jan's <i>Vox de celis</i> is <i>unicum</i> in the manuscript I-Bc Q.19, better known as Bologna Q19. The filename is therefore Jan2002-Vox_de_celis--Bologna_Q19. The shorthand consists of the source location followed by a short version of the source signature, separated by an underscore.</ul>
+</div><br>
 
 ### Score preparation {#score-preparation}
 
@@ -169,7 +180,7 @@ Scores coming from published editions have these additional categories of inform
 
 ### Source metadata {#source-metadata}
 
-<div id="paragraph">The metadata for each piece includes the (probable) earliest source in the transmission and its dating. External links are provided to either <a href="https://www.diamm.ac.uk/">DIAMM</a> or <a href="https://rism.online/">RISM</a>.</div>
+<div id="paragraph">The metadata for each piece includes the (probable) earliest source in the transmission and its dating. External links are provided to either <a href="https://www.diamm.ac.uk/">DIAMM</a> or <a href="https://rism.online/">RISM</a>. Names of sources on work pages follow RISM nomenclature. </div>
 
 <br>
 
