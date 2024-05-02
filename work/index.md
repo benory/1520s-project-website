@@ -34,6 +34,3 @@ vim:    ts=3:nowrap
 <script type="text/x-humdrum" id="my-score"></script>
 
 <div id="work-footer"></div>
-
-
-

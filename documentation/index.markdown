@@ -9,6 +9,8 @@ layout: default
 	}
 </style>
 
+# documentation
+
 ### Table of contents
 - [Musical documentation](#music-documentation)
 	- [Attributions](#attributions)
@@ -32,7 +34,7 @@ layout: default
 
 ## Musical documentation {#music-documentation}
 
-<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. These editorial standards are similar to those used by the <a href="https://josquin.stanford.edu/">Josquin Research Project</a>.</div>
+<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. Shared editorial standards with the <a href="https://josquin.stanford.edu/">Josquin Research Project</a> enables rigorous comparisons of the musical data.</div>
 
 <br>
 
@@ -40,13 +42,16 @@ layout: default
 
 <div id="paragraph">
 	Most musical works in the early sixteenth century can be securely attributed to a single composer. For a small group of pieces, sorting out attributions presents additional complications:<br><br>
-	<div id="paragraph"><li><b>Secure attributions</b> are is listed under the composer's name.</li>
-	<li><b>Plausible attributions</b> need to be carefully considered but lack sufficient strengh to assign authorship. One might think of these to be in the range of 30–50% likelihood.</li>
-	<li><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct. They might have a 10–30% change of being correct.</li>
-	<li><b>Implausible attributions</b> are all but impossible. They range from a 0% chance to roughly a 10% probability.</li></div>
-</div>
-<div id="paragraph"><br>
-	This project only considers attributions in sixteenth-century sources. Implied attributions on the basis of so-called <i>Nestertheorie</i> are not considered. Where modern scholarship has attributed works to a given composer, but for which there is not a sixteenth-century attribution, these pieces are linked. For example, a search for the composer Philippe Verdelot will return results that include anonymous madrigals in the Newberry Partbooks long assumed to be by Verdelot, but for which no sixteenth-century concordance survives.
+	<div id="paragraph"><ol><b>Secure attributions</b> are listed under the composer's name.</ol>
+	<ol><b>Plausible attributions</b> need to be carefully considered but given the information available, lack sufficient strengh to assign authorship. <br><br><ol>A test case might be the attributions to Lupus Hellinck for the motet <a href="https://1520s-project.org/work/?id=Ric2016"><i>Jerusalem surge</i></a>, believed to be by Jean Richafort. On the whole, the sources favor Richafort, but an early Pierre Attaingnant print——constituting a separate branch of transmission——attributes the motet to Lupus. Attributions to Lupus cannot be discounted.</ol></ol>
+	<ol><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct.<br><br><ol>For instance, a five- or six-voice imitative chanson attributed in a late sixteenth-century source to Jean Mouton for the first time——forty years after Mouton's death——is on the whole, much less likely than not to be accurate.</ol>
+	</ol>
+	<ol><b>Implausible attributions</b> are all but impossible.<br><br><ol>One example: the attribution of Jachet of Mantua's <a href="https://1520s-project.org/work/?id=Jom2014"><i>Omnes sancti tui quesumus</i></a> to Adrian Willaert in a single source geographically distant from Willaert. Attributions to Jachet, by contrast, appear in an overwhelming number of sources closer to the composer, including in a number of single-author prints of his motets.</ol>
+	</ol>
+	</div>
+</div><br>
+<div id="paragraph">
+	This project only considers attributions in sixteenth-century sources. Implied attributions on the basis of so-called <i>Nestertheorie</i> are not adopted. Where modern scholarship has attributed works to a given composer without a sixteenth-century attribution, these pieces are "linked" to the composer. This means that results of a search for the composer Philippe Verdelot will include anonymous madrigals in the Newberry Partbooks long assumed to be by Verdelot, but for which no sixteenth-century concordance survives.
 </div>
 
 <br>
@@ -86,14 +91,19 @@ layout: default
 
 ### Editorial accidentals {#editorial-accidentals}
 
-<div id="paragraph">Editorial accidentals, known as <i>musica ficta</i>, are suggested under two circumstances:<br><br>
-<li>To avoid harmonic tritones</li> <br><ul>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the e following the b-flat. A second, problematic tritone produced by stepwise motion in m. 15 can be sidestepped by adding a second flat. <br><img src="/images/Bau3001_ficta_example.png" alt="Bauldeweyn ficta example"></ul>
+<div id="paragraph">
+	Editorial accidentals, known as <i>musica ficta</i>, are suggested in order to:<br><br>
+	<ul><b>avoid harmonic tritones</b><br>
+		<ul>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the e following the b-flat. A second, problematic tritone produced by stepwise motion in m. 15 can be sidestepped by adding a second flat. <br><img src="/images/Bau3001_ficta_example.png" alt="Bauldeweyn ficta example">
+		</ul>
+	</ul>
 
-<li>To inflect at cadences</li> <br><ul>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, this is almost always sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–62 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Bau3001"><i>De profundis clamavi</i></a>, in which a seven-to-six suspension is followed by movement to an octave: <br><br><img src="/images/Cha2001_ficta_example.png" alt="Champion ficta example"></ul>
+<ul><b>inflect cadences</b><br><ul>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, this is almost always sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–62 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Bau3001"><i>De profundis clamavi</i></a>, in which a seven-to-six suspension is followed by movement to an octave: <br><br><img src="/images/Cha2001_ficta_example.png" alt="Champion ficta example"></ul></ul>
 
 This project argues that cadences not only have a contrapuntal element, but function as part of rhetorical gestures. To be classified as a cadence, these contrapuntal elements must occur where one or both of the voices end a text phrase. Usually——but by ca. 1530 not always——one or both of the voices will rest following the cadence.<br><br>
 
-Users can see scores without <i>ficta</i> by toggling on/off the suggested editorial accidentals using the "Hide/Show Editorial Accidentals" button. They can download the scores to tailor the accidentals to their own preferences.</div>
+Users can see scores without <i>ficta</i> by toggling on/off the suggested editorial accidentals using the "Hide/Show Editorial Accidentals" button. They can download the scores to tailor the accidentals to their own preferences.
+</div>
 
 <br><br>
 
@@ -187,5 +197,7 @@ Scores coming from published editions have these additional categories of inform
 <a href="https://github.com/benory/1520s-project-scores">The project's Github repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:
 
     git clone https://github.com/benory/1520s-project-scores.git
+
+The metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as dispaly additional information about scores on the work pages, is available [here](https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json).
 
 <br>
