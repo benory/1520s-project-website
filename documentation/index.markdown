@@ -159,6 +159,7 @@ Scores are then exported to MusicXML files and converted using the <a href="http
 	<li>voices: the number of voices</li>
 	<li>COM: the composer </li>
 	<li>OTL: the title of the work</li>
+	<li>OPR: the title of the parent work</li>
 	<li>ENC: the encoder</li>
 	<li>END: the date of the encoding</li>
 </div><br>
