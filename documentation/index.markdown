@@ -23,6 +23,8 @@ layout: default
 	- [Score preparation](#score-preparation)
 	- [Encoded information](#encoded-information)
 	- [Source metadata](#source-metadata)
+	- [Website](#website)
+		- [Javascript tools](#javascript-tools)
 - [Download project data](#download-data)
 
 
@@ -39,7 +41,7 @@ layout: default
 <div id="paragraph">
 	Most musical works in the early sixteenth century can be securely attributed to a single composer. For a small group of pieces, sorting out attributions presents additional complications:<br><br>
 	<div id="paragraph"><li><b>Secure attributions</b> are is listed under the composer's name.</li>
-	<li><b>Plausible attributions</b> need to be carefully considered but lack sufficient information to assign authorship. One might think of these to be in the range of 30–50% likelihood.</li>
+	<li><b>Plausible attributions</b> need to be carefully considered but lack sufficient strengh to assign authorship. One might think of these to be in the range of 30–50% likelihood.</li>
 	<li><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct. They might have a 10–30% change of being correct.</li>
 	<li><b>Implausible attributions</b> are all but impossible. They range from a 0% chance to roughly a 10% probability.</li></div>
 </div>
@@ -159,6 +161,25 @@ Scores coming from published editions have these additional categories of inform
 
 <div id="paragraph">The metadata for each piece includes the (probable) earliest source in the transmission and its dating. External links are provided to either <a href="https://www.diamm.ac.uk/">DIAMM</a> or <a href="https://rism.online/">RISM</a>.</div>
 
+<br>
+
+### Website {#website}
+
+<div id="paragraph">Files for the website for The 1520s Project are hosted on github at <br>
+	<ul><a href="https://github.com/benory/1520s-project-website">https://github.com/benory/1520s-project-website</a></ul>
+</div>
+<div id="paragraph">The website is served through <a href="https://pages.github.com">Github pages</a> and uses the markdown language <a href="https://jekyllrb.com">Jekyll</a>.</div><br>
+
+#### Javascript tools {#javascript-tools}
+
+<div id="paragraph">
+	<ul><b>Vega-Lite</b>
+		<ul><a href="https://vega.github.io/vega-lite/">Vega-Lite</a> is a visualization grammar for statistical graphics, which functions similar to ggplot. The 1520s Project uses Vega-Lite for histograms and bar charts.</ul>
+	</ul>
+	<ul><b>Verovio</b>
+		<ul><a href="https://www.verovio.org/index.xhtml">Verovio</a> is an SVG music notation renderer developed primarily by Laurent Pugin. The humlib library is embedded within verovio and is used to process and analyze the Humdrum scores for the website as well as convert the scores into the MEI format for rendering in Verovio.</ul>
+	</ul>
+</div>
 <br>
 
 ## Download project data {#download-data}
