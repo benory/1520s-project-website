@@ -34,7 +34,7 @@ layout: default
 
 ## Musical documentation {#music-documentation}
 
-<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. Shared editorial standards with the <a href="https://josquin.stanford.edu/">Josquin Research Project</a> enables rigorous comparisons of the musical data.</div>
+<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. Shared editorial standards with the <a href="https://josquin.stanford.edu/">Josquin Research Project</a> enable rigorous comparisons and analysis of the musical data.</div>
 
 <br>
 
@@ -43,15 +43,15 @@ layout: default
 <div id="paragraph">
 	Most musical works in the early sixteenth century can be securely attributed to a single composer. For a small group of pieces, sorting out attributions presents additional complications:<br><br>
 	<div id="paragraph"><ol><b>Secure attributions</b> are listed under the composer's name.</ol>
-	<ol><b>Plausible attributions</b> need to be carefully considered but given the information available, lack sufficient strengh to assign authorship. <br><br><ol>A test case might be the attributions to Lupus Hellinck for the motet <a href="https://1520s-project.org/work/?id=Ric2016"><i>Jerusalem surge</i></a>, believed to be by Jean Richafort. On the whole, the sources favor Richafort, but an early Pierre Attaingnant print——constituting a separate branch of transmission——attributes the motet to Lupus. Attributions to Lupus cannot be discounted.</ol></ol>
-	<ol><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct.<br><br><ol>For instance, a five- or six-voice imitative chanson attributed in a late sixteenth-century source to Jean Mouton for the first time——forty years after Mouton's death——is on the whole, much less likely than not to be accurate.</ol>
+	<ol><b>Plausible attributions</b> need to be carefully considered but given the information available, lack sufficient strengh to assign authorship. <br><br><ol>A test case might be the attributions to Lupus Hellinck for the motet <a href="https://1520s-project.org/work/?id=Ric2016"><i>Jerusalem surge</i></a>, believed to be by Jean Richafort. On the whole, the sources favor Richafort, but an early Pierre Attaingnant print, constituting a separate branch of transmission, attributes the motet to Lupus. The attributions to Lupus are therefore plausible.</ol></ol>
+	<ol><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct.<br><br><ol>For instance, a five- or six-voice imitative chanson attributed in a late sixteenth-century source to Jean Mouton for the first time——some forty years after Mouton's death——is on the whole unlikely to be accurate.</ol>
 	</ol>
 	<ol><b>Implausible attributions</b> are all but impossible.<br><br><ol>One example: the attribution of Jachet of Mantua's <a href="https://1520s-project.org/work/?id=Jom2014"><i>Omnes sancti tui quesumus</i></a> to Adrian Willaert in a single source geographically distant from Willaert. Attributions to Jachet, by contrast, appear in an overwhelming number of sources closer to the composer, including in a number of single-author prints of his motets.</ol>
 	</ol>
 	</div>
-</div><br>
+</div>
 <div id="paragraph">
-	This project only considers attributions in sixteenth-century sources. Implied attributions on the basis of so-called <i>Nestertheorie</i> are not adopted. Where modern scholarship has attributed works to a given composer without a sixteenth-century attribution, these pieces are "linked" to the composer. This means that results of a search for the composer Philippe Verdelot will include anonymous madrigals in the Newberry Partbooks long assumed to be by Verdelot, but for which no sixteenth-century concordance survives.
+	This project only considers attributions in sixteenth-century sources. Implied attributions on the basis of so-called <i>Nestertheorie</i> are not adopted. <br><br>Where modern scholarship has attributed works to a given composer without a sixteenth-century attribution, these pieces are "linked" to the composer. This means that results of a search for the composer Philippe Verdelot will include anonymous madrigals in the Newberry Partbooks long assumed to be by Verdelot, but for which no sixteenth-century concordance attributes the work to the Florentine composer.
 </div>
 
 <br>
@@ -93,8 +93,8 @@ layout: default
 
 <div id="paragraph">
 	Editorial accidentals, known as <i>musica ficta</i>, are suggested in order to:<br><br>
-	<ul><b>avoid harmonic tritones</b><br>
-		<ul>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the e following the b-flat. A second, problematic tritone produced by stepwise motion in m. 15 can be sidestepped by adding a second flat. <br><img src="/images/Bau3001_ficta_example.png" alt="Bauldeweyn ficta example">
+	<ul><b>avoid melodic tritones</b><br>
+		<ul>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the E following the B-flat. A second tritone produced by stepwise motion in m. 15 can be sidestepped through the addition of a second flat. <br><img src="/images/Bau3001_ficta_example.png" alt="Bauldeweyn ficta example">
 		</ul>
 	</ul>
 
