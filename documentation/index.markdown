@@ -71,7 +71,7 @@ layout: default
 
 ### Note values and Mensurstriche {#notes}
 
-<div id="paragraph">All scores appear in unreduced note values. This means that a breve is equal to a double whole note; a minim, a half note.<br><br><i>Mensurstriche</i>, a scholarly practice that allows note values to cross over a modern bar line without using a tie, is avoided. Programs such as Finale and Sibelius cannot properly render <i>Mensurstriche</i>, and so any workarounds used in these programs by scholars are lost when exporting to MusicXML.</div>
+<div id="paragraph">All scores appear in unreduced note values. This means that a breve is equal to a double whole note; a minim as a half note, etc.<br><br><i>Mensurstriche</i>, a scholarly practice that allows note values to cross over a modern bar line without using a tie, is avoided. Programs such as Finale and Sibelius cannot properly render <i>Mensurstriche</i>, and so any workarounds used in these programs by scholars are lost when exporting to MusicXML.</div>
 
 <br>
 
@@ -92,7 +92,7 @@ layout: default
 ### Editorial accidentals {#editorial-accidentals}
 
 <div id="paragraph">
-	Editorial accidentals, known as <i>musica ficta</i>, are suggested in order to:<br><br>
+	Editorial accidentals are not strictly part of the musical texts, but instead must be realized by performers. The 1520s Project displays them on scores in order to:<br><br>
 	<ul><b>avoid melodic tritones</b><br>
 		<ul>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the E following the B-flat. A second tritone produced by stepwise motion in m. 15 can be sidestepped through the addition of a second flat. <br><img src="/images/Bau3001_ficta_example.png" alt="Bauldeweyn ficta example">
 		</ul>
