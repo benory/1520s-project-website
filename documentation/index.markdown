@@ -14,7 +14,7 @@ layout: default
 ### Table of contents
 - [Musical documentation](#music-documentation)
 	- [Attributions](#attributions)
-	- [Instrument names](#instrument-names)
+	- [Voice names](#voice-names)
 	- [Sections](#sections)
 	- [Note values and Mensurstriche](#notes)
 	- [Mensuration signs](#mensuration-signs)
@@ -57,7 +57,7 @@ layout: default
 <br>
 
 
-### Instrument names {#instrument-names}
+### Voice names {#voice-names}
 
 <div id="paragraph">Early sixteenth-century musical sources often use interchangeable names for voices, such as Superius, Cantus, and Discantus for the top voice in a given texture; or Tenor II, Quintus, and Sextus for a middle voice. And different sources for a given piece might use different names for the same musical line. <br><br> To maintain consistent nomenclature, this project uses four voice designations: superius, altus, tenor, and bassus. For dispositions in more than four voices, the project assigns the most logical voice, followed by a roman numeral (i.e., Tenor II).</div>
 
