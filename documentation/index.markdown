@@ -26,7 +26,7 @@ layout: default
 	- [Encoded information](#encoded-information)
 	- [Source metadata](#source-metadata)
 	- [Website](#website)
-		- [Javascript tools](#javascript-tools)
+		- [JavaScript tools](#javascript-tools)
 - [Download project data](#download-data)
 
 
@@ -192,14 +192,20 @@ Scores coming from published editions have these additional categories of inform
 </div>
 <div id="paragraph">The website is served through <a href="https://pages.github.com">Github pages</a> and uses the markdown language <a href="https://jekyllrb.com">Jekyll</a>.</div><br>
 
-#### Javascript tools {#javascript-tools}
+#### JavaScript tools {#javascript-tools}
 
 <div id="paragraph">
+	<ul><b>Humdrum Notation Plugin</b>
+		<ul>The <a href="https://plugin.humdrum.org/">Humdrum Notation Plugin</a> is an interface that simplifies working with the JavaScript toolkit version of Verovio.</ul>
+	</ul>
 	<ul><b>Vega-Lite</b>
 		<ul><a href="https://vega.github.io/vega-lite/">Vega-Lite</a> is a visualization grammar for statistical graphics, which functions similar to ggplot. The 1520s Project uses Vega-Lite for histograms and bar charts.</ul>
 	</ul>
 	<ul><b>Verovio</b>
 		<ul><a href="https://www.verovio.org/index.xhtml">Verovio</a> is an SVG music notation renderer developed primarily by Laurent Pugin. The humlib library is embedded within verovio and is used to process and analyze the Humdrum scores for the website as well as convert the scores into the MEI format for rendering in Verovio.</ul>
+	</ul>
+	<ul><b>Verovio Humdrum Viewer</b>
+		<ul><a href="https://verovio.humdrum.org/">Verovio Humdrum Viewer</a> is an online Humdrum file notation editor and renderer created by Craig Sapp. It is used for the final preparation of the scores and for various analyses not yet implemented on The 1520s Project.</ul>
 	</ul>
 </div>
 <br>
