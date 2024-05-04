@@ -44,10 +44,8 @@ layout: default
 	Most musical works in the early sixteenth century can be securely attributed to a single composer. For a small group of pieces, sorting out attributions presents additional complications:<br><br>
 	<div id="paragraph"><ol><b>Secure attributions</b> are listed under the composer's name.</ol>
 	<ol><b>Plausible attributions</b> need to be carefully considered but given the information available, lack sufficient strengh to assign authorship. <br><br><ol>A test case might be the attributions to Lupus Hellinck for the motet <a href="https://1520s-project.org/work/?id=Ric2016"><i>Jerusalem surge</i></a>, believed to be by Jean Richafort. On the whole, the sources favor Richafort, but an early Pierre Attaingnant print, constituting a separate branch of transmission, attributes the motet to Lupus. The attributions to Lupus are therefore plausible.</ol></ol>
-	<ol><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct.<br><br><ol>For instance, a five- or six-voice imitative chanson attributed in a late sixteenth-century source to Jean Mouton for the first time——some forty years after Mouton's death——is on the whole unlikely to be accurate.</ol>
-	</ol>
-	<ol><b>Implausible attributions</b> are all but impossible.<br><br><ol>One example: the attribution of Jachet of Mantua's <a href="https://1520s-project.org/work/?id=Jom2014"><i>Omnes sancti tui quesumus</i></a> to Adrian Willaert in a single source geographically distant from Willaert. Attributions to Jachet, by contrast, appear in an overwhelming number of sources closer to the composer, including in a number of single-author prints of his motets.</ol>
-	</ol>
+	<ol><b>Improbable attributions</b> cannot be ruled out but are unlikely to be correct.<br><br><ol>For instance, a five- or six-voice imitative chanson attributed in a late sixteenth-century source to Jean Mouton for the first time——some forty years after Mouton's death——is on the whole unlikely to be accurate.</ol></ol>
+	<ol><b>Implausible attributions</b> are all but impossible.<br><br><ol>One example: the attribution of Jachet of Mantua's <a href="https://1520s-project.org/work/?id=Jom2014"><i>Omnes sancti tui quesumus</i></a> to Adrian Willaert in a single source geographically distant from Willaert. Attributions to Jachet, by contrast, appear in an overwhelming number of sources closer to the composer, including in a number of single-author prints of his motets.</ol></ol>
 	</div>
 </div>
 <div id="paragraph">
@@ -85,7 +83,7 @@ layout: default
 
 ### Terminal notes and fermatas {#terminal-notes}
 
-<div id="paragraph">Terminal notes are defined as the last note in a given voice prior to a double barline or the end of a given work. They are displayed as longs regardless of their actual durations.<br><br> Fermatas on terminal notes are removed, since terminal longs represent an indefinite value. The placement of fermatas elsewhere follows the musical sources.</div>
+<div id="paragraph">Terminal notes are defined as the last note in a given voice prior to a double barline or the end of a given work. They are displayed as longs regardless of their actual durations. Medial cadences are followed by double barlines; terminal cadences are followed by a final barline. <br><br> Fermatas on terminal notes are removed, since terminal longs represent an indefinite value. The placement of fermatas elsewhere follows the musical sources.</div>
 
 <br>
 
