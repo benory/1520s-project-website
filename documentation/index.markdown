@@ -232,7 +232,7 @@ Scores coming from published editions have additional categories of information:
 
     git clone https://github.com/benory/1520s-project-scores.git
 
-The metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as dispaly additional information about scores on the work pages, is available:
+Metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as dispaly additional information about scores on the work pages, is available:
 <div id="paragraph"> 
 	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json">Works</a></li>
 	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json">Composers</a></li>
