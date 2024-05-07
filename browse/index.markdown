@@ -1,6 +1,8 @@
 ---
 layout: page
 title: browse scores
+order: 3
+
 ---
 
 {% include_relative styles-local.html %}

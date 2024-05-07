@@ -1,6 +1,8 @@
 ---
 layout: page
 title: about
+order: 1
+
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
