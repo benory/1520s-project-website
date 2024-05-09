@@ -343,6 +343,27 @@
 		"FILEBASE": "Ano3006-Cortese_alma_gentile--Newberry_Partbooks"
 	},
 	{
+		"ID": "Ano3007",
+		"Composer": "Anonymous",
+		"Title": "Quanta dolceça, amore",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Slim_1972; Slim_nd",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"IIIF Manifest": "a",
+		"Linkage": "Verdelot, Philippe",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Date Added": "2024-5-9",
+		"Note Count": "327",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3007-Quanta_dolceca_amore--Newberry_Partbooks.krn",
+		"FILEBASE": "Ano3007-Quanta_dolceca_amore--Newberry_Partbooks"
+	},
+	{
 		"ID": "Arc3013",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Il bianco e dolce cigno",
