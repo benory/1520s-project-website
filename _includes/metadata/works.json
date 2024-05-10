@@ -383,6 +383,26 @@
 		"FILEBASE": "Ano3008-Ognun_si_duol_damore"
 	},
 	{
+		"ID": "Ano3009",
+		"Composer": "Anonymous",
+		"Title": "Dentr'al mio cor'",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Modern Editions": "Slim_1972; Slim_nd",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"Linkage": "Verdelot, Philippe",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-5-10",
+		"Note Count": "561",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3009-Dentral_mio_cor.krn",
+		"FILEBASE": "Ano3009-Dentral_mio_cor"
+	},
+	{
 		"ID": "Arc3013",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Il bianco e dolce cigno",
