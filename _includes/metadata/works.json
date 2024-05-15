@@ -2392,6 +2392,27 @@
 		"FILEBASE": "Lhe2007-Ave_regina_celorum"
 	},
 	{
+		"ID": "Lhe2008",
+		"Composer": "Lhéritier, Jean",
+		"Title": "Alma redemptoris mater",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Perkins_1969a",
+		"First Source": "V-CVbav MS Capp. Sist. 26",
+		"RISM or CC Source Sigla": "VatS 26",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1469/",
+		"IIIF Source": "https://digi.vatlib.it/view/MSS_Capp.Sist.26",
+		"IIIF Manifest": "https://digi.vatlib.it/iiif/MSS_Capp.Sist.26/manifest.json",
+		"First Source Exact Date": "1521",
+		"First Source Date": "1521",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-5-15",
+		"Note Count": "1620",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2008-Alma_redemptoris_mater.krn",
+		"FILEBASE": "Lhe2008-Alma_redemptoris_mater"
+	},
+	{
 		"ID": "Lhe2011",
 		"Composer": "Lhéritier, Jean",
 		"Title": "Sub tuum presidium",
