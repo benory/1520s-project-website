@@ -1578,6 +1578,28 @@
 		"FILEBASE": "Gsc2006-Dignare_me"
 	},
 	{
+		"ID": "Gsc2009",
+		"Composer": "Gascongne, Mathieu",
+		"Title": "Caro mea vere est cibus",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Smijers_1934",
+		"Edition Source": "Liber primus quinque et viginti musicales quatuor vocum Motetos (Paris: Pierre Attaingnant, 1534|3)",
+		"Edition Source URL": "https://rism.online/sources/993104109",
+		"First Source": "Liber primus quinque et viginti musicales (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1534|3",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"RISM Source Link": "https://rism.online/sources/993104109",
+		"First Source Exact Date": "1534/4",
+		"First Source Date": "1534",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-5-23",
+		"Note Count": "1373",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gsc/Gsc2009-Caro_mea_vere_est_cibus.krn",
+		"FILEBASE": "Gsc2009-Caro_mea_vere_est_cibus"
+	},
+	{
 		"ID": "Gsc2010",
 		"Composer": "Gascongne, Mathieu",
 		"Title": "Christus vincit, Christus regnat",
