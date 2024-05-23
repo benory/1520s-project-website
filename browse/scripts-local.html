@@ -643,7 +643,19 @@ function FreeTextSearch(query) {
         updateBrowseUrlDisplay();
         return;
     }
-    let regex = new RegExp(query, 'i');
+
+    // Function to remove accents from characters
+    function removeAccents(str) {
+    	return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    // Convert query to a regex pattern that matches both accented and non-accented characters
+    let regexPattern = query.split("").map(char => {
+        let charWithoutAccent = removeAccents(char);
+        return `[${char}${charWithoutAccent}]`;
+    }).join("");
+
+    let regex = new RegExp(regexPattern, 'i');
 
     let searchCount = 0;
 
