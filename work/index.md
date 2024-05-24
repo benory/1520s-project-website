@@ -8,7 +8,17 @@ vim:    ts=3:nowrap
 {% include_relative styles-local.html %}
 {% include styles/svgdefs.html %}
 
-<div id="work-info"></div>
+<table id="work-info">
+   <thead>
+       <tr>
+           <th class="left-column">Left Column</th>
+           <th class="middle-column">Middle Column</th>
+           <th class="right-column">Right Column</th>
+       </tr>
+   </thead>
+   <tbody>
+   </tbody>
+</table>
 
 <br>
 

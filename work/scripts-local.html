@@ -84,6 +84,9 @@ function displayWorkInfo(id) {
 		console.error("ERROR: no #work-info element");
 		return;
 	}
+
+	const tbody = document.querySelector("#work-info tbody");
+
 	if (!id) {
 		id = DATA1520.workid;
 	}
@@ -105,22 +108,26 @@ function displayWorkInfo(id) {
 
 	let title = workinfo.Title;
 	let subtitle = workinfo["Subtitle"];
+	let titleoutput = "";
 	console.warn("subtitle", subtitle);
 	if (title) {
 		if (subtitle){
-			output += `<div class="work-item"><span class="key">Title</span>${title}, ${subtitle}</div>`;
+			titleoutput = `<div class="work-item"><b>Title:</b> ${title}, ${subtitle}</div>`;
 		}
 		else {
-			output += `<div class="work-item"><span class="key">Title</span>${title}</div>`;
+			titleoutput = `<div class="work-item"><b>Title:</b> ${title}</div>`;
 		}
 	}
 
 	let composer = workinfo.Composer;
+	let composeroutput = "";
 	if (composer) {
 		let matches = composer.match(/^(.*?)\s*,\s*(.*?)$/);
 		if (matches) {
 			composer = `${matches[2]} ${matches[1]}`;
 		}
+
+		composeroutput = `<div class="work-item"><b>Composer:</b> ${composer}`;
 
 		let diammcomp = cominfo["Composer DIAMM page"];
 		let rismid = cominfo["Composer RISM ID"];
@@ -130,15 +137,13 @@ function displayWorkInfo(id) {
 			let rismurl = rismid.substring(2);
 		}
 
-		let composerprint = "";
-
 		if (diammcomp) {
-			composerprint += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
+			composeroutput += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
 		}
 		if (rismid) {
-			composerprint += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismurl}">RISM</a>)</span>`
+			composeroutput += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismurl}">RISM</a>)</span>`;
 		}
-		output += `<div class="work-item"><span class="key">Composer</span>${composer}</div>`;
+		composeroutput += `</div>`;
 	}
 
 	// Add line in work info for implausible attributions with anonymous works
@@ -149,6 +154,10 @@ function displayWorkInfo(id) {
 	let attrimplausiblename = "";
 	let attrimprobablename = "";
 	let attrplausiblename = "";
+
+	let attrimplausibleoutput = "";
+	let attrimprobableoutput = "";
+	let attrplausibleoutput = "";
 
 	//Adjust name of category for singular/plural
 
@@ -179,26 +188,30 @@ function displayWorkInfo(id) {
 	//Add work items for unlikely/false attributions
 
 	if (attrplausible) {
-		output += `<div class="work-item"><span class="key">${attrplausiblename}</span>${attrplausible}</div>`;
+		attrplausibleoutput = `<div class="work-item"><b>${attrplausiblename}:</b> ${attrplausible}</div>`;
 	}
 
 	if (attrimprobable) {
-		output += `<div class="work-item"><span class="key">${attrimprobablename}</span>${attrimprobable}</div>`;
+		attrimprobableoutput = `<div class="work-item"><b>${attrimprobablename}:</b> ${attrimprobable}</div>`;
+
 	}
 
 	if (attrimplausible) {
-		output += `<div class="work-item"><span class="key">${attrimplausiblename}</span>${attrimplausible}</div>`;
+		attrimplausibleoutput = `<div class="work-item"><b>${attrimplausiblename}:</b> ${attrimplausible} </div>`;
+
 	}
 
 	//Add work item for genre
 
 	let genre = workinfo.Genre;
+	let genreoutput = "";
 	if (genre) {
-		output += `<div class="work-item"><span class="key">Genre</span>${genre}</div>`;
+		genreoutput += `<div class="work-item"><b>Genre:</b> ${genre}</div>`;
 	}
 
 	let source = workinfo["First Source"];
 	let uniquesource = workinfo["Unique Source"];
+	let sourceoutput = "";
 
 	if (source) {
 		let diammsource = workinfo["DIAMM Source Link"];
@@ -210,21 +223,23 @@ function displayWorkInfo(id) {
 			sourcetype = "First";
 		}
 		if (diammsource) {
-			output += `<div class="work-item"><span class="key">${sourcetype} source</span><a target="_blank" href="${diammsource}">${source}</a></div>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${diammsource}">${source}</a></div>`;
 		} else if (rismsource) {
-			output += `<div class="work-item"><span class="key">${sourcetype} source</span><a target="_blank" href="${rismsource}">${source}</a></div>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${rismsource}">${source}</a></div>`;
 		} else {
-			output += `<div class="work-item"><span class="key">${sourcetype} source</span>${source}</div>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> ${source}</div>`;
 		}
 	}
 
 	let date = workinfo["First Source Date"];
+	let dateoutput = "";
 	if (date) {
-		output += `<div class="work-item"><span class="key">First source date</span>${date}</div>`;
+		dateoutput = `<div class="work-item"><b>First source date:</b> ${date}</div>`;
 	}
 
 	let editionsource = workinfo["Edition Source"];
 	let editionsourceURL = workinfo["Edition Source URL"];
+	let editionsourceoutput = "";
 
 	console.warn(editionsource);
 
@@ -242,19 +257,19 @@ function displayWorkInfo(id) {
 			let editionname = editionsource.length === 1 ? "Edition source" : "Edition sources";
 			if (i == 0){
 				if (uniquesource == "no" && editionURLentry){
-				output += `<div class="work-item"><span class="key">${editionname}<a target="_blank" href="${editionURLentry}"></span>${editionentry}</a>`;
+					editionsourceoutput += `<div class="work-item"><b>${editionname}:</b> <a target="_blank" href="${editionURLentry}">${editionentry}</a>`;
 				} else {
-				output += `<div class="work-item"><span class="key">${editionname}</span>${editionentry}`;
+					editionsourceoutput += `<div class="work-item"><b>${editionname}:</b> ${editionentry}`;
 				}
 			} else {
 				if (uniquesource == "no" && editionURLentry){
-					output += `; <a target="_blank" href="${editionURLentry}"></span>${editionentry}</a>`;
+					editionsourceoutput += `; <a target="_blank" href="${editionURLentry}"></span>${editionentry}</a>`;
 				} else {
-					output += `; ${editionentry}`;
+					editionsourceoutput += `; ${editionentry}`;
 				}
 			}
 		}
-		output += `</div>`;
+		editionsourceoutput += `</div>`;
 	}
 
 	let pdf = workinfo["Humdrum URL"];
@@ -264,24 +279,53 @@ function displayWorkInfo(id) {
 	let URL_BASE = "https://data.1520s-project.org";
 	let midi = `${URL_BASE}/${DATA1520.workid}.mid`;
 	let mei = `${URL_BASE}/${DATA1520.workid}.mei`;
+	let downloadoutput = "";
 
 	pdf = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 
-	output += `<div class="work-item"><span class="key">Download</span><a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a></div>`;
+	downloadoutput += `<b>Download:</b> <a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a>`;
 
 	let github = workinfo["Humdrum URL"];
-		let urlParam = encodeURIComponent(github);
-		let efilter = "";
-		if (DATA1520.filter) {
-			efilter = encodeURIComponent(DATA1520.filter);
-			efilter = `&filter=${efilter}`;
-		}
-		output += `<div class="work-item"><span class="key">View on</span><a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a> | <a target='_blank' href='${github}'>Github</a></div>`;
+	let githuboutput = "";
 
-	element.innerHTML = output;
+	let urlParam = encodeURIComponent(github);
+	let efilter = "";
+	if (DATA1520.filter) {
+		efilter = encodeURIComponent(DATA1520.filter);
+		efilter = `&filter=${efilter}`;
+	}
+	githuboutput += `<b>View on:</b> <a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a> | <a target='_blank' href='${github}'>Github</a>`;
+
+    const row = document.createElement("tr");
+
+	const leftColumnCell = document.createElement("td");
+    leftColumnCell.innerHTML = `${titleoutput}
+        ${composeroutput}
+        ${genreoutput}
+        ${attrplausibleoutput || ""}
+        ${attrimprobableoutput || ""}
+        ${attrimplausibleoutput || ""}
+        `;
+    row.appendChild(leftColumnCell);
+
+	const middleColumnCell = document.createElement("td");
+    middleColumnCell.innerHTML = `${sourceoutput}
+    	${dateoutput}
+    	${editionsourceoutput || ""}
+        `;
+    row.appendChild(middleColumnCell);
+
+	const rightColumnCell = document.createElement("td");
+    rightColumnCell.innerHTML = `${downloadoutput} <br>
+    	${githuboutput}
+        `;
+    row.appendChild(rightColumnCell);
+
+    tbody.appendChild(row);
+	//element.innerHTML = output;
 }
 
 

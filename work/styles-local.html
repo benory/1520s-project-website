@@ -18,13 +18,43 @@ main {
 }
 
 #work-info {
-	max-height: 100px;
-	font-size: 1.15rem;
+	font-size: 1.1rem;
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 25%;
-	flex-direction: column;
+	border: none;
+}
+
+#work-info th {
+	display: none;
+}
+
+#work-info td, #work-info th {
+	border: none; /* Remove borders from table cells */
+}
+
+.work-item {
+	text-indent: -2em;
+	padding-left: 2em;
+	display: block;
+}
+
+.work-item:before {
+	content: "\00a0";
+}
+
+#work-info tbody {
+  vertical-align: top;
+}
+
+#work-info td:nth-child(1) {
+	width: 400px;
+} 
+
+#work-info td:nth-child(2) {
+	min-width: 150px;
+} 
+
+#work-info td:nth-child(3) {
+	width: 490px;
 }
 
 #work-footer {
