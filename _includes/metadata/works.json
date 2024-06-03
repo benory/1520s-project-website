@@ -2595,6 +2595,26 @@
 		"FILEBASE": "Lhe2008-Alma_redemptoris_mater"
 	},
 	{
+		"ID": "Lhe2009",
+		"Composer": "Lhéritier, Jean",
+		"Title": "In te, Domine, speravi",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Perkins_1969a",
+		"First Source": "Fior de motetti e Canzoni novi (Rome: Jacques Giunta)",
+		"RISM or CC Source Sigla": "[c.1526]|5",
+		"RISM Source Link": "https://rism.online/sources/993114948",
+		"Linkage": "Lheritier, Jean",
+		"First Source Exact Date": "1523",
+		"First Source Date": "1523",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-6-3",
+		"Note Count": "1491",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2009-In_te_Domine_speravi.krn",
+		"FILEBASE": "Lhe2009-In_te_Domine_speravi"
+	},
+	{
 		"ID": "Lhe2010",
 		"Composer": "Lhéritier, Jean",
 		"Title": "Usquequo Domine",
@@ -2611,7 +2631,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-5-20",
-		"Note Count": "1491",
+		"Note Count": "989",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2010-Usquequo_Domine.krn",
 		"FILEBASE": "Lhe2010-Usquequo_Domine"
 	},
@@ -2632,7 +2652,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-19",
-		"Note Count": "989",
+		"Note Count": "720",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2011-Sub_tuum_presidium.krn",
 		"FILEBASE": "Lhe2011-Sub_tuum_presidium"
 	},
@@ -2653,7 +2673,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-18",
-		"Note Count": "720",
+		"Note Count": "1734",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2012-Ave_mater_matris_Dei.krn",
 		"FILEBASE": "Lhe2012-Ave_mater_matris_Dei"
 	},
@@ -2674,7 +2694,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-3-14",
-		"Note Count": "1734",
+		"Note Count": "2212",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2014-O_clemens_o_pia_virgo.krn",
 		"FILEBASE": "Lhe2014-O_clemens_o_pia_virgo"
 	},
@@ -2693,7 +2713,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2212",
+		"Note Count": "2616",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2015-Ascendens_Christus.krn",
 		"FILEBASE": "Lhe2015-Ascendens_Christus"
 	},
@@ -2713,7 +2733,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2616",
+		"Note Count": "1113",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2016-Deus_in_nomine_tuo.krn",
 		"FILEBASE": "Lhe2016-Deus_in_nomine_tuo"
 	},
@@ -2734,7 +2754,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1113",
+		"Note Count": "785",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2017-Nigra_sum.krn",
 		"FILEBASE": "Lhe2017-Nigra_sum",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -2755,7 +2775,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "785",
+		"Note Count": "987",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2021-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Lhe2021-Ave_Maria_gratia_plena"
 	},
@@ -2775,7 +2795,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "987",
+		"Note Count": "632",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2022-Virgo_Christi_egregia.krn",
 		"FILEBASE": "Lhe2022-Virgo_Christi_egregia"
 	},
@@ -2795,7 +2815,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "632",
+		"Note Count": "1312",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2023-Nigra_sum.krn",
 		"FILEBASE": "Lhe2023-Nigra_sum"
 	},
@@ -2814,7 +2834,7 @@
 		"First Source Date": "1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1312",
+		"Note Count": "500",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2032-Nigra_sum.krn",
 		"FILEBASE": "Lhe2032-Nigra_sum"
 	},
@@ -2833,7 +2853,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "500",
+		"Note Count": "1295",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lpi/Lpi1001a-Missa_Philomena-Kyrie.krn",
 		"FILEBASE": "Lpi1001a-Missa_Philomena-Kyrie"
 	},
@@ -2852,7 +2872,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1295",
+		"Note Count": "2372",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lpi/Lpi1001b-Missa_Philomena-Gloria.krn",
 		"FILEBASE": "Lpi1001b-Missa_Philomena-Gloria"
 	},
@@ -2871,7 +2891,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2372",
+		"Note Count": "626",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lpi/Lpi1001c-Missa_Philomena-Credo.krn",
 		"FILEBASE": "Lpi1001c-Missa_Philomena-Credo"
 	},
@@ -2890,7 +2910,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "626",
+		"Note Count": "1390",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2001-Esto_nobis.krn",
 		"FILEBASE": "Lps2001-Esto_nobis"
 	},
@@ -2909,7 +2929,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1390",
+		"Note Count": "609",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2002-In_nomine_Jesu.krn",
 		"FILEBASE": "Lps2002-In_nomine_Jesu"
 	},
@@ -2930,7 +2950,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "609",
+		"Note Count": "662",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2003-Miserere_mei_Domine.krn",
 		"FILEBASE": "Lps2003-Miserere_mei_Domine"
 	},
@@ -2951,7 +2971,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "662",
+		"Note Count": "1494",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2004-Miserere_mei_Deus.krn",
 		"FILEBASE": "Lps2004-Miserere_mei_Deus"
 	},
@@ -2970,7 +2990,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1494",
+		"Note Count": "608",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2005-In_convertendo_Dominus.krn",
 		"FILEBASE": "Lps2005-In_convertendo_Dominus"
 	},
@@ -2990,7 +3010,7 @@
 		"First Source Date": "1519",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "608",
+		"Note Count": "1702",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2007-Postquam_consummati_sunt.krn",
 		"FILEBASE": "Lps2007-Postquam_consummati_sunt"
 	},
@@ -3010,7 +3030,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-6",
-		"Note Count": "1702",
+		"Note Count": "818",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2010-Usquequo_Domine.krn",
 		"FILEBASE": "Lps2010-Usquequo_Domine"
 	},
@@ -3031,7 +3051,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-22",
-		"Note Count": "818",
+		"Note Count": "1582",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lps/Lps2016-Letetur_omne_seculum.krn",
 		"FILEBASE": "Lps2016-Letetur_omne_seculum"
 	},
@@ -3050,7 +3070,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1582",
+		"Note Count": "1481",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lsa/Lsa2001-Alma_redemptoris_mater.krn",
 		"FILEBASE": "Lsa2001-Alma_redemptoris_mater"
 	},
@@ -3069,7 +3089,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1481",
+		"Note Count": "722",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2001-Mater_floreat.krn",
 		"FILEBASE": "Mlu2001-Mater_floreat"
 	},
@@ -3088,7 +3108,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "722",
+		"Note Count": "1712",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2002-Fiere_attropos.krn",
 		"FILEBASE": "Mlu2002-Fiere_attropos"
 	},
@@ -3107,7 +3127,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1712",
+		"Note Count": "1123",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2003-Vulnerasti_cor_meum.krn",
 		"FILEBASE": "Mlu2003-Vulnerasti_cor_meum"
 	},
@@ -3126,7 +3146,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1123",
+		"Note Count": "981",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2004-Salve_regina_Barbara.krn",
 		"FILEBASE": "Mlu2004-Salve_regina_Barbara"
 	},
@@ -3146,7 +3166,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-11-14",
-		"Note Count": "981",
+		"Note Count": "1279",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2005-O_dulcis_amica.krn",
 		"FILEBASE": "Mlu2005-O_dulcis_amica"
 	},
@@ -3166,7 +3186,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-3",
-		"Note Count": "1279",
+		"Note Count": "1067",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2006-In_illo_tempore.krn",
 		"FILEBASE": "Mlu2006-In_illo_tempore"
 	},
@@ -3186,7 +3206,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-1-26",
-		"Note Count": "1067",
+		"Note Count": "592",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2007-Quam_pulchra_es.krn",
 		"FILEBASE": "Mlu2007-Quam_pulchra_es"
 	},
@@ -3206,7 +3226,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-11-3",
-		"Note Count": "592",
+		"Note Count": "660",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu3004-Naymes_jamais_ces_gens.krn",
 		"FILEBASE": "Mlu3004-Naymes_jamais_ces_gens"
 	},
@@ -3226,7 +3246,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-11-3",
-		"Note Count": "660",
+		"Note Count": "1233",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu3005-Et_dont_venes_vous.krn",
 		"FILEBASE": "Mlu3005-Et_dont_venes_vous"
 	},
@@ -3245,7 +3265,7 @@
 		"First Source Date": "1514",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1233",
+		"Note Count": "1514",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2001-Benedicta_es_celorum_regina.krn",
 		"FILEBASE": "Mou2001-Benedicta_es_celorum_regina"
 	},
@@ -3264,7 +3284,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1514",
+		"Note Count": "382",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2003-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Mou2003-Ave_Maria_gratia_plena"
 	},
@@ -3285,7 +3305,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "382",
+		"Note Count": "625",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2004-Salva_nos_Domine.krn",
 		"FILEBASE": "Mou2004-Salva_nos_Domine"
 	},
@@ -3304,7 +3324,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "625",
+		"Note Count": "587",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2005-Per_lignum_salvi_facti_sumus.krn",
 		"FILEBASE": "Mou2005-Per_lignum_salvi_facti_sumus"
 	},
@@ -3323,7 +3343,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "587",
+		"Note Count": "1517",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2006-Tua_est_potentia.krn",
 		"FILEBASE": "Mou2006-Tua_est_potentia"
 	},
@@ -3345,7 +3365,7 @@
 		"First Source Date": "1514",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1517",
+		"Note Count": "627",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2007-Gaude_Barbara.krn",
 		"FILEBASE": "Mou2007-Gaude_Barbara"
 	},
@@ -3364,7 +3384,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "627",
+		"Note Count": "560",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2008-Peccata_mea.krn",
 		"FILEBASE": "Mou2008-Peccata_mea"
 	},
@@ -3383,7 +3403,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "560",
+		"Note Count": "2250",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2009-Moriens_lux.krn",
 		"FILEBASE": "Mou2009-Moriens_lux"
 	},
@@ -3402,7 +3422,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2250",
+		"Note Count": "1473",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2010-Lectio_actuum_apostolorum.krn",
 		"FILEBASE": "Mou2010-Lectio_actuum_apostolorum"
 	},
@@ -3421,7 +3441,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1473",
+		"Note Count": "333",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2011-Puer_natus_est.krn",
 		"FILEBASE": "Mou2011-Puer_natus_est"
 	},
@@ -3439,7 +3459,7 @@
 		"First Source Date": "~1514",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "333",
+		"Note Count": "1242",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2012-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Mou2012-Ave_Maria_gratia_plena"
 	},
@@ -3458,7 +3478,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1242",
+		"Note Count": "2028",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2013-Alleluia_confitemini_Domino.krn",
 		"FILEBASE": "Mou2013-Alleluia_confitemini_Domino"
 	},
@@ -3477,7 +3497,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2028",
+		"Note Count": "1087",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2014-Missus_est_angelus_Gabriel.krn",
 		"FILEBASE": "Mou2014-Missus_est_angelus_Gabriel"
 	},
@@ -3496,7 +3516,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1087",
+		"Note Count": "1939",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2015-Nesciens_mater.krn",
 		"FILEBASE": "Mou2015-Nesciens_mater"
 	},
@@ -3514,7 +3534,7 @@
 		"First Source Date": "1521",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1939",
+		"Note Count": "316",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou2016-Jocundare_Jerusalem.krn",
 		"FILEBASE": "Mou2016-Jocundare_Jerusalem"
 	},
@@ -3532,7 +3552,7 @@
 		"First Source Date": "~1506",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "316",
+		"Note Count": "560",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3001-Je_le_laray_puisquil_my_bat.krn",
 		"FILEBASE": "Mou3001-Je_le_laray_puisquil_my_bat"
 	},
@@ -3569,7 +3589,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "yes",
 		"Texted": "no",
-		"Note Count": "560",
+		"Note Count": "309",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3003-Lort_vilain_jaloux--BolC_Q19.krn",
 		"FILEBASE": "Mou3003-Lort_vilain_jaloux--BolC_Q19"
 	},
@@ -3588,7 +3608,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "309",
+		"Note Count": "260",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3004-En_venant_de_Lyon.krn",
 		"FILEBASE": "Mou3004-En_venant_de_Lyon"
 	},
@@ -3607,7 +3627,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "260",
+		"Note Count": "349",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3005-Qui_ne_regrettroit_le_gentil_Fevin.krn",
 		"FILEBASE": "Mou3005-Qui_ne_regrettroit_le_gentil_Fevin"
 	},
@@ -3626,7 +3646,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "349",
+		"Note Count": "309",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3006-Adieu_mes_amours.krn",
 		"FILEBASE": "Mou3006-Adieu_mes_amours"
 	},
@@ -3645,7 +3665,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-20",
-		"Note Count": "309",
+		"Note Count": "417",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3007-Mais_que_ce_fust_le_plaisir_delle.krn",
 		"FILEBASE": "Mou3007-Mais_que_ce_fust_le_plaisir_delle"
 	},
@@ -3664,7 +3684,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "417",
+		"Note Count": "349",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren2001-Regina_celi.krn",
 		"FILEBASE": "Ren2001-Regina_celi"
 	},
@@ -3683,7 +3703,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "349",
+		"Note Count": "648",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren2002-Hec_dies_quam_fecit.krn",
 		"FILEBASE": "Ren2002-Hec_dies_quam_fecit"
 	},
@@ -3702,7 +3722,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "648",
+		"Note Count": "715",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002a-Requiem-Introit.krn",
 		"FILEBASE": "Ric1002a-Requiem-Introit"
 	},
@@ -3721,7 +3741,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "715",
+		"Note Count": "1216",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002b-Requiem-Kyrie.krn",
 		"FILEBASE": "Ric1002b-Requiem-Kyrie"
 	},
@@ -3740,7 +3760,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1216",
+		"Note Count": "1845",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002c-Requiem-Gradual.krn",
 		"FILEBASE": "Ric1002c-Requiem-Gradual"
 	},
@@ -3759,7 +3779,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1845",
+		"Note Count": "713",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002d-Requiem-Offertory.krn",
 		"FILEBASE": "Ric1002d-Requiem-Offertory"
 	},
@@ -3778,7 +3798,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "713",
+		"Note Count": "475",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002e-Requiem-Sanctus.krn",
 		"FILEBASE": "Ric1002e-Requiem-Sanctus"
 	},
@@ -3797,7 +3817,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "475",
+		"Note Count": "616",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002f-Requiem-Agnus.krn",
 		"FILEBASE": "Ric1002f-Requiem-Agnus"
 	},
@@ -3816,7 +3836,7 @@
 		"First Source Date": "1532",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "616",
+		"Note Count": "715",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric1002g-Requiem-Communion.krn",
 		"FILEBASE": "Ric1002g-Requiem-Communion"
 	},
@@ -3834,7 +3854,7 @@
 		"First Source Date": "~1514",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "715",
+		"Note Count": "910",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2001-Sufficiebat.krn",
 		"FILEBASE": "Ric2001-Sufficiebat"
 	},
@@ -3853,7 +3873,7 @@
 		"First Source Date": "1556",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "910",
+		"Note Count": "564",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2002-Consolator_captivorum.krn",
 		"FILEBASE": "Ric2002-Consolator_captivorum"
 	},
@@ -3872,7 +3892,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "564",
+		"Note Count": "1551",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2003-Veni_sponsa_Christi.krn",
 		"FILEBASE": "Ric2003-Veni_sponsa_Christi"
 	},
@@ -3891,7 +3911,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1551",
+		"Note Count": "977",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2004-Emendemus_in_melius.krn",
 		"FILEBASE": "Ric2004-Emendemus_in_melius"
 	},
@@ -3913,7 +3933,7 @@
 		"First Source Date": "1519",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "977",
+		"Note Count": "1041",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2005-Miseremini_mei.krn",
 		"FILEBASE": "Ric2005-Miseremini_mei"
 	},
@@ -3931,7 +3951,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1041",
+		"Note Count": "1353",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2006-Philomena_praevia.krn",
 		"FILEBASE": "Ric2006-Philomena_praevia"
 	},
@@ -3949,7 +3969,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1353",
+		"Note Count": "1119",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2007-Cognoscimus_Domine.krn",
 		"FILEBASE": "Ric2007-Cognoscimus_Domine"
 	},
@@ -3967,7 +3987,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1119",
+		"Note Count": "2224",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2008-Christus_resurgens.krn",
 		"FILEBASE": "Ric2008-Christus_resurgens"
 	},
@@ -3985,7 +4005,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2224",
+		"Note Count": "937",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2009-Exaudiat_te_Dominus.krn",
 		"FILEBASE": "Ric2009-Exaudiat_te_Dominus"
 	},
@@ -4004,7 +4024,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "937",
+		"Note Count": "1599",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2010-Pater_noster.krn",
 		"FILEBASE": "Ric2010-Pater_noster"
 	},
@@ -4022,7 +4042,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1599",
+		"Note Count": "1336",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2011-Gloriosi_principes.krn",
 		"FILEBASE": "Ric2011-Gloriosi_principes"
 	},
@@ -4040,7 +4060,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "1336",
+		"Note Count": "1558",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2012-Jam_non_dicam.krn",
 		"FILEBASE": "Ric2012-Jam_non_dicam"
 	},
@@ -4058,7 +4078,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1558",
+		"Note Count": "1801",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2013-Quem_dicunt_homines.krn",
 		"FILEBASE": "Ric2013-Quem_dicunt_homines"
 	},
@@ -4078,7 +4098,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1801",
+		"Note Count": "1717",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2014-O_beata_infantia.krn",
 		"FILEBASE": "Ric2014-O_beata_infantia"
 	},
@@ -4099,7 +4119,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "1717",
+		"Note Count": "2041",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2016-Jerusalem_luge.krn",
 		"FILEBASE": "Ric2016-Jerusalem_luge"
 	},
@@ -4117,7 +4137,7 @@
 		"First Source Date": "~1535",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2041",
+		"Note Count": "1418",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2017-Ego_sum_qui_sum.krn",
 		"FILEBASE": "Ric2017-Ego_sum_qui_sum"
 	},
@@ -4135,7 +4155,7 @@
 		"First Source Date": "~1535",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1418",
+		"Note Count": "309",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2018-Homo_quidam.krn",
 		"FILEBASE": "Ric2018-Homo_quidam"
 	},
@@ -4153,7 +4173,7 @@
 		"First Source Date": "~1514",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "309",
+		"Note Count": "513",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3001-Damours_je_suis_desheritee.krn",
 		"FILEBASE": "Ric3001-Damours_je_suis_desheritee"
 	},
@@ -4171,7 +4191,7 @@
 		"First Source Date": "1523",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "513",
+		"Note Count": "462",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3002-Ne_vous_chaille_mon_cueur.krn",
 		"FILEBASE": "Ric3002-Ne_vous_chaille_mon_cueur"
 	},
@@ -4191,7 +4211,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "462",
+		"Note Count": "560",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3003-De_mon_triste_et_desplaisir.krn",
 		"FILEBASE": "Ric3003-De_mon_triste_et_desplaisir"
 	},
@@ -4209,7 +4229,7 @@
 		"First Source Date": "1533",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "560",
+		"Note Count": "1026",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3004-Sur_tous_regretz.krn",
 		"FILEBASE": "Ric3004-Sur_tous_regretz"
 	},
@@ -4228,7 +4248,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1026",
+		"Note Count": "726",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2001-Vox_in_rama.krn",
 		"FILEBASE": "Ser2001-Vox_in_rama"
 	},
@@ -4246,7 +4266,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "726",
+		"Note Count": "1178",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2002-Aspice_Domine.krn",
 		"FILEBASE": "Ser2002-Aspice_Domine"
 	},
@@ -4265,7 +4285,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1178",
+		"Note Count": "920",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2003-In_te_Domine_speravi.krn",
 		"FILEBASE": "Ser2003-In_te_Domine_speravi"
 	},
@@ -4284,7 +4304,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "920",
+		"Note Count": "1112",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2004-Impetum_inimicorum.krn",
 		"FILEBASE": "Ser2004-Impetum_inimicorum"
 	},
@@ -4302,7 +4322,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1112",
+		"Note Count": "698",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2007-Quosque_non_reverteris_pax.krn",
 		"FILEBASE": "Ser2007-Quosque_non_reverteris_pax"
 	},
@@ -4321,7 +4341,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "698",
+		"Note Count": "443",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser2008-Si_bona_suscepimus.krn",
 		"FILEBASE": "Ser2008-Si_bona_suscepimus"
 	},
@@ -4339,7 +4359,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "443",
+		"Note Count": "350",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3001-Hau_hau_hau_le_boys.krn",
 		"FILEBASE": "Ser3001-Hau_hau_hau_le_boys"
 	},
@@ -4357,7 +4377,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "350",
+		"Note Count": "203",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3002-Je_ne_fais_rien_que_requerir.krn",
 		"FILEBASE": "Ser3002-Je_ne_fais_rien_que_requerir"
 	},
@@ -4377,7 +4397,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "203",
+		"Note Count": "251",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3003-Languir_me_fais.krn",
 		"FILEBASE": "Ser3003-Languir_me_fais"
 	},
@@ -4397,7 +4417,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "251",
+		"Note Count": "552",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3004-Jouyssance_vous_donneray.krn",
 		"FILEBASE": "Ser3004-Jouyssance_vous_donneray"
 	},
@@ -4415,7 +4435,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "552",
+		"Note Count": "443",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3005-Secourez_moy_ma_dame.krn",
 		"FILEBASE": "Ser3005-Secourez_moy_ma_dame"
 	},
@@ -4434,7 +4454,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-2-12",
-		"Note Count": "443",
+		"Note Count": "365",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3006-Tant_que_vivray.krn",
 		"FILEBASE": "Ser3006-Tant_que_vivray"
 	},
@@ -4453,7 +4473,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "yes",
 		"Texted": "no",
-		"Note Count": "365",
+		"Note Count": "646",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2003-Tota_pulchra_es--Medici_Codex.krn",
 		"FILEBASE": "Sil2003-Tota_pulchra_es--Medici_Codex"
 	},
@@ -4472,7 +4492,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "646",
+		"Note Count": "512",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2004-Intonuit_de_celo_Dominus.krn",
 		"FILEBASE": "Sil2004-Intonuit_de_celo_Dominus"
 	},
@@ -4491,7 +4511,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "512",
+		"Note Count": "1283",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2005-In_illo_tempore.krn",
 		"FILEBASE": "Sil2005-In_illo_tempore"
 	},
@@ -4510,7 +4530,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1283",
+		"Note Count": "1742",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2006-Omnis_pulchritudo_Domini.krn",
 		"FILEBASE": "Sil2006-Omnis_pulchritudo_Domini"
 	},
@@ -4529,7 +4549,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1742",
+		"Note Count": "1755",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2007-Puer_natus_est.krn",
 		"FILEBASE": "Sil2007-Puer_natus_est"
 	},
@@ -4547,7 +4567,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1755",
+		"Note Count": "565",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2010-Ave_ancilla_trinitatis.krn",
 		"FILEBASE": "Sil2010-Ave_ancilla_trinitatis"
 	},
@@ -4566,7 +4586,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-15",
-		"Note Count": "565",
+		"Note Count": "1138",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2012-Virgo_carens_criminibus.krn",
 		"FILEBASE": "Sil2012-Virgo_carens_criminibus"
 	},
@@ -4586,7 +4606,7 @@
 		"Unique Source": "yes",
 		"Texted": "no",
 		"Date Added": "2024-3-9",
-		"Note Count": "1138",
+		"Note Count": "1178",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2015-Attendite_populi_de_longe--Bologna_Q20.krn",
 		"FILEBASE": "Sil2015-Attendite_populi_de_longe--Bologna_Q20"
 	},
@@ -4606,7 +4626,7 @@
 		"Unique Source": "yes",
 		"Texted": "no",
 		"Date Added": "2024-4-10",
-		"Note Count": "1178",
+		"Note Count": "1468",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2019-Inviolata_integra_et_casta_es--Bologna_Q20.krn",
 		"FILEBASE": "Sil2019-Inviolata_integra_et_casta_es--Bologna_Q20"
 	},
@@ -4627,7 +4647,7 @@
 		"First Source Date": "1527",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1468",
+		"Note Count": "713",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2021-Ave_regina_celorum_II.krn",
 		"FILEBASE": "Sil2021-Ave_regina_celorum_II"
 	},
@@ -4648,7 +4668,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-16",
-		"Note Count": "713",
+		"Note Count": "248",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Sil/Sil2025-O_virgo_benedicta.krn",
 		"FILEBASE": "Sil2025-O_virgo_benedicta"
 	},
@@ -4673,7 +4693,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2023-10-11",
-		"Note Count": "248",
+		"Note Count": "333",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0101-A_Subitanea_et_improvisa_morte--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0101-A_Subitanea_et_improvisa_morte--Zwickau_1676_1788"
 	},
@@ -4697,7 +4717,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-10-22",
-		"Note Count": "333",
+		"Note Count": "1398",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0102-Assumpta_est_Maria.krn",
 		"FILEBASE": "Snf0102-Assumpta_est_Maria"
 	},
@@ -4721,7 +4741,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-12-7",
-		"Note Count": "1398",
+		"Note Count": "769",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0105-Beati_omnes_qui_timent_Dominum_I.krn",
 		"FILEBASE": "Snf0105-Beati_omnes_qui_timent_Dominum_I"
 	},
@@ -4745,7 +4765,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-11-27",
-		"Note Count": "769",
+		"Note Count": "1787",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0106-Beati_omnes_qui_timent_Dominum_II.krn",
 		"FILEBASE": "Snf0106-Beati_omnes_qui_timent_Dominum_II"
 	},
@@ -4769,7 +4789,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-4-15",
-		"Note Count": "1787",
+		"Note Count": "368",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0107-Christe_qui_lux_es.krn",
 		"FILEBASE": "Snf0107-Christe_qui_lux_es"
 	},
@@ -4793,7 +4813,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-10-17",
-		"Note Count": "368",
+		"Note Count": "1120",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0109-Completi_sunt_dies_Mariae.krn",
 		"FILEBASE": "Snf0109-Completi_sunt_dies_Mariae"
 	},
@@ -4817,7 +4837,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2023-12-6",
-		"Note Count": "1120",
+		"Note Count": "620",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0110-Cum_aegrotasset_Job--Munich_16.krn",
 		"FILEBASE": "Snf0110-Cum_aegrotasset_Job--Munich_16"
 	},
@@ -4841,7 +4861,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-11-12",
-		"Note Count": "620",
+		"Note Count": "338",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0111-Da_pacem_Domine_I.krn",
 		"FILEBASE": "Snf0111-Da_pacem_Domine_I"
 	},
@@ -4866,7 +4886,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2023-10-28",
-		"Note Count": "338",
+		"Note Count": "491",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0112-De_profundis_clamavi_I--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0112-De_profundis_clamavi_I--Zwickau_1676_1788"
 	},
@@ -4890,7 +4910,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-4-13",
-		"Note Count": "491",
+		"Note Count": "1207",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0113-Descendi_in_hortum_nucum_I.krn",
 		"FILEBASE": "Snf0113-Descendi_in_hortum_nucum_I"
 	},
@@ -4914,7 +4934,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-14",
-		"Note Count": "1207",
+		"Note Count": "400",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0114-Deus_in_adiutorium_meum.krn",
 		"FILEBASE": "Snf0114-Deus_in_adiutorium_meum"
 	},
@@ -4938,7 +4958,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-10-29",
-		"Note Count": "400",
+		"Note Count": "1001",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0116-Dum_steteritis.krn",
 		"FILEBASE": "Snf0116-Dum_steteritis"
 	},
@@ -4962,7 +4982,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-10",
-		"Note Count": "1001",
+		"Note Count": "623",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0117-Ecce_concipies_et_paries_filium.krn",
 		"FILEBASE": "Snf0117-Ecce_concipies_et_paries_filium"
 	},
@@ -4986,7 +5006,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2023-11-12",
-		"Note Count": "623",
+		"Note Count": "507",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0118-Ecce_Maria_genuit_I--Regensburg_C120.krn",
 		"FILEBASE": "Snf0118-Ecce_Maria_genuit_I--Regensburg_C120"
 	},
@@ -5010,7 +5030,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-10-23",
-		"Note Count": "507",
+		"Note Count": "654",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0119-Ecce_Maria_genuit_II.krn",
 		"FILEBASE": "Snf0119-Ecce_Maria_genuit_II"
 	},
@@ -5035,7 +5055,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2023-11-18",
-		"Note Count": "654",
+		"Note Count": "1358",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0121-Egregie_Dei_martyr--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0121-Egregie_Dei_martyr--Zwickau_1676_1788"
 	},
@@ -5059,7 +5079,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-3-14",
-		"Note Count": "1358",
+		"Note Count": "556",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0123-Gaude_Dei_genitrix--Munich_12.krn",
 		"FILEBASE": "Snf0123-Gaude_Dei_genitrix--Munich_12"
 	},
@@ -5083,7 +5103,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2023-10-21",
-		"Note Count": "556",
+		"Note Count": "1108",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0124-Hic_accipiet_benedictionem--Regensburg_C120.krn",
 		"FILEBASE": "Snf0124-Hic_accipiet_benedictionem--Regensburg_C120"
 	},
@@ -5107,7 +5127,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-2-25",
-		"Note Count": "1108",
+		"Note Count": "667",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0227-Nativitas_tua_Dei_genitrix_virgo.krn",
 		"FILEBASE": "Snf0227-Nativitas_tua_Dei_genitrix_virgo"
 	},
@@ -5131,7 +5151,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-2",
-		"Note Count": "667",
+		"Note Count": "1280",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0228-Nesciens_mater_virgo_virum.krn",
 		"FILEBASE": "Snf0228-Nesciens_mater_virgo_virum"
 	},
@@ -5155,7 +5175,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-9",
-		"Note Count": "1280",
+		"Note Count": "825",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0229-Nisi_Dominus.krn",
 		"FILEBASE": "Snf0229-Nisi_Dominus"
 	},
@@ -5179,7 +5199,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-2-6",
-		"Note Count": "825",
+		"Note Count": "624",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0230-Non_moriar_sed_vivam.krn",
 		"FILEBASE": "Snf0230-Non_moriar_sed_vivam"
 	},
@@ -5203,7 +5223,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-11",
-		"Note Count": "624",
+		"Note Count": "1294",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0231-Nunc_Deus_ad_requiem--Stuttgart_36.krn",
 		"FILEBASE": "Snf0231-Nunc_Deus_ad_requiem--Stuttgart_36"
 	},
@@ -5227,7 +5247,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-10",
-		"Note Count": "1294",
+		"Note Count": "741",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0232-Nunc_dimittis_servum_tuum.krn",
 		"FILEBASE": "Snf0232-Nunc_dimittis_servum_tuum"
 	},
@@ -5251,7 +5271,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-3",
-		"Note Count": "741",
+		"Note Count": "942",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0233-O_bone_Jesu.krn",
 		"FILEBASE": "Snf0233-O_bone_Jesu"
 	},
@@ -5276,7 +5296,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-3-15",
-		"Note Count": "942",
+		"Note Count": "370",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0234-O_magnae_admirationis--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0234-O_magnae_admirationis--Zwickau_1676_1788"
 	},
@@ -5301,7 +5321,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-13",
-		"Note Count": "370",
+		"Note Count": "684",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0235-O_mundi_Domina--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0235-O_mundi_Domina--Zwickau_1676_1788"
 	},
@@ -5325,7 +5345,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-14",
-		"Note Count": "684",
+		"Note Count": "933",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0236-Pange_lingua_gloriosi_I--Regensburg_C120.krn",
 		"FILEBASE": "Snf0236-Pange_lingua_gloriosi_I--Regensburg_C120"
 	},
@@ -5349,7 +5369,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-25",
-		"Note Count": "933",
+		"Note Count": "1612",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0237-Pange_lingua_gloriosi_II--Sacrorum_hymnorum_liber_primus.krn",
 		"FILEBASE": "Snf0237-Pange_lingua_gloriosi_II--Sacrorum_hymnorum_liber_primus"
 	},
@@ -5374,7 +5394,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-4-9",
-		"Note Count": "1612",
+		"Note Count": "485",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0238-Pange_lingua_gloriosi_III--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0238-Pange_lingua_gloriosi_III--Zwickau_1676_1788"
 	},
@@ -5398,7 +5418,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-2-4",
-		"Note Count": "485",
+		"Note Count": "1592",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0239-Patris_sapientia_veritas_divina.krn",
 		"FILEBASE": "Snf0239-Patris_sapientia_veritas_divina"
 	},
@@ -5422,7 +5442,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-5-14",
-		"Note Count": "1592",
+		"Note Count": "440",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0242-Regina_caeli_laetare_Conscendit_iubilans--Regensburg_C120.krn",
 		"FILEBASE": "Snf0242-Regina_caeli_laetare_Conscendit_iubilans--Regensburg_C120"
 	},
@@ -5447,7 +5467,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-14",
-		"Note Count": "440",
+		"Note Count": "489",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0243-Rubum_quem_viderat_Moyses--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0243-Rubum_quem_viderat_Moyses--Zwickau_1676_1788"
 	},
@@ -5471,7 +5491,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-24",
-		"Note Count": "489",
+		"Note Count": "367",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0247-Sancta_et_immaculata_virginitas--Regensburg_C120.krn",
 		"FILEBASE": "Snf0247-Sancta_et_immaculata_virginitas--Regensburg_C120"
 	},
@@ -5496,7 +5516,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-3-2",
-		"Note Count": "367",
+		"Note Count": "447",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0248-Sancta_et_immaculata_virginitas_II--Zwickau_1676_1788.krn",
 		"FILEBASE": "Snf0248-Sancta_et_immaculata_virginitas_II--Zwickau_1676_1788"
 	},
@@ -5520,7 +5540,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-2-2",
-		"Note Count": "447",
+		"Note Count": "1111",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0249-Sancta_Maria_Virgo_intercede_I.krn",
 		"FILEBASE": "Snf0249-Sancta_Maria_Virgo_intercede_I"
 	},
@@ -5544,7 +5564,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-4",
-		"Note Count": "1111",
+		"Note Count": "274",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0250-Sum_tuus_in_vita_I.krn",
 		"FILEBASE": "Snf0250-Sum_tuus_in_vita_I"
 	},
@@ -5568,7 +5588,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-1-31",
-		"Note Count": "274",
+		"Note Count": "522",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0251-Suscepimus_Deus_misericordiam_tuam.krn",
 		"FILEBASE": "Snf0251-Suscepimus_Deus_misericordiam_tuam"
 	},
@@ -5592,7 +5612,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-2-1",
-		"Note Count": "522",
+		"Note Count": "1466",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0252-Tristia_fata_boni.krn",
 		"FILEBASE": "Snf0252-Tristia_fata_boni"
 	},
@@ -5616,7 +5636,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2024-3-4",
-		"Note Count": "1466",
+		"Note Count": "586",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0254-Virga_Jesse_floruit.krn",
 		"FILEBASE": "Snf0254-Virga_Jesse_floruit"
 	},
@@ -5640,7 +5660,7 @@
 		"Unique Source": "yes",
 		"Texted": "yes",
 		"Date Added": "2024-2-25",
-		"Note Count": "586",
+		"Note Count": "161",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0255-Virgo_prudentissima_quo_progrederis--Munich_10.krn",
 		"FILEBASE": "Snf0255-Virgo_prudentissima_quo_progrederis--Munich_10"
 	},
@@ -5664,7 +5684,7 @@
 		"Unique Source": "yes",
 		"Texted": "no",
 		"Date Added": "2024-2-24",
-		"Note Count": "161",
+		"Note Count": "569",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Snf/Snf0256-Fragment--Herdringen_9820.krn",
 		"FILEBASE": "Snf0256-Fragment--Herdringen_9820"
 	},
@@ -5682,7 +5702,7 @@
 		"First Source Date": "~1514",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "569",
+		"Note Count": "1127",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/The/The2001-Verbum_bonum_et_suave.krn",
 		"FILEBASE": "The2001-Verbum_bonum_et_suave"
 	},
@@ -5701,7 +5721,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-29",
-		"Note Count": "1127",
+		"Note Count": "917",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/The/The2002-Clare_sanctorum.krn",
 		"FILEBASE": "The2002-Clare_sanctorum"
 	},
@@ -5719,7 +5739,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "917",
+		"Note Count": "726",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2001-Sancta_Maria_succurre_miseris.krn",
 		"FILEBASE": "Ver2001-Sancta_Maria_succurre_miseris"
 	},
@@ -5738,7 +5758,7 @@
 		"First Source Date": "1523",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "726",
+		"Note Count": "572",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2004-Ave_sanctissima_Maria.krn",
 		"FILEBASE": "Ver2004-Ave_sanctissima_Maria"
 	},
@@ -5757,7 +5777,7 @@
 		"First Source Date": "1526",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "572",
+		"Note Count": "1542",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2007-Tanto_tempore.krn",
 		"FILEBASE": "Ver2007-Tanto_tempore"
 	},
@@ -5775,7 +5795,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1542",
+		"Note Count": "1083",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2008-O_dulcissime_Domine_Jesu_Christe.krn",
 		"FILEBASE": "Ver2008-O_dulcissime_Domine_Jesu_Christe"
 	},
@@ -5793,7 +5813,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1083",
+		"Note Count": "1378",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2010-Gaudeamus_omnes_in_Domino.krn",
 		"FILEBASE": "Ver2010-Gaudeamus_omnes_in_Domino"
 	},
@@ -5811,7 +5831,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1378",
+		"Note Count": "1444",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2011-Victime_pascali_laudes.krn",
 		"FILEBASE": "Ver2011-Victime_pascali_laudes"
 	},
@@ -5829,7 +5849,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1444",
+		"Note Count": "870",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2012-Ad_Dominum_cum_tribularer.krn",
 		"FILEBASE": "Ver2012-Ad_Dominum_cum_tribularer"
 	},
@@ -5847,7 +5867,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "870",
+		"Note Count": "1157",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2013-Hesterna_die.krn",
 		"FILEBASE": "Ver2013-Hesterna_die"
 	},
@@ -5865,7 +5885,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1157",
+		"Note Count": "1133",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2014-Si_bona_suscepimus.krn",
 		"FILEBASE": "Ver2014-Si_bona_suscepimus"
 	},
@@ -5883,7 +5903,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1133",
+		"Note Count": "816",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2015-In_te_Domine_speravi.krn",
 		"FILEBASE": "Ver2015-In_te_Domine_speravi"
 	},
@@ -5901,7 +5921,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "816",
+		"Note Count": "912",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2016-Ave_gratia_plena.krn",
 		"FILEBASE": "Ver2016-Ave_gratia_plena"
 	},
@@ -5919,7 +5939,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "912",
+		"Note Count": "1115",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2017-Recordare_Domine.krn",
 		"FILEBASE": "Ver2017-Recordare_Domine"
 	},
@@ -5937,7 +5957,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1115",
+		"Note Count": "1378",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2018-Sancta_Maria_virgo_virginum.krn",
 		"FILEBASE": "Ver2018-Sancta_Maria_virgo_virginum"
 	},
@@ -5956,7 +5976,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-3-9",
-		"Note Count": "1378",
+		"Note Count": "961",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2019-Congregati_sunt.krn",
 		"FILEBASE": "Ver2019-Congregati_sunt"
 	},
@@ -5978,7 +5998,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-8",
-		"Note Count": "961",
+		"Note Count": "455",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2020-Salve_Barbara.krn",
 		"FILEBASE": "Ver2020-Salve_Barbara"
 	},
@@ -5998,7 +6018,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-1-25",
-		"Note Count": "455",
+		"Note Count": "300",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3001-Vita_della_mia_vita.krn",
 		"FILEBASE": "Ver3001-Vita_della_mia_vita"
 	},
@@ -6018,7 +6038,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-1-23",
-		"Note Count": "300",
+		"Note Count": "420",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3002-Amor_se_dhor_in_hor_la_doglia.krn",
 		"FILEBASE": "Ver3002-Amor_se_dhor_in_hor_la_doglia"
 	},
@@ -6038,7 +6058,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-4",
-		"Note Count": "420",
+		"Note Count": "708",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3003-Se_mai_provasti_donna.krn",
 		"FILEBASE": "Ver3003-Se_mai_provasti_donna"
 	},
@@ -6056,7 +6076,7 @@
 		"First Source Date": "~1527",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "708",
+		"Note Count": "603",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3004-Con_suave_parlar.krn",
 		"FILEBASE": "Ver3004-Con_suave_parlar"
 	},
@@ -6076,7 +6096,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-1",
-		"Note Count": "603",
+		"Note Count": "1042",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3005-Occhi_infelici_cha_mirar.krn",
 		"FILEBASE": "Ver3005-Occhi_infelici_cha_mirar"
 	},
@@ -6096,7 +6116,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-2",
-		"Note Count": "1042",
+		"Note Count": "885",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3006-Leggiadre_rime_et_voi.krn",
 		"FILEBASE": "Ver3006-Leggiadre_rime_et_voi"
 	},
@@ -6116,7 +6136,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-1",
-		"Note Count": "885",
+		"Note Count": "477",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3007-Passer_mio_solitario.krn",
 		"FILEBASE": "Ver3007-Passer_mio_solitario"
 	},
@@ -6134,7 +6154,7 @@
 		"First Source Date": "~1527",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "477",
+		"Note Count": "765",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3009-Madonna_quando_io_vodo_cantar.krn",
 		"FILEBASE": "Ver3009-Madonna_quando_io_vodo_cantar"
 	},
@@ -6154,7 +6174,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-16",
-		"Note Count": "765",
+		"Note Count": "797",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3010-Quanthai_lassil_morir.krn",
 		"FILEBASE": "Ver3010-Quanthai_lassil_morir"
 	},
@@ -6172,7 +6192,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "797",
+		"Note Count": "480",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3011-Quando_nascesti_amore.krn",
 		"FILEBASE": "Ver3011-Quando_nascesti_amore"
 	},
@@ -6190,7 +6210,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "480",
+		"Note Count": "316",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3012-Con_langelico_riso.krn",
 		"FILEBASE": "Ver3012-Con_langelico_riso"
 	},
@@ -6208,7 +6228,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "316",
+		"Note Count": "507",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3013-Donna_ligiadra_e_bella.krn",
 		"FILEBASE": "Ver3013-Donna_ligiadra_e_bella"
 	},
@@ -6226,7 +6246,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "507",
+		"Note Count": "500",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3014-Amor_io_sento_lalma.krn",
 		"FILEBASE": "Ver3014-Amor_io_sento_lalma"
 	},
@@ -6244,7 +6264,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "500",
+		"Note Count": "524",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3015-I_vostri_acuti_dardi.krn",
 		"FILEBASE": "Ver3015-I_vostri_acuti_dardi"
 	},
@@ -6262,7 +6282,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "524",
+		"Note Count": "434",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3016-Quanto_sia_lieto_il_giorno.krn",
 		"FILEBASE": "Ver3016-Quanto_sia_lieto_il_giorno"
 	},
@@ -6280,7 +6300,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "434",
+		"Note Count": "475",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3017-Con_lacrim_et_sospir.krn",
 		"FILEBASE": "Ver3017-Con_lacrim_et_sospir"
 	},
@@ -6298,7 +6318,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "475",
+		"Note Count": "351",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3018-Madonna_per_voi_ardo.krn",
 		"FILEBASE": "Ver3018-Madonna_per_voi_ardo"
 	},
@@ -6316,7 +6336,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "351",
+		"Note Count": "453",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3019-Piove_da_li_occhi.krn",
 		"FILEBASE": "Ver3019-Piove_da_li_occhi"
 	},
@@ -6334,7 +6354,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "453",
+		"Note Count": "620",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3020-La_bella_donna.krn",
 		"FILEBASE": "Ver3020-La_bella_donna"
 	},
@@ -6352,7 +6372,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "620",
+		"Note Count": "633",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3021-Afflicti_spiriti_mei.krn",
 		"FILEBASE": "Ver3021-Afflicti_spiriti_mei"
 	},
@@ -6370,7 +6390,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "633",
+		"Note Count": "511",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3022-Donna_che_sete.krn",
 		"FILEBASE": "Ver3022-Donna_che_sete"
 	},
@@ -6388,7 +6408,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "511",
+		"Note Count": "631",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3023-Lasso_che_se_creduto.krn",
 		"FILEBASE": "Ver3023-Lasso_che_se_creduto"
 	},
@@ -6406,7 +6426,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "631",
+		"Note Count": "798",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3024-Madonna_qual_certeca.krn",
 		"FILEBASE": "Ver3024-Madonna_qual_certeca"
 	},
@@ -6424,7 +6444,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "798",
+		"Note Count": "761",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3025-Altro_non_e_el_mio_amor.krn",
 		"FILEBASE": "Ver3025-Altro_non_e_el_mio_amor"
 	},
@@ -6442,7 +6462,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "761",
+		"Note Count": "1072",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3026-Madonna_io_vamo_et_taccio.krn",
 		"FILEBASE": "Ver3026-Madonna_io_vamo_et_taccio"
 	},
@@ -6460,7 +6480,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1072",
+		"Note Count": "708",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3027-Italia_mia_benchel_parlar.krn",
 		"FILEBASE": "Ver3027-Italia_mia_benchel_parlar"
 	},
@@ -6478,7 +6498,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "708",
+		"Note Count": "593",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3028-Donna_se_fera_stella.krn",
 		"FILEBASE": "Ver3028-Donna_se_fera_stella"
 	},
@@ -6496,7 +6516,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "593",
+		"Note Count": "786",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3029-Pur_troppo_donna.krn",
 		"FILEBASE": "Ver3029-Pur_troppo_donna"
 	},
@@ -6514,7 +6534,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "786",
+		"Note Count": "464",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3030-Ultimi_mei_sospiri.krn",
 		"FILEBASE": "Ver3030-Ultimi_mei_sospiri"
 	},
@@ -6532,7 +6552,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "464",
+		"Note Count": "545",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3031-O_dolce_nocte.krn",
 		"FILEBASE": "Ver3031-O_dolce_nocte"
 	},
@@ -6550,7 +6570,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-1-29",
-		"Note Count": "545",
+		"Note Count": "628",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3032-Non_po_far_morte.krn",
 		"FILEBASE": "Ver3032-Non_po_far_morte"
 	},
@@ -6569,7 +6589,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-4-29",
-		"Note Count": "628",
+		"Note Count": "1230",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver3033-Liete_madonna.krn",
 		"FILEBASE": "Ver3033-Liete_madonna"
 	},
@@ -6590,7 +6610,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1230",
+		"Note Count": "2000",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Vin/Vin1001b-Missa_Stabat_mater-Gloria.krn",
 		"FILEBASE": "Vin1001b-Missa_Stabat_mater-Gloria",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -6612,7 +6632,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "2000",
+		"Note Count": "1640",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Vin/Vin1001a-Missa_Stabat_mater-Kyrie.krn",
 		"FILEBASE": "Vin1001a-Missa_Stabat_mater-Kyrie",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -6634,7 +6654,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1640",
+		"Note Count": "1237",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Vin/Vin1001e-Missa_Stabat_mater-Agnus.krn",
 		"FILEBASE": "Vin1001e-Missa_Stabat_mater-Agnus",
 		"Internal Notes": "Digitized microfilm, presumably to be replaced at a later date by a scan of the print itself."
@@ -6655,7 +6675,7 @@
 		"First Source Date": "1517",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "1237",
+		"Note Count": "2397",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1001a-Missa_Mente_tota-Kyrie.krn",
 		"FILEBASE": "Wil1001a-Missa_Mente_tota-Kyrie"
 	},
@@ -6675,7 +6695,7 @@
 		"First Source Date": "1517",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "2397",
+		"Note Count": "876",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1001b-Missa_Mente_tota-Gloria.krn",
 		"FILEBASE": "Wil1001b-Missa_Mente_tota-Gloria"
 	},
@@ -6694,7 +6714,7 @@
 		"First Source Date": "1536",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "876",
+		"Note Count": "915",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1002a-Missa_Laudate_Deum-Kyrie.krn",
 		"FILEBASE": "Wil1002a-Missa_Laudate_Deum-Kyrie"
 	},
@@ -6713,7 +6733,7 @@
 		"First Source Date": "1536",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "915",
+		"Note Count": "1494",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie.krn",
 		"FILEBASE": "Wil1003a-Missa_Queramus_cum_pastoribus-Kyrie"
 	},
@@ -6732,7 +6752,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1494",
+		"Note Count": "1903",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2002-Saluto_te.krn",
 		"FILEBASE": "Wil2002-Saluto_te"
 	},
@@ -6751,7 +6771,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1903",
+		"Note Count": "1402",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2005-Veni_sancte_spiritus.krn",
 		"FILEBASE": "Wil2005-Veni_sancte_spiritus"
 	},
@@ -6770,7 +6790,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1402",
+		"Note Count": "977",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2006-Beatus_Johannes_apostolus.krn",
 		"FILEBASE": "Wil2006-Beatus_Johannes_apostolus"
 	},
@@ -6789,7 +6809,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "977",
+		"Note Count": "598",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2007-Intercessio_quesumus_Domine.krn",
 		"FILEBASE": "Wil2007-Intercessio_quesumus_Domine"
 	},
@@ -6808,7 +6828,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "598",
+		"Note Count": "1497",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2008-O_gemma_clarissima.krn",
 		"FILEBASE": "Wil2008-O_gemma_clarissima"
 	},
@@ -6829,7 +6849,7 @@
 		"First Source Date": "1518",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1497",
+		"Note Count": "2262",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2009-Dominus_regit_me.krn",
 		"FILEBASE": "Wil2009-Dominus_regit_me"
 	},
@@ -6852,7 +6872,7 @@
 		"First Source Date": "1519",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "2262",
+		"Note Count": "797",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2011-Verbum_bonum.krn",
 		"FILEBASE": "Wil2011-Verbum_bonum"
 	},
@@ -6873,7 +6893,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "797",
+		"Note Count": "953",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2016-Beata_dei_genitrix.krn",
 		"FILEBASE": "Wil2016-Beata_dei_genitrix"
 	},
@@ -6891,7 +6911,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "953",
+		"Note Count": "770",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2017-Omnipotens_sempiterne_Deus.krn",
 		"FILEBASE": "Wil2017-Omnipotens_sempiterne_Deus"
 	},
@@ -6909,7 +6929,7 @@
 		"First Source Date": "1522",
 		"Unique Source": "no",
 		"Texted": "yes",
-		"Note Count": "770",
+		"Note Count": "1554",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2019-In_tua_patientia.krn",
 		"FILEBASE": "Wil2019-In_tua_patientia"
 	},
@@ -6927,7 +6947,7 @@
 		"First Source Date": "~1525",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1554",
+		"Note Count": "946",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2020-Congratulamini_mihi_omnes.krn",
 		"FILEBASE": "Wil2020-Congratulamini_mihi_omnes"
 	},
@@ -6945,7 +6965,7 @@
 		"First Source Date": "1529",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "946",
+		"Note Count": "795",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2023-Pater_noster.krn",
 		"FILEBASE": "Wil2023-Pater_noster"
 	},
@@ -6963,7 +6983,7 @@
 		"First Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "795",
+		"Note Count": "1104",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2026-Salva_nos_ab_excidio.krn",
 		"FILEBASE": "Wil2026-Salva_nos_ab_excidio"
 	},
@@ -6981,7 +7001,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1104",
+		"Note Count": "752",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2034-Domine_Jesu_Christe_fili_dei.krn",
 		"FILEBASE": "Wil2034-Domine_Jesu_Christe_fili_dei"
 	},
@@ -6999,7 +7019,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "752",
+		"Note Count": "924",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2037-O_salutaris_hostia.krn",
 		"FILEBASE": "Wil2037-O_salutaris_hostia"
 	},
@@ -7017,7 +7037,7 @@
 		"First Source Date": "~1531",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "924",
+		"Note Count": "813",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2041-Beata_viscera_Maria_virginis.krn",
 		"FILEBASE": "Wil2041-Beata_viscera_Maria_virginis"
 	},
@@ -7037,7 +7057,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-5-13",
-		"Note Count": "813",
+		"Note Count": "887",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2043-Magnum_hereditatis_mysterium.krn",
 		"FILEBASE": "Wil2043-Magnum_hereditatis_mysterium"
 	},
@@ -7056,7 +7076,7 @@
 		"First Source Date": "~1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "887",
+		"Note Count": "725",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2044-Mirabile_misterium.krn",
 		"FILEBASE": "Wil2044-Mirabile_misterium"
 	},
@@ -7075,7 +7095,7 @@
 		"First Source Date": "~1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "725",
+		"Note Count": "1125",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2046-Videns_Dominus.krn",
 		"FILEBASE": "Wil2046-Videns_Dominus"
 	},
@@ -7094,7 +7114,7 @@
 		"First Source Date": "~1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1125",
+		"Note Count": "969",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2050-Ave_regina_celorum.krn",
 		"FILEBASE": "Wil2050-Ave_regina_celorum"
 	},
@@ -7113,7 +7133,7 @@
 		"First Source Date": "~1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "969",
+		"Note Count": "1111",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2052-Patefacte_sunt.krn",
 		"FILEBASE": "Wil2052-Patefacte_sunt"
 	},
@@ -7132,7 +7152,7 @@
 		"First Source Date": "~1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1111",
+		"Note Count": "1105",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2056-Salve_crux_sancta.krn",
 		"FILEBASE": "Wil2056-Salve_crux_sancta"
 	},
@@ -7151,7 +7171,7 @@
 		"First Source Date": "~1534",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "1105",
+		"Note Count": "1410",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2057-O_magnum_misterium.krn",
 		"FILEBASE": "Wil2057-O_magnum_misterium"
 	},
@@ -7170,7 +7190,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-30",
-		"Note Count": "1410",
+		"Note Count": "1938",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2060-Beatus_Stephanus.krn",
 		"FILEBASE": "Wil2060-Beatus_Stephanus"
 	},
@@ -7189,7 +7209,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-20",
-		"Note Count": "1938",
+		"Note Count": "3186",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2062-Precatus_est_Moyses.krn",
 		"FILEBASE": "Wil2062-Precatus_est_Moyses"
 	},
@@ -7208,7 +7228,7 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Date Added": "2023-10-14",
-		"Note Count": "3186",
+		"Note Count": "491",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2099-Pater_noster.krn",
 		"FILEBASE": "Wil2099-Pater_noster"
 	},
@@ -7227,7 +7247,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "491",
+		"Note Count": "311",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3001-Petite_Camusette.krn",
 		"FILEBASE": "Wil3001-Petite_Camusette"
 	},
@@ -7246,7 +7266,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "311",
+		"Note Count": "265",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3002-Irons_nous_tous_jours_coucher.krn",
 		"FILEBASE": "Wil3002-Irons_nous_tous_jours_coucher"
 	},
@@ -7265,7 +7285,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "265",
+		"Note Count": "295",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3003-Mon_petit_cueur.krn",
 		"FILEBASE": "Wil3003-Mon_petit_cueur"
 	},
@@ -7284,7 +7304,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "295",
+		"Note Count": "262",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3004-Jayme_bien_mon_amy_I.krn",
 		"FILEBASE": "Wil3004-Jayme_bien_mon_amy_I"
 	},
@@ -7303,7 +7323,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "262",
+		"Note Count": "585",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3005-Jayme_bien_mon_amy_II.krn",
 		"FILEBASE": "Wil3005-Jayme_bien_mon_amy_II"
 	},
@@ -7322,7 +7342,7 @@
 		"First Source Date": "1520",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "585",
+		"Note Count": "841",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3006-Mon_mary_ma_diffamee.krn",
 		"FILEBASE": "Wil3006-Mon_mary_ma_diffamee"
 	},
@@ -7341,7 +7361,7 @@
 		"First Source Date": "~1521",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "841",
+		"Note Count": "211",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3007-Je_lay_aymee_bien_sept_ans_et_demy.krn",
 		"FILEBASE": "Wil3007-Je_lay_aymee_bien_sept_ans_et_demy"
 	},
@@ -7359,7 +7379,7 @@
 		"First Source Date": "~1527",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "211",
+		"Note Count": "757",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3009-Si_je_ne_voy_mamie.krn",
 		"FILEBASE": "Wil3009-Si_je_ne_voy_mamie"
 	},
@@ -7379,7 +7399,7 @@
 		"First Source Date": "1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "757",
+		"Note Count": "693",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3010-A_laventure_lentrepris.krn",
 		"FILEBASE": "Wil3010-A_laventure_lentrepris"
 	},
@@ -7400,7 +7420,7 @@
 		"First Source Date": "1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "693",
+		"Note Count": "563",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3011-Mon_cueur_mon_corps.krn",
 		"FILEBASE": "Wil3011-Mon_cueur_mon_corps"
 	},
@@ -7420,7 +7440,7 @@
 		"First Source Date": "1530",
 		"Unique Source": "no",
 		"Texted": "no",
-		"Note Count": "563",
+		"Note Count": "506",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3012-Dessus_le_marche_darras.krn",
 		"FILEBASE": "Wil3012-Dessus_le_marche_darras"
 	},
@@ -7440,7 +7460,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-6",
-		"Note Count": "506",
+		"Note Count": "327",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3022-Allons_allons_gay.krn",
 		"FILEBASE": "Wil3022-Allons_allons_gay"
 	},
@@ -7460,7 +7480,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-9",
-		"Note Count": "327",
+		"Note Count": "413",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3023-Or_suis_je_bien_au_pire.krn",
 		"FILEBASE": "Wil3023-Or_suis_je_bien_au_pire"
 	},
@@ -7480,7 +7500,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-26",
-		"Note Count": "413",
+		"Note Count": "446",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3024-Jayme_par_amours.krn",
 		"FILEBASE": "Wil3024-Jayme_par_amours"
 	},
@@ -7500,7 +7520,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-27",
-		"Note Count": "446",
+		"Note Count": "470",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3025-Qui_la_dira_la_peine_de_mon_cueur.krn",
 		"FILEBASE": "Wil3025-Qui_la_dira_la_peine_de_mon_cueur"
 	},
@@ -7520,7 +7540,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-3",
-		"Note Count": "470",
+		"Note Count": "678",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3026-La_rouse_du_moys_de_may.krn",
 		"FILEBASE": "Wil3026-La_rouse_du_moys_de_may"
 	},
@@ -7540,7 +7560,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-12-6",
-		"Note Count": "678",
+		"Note Count": "322",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3027-Dessus_nostre_treille_de_may.krn",
 		"FILEBASE": "Wil3027-Dessus_nostre_treille_de_may"
 	},
@@ -7560,7 +7580,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-28",
-		"Note Count": "322",
+		"Note Count": "561",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3028-Qui_est_celuy_qui_a_dit_mal_du_con.krn",
 		"FILEBASE": "Wil3028-Qui_est_celuy_qui_a_dit_mal_du_con"
 	},
@@ -7580,7 +7600,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-5",
-		"Note Count": "561",
+		"Note Count": "621",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3029-Sire_dondieu.krn",
 		"FILEBASE": "Wil3029-Sire_dondieu"
 	},
@@ -7600,7 +7620,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-30",
-		"Note Count": "621",
+		"Note Count": "500",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3030-Jan_Jan_quant_tu_ten_iras.krn",
 		"FILEBASE": "Wil3030-Jan_Jan_quant_tu_ten_iras"
 	},
@@ -7620,7 +7640,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-2",
-		"Note Count": "500",
+		"Note Count": "400",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3031-Je_ne_scaroys_chanter_ne_rire.krn",
 		"FILEBASE": "Wil3031-Je_ne_scaroys_chanter_ne_rire"
 	},
@@ -7640,7 +7660,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-9-29",
-		"Note Count": "400",
+		"Note Count": "627",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3032-Qui_veult_aymer_il_fault_estre_joyeulx.krn",
 		"FILEBASE": "Wil3032-Qui_veult_aymer_il_fault_estre_joyeulx"
 	},
@@ -7660,7 +7680,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-1",
-		"Note Count": "627",
+		"Note Count": "394",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3033-Baises_moy_tant_tant_I.krn",
 		"FILEBASE": "Wil3033-Baises_moy_tant_tant_I"
 	},
@@ -7680,7 +7700,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-12-7",
-		"Note Count": "394",
+		"Note Count": "380",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3034-La_jeusne_dame_va_au_molin.krn",
 		"FILEBASE": "Wil3034-La_jeusne_dame_va_au_molin"
 	},
@@ -7700,7 +7720,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-12",
-		"Note Count": "380",
+		"Note Count": "629",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3035-Quant_le_joly_Robinet.krn",
 		"FILEBASE": "Wil3035-Quant_le_joly_Robinet"
 	},
@@ -7720,7 +7740,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-12-5",
-		"Note Count": "629",
+		"Note Count": "573",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3036-Baises_moy_tant_tant_II.krn",
 		"FILEBASE": "Wil3036-Baises_moy_tant_tant_II"
 	},
@@ -7740,7 +7760,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-10",
-		"Note Count": "573",
+		"Note Count": "481",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3037-Vous_marchez_du_bout_du_pie.krn",
 		"FILEBASE": "Wil3037-Vous_marchez_du_bout_du_pie"
 	},
@@ -7760,7 +7780,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-12",
-		"Note Count": "481",
+		"Note Count": "478",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3038-Perot_viendras_tu_aux_nopces.krn",
 		"FILEBASE": "Wil3038-Perot_viendras_tu_aux_nopces"
 	},
@@ -7780,7 +7800,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-10-15",
-		"Note Count": "478",
+		"Note Count": "799",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3039-Na_tu_point_veu_la_viscontine.krn",
 		"FILEBASE": "Wil3039-Na_tu_point_veu_la_viscontine"
 	},
@@ -7800,7 +7820,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2023-11-27",
-		"Note Count": "799",
+		"Note Count": "565",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil3040-Jay_veu_le_regnart_II.krn",
 		"FILEBASE": "Wil3040-Jay_veu_le_regnart_II"
 	},
