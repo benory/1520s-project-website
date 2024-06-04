@@ -4103,6 +4103,25 @@
 		"FILEBASE": "Ric2014-O_beata_infantia"
 	},
 	{
+		"ID": "Ric2015",
+		"Composer": "Richafort, Jean",
+		"Title": "Salve regina",
+		"Genre": "motet",
+		"Voices": "4-5",
+		"Modern Editions": "Merritt_1962d; Elzinga_1999a",
+		"First Source": "D-Mbs Mus. MS 34",
+		"RISM or CC Source Sigla": "MunBS 34",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2062/",
+		"First Source Exact Date": "~1530",
+		"First Source Date": "~1530",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-6-4",
+		"Note Count": "2462",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2015-Salve_regina.krn",
+		"FILEBASE": "Ric2015-Salve_regina"
+	},
+	{
 		"ID": "Ric2016",
 		"Composer": "Richafort, Jean",
 		"Title": "Jerusalem luge",
