@@ -12,6 +12,17 @@
 		"Page Numbers": "77–78"
 	},
 	{
+		"ID": "Allaire_1977",
+		"Composer/Author": "Claudin de Sermisy",
+		"Name of Volume": "Opera Omnia: Missa I",
+		"Editor": "Gaston Allaire",
+		"Volume": "5",
+		"Series": "Corpus Mensurabilis Musicae 52",
+		"Location": "Neuhausen-Stuttgart",
+		"Publisher": "American Institute of Musicology and Hänssler Verlag",
+		"Publication Year": "1977"
+	},
+	{
 		"ID": "Anglés_1962",
 		"Composer/Author": "Cristóbal de Morales",
 		"Name of Volume": "Missarum Liber Secundus",
@@ -89,6 +100,7 @@
 	},
 	{
 		"ID": "Cazeaux_1974a",
+		"Composer/Author": "Claudin de Sermisy",
 		"Name of Volume": "Opera Omnia: Chansons I",
 		"Editor": "Isabelle Cazeaux",
 		"Volume": "3",
@@ -98,6 +110,7 @@
 	},
 	{
 		"ID": "Cazeaux_1974b",
+		"Composer/Author": "Claudin de Sermisy",
 		"Name of Volume": "Opera Omnia: Chansons II",
 		"Editor": "Isabelle Cazeaux",
 		"Volume": "4",
