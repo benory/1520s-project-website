@@ -70,8 +70,15 @@ function fillInCensusData(data) {
 	}
 
 	let roundworkElement = document.querySelector("#roundwork-count");
+	console.warn(roundworkCount);
+	console.warn(workCount);
 	if (roundworkElement) {
-		roundworkElement.innerHTML = roundworkCount;
+		if (roundworkCount !== workCount){
+			roundworkElement.innerHTML = `more than ${roundworkCount}`;
+		}
+		else if (roundworkCount == workCount){
+			roundworkElement.innerHTML = `${roundworkCount}`;
+		}
 	}
 
 	let massElement = document.querySelector("#mass-count");
