@@ -5878,6 +5878,25 @@
 		"FILEBASE": "Ver2008-O_dulcissime_Domine_Jesu_Christe"
 	},
 	{
+		"ID": "Ver2009",
+		"Composer": "Verdelot, Philippe",
+		"Title": "Deus in nomine tuo",
+		"Genre": "motet",
+		"Voices": "3-6",
+		"Modern Editions": "Slim_1972; Bragard_1973",
+		"First Source": "US-Cn Case MS VM1578.M91",
+		"RISM or CC Source Sigla": "ChiN M91",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1691/",
+		"First Source Exact Date": "1529",
+		"First Source Date": "1529",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-6-4",
+		"Note Count": "1987",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ver/Ver2009-Deus_in_nomine_tuo.krn",
+		"FILEBASE": "Ver2009-Deus_in_nomine_tuo"
+	},
+	{
 		"ID": "Ver2010",
 		"Composer": "Verdelot, Philippe",
 		"Title": "Gaudeamus omnes in Domino",
