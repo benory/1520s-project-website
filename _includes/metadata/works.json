@@ -665,6 +665,25 @@
 		"Internal Notes": "two different options for image viewer"
 	},
 	{
+		"ID": "Bau2002",
+		"Composer": "Bauldeweyn, Noel",
+		"Title": "Exaltabo te Deus meus",
+		"Genre": "motet",
+		"Voices": "4",
+		"Modern Editions": "Sherr_1992",
+		"First Source": "Motetti de la corona, libro quarto (Fossombrone: Ottaviano Petrucci)",
+		"RISM or CC Source Sigla": "1519|3",
+		"RISM Source Link": "https://rism.online/sources/993103908",
+		"First Source Exact Date": "1519/10/31",
+		"First Source Date": "1519",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-6-4",
+		"Note Count": "2522",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bau/Bau2002-Exaltabo_te_Deus_meus.krn",
+		"FILEBASE": "Bau2002-Exaltabo_te_Deus_meus"
+	},
+	{
 		"ID": "Bau2003",
 		"Composer": "Bauldeweyn, Noel",
 		"Title": "Quam pulchra es",
