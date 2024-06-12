@@ -85,6 +85,10 @@ function displayWorkInfo(id) {
 		return;
 	}
 
+	if (displayWorkInfoCheck === true){
+		return;
+	}
+
 	const tbody = document.querySelector("#work-info tbody");
 
 	if (!id) {
@@ -325,6 +329,7 @@ function displayWorkInfo(id) {
     row.appendChild(rightColumnCell);
 
     tbody.appendChild(row);
+    displayWorkInfoCheck = true;
 	//element.innerHTML = output;
 }
 
@@ -435,8 +440,6 @@ function displayNoAccidentals() {
 	window.localStorage.AccidentalState = "hide";
 	displayWork();
 }
-
-
 
 //////////////////////////////
 //
