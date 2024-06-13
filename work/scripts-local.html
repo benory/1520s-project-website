@@ -85,12 +85,6 @@ function displayWorkInfo(id) {
 		return;
 	}
 
-	if (displayWorkInfoCheck === true){
-		return;
-	}
-
-	const tbody = document.querySelector("#work-info tbody");
-
 	if (!id) {
 		id = DATA1520.workid;
 	}
@@ -113,7 +107,7 @@ function displayWorkInfo(id) {
 	let title = workinfo.Title;
 	let subtitle = workinfo["Subtitle"];
 	let titleoutput = "";
-	console.warn("subtitle", subtitle);
+	console.warn("Subtitle:", subtitle);
 	if (title) {
 		if (subtitle){
 			titleoutput = `<div class="work-item"><b>Title:</b> ${title}, ${subtitle}</div>`;
@@ -245,7 +239,7 @@ function displayWorkInfo(id) {
 	let editionsourceURL = workinfo["Edition Source URL"];
 	let editionsourceoutput = "";
 
-	console.warn(editionsource);
+	console.warn("Edition source:", editionsource);
 
 	if (editionsource && !editionsource.includes('_')){
 		if (editionsource.match(";")){
@@ -303,6 +297,14 @@ function displayWorkInfo(id) {
 	}
 	githuboutput += `<b>View on:</b> <a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a> | <a target='_blank' href='${github}'>Github</a>`;
 
+	let tbody = document.querySelector("tbody#work-info-body");
+	if (!tbody){
+		console.warn("Cannot find tbody#work-info-body");
+		return;
+	}
+	if (!tbody.innerHTML.match(/^\s*$/)){
+		return;
+	}
     const row = document.createElement("tr");
 
 	const leftColumnCell = document.createElement("td");
@@ -327,10 +329,7 @@ function displayWorkInfo(id) {
     	${githuboutput}
         `;
     row.appendChild(rightColumnCell);
-
     tbody.appendChild(row);
-    displayWorkInfoCheck = true;
-	//element.innerHTML = output;
 }
 
 

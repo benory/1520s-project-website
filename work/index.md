@@ -16,8 +16,7 @@ vim:    ts=3:nowrap
            <th class="right-column">Right Column</th>
        </tr>
    </thead>
-   <tbody>
-   </tbody>
+   <tbody id="work-info-body"></tbody>
 </table>
 
 <br>
