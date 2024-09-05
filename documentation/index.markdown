@@ -45,6 +45,7 @@ order: 2
 	- [Source metadata](#source-metadata)
 	- [Website](#website)
 		- [JavaScript tools](#javascript-tools)
+	- [Data server](#data-server)
 - [Download project data](#download-data)
 
 
@@ -131,11 +132,11 @@ Users can see scores without editorial accidentals by toggling on/off the sugges
 
 <b>Composer codes and numbering</b><br>
 
-<ul>Each piece is assigned a three-letter composer code <a href="https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards#Composer_codes"> in close coordination with the Josquin Research Project</a>. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre, typically moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert. <br><br>
+<ul>Each piece is assigned a three-letter composer code <a href="https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards#Composer_codes" target="_blank"> in close coordination with the Josquin Research Project</a>. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre, typically moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert. <br><br>
 
 If a piece, such as a mass, consists of multiple parts, the filename for each section additionally assumes a letter. For instance, Wil1001a is the Kyrie from Willaert's <i>Missa Mente tota</i>; Wil1001b is the Gloria from the same mass.<br><br>
 
-Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/"><i>New Senfl Edition</i></a>. In this case, Snf0101 is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, Snf0238 is no. 38 in the overall series and is in the second volume.</ul>
+Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"><i>New Senfl Edition</i></a>. In this case, Snf0101 is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, Snf0238 is no. 38 in the overall series and is in the second volume.</ul>
 
 <b>Work name</b><br>
 
@@ -160,7 +161,7 @@ Where this project collaborates with existing editions, the first two digits ref
 	<li>Information about canonic material is given</li>
 </div><br>
 
-Scores are then exported to MusicXML files and converted using the <a href="https://extras.humdrum.org/man/xml2hum/">musicxml2hum command</a> in the Humdrum Extras toolkit.
+Scores are then exported to MusicXML files and converted using the <a href="https://extras.humdrum.org/man/xml2hum/" target="_blank">musicxml2hum command</a> in the Humdrum Extras toolkit.
 
 </div>
 
@@ -197,47 +198,56 @@ Scores coming from published editions have additional categories of information:
 
 ### Source metadata {#source-metadata}
 
-<div id="paragraph">Metadata for each piece includes the (probable) earliest source in the piece's transmission and its dating. External links are provided to <a href="https://www.diamm.ac.uk/">DIAMM</a> or <a href="https://rism.online/">RISM</a> as appropriate. Names of manuscript sources on the browse page and on individual work pages follow RISM nomenclature. </div>
+<div id="paragraph">Metadata for each piece includes the (probable) earliest source in the piece's transmission and its dating. External links are provided to <a href="https://www.diamm.ac.uk/" target="_blank">DIAMM</a> or <a href="https://rism.online/" target="_blank">RISM</a> as appropriate. Names of manuscript sources on the browse page and on individual work pages follow RISM nomenclature. </div>
 
 <br>
 
 ### Website {#website}
 
 <div id="paragraph">Files for the website for The 1520s Project are hosted on github at <br>
-	<ul><a href="https://github.com/benory/1520s-project-website">https://github.com/benory/1520s-project-website</a></ul>
+	<ul><a href="https://github.com/benory/1520s-project-website" target="_blank">https://github.com/benory/1520s-project-website</a></ul>
 </div>
-<div id="paragraph">The website is served through <a href="https://pages.github.com">Github pages</a> and uses the markdown language <a href="https://jekyllrb.com">Jekyll</a>.</div><br>
+<div id="paragraph">The website is served through <a href="https://pages.github.com" target="_blank">Github pages</a> and uses the markdown language <a href="https://jekyllrb.com" target="_blank">Jekyll</a>.</div><br>
 
 #### JavaScript tools {#javascript-tools}
 
 <div id="paragraph">
 	<ul><b>Humdrum Notation Plugin</b>
-		<ul>The <a href="https://plugin.humdrum.org/">Humdrum Notation Plugin</a> is an interface that simplifies working with the JavaScript toolkit version of Verovio.</ul>
+		<ul>The <a href="https://plugin.humdrum.org/" target="_blank">Humdrum Notation Plugin</a> is an interface that simplifies working with the JavaScript toolkit version of Verovio.</ul>
 	</ul>
 	<ul><b>Vega-Lite</b>
-		<ul><a href="https://vega.github.io/vega-lite/">Vega-Lite</a> is a visualization grammar for statistical graphics, which functions similar to ggplot. The 1520s Project uses Vega-Lite for histograms and bar charts.</ul>
+		<ul><a href="https://vega.github.io/vega-lite/" target="_blank">Vega-Lite</a> is a visualization grammar for statistical graphics, which functions similar to ggplot. The 1520s Project uses Vega-Lite for histograms and bar charts.</ul>
 	</ul>
 	<ul><b>Verovio</b>
-		<ul><a href="https://www.verovio.org/index.xhtml">Verovio</a> is an SVG music notation renderer developed primarily by Laurent Pugin. The humlib library is embedded within Verovio and is used to process and analyze the Humdrum scores for the website as well as convert the scores into MEI for rendering in Verovio.</ul>
+		<ul><a href="https://www.verovio.org/index.xhtml" target="_blank">Verovio</a> is an SVG music notation renderer developed primarily by Laurent Pugin. The humlib library is embedded within Verovio and is used to process and analyze the Humdrum scores for the website as well as convert the scores into MEI for rendering in Verovio.</ul>
 	</ul>
 	<ul><b>Verovio Humdrum Viewer</b>
-		<ul><a href="https://verovio.humdrum.org/">Verovio Humdrum Viewer</a> is an online Humdrum file notation editor and renderer created by Craig Sapp. It is used for the final preparation of the scores and for various analyses not yet implemented on the project website.</ul>
+		<ul><a href="https://verovio.humdrum.org/" target="_blank">Verovio Humdrum Viewer</a> is an online Humdrum file notation editor and renderer created by Craig Sapp. It is used for the final preparation of the scores and for various analyses not yet implemented on the project website.</ul>
 	</ul>
 </div>
 <br>
 
+## Data server {#data-server}
+
+<div id="paragraph"> Once the scores have been uploaded to Github, the musical data is processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. This server supports The 1520s Project, the Josquin Research Project, and the Tasso in Music Project.</div><br>
+
+<div id="paragraph"><a href="https://data.1520s-project.org" target="_blank"><img src="/images/data_server.png" alt="data server"></a></div><br>
+
+<div id="paragraph"> The server creates a digitial score, converts the data into a wide range of formats, renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All of the files created by the data server (including more than are shown on the website) are available for download and use.</div>
+<br>
+
 ## Download project data {#download-data}
 
-<a href="https://github.com/benory/1520s-project-scores">The project's Github repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:
+<a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's Github repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:
 
     git clone https://github.com/benory/1520s-project-scores.git
 
 Metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as dispaly additional information about scores on the work pages, is available:
 <div id="paragraph"> 
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json">Works</a></li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json">Composers</a></li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json">Modern Editions</a></li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json">Statistics</a></li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a></li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a></li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a></li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a></li>
 </div>
 
 <br>
