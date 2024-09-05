@@ -229,11 +229,11 @@ Scores coming from published editions have additional categories of information:
 
 ## Data server {#data-server}
 
-<div id="paragraph"> Once the scores have been uploaded to Github, the musical data is processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. This server supports The 1520s Project, the Josquin Research Project, and the Tasso in Music Project.</div><br>
+<div id="paragraph"> Once the scores have been uploaded to Github, the musical data is processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. This server supports The 1520s Project, the Josquin Research Project, and the <a href="http://tassomusic.org" target="_blank">Tasso in Music Project</a>.</div><br>
 
 <div id="paragraph"><a href="https://data.1520s-project.org" target="_blank"><img src="/images/data_server.png" alt="data server"></a></div><br>
 
-<div id="paragraph"> The server creates a digitial score, converts the data into a wide range of formats, renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All of the files created by the data server (including more than are shown on the website) are available for download and use.</div>
+<div id="paragraph"> The server creates a digitial score, converts this data into a wide range of score formats, renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All of the files created by the data server (including more than are shown on the website) are freely available for download and use.</div>
 <br>
 
 ## Download project data {#download-data}
