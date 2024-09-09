@@ -204,10 +204,10 @@ Scores coming from published editions have additional categories of information:
 
 ### Website {#website}
 
-<div id="paragraph">Files for the website for The 1520s Project are hosted on github at <br>
+<div id="paragraph">Files for the website for The 1520s Project are hosted on GitHub at <br>
 	<ul><a href="https://github.com/benory/1520s-project-website" target="_blank">https://github.com/benory/1520s-project-website</a></ul>
 </div>
-<div id="paragraph">The website is served through <a href="https://pages.github.com" target="_blank">Github pages</a> and uses the markdown language <a href="https://jekyllrb.com" target="_blank">Jekyll</a>.</div><br>
+<div id="paragraph">The website is served through <a href="https://pages.github.com" target="_blank">GitHub pages</a> and uses the markdown language <a href="https://jekyllrb.com" target="_blank">Jekyll</a>.</div><br>
 
 #### JavaScript tools {#javascript-tools}
 
@@ -229,25 +229,25 @@ Scores coming from published editions have additional categories of information:
 
 ## Data server {#data-server}
 
-<div id="paragraph"> Once the scores have been uploaded to Github, the musical data is processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. This server supports The 1520s Project, the Josquin Research Project, and the <a href="http://tassomusic.org" target="_blank">Tasso in Music Project</a>.</div><br>
+<div id="paragraph"> Scores uploaded to GitHub are processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. The data server supports The 1520s Project, the Josquin Research Project, and the <a href="http://tassomusic.org" target="_blank">Tasso in Music Project</a>. Below is a screenshot of The 1520s Project's data server API webpage:<br><br><a href="https://data.1520s-project.org" target="_blank"><img src="/images/data_server.png" alt="data server"></a></div><br>
 
-<div id="paragraph"><a href="https://data.1520s-project.org" target="_blank"><img src="/images/data_server.png" alt="data server"></a></div><br>
-
-<div id="paragraph"> The server creates a digitial score, converts this data into a wide range of score formats, renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All of the files created by the data server (including more than are shown on the website) are freely available for download and use.</div>
+<div id="paragraph"> The data server creates alternate digital score formats and analyses that are inconvenient to process within the web browser. The Humdrum files in The 1520s Project's score repository are first copied onto the server. The server then generates derivative digital scores that exactly match the Humdrum files (MusicXML, MEI, MIDI, MP3, etc), renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All files created by the data server (including more than are shown on this website) are freely available for download and use. Users also have the ability to incorporate this project's data on their own websites using Verovio, and to embed generated analyses within their own projects.</div>
 <br>
 
 ## Download project data {#download-data}
 
-<a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's Github repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:
+<a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:
 
     git clone https://github.com/benory/1520s-project-scores.git
 
-Metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as dispaly additional information about scores on the work pages, is available:
+<b>Note:</b> the Sibelius and MusicXML files on the project's GitHub repository are pre-corrected version of the Humdrum files (the data server provides post-corrected MusicXML files that are derived from the corrected Humdrum files).
+
+Metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:
 <div id="paragraph"> 
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a></li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a></li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a></li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a></li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the works/mass sections used for searches on the browse page)</li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a> (metadata and links for composers used on the browse and work pages)</li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a> (information about modern editions for works used on the workpages)</li>
+	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a> (number of works by year, compiled for use on the browse page)</li>
 </div>
 
 <br>
