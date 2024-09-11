@@ -139,11 +139,22 @@
 		"Publication Year": "2021"
 	},
 	{
-		"ID": "Edwards_2022",
+		"ID": "Edwards_2022a",
 		"Composer/Author": "Ludwig Senfl",
 		"Name of Volume": "New Senfl Edition: Motets for Four Voices (N-V)",
 		"Editor": "Scott Lee Edwards, Stefan Gasch, and Sonja Tröster",
 		"Volume": "2",
+		"Series": "Denkmäler der Tonkunst in Österreich 163",
+		"Location": "Vienna",
+		"Publisher": "Hollitzer",
+		"Publication Year": "2022"
+	},
+	{
+		"ID": "Edwards_2022b",
+		"Composer/Author": "Ludwig Senfl",
+		"Name of Volume": "New Senfl Edition: Motets for Five Voices",
+		"Editor": "Scott Lee Edwards, Stefan Gasch, and Sonja Tröster",
+		"Volume": "3",
 		"Series": "Denkmäler der Tonkunst in Österreich 163",
 		"Location": "Vienna",
 		"Publisher": "Hollitzer",
