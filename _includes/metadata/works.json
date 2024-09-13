@@ -1,6 +1,6 @@
 [
 	{
-		"ID": "Ano2001",
+		"ID": "Any2001",
 		"Composer": "Anonymous",
 		"Title": "Nigra sum",
 		"Genre": "motet",
@@ -18,11 +18,11 @@
 		"Unique Source": "no",
 		"Texted": "yes",
 		"Note Count": "499",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2001-Nigra_sum.krn",
-		"FILEBASE": "Ano2001-Nigra_sum"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2001-Nigra_sum.krn",
+		"FILEBASE": "Any2001-Nigra_sum"
 	},
 	{
-		"ID": "Ano2002",
+		"ID": "Any2002",
 		"Composer": "Anonymous",
 		"Title": "Laudate Dominum omnes gentes",
 		"Genre": "motet",
@@ -37,11 +37,11 @@
 		"Unique Source": "yes",
 		"Texted": "no",
 		"Note Count": "665",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II.krn",
-		"FILEBASE": "Ano2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II.krn",
+		"FILEBASE": "Any2002-Laudate_Dominum_omnes_gentes--Motetti_novi_libro_II"
 	},
 	{
-		"ID": "Ano2003",
+		"ID": "Any2003",
 		"Composer": "Anonymous",
 		"Title": "Domine qui habitabit",
 		"Genre": "motet",
@@ -58,11 +58,11 @@
 		"Unique Source": "yes",
 		"Texted": "no",
 		"Note Count": "1590",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni.krn",
-		"FILEBASE": "Ano2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni.krn",
+		"FILEBASE": "Any2003-Domine_quis_habitabit--Motetti_novi_e_chanzoni"
 	},
 	{
-		"ID": "Ano2004",
+		"ID": "Any2004",
 		"Composer": "Anonymous",
 		"Title": "Congratulamini mihi omnes",
 		"Genre": "motet",
@@ -82,11 +82,11 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Note Count": "1221",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2004-Congratulamini_mihi_omnes.krn",
-		"FILEBASE": "Ano2004-Congratulamini_mihi_omnes"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2004-Congratulamini_mihi_omnes.krn",
+		"FILEBASE": "Any2004-Congratulamini_mihi_omnes"
 	},
 	{
-		"ID": "Ano2005",
+		"ID": "Any2005",
 		"Composer": "Anonymous",
 		"Title": "Ecce tu pulcra es",
 		"Genre": "motet",
@@ -102,11 +102,11 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Note Count": "1380",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2005-Ecce_tu_pulcra_es.krn",
-		"FILEBASE": "Ano2005-Ecce_tu_pulcra_es"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2005-Ecce_tu_pulcra_es.krn",
+		"FILEBASE": "Any2005-Ecce_tu_pulcra_es"
 	},
 	{
-		"ID": "Ano2006",
+		"ID": "Any2006",
 		"Composer": "Anonymous",
 		"Title": "Dies est laetitiae",
 		"Genre": "motet",
@@ -128,11 +128,11 @@
 		"Texted": "yes",
 		"Date Added": "2023-11-13",
 		"Note Count": "395",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2006-Dies_est_laetitiae.krn",
-		"FILEBASE": "Ano2006-Dies_est_laetitiae"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2006-Dies_est_laetitiae.krn",
+		"FILEBASE": "Any2006-Dies_est_laetitiae"
 	},
 	{
-		"ID": "Ano2007",
+		"ID": "Any2007",
 		"Composer": "Anonymous",
 		"Title": "Ave, sanctissima Maria",
 		"Genre": "motet",
@@ -154,11 +154,11 @@
 		"Texted": "yes",
 		"Date Added": "2024-4-17",
 		"Note Count": "1533",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2007-Ave_sanctissima_Maria--Regensburg_C120.krn",
-		"FILEBASE": "Ano2007-Ave_sanctissima_Maria--Regensburg_C120"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2007-Ave_sanctissima_Maria--Regensburg_C120.krn",
+		"FILEBASE": "Any2007-Ave_sanctissima_Maria--Regensburg_C120"
 	},
 	{
-		"ID": "Ano2008",
+		"ID": "Any2008",
 		"Composer": "Anonymous",
 		"Title": "Collegerunt pontifices",
 		"Genre": "motet",
@@ -181,11 +181,11 @@
 		"Texted": "yes",
 		"Date Added": "2024-4-19",
 		"Note Count": "1616",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2008-Collegerunt_pontifices.krn",
-		"FILEBASE": "Ano2008-Collegerunt_pontifices"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2008-Collegerunt_pontifices.krn",
+		"FILEBASE": "Any2008-Collegerunt_pontifices"
 	},
 	{
-		"ID": "Ano2009",
+		"ID": "Any2009",
 		"Composer": "Anonymous",
 		"Title": "Deus in nomine tuo",
 		"Genre": "motet",
@@ -203,11 +203,11 @@
 		"Texted": "yes",
 		"Date Added": "2024-4-20",
 		"Note Count": "1246",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2009-Deus_in_nomine_tuo.krn",
-		"FILEBASE": "Ano2009-Deus_in_nomine_tuo"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2009-Deus_in_nomine_tuo.krn",
+		"FILEBASE": "Any2009-Deus_in_nomine_tuo"
 	},
 	{
-		"ID": "Ano2010",
+		"ID": "Any2010",
 		"Composer": "Anonymous",
 		"Title": "Joseph sancte",
 		"Genre": "motet",
@@ -224,11 +224,11 @@
 		"Texted": "no",
 		"Date Added": "2024-4-28",
 		"Note Count": "436",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2010-Joseph_sancte.krn",
-		"FILEBASE": "Ano2010-Joseph_sancte"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2010-Joseph_sancte.krn",
+		"FILEBASE": "Any2010-Joseph_sancte"
 	},
 	{
-		"ID": "Ano2011",
+		"ID": "Any2011",
 		"Composer": "Anonymous",
 		"Title": "Da pacem, Domine",
 		"Genre": "motet",
@@ -245,11 +245,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-21",
 		"Note Count": "543",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2011-Da_pacem_Domine--Newberry_Partbooks.krn",
-		"FILEBASE": "Ano2011-Da_pacem_Domine--Newberry_Partbooks"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2011-Da_pacem_Domine--Newberry_Partbooks.krn",
+		"FILEBASE": "Any2011-Da_pacem_Domine--Newberry_Partbooks"
 	},
 	{
-		"ID": "Ano2013",
+		"ID": "Any2013",
 		"Composer": "Anonymous",
 		"Title": "Nil maius superi vident",
 		"Genre": "motet",
@@ -266,11 +266,11 @@
 		"Texted": "no",
 		"Date Added": "2024-6-3",
 		"Note Count": "881",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2013-Nil_maius_superi_vident.krn",
-		"FILEBASE": "Ano2013-Nil_maius_superi_vident"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2013-Nil_maius_superi_vident.krn",
+		"FILEBASE": "Any2013-Nil_maius_superi_vident"
 	},
 	{
-		"ID": "Ano2014",
+		"ID": "Any2014",
 		"Composer": "Anonymous",
 		"Title": "O Domine Jesu Christe",
 		"Genre": "motet",
@@ -287,11 +287,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-30",
 		"Note Count": "821",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano2014-O_Domine_Jesu_Christe--Newberry_Partbooks.krn",
-		"FILEBASE": "Ano2014-O_Domine_Jesu_Christe--Newberry_Partbooks"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any2014-O_Domine_Jesu_Christe--Newberry_Partbooks.krn",
+		"FILEBASE": "Any2014-O_Domine_Jesu_Christe--Newberry_Partbooks"
 	},
 	{
-		"ID": "Ano3001",
+		"ID": "Any3001",
 		"Composer": "Anonymous",
 		"Title": "Pavane III",
 		"Genre": "secular work",
@@ -312,11 +312,11 @@
 		"Texted": "no",
 		"Date Added": "2024-2-28",
 		"Note Count": "564",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3001-Pavane_III--Second_livre_contenant_trois_Gaillardes.krn",
-		"FILEBASE": "Ano3001-Pavane_III--Second_livre_contenant_trois_Gaillardes"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3001-Pavane_III--Second_livre_contenant_trois_Gaillardes.krn",
+		"FILEBASE": "Any3001-Pavane_III--Second_livre_contenant_trois_Gaillardes"
 	},
 	{
-		"ID": "Ano3002",
+		"ID": "Any3002",
 		"Composer": "Anonymous",
 		"Title": "Ce que mon cueur pense",
 		"Genre": "secular work",
@@ -336,11 +336,11 @@
 		"Texted": "yes",
 		"Date Added": "2024-4-20",
 		"Note Count": "820",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3002-Ce_que_mon_cueur_pense.krn",
-		"FILEBASE": "Ano3002-Ce_que_mon_cueur_pense"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3002-Ce_que_mon_cueur_pense.krn",
+		"FILEBASE": "Any3002-Ce_que_mon_cueur_pense"
 	},
 	{
-		"ID": "Ano3003",
+		"ID": "Any3003",
 		"Composer": "Anonymous",
 		"Title": "Si suave è l'inghanno",
 		"Genre": "secular work",
@@ -357,11 +357,11 @@
 		"Texted": "no",
 		"Date Added": "2024-4-29",
 		"Note Count": "407",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3003-Si_suave_e_linghanno.krn",
-		"FILEBASE": "Ano3003-Si_suave_e_linghanno"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3003-Si_suave_e_linghanno.krn",
+		"FILEBASE": "Any3003-Si_suave_e_linghanno"
 	},
 	{
-		"ID": "Ano3004",
+		"ID": "Any3004",
 		"Composer": "Anonymous",
 		"Title": "Chi non fa prova, amore",
 		"Genre": "secular work",
@@ -378,11 +378,11 @@
 		"Texted": "no",
 		"Date Added": "2024-4-29",
 		"Note Count": "516",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3004-Chi_non_fa_prove_amore--Newberry_Partbooks.krn",
-		"FILEBASE": "Ano3004-Chi_non_fa_prove_amore--Newberry_Partbooks"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3004-Chi_non_fa_prove_amore--Newberry_Partbooks.krn",
+		"FILEBASE": "Any3004-Chi_non_fa_prove_amore--Newberry_Partbooks"
 	},
 	{
-		"ID": "Ano3005",
+		"ID": "Any3005",
 		"Composer": "Anonymous",
 		"Title": "Se ben' li occhi",
 		"Genre": "secular work",
@@ -399,11 +399,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-6",
 		"Note Count": "520",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3005-Se_ben_li_occhi--Newberry_Partbooks.krn",
-		"FILEBASE": "Ano3005-Se_ben_li_occhi--Newberry_Partbooks"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3005-Se_ben_li_occhi--Newberry_Partbooks.krn",
+		"FILEBASE": "Any3005-Se_ben_li_occhi--Newberry_Partbooks"
 	},
 	{
-		"ID": "Ano3006",
+		"ID": "Any3006",
 		"Composer": "Anonymous",
 		"Title": "Cortese alma gentile",
 		"Genre": "secular work",
@@ -420,11 +420,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-7",
 		"Note Count": "611",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3006-Cortese_alma_gentile--Newberry_Partbooks.krn",
-		"FILEBASE": "Ano3006-Cortese_alma_gentile--Newberry_Partbooks"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3006-Cortese_alma_gentile--Newberry_Partbooks.krn",
+		"FILEBASE": "Any3006-Cortese_alma_gentile--Newberry_Partbooks"
 	},
 	{
-		"ID": "Ano3007",
+		"ID": "Any3007",
 		"Composer": "Anonymous",
 		"Title": "Quanta dolceça, amore",
 		"Genre": "secular work",
@@ -441,11 +441,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-9",
 		"Note Count": "327",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3007-Quanta_dolceca_amore--Newberry_Partbooks.krn",
-		"FILEBASE": "Ano3007-Quanta_dolceca_amore--Newberry_Partbooks"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3007-Quanta_dolceca_amore--Newberry_Partbooks.krn",
+		"FILEBASE": "Any3007-Quanta_dolceca_amore--Newberry_Partbooks"
 	},
 	{
-		"ID": "Ano3008",
+		"ID": "Any3008",
 		"Composer": "Anonymous",
 		"Title": "Ognun si duol' d'amore",
 		"Genre": "secular work",
@@ -462,11 +462,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-10",
 		"Note Count": "411",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3008-Ognun_si_duol_damore.krn",
-		"FILEBASE": "Ano3008-Ognun_si_duol_damore"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3008-Ognun_si_duol_damore.krn",
+		"FILEBASE": "Any3008-Ognun_si_duol_damore"
 	},
 	{
-		"ID": "Ano3009",
+		"ID": "Any3009",
 		"Composer": "Anonymous",
 		"Title": "Dentr'al mio cor'",
 		"Genre": "secular work",
@@ -483,11 +483,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-10",
 		"Note Count": "561",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3009-Dentral_mio_cor.krn",
-		"FILEBASE": "Ano3009-Dentral_mio_cor"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3009-Dentral_mio_cor.krn",
+		"FILEBASE": "Any3009-Dentral_mio_cor"
 	},
 	{
-		"ID": "Ano3010",
+		"ID": "Any3010",
 		"Composer": "Anonymous",
 		"Title": "La rousé du moys de may II",
 		"Genre": "secular work",
@@ -507,11 +507,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-21",
 		"Note Count": "723",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3010-La_rouse_du_moys_de_may_II.krn",
-		"FILEBASE": "Ano3010-La_rouse_du_moys_de_may_II"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3010-La_rouse_du_moys_de_may_II.krn",
+		"FILEBASE": "Any3010-La_rouse_du_moys_de_may_II"
 	},
 	{
-		"ID": "Ano3011",
+		"ID": "Any3011",
 		"Composer": "Anonymous",
 		"Title": "Vray Dieu d'amours",
 		"Genre": "secular work",
@@ -530,11 +530,11 @@
 		"Texted": "no",
 		"Date Added": "2024-5-21",
 		"Note Count": "755",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3011-Vray_Dieu_damours.krn",
-		"FILEBASE": "Ano3011-Vray_Dieu_damours"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3011-Vray_Dieu_damours.krn",
+		"FILEBASE": "Any3011-Vray_Dieu_damours"
 	},
 	{
-		"ID": "Ano3012",
+		"ID": "Any3012",
 		"Composer": "Anonymous",
 		"Title": "Le berger et la bergere",
 		"Genre": "secular work",
@@ -554,8 +554,8 @@
 		"Texted": "no",
 		"Date Added": "2024-5-21",
 		"Note Count": "574",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ano/Ano3012-Le_berger_et_la_bergere.krn",
-		"FILEBASE": "Ano3012-Le_berger_et_la_bergere"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3012-Le_berger_et_la_bergere.krn",
+		"FILEBASE": "Any3012-Le_berger_et_la_bergere"
 	},
 	{
 		"ID": "Arc3013",
