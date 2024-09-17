@@ -65,8 +65,27 @@ Benjamin Ory, Project Director ([benjaminory@gmail.com](mailto:benjaminory@gmail
 
 Craig Sapp, Technical Director ([craigsapp@stanford.edu](mailto:craigsapp@stanford.edu))
 
-<!--- <br>
+<br>
 
 ### Advisory Board
 
-<div id="paragraph">Philippe Canguilhem (Université de Tours)</div> --->
+<div id="paragraph">Philippe Canguilhem (Centre d'études supérieures de la Renaissance, Université de Tours)<br>
+Antonio Chemotti (Katholieke Universiteit Leuven) <br>
+Julie Cumming (McGill University) <br>
+Karen Desmond (Maynooth University) <br>
+Richard Freedman (Haverford College) <br>
+Ichiro Fujinaga (McGill University) <br>
+Sean Gallagher (New England Conservatory) <br>
+Nori Jacoby (Cornell University) <br>
+Marcin Konik (Fryderyk Chopin Institute, Warsaw) <br> 
+Laurent Pugin (Universität Bern/Répertoire International des Sources Musicales)<br>
+Jamie Reuland (Princeton University) <br>
+Emiliano Ricciardi (University of Massachusetts, Amherst) <br>
+Joshua Rifkin (Boston University, emeritus) <br>
+Katelijne Schiltz (Universität Regensburg) <br>
+Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université de Tours) <br>
+Giovanni Zanovello (Indiana University) <br>
+Emily Zazulia (University of California, Berkeley)
+
+
+</div>
