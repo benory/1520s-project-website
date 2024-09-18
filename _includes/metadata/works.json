@@ -4593,6 +4593,27 @@
 		"FILEBASE": "Ser1001b-Missa_Philomena-Gloria"
 	},
 	{
+		"ID": "Ser1001c",
+		"Composer": "Sermisy, Claudin de",
+		"Title": "Missa Philomena",
+		"Subtitle": "Credo",
+		"Genre": "mass",
+		"Voices": "2-4",
+		"Original Voices": "2-4",
+		"Modern Editions": "Allaire_1978",
+		"First Source": "Primus liber viginti missarum (Paris: Pierre Attaingnant)",
+		"RISM or CC Source Sigla": "1532|1",
+		"RISM Source Link": "https://rism.online/sources/993104065",
+		"First Source Exact Date": "1532",
+		"First Source Date": "1532",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-9-18",
+		"Note Count": "2089",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser1001c-Missa_Philomena-Credo.krn",
+		"FILEBASE": "Ser1001c-Missa_Philomena-Credo"
+	},
+	{
 		"ID": "Ser1001e",
 		"Composer": "Sermisy, Claudin de",
 		"Title": "Missa Philomena",
