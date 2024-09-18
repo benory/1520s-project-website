@@ -87,5 +87,4 @@ Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université d
 Giovanni Zanovello (Indiana University) <br>
 Emily Zazulia (University of California, Berkeley)
 
-
 </div>

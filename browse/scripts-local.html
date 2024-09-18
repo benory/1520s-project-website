@@ -135,7 +135,7 @@ function getTitle(entry) {
 	}
 	if (!subtitle.match(/^\s*$/)) {
 		if (!title.match(/^\s*$/)) {
-			return `${title}, ${subtitle}`;
+			return `${title}, <i>${subtitle}</i>`;
 		} else {
 			return `${subtitle}`;
 		}
