@@ -164,7 +164,7 @@ function displayMostRecent(metadata) {
 function prepareTitle(entry) {
 	let output = entry.Title;
 	if (entry.Subtitle) {
-		output += ` <i>${entry.Subtitle}</i>`;
+		output += `, <i>${entry.Subtitle}</i>`;
 	}
 	let id = entry.ID || "";
 	if (id) {
