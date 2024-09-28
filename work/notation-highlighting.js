@@ -1,7 +1,6 @@
 
 // vim: ts=3:nowrap
 
-let TIMEMAP   = {};
 let QEVENTS   = [];
 let LASTTIME  = -1;
 let REFRESH   = null;
@@ -9,28 +8,32 @@ let REFRESH   = null;
 
 //////////////////////////////
 //
-// InitializeTimemap --
+// initializeTimemap -- Sets up a repeating interval using setInterval() 
+//     to regularly check the current playback time (audio.currentTime) 
+//     and map it to corresponding note events in the notation using the 
+//     checkTimeMap() function.
+//
+//     The REFRESH interval checks every 20ms if the audio is paused, and
+//     if not, it updates the note highlighting based on the currentTime
+//     of the audio.
 //
 
-function InitializeTimemap() {
+function initializeTimemap() {
 	if (typeof REFRESH === "undefined") {
 		console.warn("REFRESH is undefined");
 		return;
 	}
 	let increment = 20;
+console.warn("AUDIO", DATA1520.audio);
+console.warn("CURRENT TIME IS ", DATA1520.audio.currentTime);
 	REFRESH = setInterval(function() {
-		if (AUDIO && AUDIO.paused) {
+		if (DATA1520.audio && DATA1520.audio.paused) {
 			clearInterval(REFRESH);
 			return;
 		}
-		if (!AUDIO) {
-			clearInterval(REFRESH);
-			return;
-		}
-		let currenttime = AUDIO.currentTime;
-		//console.warn(TIMEMAP);
-		//console.warn(ID1520s);
-		CheckTimeMap(TIMEMAP[ID1520s], QEVENTS, currenttime, increment/1000.0 * 2);
+		let currentTime = DATA1520.audio.currentTime;
+		//console.warn(DATA1520.workid);
+		checkTimeMap(DATA1520.timemap, QEVENTS, currentTime, increment/1000.0 * 2);
 	}, increment);
 }
 
@@ -38,104 +41,10 @@ function InitializeTimemap() {
 
 //////////////////////////////
 //
-// getTimemap --
+// checkTimeMap --
 //
 
-function getTimemap(id) {
-	if (!id) {
-		id = ID;
-	}
-	if (TIMEMAP[id]) {
-		return;
-	}
-	let request = new XMLHttpRequest();
-	request.open("GET", `{{site.the1520sProject_data_url}}/${id}-timemap.json`);
-	request.addEventListener("load", function() {
-		try {
-			TIMEMAP[id] = JSON.parse(this.responseText);
-			interpolateIntegers(id);
-		} catch (e) {
-			console.error("Failed to parse JSON:", this.responseText);
-			console.error("Error details:", e);
-		}
-	});
-	request.send();
-}
-
-
-
-//////////////////////////////
-//
-// interpolateIntegers --
-//
-
-function interpolateIntegers(id) {
-	timemap = TIMEMAP[id];
-	if (timemap.length == 0) {
-		return;
-	}
-	let newpoints = [];
-	let byindex = {};
-	for (let i=0; i<timemap.length; i++) {
-		let qstamp = timemap[i].qstamp;
-		byindex[qstamp] = {i: i, timemap: timemap[i]};
-	}
-	let maxval = timemap[timemap.length-1].qstamp;
-	for (i=8; i<maxval; i+=8) {
-		if (byindex[i]) {
-			continue;
-		}
-		let newpoint;
-		newpoint = interpolateTstamp(timemap, i);
-		newpoints.push(newpoint);
-		// console.log("MISSING: ", i, newpoint.tstamp);
-	}
-	TIMEMAP[id] = timemap.concat(newpoints);
-}
-
-
-
-//////////////////////////////
-//
-// interpolateTstamp --
-//
-
-function interpolateTstamp(timemap, qtime) {
-	let i;
-	let t1;
-	let t2;
-	let q1;
-	let q2;
-	for (i=0; i<timemap.length; i++) {
-		if (timemap[i].qstamp < qtime) {
-			continue;
-		}
-		if (i == 0) {
-			console.log("STRANGE PROBLEM");
-		}
-		t1 = timemap[i-1].tstamp;
-		t2 = timemap[i].tstamp;
-		q1 = timemap[i-1].qstamp;
-		q2 = timemap[i].qstamp;
-		break;
-	}
-	if (!t2) {
-			console.log("STRANGE PROBLEM 2");
-	}
-	let ttime = ((qtime-q1)/(q2-q1))*(t2-t1)+t1;
-	let newpoint = { qstamp: qtime, tstamp: ttime};
-	//console.log("NEWPOINT", newpoint);
-	return newpoint;
-}
-
-
-
-//////////////////////////////
-//
-// CheckTimeMap --
-//
-
-function CheckTimeMap(timemap, events, currenttime, increment) {
+function checkTimeMap(timemap, events, currenttime, increment) {
 	let target = null;
 	let diff;
 	for (let i=0; i<timemap.length; i++) {
@@ -150,7 +59,6 @@ function CheckTimeMap(timemap, events, currenttime, increment) {
 		return;
 	}
 	LASTTIME = target.tstamp;
-	// console.log("TIMEENTRY", target);
 	CheckEventMap(target.qstamp, events);
 }
 
@@ -195,10 +103,10 @@ function ProcessNoteEvents(event) {
 
 //////////////////////////////
 //
-// unhighlightAllNotes --
+// unhighlightAllNotesInSvg --
 //
 
-function unhighlightAllNotes() {
+function unhighlightAllNotesInSvg() {
 	let notes = document.querySelectorAll(".verovio-svg g.note");
 	for (let i=0; i<notes.length; i++) {
 		notes[i].classList.remove("highlight");
@@ -209,19 +117,9 @@ function unhighlightAllNotes() {
 
 //////////////////////////////
 //
-// TurnOffAllNotes --
-//
-
-function TurnOffAllNotes() {
-	console.warn("TURNING OF ALL NOTE HIGHLIGHTING");
-	unhighlightAllNotes();
-}
-
-
-
-//////////////////////////////
-//
-// prepareQEvents --
+// prepareQEvents -- Scans the SVG to prepare a list of note events 
+//    (QEVENTS), where each note has a corresponding qstamp 
+//    (quarter note timing) that matches the audio timemap.
 //
 
 function prepareQEvents(target) {

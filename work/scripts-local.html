@@ -1,8 +1,7 @@
+
+
 <script>
 // vim: ts=3:nowrap
-
-{% include scripts/getCgiParameters.js %}
-{% include_relative scripts-notation-highlighting.js %}
 
 
 //////////////////////////////
@@ -14,23 +13,29 @@ function displayWork(id) {
 	if (!id) {
 		id = DATA1520.workid;
 	}
+	if (!id) {
+		id = "Jac2001";
+	}
 	DATA1520.workid = id;
+
 	if (typeof id !== "string") {
 		console.error("ERROR: Work ID is not a string:", string);
 		return;
 	}
 
 	// See https://plugin.humdrum.org/options/#list for more display options.
-	let hnpOptions = JSON.parse(JSON.stringify(HNP_OPTIONS));
+	// Copying default options from DATA1520.hnp_options:
+	let hnpOptions = JSON.parse(JSON.stringify(DATA1520.hnp_options));
 
-	if (!INITIALIZED) {
+	if (!DATA1520.INITIALIZED) {
 		let url = DATA1520.lookup.works[id]["Humdrum URL"];
 		hnpOptions.url = url;
 		hnpOptions.postFunction = function() {
+			// callback function to run after SVG score has been displayed.
 			removeWait();
 			prepareQEvents(id);
 		};
-		INITIALIZED = true;
+		DATA1520.INITIALIZED = true;
 	}
 
 	// Set display options:
@@ -75,7 +80,7 @@ function createLookup(dataArray) {
 
 //////////////////////////////
 //
-// displayWorkInfo --
+// displayWorkInfo -- Show information table at top of page.
 //
 
 function displayWorkInfo(id) {
@@ -88,8 +93,15 @@ function displayWorkInfo(id) {
 	if (!id) {
 		id = DATA1520.workid;
 	}
+	if (!id) {
+		id = "Jac2001";
+	}
+	DATA1520.workid = id;
+
 	let workinfo = DATA1520.lookup.works[id];
-	console.log("WORKINFO", workinfo);
+	if (!workinfo) {
+		console.error(`Error: Cannot find workinfo for ${id} in displayWorkInfo()`);
+	}
 
 	let comid = "";
 	let matches = id.match(/^([A-Z][a-z][a-z])/);
@@ -100,14 +112,15 @@ function displayWorkInfo(id) {
 	if (comid) {
 		cominfo = DATA1520.lookup.composers[comid];
 	}
-	console.log("COMINFO", cominfo);
+	if (!comid) {
+		console.error(`Error: Problem finding ${comid} in composer info`);
+	}
 
 	let output = "";
 
-	let title = workinfo.Title;
-	let subtitle = workinfo["Subtitle"];
+	let title       = workinfo.Title;
+	let subtitle    = workinfo.Subtitle;
 	let titleoutput = "";
-	console.warn("Subtitle:", subtitle);
 	if (title) {
 		if (subtitle){
 			titleoutput = `<div class="work-item"><b>Title:</b> ${title}, ${subtitle}</div>`;
@@ -128,36 +141,35 @@ function displayWorkInfo(id) {
 		composeroutput = `<div class="work-item"><b>Composer:</b> ${composer}`;
 
 		let diammcomp = cominfo["Composer DIAMM page"];
-		let rismid = cominfo["Composer RISM ID"];
-		let rismurl = "";
+		let rismPersonId = cominfo["Composer RISM ID"];
 
-		if (rismid) {
-			let rismurl = rismid.substring(2);
+		if (rismPersonId.match(/^[a-z]{2}/)) {
+			// Remove "pe" prefix on rism person number:
+			rismPersonId = rismPersonId.substring(2);
 		}
-
 		if (diammcomp) {
 			composeroutput += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
 		}
-		if (rismid) {
-			composeroutput += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismurl}">RISM</a>)</span>`;
+		if (rismPersonId) {
+			composeroutput += ` <span class="info-link">(<a target="_blank" href="https://rism.online/people/${rismPersonId}">RISM</a>)</span>`;
 		}
 		composeroutput += `</div>`;
 	}
 
 	// Add line in work info for implausible attributions with anonymous works
 	let attrimplausible = workinfo["Implausible Attribution"];
-	let attrimprobable = workinfo["Improbable Attribution"];
-	let attrplausible = workinfo["Plausible Attribution"];
-	
+	let attrimprobable  = workinfo["Improbable Attribution"];
+	let attrplausible   = workinfo["Plausible Attribution"];
+
 	let attrimplausiblename = "";
-	let attrimprobablename = "";
-	let attrplausiblename = "";
+	let attrimprobablename  = "";
+	let attrplausiblename   = "";
 
 	let attrimplausibleoutput = "";
-	let attrimprobableoutput = "";
-	let attrplausibleoutput = "";
+	let attrimprobableoutput  = "";
+	let attrplausibleoutput   = "";
 
-	//Adjust name of category for singular/plural
+	// Adjust category names for singular/plural:
 
 	if (attrimplausible) {
 		if (attrimplausible.includes(";")) {
@@ -183,7 +195,7 @@ function displayWorkInfo(id) {
 		}
 	}
 
-	//Add work items for unlikely/false attributions
+	// Add work items for unlikely/false attributions:
 
 	if (attrplausible) {
 		attrplausibleoutput = `<div class="work-item"><b>${attrplausiblename}:</b> ${attrplausible}</div>`;
@@ -199,7 +211,7 @@ function displayWorkInfo(id) {
 
 	}
 
-	//Add work item for genre
+	// Add work item for genre:
 
 	let genre = workinfo.Genre;
 	let genreoutput = "";
@@ -216,7 +228,7 @@ function displayWorkInfo(id) {
 		let rismsource = workinfo["RISM Source Link"];
 		let sourcetype = "";
 		if (uniquesource == "yes") {
-			sourcetype = "Unique"; 
+			sourcetype = "Unique";
 		} else {
 			sourcetype = "First";
 		}
@@ -235,8 +247,8 @@ function displayWorkInfo(id) {
 		dateoutput = `<div class="work-item"><b>First source date:</b> ${date}</div>`;
 	}
 
-	let editionsource = workinfo["Edition Source"];
-	let editionsourceURL = workinfo["Edition Source URL"];
+	let editionsource       = workinfo["Edition Source"];
+	let editionsourceURL    = workinfo["Edition Source URL"];
 	let editionsourceoutput = "";
 
 	console.warn("Edition source:", editionsource);
@@ -270,19 +282,21 @@ function displayWorkInfo(id) {
 		editionsourceoutput += `</div>`;
 	}
 
-	let pdf = workinfo["Humdrum URL"];
-	let sibelius = workinfo["Humdrum URL"];
-	let musicxml = workinfo["Humdrum URL"];
-	let humdrum = workinfo["Humdrum URL"];
-	let URL_BASE = "https://data.1520s-project.org";
-	let midi = `${URL_BASE}/${DATA1520.workid}.mid`;
-	let mei = `${URL_BASE}/${DATA1520.workid}.mei`;
+	let mei      = `${DATA1520.dataurl}/${DATA1520.workid}.mei`;  // URL from data server
+	let midi     = `${DATA1520.dataurl}/${DATA1520.workid}.mid`;  // URL from data server
+
+	let humdrum  = workinfo["Humdrum URL"];                       // URL from GitHub
+	let musicxml = workinfo["Humdrum URL"];                       // URL from GitHub
+	let pdf      = workinfo["Humdrum URL"];                       // URL from GitHub
+	let sibelius = workinfo["Humdrum URL"];                       // URL from GitHub
+
 	let downloadoutput = "";
 
-	pdf = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	// Convert Humdrum URLs to other parallel data files on GitHub:
+	pdf      = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	humdrum = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	humdrum  = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 
 	downloadoutput += `<b>Download:</b> <a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a>`;
 
@@ -336,7 +350,7 @@ function displayWorkInfo(id) {
 
 //////////////////////////////
 //
-// forceDownload --
+// forceDownload -- Force download of data files (instead of opening in a new browser window).
 //
 
 function forceDownload(event) {
@@ -352,7 +366,7 @@ function forceDownload(event) {
 
 //////////////////////////////
 //
-// downloadFile --
+// downloadFile -- Save file contents to local computer.
 //
 
 function downloadFile(url, filename) {
@@ -375,19 +389,20 @@ function downloadFile(url, filename) {
 
 //////////////////////////////
 //
-// displayWorkFooter --
+// displayWorkFooter -- Does not do anything yet.
 //
 
 function displayWorkFooter(id) {
+	if (!id) {
+		id = DATA1520.workid;
+	}
+
 	let element = document.querySelector("#work-footer");
 	if (!element) {
 		console.error("ERROR: no #work-footer element");
 		return;
 	}
-	if (!id) {
-		id = DATA1520.workid;
-	}
-	let workinfo = DATA1520.lookup.works[id];
+	// let workinfo = DATA1520.lookup.works[id];
 	let output = "";
 	element.innerHTML = output;
 }
@@ -409,11 +424,16 @@ function displayExternalInfo(id) {
 		id = DATA1520.workid;
 	}
 	let workinfo = DATA1520.lookup.works[id];
+	if (!workinfo) {
+		console.error(`Error: Cannot find workinfo for ID=${id}`);
+	}
+
 	let output = "";
-	let title = workinfo["Title"];
-	let externalURL = workinfo["External Project URL"];
-	let externalName = workinfo["External Project Name"];
+	let title              = workinfo["Title"];
+	let externalURL        = workinfo["External Project URL"];
+	let externalName       = workinfo["External Project Name"];
 	let criticalCommentary = workinfo["Critical Commentary"];
+
 	if (externalURL && externalName) {
 			if (criticalCommentary == "yes") {
 					output += `<center>For more information on <i>${title}</i> and the critical commentary, see the <a target="_blank" href="${externalURL}">${externalName}</a>.</center><br><br>`;
@@ -439,6 +459,8 @@ function displayNoAccidentals() {
 	window.localStorage.AccidentalState = "hide";
 	displayWork();
 }
+
+
 
 //////////////////////////////
 //
@@ -497,121 +519,52 @@ function initializeAccidentalStateButton() {
 // PlayAudioFile -- play/pause an audio file.
 //
 
-function PlayAudioFile(ID1520s, element, starttime) {
-	// The ID1520s is not the same as the currently playing file
-	// (or there is no file playing).  So start the new one.
-	if (!AUDIO) {
-	   AUDIO = document.getElementById('audio');
+function PlayAudioFile(buttonElement, starttime) {
+alert("PLAY AUDIO FILE", startime);
+/* No longer used
+	if (typeof buttonElement === "string") {
+		buttonElement = document.querySelector(buttonElement);
 	}
-	if (!AUDIO) {
-		AUDIO = document.createElement("AUDIO");
-		AUDIO.id = "audio";
-		document.body.appendChild(AUDIO);
+	if (!buttonElement) {
+		buttonElement = document.querySelector("#audiobutton");
 	}
-	if (!AUDIO) {
-		console.log('Error: could not set up audio interface\n');
-		return false;
-	}
-	AUDIO.setAttribute('controls', 'controls');
-	AUDIO.style.position = 'fixed';
-	AUDIO.style.bottom = '0';
-	AUDIO.style.right = '0';
-	AUDIO.style.zIndex = '1';
-
-	AUDIO.onpause = function () {
-		TurnOffAllNotes();
+	if (!buttonElement) {
+		console.error("Error: Cannot find audio button");
 	}
 
-	let audiobutton;
-	if (ID1520s != AUDIO1520sid) {
-			if (!!AUDIOid) {
-				// turn off previously playing audio file:
-				audiobutton = document.getElementById(AUDIOid);
-				if (!!audiobutton && !!audiobutton.className) {
-					if (audiobutton.className.match(/mp3/)) {
-						audiobutton.className = 'mp3play';
-					} else {
-						audiobutton.className = 'play';
-					}
-				}
-			}
-			AUDIO.removeAttribute('controls');
-			AUDIO.pause();
-			
-			AUDIOid = element.id;
-			let source = '';
-			// Can't have seekable dynamic content in audio element:
-			source += '<source src="https://data.1520s-project.org/' + ID1520s + '.mp3" ';
-			source += 'type="audio/mpeg"/>\n';
-			AUDIO.innerHTML = source;
-
-			AUDIO1520sid = ID1520s;
-			AUDIO.load();
-			if (starttime) {
-				AUDIO.currentTime = starttime;
-			}
-
-			AUDIO.play();
-			InitializeTimemap();
-
-			AUDIO.setAttribute('controls', 'controls');
-			let newelement = document.getElementById(AUDIOid);
-
-			AUDIO.addEventListener("ended", function() {
-				newelement.className = "play";
-			});
-
-			if (newelement.className.match(/mp3/)) {
-				newelement.className = 'mp3pause';
-			} else {
-				newelement.className = 'pause';
-			}
-
-			return;
+	if (!starttime) {
+		starttime = 0
 	}
 
-	// The audio file is the same, so start it or pause it depending
-	// on its current state:
-	if (AUDIO.paused) {
-		audiobutton = document.getElementById(AUDIOid);
- 		if (!audiobutton) {
-			return;
-		}
+	if (!DATA1520.audio) {
+		console.error("Error: Cannot find audio interface");
+		return;
+	}
 
-		if (audiobutton.className.match(/mp3/)) {
-			audiobutton.className = 'mp3play';
-		} else {
-			audiobutton.className = 'play';
-		}
-		if (element.className.match(/mp3/)) {
-			element.className = 'mp3pause';
-		} else {
-			element.className = 'pause';
-		}
-		console.warn(audiobutton.className, "audiobutton.className");
-		AUDIO.play();
-		InitializeTimemap();
-		AUDIO.setAttribute('controls', 'controls');
+	DATA1520.audio.setAttribute('controls', 'controls');
+	DATA1520.audio.style.position = 'fixed';
+	DATA1520.audio.style.bottom   = '0';
+	DATA1520.audio.style.right    = '0';
+	DATA1520.audio.style.zIndex   = '1';
+
+	if (DATA1520.audio.paused) {
+		DATA1520.audio.play();
 	} else {
-		audiobutton = document.getElementById(AUDIOid);
- 		if (!audiobutton) {
-			return;
-		}
-
 		if (audiobutton.className.match(/mp3/)) {
 			audiobutton.className = 'mp3pause';
 		} else {
 			audiobutton.className = 'pause';
 		}
-		if (element.className.match(/mp3/)) {
-			element.className = 'mp3play';
+		if (buttonElement.className.match(/mp3/)) {
+			buttonElement.className = 'mp3play';
 		} else {
-			element.className = 'play';
+			buttonElement.className = 'play';
 		}
 		console.warn(audiobutton.className, "audiobutton.className");
-		AUDIO.pause();
-		AUDIO.removeAttribute('controls');
+		DATA1520.audio.pause();
+		DATA1520.audio.removeAttribute('controls');
 	}
+*/
 }
 
 
@@ -623,10 +576,10 @@ function PlayAudioFile(ID1520s, element, starttime) {
 
 async function downloadAndDisplayInlinePng(url, container) {
 	try {
-		let titleurl = url //.replace(/-notitle/, "");
-		const response = await fetch(url);
-		const blob = await response.blob();
-		const reader = new FileReader();
+		let titleurl    = url //.replace(/-notitle/, "");
+		const response  = await fetch(url);
+		const blob      = await response.blob();
+		const reader    = new FileReader();
 		reader.onloadend = function () {
 			container.innerHTML = `<a target="_blank" href="${titleurl}"><img style="cursor:pointer"></a>`;
 			let imgDiv = container.querySelector("img");
@@ -648,25 +601,41 @@ async function downloadAndDisplayInlinePng(url, container) {
 async function downloadAndDisplayInlineSvg(url, container) {
 	try {
 		const response = await fetch(url);
-		const text = await response.text();
+		const text     = await response.text();
 		container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
 	} catch (error) {
 		console.error("Error fetching or displaying the image:", error);
 	}
 }
 
+
+
 //////////////////////////////
 //
 // downloadData --
 //
 
-function downloadData(container, elementId, ext, ID) {
-	let url = `${URL_BASE}/${DATA1520.workid}-${elementId}.${ext}`;
+function downloadData(container, id, ext, ID) {
+	let url = `${DATA1520.dataurl}/${DATA1520.workid}-${id}.${ext}`;
 	if (ext === "png") {
 		downloadAndDisplayInlinePng(url, container);
 	} else if (ext === "svg") {
 		downloadAndDisplayInlineSvg(url, container);
 	}
+}
+
+
+
+
+
+//////////////////////////////
+//
+// removeWait -- Callback function for stopping the spinning
+//    cursor (after notation is displayed).
+//
+
+function removeWait() {
+	document.body.classList.remove("wait");
 }
 
 

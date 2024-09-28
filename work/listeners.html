@@ -1,0 +1,313 @@
+
+<script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin-worker.js"></script>
+
+<script>
+{% include scripts/getCgiParameters.js %}
+{% include_relative notation-highlighting.js %}
+</script>
+
+<script>
+// Initializations for the work page.
+// vim: ts=3:nowrap:ft=javascript
+
+document.body.classList.add("wait");  // display a wait cursor while preparing page
+
+// First load metadata for 1520's project (from _include/metadata directory):
+let DATA1520 = {}; // global object to store information about work. Type "DATA1520" on the console to view.
+DATA1520.metadata                 = {};
+DATA1520.metadata.works           = {% include metadata/works.json %};
+DATA1520.metadata.composers       = {% include metadata/composers.json %};
+DATA1520.metadata.modern_editions = {% include metadata/modern_editions.json %};
+DATA1520.lookup                   = {};
+DATA1520.filter                   = "";
+DATA1520.timemap                  = [];  // Mapping between notes in SVG and timeline for audio
+DATA1520.dataurl                  = "{{site.the1520sProject_data_url}}";
+DATA1520.audio                    = null; // HTML5 audio element (see initializeAudio() function);
+DATA1520.INITIALIZED = false;  // for notation display setup
+DATA1520.hnp_options = {
+	source: "my-score",
+	spacingLinear: 0.4,
+	spacingNonLinear: 0.45,
+	humType: 1,                 // Needed for extracting note timings from SVG image.
+	spacingSystem: 10,
+	mnumInterval: 5,
+	autoResize: "true",
+};
+DATA1520.cgi = getCgiParameters();
+DATA1520.workid = DATA1520.cgi.id || "Jac2001";
+
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- Run the following function when the webpage
+//     has finished loading.  This function extracts the "id" parameter
+//     from the URL which specifies which score to display.  If no id
+//     is found, Jac2001 will be used as a default ID.
+//
+
+document.addEventListener("DOMContentLoaded", function (event) {
+	initializeAccidentalStateButton();
+
+	// Create lookup tables for metadata:
+	DATA1520.lookup.works           = createLookup(DATA1520.metadata.works);
+	DATA1520.lookup.composers       = createLookup(DATA1520.metadata.composers);
+	DATA1520.lookup.modern_editions = createLookup(DATA1520.metadata.modern_editions);
+
+	displayWork(DATA1520.workid);
+	initializeAudio(DATA1520.workid);
+});
+
+
+
+//////////////////////////////
+//
+// toggleAnalysisDisplay --
+//
+
+document.addEventListener("click", function(event) {
+	let target = event.target;
+	if (!target.classList.contains("analysis-toggle")) {
+		return;
+	}
+	let analysisType = target.id;
+
+	if (event.target.classList.contains("analysis-toggle")) {
+		if (event.target.classList.contains("active")) {
+			event.target.classList.remove("active");
+		} else {
+			event.target.classList.add("active");
+		}
+	}
+	if (!analysisType) {
+		console.warn("Analysis element ID was not given");
+		return;
+	}
+	let ext = target.dataset.ext;
+	if (!ext) {
+		console.warn("File extension was not given.");
+		return;
+	}
+	let container = document.querySelector(`#${analysisType}-display`);
+	if (!container) {
+		console.warn("No analysis container", `#${analysisType}-display`);
+		return;
+	}
+	let contents = container.innerHTML;
+	let empty = contents.length ? false : true;
+	if (empty) {
+		downloadData(container, analysisType, ext);
+	}
+	if (container.classList.contains("hidden")) {
+		container.classList.remove("hidden");
+	} else {
+		container.classList.add("hidden");
+	}
+});
+
+
+
+//////////////////////////////
+//
+// click event listener -- Event delegate listener for starting playback at a certain note.
+//
+
+window.addEventListener("click", function(event) {
+	let target = event.target;
+	let noteElement = null;
+
+	// Find the g.note element that was clicked on.  This may not be
+	// the actual element that was clicked on, but rather it could
+	// be a parent element, so search the ancestors of the clicked
+	// element to find g.note.  The ID of the note will start "note-".
+	if (target && target.id && target.id.match(/^note-/)) {
+		noteElement = target;
+	} else {
+		while ((!noteElement) && target) {
+			target = target.parentNode;
+			if (!target) {
+				break;
+			}
+			if (target && target.id && target.id.match(/^note-/)) {
+				noteElement = target;
+				break;
+			}
+		}
+	}
+	if (!noteElement) {
+		// Did not click on a note (or in the SVG), so give up.
+		return;
+	}
+
+	// Get the start time of the note (quarter notes from begiining of score):
+	let matches;
+	let ques = 0;
+	if (matches = noteElement.className.baseVal.match(/qon-([^\s]+)/)) {
+		ques = getQstampFloat(matches[1]);
+	} else {
+		return;
+	}
+
+	// Find the time in seconds for the note from the timemap:
+	let tstamp = -1;
+	let qstamp = -1;
+	for (let i=0; i<DATA1520.timemap.length; i++) {
+		if (Math.abs(DATA1520.timemap[i].qstamp - ques) < 0.01) {
+			tstamp = DATA1520.timemap[i].tstamp;
+			qstamp = DATA1520.timemap[i].qstamp;
+		}
+	}
+	if (tstamp < 0) {
+		return;
+	}
+
+	console.log("TSTAMP", tstamp, "QSTAMP", qstamp);
+
+	if (DATA1520.audio.paused) {
+		unhighlightAllNotesInSvg();
+		DATA1520.audio.play();
+		console.warn("SETTING CURRENT TIME AAA TO", tstamp, "SECONDS");
+		console.warn("DURATOIN AAA IS", DATA1520.audio.duration);
+		console.warn("CUREENTTIME AAA BEFORE IS", DATA1520.audio.currentTime);
+		console.warn("SEEKABLE", DATA1520.audio.seekable);
+		DATA1520.audio.currentTime = tstamp;
+		console.warn("CURRENT TIME AAA AFTER IS ", DATA1520.audio.currentTime);
+	} else {
+		unhighlightAllNotesInSvg();
+		console.warn("SETTING CURRENT AAA TIME TO", tstamp, "SECONDS");
+		console.warn("DURATOIN AAA IS", DATA1520.audio.duration);
+		console.warn("CUREENTTIME BBB BEFORE IS", DATA1520.audio.currentTime);
+		console.warn("SEEKABLE", DATA1520.audio.seekable);
+		try {
+			DATA1520.audio.currentTime = tstamp;
+		} catch (error) {
+			console.error("Failed to set currentTime:", error);
+			console.warn("CURRENT TIME BBB AFTER IS ", DATA1520.audio.currentTime);
+		}
+	}
+console.log("GOT HERE QQQ");
+});
+
+
+
+//////////////////////////////
+//
+// initializeAudio -- Prepare audio for the current work.
+//
+
+function initializeAudio(id) {
+	DATA1520.audio = document.querySelector("audio#audio");
+
+	if (!DATA1520.audio) {
+		console.error("Error: Cannot find audio#audio on webpage.");
+		return;
+	} else {
+		console.warn("AUDIO", DATA1520.audio);
+	}
+
+	// DATA1520.audio.innerHTML = `<source src="${DATA1520.dataurl}/${DATA1520.workid}.mp3" type="audio/mpeg" preload="metadata" />`;
+	// Set the audio infomation explicitly:
+	let audioUrl = `${DATA1520.dataurl}/${DATA1520.workid}.mp3`;
+	DATA1520.audio.preload = "auto";
+	DATA1520.audio.src = audioUrl;
+	DATA1520.audio.load();
+
+	document.getElementById('audiobutton').addEventListener('click', function() {
+		// May be needed for making the audio seekable:
+		DATA1520.audio.play().then(() => {
+			DATA1520.audio.pause();  // Pause immediately after starting playback to trigger buffering
+		}).catch((error) => {
+			console.error('Playback failed:', error);
+		});
+	});
+
+	DATA1520.audio.addEventListener('loadedmetadata', function() {
+		console.log("Metadata for audio loaded. Duration:", DATA1520.audio.duration);
+		console.log('Audio source:', DATA1520.audio.src);
+		let seekable = DATA1520.audio.seekable;
+		for (let i=0; i<seekable.length; i++) {
+			let start = seekable.start(i);
+			let end   = seekable.end(i);
+			console.log(`Audio seekable range ${i}: ${start}-${end}`);
+		}
+	});
+
+	DATA1520.audio.addEventListener('progress', function() {
+		//let buffered = DATA1520.audio.buffered;
+		//console.log("Buffered ranges:");
+		//for (let i = 0; i < buffered.length; i++) {
+		//	console.log(`Range ${i}: ${buffered.start(i)} - ${buffered.end(i)}`);
+		//}
+	});
+
+	DATA1520.audio.addEventListener('progress', function() {
+		//let buffered = DATA1520.audio.buffered;
+		//let duration = DATA1520.audio.duration;
+		//if (buffered.length) {
+		//	let bufferedEnd = buffered.end(buffered.length - 1);
+		//	console.log(`Buffered ${bufferedEnd} of ${duration}`);
+		//}
+	});
+
+	DATA1520.audio.addEventListener('canplaythrough', function() {
+		console.log("Audio can play through.");
+	});
+
+	DATA1520.audio.addEventListener('error', function() {
+		console.error('Error loading the audio file');
+	});
+
+	DATA1520.audio.addEventListener('loadeddata', function() {
+		console.log('Audio data loaded');
+	});
+
+	let url = `${DATA1520.dataurl}/${DATA1520.workid}-timemap.json`;
+	console.warn("TIMEMAP URL", url);
+	fetch(url)
+	.then(response => {
+		if (!response.ok) {
+			throw new Error('Network response was not ok');
+		}
+		return response.json();
+	})
+	.then(data => {
+		DATA1520.timemap = data;
+		console.warn("TIMEMAP", DATA1520.timemap);
+	})
+	.catch(error => {
+		console.error('There was a problem with the fetch operation:', error);
+  });
+
+	DATA1520.audio.onpause = function () {
+		console.log("PAUSING audio");
+		unhighlightAllNotesInSvg();
+		clearInterval(REFRESH);
+	}
+
+	DATA1520.audio.onplay = function () {
+		console.warn("START PLAYING, CURRENT TIME", DATA1520.audio.currentTime);
+
+		let audioButton = document.querySelector("#audiobutton");
+		if (audioButton) {
+			if (audioButton.className.match(/mp3/)) {
+				audioButton.className = 'mp3play';
+			} else {
+				audioButton.className = 'play';
+			}
+			if (audioButton.className.match(/mp3/)) {
+				audioButton.className = 'mp3pause';
+			} else {
+				audioButton.className = 'pause';
+			}
+		}
+		DATA1520.audio.setAttribute('controls', 'controls');
+
+		initializeTimemap();
+	}
+
+}
+
+</script>
+
+
+
