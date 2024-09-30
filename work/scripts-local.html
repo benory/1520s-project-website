@@ -626,8 +626,6 @@ function downloadData(container, id, ext, ID) {
 
 
 
-
-
 //////////////////////////////
 //
 // removeWait -- Callback function for stopping the spinning
@@ -637,6 +635,23 @@ function downloadData(container, id, ext, ID) {
 function removeWait() {
 	document.body.classList.remove("wait");
 }
+
+
+
+//////////////////////////////
+//
+// printSeekableAudioInfo --
+//
+
+function printSeekableAudioInfo() {
+	let seekable = DATA1520.audio.seekable;
+	for (let i=0; i<seekable.length; i++) {
+		let start = seekable.start(i);
+		let end   = seekable.end(i);
+		console.log(`Audio seekable range ${i}: ${start}-${end}`);
+	}
+}
+
 
 
 </script>

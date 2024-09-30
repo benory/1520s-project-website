@@ -224,12 +224,7 @@ function initializeAudio(id) {
 	DATA1520.audio.addEventListener('loadedmetadata', function() {
 		console.log("Metadata for audio loaded. Duration:", DATA1520.audio.duration);
 		console.log('Audio source:', DATA1520.audio.src);
-		let seekable = DATA1520.audio.seekable;
-		for (let i=0; i<seekable.length; i++) {
-			let start = seekable.start(i);
-			let end   = seekable.end(i);
-			console.log(`Audio seekable range ${i}: ${start}-${end}`);
-		}
+		printSeekableAudioInfo();
 	});
 
 	DATA1520.audio.addEventListener('progress', function() {
@@ -249,8 +244,14 @@ function initializeAudio(id) {
 		//}
 	});
 
+	DATA1520.audio.addEventListener('canplay', function() {
+		console.log("Audio can start playing.");
+		printSeekableAudioInfo();
+	});
+
 	DATA1520.audio.addEventListener('canplaythrough', function() {
 		console.log("Audio can play through.");
+		printSeekableAudioInfo();
 	});
 
 	DATA1520.audio.addEventListener('error', function() {
@@ -279,6 +280,7 @@ function initializeAudio(id) {
   });
 
 	DATA1520.audio.onpause = function () {
+		console.log("CURRENT TIME:", DATA1520.audio.currentTime);
 		console.log("PAUSING audio");
 		unhighlightAllNotesInSvg();
 		clearInterval(REFRESH);
