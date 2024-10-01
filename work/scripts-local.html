@@ -516,61 +516,6 @@ function initializeAccidentalStateButton() {
 
 //////////////////////////////
 //
-// PlayAudioFile -- play/pause an audio file.
-//
-
-function PlayAudioFile(buttonElement, starttime) {
-alert("PLAY AUDIO FILE", startime);
-/* No longer used
-	if (typeof buttonElement === "string") {
-		buttonElement = document.querySelector(buttonElement);
-	}
-	if (!buttonElement) {
-		buttonElement = document.querySelector("#audiobutton");
-	}
-	if (!buttonElement) {
-		console.error("Error: Cannot find audio button");
-	}
-
-	if (!starttime) {
-		starttime = 0
-	}
-
-	if (!DATA1520.audio) {
-		console.error("Error: Cannot find audio interface");
-		return;
-	}
-
-	DATA1520.audio.setAttribute('controls', 'controls');
-	DATA1520.audio.style.position = 'fixed';
-	DATA1520.audio.style.bottom   = '0';
-	DATA1520.audio.style.right    = '0';
-	DATA1520.audio.style.zIndex   = '1';
-
-	if (DATA1520.audio.paused) {
-		DATA1520.audio.play();
-	} else {
-		if (audiobutton.className.match(/mp3/)) {
-			audiobutton.className = 'mp3pause';
-		} else {
-			audiobutton.className = 'pause';
-		}
-		if (buttonElement.className.match(/mp3/)) {
-			buttonElement.className = 'mp3play';
-		} else {
-			buttonElement.className = 'play';
-		}
-		console.warn(audiobutton.className, "audiobutton.className");
-		DATA1520.audio.pause();
-		DATA1520.audio.removeAttribute('controls');
-	}
-*/
-}
-
-
-
-//////////////////////////////
-//
 // downloadAndDisplayInlinePng --
 //
 
@@ -652,6 +597,31 @@ function printSeekableAudioInfo() {
 	}
 }
 
+
+
+//////////////////////////////
+//
+// playAudioCallback --
+//
+
+function playAudioCallback() {
+	console.warn("STARTING PLABACK, CURRENT TIME", DATA1520.audio.currentTime);
+	let audioButtonPlay  = document.querySelector("#audiobutton-play");
+	let audioButtonPause = document.querySelector("#audiobutton-pause");
+	if (audioButtonPlay) {
+		console.warn("HIDING PLAY BUTTON");
+		audioButtonPlay.classList.add("hidden");
+	} else {
+		console.error("Cannot find #audiobutton-play");
+	}
+	if (audioButtonPause) {
+		audioButtonPause.classList.remove("hidden");
+	} else {
+		console.error("Cannot find #audiobutton-pause");
+	}
+	DATA1520.audio.setAttribute('controls', 'controls');
+	initializeTimemap();
+}
 
 
 </script>

@@ -5,8 +5,7 @@ vim:    ts=3:nowrap
 
 {% include_relative styles-local.html %}
 
-<!-- AUDIO NEEDS TO BE IN A CONTAINER FOR SOME REASON (something is trying to replace it plus siblings, erasing other conetent below -->
-<span><audio id="audio"></span>
+<audio id="audio"></audio>
 
 <table id="work-info">
    <thead>
@@ -30,7 +29,10 @@ vim:    ts=3:nowrap
 </div>
 
 <div id="button-container" class="button-container">
-    <span id="audiobutton" data-id="" style="cursor:hand; cursor:pointer;" onclick="DATA1520.audio.play();" href="" class="play">play</span>
+    <div id="audiobutton-container">
+        <span id="audiobutton-play" class="play" onclick="DATA1520.audio.play();">play</span>
+        <span id="audiobutton-pause" class="pause hidden" onclick="DATA1520.audio.pause();">pause</span>
+    </div>
     <div id="accidentalSelect">
        <div class="button hide" onclick="displayNoAccidentals()">Hide Editorial Accidentals</div>
        <div class="button show hidden" onclick="displayAccidentals()">Show Editorial Accidentals</div>

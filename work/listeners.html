@@ -166,26 +166,15 @@ window.addEventListener("click", function(event) {
 	if (DATA1520.audio.paused) {
 		unhighlightAllNotesInSvg();
 		DATA1520.audio.play();
-		console.warn("SETTING CURRENT TIME AAA TO", tstamp, "SECONDS");
-		console.warn("DURATOIN AAA IS", DATA1520.audio.duration);
-		console.warn("CUREENTTIME AAA BEFORE IS", DATA1520.audio.currentTime);
-		console.warn("SEEKABLE", DATA1520.audio.seekable);
 		DATA1520.audio.currentTime = tstamp;
-		console.warn("CURRENT TIME AAA AFTER IS ", DATA1520.audio.currentTime);
 	} else {
 		unhighlightAllNotesInSvg();
-		console.warn("SETTING CURRENT AAA TIME TO", tstamp, "SECONDS");
-		console.warn("DURATOIN AAA IS", DATA1520.audio.duration);
-		console.warn("CUREENTTIME BBB BEFORE IS", DATA1520.audio.currentTime);
-		console.warn("SEEKABLE", DATA1520.audio.seekable);
 		try {
 			DATA1520.audio.currentTime = tstamp;
 		} catch (error) {
-			console.error("Failed to set currentTime:", error);
-			console.warn("CURRENT TIME BBB AFTER IS ", DATA1520.audio.currentTime);
+			console.error("Error:", error);
 		}
 	}
-console.log("GOT HERE QQQ");
 });
 
 
@@ -197,70 +186,77 @@ console.log("GOT HERE QQQ");
 
 function initializeAudio(id) {
 	DATA1520.audio = document.querySelector("audio#audio");
+	let audio = DATA1520.audio;
 
-	if (!DATA1520.audio) {
+	if (!audio) {
 		console.error("Error: Cannot find audio#audio on webpage.");
 		return;
 	} else {
-		console.warn("AUDIO", DATA1520.audio);
+		console.warn("AUDIO ELEMENT", audio);
 	}
 
-	// DATA1520.audio.innerHTML = `<source src="${DATA1520.dataurl}/${DATA1520.workid}.mp3" type="audio/mpeg" preload="metadata" />`;
+	// audio.innerHTML = `<source src="${DATA1520.dataurl}/${DATA1520.workid}.mp3" type="audio/mpeg" preload="metadata" />`;
 	// Set the audio infomation explicitly:
 	let audioUrl = `${DATA1520.dataurl}/${DATA1520.workid}.mp3`;
-	DATA1520.audio.preload = "auto";
-	DATA1520.audio.src = audioUrl;
-	DATA1520.audio.load();
+	audio.preload = "auto";
+	audio.src = audioUrl;
+	audio.load();
 
-	document.getElementById('audiobutton').addEventListener('click', function() {
-		// May be needed for making the audio seekable:
-		DATA1520.audio.play().then(() => {
-			DATA1520.audio.pause();  // Pause immediately after starting playback to trigger buffering
-		}).catch((error) => {
-			console.error('Playback failed:', error);
-		});
-	});
-
-	DATA1520.audio.addEventListener('loadedmetadata', function() {
-		console.log("Metadata for audio loaded. Duration:", DATA1520.audio.duration);
-		console.log('Audio source:', DATA1520.audio.src);
+	audio.addEventListener('loadedmetadata', function() {
+		console.log("Metadata for audio loaded. Duration:", audio.duration);
+		console.log('Audio source:', audio.src);
 		printSeekableAudioInfo();
 	});
 
-	DATA1520.audio.addEventListener('progress', function() {
-		//let buffered = DATA1520.audio.buffered;
-		//console.log("Buffered ranges:");
-		//for (let i = 0; i < buffered.length; i++) {
-		//	console.log(`Range ${i}: ${buffered.start(i)} - ${buffered.end(i)}`);
-		//}
+
+	audio.addEventListener('progress', function() {
+		// printSeekableAudioInfo();
 	});
 
-	DATA1520.audio.addEventListener('progress', function() {
-		//let buffered = DATA1520.audio.buffered;
-		//let duration = DATA1520.audio.duration;
-		//if (buffered.length) {
-		//	let bufferedEnd = buffered.end(buffered.length - 1);
-		//	console.log(`Buffered ${bufferedEnd} of ${duration}`);
-		//}
+
+	audio.addEventListener('canplay', function() {
+		// console.log("Audio can play.");
+		// printSeekableAudioInfo();
 	});
 
-	DATA1520.audio.addEventListener('canplay', function() {
-		console.log("Audio can start playing.");
-		printSeekableAudioInfo();
+
+	audio.addEventListener('canplaythrough', function() {
+		// console.log("Audio can play through.");
+		// printSeekableAudioInfo();
 	});
 
-	DATA1520.audio.addEventListener('canplaythrough', function() {
-		console.log("Audio can play through.");
-		printSeekableAudioInfo();
+
+	audio.addEventListener('error', function() {
+		console.error(`Error loading the audio file ${audioUrl}`);
 	});
 
-	DATA1520.audio.addEventListener('error', function() {
-		console.error('Error loading the audio file');
+
+	audio.addEventListener('loadeddata', function() {
+		console.log(`Audio data loaded: ${audioUrl}`);
 	});
 
-	DATA1520.audio.addEventListener('loadeddata', function() {
-		console.log('Audio data loaded');
+
+	audio.addEventListener("play", playAudioCallback);
+	audio.addEventListener("playing", playAudioCallback);
+
+	audio.addEventListener("pause", function () {
+		console.log("PAUSING audio");
+		let audioButtonPlay  = document.querySelector("#audiobutton-play");
+		let audioButtonPause = document.querySelector("#audiobutton-pause");
+		if (audioButtonPlay) {
+			audioButtonPlay.classList.add("hidden");
+		} else {
+			console.error("Cannot find #audiobutton-play");
+		}
+		if (audioButtonPause) {
+			audioButtonPlay.classList.remove("hidden");
+		} else {
+			console.error("Cannot find #audiobutton-pause");
+		}
+		unhighlightAllNotesInSvg();
+		clearInterval(REFRESH);
 	});
+
 
 	let url = `${DATA1520.dataurl}/${DATA1520.workid}-timemap.json`;
 	console.warn("TIMEMAP URL", url);
@@ -277,35 +273,7 @@ function initializeAudio(id) {
 	})
 	.catch(error => {
 		console.error('There was a problem with the fetch operation:', error);
-  });
-
-	DATA1520.audio.onpause = function () {
-		console.log("CURRENT TIME:", DATA1520.audio.currentTime);
-		console.log("PAUSING audio");
-		unhighlightAllNotesInSvg();
-		clearInterval(REFRESH);
-	}
-
-	DATA1520.audio.onplay = function () {
-		console.warn("START PLAYING, CURRENT TIME", DATA1520.audio.currentTime);
-
-		let audioButton = document.querySelector("#audiobutton");
-		if (audioButton) {
-			if (audioButton.className.match(/mp3/)) {
-				audioButton.className = 'mp3play';
-			} else {
-				audioButton.className = 'play';
-			}
-			if (audioButton.className.match(/mp3/)) {
-				audioButton.className = 'mp3pause';
-			} else {
-				audioButton.className = 'pause';
-			}
-		}
-		DATA1520.audio.setAttribute('controls', 'controls');
-
-		initializeTimemap();
-	}
+	});
 
 }
 

@@ -24,8 +24,6 @@ function initializeTimemap() {
 		return;
 	}
 	let increment = 20;
-console.warn("AUDIO", DATA1520.audio);
-console.warn("CURRENT TIME IS ", DATA1520.audio.currentTime);
 	REFRESH = setInterval(function() {
 		if (DATA1520.audio && DATA1520.audio.paused) {
 			clearInterval(REFRESH);
