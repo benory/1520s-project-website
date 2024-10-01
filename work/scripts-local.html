@@ -624,6 +624,48 @@ function playAudioCallback() {
 }
 
 
+
+//////////////////////////////
+//
+// pauseAudioCallback --
+//
+
+function pauseAudioCallback() {
+	console.log("PAUSING audio");
+	let audioButtonPlay  = document.querySelector("#audiobutton-play");
+	let audioButtonPause = document.querySelector("#audiobutton-pause");
+	if (audioButtonPlay) {
+		audioButtonPlay.classList.remove("hidden");
+	} else {
+		console.error("Cannot find #audiobutton-play");
+	}
+	if (audioButtonPause) {
+		audioButtonPause.classList.add("hidden");
+	} else {
+		console.error("Cannot find #audiobutton-pause");
+	}
+	unhighlightAllNotesInSvg();
+	if (REFRESH) {
+		clearInterval(REFRESH);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// TogglePlayPauseOfAudio --
+//
+
+function togglePlayPauseOfAudio() {
+    let audio = DATA1520.audio;
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
 </script>
 
 

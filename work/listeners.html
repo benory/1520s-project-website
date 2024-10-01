@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 //////////////////////////////
 //
-// toggleAnalysisDisplay --
+// toggleAnalysisDisplay -- Show or hide analysis plots.
 //
 
 document.addEventListener("click", function(event) {
@@ -151,10 +151,16 @@ window.addEventListener("click", function(event) {
 	// Find the time in seconds for the note from the timemap:
 	let tstamp = -1;
 	let qstamp = -1;
-	for (let i=0; i<DATA1520.timemap.length; i++) {
-		if (Math.abs(DATA1520.timemap[i].qstamp - ques) < 0.01) {
-			tstamp = DATA1520.timemap[i].tstamp;
-			qstamp = DATA1520.timemap[i].qstamp;
+	let timemap = DATA1520.timemap;
+	if (!timemap) {
+		console.warn("Warning: cannot find timemap for highligting notation during playback.");
+		return;
+	}
+	for (let i=0; i<timemap.length; i++) {
+		if (Math.abs(timemap[i].qstamp - ques) < 0.01) {
+			tstamp = timemap[i].tstamp;
+			qstamp = timemap[i].qstamp;
+			break;
 		}
 	}
 	if (tstamp < 0) {
@@ -163,14 +169,17 @@ window.addEventListener("click", function(event) {
 
 	console.log("TSTAMP", tstamp, "QSTAMP", qstamp);
 
-	if (DATA1520.audio.paused) {
+	let audio = DATA1520.audio;
+	console.warn("CURRENT TIME", audio.currentTime);
+	let adjustment = 0;
+	if (audio.paused) {
 		unhighlightAllNotesInSvg();
-		DATA1520.audio.play();
-		DATA1520.audio.currentTime = tstamp;
+		audio.play();
+		audio.currentTime = tstamp - adjustment;
 	} else {
 		unhighlightAllNotesInSvg();
 		try {
-			DATA1520.audio.currentTime = tstamp;
+			audio.currentTime = tstamp - adjustment;
 		} catch (error) {
 			console.error("Error:", error);
 		}
@@ -191,8 +200,6 @@ function initializeAudio(id) {
 	if (!audio) {
 		console.error("Error: Cannot find audio#audio on webpage.");
 		return;
-	} else {
-		console.warn("AUDIO ELEMENT", audio);
 	}
 
 	// audio.innerHTML = `<source src="${DATA1520.dataurl}/${DATA1520.workid}.mp3" type="audio/mpeg" preload="metadata" />`;
@@ -204,6 +211,8 @@ function initializeAudio(id) {
 
 	audio.addEventListener('loadedmetadata', function() {
 		console.log("Metadata for audio loaded. Duration:", audio.duration);
+		console.log("Audio readyState:", audio.readyState);
+		console.log("Audio seekable length: ", audio.seekable.length);
 		console.log('Audio source:', audio.src);
 		printSeekableAudioInfo();
 	});
@@ -235,27 +244,18 @@ function initializeAudio(id) {
 		console.log(`Audio data loaded: ${audioUrl}`);
 	});
 
+	audio.addEventListener('stalled', function() {
+		console.warn("Audio loading stalled, reloading...");
+		audio.load();  // Force a reload if loading stalls
+	});
+
+	audio.addEventListener('waiting', function() {
+		console.warn("Audio is waiting for data, might not be seekable...");
+	});
 
 	audio.addEventListener("play", playAudioCallback);
 	audio.addEventListener("playing", playAudioCallback);
-
-	audio.addEventListener("pause", function () {
-		console.log("PAUSING audio");
-		let audioButtonPlay  = document.querySelector("#audiobutton-play");
-		let audioButtonPause = document.querySelector("#audiobutton-pause");
-		if (audioButtonPlay) {
-			audioButtonPlay.classList.add("hidden");
-		} else {
-			console.error("Cannot find #audiobutton-play");
-		}
-		if (audioButtonPause) {
-			audioButtonPlay.classList.remove("hidden");
-		} else {
-			console.error("Cannot find #audiobutton-pause");
-		}
-		unhighlightAllNotesInSvg();
-		clearInterval(REFRESH);
-	});
+	audio.addEventListener("pause", pauseAudioCallback);
 
 
 	let url = `${DATA1520.dataurl}/${DATA1520.workid}-timemap.json`;
@@ -276,6 +276,22 @@ function initializeAudio(id) {
 	});
 
 }
+
+
+
+//////////////////////////////
+//
+// keydown event listener -- For keyboard shortcuts.
+//
+
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space' || event.keyCode === 32) {
+        event.preventDefault();
+        togglePlayPauseOfAudio();
+    }
+});
+
+
 
 </script>
 
