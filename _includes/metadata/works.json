@@ -1530,6 +1530,26 @@
 		"FILEBASE": "Fss2004-Virgo_gloriosa_Christi"
 	},
 	{
+		"ID": "Fss3003",
+		"Composer": "Festa, Sebastiano",
+		"Title": "Amor, che me tormenti",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Prizer_1978",
+		"First Source": "I-Fn MS Magl. XIX.164–7",
+		"RISM or CC Source Sigla": "FlorBN Magl. 164-7",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1407/",
+		"First Source Exact Date": "~1522",
+		"First Source Date": "~1522",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-10-2",
+		"Note Count": "658",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss3003-Amor_che_me_tormenti.krn",
+		"FILEBASE": "Fss3003-Amor_che_me_tormenti"
+	},
+	{
 		"ID": "Fss3007",
 		"Composer": "Festa, Sebastiano",
 		"Title": "O passi sparsi",
