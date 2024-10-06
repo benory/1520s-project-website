@@ -1530,6 +1530,26 @@
 		"FILEBASE": "Fss2004-Virgo_gloriosa_Christi"
 	},
 	{
+		"ID": "Fss3001",
+		"Composer": "Festa, Sebastiano",
+		"Title": "L'ultimo dì de maggio",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Prizer_1978",
+		"First Source": "I-Fc MS Basevi 2440",
+		"RISM or CC Source Sigla": "FlorC 2440",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/244/",
+		"First Source Exact Date": "~1520",
+		"First Source Date": "~1520",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-10-6",
+		"Note Count": "422",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fss/Fss3001-Lultimo_di_de_maggio.krn",
+		"FILEBASE": "Fss3001-Lultimo_di_de_maggio"
+	},
+	{
 		"ID": "Fss3003",
 		"Composer": "Festa, Sebastiano",
 		"Title": "Amor, che me tormenti",
