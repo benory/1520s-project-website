@@ -226,6 +226,7 @@ function displayWorkInfo(id) {
 	if (source) {
 		let diammsource = workinfo["DIAMM Source Link"];
 		let rismsource = workinfo["RISM Source Link"];
+		let foliosnumberspages = workinfo["Pages, Folios, or Numbers"];
 		let sourcetype = "";
 		if (uniquesource == "yes") {
 			sourcetype = "Unique";
@@ -233,12 +234,19 @@ function displayWorkInfo(id) {
 			sourcetype = "First";
 		}
 		if (diammsource) {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${diammsource}">${source}</a></div>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${diammsource}">${source}</a>`;
 		} else if (rismsource) {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${rismsource}">${source}</a></div>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${rismsource}">${source}</a>`;
 		} else {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> ${source}</div>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> ${source}`;
 		}
+
+		if (foliosnumberspages) {
+			sourceoutput += `, ${foliosnumberspages}</div>`;
+		} else {
+			sourceoutput += `</div>`;
+		}
+
 	}
 
 	let date = workinfo["First Source Date"];
