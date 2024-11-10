@@ -236,6 +236,16 @@
 		"Places Active": "Mechelen, Nantes, Paris, Bologna, Bruges"
 	},
 	{
+		"ID": "Ror",
+		"Composer": "Rore, Cipriano de",
+		"Composer RISM ID": "pe30006899",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/363/",
+		"Start of CYA": "1535",
+		"End of CYA": "1565",
+		"Flourished": "1535–1565",
+		"Places Active": "Brescia, Ferrara, Munich, Flanders, Venice"
+	},
+	{
 		"ID": "Ser",
 		"Composer": "Sermisy, Claudin de",
 		"Composer RISM ID": "pe20000369",
