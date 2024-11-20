@@ -4930,6 +4930,28 @@
 		"FILEBASE": "Ror0101-Cantai_mentre_chii_arsi_del_mio_foco"
 	},
 	{
+		"ID": "Ror0102",
+		"Composer": "Rore, Cipriano de",
+		"Title": "Hor che'l ciel et la terra e'l vento tace",
+		"Genre": "secular work",
+		"Voices": "5",
+		"Original Voices": "5",
+		"Modern Editions": "Meier_1963",
+		"First Source": "I madrigali a cinque voci (Venice: Girolamo Scotto)",
+		"RISM Source Link": "https://rism.online/sources/990055808",
+		"RISM or CC Source Sigla": "R 2479",
+		"Pages, Folios, or Numbers": "no. 2",
+		"Mensuration Signs in Earliest Source": "C",
+		"First Source Exact Date": "1542",
+		"First Source Date": "1542",
+		"Unique Source": "no",
+		"Texted": "yes",
+		"Date Added": "2024-11-20",
+		"Note Count": "1564",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ror/Ror0102-Hor_chel_ciel_et_la_terra_el_vento_tace.krn",
+		"FILEBASE": "Ror0102-Hor_chel_ciel_et_la_terra_el_vento_tace"
+	},
+	{
 		"ID": "Ser1001a",
 		"Composer": "Sermisy, Claudin de",
 		"Title": "Missa Philomena",
