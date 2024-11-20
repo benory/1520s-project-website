@@ -11,7 +11,7 @@ Files/directories:
 - images == image files for the website
 - work == work page for the website
 - .gitignore == ignores .DS_Store
-- .serve == adds a specific port for Craig Sapp to run the website
+- .serve == adds a specific port to run the website locally
 - 404.html == page for page not found  
 - CNAME == gives the website URL hosted on Github
 - Gemfile == needed for local website display
