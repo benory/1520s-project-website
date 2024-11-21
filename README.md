@@ -1,4 +1,25 @@
-# 1520s-website
-Website for The 1520s Project
+# The 1520s Project website
 
-The 1520s Project is an open-source repository of more than 350 scores of European polyphonic music, ca. 1510–1540. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s.
+Source files for The 1520s Project website
+
+Files/directories:
+- _includes == Liquid include files
+- _layouts == webpage template files
+- about == about page for website
+- browse == browse page for the website
+- documentation == documentation page for website
+- images == image files for the website
+- work == work page for the website
+- .gitignore == ignores .DS_Store
+- .serve == adds a specific port to run the website locally
+- 404.html == page for page not found  
+- CNAME == gives the website URL hosted on Github
+- Gemfile == needed for local website display
+- LICENSE == license for website
+- Makefile == makefile for running scripts locally
+- README.md == this file
+- _config.yml == configuration file with site-wide settings
+- index.markdown == the home page (compiled into index.html)
+- scripts-listeners.html == JavaScript listeners for the home page
+- scripts-local.html == JavaScript scripts for the home page
+- style-local.css == CSS styles for the home page
