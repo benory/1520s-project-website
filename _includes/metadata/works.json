@@ -2547,7 +2547,7 @@
 	},
 	{
 		"ID": "Jom2001",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Noe noe hodie salvator mundi",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2568,7 +2568,7 @@
 	},
 	{
 		"ID": "Jom2002",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "O vos qui transitis",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2589,7 +2589,7 @@
 	},
 	{
 		"ID": "Jom2003",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Veni sancta spiritus",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2610,7 +2610,7 @@
 	},
 	{
 		"ID": "Jom2004",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Ecclesiam tuam Deus",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2631,7 +2631,7 @@
 	},
 	{
 		"ID": "Jom2005",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Sufficiebat nobis paupertas",
 		"Genre": "motet",
 		"Voices": "5",
@@ -2652,7 +2652,7 @@
 	},
 	{
 		"ID": "Jom2006",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Ave mater matris Dei",
 		"Genre": "motet",
 		"Voices": "5",
@@ -2673,7 +2673,7 @@
 	},
 	{
 		"ID": "Jom2007",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "O Jesus Christe miserere mei",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2696,7 +2696,7 @@
 	},
 	{
 		"ID": "Jom2008",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Ploremus omnes et lacrimemur",
 		"Genre": "motet",
 		"Voices": "5",
@@ -2715,7 +2715,7 @@
 	},
 	{
 		"ID": "Jom2009",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Alleluia surrexit Dominus",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2736,7 +2736,7 @@
 	},
 	{
 		"ID": "Jom2010",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Domine bonum est nos",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2758,7 +2758,7 @@
 	},
 	{
 		"ID": "Jom2011",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Cantate Domino",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2781,7 +2781,7 @@
 	},
 	{
 		"ID": "Jom2012",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Visita, quesumus Domine",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2802,7 +2802,7 @@
 	},
 	{
 		"ID": "Jom2013",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Retribuere dignare, Domine",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2823,7 +2823,7 @@
 	},
 	{
 		"ID": "Jom2014",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Omnes sancti tui quesumus",
 		"Genre": "motet",
 		"Voices": "4",
@@ -2847,7 +2847,7 @@
 	},
 	{
 		"ID": "Jom2022",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Ave regina celorum",
 		"Genre": "motet",
 		"Voices": "6",
@@ -2866,7 +2866,7 @@
 	},
 	{
 		"ID": "Jom2023",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Title": "Sancta Trinitas",
 		"Genre": "motet",
 		"Voices": "8",
@@ -2882,6 +2882,28 @@
 		"Note Count": "1606",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Jom/Jom2023-Sancta_Trinitas.krn",
 		"FILEBASE": "Jom2023-Sancta_Trinitas"
+	},
+	{
+		"ID": "Lfg2002",
+		"Composer": "de la Fage, Jean",
+		"Title": "Elizabeth Zacharie",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Lowinsky_1968",
+		"First Source": "I-Fl MS Acquisti e doni 666 (\"Medici Codex\")",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/",
+		"RISM or CC Source Sigla": "FlorL 666",
+		"Pages, Folios, or Numbers": "ff. 41v–44r",
+		"Mensuration Signs in Earliest Source": "Cut-C; Cut-C3",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-11-21",
+		"Note Count": "1167",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lfg/Lfg2002-Elizabeth_Zacharie.krn",
+		"FILEBASE": "Lfg2002-Elizabeth_Zacharie"
 	},
 	{
 		"ID": "Lfg2003",

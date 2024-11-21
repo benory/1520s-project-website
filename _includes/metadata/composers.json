@@ -39,7 +39,9 @@
 		"Composer": "Bisgueria",
 		"Composer RISM ID": "pe30102210",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/1106/",
-		"Flourished": "–"
+		"Start of CYA": "1520",
+		"End of CYA": "1520",
+		"Flourished": "1520–1520"
 	},
 	{
 		"ID": "Cha",
@@ -65,17 +67,19 @@
 	{
 		"ID": "Era",
 		"Composer": "Erasmus?",
-		"Flourished": "–"
+		"Start of CYA": "1518",
+		"End of CYA": "1518",
+		"Flourished": "1518–1518"
 	},
 	{
 		"ID": "Fsc",
 		"Composer": "Festa, Costanzo",
 		"Composer RISM ID": "pe30004621",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/213/",
-		"Start of CYA": "1516",
-		"End of CYA": "1524",
-		"Death Date": "31 July 1524",
-		"Flourished": "1516–1524",
+		"Start of CYA": "1517",
+		"End of CYA": "1545",
+		"Death Date": "10 April 1545",
+		"Flourished": "1517–1545",
 		"Places Active": "Turin, Rome"
 	},
 	{
@@ -83,10 +87,10 @@
 		"Composer": "Festa, Sebastiano",
 		"Composer RISM ID": "pe30006139",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/207/",
-		"Start of CYA": "1517",
-		"End of CYA": "1545",
-		"Death Date": "10 April 1545",
-		"Flourished": "1517–1545",
+		"Start of CYA": "1516",
+		"End of CYA": "1524",
+		"Death Date": "31 July 1524",
+		"Flourished": "1516–1524",
 		"Places Active": "Turin, Rome"
 	},
 	{
@@ -122,7 +126,9 @@
 	{
 		"ID": "Jac",
 		"Composer": "Jacotin Frontin?",
-		"Flourished": "–"
+		"Start of CYA": "1518",
+		"End of CYA": "1518",
+		"Flourished": "1518–1518"
 	},
 	{
 		"ID": "Jan",
@@ -137,7 +143,7 @@
 	},
 	{
 		"ID": "Jom",
-		"Composer": "Jachet of Mantua",
+		"Composer": "Jacquet of Mantua",
 		"Composer RISM ID": "pe30003816",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/215/",
 		"Start of CYA": "1519",
@@ -191,7 +197,9 @@
 	{
 		"ID": "Lsa",
 		"Composer": "Le Santier, Jean",
-		"Flourished": "–"
+		"Start of CYA": "1518",
+		"End of CYA": "1518",
+		"Flourished": "1518–1518"
 	},
 	{
 		"ID": "Mlu",
