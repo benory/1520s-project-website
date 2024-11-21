@@ -4286,6 +4286,26 @@
 		"FILEBASE": "Mou3007-Mais_que_ce_fust_le_plaisir_delle"
 	},
 	{
+		"ID": "Mou3008",
+		"Composer": "Mouton, Jean",
+		"Title": "La rousée du mois de may I",
+		"Genre": "secular work",
+		"Voices": "5",
+		"Original Voices": "5",
+		"Modern Editions": "MacCracken_2014",
+		"First Source": "S-Uu Vokalmusik i Handskrift 76c",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2613/",
+		"RISM or CC Source Sigla": "UppsU 76c",
+		"First Source Exact Date": "~1530",
+		"First Source Date": "~1530",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-11-21",
+		"Note Count": "650",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3008-La_rousee_du_mois_de_may_I.krn",
+		"FILEBASE": "Mou3008-La_rousee_du_mois_de_may_I"
+	},
+	{
 		"ID": "Ren2001",
 		"Composer": "Renaldo",
 		"Title": "Regina celi letare",
