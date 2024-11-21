@@ -5,6 +5,15 @@ vim:    ts=3:nowrap
 
 {% include_relative styles-local.html %}
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38882FHV3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38882FHV3H');
+</script>
+
 <audio id="audio"></audio>
 
 <table id="work-info">

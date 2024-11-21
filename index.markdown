@@ -8,6 +8,15 @@ layout: page
 <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38882FHV3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38882FHV3H');
+</script>
+
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
