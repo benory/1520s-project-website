@@ -4992,6 +4992,26 @@
 		"FILEBASE": "Ric3004-Sur_tous_regretz"
 	},
 	{
+		"ID": "Ric3007",
+		"Composer": "Richafort, Jean",
+		"Title": "Je fus l'autrier",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Bernstein_1984; Elzinga_1999b",
+		"First Source": "La Couronne et fleur des chansons a troys (Venice: Andrea Antico and A. dell’ Abbate)",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"RISM or CC Source Sigla": "1536|1",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Date Added": "2024-11-25",
+		"Note Count": "481",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3007-Je_fus_lautrier--La_Couronne.krn",
+		"FILEBASE": "Ric3007-Je_fus_lautrier--La_Couronne"
+	},
+	{
 		"ID": "Ror0101",
 		"Composer": "Rore, Cipriano de",
 		"Title": "Cantai mentre chi'i' arsi del mio foco",
