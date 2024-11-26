@@ -5012,6 +5012,26 @@
 		"FILEBASE": "Ric3007-Je_fus_lautrier--La_Couronne"
 	},
 	{
+		"ID": "Ric3008",
+		"Composer": "Richafort, Jean",
+		"Title": "N'avez point veu mal assenée",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Bernstein_1984; Elzinga_1999b",
+		"First Source": "La Couronne et fleur des chansons a troys (Venice: Andrea Antico and A. dell’ Abbate)",
+		"RISM Source Link": "https://rism.online/sources/993104147",
+		"RISM or CC Source Sigla": "1536|1",
+		"First Source Exact Date": "1536",
+		"First Source Date": "1536",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-11-26",
+		"Note Count": "536",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3008-Navez_point_veu_mal_assenee.krn",
+		"FILEBASE": "Ric3008-Navez_point_veu_mal_assenee"
+	},
+	{
 		"ID": "Ror0101",
 		"Composer": "Rore, Cipriano de",
 		"Title": "Cantai mentre chi'i' arsi del mio foco",
