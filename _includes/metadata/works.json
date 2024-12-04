@@ -5018,6 +5018,26 @@
 		"FILEBASE": "Ric3004-Sur_tous_regretz"
 	},
 	{
+		"ID": "Ric3005",
+		"Composer": "Richafort, Jean",
+		"Title": "Le temps qui court",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Elzinga_1999b",
+		"First Source": "Il primo libro de le canzoni franzese (Venice: Ottaviano Scotto)",
+		"RISM Source Link": "https://rism.online/sources/993104141",
+		"RISM or CC Source Sigla": "1535|8",
+		"First Source Exact Date": "1535",
+		"First Source Date": "1535",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-12-4",
+		"Note Count": "715",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3005-Le_temps_qui_court.krn",
+		"FILEBASE": "Ric3005-Le_temps_qui_court"
+	},
+	{
 		"ID": "Ric3007",
 		"Composer": "Richafort, Jean",
 		"Title": "Je fus l'autrier",
