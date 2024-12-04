@@ -622,6 +622,28 @@
 		"FILEBASE": "Any3012-Le_berger_et_la_bergere"
 	},
 	{
+		"ID": "Any3014",
+		"Composer": "Anonymous",
+		"Title": "L'amour de moy si est enclose",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Elzinga_1999b",
+		"First Source": "Second livre de chansons a trois parties (Paris: Le Roy and Ballard)",
+		"RISM Source Link": "https://rism.online/sources/993120648",
+		"RISM or CC Source Sigla": "1578|15",
+		"Linkage": "Richafort, Jean",
+		"Plausible Attribution": "Jean Richafort",
+		"First Source Exact Date": "1578",
+		"First Source Date": "1578",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Date Added": "2024-12-4",
+		"Note Count": "236",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any3014-Lamour_de_moy_si_est_enclose--Second_livre_de_chansons.krn",
+		"FILEBASE": "Any3014-Lamour_de_moy_si_est_enclose--Second_livre_de_chansons"
+	},
+	{
 		"ID": "Arc3013",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Il bianco e dolce cigno",
