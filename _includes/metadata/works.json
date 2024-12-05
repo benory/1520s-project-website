@@ -5104,6 +5104,26 @@
 		"FILEBASE": "Ric3005-Le_temps_qui_court"
 	},
 	{
+		"ID": "Ric3006",
+		"Composer": "Richafort, Jean",
+		"Title": "Cuidez vous que Dieu nous faille",
+		"Genre": "secular work",
+		"Voices": "5",
+		"Original Voices": "5",
+		"Modern Editions": "Elzinga_1999b",
+		"First Source": "S-Uu Vokalmusik i Handskrift 76c",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2613/",
+		"RISM or CC Source Sigla": "UppsU 76c",
+		"First Source Exact Date": "~1530",
+		"First Source Date": "~1530",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-12-5",
+		"Note Count": "604",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3006-Cuidez_vous_que_Dieu_nous_faille.krn",
+		"FILEBASE": "Ric3006-Cuidez_vous_que_Dieu_nous_faille"
+	},
+	{
 		"ID": "Ric3007",
 		"Composer": "Richafort, Jean",
 		"Title": "Je fus l'autrier",
