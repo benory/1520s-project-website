@@ -5204,6 +5204,27 @@
 		"FILEBASE": "Ric3010-Tru_tru_trut_avant"
 	},
 	{
+		"ID": "Ric3011",
+		"Composer": "Richafort, Jean",
+		"Title": "Hors de plaisir",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Elzinga_1999b",
+		"First Source": "Le Parangon des chansons (Lyon: Jacques Moderne)",
+		"RISM Source Link": "https://rism.online/sources/993104204",
+		"RISM or CC Source Sigla": "1538|16",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"First Source Exact Date": "1538",
+		"First Source Date": "1538",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-12-6",
+		"Note Count": "268",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3011-Hors_de_plaisir.krn",
+		"FILEBASE": "Ric3011-Hors_de_plaisir"
+	},
+	{
 		"ID": "Ror0101",
 		"Composer": "Rore, Cipriano de",
 		"Title": "Cantai mentre chi'i' arsi del mio foco",
