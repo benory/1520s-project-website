@@ -730,6 +730,26 @@
 		"FILEBASE": "Bar2001-Peccantem_me_cotidie"
 	},
 	{
+		"ID": "Bar2002",
+		"Composer": "Barra, Hotinet",
+		"Title": "Nuptie facte sunt",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Lowinsky_1968",
+		"First Source": "I-Fl MS Acquisti e doni 666 (\"Medici Codex\")",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/",
+		"RISM or CC Source Sigla": "FlorL 666",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-12-7",
+		"Note Count": "1298",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bar/Bar2002-Nuptie_facte_sunt.krn",
+		"FILEBASE": "Bar2002-Nuptie_facte_sunt"
+	},
+	{
 		"ID": "Bau1001a",
 		"Composer": "Bauldeweyn, Noel",
 		"Title": "Missa Inviolata",
