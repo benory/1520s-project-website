@@ -5245,6 +5245,26 @@
 		"FILEBASE": "Ric3012-Il_nest_si_doulce_vie"
 	},
 	{
+		"ID": "Ric3013",
+		"Composer": "Richafort, Jean",
+		"Title": "J'ay veu que souloye",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Elzinga_1999b",
+		"First Source": "Recueil des ﬂeurs produictes de la divine musicque (Leuven: Pierre Phalèse)",
+		"RISM Source Link": "https://rism.online/sources/993120464",
+		"RISM or CC Source Sigla": "1569|11",
+		"First Source Exact Date": "1569",
+		"First Source Date": "1569",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Date Added": "2024-12-7",
+		"Note Count": "338",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3013-Jay_veu_que_souloye--Recueil_des_fleurs.krn",
+		"FILEBASE": "Ric3013-Jay_veu_que_souloye--Recueil_des_fleurs"
+	},
+	{
 		"ID": "Ror0101",
 		"Composer": "Rore, Cipriano de",
 		"Title": "Cantai mentre chi'i' arsi del mio foco",
