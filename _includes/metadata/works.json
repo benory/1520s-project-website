@@ -5225,6 +5225,26 @@
 		"FILEBASE": "Ric3011-Hors_de_plaisir"
 	},
 	{
+		"ID": "Ric3012",
+		"Composer": "Richafort, Jean",
+		"Title": "Il n'est si doulce vie",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Elzinga_1999b",
+		"First Source": "F-CA MS 128",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2924/",
+		"RISM or CC Source Sigla": "CambraiBM 125-8",
+		"First Source Exact Date": "1542",
+		"First Source Date": "1542",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-12-7",
+		"Note Count": "606",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric3012-Il_nest_si_doulce_vie.krn",
+		"FILEBASE": "Ric3012-Il_nest_si_doulce_vie"
+	},
+	{
 		"ID": "Ror0101",
 		"Composer": "Rore, Cipriano de",
 		"Title": "Cantai mentre chi'i' arsi del mio foco",
