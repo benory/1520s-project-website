@@ -600,7 +600,17 @@
 		"Page Numbers": "96–99"
 	},
 	{
-		"ID": "Seay_1970",
+		"ID": "Seay_1970a",
+		"Composer/Author": "Jacobi Arcadelt",
+		"Name of Volume": "Opera Omnia: Motecta",
+		"Editor": "Albert Seay",
+		"Volume": "10",
+		"Series": "Corpus Mensurabilis Musicae 31",
+		"Publisher": "American Institute of Musicology",
+		"Publication Year": "1970"
+	},
+	{
+		"ID": "Seay_1970b",
 		"Composer/Author": "Jacobi Arcadelt",
 		"Name of Volume": "Opera Omnia: Madrigali, libro primo",
 		"Editor": "Albert Seay",
