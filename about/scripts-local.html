@@ -97,10 +97,12 @@ function displayYearsPlot(data) {
       "type": "ordinal",
       "title": "Year of First Source",
       "axis": {
-          "labelFontSize": 14,
-          "titleFontSize": 16
+        "labelFontSize": 14,
+        "titleFontSize": 16,
+        "labelExpr": "datum.label % 2 === 0 ? datum.label : ''" // Only display every 5th year
         }
     },
+
     "y": {
       "field": "Number of Works",
       "type": "quantitative",
