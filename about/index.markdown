@@ -64,7 +64,7 @@ Thanks to Stefan Gasch, Birgit Lodes, and the [New Senfl Edition](https://senflo
 
 ## Support
 
-This project has been generously supported by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, by [Villa I Tatti](https://itatti.harvard.edu/){:target="_blank"}, Harvard's Center for Italian Renaissance Studies, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
+This project has been generously supported by [Villa I Tatti](https://itatti.harvard.edu/){:target="_blank"}, Harvard's Center for Italian Renaissance Studies, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
 
 [![i Tatti logo](ITatti_logo.png)](https://itatti.harvard.edu/){:target="_blank"} [![CESTA logo](CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"}[![CCARH logo](CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}[![Propel Grant logo](Propel_logo.png)](https://propelgrants.stanford.edu){:target="_blank"}
 
