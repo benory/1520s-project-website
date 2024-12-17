@@ -52,27 +52,21 @@ To upload music, Ory:
 
 Do you see an mistake in a score? Do you disagree with the proposed editorial accidentals? Please feel free to email Ory with an [error report](mailto:The1520sProject@gmail.com).
 
-Would you like a particular score to be texted? [Let us know.](mailto:The1520sProject@gmail.com)
-
-## Collaborations
-
-### New Senfl Edition
-
-Thanks to Stefan Gasch, Birgit Lodes, and the [New Senfl Edition](https://senflonline-eng.com/new-senfl-edition/) at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the [currently available pieces](/browse/?q=senfl), each of which links to the New Senfl Edition's critical commentary.
-
-[![Senfl Banner](/images/Senfl_banner.png)](https://senflonline-eng.com/new-senfl-edition/)
-
-## Support
-
-This project has been generously supported by [Villa I Tatti](https://itatti.harvard.edu/){:target="_blank"}, Harvard's Center for Italian Renaissance Studies, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
-
-[![i Tatti logo](ITatti_logo.png)](https://itatti.harvard.edu/){:target="_blank"} [![CESTA logo](CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"}[![CCARH logo](CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}[![Propel Grant logo](Propel_logo.png)](https://propelgrants.stanford.edu){:target="_blank"}
+Would you like a particular score to be texted? [Let us know.](mailto:The1520sProject@gmail.com)<br><br>
 
 ## People
 
-Benjamin Ory, Project Director ([benjaminory@gmail.com](mailto:benjaminory@gmail.com))
+<div id="paragraph"> Benjamin Ory, Project Director (<a href="mailto:benjaminory@gmail.com">benjaminory@gmail.com</a>)<br><br>
+  
+  <div id="paragraph"> Benjamin Ory is a Fonds Wetenschappelijk Onderzoek Junior Postdoctoral Fellow at Katholieke Universiteit Leuven. He received his PhD in musicology from Stanford University in 2022, and has since served as visiting assistant professor of musicology at Williams College and as a postdoctoral fellow at Stanford. He is a co-director of <a href="https://renaissancemapping.org" target="_blank">Mapping the Musical Renaissance</a>. His research focuses on sixteenth-century polyphony as well as the early history of Renaissance musicology, with articles forthcoming in the <i>Journal of the American Musicological Society</i> and the <i>Journal of Musicology</i>. He is editing a volume of motets for the Adrian Willaert collected-works edition, published with the American Institute of Musicology.</div><br>
 
-Craig Sapp, Technical Director ([craigsapp@stanford.edu](mailto:craigsapp@stanford.edu))
+</div>
+
+<div id="paragraph"> Craig Sapp, Technical Director (<a href="mailto:craigsapp@stanford.edu">craigsapp@stanford.edu</a>)<br><br>
+
+  <div id="paragraph"> Craig Sapp is a world expert in computer-based musical analysis who develops transformative digital-humanities projects in collaboration with colleagues and students. As consulting professor at Stanford University, Sapp teaches courses in computational music theory and digital musicology. He serves as technical director of not only the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a>, but also the NEH-funded <a href="https://www.tassomusic.org/" target="_blank">Tasso in Music Project</a>, and as technical lead for the <a href="https://chopin.musicsources.pl/en/" target="_blank">Chopin Heritage in Open Access project</a> (2016–20), the <a href="https://polish.musicsources.pl/pl" target="_blank">Polish Music in Open Access project</a> (2019–22), and the <a href="https://polyrhythm.humdrum.org" target="_blank">Polyrhythm Project</a> (2018–present). He served as a consultant for the <a href="https://gaspar-van-weerbeke.eu" target="_blank">Gaspar Online Edition</a> (2021–22).</div>
+
+</div>
 
 <br>
 
@@ -96,4 +90,17 @@ Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université d
 Giovanni Zanovello (Indiana University) <br>
 Emily Zazulia (University of California, Berkeley)
 
+</div><br>
+
+## Support
+
+This project has been generously supported by [Villa I Tatti](https://itatti.harvard.edu/){:target="_blank"}, Harvard's Center for Italian Renaissance Studies, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
+
+[![i Tatti logo](ITatti_logo.png)](https://itatti.harvard.edu/){:target="_blank"} [![CESTA logo](CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"}[![CCARH logo](CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}[![Propel Grant logo](Propel_logo.png)](https://propelgrants.stanford.edu){:target="_blank"}<br><br>
+
+## Collaborations
+
+<div id="paragraph"><h3>New Senfl Edition</h3>
+  <div id="paragraph"> Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank">New Senfl Edition</a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank">available pieces</a>, each of which links to the New Senfl Edition's critical commentary.</div>
+  <a href="https://senflonline-eng.com/new-senfl-edition/"><img src="/images/Senfl_banner.png" alt="Senfl Banner"></a>
 </div>
