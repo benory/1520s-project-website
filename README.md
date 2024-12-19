@@ -9,6 +9,7 @@ Files/directories:
 - browse == browse page for the website
 - documentation == documentation page for website
 - images == image files for the website
+- recently_added == recently added page for the website
 - work == work page for the website
 - .gitignore == ignores .DS_Store
 - .serve == adds a specific port to run the website locally
