@@ -1,0 +1,18 @@
+<script>
+// vim: ts=3
+
+let METADATA = {% include metadata/works.json %};
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- run after webpage has finished loading.
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+	fillMostRecentList(METADATA);
+});
+
+</script>
+
+
+

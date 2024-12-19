@@ -1,0 +1,131 @@
+{% include_relative scripts-listeners.html %}
+
+<script>
+// vim: ts=3
+
+//////////////////////////////
+//
+// fillMostRecentList --
+//
+
+function fillMostRecentList(metadata) {
+	displayMostRecent(metadata);
+}
+
+//////////////////////////////
+//
+// displayMostRecent --  Display the most recently added works.   The
+//    number of works displayed is controled by a data parameter in the
+//    HTML code where the table will be displayed:
+//        <div data-count="10" id="most-recent"></div>
+//    in this case the 10 most recent works will be displayed in the list.
+//
+
+function displayMostRecent(metadata) {
+	metadata.sort(compareByDateAdded);
+
+	let element = document.querySelector("#most-recent");
+	if (!element) {
+		console.error("Cannot find #most-recent.");
+		return;
+	}
+	let count = element.dataset.count;
+
+	let output = "<table class='most-recent'>";
+	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
+	for (let i=0; i<count; i++) {
+		
+		let entry = metadata[i];
+		if (entry && entry["Date Added"]){ 
+			let date = prepareDate(entry["Date Added"]);
+			let composer = prepareComposer(entry.Composer);
+			let title = prepareTitle(entry);
+			output += "<tr>";
+			output += `<td>${date}</td>`;
+			output += `<td>${composer}</td>`;
+			output += `<td>${title}</td>`;
+			output += "</tr>";
+		} else {
+			continue;
+		}
+	}
+	output += "</table>";
+	element.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// prepareTitle -- Merge title and subtitle fields and apply URL.
+//
+
+function prepareTitle(entry) {
+	let output = entry.Title;
+	if (entry.Subtitle) {
+		output += `, <i>${entry.Subtitle}</i>`;
+	}
+	let id = entry.ID || "";
+	if (id) {
+		output = `<a target="_blank" href="/work?id=${id}">${output}</a>`;
+	}
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// prepareDate -- convert YYYY-M-D to D MMM YYYY
+//
+
+function prepareDate(inputDateString) {
+	if (!inputDateString) {
+		return "";
+	}
+	let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
+	let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	return formattedDate;
+}
+
+
+
+//////////////////////////////
+//
+// prepareComposer -- Make "first last" from "last, first".
+//
+
+function prepareComposer(name) {
+	let matches = name.match(/^\s*([^,]+)\s*,\s*([^,]+)\s*$/);
+	if (!matches) {
+		return name;
+	} else {
+		return `<span class="first-name">${matches[2]}</span> <span class="last-name">${matches[1]}</span>`;
+	}
+}
+
+
+
+//////////////////////////////
+//
+// compareByDateAdded -- For sorting metadata entries by "Date Added".
+//
+
+function compareByDateAdded(a, b) {
+  // Handle null or empty dates by placing them at the end
+  if (!a["Date Added"] && !b["Date Added"]) return 0;
+  if (!a["Date Added"]) return 1;
+  if (!b["Date Added"]) return -1;
+
+  // Convert date strings to Date objects for comparison
+  const dateA = new Date(a["Date Added"].replace(/-/g, "/"));
+  const dateB = new Date(b["Date Added"].replace(/-/g, "/"));
+
+  // Compare the dates
+  if (dateA < dateB) return 1;
+  if (dateA > dateB) return -1;
+  return 0;
+}
+
+</script>
