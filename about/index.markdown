@@ -56,19 +56,24 @@ Would you like a particular score to be texted? [Let us know.](mailto:The1520sPr
 
 ## People
 
-<div id="paragraph"> Benjamin Ory, Project Director (<a href="mailto:benjaminory@gmail.com">benjaminory@gmail.com</a>)<br><br>
-  
-  <div id="paragraph"> Benjamin Ory is a Fonds Wetenschappelijk Onderzoek Junior Postdoctoral Fellow at Katholieke Universiteit Leuven. He received his PhD in musicology from Stanford University in 2022, and has since served as a Digital Humanities Fellow at Harvard University’s Villa I Tatti, as visiting assistant professor in musicology at Williams College, and as a postdoctoral fellow at Stanford. He is a co-director of <a href="https://renaissancemapping.org" target="_blank">Mapping the Musical Renaissance</a>. His research focuses on sixteenth-century polyphony as well as the early history of Renaissance musicology, with articles forthcoming in the <i>Journal of the American Musicological Society</i> and the <i>Journal of Musicology</i>. He is editing a volume of motets for the Adrian Willaert collected-works edition, published with the American Institute of Musicology. <a href="https://benjaminory.com" target="_blank">See more about him here</a>.</div><br>
-
+<div class="team-container">
+    <div class="team-member">
+        <img src="/images/headshots/Ory.jpg" alt="Benajmin Ory">
+        <div class="bio">
+            <h3>Benjamin Ory</h3>
+            <p><strong>Director</strong></p>
+            <p><a href="https://benjaminory.com" target="_blank">Benjamin Ory</a> is a Fonds Wetenschappelijk Onderzoek Junior Postdoctoral Fellow at Katholieke Universiteit Leuven. He received his PhD in musicology from Stanford University in 2022, and has since served as a Digital Humanities Fellow at Harvard University’s Villa I Tatti, as visiting assistant professor in musicology at Williams College, and as a postdoctoral fellow at Stanford. He is a co-director of <a href="https://renaissancemapping.org" target="_blank">Mapping the Musical Renaissance</a>. His research focuses on sixteenth-century polyphony as well as the early history of Renaissance musicology, with forthcoming articles in the <i>Journal of the American Musicological Society</i> and the <i>Journal of Musicology</i>.</p>
+        </div>
+    </div>
+    <div class="team-member">
+        <img src="/images/headshots/Sapp.jpg" alt="Craig Sapp">
+        <div class="bio">
+            <h3>Craig Sapp</h3>
+            <p><b>Technical Director</b></p>
+            <p>Craig Sapp is a world expert in computer-based musical analysis who develops transformative digital-humanities projects in collaboration with colleagues and students. As consulting professor at Stanford University, Sapp teaches courses in computational music theory and digital musicology. He serves as technical director of not only the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a>, but also the NEH-funded <a href="https://www.tassomusic.org/" target="_blank">Tasso in Music Project</a>, and as technical lead for the <a href="https://chopin.musicsources.pl/en/" target="_blank">Chopin Heritage in Open Access project</a> (2016–20), the <a href="https://polish.musicsources.pl/pl" target="_blank">Polish Music in Open Access project</a> (2019–22), and the <a href="https://polyrhythm.humdrum.org" target="_blank">Polyrhythm Project</a> (2018–present). He served as a consultant for the <a href="https://gaspar-van-weerbeke.eu" target="_blank">Gaspar Online Edition</a> (2021–22).</p>
+        </div>
+    </div>
 </div>
-
-<div id="paragraph"> Craig Sapp, Technical Director (<a href="mailto:craigsapp@stanford.edu">craigsapp@stanford.edu</a>)<br><br>
-
-  <div id="paragraph"> Craig Sapp is a world expert in computer-based musical analysis who develops transformative digital-humanities projects in collaboration with colleagues and students. As consulting professor at Stanford University, Sapp teaches courses in computational music theory and digital musicology. He serves as technical director of not only the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a>, but also the NEH-funded <a href="https://www.tassomusic.org/" target="_blank">Tasso in Music Project</a>, and as technical lead for the <a href="https://chopin.musicsources.pl/en/" target="_blank">Chopin Heritage in Open Access project</a> (2016–20), the <a href="https://polish.musicsources.pl/pl" target="_blank">Polish Music in Open Access project</a> (2019–22), and the <a href="https://polyrhythm.humdrum.org" target="_blank">Polyrhythm Project</a> (2018–present). He served as a consultant for the <a href="https://gaspar-van-weerbeke.eu" target="_blank">Gaspar Online Edition</a> (2021–22).</div>
-
-</div>
-
-<br>
 
 ### Advisory Board
 
