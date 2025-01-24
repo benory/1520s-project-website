@@ -4628,6 +4628,26 @@
 		"FILEBASE": "Ren2002-Hec_dies_quam_fecit"
 	},
 	{
+		"ID": "Ren2008",
+		"Composer": "Renaldo",
+		"Title": "O Domine Jesu Christe",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Sherr_1989a",
+		"First Source": "I-Bc Q.19",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/",
+		"RISM or CC Source Sigla": "BolC Q19",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-1-24",
+		"Note Count": "301",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren2008-O_Domine_Jesu_Christe.krn",
+		"FILEBASE": "Ren2008-O_Domine_Jesu_Christe"
+	},
+	{
 		"ID": "Ric1002a",
 		"Composer": "Richafort, Jean",
 		"Title": "Requiem",
