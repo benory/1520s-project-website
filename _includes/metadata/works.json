@@ -1174,6 +1174,26 @@
 		"FILEBASE": "Con2006-Nigra_sum"
 	},
 	{
+		"ID": "Con2009",
+		"Composer": "Conseil, Jean",
+		"Title": "Sancta Maria, mater Dei",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Smijers_1960",
+		"First Source": "Liber quartus.xxix.musicales (Paris: Pierre Attaingnant)",
+		"RISM Source Link": "https://rism.online/sources/993104115",
+		"RISM or CC Source Sigla": "1534|6",
+		"First Source Exact Date": "1534",
+		"First Source Date": "1534",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-1-30",
+		"Note Count": "846",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Con/Con2009-Sancta_Maria_mater_Dei.krn",
+		"FILEBASE": "Con2009-Sancta_Maria_mater_Dei"
+	},
+	{
 		"ID": "Con2013",
 		"Composer": "Conseil, Jean",
 		"Title": "Adiuva me, Domine",
