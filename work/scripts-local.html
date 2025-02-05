@@ -143,9 +143,11 @@ function displayWorkInfo(id) {
 		let diammcomp = cominfo["Composer DIAMM page"];
 		let rismPersonId = cominfo["Composer RISM ID"];
 
-		if (rismPersonId.match(/^[a-z]{2}/)) {
-			// Remove "pe" prefix on rism person number:
-			rismPersonId = rismPersonId.substring(2);
+		if (rismPersonId) {
+			if (rismPersonId.match(/^[a-z]{2}/)) {
+				// Remove "pe" prefix on rism person number:
+				rismPersonId = rismPersonId.substring(2);
+			}
 		}
 		if (diammcomp) {
 			composeroutput += ` <span class="info-link">(<a target="_blank" href="${diammcomp}">DIAMM</a>)</span>`;
