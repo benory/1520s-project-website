@@ -1,5 +1,27 @@
 [
 	{
+		"ID": "Any1001a",
+		"Composer": "Anonymous",
+		"Title": "Missa Vulnerasti cor meum",
+		"Subtitle": "Kyrie",
+		"Genre": "mass",
+		"Voices": "4",
+		"Original Voices": "4",
+		"First Source": "D-Mbs Mus. MS 65",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2207/",
+		"RISM or CC Source Sigla": "MunBS 65",
+		"Pages, Folios, or Numbers": "ff. 67v–70r",
+		"Mensuration Signs in Earliest Source": "O; Cut-C; Cut-O over 3",
+		"First Source Exact Date": "~1516",
+		"First Source Date": "~1516",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-12",
+		"Note Count": "722",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any1001a-Missa_Vulnerasti_cor_meum-Kyrie.krn",
+		"FILEBASE": "Any1001a-Missa_Vulnerasti_cor_meum-Kyrie"
+	},
+	{
 		"ID": "Any2001",
 		"Composer": "Anonymous",
 		"Title": "Nigra sum",
