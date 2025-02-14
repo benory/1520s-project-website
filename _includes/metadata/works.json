@@ -22,6 +22,28 @@
 		"FILEBASE": "Any1001a-Missa_Vulnerasti_cor_meum-Kyrie"
 	},
 	{
+		"ID": "Any1001b",
+		"Composer": "Anonymous",
+		"Title": "Missa Vulnerasti cor meum",
+		"Subtitle": "Gloria",
+		"Genre": "mass",
+		"Voices": "4",
+		"Original Voices": "4",
+		"First Source": "D-Mbs Mus. MS 65",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2207/",
+		"RISM or CC Source Sigla": "MunBS 65",
+		"Pages, Folios, or Numbers": "ff. 70v–74r",
+		"Mensuration Signs in Earliest Source": "O; Cut-C; O over 3",
+		"First Source Exact Date": "~1516",
+		"First Source Date": "~1516",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-14",
+		"Note Count": "1097",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Any/Any1001b-Missa_Vulnerasti_cor_meum-Gloria.krn",
+		"FILEBASE": "Any1001b-Missa_Vulnerasti_cor_meum-Gloria"
+	},
+	{
 		"ID": "Any1001e",
 		"Composer": "Anonymous",
 		"Title": "Missa Vulnerasti cor meum",
