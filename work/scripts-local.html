@@ -300,8 +300,10 @@ function displayWorkInfo(id) {
 
 			        if (ed["Location"] && ed["Publisher"] && ed["Publication Year"]) {
 			            entry += ` (${ed["Location"]}: ${ed["Publisher"]}, ${ed["Publication Year"]})`;
-			        } else if (ed["Location"] && ed["Publication Year"]) {
+			    	} else if (ed["Location"] && ed["Publication Year"]) {
 			            entry += ` (${ed["Location"]}: ${ed["Publication Year"]})`;
+			        } else if (ed["Publisher"] && ed["Publication Year"]) {
+			        	entry += ` (${ed["Publisher"]}, ${ed["Publication Year"]})`;
 			        } else if (ed["Publication Year"]) {
 			            entry += ` (${ed["Publication Year"]})`;
 			        }
