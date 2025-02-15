@@ -79,7 +79,6 @@ table#work-info {
   
 .work-item {
 	margin-bottom: 2px;
-	margin-bottom: 2px;
 }
 
 .info-link {
@@ -180,6 +179,17 @@ audio {
 	padding: 0;
 }
 
+.bibliographic-entry:first-of-type {
+    display: inline; /* Keeps entries on the same line */
+    text-indent: 0; /* Resets indent so it's not affected by .work-item */
+    padding-left: 0; /* Ensures alignment remains correct */
+}
+
+.bibliographic-entry:nth-of-type(n+2) {
+    text-indent: -4em; /* Ensures the second citation starts on a new line, indented once from "Modern Editions:" */
+    margin-left: -1.8em; /* Moves the start of the second citation one level deeper */
+    padding-left: 0em; /* Indents wrapped lines twice from "Modern Editions:" */
+}
 
 </style>
 

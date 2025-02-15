@@ -27,8 +27,6 @@ vim:    ts=3:nowrap
    <tbody id="work-info-body"></tbody>
 </table>
 
-<br>
-
 <div id="external-info"></div>
 
 <div id="analysis-plots">
