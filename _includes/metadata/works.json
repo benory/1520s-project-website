@@ -6013,6 +6013,26 @@
 		"FILEBASE": "Ser3006-Tant_que_vivray"
 	},
 	{
+		"ID": "Ser3013",
+		"Composer": "Sermisy, Claudin de",
+		"Title": "Changeons propos",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Cazeaux_1974a",
+		"First Source": "Chansons nouvelles en musique (Paris: Pierre Attaingnant)",
+		"RISM Source Link": "https://rism.online/sources/993104011",
+		"RISM or CC Source Sigla": "1528|3",
+		"First Source Exact Date": "1528",
+		"First Source Date": "1528",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2024-2-17",
+		"Note Count": "409",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3013-Changeons_propos.krn",
+		"FILEBASE": "Ser3013-Changeons_propos"
+	},
+	{
 		"ID": "Sil2003",
 		"Composer": "Silva, Andreas de",
 		"Title": "Tota pulchra es",
