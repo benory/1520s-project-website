@@ -816,6 +816,28 @@
 		"FILEBASE": "Arc2007-Benedixit_Deus_noe"
 	},
 	{
+		"ID": "Arc2008",
+		"Composer": "Arcadelt, Jacques",
+		"Title": "Filiae Jerusalem",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Seay_1970a",
+		"First Source": "Secundus liber cum quatuor vocibus (Lyon: Jacques Moderne)",
+		"RISM Source Link": "https://rism.online/sources/993104067",
+		"IIIF Source": "https://www.digitale-sammlungen.de/en/view/bsb00075669",
+		"IIIF Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00075669/manifest",
+		"RISM or CC Source Sigla": "1532|11",
+		"First Source Exact Date": "1532",
+		"First Source Date": "1532",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-18",
+		"Note Count": "1349",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Arc/Arc2008-Filiae_Jerusalem.krn",
+		"FILEBASE": "Arc2008-Filiae_Jerusalem"
+	},
+	{
 		"ID": "Arc2009",
 		"Composer": "Arcadelt, Jacques",
 		"Title": "Haec dies",
