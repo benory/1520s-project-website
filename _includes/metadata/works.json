@@ -4860,6 +4860,27 @@
 		"FILEBASE": "Ren1001b-Missa_Sine_nomine-Gloria"
 	},
 	{
+		"ID": "Ren1001d",
+		"Composer": "Renaldo",
+		"Title": "Missa Sine nomine",
+		"Subtitle": "Sanctus",
+		"Genre": "mass",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Sherr_1989b",
+		"First Source": "I-Bc Q.19",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/",
+		"RISM or CC Source Sigla": "BolC Q19",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-23",
+		"Note Count": "446",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren1001d-Missa_Sine_nomine-Sanctus.krn",
+		"FILEBASE": "Ren1001d-Missa_Sine_nomine-Sanctus"
+	},
+	{
 		"ID": "Ren2001",
 		"Composer": "Renaldo",
 		"Title": "Regina celi letare",
