@@ -4902,6 +4902,27 @@
 		"FILEBASE": "Ren1001e-Missa_Sine_nomine-Agnus"
 	},
 	{
+		"ID": "Ren1002a",
+		"Composer": "Renaldo",
+		"Title": "Missa Benedictus Dominus Deus",
+		"Subtitle": "Kyrie",
+		"Genre": "mass",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Sherr_1989b",
+		"First Source": "I-Bc Q.19",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1390/",
+		"RISM or CC Source Sigla": "BolC Q19",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-23",
+		"Note Count": "669",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ren/Ren1002a-Missa_Benedictus_Dominus_Deus-Kyrie.krn",
+		"FILEBASE": "Ren1002a-Missa_Benedictus_Dominus_Deus-Kyrie"
+	},
+	{
 		"ID": "Ren2001",
 		"Composer": "Renaldo",
 		"Title": "Regina celi letare",
