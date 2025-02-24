@@ -234,6 +234,16 @@
 		"Source of Information": "Robert Nosow, \"The Dating and Provenance of Bologna, Civico Museo Bibliografico Musicale, MS Q 19,\" Journal of Musicology 9 (1991), 92–108, at 101."
 	},
 	{
+		"ID": "Res",
+		"Composer": "Regnes, Nicole",
+		"Composer RISM ID": "pe30018759",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/723/",
+		"Start of CYA": "1530",
+		"End of CYA": "1551",
+		"Flourished": "1530–1551",
+		"Places Active": "Paris"
+	},
+	{
 		"ID": "Ric",
 		"Composer": "Richafort, Jean",
 		"Composer RISM ID": "pe30012751",

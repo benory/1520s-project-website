@@ -5107,6 +5107,25 @@
 		"FILEBASE": "Ren2009-Ave_sanctissima_Maria"
 	},
 	{
+		"ID": "Res3004",
+		"Composer": "Regnes, Nicole",
+		"Title": "Le bergier et la bergere",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Bernstein_1984",
+		"First Source": "Trente et une chansons musicales a troys (Paris: Pierre Attaingnant)",
+		"RISM Source Link": "https://rism.online/sources/993104127",
+		"First Source Exact Date": "1535",
+		"First Source Date": "1535",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-24",
+		"Note Count": "494",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Res/Res3004-Le_bergier_et_la_bergere.krn",
+		"FILEBASE": "Res3004-Le_bergier_et_la_bergere"
+	},
+	{
 		"ID": "Ric1002a",
 		"Composer": "Richafort, Jean",
 		"Title": "Requiem",
