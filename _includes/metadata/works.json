@@ -5109,7 +5109,7 @@
 	{
 		"ID": "Res3004",
 		"Composer": "Regnes, Nicole",
-		"Title": "Le bergier et la bergere",
+		"Title": "Le berger et la bergere",
 		"Genre": "secular work",
 		"Voices": "3",
 		"Original Voices": "3",
@@ -5122,8 +5122,8 @@
 		"Texted": "no",
 		"Date Added": "2025-2-24",
 		"Note Count": "494",
-		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Res/Res3004-Le_bergier_et_la_bergere.krn",
-		"FILEBASE": "Res3004-Le_bergier_et_la_bergere"
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Res/Res3004-Le_berger_et_la_bergere.krn",
+		"FILEBASE": "Res3004-Le_berger_et_la_bergere"
 	},
 	{
 		"ID": "Ric1002a",
