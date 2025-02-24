@@ -271,8 +271,11 @@ function displayWorkInfo(id) {
 
 	    console.log("Modern Edition IDs:", modernEditionIds); // Debugging: Check extracted IDs
 
+	    // Omit modern editions if the modern edition is listed on the score
+	    let externalName       = workinfo["External Project Name"];
+
 	    // Ensure lookup table is defined
-	    if (DATA1520.lookup && DATA1520.lookup.modern_editions) {
+	    if (DATA1520.lookup && DATA1520.lookup.modern_editions && !externalName) {
 	        // Retrieve matching entries from the lookup table
 	        let editionsInfo = modernEditionIds.map(id => {
 	            let edition = DATA1520.lookup.modern_editions[id];
