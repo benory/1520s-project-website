@@ -2417,6 +2417,26 @@
 		"FILEBASE": "Gom2005-Aspice_Domine"
 	},
 	{
+		"ID": "Gom2009",
+		"Composer": "Gombert, Nicolas",
+		"Title": "Beati omnes",
+		"Genre": "motet",
+		"Voices": "5",
+		"Original Voices": "5",
+		"Modern Editions": "Schmidt-Görg_1968",
+		"First Source": "Secundus liber cum quinque vocibus (Lyon: Jacques Moderne)",
+		"RISM Source Link": "https://rism.online/sources/993104083",
+		"RISM or CC Source Sigla": "1532|9",
+		"First Source Exact Date": "1532",
+		"First Source Date": "1532",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-26",
+		"Note Count": "1190",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom2009-Beati_omnes.krn",
+		"FILEBASE": "Gom2009-Beati_omnes"
+	},
+	{
 		"ID": "Gom3001",
 		"Composer": "Gombert, Nicolas",
 		"Title": "Gris et tanné me fault porter",
