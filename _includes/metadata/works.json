@@ -1323,6 +1323,26 @@
 		"FILEBASE": "Bis2001-Confirma_hoc_Deus"
 	},
 	{
+		"ID": "Bnt2001",
+		"Composer": "Brunet, Johannes",
+		"Title": "Ite in orbem",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Lowinsky_1968",
+		"First Source": "I-Fl MS Acquisti e doni 666 (\"Medici Codex\")",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1399/",
+		"RISM or CC Source Sigla": "FlorL 666",
+		"First Source Exact Date": "1518",
+		"First Source Date": "1518",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-2-28",
+		"Note Count": "1397",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Bnt/Bnt2001-Ite_in_orbem.krn",
+		"FILEBASE": "Bnt2001-Ite_in_orbem"
+	},
+	{
 		"ID": "Cha2001",
 		"Composer": "Champion, Nicolas",
 		"Title": "De profundis clamavi",

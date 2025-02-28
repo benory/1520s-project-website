@@ -44,6 +44,16 @@
 		"Flourished": "1520–1520"
 	},
 	{
+		"ID": "Bnt",
+		"Composer": "Brunet, Johannes",
+		"Composer RISM ID": "pe50041963",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/331",
+		"Start of CYA": "1510",
+		"End of CYA": "1530",
+		"Flourished": "1510–1530",
+		"Places Active": "Rome?"
+	},
+	{
 		"ID": "Cha",
 		"Composer": "Champion, Nicolas",
 		"Composer RISM ID": "pe30102560",
