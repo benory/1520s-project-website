@@ -6448,6 +6448,26 @@
 		"FILEBASE": "Ser3015-Cest_a_grant_tort"
 	},
 	{
+		"ID": "Ser3018",
+		"Composer": "Sermisy, Claudin de",
+		"Title": "Las, je my plains",
+		"Genre": "secular work",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Cazeaux_1974a",
+		"First Source": "Chansons nouvelles en musique (Paris: Pierre Attaingnant)",
+		"RISM Source Link": "https://rism.online/sources/993104011",
+		"RISM or CC Source Sigla": "1528|3",
+		"First Source Exact Date": "1528",
+		"First Source Date": "1528",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-3-1",
+		"Note Count": "315",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ser/Ser3018-Las_je_my_plains.krn",
+		"FILEBASE": "Ser3018-Las_je_my_plains"
+	},
+	{
 		"ID": "Sil2003",
 		"Composer": "Silva, Andreas de",
 		"Title": "Tota pulchra es",
