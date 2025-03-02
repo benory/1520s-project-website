@@ -54,6 +54,13 @@
 		"Places Active": "Rome?"
 	},
 	{
+		"ID": "Boy",
+		"Composer": "Boyleau",
+		"Start of CYA": "1518",
+		"End of CYA": "1518",
+		"Flourished": "1518–1518"
+	},
+	{
 		"ID": "Cha",
 		"Composer": "Champion, Nicolas",
 		"Composer RISM ID": "pe30102560",
