@@ -17,11 +17,28 @@ order: 3
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
 
-<input type="text" id="input" onkeyup="FreeTextSearch()" placeholder="Enter title, composer, source, or date"><span id="search-count"></span>
+<div id="search-interface">
+  <div class="top-row">
+    <div class="left-search-group">
+      <input type="text" id="input" onkeyup="FreeTextSearch()" placeholder="Enter title, composer, source, or date">
+      <span id="search-count"></span>
+    </div>
+    <div class="top-section">
+      <div id="top-dropdowns">
+        <div class="top-line">
+          <div id="composer-container"></div>
+          <div id="genre-container"></div>
+          <div id="year-container"></div>
+        </div>
+        <div class="bottom-line">
+          <div id="voice-container"></div>
+          <div id="source-container"></div>
+        </div>
+      </div>
+      <div class="mensuration-right"></div>
+    </div>
+  </div>
+</div>
 
-<div id="search-interface"></div>
-
+<!-- Results -->
 <div id="list"></div>
-
-
-

@@ -12,25 +12,81 @@
 // buildSearchInterface --
 //
 
-function buildSearchInterface(data, selector) {
-	if (!selector) {
-		selector = "#search-interface";
-	}
-	let element = document.querySelector(selector);
-	if (!element) {
-		console.error(`Error: cannot find ${selector} element to create search interface`);
-		return;
-	}
-	let output = "";
-	output += buildComposerSelect(data);
-	output += buildVoiceSelect(data);
-	output += buildTextSelect(data);
-	output += buildYearSelect(data);
-	output += buildGenreSelect(data);
-	output += buildSourceSelect(data);
-	element.innerHTML = output;
-}
+function buildSearchInterface(data) {
+  const topDropdowns = document.querySelector("#top-dropdowns");
 
+  if (!topDropdowns) return;
+
+  // Clear all areas
+  document.getElementById("composer-container").innerHTML = "";
+  document.getElementById("genre-container").innerHTML = "";
+  document.getElementById("year-container").innerHTML = "";
+  document.getElementById("voice-container").innerHTML = "";
+
+  // Top dropdowns
+  document.getElementById("composer-container").appendChild(createElementFromHTML(buildComposerSelect(data)));
+  document.getElementById("genre-container").appendChild(createElementFromHTML(buildGenreSelect(data)));
+  document.getElementById("year-container").appendChild(createElementFromHTML(buildYearSelect(data)));
+  document.getElementById("voice-container").appendChild(createElementFromHTML(buildVoiceSelect(data)));
+  document.getElementById("source-container").appendChild(createElementFromHTML(buildSourceSelect(data)));
+
+  const label = document.createElement("label");
+  label.className = "text-checkbox-label";
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.id = "text-checkbox";
+  checkbox.onchange = doSearch;
+
+  label.appendChild(checkbox);
+  label.appendChild(document.createTextNode("Texted scores only"));
+
+  const bottomLine = document.querySelector(".bottom-line");
+
+	const wrapper = document.createElement("div");
+	wrapper.className = "text-checkbox-wrapper full-width";
+	wrapper.appendChild(label);
+	bottomLine.appendChild(wrapper);
+
+  // Bottom row: source + mensuration
+  const row = document.createElement("div");
+  row.className = "dropdown-row";
+
+  const mensWrapper = document.createElement("div");
+  mensWrapper.className = "mensuration-wrapper";
+
+  const dropdownContainer = document.createElement("div");
+	dropdownContainer.className = "custom-dropdown";
+
+	const toggleButton = document.createElement("button");
+	toggleButton.className = "dropdown-toggle";
+	toggleButton.innerHTML = `<span class="toggle-text">Mensuration sign in earliest source</span>`;
+	toggleButton.onclick = () => {
+	  dropdownContainer.classList.toggle("open");
+	};
+
+	const dropdownContent = document.createElement("div");
+	dropdownContent.className = "dropdown-content";
+	dropdownContent.id = "mensuration-menu";
+
+	dropdownContainer.appendChild(toggleButton);
+	dropdownContainer.appendChild(dropdownContent);
+	mensWrapper.appendChild(dropdownContainer);
+
+	buildCustomMensurationMenu(dropdownContent);
+
+  const selectedTags = document.createElement("div");
+  selectedTags.id = "selected-mensurations";
+  selectedTags.className = "selected-mensurations";
+  mensWrapper.appendChild(selectedTags);
+
+  row.appendChild(mensWrapper);
+  const mensurationRight = document.querySelector(".mensuration-right");
+	if (mensurationRight) {
+	  mensurationRight.appendChild(mensWrapper);
+	}
+
+}
 
 
 //////////////////////////////
@@ -244,7 +300,7 @@ function buildComposerSelect(data) {
 	clist.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 	let composerCount = clist.length;
 	let output = "<select class='composer' onchange='doSearch()'>\n";
-	output += `<option value="">Any composers [${composerCount}]</option>`;
+	output += `<option value="">Composers [${composerCount}]</option>`;
 	for (let i=0; i<clist.length; i++) {
 		let name = clist[i];
 		let count = counter[clist[i]];
@@ -277,7 +333,7 @@ function buildGenreSelect(data) {
 	let glist = Object.keys(counter).sort();
 	let genreCount = glist.length;
 	let output = "<select class='genre' onchange='doSearch()'>\n";
-	output += `<option value="">Any genre [${genreCount}]</option>`;
+	output += `<option value="">Genre [${genreCount}]</option>`;
 	for (let i=0; i<glist.length; i++) {
 		let name = glist[i];
 		let count = counter[glist[i]];
@@ -343,7 +399,7 @@ function buildVoiceSelect(data) {
 	// May need to sort numerically if 10 or more voices in any work:
 	let vlist = Object.keys(counter).sort();
 	let output = "<select class='voice' onchange='doSearch()'>\n";
-	output += `<option value="">Any voice count</option>`;
+	output += `<option value="">Voice count</option>`;
 	for (let i=0; i<vlist.length; i++) {
 		let vcount = vlist[i];
 		let text = "voices";
@@ -356,7 +412,86 @@ function buildVoiceSelect(data) {
 	return output;
 }
 
+function handleMensurationSelect() {
+  const select = document.getElementById("mensuration-select");
+  const value = select.value;
+  if (!value || selectedMensurations.has(value)) return;
 
+  selectedMensurations.add(value);
+  renderSelectedMensurations();
+  select.value = ""; // reset dropdown
+  doSearch();
+}
+
+function renderSelectedMensurations() {
+  const container = document.getElementById("selected-mensurations");
+  container.innerHTML = "";
+
+  selectedMensurations.forEach(label => {
+    const tag = document.createElement("div");
+    tag.className = "selected-mensuration";
+    tag.innerHTML = `
+      <img src="/images/mensurations/${mensurationSigns[label]}" alt="${label}" title="${label}" style="height: 20px; vertical-align: middle;">
+      <span class="remove-btn" title="Remove">×</span>
+    `;
+
+    tag.querySelector(".remove-btn").onclick = () => {
+	  selectedMensurations.delete(label);
+
+	  // Also un-highlight the icon in the dropdown
+	  const dropdownItems = document.querySelectorAll(".mensuration-item");
+	  dropdownItems.forEach(item => {
+	    if (item.title === label) {
+	      item.classList.remove("selected");
+	    }
+	  });
+
+  renderSelectedMensurations();
+  doSearch();
+};
+
+    container.appendChild(tag);
+  });
+}
+
+function buildCustomMensurationMenu(container) {
+  if (!container) return;
+  container.innerHTML = "";
+
+  Object.entries(mensurationSigns).forEach(([label, filename]) => {
+    const item = document.createElement("div");
+    item.className = "mensuration-item";
+    item.title = label;
+
+    const img = document.createElement("img");
+    img.src = `/images/mensurations/${filename}`;
+    img.alt = label;
+    img.className = "mensuration-img";
+
+    item.appendChild(img);
+
+    item.onclick = () => {
+		  if (selectedMensurations.has(label)) {
+		    selectedMensurations.delete(label);
+		    item.classList.remove("selected");
+		  } else {
+		    selectedMensurations.add(label);
+		    item.classList.add("selected");
+		  }
+
+		  renderSelectedMensurations();
+		  doSearch();
+
+		  // Close the dropdown after selecting
+		  const dropdown = container.closest(".custom-dropdown");
+		  if (dropdown) {
+		    dropdown.classList.remove("open");
+		  }
+		};
+
+    container.appendChild(item);
+  });
+}
 
 //////////////////////////////
 //
@@ -471,7 +606,7 @@ function buildYearSelect(data) {
 
 	let output = "";
 	output += "<select class='year' onchange='doSearch()'>\n";
-	output += `<option value=''>Any year [${yearCount}]</options>`;
+	output += `<option value=''>Year [${yearCount}]</options>`;
 	for (let year of keys) {
 		if (!year.match(/~/)) {
 			output += `<option value="${year}">&nbsp;&nbsp;&thinsp;${year} (${years[year]})</option>`;
@@ -492,7 +627,7 @@ function buildYearSelect(data) {
 //
 
 function doSearch(data) {
-	if (!data) {
+	if (!Array.isArray(data)) {
 		data = METADATA;
 	}
 
@@ -530,12 +665,8 @@ function doSearch(data) {
 	}
 	let voiceQuery = voiceField.value;
 
-	let textField = searchInterface.querySelector("select.text");
-	if (!textField) {
-		console.log("Problem finding text field in search interface");
-		return;
-	}
-	let textQuery = textField.value;
+	let textCheckbox = document.querySelector("#text-checkbox");
+	let textQuery = textCheckbox && textCheckbox.checked ? "yes" : "";
 
 	let yearField = searchInterface.querySelector("select.year");
 	if (!yearField) {
@@ -592,16 +723,8 @@ function doSearch(data) {
 		data = tempdata;
 	}
 
-	if (textQuery !== "") {
-		let tempdata = [];
-		for (let i=0; i<data.length; i++) {
-			let entry = data[i];
-			let text = entry[INDEX_text];
-			if (text == textQuery) {
-				tempdata.push(entry);
-			}
-		}
-		data = tempdata;
+	if (textCheckbox && textCheckbox.checked) {
+	  data = data.filter(entry => entry[INDEX_text] === "yes");
 	}
 
 	if (yearQuery !== "") {
@@ -614,6 +737,32 @@ function doSearch(data) {
 			}
 		}
 		data = tempdata;
+	}
+
+	if (selectedMensurations.size > 0) {
+	  const tempdata = [];
+
+	  for (let i = 0; i < data.length; i++) {
+	    const entry = data[i];
+	    const raw = entry[INDEX_Mensurations];
+
+	    if (!raw) continue;
+
+	    const signsInPiece = raw
+	      .split(";")
+	      .map(sign => sign.trim())
+	      .filter(Boolean);
+
+	    const hasAll = [...selectedMensurations].every(sel =>
+	      signsInPiece.includes(sel)
+	    );
+
+	    if (hasAll) {
+	      tempdata.push(entry);
+	    }
+	  }
+
+	  data = tempdata;
 	}
 
 	displayBrowseTable(data);
@@ -968,7 +1117,7 @@ function setTextAvailableSelectMenu(input) {
 
 	input = input.match(/y/, "i") ? "yes" : "no";
 
-	let textSelect = document.querySelector("select.text");
+	let textSelect = document.querySelector("#text-checkbox");
 	if (!textSelect) {
 		return;
 	}
@@ -1041,7 +1190,7 @@ function updateBrowseUrlDisplay() {
 	let freetext = document.querySelector("input#input").value.trim();
 	let composer = document.querySelector("select.composer").value.trim();
 	let voice    = document.querySelector("select.voice").value.trim();
-	let text     = document.querySelector("select.text").value.trim();
+	let text = document.querySelector("#text-checkbox").checked ? "yes" : "";
 	let year     = document.querySelector("select.year").value.trim();
 	let genre    = document.querySelector("select.genre").value.trim();
 	let source   = document.querySelector("select.source").value.trim();
@@ -1154,6 +1303,11 @@ function clearSearchFields() {
 	doSearch();
 }
 
+function createElementFromHTML(html) {
+  const template = document.createElement("template");
+  template.innerHTML = html.trim();
+  return template.content.firstChild;
+}
 
 </script>
 

@@ -4,16 +4,38 @@
 let COMPOSERS             = {% include metadata/composers.json %}
 let COMPOSER2ID           = {};
 let METADATA              = {% include metadata/works.json %};
-let INDEX_id         	  = "ID";
+let INDEX_id         	    = "ID";
 let INDEX_composer    	  = "Composer";
 let INDEX_title       	  = "Title";
-let INDEX_genre      	  = "Genre";
-let INDEX_voice      	  = "Voices";
+let INDEX_genre      	    = "Genre";
+let INDEX_voice      	    = "Voices";
 let INDEX_text            = "Texted";
 let INDEX_firstsourcedate = "First Source Date";
 let INDEX_firstsource 	  = "First Source";
 let INDEX_RISMlink 	      = "RISM Source Link";
 let INDEX_DIAMMlink	      = "DIAMM source link";
+let INDEX_Mensurations	  = "Mensuration Signs in Earliest Source";
+
+const mensurationSigns = {
+  "Cut-O 3 over 2": "Cut-O-3-over-2.svg",
+  "3": "3.svg",
+  "C": "C.svg",
+  "C2": "C2.svg",
+  "Cut-C": "Cut-C.svg",
+  "Cut-C over 3": "Cut-C-over-3.svg",
+  "Cut-C3": "Cut-C3.svg",
+  "Cut-O": "Cut-O.svg",
+  "Cut-O over 3": "Cut-O-over-3.svg",
+  "Cut-O3": "Cut-O3.svg",
+  "O over 3": "O-over-3.svg",
+  "O": "O.svg",
+  "O2": "O2.svg",
+  "O3": "O3.svg",
+  "reverse C": "Reverse-C.svg",
+  "reverse Cut-C": "Reverse-Cut-C.svg"
+};
+
+const selectedMensurations = new Set();
 
 //////////////////////////////
 //
@@ -25,6 +47,7 @@ let INDEX_DIAMMlink	      = "DIAMM source link";
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterface(METADATA, "#search-interface");
 	displayBrowseTable(METADATA, "#list");
+
 	COMPOSER2ID = makeComposer2Id(COMPOSERS);
 	let cgi = getCgiParameters();
 	let runSearch = false;
@@ -141,9 +164,25 @@ document.addEventListener('keydown', function(event) {
 	}
 });
 
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    const menu = document.getElementById("mensuration-menu");
+    if (menu) {
+      const dropdown = menu.closest(".custom-dropdown");
+      if (dropdown) {
+        dropdown.classList.remove("open");
+      }
+    }
+  }
+});
 
+document.addEventListener("click", function(event) {
+  const openDropdowns = document.querySelectorAll(".custom-dropdown.open");
+  openDropdowns.forEach(dropdown => {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove("open");
+    }
+  });
+});
 
 </script>
-
-
-
