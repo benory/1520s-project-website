@@ -13,60 +13,50 @@ order: 2
   gtag('config', 'G-38882FHV3H');
 </script>
 
-<style>
-	#paragraph {
-		padding-left: 30px;
-	}
+{% include_relative styles-local.html %}
 
-	h1 {
-		font-size: 45px;
-	}
+<div class="page-content">
+	<div class="toc-container">
+	  <h4>Table of Contents</h4>
+	  <ul>
+	    <li><a href="#musical-documentation">Musical documentation</a>
+	      <ul>
+	        <li><a href="#attributions">Attributions</a></li>
+	        <li><a href="#voice-names">Voice names</a></li>
+	        <li><a href="#sections">Sections</a></li>
+	        <li><a href="#notes">Note values and Mensurstriche</a></li>
+	        <li><a href="#mensuration-signs">Mensuration signs</a></li>
+	        <li><a href="#terminal-notes">Terminal notes and fermatas</a></li>
+	        <li><a href="#editorial-accidentals">Editorial accidentals</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#technical-documentation">Technical documentation</a>
+	      <ul>
+	        <li><a href="#filenames">Filenames</a></li>
+	        <li><a href="#score-preparation">Score preparation</a></li>
+	        <li><a href="#encoded-information">Encoded information</a></li>
+	        <li><a href="#source-metadata">Source metadata</a></li>
+	        <li><a href="#website">Website</a>
+	          <ul>
+	            <li><a href="#javascript-tools">JavaScript tools</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="#data-server">Data server</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#download-data">Download project data</a></li>
+	  </ul>
+	</div>
 
-	h2 {
-		font-size: 32px;
-		font-weight: bold;
-	}
+<div class="main-content">
 
-	h3 {
-		font-size: 24px;
-		font-weight: bold;
-	}
+<h2 id="musical-documentation">Musical Documentation</h2>
 
-	h4 {
-		font-size: 20px;
-	}
-
-</style>
-
-#### Table of contents
-- [Musical documentation](#music-documentation)
-	- [Attributions](#attributions)
-	- [Voice names](#voice-names)
-	- [Sections](#sections)
-	- [Note values and Mensurstriche](#notes)
-	- [Mensuration signs](#mensuration-signs)
-	- [Terminal notes and fermatas](#terminal-notes)
-	- [Editorial accidentals](#editorial-accidentals)
-- [Technical documentation](#technical-documentation)
-	- [Filenames](#filenames)
-	- [Score preparation](#score-preparation)
-	- [Encoded information](#encoded-information)
-	- [Source metadata](#source-metadata)
-	- [Website](#website)
-		- [JavaScript tools](#javascript-tools)
-	- [Data server](#data-server)
-- [Download project data](#download-data)
-
+<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. Shared editorial standards with the <a href="https://josquin.stanford.edu/" target="_blank">Josquin Research Project</a> enable rigorous comparisons and analysis of the musical data.</div>
 
 <br>
 
-## Musical documentation {#music-documentation}
-
-<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. Shared editorial standards with the <a href="https://josquin.stanford.edu/">Josquin Research Project</a> enable rigorous comparisons and analysis of the musical data.</div>
-
-<br>
-
-### Attributions {#attributions}
+<h3 id="attributions">Attributions</h3>
 
 <div id="paragraph">
 	Most musical works in the early sixteenth century can be securely attributed to a single composer. For a small group of pieces, sorting out attributions presents additional complications:<br><br>
@@ -83,39 +73,37 @@ order: 2
 <br>
 
 
-### Voice names {#voice-names}
+<h3 id="voice-names">Voice names</h3>
 
 <div id="paragraph">Early sixteenth-century musical sources often use interchangeable names for voices, such as Superius, Cantus, and Discantus for the top voice in a given texture; or Tenor II, Quintus, and Sextus for a middle voice. And different sources for a given piece might use different names for the same musical line. To maintain consistent nomenclature, this project uses four voice designations only: superius, altus, tenor, and bassus. When a piece uses more than four voices, the project assigns the most logical voice on the basis of range, followed by a roman numeral (for instance, Tenor II).</div>
 
 <br>
 
-### Sections {#sections}
+<h3 id="sections">Sections</h3>
 
 <div id="paragraph">Each section in a piece is separated by a double bar, or at the end of the piece, a final barline. The start of each section of a piece has a section label (for instance, "Secunda pars: Ave solem genuisti").</div>
 
 <br>
 
-### Note values and Mensurstriche {#notes}
+<h3 id="notes">Note values and Mensurstriche</h3>
 
 <div id="paragraph">All scores appear in unreduced note values. This means that a breve is equal to a double whole note; a minim as a half note, etc.<br><br><i>Mensurstriche</i>, an editorial practice that allows note values to cross over a modern bar line without using a tie, is avoided. Programs such as Finale and Sibelius cannot properly render <i>Mensurstriche</i>, and so any workarounds used in these programs by scholars are lost when exporting to MusicXML.</div>
 
 <br>
 
-### Mensuration signs {#mensuration-signs}
+<h3 id="mensuration-signs">Mensuration signs</h3>
 
-<div id="paragraph">Where possible, scores use the mensuration signs found in the earliest source for a given piece. <br><br><b>Note:</b> the Music Encoding Initiative (MEI) has not yet made it possible to reproduce all original mensuration signs, such as those with a sign numerator and numerical demoninator (e.g., Cut-C over 3). Existing scores will be updated as these signs become available.
-
-</div>
+<div id="paragraph">Where possible, scores use the mensuration signs found in the earliest source for a given piece. On the browse page, users can search for the mensuration sign or signs used in the earliest source.</div>
 
 <br>
 
-### Terminal notes and fermatas {#terminal-notes}
+<h3 id="terminal-notes">Terminal notes and fermatas</h3>
 
 <div id="paragraph">Terminal notes are defined as the last note in a given voice prior to a double barline or the end of a given work. They are displayed as longs regardless of their actual durations. Medial cadences are followed by double barlines; terminal cadences are followed by a final barline. <br><br> Fermatas on terminal notes are removed, since terminal longs represent an indefinite value. The placement of fermatas elsewhere follows the musical sources.</div>
 
 <br>
 
-### Editorial accidentals {#editorial-accidentals}
+<h3 id="editorial-accidentals">Editorial accidentals</h3>
 
 <div id="paragraph">
 	Editorial accidentals are not strictly part of the musical text, but instead must be realized by performers. <b>All analyses by The 1520s Project depend on the version of the score without editorial accidentals.</b> Editorial accidentals are displayed on scores in order to:<br><br>
@@ -133,9 +121,9 @@ Users can see scores without editorial accidentals by toggling on/off the sugges
 
 <br><br>
 
-## Technical documentation {#technical-documentation} 
+<h2 id="technical-documentation">Technical documentation</h2> 
 
-### Filenames {#filenames}
+<h3 id="filenames">Filenames</h3>
 
 <div id="paragraph">
 
@@ -156,7 +144,7 @@ Where this project collaborates with existing editions, the first two digits ref
 <ul>If a piece survives uniquely in one source (<i>unicum</i>), these naming conventions are followed by two dashes (--) and then the name of the source, written in an easy-to-read shorthand. For instance, Maistre Jan's <i>Vox de celis</i> is <i>unicum</i> in the manuscript I-Bc Q.19, better known as Bologna Q19. The filename is therefore Jan2002-Vox_de_celis--Bologna_Q19. The shorthand consists of the source location followed by a short version of the source signature, separated by an underscore.</ul>
 </div><br>
 
-### Score preparation {#score-preparation}
+<h3 id="score-preparation">Score preparation</h3>
 
 <div id="paragraph"> Each score is prepared in Sibelius by adjusting the following elements:
 <div id="paragraph"> 
@@ -176,7 +164,7 @@ Scores are then exported to MusicXML files and converted using the <a href="http
 
 <br>
 
-### Encoded information {#encoded-information}
+<h3 id="encoded-information">Encoded information</h3>
 
 <div id="paragraph"> A range of information is encoded in the humdrum files:
 <div id="paragraph"> 
@@ -205,20 +193,20 @@ Scores coming from published editions have additional categories of information:
 
 <br>
 
-### Source metadata {#source-metadata}
+<h3 id="source-metadata">Source metadata</h3>
 
 <div id="paragraph">Metadata for each piece includes the (probable) earliest source in the piece's transmission and its dating. External links are provided to <a href="https://www.diamm.ac.uk/" target="_blank">DIAMM</a> or <a href="https://rism.online/" target="_blank">RISM</a> as appropriate. Names of manuscript sources on the browse page and on individual work pages follow RISM nomenclature. </div>
 
 <br>
 
-### Website {#website}
+<h3 id="website">Website</h3>
 
 <div id="paragraph">Files for the website for The 1520s Project are hosted on GitHub at <br>
 	<ul><a href="https://github.com/benory/1520s-project-website" target="_blank">https://github.com/benory/1520s-project-website</a></ul>
 </div>
 <div id="paragraph">The website is served through <a href="https://pages.github.com" target="_blank">GitHub pages</a> and uses the markdown language <a href="https://jekyllrb.com" target="_blank">Jekyll</a>.</div><br>
 
-#### JavaScript tools {#javascript-tools}
+<h4 id="javascript-tools">JavaScript tools</h4>
 
 <div id="paragraph">
 	<ul><b>Humdrum Notation Plugin</b>
@@ -236,27 +224,27 @@ Scores coming from published editions have additional categories of information:
 </div>
 <br>
 
-## Data server {#data-server}
+<h2 id="data-server">Data server</h2>
 
 <div id="paragraph"> Scores uploaded to GitHub are processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. The data server supports The 1520s Project, the Josquin Research Project, and the <a href="http://tassomusic.org" target="_blank">Tasso in Music Project</a>. Below is a screenshot of The 1520s Project's data server API webpage:<br><br><a href="https://data.1520s-project.org" target="_blank"><img src="/images/data_server.png" alt="data server"></a></div><br>
 
 <div id="paragraph"> The data server creates alternate digital score formats and analyses that are inconvenient to process within the web browser. The Humdrum files in The 1520s Project's score repository are first copied onto the server. The server then generates derivative digital scores that exactly match the Humdrum files (MusicXML, MEI, MIDI, MP3, etc), renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All files created by the data server (including more than are shown on this website) are freely available for download and use. Users also have the ability to incorporate this project's data on their own websites using Verovio, and to embed generated analyses within their own projects.</div>
 <br>
 
-## Download project data {#download-data}
+<h2 id="download-data">Download project data</h2>
 
-<a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:
-
-    git clone https://github.com/benory/1520s-project-scores.git
+<a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:<br><br>
+<code>git clone https://github.com/benory/1520s-project-scores.git</code><br><br>
 
 <b>Note:</b> the Sibelius and MusicXML files on the project's GitHub repository are pre-corrected version of the Humdrum files (the data server provides post-corrected MusicXML files that are derived from the corrected Humdrum files).
 
-Metadata used to search on the [browse page](https://1520s-project.org/browse/), as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:
-<div id="paragraph"> 
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the works/mass sections used for searches on the browse page)</li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a> (metadata and links for composers used on the browse and work pages)</li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a> (information about modern editions for works used on the workpages)</li>
-	<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a> (number of works by year, compiled for use on the browse page)</li>
-</div>
+Metadata used to search on the <a href="https://1520s-project.org/browse/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:
+	<div id="paragraph"> 
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the works/mass sections used for searches on the browse page)</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a> (metadata and links for composers used on the browse and work pages)</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a> (information about modern editions for works used on the workpages)</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a> (number of works by year, compiled for use on the browse page)</li>
+	</div>
 
-<br>
+</div>
+</div>
