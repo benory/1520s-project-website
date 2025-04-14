@@ -22,7 +22,7 @@ order: 3
   <div id="search-interface">
     <div class="top-row">
       <div class="left-search-group">
-        <input type="text" id="input" onkeyup="FreeTextSearch()" placeholder="Enter title, composer, source, or date">
+        <input type="text" id="input" onkeyup="FreeTextSearch()" placeholder="Enter title, composer, source, date">
         <span id="search-count"></span>
       </div>
       <div class="top-section">

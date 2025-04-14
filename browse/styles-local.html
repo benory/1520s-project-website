@@ -1,13 +1,13 @@
 <style>
 
 .page-wrapper {
-  max-width: 1250px;
+  max-width: 800px;
   margin: 0 auto;
-  transform: translateX(-275px);
+  transform: translateX(-175px);
 }
 
 .post-title {
-  transform: translateX(-275px);
+  transform: translateX(-175px);
 }
 
 .page-wrapper {
@@ -27,9 +27,15 @@ td.voices {
 	text-align: center;
 }
 
+td.first-source {
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 table.browse {
-	min-width: 1000px; white-space: nowrap;
+	max-width: 1000px; white-space: nowrap;
 }
 
 table.browse { /* center table */
@@ -70,14 +76,14 @@ a {
 
 #input {
   flex: 1 1 300px;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 260px;
+  max-width: 260px;
   background-image: url('/images/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
   border: 1px solid #ddd;
   font-size: 16px;
-  padding: 12px 20px 12px 40px;
+  padding: 12px 12px 12px 40px;
 }
 
 select {
@@ -274,7 +280,7 @@ select {
 .dropdown-row {
   display: flex;
   flex-wrap: nowrap; /* prevent wrapping */
-  min-width: 1250px;
+  max-width: 1000px;
   gap: 12px;
   align-items: flex-start;
   overflow-x: auto; /* allow scrolling if needed */
@@ -323,8 +329,8 @@ select {
 .top-row {
   display: flex;
   align-items: center; /* This centers items vertically */
-  gap: 24px;
-  margin-bottom: 12px;
+  gap: 12px;
+  margin-bottom: 8px;
   width: 1000px;
 }
 
@@ -362,18 +368,18 @@ select {
   background-size: 20px;
   padding-right: 30px;           /* Space for dropdown arrow */
   cursor: pointer;
-  width: 180px;
+  width: 150px;
 }
 
 #composer-container select,
 #genre-container select,
 #year-container select,
 #voice-container select { 
-  width: 180px;
+  width: 150px;
 }
 
 #source-container select {
-  width: 377px;
+  width: 317px;
 }
 
 .text-checkbox-wrapper.full-width {
