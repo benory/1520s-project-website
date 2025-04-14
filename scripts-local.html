@@ -20,7 +20,7 @@ function fillMostRecentList(metadata) {
 
 function UserSearch() {
 	let query = encodeURIComponent(input.value);
-	window.open(`/browse?q=${query}`, "_blank");
+	window.location.href = `/browse?q=${query}`;
 }
 
 //////////////////////////////
