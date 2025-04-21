@@ -254,7 +254,37 @@ function displayWorkInfo(id) {
 	let date = workinfo["First Source Date"];
 	let dateoutput = "";
 	if (date) {
-		dateoutput = `<div class="work-item"><b>First source date:</b> ${date}</div>`;
+
+		let label = (uniquesource === "yes") 
+		? "Source date" 
+		: "First source date";
+
+		dateoutput = `<div class="work-item"><b>${label}:</b> ${date}</div>`;
+	}
+
+	let emensurations	  = workinfo["Mensuration Signs in Earliest Source"];
+
+	let mensurationOutput = "";
+	if (emensurations) {
+		// Ensure emensurations is an array; if it's a string, split on semicolons:
+		let signs = Array.isArray(emensurations) ? emensurations : emensurations.split(";").map(sign => sign.trim());
+
+		let label = (uniquesource === "yes") 
+		? "Mensuration sign in source" 
+		: "Mensuration signs in earliest source";
+
+		let signImages = signs.map(sign => {
+			let filename = mensurationSigns[sign];
+			if (filename) {
+				return `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${sign}" title="${sign}" style="height: 30px; margin-right: 5px;">`;
+			} else {
+				console.warn(`Warning: Mensuration sign not found in map: "${sign}"`);
+				return `<span class="missing-sign" title="${sign}">${sign}</span>`;
+			}
+		}).join("");
+
+
+		mensurationOutput = `<div class="work-item"><b>${label}:</b> ${signImages}</div>`;
 	}
 
 	let editionsource       = workinfo["Edition Source"];
@@ -380,6 +410,7 @@ function displayWorkInfo(id) {
 	const middleColumnCell = document.createElement("td");
     middleColumnCell.innerHTML = `${sourceoutput}
     	${dateoutput}
+    	${mensurationOutput}
     	${editionsourceoutput || ""}
         `;
     row.appendChild(middleColumnCell);
