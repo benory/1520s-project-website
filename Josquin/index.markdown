@@ -22,10 +22,10 @@ nav: false
 
 <div class="page-wrapper">
 <div class="page-header">
-  <h1>Josquin Attribution Table</h1>
+  <h1>Josquin attributions by the numbers</h1>
 </div>
 
-<div class="description">This page serves as an appendix to the article "Josquin Attributions by the Numbers," which will be published in the volume <i>Josquin: A New Approach</i>. The assembled data set accounts for 2,593 individual appearances of works in some 708 sources ca. 1471–1660, where for any given work at least one source attributes it to Josquin.<br><br>
+<div class="description">This page serves as an appendix to the article "Josquin Attributions by the Numbers," which will be published in the volume <i>Josquin: A New Approach</i>. The assembled data set accounts for 2,593 individual appearances of works in some 708 sources ca. 1471–1660, where for any given work at least one source attributes it to the composer Josquin des Prez.<br><br>
 
 Data is drawn from the <i>New Josquin Edition</i> and from the tiered works list published by Jesse Rodin and Joshua Rifkin in "The Josquin Canon at 500 with an Appendix Produced in Collaboration with Joshua Rifkin," <i>Early Music</i> 49 (2021): 473–97.<br><br>
 
