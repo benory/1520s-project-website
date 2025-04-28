@@ -13,11 +13,16 @@
 ##              Type "make" in this directory to download the JSON files for the metadata.
 ##
 
+
+#SID for 1520s Project Metadata
 SID = AKfycbxz4kQ33FUXUl5zg4jbG6EhccphbCf3EZ07GWzD2YFMZc8Dnsp-hUTYMU26DU5hLNkLoQ
+
+#SID for Josquin Attribution Table Metadata
+SID2 = AKfycbyg7jch405kNehIY8d1fTirMm0BSZgeHXDHoK913A9MjKmMFqIaKBMGN1mphdh_EUArpQ
 
 all: download
 
-download: works composers modern_editions statistics
+download: works composers modern_editions statistics Josquin
 
 works:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=works" > works.json
@@ -31,3 +36,7 @@ modern_editions:
 statistics:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=statistics" > statistics.json
 
+Josquin:
+	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin" > Josquin.json
+	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin&format=csv" > Josquin.csv
+	mv Josquin.csv ../../Josquin/Josquin.csv

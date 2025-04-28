@@ -1,3 +1,47 @@
+<style>
+
+/* Dropdown container */
+.site-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown trigger */
+.site-nav .dropdown .page-link {
+  cursor: pointer;
+}
+
+/* Dropdown content hidden by default */
+.site-nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside dropdown */
+.site-nav .dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Links hover effect */
+.site-nav .dropdown-content a:hover {
+  text-decoration: underline; /* ✨ underline on hover */
+}
+
+/* Show dropdown on hover */
+.site-nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
 <header class="site-header" role="banner">
   <link type="image/x-icon" href="/images/favicon.png" rel="shortcut icon">
   <div class="wrapper">
@@ -18,10 +62,25 @@
 
         <div class="trigger">
           {%- assign pages_list = site.pages | where_exp: "item", "page_paths contains item.path" | sort: 'order' -%}
+          {%- assign pages_list = site.pages | where_exp: "item", "page_paths contains item.path" | sort: 'order' -%}
+          {%- assign counter = 0 -%}   <!-- Initialize a counter -->
+
           {%- for my_page in pages_list -%}
-          {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {%- endif -%}
+            {%- if my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+
+              {%- assign counter = counter | plus: 1 -%}
+
+              {%- if counter == 2 -%}
+                <!-- Insert the dropdown after the second link -->
+                <div class="dropdown">
+                  <span class="page-link">resources</span>
+                  <div class="dropdown-content">
+                    <a class="page-link" href="/Josquin/">Josquin Attributions</a>
+                  </div>
+                </div>
+              {%- endif -%}
+            {%- endif -%}
           {%- endfor -%}
         </div>
       </nav>

@@ -1,0 +1,290 @@
+{% include_relative scripts-listeners.html %}
+
+<script>
+
+//////////////////////////////
+//
+// displayBrowseTable --
+//
+
+function displayBrowseTable(data, selector) {
+	if (!selector) {
+		selector = "#list";
+	}
+	let element = document.querySelector(selector);
+	if (!element) {
+		console.error(`Error: cannot find ${selector} element to display work table`);
+		return;
+	}
+	let headings = [INDEX_dating, INDEX_source, INDEX_source_origin, INDEX_title, INDEX_NJE,  INDEX_attribution_category, INDEX_probable_composer, INDEX_Josquin_attribution];
+	let contents = "";
+	contents += "<table class='browse'>\n";
+	contents += "<thead>\n";
+	contents += makeTableHeader(headings);
+	contents += "</thead>\n";
+	contents += "<tbody>\n";
+	contents += makeTableBody(headings, data);
+	contents += "</tbody>\n";
+	contents += "</table>\n";
+	element.innerHTML = contents;
+}
+
+function populateFilters(data) {
+	function getUniqueValues(key) {
+		const values = new Set();
+		data.forEach(entry => {
+			if (entry[key]) values.add(entry[key]);
+		});
+		return Array.from(values).sort();
+	}
+
+	function getUniqueValuesNormalized(data, key) {
+		const values = new Set();
+		data.forEach(entry => {
+			if (entry[key]) values.add(normalizeJosquinAttribution(entry[key]));
+		});
+		return Array.from(values).sort();
+	}
+
+	function fillDropdown(id, values) {
+		const select = document.getElementById(id);
+		if (!select) return;
+		values.forEach(value => {
+			const option = document.createElement("option");
+			option.value = value;
+			option.textContent = value;
+			select.appendChild(option);
+		});
+	}
+
+	fillDropdown("filter-source-type", getUniqueValues("Source type"));
+	fillDropdown("filter-source-genre", getUniqueValues("Genre"));
+	fillDropdown("filter-attribution-category", getUniqueValues("Attribution Category"));
+	fillDropdown("filter-josquin", getUniqueValuesNormalized(data, "Attributed to Josquin?"));
+}
+
+function getUniqueValuesNormalized(data, key) {	
+	const values = new Set();
+	data.forEach(entry => {
+		if (entry[key]) values.add(normalizeJosquinAttribution(entry[key]));
+	});
+	return Array.from(values).sort();
+}
+
+//////////////////////////////
+//
+// makeTableHeader -- Generate HTML content for browse table header.
+//
+
+function makeTableHeader(headings) {
+	let output = "";
+	for (let heading of headings) {
+		let label = heading;
+		if (heading === INDEX_dating) {
+			label = "Dating (range)";
+		}
+
+		if (heading === INDEX_NJE){
+			label = "NJE";
+		}
+
+		if (heading === INDEX_Josquin_attribution) {
+			label = "Attributed to Josquin? (Other attribution)"
+		}
+		output += `<th>${label}</th>`;
+	}
+	return output;
+}
+
+//////////////////////////////
+//
+// makeTableBody -- Generate HTML content for browse table's body.
+//
+
+function makeTableBody(headings, data) {
+	let output = "";
+	for (let i = 0; i < data.length; i++) {
+		let entry = data[i];
+		let rowText = headings.map(h => entry[h] || "").join(" ");
+		rowText = removeAccents(rowText.toLowerCase());
+		output += `<tr data-search="${rowText}">`;
+
+		for (let j = 0; j < headings.length; j++) {
+			let key = headings[j];
+			let value = entry[key] || "";
+
+			if (typeof value === "string") {
+				value = value.replace(/\//g, '/<wbr>');
+			}
+
+			if (key === INDEX_title) {
+				value = `<i>${value}</i>`;
+			}
+
+			if (key === INDEX_dating) {
+				let range = entry["Dating (range)"];
+				if (range) {
+					value += ` (${range})`;
+				}
+			}
+
+			if (key === INDEX_Josquin_attribution) {
+				let range = entry["Other Attribution in Source"];
+				if (range) {
+					value += ` (${range})`;
+				}
+			}
+
+			output += `<td>${value}</td>`;
+		}
+
+		output += "</tr>\n";
+	}
+	return output;
+}
+
+//////////////////////////////
+//
+// FreeTextSearch --  Search for any text within the browse table and hide
+//    rows that do not have the searched text.
+//
+
+function FreeTextSearch(query) {
+	const input = document.querySelector("#input");
+	if (query) {
+		input.value = query;
+	} else {
+		query = input.value;
+	}
+
+	const typeFilter = document.getElementById("filter-source-type").value;
+	const genreFilter = document.getElementById("filter-source-genre").value;
+	const categoryFilter = document.getElementById("filter-attribution-category").value;
+	const josquinFilter = document.getElementById("filter-josquin").value;
+
+	const tr = document.querySelectorAll("#list tbody tr");
+	query = removeAccents(query.toLowerCase());
+	let searchCount = 0;
+
+	tr.forEach((row, index) => {
+		const rowData = JOSQUIN[index];
+		let text = row.getAttribute("data-search");
+
+		let matchesText = !query || text.includes(query);
+		let matchesType = !typeFilter || rowData["Source type"] === typeFilter;
+		let matchesGenre = !genreFilter || rowData["Genre"] === genreFilter;
+		let matchesCategory = !categoryFilter || rowData["Attribution Category"] === categoryFilter;
+		let matchesJosquin = !josquinFilter || normalizeJosquinAttribution(rowData["Attributed to Josquin?"]) === josquinFilter;
+
+		const show = matchesText && matchesType && matchesGenre && matchesCategory && matchesJosquin;
+
+		row.style.display = show ? "" : "none";
+		if (show) searchCount++;
+	});
+
+	displaySearchCount(searchCount);
+}
+
+function displaySearchCount(count) {
+  document.getElementById("search-count").textContent = `[${count} match${count === 1 ? "" : "es"}]`;
+}
+
+//////////////////////////////
+//
+// showAllBrowseRows -- Used to display all rows (again) in browse table when
+//    the free-text search is not being used.
+//
+
+function showAllBrowseRows() {
+	let tr = document.querySelectorAll("#list tbody tr");
+	for (let i=0; i<tr.length; i++) {
+		tr[i].style.display = "";
+	}
+}
+
+// Function to remove accents from characters
+function removeAccents(str) {
+	return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function buildSourceTypeSelect(data) {
+	let counter = {};
+	for (let entry of data) {
+		let value = entry[INDEX_source_type];
+		if (!value) continue;
+		counter[value] = (counter[value] || 0) + 1;
+	}
+
+	let keys = Object.keys(counter).sort();
+	let output = `<select class='source-type' onchange='doSearch()'>\n`;
+	output += `<option value="">Source Type</option>`;
+	for (let key of keys) {
+		output += `<option value="${key}">${key} (${counter[key]})</option>`;
+	}
+	output += "</select>";
+	return output;
+}
+
+function buildSourceGenreSelect(data) {
+	let counter = {};
+	for (let entry of data) {
+		let value = entry[INDEX_genre];
+		if (!value) continue;
+		counter[value] = (counter[value] || 0) + 1;
+	}
+
+	let keys = Object.keys(counter).sort();
+	let output = `<select class='source-genre' onchange='doSearch()'>\n`;
+	output += `<option value="">Genre</option>`;
+	for (let key of keys) {
+		output += `<option value="${key}">${key} (${counter[key]})</option>`;
+	}
+	output += "</select>";
+	return output;
+}
+
+function buildAttributionCategorySelect(data) {
+	let counter = {};
+	for (let entry of data) {
+		let value = entry[INDEX_attribution_category];
+		if (!value) continue;
+		counter[value] = (counter[value] || 0) + 1;
+	}
+
+	let keys = Object.keys(counter).sort();
+	let output = `<select class='attribution-category' onchange='doSearch()'>\n`;
+	output += `<option value="">Attribution Category</option>`;
+	for (let key of keys) {
+		output += `<option value="${key}">${key} (${counter[key]})</option>`;
+	}
+	output += "</select>";
+	return output;
+}
+
+function buildJosquinAttributionSelect(data) {
+	let counter = {};
+	for (let entry of data) {
+		let value = entry[INDEX_Josquin_attribution];
+		if (!value) continue;
+		counter[value] = (counter[value] || 0) + 1;
+	}
+
+	let keys = Object.keys(counter).sort();
+	let output = `<select class='josquin' onchange='doSearch()'>\n`;
+	output += `<option value="">Attributed to Josquin?</option>`;
+	for (let key of keys) {
+		output += `<option value="${key}">${key} (${counter[key]})</option>`;
+	}
+	output += "</select>";
+	return output;
+}
+
+function normalizeJosquinAttribution(value) {
+	if (!value) return "";
+	value = value.toLowerCase().trim();
+	if (value.startsWith("yes")) return "yes";
+	if (value.startsWith("no")) return "no";
+	return value;
+}
+
+</script>

@@ -1,0 +1,173 @@
+<style>
+
+.page-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  transform: translateX(-100px); 
+}
+
+.page-content {
+  padding: 0px;
+  flex: 1;
+}
+
+.page-header {
+  width: 1000px;
+  padding: 0 0 20px 0; /* no top padding, 20px bottom padding */
+  margin-top: 0; /* move close to top */
+}
+
+.description {
+  width: 900px;
+  transform: translateX(50px);
+  text-align: left;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+#search-interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* NEW: push input left, filters right */
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap; /* no wrapping */
+}
+
+#input {
+  flex: 1 1 300px;
+  min-width: 260px;
+  max-width: 260px;
+  background-image: url('/images/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  padding: 12px 12px 12px 40px;
+}
+
+table {
+  font: 400 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+h1 { font-size: 32px; }
+th { text-align: left; }
+
+table.browse {
+  border-collapse: collapse;
+  margin: 0 auto;
+  min-width: 1000px;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc; /* subtle outer border */
+}
+
+table.browse th,
+table.browse td {
+  border: 1px solid #e0e0e0; /* light gray cell borders */
+  padding: 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.browse th {
+  background-color: #e6f0fa; /* subtle, professional blue */
+  color: #003366; /* dark navy text */
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+}
+
+table.browse tr:nth-child(even) {
+  background-color: #f9f9f9; /* zebra striping */
+}
+
+table.browse tr:hover {
+  background-color: #f1f7ff; /* light blue on hover */
+}
+
+table.browse td:nth-child(1) {
+  min-width: 125px;
+}
+
+table.browse td:nth-child(2) {
+  min-width: 125px;
+}
+
+table.browse td:nth-child(3) {
+  max-width: 125px;
+  min-width: 125px;
+  white-space: pre-wrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+table.browse td:nth-child(4) {
+  min-width: 150px;
+}
+
+table.browse td:nth-child(5) {
+  min-width: 50px;
+}
+
+table.browse td:nth-child(6) {
+  min-width: 50px;
+}
+
+table.browse td:nth-child(7) {
+  min-width: 50px;
+}
+
+table.browse td:nth-child(7) {
+  min-width: 50px;
+}
+
+table.browse td:nth-child(8) {
+  max-width: 100px;
+}
+
+/* Standard size for all four top dropdowns */
+#filter-source-type,
+#filter-source-genre,
+#filter-attribution-category,
+#filter-josquin {
+  padding: 5px 8px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 30px;
+  box-sizing: border-box;
+  appearance: none;              /* Remove default arrow in most browsers */
+  -webkit-appearance: none;      /* Safari */
+  -moz-appearance: none;         /* Firefox */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 30px;           /* Space for dropdown arrow */
+  cursor: pointer;
+  width: 200px;
+}
+
+#filter-bar {
+  display: flex;
+  flex-direction: column; /* stack two rows */
+  justify-content: center; /* CENTER vertically inside this box */
+  gap: 10px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 20px;
+}
+
+
+#search-count {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+</style>

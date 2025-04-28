@@ -1,80 +1,80 @@
 <style>
 
-.page-wrapper {
+.browse-page .page-wrapper {
   max-width: 800px;
   margin: 0 auto;
   transform: translateX(-175px);
 }
 
-.post-title {
+.browse-page .post-title {
   transform: translateX(-175px);
 }
 
-.page-wrapper {
+.browse-page .page-wrapper {
 	font: 400 14px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
 }
 
-.page-wrapper h1 {
+.browse-page .page-wrapper h1 {
 	font-size: 40px;
 }
 
 
-th {
+.browse-page th {
 	text-align: left;
 }
 
-td.voices {
+.browse-page td.voices {
 	text-align: center;
 }
 
-td.first-source {
+.browse-page td.first-source {
   max-width: 400px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-table.browse {
+.browse-page table.browse {
 	max-width: 1000px; white-space: nowrap;
 }
 
-table.browse { /* center table */
+.browse-page table.browse { /* center table */
 	margin-left: auto; margin-right: auto;
 }
 
 
-table.browse { /* don't put gaps between cells */
+.browse-page table.browse { /* don't put gaps between cells */
 	border-collapse: collapse;
 }
 
 
-table.browse th {
+.browse-page table.browse th {
 	background:skyblue;
 }
 
 
-table.browse td, table.browse th {
+.browse-page table.browse td, table.browse th {
 	padding-left: 2px;
 	padding-top: 2px;
 	padding: 2px
 }
 
 
-table.browse tr:hover {
+.browse-page table.browse tr:hover {
 	background:#ff000011;
 }
 
 
-a {
+.browse-page .page-wrapper a {
 	text-decoration: none;
 }
 
 
-#search-interface {
+.browse-page #search-interface {
 	margin-bottom: 30px;
 }
 
-#input {
+.browse-page #input {
   flex: 1 1 300px;
   min-width: 260px;
   max-width: 260px;
@@ -86,25 +86,25 @@ a {
   padding: 12px 12px 12px 40px;
 }
 
-select {
+.browse-page select {
 	border: 1px solid #ddd; /* Add a grey border */
 	font-size: 0.85rem;
 	margin: 3px;
 	padding: 5px;
 }
 
-#list table td {
+.browse-page #list table td {
 	padding-right: 10px;
 }
 
-.mensuration-selected {
+.browse-page .mensuration-selected {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   min-height: 32px;
 }
 
-.mensuration-options {
+.browse-page .mensuration-options {
   display: none;
   position: absolute;
   top: 100%;
@@ -122,22 +122,22 @@ select {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.mensuration-wrapper {
+.browse-page .mensuration-wrapper {
   margin: 0;
   padding: 0;
 }
 
-.mensuration-options img {
+.browse-page .mensuration-options img {
   height: 28px;
   cursor: pointer;
   transition: transform 0.1s ease;
 }
 
-.mensuration-options img:hover {
+.browse-page .mensuration-options img:hover {
   transform: scale(1.2);
 }
 
-.mensuration-tag {
+.browse-page .mensuration-tag {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -147,17 +147,17 @@ select {
   padding: 3px 8px;
 }
 
-.mensuration-tag img {
+.browse-page .mensuration-tag img {
   height: 20px;
 }
 
-.mensuration-tag .remove-btn {
+.browse-page .mensuration-tag .remove-btn {
   cursor: pointer;
   font-weight: bold;
   color: red;
 }
 
-.selected-mensurations {
+.browse-page .selected-mensurations {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -165,7 +165,7 @@ select {
   margin-bottom: 10px;
 }
 
-.selected-mensuration {
+.browse-page .selected-mensuration {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -176,13 +176,13 @@ select {
   font-size: 14px;
 }
 
-.selected-mensuration .remove-btn {
+.browse-page .selected-mensuration .remove-btn {
   cursor: pointer;
   font-weight: bold;
   color: red;
 }
 
-.mensuration-menu {
+.browse-page .mensuration-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -190,13 +190,13 @@ select {
   padding: 6px 0;
 }
 
-.custom-dropdown {
+.browse-page .custom-dropdown {
   position: relative;
   display: inline-block; /* or block, depending on your layout */
   vertical-align: top;   /* aligns nicely if inline */
 }
 
-.dropdown-toggle {
+.browse-page .dropdown-toggle {
   display: flex;
   align-items: center; /* vertical align */
   justify-content: space-between;
@@ -216,11 +216,11 @@ select {
   background-size: 20px;
 }
 
-.dropdown-toggle .toggle-text {
+.browse-page .dropdown-toggle .toggle-text {
   text-align: left;
 }
 
-.dropdown-content {
+.browse-page .dropdown-content {
   display: none;
   position: absolute;
   top: calc(100% + 4px); /* directly below the button */
@@ -239,12 +239,12 @@ select {
   gap: 10px;
 }
 
-.custom-dropdown.open .dropdown-content {
+.browse-page .custom-dropdown.open .dropdown-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.mensuration-item {
+.browse-page .mensuration-item {
   padding: 4px;
   border-radius: 6px;
   cursor: pointer;
@@ -252,32 +252,32 @@ select {
   transition: transform 0.1s ease, border-color 0.2s ease;
 }
 
-.mensuration-item:hover {
+.browse-page .mensuration-item:hover {
   transform: scale(1.1);
   border-color: #bbb;
 }
 
-.mensuration-item.selected {
+.browse-page .mensuration-item.selected {
   border-color: steelblue;
   background-color: #eef;
 }
 
-.mensuration-img {
+.browse-page .mensuration-img {
   height: 28px;
   width: auto;
 }
 
-.mensuration-item.selected {
+.browse-page .mensuration-item.selected {
   border-color: steelblue;
   background-color: #eef;
 }
 
-.mensuration-img {
+.browse-page .mensuration-img {
   height: 28px;
   width: auto;
 }
 
-.dropdown-row {
+.browse-page .dropdown-row {
   display: flex;
   flex-wrap: nowrap; /* prevent wrapping */
   max-width: 1000px;
@@ -286,47 +286,47 @@ select {
   overflow-x: auto; /* allow scrolling if needed */
 }
 
-.dropdown-row select,
-.dropdown-row {
+.browse-page .dropdown-row select,
+.browse-page .dropdown-row {
   min-width: 160px;
   max-width: 160px;
   box-sizing: border-box;
 }
 
-#top-dropdowns {
+.browse-page #top-dropdowns {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-#top-dropdowns select {
+.browse-page #top-dropdowns select {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
 }
 
-.top-line, .bottom-line {
+.browse-page .top-line, .browse-page .bottom-line {
   display: flex;
   align-items: center; /* this aligns dropdowns vertically */
   gap: 12px;
 }
 
-.top-line {
+.browse-page .top-line {
   padding-top: 20px;
 }
 
-.bottom-line {
+.browse-page .bottom-line {
   flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
-.left-search-group {
+.browse-page .left-search-group {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.top-row {
+.browse-page .top-row {
   display: flex;
   align-items: center; /* This centers items vertically */
   gap: 12px;
@@ -334,24 +334,24 @@ select {
   width: 1000px;
 }
 
-.left-search-group {
+.browse-page .left-search-group {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-#search-count {
+.browse-page #search-count {
   white-space: nowrap;
   font-size: 16px;
   padding-right: 20px;
 }
 
 /* Standard size for all four top dropdowns */
-#composer-container select,
-#genre-container select,
-#year-container select,
-#voice-container select,
-#source-container select {
+.browse-page #composer-container select,
+.browse-page #genre-container select,
+.browse-page #year-container select,
+.browse-page #voice-container select,
+.browse-page #source-container select {
   padding: 5px 8px;
   font-size: 14px;
   background-color: white;
@@ -371,46 +371,46 @@ select {
   width: 150px;
 }
 
-#composer-container select,
-#genre-container select,
-#year-container select,
-#voice-container select { 
+.browse-page #composer-container select,
+.browse-page #genre-container select,
+.browse-page #year-container select,
+.browse-page #voice-container select { 
   width: 150px;
 }
 
-#source-container select {
+.browse-page #source-container select {
   width: 317px;
 }
 
-.text-checkbox-wrapper.full-width {
+.browse-page .text-checkbox-wrapper.full-width {
   flex-basis: 100%;
   margin-top: 6px;        /* adds space between rows */
 }
 
-.text-checkbox-wrapper {
+.browse-page .text-checkbox-wrapper {
   margin: 0;
   padding-left: 2px;   /* adjust if you want to nudge horizontally */
 }
 
-.text-checkbox-label {
+.browse-page .text-checkbox-label {
   font-size: 14px;
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.dropdown-row {
+.browse-page .dropdown-row {
   overflow: visible !important;
   position: relative; /* ensures absolute children are positioned correctly */
 }
 
-.top-section {
+.browse-page .top-section {
   display: flex;
   gap: 24px;
   align-items: flex-start;
 }
 
-.mensuration-right {
+.browse-page .mensuration-right {
   display: flex;
   flex-direction: column;
   gap: 10px;

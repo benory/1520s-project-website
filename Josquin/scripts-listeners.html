@@ -1,0 +1,33 @@
+<script>
+// vim: ts=3
+
+let JOSQUIN             			= {% include metadata/Josquin.json %}
+let INDEX_id         	    		= "Attribution ID";
+let INDEX_source    	  			= "Source";
+let INDEX_title       	  			= "Piece";
+let INDEX_dating      	   			= "Dating";
+let INDEX_dating_range      	    = "Dating (range)";
+let INDEX_source_origin            	= "Source Origin";
+let INDEX_source_origin_country 	= "Modern Country for Source Origin";
+let INDEX_source_type 	  			= "Source type";
+let INDEX_Josquin_attribution 	    = "Attributed to Josquin?";
+let INDEX_NJE	      				= "NJE Number";
+let INDEX_genre	 					= "Genre";
+let INDEX_voices	  				= "Voices";
+let INDEX_attribution_category	  	= "Attribution Category";
+let INDEX_probable_composer 		= "Probable Composer";
+let INDEX_other_attribution 		= "Other Attribution in Source";
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- run after webpage has finished loading.
+//
+document.addEventListener("DOMContentLoaded", function () {
+	displayBrowseTable(JOSQUIN, "#list");
+	populateFilters(JOSQUIN);
+});
+
+</script>
+
+
+
