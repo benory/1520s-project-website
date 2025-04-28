@@ -25,7 +25,7 @@ nav: false
   <h1>Josquin attributions by the numbers</h1>
 </div>
 
-<div class="description">This page serves as an appendix to the article "Josquin Attributions by the Numbers," which will be published in the volume <i>Josquin: A New Approach</i>. The assembled data set accounts for 2,593 individual appearances of works in some 708 sources ca. 1471–1660, where for any given work at least one source attributes it to the composer Josquin des Prez.<br><br>
+<div class="description">This page serves as an appendix to the article "Josquin Attributions by the Numbers," which will be published in the volume <i>Josquin: A New Approach</i>. The assembled data set accounts for 2,593 individual appearances of works in some 708 sources ca. 1471–1660, where for any given work at least one source attributes it to the composer Josquin des Prez. A majority of attributions to the composer are transmitted during this project's period of focus: three-quarters of Josquin attributions postdate his death in 1521; nearly sixty percent appear ca. 1520–60.<br><br>
 
 Data is drawn from the <i>New Josquin Edition</i> and from the tiered works list published by Jesse Rodin and Joshua Rifkin in "The Josquin Canon at 500 with an Appendix Produced in Collaboration with Joshua Rifkin," <i>Early Music</i> 49 (2021): 473–97.<br><br>
 
