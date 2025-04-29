@@ -52,7 +52,9 @@ order: 2
 
 <h2 id="musical-documentation">Musical Documentation</h2>
 
-<div id="paragraph">The 1520s Project provides high quality data with consistent editorial standards between scores. Shared editorial standards with the <a href="https://josquin.stanford.edu/" target="_blank">Josquin Research Project</a> enable rigorous comparisons and analysis of the musical data.</div>
+<div id="paragraph">The 1520s Project is a digital scholarly edition of Renaissance music. It provides high quality data with consistent editorial standards between scores. Scores are transcribed from reliable sources and avoid unhelpful features of some modern editions (e.g., impratical barring). The project is above all a powerful finding aid and analytical tool. It is not intended to replace published critical editions.</div><br>
+
+ <div id="paragraph">Shared editorial standards with the <a href="https://josquin.stanford.edu/" target="_blank">Josquin Research Project</a> enable rigorous comparisons and analysis of the musical data.</div>
 
 <br>
 
