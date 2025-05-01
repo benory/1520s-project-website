@@ -40,3 +40,4 @@ Josquin:
 	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin" > Josquin.json
 	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin&format=csv" > Josquin.csv
 	mv Josquin.csv ../../Josquin/Josquin.csv
+	date +"last_updated: %e %B %Y" | sed 's/^ *//g' > ../../_data/Josquin/csv_metadata.yml

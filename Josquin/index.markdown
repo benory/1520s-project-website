@@ -29,7 +29,7 @@ nav: false
 
 Data is drawn from the <i>New Josquin Edition</i> (NJE) and the tiered works list published by Jesse Rodin and Joshua Rifkin in "The Josquin Canon at 500 with an Appendix Produced in Collaboration with Joshua Rifkin," <i>Early Music</i> 49 (2021): 473–97. Thanks to Brett Kostrzewski for his assistance in checking source dates and origins. <br><br>
 
-<a href="/Josquin/Josquin.csv" download>Download the dataset as a CSV file</a> (last updated {{ site.time | date: "%d %B %Y" }}).</div>
+<a href="/Josquin/Josquin.csv" download>Download the dataset as a CSV file</a> (last updated {{ site.data.Josquin.csv_metadata.last_updated }}).</div>
 
 <div id="search-interface">
   <div id="search-top">
