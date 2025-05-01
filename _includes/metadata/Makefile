@@ -38,6 +38,13 @@ statistics:
 
 Josquin:
 	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin" > Josquin.json
-	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin&format=csv" > Josquin.csv
-	mv Josquin.csv ../../Josquin/Josquin.csv
-	date +"last_updated: %e %B %Y" | sed 's/^ *//g' > ../../_data/Josquin/csv_metadata.yml
+	curl -L "https://script.google.com/macros/s/$(SID2)/exec?sheet=Josquin&format=csv" > temp_Josquin.csv
+
+	# Only update if the file has changed
+	if ! cmp -s temp_Josquin.csv ../../Josquin/Josquin.csv; then \
+		mv temp_Josquin.csv ../../Josquin/Josquin.csv; \
+		mkdir -p ../../_data/Josquin; \
+		date +"last_updated: %e %B %Y" | sed 's/^ *//g' > ../../_data/Josquin/csv_metadata.yml; \
+	else \
+		rm temp_Josquin.csv; \
+	fi
