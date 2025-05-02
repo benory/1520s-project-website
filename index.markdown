@@ -39,5 +39,3 @@ The 1520s Project is an open-source repository of <span id="roundwork-count"></s
 
 #### Recently added works
 <div data-count="10" id="most-recent"><a href="recently_added">More works added by date</a></div>
-
-For complementary repertoire spanning ca. 1420–1520, see the [Josquin Research Project](http://josquin.stanford.edu){:target="_blank"}. For more information on the collaboration between the projects, see [about this project](about).

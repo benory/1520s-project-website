@@ -37,22 +37,23 @@ The 1520s Project aims to meet this challenge head on by making the repertoire o
 
 <div id="years-plot"></div>
 
-The project takes advantage of [editorial and encoding standards](https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards){:target="_blank"} developed by the [Josquin Research Project](https://josquin.stanford.edu){:target="_blank"} (JRP) over the past decade. This standardization enables the data from both projects to be shared; such interoperability is especially useful with respect to composers active right around 1520, such as Jean Mouton, Noel Bauldeweyn, or Jean Richafort.
+The project takes advantage of [editorial and encoding standards](/documentation) developed by the [Josquin Research Project](https://josquin.stanford.edu){:target="_blank"} (JRP) over the past decade. This standardization enables the data from both projects to be shared; such interoperability is especially useful with respect to composers active right around 1520, such as Jean Mouton, Noel Bauldeweyn, or Jean Richafort, whose music is shared between projects.
 
 ## Editorial process
 
-To upload music, Ory:
-+ enters the music into Sibelius, using facsimiles and modern editions. Each note is checked for accuracy. Mensuration signs and section headings are added as appropriate.
-+ listens to the file, adjusting editorial accidentals (_musica ficta_) as appropriate.
-+ exports the file as a MusicXML file.
-+ translates the file into Humdrum syntax and adjusts metadata and mensuration signs.
-+ generates graphical scores using the [Verovio Humdrum Viewer](https://verovio.humdrum.org){:target="_blank"}.
-+ updates the metadata to the [Google Sheet](https://docs.google.com/spreadsheets/d/1rVevNfKXd0g4NWOZdm2dG9sbQgOh5nOr_5G_2nizAgY/edit?usp=sharing){:target="_blank"}.
-+ populates the relevant files in the [Github repository](https://github.com/benory/1520s-project){:target="_blank"}.
+<p class="tight">To upload music, Ory:</p>
+  <ul class="tight-list">
+    <li>enters the music into Sibelius, using facsimiles and modern editions. Each note is checked for accuracy. Mensuration signs and section headings are added as appropriate.</li>
+    <li>listens to the file, adjusting editorial accidentals (<em>musica ficta</em>) as appropriate.</li>
+    <li>exports the file as a MusicXML file.</li>
+    <li>translates the file into Humdrum syntax and adjusts metadata and mensuration signs.</li>
+    <li>generates graphical scores using the <a href="https://verovio.humdrum.org" target="_blank">Verovio Humdrum Viewer</a>.</li>
+    <li>updates the metadata on the <a href="https://docs.google.com/spreadsheets/d/1rVevNfKXd0g4NWOZdm2dG9sbQgOh5nOr_5G_2nizAgY/edit?usp=sharing" target="_blank">Google Sheet</a>.</li>
+    <li>populates the relevant files in the <a href="https://github.com/benory/1520s-project" target="_blank">Github repository</a>.</li>
+    <li>pushes the update to the website.</li>
+  </ul>
 
-Do you see an mistake in a score? Do you disagree with the proposed editorial accidentals? Please feel free to email Ory with an [error report](mailto:The1520sProject@gmail.com).
-
-Would you like a particular score to be texted? [Let us know.](mailto:The1520sProject@gmail.com)<br><br>
+Do you see an mistake in a score? Do you disagree with our editorial choices? Would you like a particular score to be texted? [Let us know](mailto:The1520sProject@gmail.com).<br><br>
 
 ## People
 
@@ -101,9 +102,7 @@ Joshua Rifkin (Boston University, emeritus) <br>
 Katelijne Schiltz (Universität Regensburg) <br>
 Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université de Tours) <br>
 Giovanni Zanovello (Indiana University) <br>
-Emily Zazulia (University of California, Berkeley)
-
-</div><br>
+Emily Zazulia (University of California, Berkeley)</div><br>
 
 ## Support
 

@@ -52,7 +52,7 @@ order: 2
 
 <h2 id="musical-documentation">Musical Documentation</h2>
 
-<div id="paragraph">The 1520s Project is a digital scholarly edition of Renaissance music. It provides high quality data with consistent editorial standards between scores. Scores are transcribed from reliable sources and avoid unhelpful features of some modern editions (e.g., impratical barring). The project is above all a powerful finding aid and analytical tool. It is not intended to replace published critical editions.</div><br>
+<div id="paragraph">The 1520s Project is a digital scholarly edition of Renaissance music. It provides high quality data with consistent editorial standards between scores. Scores are transcribed from reliable sources and avoid unhelpful features of some modern editions (e.g., impractical barring). The project is above all a powerful finding aid and analytical tool. It is not intended to replace published critical editions.</div><br>
 
  <div id="paragraph">Shared editorial standards with the <a href="https://josquin.stanford.edu/" target="_blank">Josquin Research Project</a> enable rigorous comparisons and analysis of the musical data.</div>
 
@@ -149,7 +149,7 @@ Where this project collaborates with existing editions, the first two digits ref
 <h3 id="score-preparation">Score preparation</h3>
 
 <div id="paragraph"> Each score is prepared in Sibelius by adjusting the following elements:
-<div id="paragraph"> 
+<ul class="spaced-list"> 
 	<li>Any <i>Mensurstriche</i> is removed.</li>
 	<li>Instrument names are corrected.</li>
 	<li>Editorial accidentals are adjusted and placed in parentheses.</li>
@@ -158,7 +158,7 @@ Where this project collaborates with existing editions, the first two digits ref
 	<li>System brackets are removed.</li>
 	<li>Final notes and fermatas are formatted</li>
 	<li>Information about canonic material is given</li>
-</div><br>
+</ul><br>
 
 Scores are then exported to MusicXML files and converted using the <a href="https://extras.humdrum.org/man/xml2hum/" target="_blank">musicxml2hum command</a> in the Humdrum Extras toolkit.
 
@@ -169,7 +169,7 @@ Scores are then exported to MusicXML files and converted using the <a href="http
 <h3 id="encoded-information">Encoded information</h3>
 
 <div id="paragraph"> A range of information is encoded in the humdrum files:
-<div id="paragraph"> 
+<ul class="spaced-list"> 
 	<li>id: the ID for the work</li>
 	<li>AGN: the genre</li>
 	<li>voices: the number of voices</li>
@@ -178,10 +178,10 @@ Scores are then exported to MusicXML files and converted using the <a href="http
 	<li>OPR: the title of the parent work</li>
 	<li>ENC: the encoder</li>
 	<li>END: the date of the encoding</li>
-</div><br>
+</ul><br>
 
 Scores coming from published editions have additional categories of information:
-<div id="paragraph"> 
+<ul class="spaced-list"> 
 	<li>PTL: the title of the edition</li>
 	<li>PPR: publisher of the edition</li>
 	<li>PC#: the edition's series</li>
@@ -190,7 +190,7 @@ Scores coming from published editions have additional categories of information:
 	<li>YEC: copyright information</li>
 	<li>EED: the electornic encoder of the edition</li>
 	<li>EEV: the date of the encoding</li>
-</div>
+</ul>
 </div>
 
 <br>
@@ -241,12 +241,12 @@ Scores coming from published editions have additional categories of information:
 <b>Note:</b> the Sibelius and MusicXML files on the project's GitHub repository are pre-corrected version of the Humdrum files (the data server provides post-corrected MusicXML files that are derived from the corrected Humdrum files).
 
 Metadata used to search on the <a href="https://1520s-project.org/browse/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:
-	<div id="paragraph"> 
-		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the works/mass sections used for searches on the browse page)</li>
+	<ul class="spaced-list">
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the scores used for searches on the browse page)</li>
 		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a> (metadata and links for composers used on the browse and work pages)</li>
 		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a> (information about modern editions for works used on the workpages)</li>
 		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a> (number of works by year, compiled for use on the browse page)</li>
-	</div>
+	</ul>
 
 </div>
 </div>
