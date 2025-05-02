@@ -1491,6 +1491,28 @@
 		"FILEBASE": "Con2009-Sancta_Maria_mater_Dei"
 	},
 	{
+		"ID": "Con2012",
+		"Composer": "Conseil, Jean",
+		"Title": "Cum inducerent",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Merritt_1962a",
+		"First Source": "Liber octavus.xx.musicales motetos (Paris: Pierre Attaingnant)",
+		"RISM Source Link": "https://rism.online/sources/993104099",
+		"RISM or CC Source Sigla": "1534|10",
+		"Pages, Folios, or Numbers": "f. 9r [S], f. 10r [A], ff. 8v–9r [T], f. 11r [B]",
+		"Mensuration Signs in Earliest Source": "Cut-C; 3",
+		"First Source Exact Date": "1534",
+		"First Source Date": "1534",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-5-2",
+		"Note Count": "975",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Con/Con2012-Cum_inducerent.krn",
+		"FILEBASE": "Con2012-Cum_inducerent"
+	},
+	{
 		"ID": "Con2013",
 		"Composer": "Conseil, Jean",
 		"Title": "Adiuva me, Domine",
@@ -3457,7 +3479,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2025-5-1",
-		"Note Count": "1167",
+		"Note Count": "744",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lfg/Lfg2001-Videns_Dominus.krn",
 		"FILEBASE": "Lfg2001-Videns_Dominus"
 	},
@@ -3479,6 +3501,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Date Added": "2024-11-21",
+		"Note Count": "1167",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lfg/Lfg2002-Elizabeth_Zacharie.krn",
 		"FILEBASE": "Lfg2002-Elizabeth_Zacharie"
 	},
