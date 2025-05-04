@@ -24,7 +24,6 @@ description: an open-source repository of polyphonic music, ca. 1510–1540
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  benory/1520s-project-scores
-twitter_username: 1520s_Project
 
 # Build settings
 theme: minima
