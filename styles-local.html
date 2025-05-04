@@ -64,9 +64,11 @@ table {
 }
 
 #composer-plot {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 8px;
+  box-sizing: border-box;
 }
 
 #composerSelect {
@@ -80,5 +82,63 @@ table {
 	padding: 6px; /* Add some padding */
 }
 
+/* === Mobile-specific overrides === */
+
+@media (max-width: 768px) {
+
+  /* Inputs and buttons */
+  #input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #inputbutton {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0 16px 0;
+  }
+
+  /* Composer filter buttons */
+  #composerSelect {
+    float: none;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  #composerSelect .button {
+    display: inline-block;
+    margin: 4px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Table scroll */
+  table.most-recent {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  /* Page content padding */
+  main.page-content {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  /* Shrink Vega plot */
+  #composer-plot .vega-embed {
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
+  
+  #composer-plot {
+    overflow-x: auto;
+    width: 100%;
+  }
+}
 
 </style>

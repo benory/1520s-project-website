@@ -70,8 +70,6 @@ function fillInCensusData(data) {
 	}
 
 	let roundworkElement = document.querySelector("#roundwork-count");
-	console.warn(roundworkCount);
-	console.warn(workCount);
 	if (roundworkElement) {
 		if (roundworkCount !== workCount){
 			roundworkElement.innerHTML = `more than ${roundworkCount}`;
@@ -239,6 +237,14 @@ function displayTopComposers() {
 
 	let data = METADATA;
 
+	const isMobile = window.innerWidth < 768;
+	const fontSize = isMobile ? 11 : 14;
+	const headerfontSize = isMobile ? 14 : 16;
+	const labelOffset = isMobile ? -110 : -140;
+	const chartTitle = isMobile
+  ? ["Best-Represented Composers"]
+  : "Best-Represented Composers in The 1520s Project";
+
 	let element = document.querySelector("#composer-plot");
 	if (!element) {
 		console.error("ERROR: Cannot find #composer-plot");
@@ -249,10 +255,10 @@ function displayTopComposers() {
 	let plotInfo = {
 		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 		"config": {
-			"view": {
-				"width": 550,
-				"height": 600
-			}
+		  "view": {
+		    "width": window.innerWidth < 768 ? 200 : 550,
+    		"height": 600
+		  }
 		},
 		"data": {
 			"values": data
@@ -288,8 +294,8 @@ function displayTopComposers() {
 						"title": "Number of Works",
 						"axis": {
 							"tickMinStep": 5,
-							"labelFontSize": 14,
-							"titleFontSize": 14
+							"labelFontSize": fontSize,
+							"titleFontSize": fontSize
 						}
 					},
 					"y": {
@@ -321,11 +327,11 @@ function displayTopComposers() {
 					"type": "text",
 					"align": "left",
 					"baseline": "middle",
-					"fontSize": 14
+					"fontSize": fontSize
 				},
 				"encoding": {
 					"x": {
-						"value": -140
+						"value": labelOffset
 					},
 					"y": {
 						"field": "Composer",
@@ -352,8 +358,8 @@ function displayTopComposers() {
 			}
 		],
 		"title": {
-			"text": "Best-Represented Composers in The 1520s Project",
-			"fontSize": 16
+			"text": chartTitle,
+			"fontSize": headerfontSize
 		},
 		"height": {
 			"step": 25
@@ -365,7 +371,7 @@ function displayTopComposers() {
 		elements[i].classList.toggle("hidden");
 	}
 
-	vegaEmbed('#composer-plot', plotInfo);
+	vegaEmbed('#composer-plot', plotInfo, { actions: false });
 
 }
 
