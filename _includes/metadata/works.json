@@ -4470,6 +4470,28 @@
 		"FILEBASE": "Mlu2007-Quam_pulchra_es"
 	},
 	{
+		"ID": "Mlu2013",
+		"Composer": "Moulu, Pierre",
+		"Title": "Regina celi",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Merritt_1962d",
+		"First Source": "Lib. duodecimus. xvii. musicales (Paris: Pierre Attaingnant)",
+		"RISM Source Link": "https://rism.online/sources/993104133",
+		"RISM or CC Source Sigla": "1535|4",
+		"Pages, Folios, or Numbers": "f. 4v [S/A, T], f. 4r–v [B]",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"First Source Exact Date": "1535",
+		"First Source Date": "1535",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-5-5",
+		"Note Count": "747",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mlu/Mlu2013-Regina_celi.krn",
+		"FILEBASE": "Mlu2013-Regina_celi"
+	},
+	{
 		"ID": "Mlu3004",
 		"Composer": "Moulu, Pierre",
 		"Title": "N'aymés jamais ces gens",
