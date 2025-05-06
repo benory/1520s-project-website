@@ -1,5 +1,36 @@
 <style>
 
+.site-header {
+  background-color: #fef7e7;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center; /* vertical centering */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-title img {
+  display: block;
+  height: 80px;
+  margin: 0;
+}
+
+/* Ensure nav sits inline and vertically centered */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-nav .page-link {
+  font-size: 17px;         /* Bigger text */
+  padding: 6px 8px;      /* More space around links */
+  display: inline-block;   /* Ensures padding applies correctly */
+  color: black;            /* Optional: adjust text color */
+}
+
 /* Dropdown container */
 .site-nav .dropdown {
   position: relative;
@@ -11,17 +42,17 @@
   cursor: pointer;
 }
 
-/* Dropdown content hidden by default */
+/* Dropdown content */
 .site-nav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #fef7e7;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links inside dropdown */
+/* Dropdown links */
 .site-nav .dropdown-content a {
   color: black;
   padding: 10px 14px;
@@ -30,9 +61,20 @@
   white-space: nowrap;
 }
 
-/* Links hover effect */
+/* Change nav link colors */
+.site-nav .page-link,
+.site-nav .dropdown-content a {
+  color: #6A6156;
+}
+
+.site-nav .page-link:hover {
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .site-nav .dropdown-content a:hover {
-  text-decoration: underline; /* ✨ underline on hover */
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* Show dropdown on hover */
@@ -47,7 +89,9 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img src="{{ '/images/1520s_logo.png' | relative_url }}" alt="The 1520s Project Logo" style="height: 80px; vertical-align: middle;">
+    </a>
 
     {%- if page_paths -%}
       <nav class="site-nav">

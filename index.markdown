@@ -21,21 +21,31 @@ layout: page
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
 
-The 1520s Project is an open-source repository of <span id="roundwork-count"></span> scores of European polyphonic music, ca. 1510–1540. It seeks to address how, when, and where a radically new style of polyphonic music emerged in the 1520s. Read [about the project](about) or [browse the project's scores](browse). <br><br>
+<div class="browse-data-wrapper">
+  <div class="browse-box">
+    <h4>Browse scores</h4>
+    <input type="text" id="input" placeholder="Search the project">
+    <span onclick="UserSearch()" class="button" id="inputbutton">Enter</span>
+  </div>
 
-<input type="text" id="input" placeholder="Search the project"><span onclick="UserSearch()" class="button" id="inputbutton">Enter</span>
-
-#### Project data
-+ Number of works: <span id="work-count"></span>
-+ Number of notes: <span id="note-count"></span>
-+ By genre: <span id="mass-count"></span> mass movements, <span id="motet-count"></span> motets, <span id="secular-count"></span> secular works
-
-<div id="composerSelect">
-   <div onclick="displayAllComposers()" class="button hidden">Show All Composers</div>
-   <div onclick="displayTopComposers()" class="button">Show Top Composers</div>
-</div><br><br>
+  <div class="data-box">
+    <h4>Project data</h4>
+    <ul>
+      <li><b>Number of works:</b> <span id="work-count"></span></li>
+      <li><b>Number of notes:</b> <span id="note-count"></span></li>
+      <li>
+        <b>By genre:</b> 
+        <span class="count-box">
+          <span id="mass-count"></span> mass movements<br>
+          <span id="motet-count"></span> motets<br>
+          <span id="secular-count"></span> secular works
+        </span>
+      </li>
+    </ul>
+  </div>
+</div><br>
 
 <div id="composer-plot"></div>
 
-#### Recently added works
+<div class="most-recent-header"><h4>Recently added works</h4></div>
 <div data-count="10" id="most-recent"><a href="recently_added">More works added by date</a></div>

@@ -11,17 +11,47 @@
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
-            <p>{{- site.description | escape -}}</p>
+            {%- include social.html -%}
         </ul>
       </div>
       <div class="footer-col footer-col-3">
-         {%- include social.html -%}
+         {{- site.description | escape -}}
       </div>
     </div>
 
   </div>
 
 </footer>
+
+<style>
+
+.site-footer {
+  background-color: #fef7e7;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+/* Give 50% width to the contact/social column */
+.footer-col.footer-col-1 {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+/* Optional: limit width of the description side too */
+.footer-col.footer-col-3 {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+</style>
 
 <script>
 

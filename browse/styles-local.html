@@ -1,13 +1,17 @@
 <style>
 
+main.page-content {
+  background-color: #FFFAF1;
+}
+
 .browse-page .page-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  transform: translateX(-175px);
+  transform: translateX(-125px);
 }
 
 .browse-page .post-title {
-  transform: translateX(-175px);
+  transform: translateX(-125px);
 }
 
 .browse-page .page-wrapper {
@@ -19,55 +23,72 @@
 }
 
 
-.browse-page th {
-	text-align: left;
-}
-
-.browse-page td.voices {
-	text-align: center;
-}
-
-.browse-page td.first-source {
-  max-width: 400px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .browse-page table.browse {
-	max-width: 1000px; white-space: nowrap;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
-.browse-page table.browse { /* center table */
-	margin-left: auto; margin-right: auto;
+.browse-page table.browse th,
+.browse-page table.browse td {
+  padding: 4px 6px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  vertical-align: top;
 }
-
-
-.browse-page table.browse { /* don't put gaps between cells */
-	border-collapse: collapse;
-}
-
 
 .browse-page table.browse th {
-	background:skyblue;
+  background-color: #e6f0fa;
+  color: #003366;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
 }
 
-
-.browse-page table.browse td, table.browse th {
-	padding-left: 2px;
-	padding-top: 2px;
-	padding: 2px
+.browse-page table.browse tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
-
 
 .browse-page table.browse tr:hover {
-	background:#ff000011;
+  background-color: #f1f7ff;
+}
+
+.browse-page table.browse td a {
+  text-decoration: none;
 }
 
 .browse-page table.browse td a:hover {
   text-decoration: underline;
 }
 
+/* Specific column formatting */
+.browse-page table.browse td:nth-child(1),
+.browse-page table.browse td:nth-child(2),
+.browse-page table.browse td:nth-child(3),
+.browse-page table.browse td:nth-child(4) {
+  white-space: nowrap;
+}
+
+
+.browse-page table.browse td:nth-child(5) {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.browse-page table.browse td:nth-child(5) {
+  min-width: 60px;
+  text-align: left;
+}
+
+.browse-page table.browse td:nth-child(6) {
+  min-width: 100px;
+}
 
 .browse-page .page-wrapper a {
 	text-decoration: none;
@@ -80,14 +101,16 @@
 
 .browse-page #input {
   flex: 1 1 300px;
-  min-width: 260px;
+  min-width: 200px;
   max-width: 260px;
   background-image: url('/images/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  border: 1px solid #ddd;
   font-size: 16px;
   padding: 12px 12px 12px 40px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
 .browse-page select {
@@ -204,16 +227,15 @@
   display: flex;
   align-items: center; /* vertical align */
   justify-content: space-between;
-  gap: 8px;
   padding: 8px 14px;
   font-size: 14px;
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #f5e9d6;
+  border: 2px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
   height: 73px;
-  width: 190px;
+  width: 170px;
   background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -358,8 +380,8 @@
 .browse-page #source-container select {
   padding: 5px 8px;
   font-size: 14px;
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #f5e9d6;
+  border: 2px solid #ddd;
   border-radius: 4px;
   height: 30px;
   box-sizing: border-box;
