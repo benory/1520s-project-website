@@ -116,3 +116,7 @@ This project has been generously supported by [Villa I Tatti](https://itatti.har
   <div id="paragraph"> Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank">New Senfl Edition</a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank">available pieces</a>, each of which links to the New Senfl Edition's critical commentary.</div>
   <a href="https://senflonline-eng.com/new-senfl-edition/"><img src="/images/Senfl_banner.png" alt="Senfl Banner"></a>
 </div>
+
+### Data Donations
+
+<div id="paragraph"> Thanks to David Burn, Marnix van Berchum, Ted Dumitrescu, Simon Frisch, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</div>
