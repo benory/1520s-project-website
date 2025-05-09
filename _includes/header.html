@@ -37,9 +37,16 @@
   display: inline-block;
 }
 
-/* Dropdown trigger */
-.site-nav .dropdown .page-link {
+/* Dropdown Trigger Link (Resources) */
+.site-nav .dropdown > .page-link {
   cursor: pointer;
+  font-weight: 400; /* Prevent bold by default */
+}
+
+
+/* Prevent only the "resources" link from becoming bold on hover */
+.site-nav .dropdown > .page-link:hover {
+  font-weight: 400 !important;
 }
 
 /* Dropdown content */
