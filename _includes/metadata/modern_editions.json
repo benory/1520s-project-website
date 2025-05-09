@@ -21,9 +21,19 @@
 		"Publication Year": "1978"
 	},
 	{
-		"ID": "Anglés_1962",
+		"ID": "Angles_1954",
 		"Composer/Author": "Cristóbal de Morales",
-		"Name of Volume": "Missarum Liber Secundus",
+		"Name of Volume": "Missarum Liber Secundus, Primera parte",
+		"Editor": "Higinio Anglés",
+		"Series and Volume": "Opera Omnia, vol. 3",
+		"Location": "Rome",
+		"Publisher": "Consejo Superior de Investigaciones Científicas",
+		"Publication Year": "1954"
+	},
+	{
+		"ID": "Angles_1962",
+		"Composer/Author": "Cristóbal de Morales",
+		"Name of Volume": "Missarum Liber Secundus, Segunda parte",
 		"Editor": "Higinio Anglés",
 		"Series and Volume": "Opera Omnia, vol. 6",
 		"Location": "Rome",
