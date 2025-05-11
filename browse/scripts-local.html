@@ -60,7 +60,7 @@ function buildSearchInterface(data) {
 
 	const toggleButton = document.createElement("button");
 	toggleButton.className = "dropdown-toggle";
-	toggleButton.innerHTML = `<span class="toggle-text">Mensuration sign(s)<br>in earliest source</span>`;
+	toggleButton.innerHTML = `<span class="toggle-text">Mensuration signs<br>in earliest source</span>`;
 	toggleButton.onclick = () => {
 	  dropdownContainer.classList.toggle("open");
 	};
@@ -150,7 +150,7 @@ function makeTableBody(headings, data) {
 			if (headings[i] == INDEX_title) {
 				let title = getTitle(entry);
 				let scoreURL = getScoreURL(entry);
-				output += `<a target="_blank" href=${scoreURL}>${title}</a>`;
+				output += `<a href=${scoreURL}>${title}</a>`;
 			}
 
 			else if (headings[i] == INDEX_firstsource) {

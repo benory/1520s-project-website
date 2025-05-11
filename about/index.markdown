@@ -117,6 +117,6 @@ This project has been generously supported by [Villa I Tatti](https://itatti.har
   <a href="https://senflonline-eng.com/new-senfl-edition/"><img src="/images/Senfl_banner.png" alt="Senfl Banner"></a>
 </div>
 
-### Data Donations
+## Data Donations
 
 <div id="paragraph"> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Simon Frisch, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</div>
