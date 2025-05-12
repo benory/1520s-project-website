@@ -1,45 +1,64 @@
 <style>
+/* Base Styles */
+article.post {
+  width: 100%;
+}
 
 body {
   background-color: #FFFAF1;
 }
 
 #paragraph {
-	padding-left: 10px;
+  padding-left: 10px;
+  word-wrap: normal;
+  overflow-wrap: normal;
+  white-space: normal;
 }
 
 h1 {
-	font-size: 45px;
+  font-size: 45px;
 }
 
 h2 {
-	font-size: 32px;
-	font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 h3 {
-	font-size: 24px;
-	font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 h4 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .wrapper {
-	width: 1000px;
+  max-width: 1000px;
 }
 
 .post-title {
   transform: translateX(50px);
 }
 
-/* General styles for TOC container */
+.page-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.toc-container {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  flex-shrink: 0;
+}
+
 .toc-container {
   position: sticky;
   top: 100px;
   align-self: start;
-  width: 350px;
   background-color: #fcf7f4;
   border-right: 4px solid #888;
   padding: 20px;
@@ -58,21 +77,6 @@ h4 {
   text-indent: -1.2em;
 }
 
-/* Float the TOC to the left of main content */
-.page-content {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  margin: 0 auto;
-  transform: translateX(-50px);
-}
-
-.page-content .main-content {
-  width: 1000px;
-  flex-grow: 1;
-}
-
-/* TOC styles */
 .toc-container h4 {
   margin-top: 0;
   font-size: 20px;
@@ -101,27 +105,91 @@ h4 {
   text-decoration: underline;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* Mobile: hide TOC on smaller screens */
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .page-content {
+  .page-content,
+  .main-content {
     flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .toc-container {
     display: none;
   }
-}
 
-.spaced-list {
-  margin-top: 0.5em; /* adjust this value for more or less space */
-  margin-left: 2em; /* optional: indent the list */
-}
-.spaced-list li {
-  margin-bottom: 0.15em;
-}
+  /* Ensure text wraps properly without breaking awkwardly */
+  #paragraph,
+  p {
+    max-width: 100%;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-top: 1em;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 0.8em;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 0.6em;
+  }
+
+  /* List adjustments */
+  ul,
+  ol {
+    padding-left: 4px;
+  }
+
+  ul.spaced-list li,
+  ol.spaced-list li {
+    margin-bottom: 0.4em;
+  }
+
+  /* Image adjustments */
+  img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Table adjustments for mobile */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  table th, 
+  table td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  /* Reduced padding between lines for readability */
+  .main-content div {
+    margin-bottom: 1em;
+  }
+}
 </style>
