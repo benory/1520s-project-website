@@ -89,6 +89,30 @@
   display: block;
 }
 
+.banner img.desktop-banner {
+  display: block; /* Specified target class .desktop-banner */
+}
+
+.banner .banner-mobile {
+  display: none; /* Hidden by default (Desktop) */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .banner img.desktop-banner {
+    display: none; /* Hide the full banner on mobile */
+  }
+
+  .banner .banner-mobile {
+    display: flex; /* Flexbox for stacking images vertically */
+    flex-direction: column;
+  }
+
+  .banner .banner-mobile img {
+    width: 100%; /* Full width for mobile images */
+  }
+}
+
 </style>
 
 <header class="site-header" role="banner">
@@ -138,8 +162,13 @@
     {%- endif -%}
     {% if page.url == "/" or page.url == "/index.html" %}
     <div class="banner">
-      <img src="{{ '/images/1520s_banner.png' | relative_url }}" alt="Banner Image">
-    </div> <br>
+      <img src="{{ '/images/1520s_banner.png' | relative_url }}" alt="Banner Image" class="desktop-banner">
+      <div class="banner-mobile">
+        <img src="/images/1520s_banner_left.png" alt="Banner Left">
+        <img src="/images/1520s_banner_right.png" alt="Banner Right">
+      </div>
+    </div>  
+       <br>
     {% endif %}
   </div>
 </header>
