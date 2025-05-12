@@ -39,7 +39,6 @@ function fillInCensusData(data) {
 }
 
 function displayYearsPlot(data) {
-
   let element = document.querySelector("#years-plot");
   if (!element) {
     console.error("ERROR: Cannot find #years-plot");
@@ -53,16 +52,19 @@ function displayYearsPlot(data) {
     threshold = 50;
   }
 
+  const isMobile = window.innerWidth < 768;
+  const fontSize = isMobile ? 11 : 14;
+  const headerFontSize = isMobile ? 14 : 18;
+  const labelFrequency = isMobile ? 5 : 2; // Adjust frequency here
+
+  const chartTitle = isMobile
+    ? "Works by Year"
+    : "Number of Works by Year of First Source";
+
+  // Merging Data to Avoid Duplicate Years
   const mergedData = {};
-
-  // Iterate through the original data
   for (const entry of data) {
-    let year = entry["Date"];
-    
-    // Remove the "~" character if it exists
-    year = year.replace("~", "");
-
-    // If the year already exists in the merged data, add the counts
+    let year = entry["Date"].replace("~", ""); // Clean year data
     if (mergedData[year]) {
       mergedData[year]["Number of Works"] += parseInt(entry["Number of Works"]);
     } else {
@@ -73,65 +75,68 @@ function displayYearsPlot(data) {
     }
   }
 
-  // Convert the merged data object back into an array
+  // Convert merged data to array
   const mergedDataArray = Object.values(mergedData);
-
-  //add null values for years without works
-  let yearData = prepareYearData(mergedDataArray);
+  const yearData = prepareYearData(mergedDataArray);
 
   let plotInfo = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "config": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
       "background": "#FFFAF1",
       "view": {
-        "width": 725,
-        "height": 300
+        "width": isMobile ? 300 : 725,
+        "height": isMobile ? 250 : 300
       }
     },
     "data": {
       "values": yearData
     },
-  "mark": "bar",
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "ordinal",
-      "title": "Year of First Source",
-      "axis": {
-        "labelFontSize": 14,
-        "titleFontSize": 16,
-        "labelExpr": "datum.label % 2 === 0 ? datum.label : ''" // Only display every 5th year
+    "mark": {
+      "type": "bar",
+      "tooltip": true
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "ordinal",
+        "title": "Year of First Source",
+        "axis": {
+          "labelFontSize": fontSize,
+          "titleFontSize": headerFontSize,
+          "labelAngle": isMobile ? -45 : -90,
+          "tickCount": labelFrequency, // Automatically manage ticks
+          "labelExpr": "parseInt(datum.label) % " + labelFrequency + " === 0 ? datum.label : ''"
         }
-    },
-
-    "y": {
-      "field": "Number of Works",
-      "type": "quantitative",
-      "title": "Number of Works",
-      "axis": {
+      },
+      "y": {
+        "field": "Number of Works",
+        "type": "quantitative",
+        "title": "Number of Works",
+        "axis": {
           "tickMinStep": 5,
-          "labelFontSize": 14,
-          "titleFontSize": 16
-      }
-
-    },
-    "color": {
+          "labelFontSize": fontSize,
+          "titleFontSize": headerFontSize
+        }
+      },
+      "color": {
         "field": "Date",
         "type": "ordinal",
         "scale": {
-            "scheme": "viridis",
-            "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
+          "scheme": "viridis",
+          "interpolate": "light-blue-green"
         },
         "legend": null
       }
-  },
-  "title": {
-      "text": "Number of Works by Year of First Source",
-      "fontSize": 18
-  }
-}
-  vegaEmbed('#years-plot', plotInfo);
+    },
+    "title": {
+      "text": chartTitle,
+      "fontSize": headerFontSize,
+      "anchor": "start",
+      "subtitleFontSize": fontSize
+    }
+  };
 
+  vegaEmbed('#years-plot', plotInfo, { actions: false });
 }
 
 

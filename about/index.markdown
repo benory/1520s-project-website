@@ -21,25 +21,25 @@ order: 1
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
 
-## A new aesthetic paradigm
+<h2>A new aesthetic paradigm</h2>
 
-Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold. 
+<p>Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold.</p>
 
-Musical sources from this decade evince a decisive stylistic change: in place of what might be described as a contrastive aesthetic preferred by earlier composers, with individual lines coming and going, we now find nearly pervasive sonic saturation–that is, music for five or six independent voices with relatively few rests. 
+<p>Musical sources from this decade evince a decisive stylistic change: in place of what might be described as a contrastive aesthetic preferred by earlier composers, with individual lines coming and going, we now find nearly pervasive sonic saturation–that is, music for five or six independent voices with relatively few rests.</p>
 
-This new style, although easy enough to lay out in general terms, is not so easy to analyze. Making matters still more difficult is that scholars have long been unsure exactly how, when, and where these stylistic changes occurred, owing to limited information about composer biographies and a fuzzy understanding of seminal musical sources from the 1520s. As a result, historians have tended to tell an oversimplified story that prioritizes the major composers of the early sixteenth century, or those of the mid sixteenth century, at the expense of those in between. 
+<p>This new style, although easy enough to lay out in general terms, is not so easy to analyze. Making matters still more difficult is that scholars have long been unsure exactly how, when, and where these stylistic changes occurred, owing to limited information about composer biographies and a fuzzy understanding of seminal musical sources from the 1520s. As a result, historians have tended to tell an oversimplified story that prioritizes the major composers of the early sixteenth century, or those of the mid sixteenth century, at the expense of those in between.</p> 
 
-Complicating matters further: more works from during the 1520s survive than from any previous decade in Western music history. Indeed, more music survives than any individual scholar can hope to control.
+<p>Complicating matters further: more works from during the 1520s survive than from any previous decade in Western music history. Indeed, more music survives than any individual scholar can hope to control.</p>
 
-## Meeting the challenge
+<h2>Meeting the challenge</h2>
 
-The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded in 2019 by [Benjamin Ory](https://benjaminory.com){:target="_blank"}, the project offers high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features <span id="work-count"></span> scores and roughly <span id="note-count"></span> notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date of the first surviving source.
+<p>The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded in 2019 by <a href="https://benjaminory.com" target="_blank">Benjamin Ory</a>, the project offers high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features <span id="work-count"></span> scores and roughly <span id="note-count"></span> notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date of the first surviving source.</p>
 
 <div id="years-plot"></div>
 
-The project takes advantage of [editorial and encoding standards](/documentation) developed by the [Josquin Research Project](https://josquin.stanford.edu){:target="_blank"} (JRP) over the past decade. This standardization enables the data from both projects to be shared; such interoperability is especially useful with respect to composers active right around 1520, such as Jean Mouton, Noel Bauldeweyn, or Jean Richafort, whose music is shared between projects.
+<p>The project takes advantage of <a href="/documentation" target="_blank">editorial and encoding standards</a> developed by the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a> (JRP) over the past decade. This standardization enables the data from both projects to be shared; such interoperability is especially useful with respect to composers active right around 1520, such as Jean Mouton, Noel Bauldeweyn, or Jean Richafort, whose music is shared between projects.</p>
 
-## Editorial process
+<h2>Editorial process</h2>
 
 <p class="tight">To upload music, Ory:</p>
   <ul class="tight-list">
@@ -53,9 +53,9 @@ The project takes advantage of [editorial and encoding standards](/documentation
     <li>pushes the update to the website.</li>
   </ul>
 
-Do you see an mistake in a score? Do you disagree with our editorial choices? Would you like a particular score to be texted? [Let us know](mailto:The1520sProject@gmail.com).<br><br>
+<p>Do you see an mistake in a score? Do you disagree with our editorial choices? Would you like a particular score to be texted? <a href="mailto:The1520sProject@gmail.com">Let us know</a>.</p><br>
 
-## People
+<h2>People</h2>
 
 <div class="team-container">
     <div class="team-member">
@@ -84,39 +84,59 @@ Do you see an mistake in a score? Do you disagree with our editorial choices? Wo
     </div>
 </div>
 
-### Advisory Board
+<h3>Advisory Board</h3>
+<ul id="advisory-list">
+  <li>Philippe Canguilhem (Centre d'études supérieures de la Renaissance, Université de Tours)</li>
+  <li>Antonio Chemotti (Katholieke Universiteit Leuven)</li>
+  <li>Julie Cumming (McGill University)</li>
+  <li>Karen Desmond (Maynooth University)</li>
+  <li>Richard Freedman (Haverford College)</li>
+  <li>Ichiro Fujinaga (McGill University)</li>
+  <li>Sean Gallagher (New England Conservatory)</li>
+  <li>Nori Jacoby (Cornell University)</li>
+  <li>Marcin Konik (Fryderyk Chopin Institute, Warsaw)</li>
+  <li>Laurent Pugin (Universität Bern/Répertoire International des Sources Musicales)</li>
+  <li>Jamie Reuland (Princeton University)</li>
+  <li>Emiliano Ricciardi (University of Massachusetts, Amherst)</li>
+  <li>Joshua Rifkin (Boston University, emeritus)</li>
+  <li>Katelijne Schiltz (Universität Regensburg)</li>
+  <li>Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université de Tours)</li>
+  <li>Giovanni Zanovello (Indiana University)</li>
+  <li>Emily Zazulia (University of California, Berkeley)</li>
+</ul>
 
-<div id="paragraph">Philippe Canguilhem (Centre d'études supérieures de la Renaissance, Université de Tours)<br>
-Antonio Chemotti (Katholieke Universiteit Leuven) <br>
-Julie Cumming (McGill University) <br>
-Karen Desmond (Maynooth University) <br>
-Richard Freedman (Haverford College) <br>
-Ichiro Fujinaga (McGill University) <br>
-Sean Gallagher (New England Conservatory) <br>
-Nori Jacoby (Cornell University) <br>
-Marcin Konik (Fryderyk Chopin Institute, Warsaw) <br> 
-Laurent Pugin (Universität Bern/Répertoire International des Sources Musicales)<br>
-Jamie Reuland (Princeton University) <br>
-Emiliano Ricciardi (University of Massachusetts, Amherst) <br>
-Joshua Rifkin (Boston University, emeritus) <br>
-Katelijne Schiltz (Universität Regensburg) <br>
-Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université de Tours) <br>
-Giovanni Zanovello (Indiana University) <br>
-Emily Zazulia (University of California, Berkeley)</div><br>
+<h2>Support</h2>
 
-## Support
+<div class="support-section">
+  <p>
+    This project has been generously supported by <a href="https://itatti.harvard.edu/" target="_blank">Villa I Tatti</a>, Harvard's Center for Italian Renaissance Studies, as part of a <a href="https://propelgrants.stanford.edu" target="_blank">Stanford Vice Provost and Dean of Research Propel Grant</a>, by the <a href="https://cesta.stanford.edu" target="_blank"> Stanford Center for Spatial and Textual Analysis</a>, and by the <a href="http://www.ccarh.org" target="_blank">Stanford Center for Computer Assisted Research in the Humanities</a>.
+  </p>
 
-This project has been generously supported by [Villa I Tatti](https://itatti.harvard.edu/){:target="_blank"}, Harvard's Center for Italian Renaissance Studies, as part of a [Stanford Vice Provost and Dean of Research Propel Grant](https://propelgrants.stanford.edu){:target="_blank"}, by the [Stanford Center for Spatial and Textual Analysis](https://cesta.stanford.edu){:target="_blank"}, and by the [Stanford Center for Computer Assisted Research in the Humanities](http://www.ccarh.org){:target="_blank"}.
+  <div class="support-logos-top">
+    <a href="https://itatti.harvard.edu/" target="_blank">
+      <img src="ITatti_logo.png" alt="i Tatti logo" class="support-logo">
+    </a>
+    <a href="https://cesta.stanford.edu/" target="_blank">
+      <img src="CESTA_logo.png" alt="CESTA logo" class="support-logo">
+    </a>
+  </div>
+  <div class="support-logos-bottom">
+    <a href="http://www.ccarh.org/" target="_blank">
+      <img src="CCARH_logo.png" alt="CCARH logo" class="support-logo">
+    </a>
+    <a href="https://propelgrants.stanford.edu" target="_blank">
+      <img src="Propel_logo.png" alt="Propel Grant logo" class="support-logo">
+    </a>
+  </div>
+</div>
 
-[![i Tatti logo](ITatti_logo.png)](https://itatti.harvard.edu/){:target="_blank"} [![CESTA logo](CESTA_logo.png)](https://cesta.stanford.edu/){:target="_blank"}[![CCARH logo](CCARH_logo.png)](http://www.ccarh.org/){:target="_blank"}[![Propel Grant logo](Propel_logo.png)](https://propelgrants.stanford.edu){:target="_blank"}<br><br>
-
-## Collaborations
+<h2>Collaborations</h2>
 
 <div id="paragraph"><h3>New Senfl Edition</h3>
   <div id="paragraph"> Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank">New Senfl Edition</a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank">available pieces</a>, each of which links to the New Senfl Edition's critical commentary.</div>
   <a href="https://senflonline-eng.com/new-senfl-edition/"><img src="/images/Senfl_banner.png" alt="Senfl Banner"></a>
 </div>
 
-## Data Donations
+<h2>Data Donations</h2>
 
 <div id="paragraph"> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Simon Frisch, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</div>

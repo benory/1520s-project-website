@@ -1,64 +1,250 @@
 <style>
 
+main.page-content {
+  background-color: #FFFAF1;
+}
+
+article.post {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Responsive Team Member Section */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  flex-wrap: nowrap; /* Prevents awkward stacking on desktop */
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.team-member .bio {
+  max-width: 800px;
+  flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Team Member Name and Title */
+.team-member h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.team-member p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#paragraph {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+#advisory-list {
+  list-style-type: none; /* No default bullet points */
+  padding-left: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Adding custom bullet and indentation */
+#advisory-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Custom bullet with perfect alignment */
+#advisory-list li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+
+/* Base Styles for Support Logos */
+.support-logos-top,
+.support-logos-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.support-logos-top a,
+.support-logos-bottom a {
+  display: inline-block;
+}
+
+.support-logos-top img,
+.support-logos-bottom img {
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.support-logos-top img:hover,
+.support-logos-bottom img:hover {
+  transform: scale(1.05);
+}
+
+.support-section {
+  padding-bottom: 30px;
+}
+
+/* Specific Styling for the Senfl Banner */
+img[src="/images/Senfl_banner.png"] {
+  max-width: 500px; /* Adjust this value to your preference */
+  height: auto;
+  display: block;
+  margin: 0; /* No auto margin for left alignment */
+  transition: transform 0.3s ease;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
   main.page-content {
-    background-color: #FFFAF1;
-  }
-
-  img {
+    padding: 16px;
+    font-size: 15px;
     max-width: 100%;
-    padding: 15px;
   }
 
-  #years-plot {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-
-  .team-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-  }
-
+  /* Stacking team members vertically */
   .team-member {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   .team-member img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      margin-right: 20px;
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: 120px;
+    height: 120px;
   }
 
   .team-member .bio {
-      max-width: 800px;
+    max-width: 100%;
+    text-align: left;
+    padding: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
-  .team-member h3 {
-      margin: 0 0 10px;
+  /* Center align text in advisory board */
+  #paragraph {
+    padding-left: 0;
+    text-align: left;
+    font-size: 15px;
+    white-space: normal;
+    line-height: 1.6;
   }
 
-  .team-member p {
-      margin: 0;
+  /* Make logos responsive */
+  .support-logos {
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .support-logos img {
+    max-width: 100px;
+    margin: 10px auto;
   }
 
   #paragraph {
-      padding-left: 30px;
+    display: block;
+    text-align: left;
+    line-height: 1.6;
+    padding: 0 5px;
   }
 
+  /* Adjust the years plot */
+  #years-plot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  /* Responsive padding for tight list */
   p.tight {
-    margin-bottom: 0.2em; /* reduce space below paragraph */
+    margin-bottom: 0.5em;
   }
 
   .tight-list li {
-    margin-bottom: 0.1em; /* slight spacing between items */
+    margin-bottom: 0.4em;
+    padding-left: 10px;
+    list-style-type: disc;
   }
+
+  .support-logos-top,
+  .support-logos-bottom {
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .support-logos-top img,
+  .support-logos-bottom img {
+    max-width: 120px;
+  }
+
+  img[src="/images/Senfl_banner.png"] {
+    max-width: 250px; /* Smaller size for mobile */
+    margin: 0;
+  }
+
+  #advisory-list {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+
+  #advisory-list li {
+    padding-left: 20px; /* Consistent padding */
+    text-indent: -10px;
+  }
+
+  #advisory-list li:before {
+    left: 10px;
+  }
+
+}
 
 </style>
