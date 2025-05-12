@@ -51,6 +51,31 @@
   max-width: 45%;
 }
 
+/* === Mobile-Specific Styles === */
+@media (max-width: 768px) {
+  .footer-col-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column; /* Stack the columns */
+    gap: 0; /* No gap on mobile */
+    padding-left: 12px; /* Left padding for the divider line */
+  }
+
+  .footer-col.footer-col-1,
+  .footer-col.footer-col-3 {
+    flex: 0 0 100%; /* Full width on mobile */
+    max-width: 100%;
+    padding: 12px 5px; /* 5px padding on left and right */
+    box-sizing: border-box;
+  }
+
+  /* Divider Line Between the Two Columns */
+  .footer-col.footer-col-1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px; /* Proper spacing */
+    margin-bottom: 5px;
+  }
+}
+
 </style>
 
 <script>
