@@ -24,10 +24,11 @@ layout: page
 <div class="browse-data-wrapper">
   <div class="browse-box">
     <h4>Browse scores</h4>
-    <input type="text" id="input" placeholder="Search the project">
-    <span onclick="UserSearch()" class="button" id="inputbutton">Enter</span>
+    <div class="search-container">
+      <input type="text" id="input" placeholder="Search the project">
+      <span onclick="UserSearch()" class="button" id="inputbutton">Enter</span>
+    </div>
   </div>
-
   <div class="data-box">
     <h4>Project data</h4>
     <ul>
@@ -43,7 +44,7 @@ layout: page
       </li>
     </ul>
   </div>
-</div><br>
+</div>
 
 <div id="composer-plot"></div>
 
