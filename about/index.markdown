@@ -83,7 +83,7 @@ order: 1
         </div>
     </div>
     <div class="team-member">
-        <img src="/images/headshots/Umbreit.jpg" alt="Jesse Rodin">
+        <img src="/images/headshots/Umbreit.jpg" alt="Janosch Umbreit">
         <div class="bio">
             <h3>Janosch Umbreit</h3>
             <p><b>Team Member</b></p>
