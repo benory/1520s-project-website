@@ -87,7 +87,8 @@ order: 1
         <div class="bio">
             <h3>Janosch Umbreit</h3>
             <p><b>Team Member</b></p>
-            <p>Janosch Umbreit studied musicology, digital humanities, and English literature at the University of Regensburg, where he also worked as a research assistant for the Deutsche Forschungsgemeinschaft-funded research project <a href="https://orgelpredigt.ur.de/" target="_blank">Orgelpredigtdrucke</a>. He is currently part of the Specialized Information Service for Musicology (<a href="https://www.musiconn.de/en/" target="_blank">musiconn</a>) at the Bavarian State Library.</p>
+            <p>Janosch Umbreit studied musicology, digital humanities, and English literature at the University of Regensburg, where he also worked as a research assistant for the Deutsche Forschungsgemeinschaft-funded research project <a href="https://orgelpredigt.ur.de/" target="_blank">Orgelpredigtdrucke</a>. He is currently part of the Specialized Information Service for Musicology (<a href="https://www.musiconn.de/en/" target="_blank">musiconn</a>) at the Bavarian State Library.</p><br>
+            <p><a href="https://1520s-project.org/browse/?q=Umbreit" target="_blank" class="see-scores">See scores edited by Umbreit.</a></p>
         </div>
     </div>
 </div>

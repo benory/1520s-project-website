@@ -824,10 +824,14 @@ function FreeTextSearch(query) {
                 searchCount++;
                 break;
             } else if (rowData && rowData.ID && rowData.ID.match(regex)){
-				found = true;
+								found = true;
                 searchCount++;
                 break;
-            }
+            } else if (rowData && rowData.Transcriber && rowData.Transcriber.match(regex)) {
+						    found = true;
+						    searchCount++;
+						    break;
+						}
         }
         tr[i].style.display = found ? "" : "none";
     }
