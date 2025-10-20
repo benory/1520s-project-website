@@ -10524,6 +10524,28 @@
 		"FILEBASE": "Wil2062-Precatus_est_Moyses"
 	},
 	{
+		"ID": "Wil2098",
+		"Composer": "Willaert, Adrian",
+		"Title": "Dulces exuviae",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Zenck_1950b",
+		"First Source": "F-CA MS 125–8",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1669/",
+		"RISM or CC Source Sigla": "CambraiBM 125-8",
+		"Pages, Folios, or Numbers": "f. 136v",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"First Source Exact Date": "1542",
+		"Source Date": "1542",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2025-10-20",
+		"Note Count": "936",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Wil/Wil2098-Dulces_exuviae.krn",
+		"FILEBASE": "Wil2098-Dulces_exuviae"
+	},
+	{
 		"ID": "Wil2099",
 		"Composer": "Willaert, Adrian",
 		"Title": "Pater noster",
