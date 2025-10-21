@@ -91,6 +91,15 @@ order: 1
             <p><a href="https://1520s-project.org/browse/?q=Umbreit" target="_blank" class="see-scores">See scores edited by Umbreit.</a></p>
         </div>
     </div>
+    <div class="team-member">
+        <img src="/images/headshots/Blistain.jpg" alt="Max Blistain">
+        <div class="bio">
+            <h3>Max Blistain</h3>
+            <p><b>Team Member</b></p>
+            <p>Max Blistain studied piano at the Royal Conservatory of Mons, Belgium. He is a piano teacher, accompanist and concert performer, mainly playing with his trio Star Vinsky, and he is studying musicology at the Free University of Brussels. Passionate about the heritage of his native region, his research focuses on Charles Chastelain (ca. 1490-1578), provost and musician at the Collégiale-Saint-Vincent in Soignies. He also conducts a choir to revive the Chastelain's works.</p><br>
+            <p><a href="https://1520s-project.org/browse/?q=Blistain" target="_blank" class="see-scores">See scores edited by Blistain.</a></p>
+        </div>
+    </div>
 </div>
 
 <h3>Advisory Board</h3>
@@ -148,4 +157,4 @@ order: 1
 
 <h2>Data Donations</h2>
 
-<div id="paragraph"> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Simon Frisch, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</div>
+<div id="paragraph"> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Simon Frisch, Lance Morrison, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</div>
