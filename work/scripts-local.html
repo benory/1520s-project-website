@@ -326,10 +326,12 @@ function displayWorkInfo(id) {
 
 			        if (ed["Composer/Author"]) entry += `${ed["Composer/Author"]}, `;
 			        if (ed["Name of Article"]) entry += ` "${ed["Name of Article"]}," `;
+			        if (ed["Name of Dissertation"]) entry += ` "${ed["Name of Dissertation"]}" `;
 			        if (ed["Name of Volume"]) entry += `<i>${ed["Name of Volume"]}</i>`;
 
 			        if (ed["Editor"]) entry += `, ed. ${ed["Editor"]}`;
 			        if (ed["Series and Volume"]) entry += `, ${ed["Series and Volume"]}`;
+			        if (ed["Dissertation"]) entry += `(${ed["Dissertation"]}`;
 
 			        if (ed["Location"] && ed["Publisher"] && ed["Publication Year"]) {
 			            entry += ` (${ed["Location"]}: ${ed["Publisher"]}, ${ed["Publication Year"]})`;
@@ -337,7 +339,9 @@ function displayWorkInfo(id) {
 			            entry += ` (${ed["Location"]}: ${ed["Publication Year"]})`;
 			        } else if (ed["Publisher"] && ed["Publication Year"]) {
 			        	entry += ` (${ed["Publisher"]}, ${ed["Publication Year"]})`;
-			        } else if (ed["Publication Year"]) {
+			        } else if (ed["Dissertation"] && ed["Publication Year"]){
+			        	entry += `, ${ed["Publication Year"]})`;
+			    	} else if (ed["Publication Year"]) {
 			            entry += ` (${ed["Publication Year"]})`;
 			        }
 
