@@ -2715,7 +2715,9 @@
 		"Texted": "no",
 		"Transcriber": "Janosch Umbreit",
 		"Date Added": "2025-11-4",
-		"Note Count": "1722"
+		"Note Count": "1722",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gom/Gom2003-Suscipe_verbum.krn",
+		"FILEBASE": "Gom2003-Suscipe_verbum"
 	},
 	{
 		"ID": "Gom2004",
