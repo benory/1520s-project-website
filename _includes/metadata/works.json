@@ -6700,6 +6700,28 @@
 		"FILEBASE": "Ror0103-Poggiandal_ciel_collali_del_desio"
 	},
 	{
+		"ID": "Ror0104",
+		"Composer": "Rore, Cipriano de",
+		"Title": "Quand’io son tutto volto",
+		"Genre": "secular work",
+		"Voices": "5",
+		"Original Voices": "5",
+		"Modern Editions": "Meier_1963",
+		"First Source": "I madrigali a cinque voci (Venice: Girolamo Scotto)",
+		"RISM Source Link": "https://rism.online/sources/990055808",
+		"RISM or CC Source Sigla": "R 2479",
+		"Pages, Folios, or Numbers": "no. 3",
+		"Mensuration Signs in Earliest Source": "C",
+		"First Source Exact Date": "1542",
+		"Source Date": "1542",
+		"Unique Source": "no",
+		"Texted": "yes",
+		"Date Added": "2025-11-10",
+		"Note Count": "1935",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ror/Ror0104-Quandio_son_tutto_volto.krn",
+		"FILEBASE": "Ror0104-Quandio_son_tutto_volto"
+	},
+	{
 		"ID": "Ser1001a",
 		"Composer": "Sermisy, Claudin de",
 		"Title": "Missa Philomena",
