@@ -831,6 +831,10 @@ function FreeTextSearch(query) {
 						    found = true;
 						    searchCount++;
 						    break;
+						} else if (rowData && rowData["External Project Name"] && rowData["External Project Name"].match(regex)){
+								found = true;
+						    searchCount++;
+						    break;
 						}
         }
         tr[i].style.display = found ? "" : "none";
