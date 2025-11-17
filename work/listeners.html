@@ -81,6 +81,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 //////////////////////////////
 //
+// Event listener to change title for Google Analytics -- Changes title
+//     to make allow the specific works seen to be tracked via id
+//     
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+    let id = DATA1520.cgi.id || "Jac2001";
+
+    // 1. Update the <title>
+    document.title = `${id} | The 1520s Project`;
+
+});
+
+
+//////////////////////////////
+//
 // toggleAnalysisDisplay -- Show or hide analysis plots.
 //
 
