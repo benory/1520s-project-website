@@ -100,6 +100,15 @@ order: 1
             <p><a href="https://1520s-project.org/browse/?q=Blistain" target="_blank" class="see-scores">See scores edited by Blistain.</a></p>
         </div>
     </div>
+    <div class="team-member">
+        <img src="/images/headshots/Nivarlet.jpg" alt="David Nivarlet">
+        <div class="bio">
+            <h3>David Nivarlet</h3>
+            <p><b>Team Member</b></p>
+            <p>David Nivarlet is a research assistant in early modern palaeography at CESR (University of Tours). His research focuses on HTR technology applied to fifteenth- and sixteenth-century civic archives. He previously interned at KBR (Royal Library of Belgium), where he contributed to the federal research project <a href="https://www.alamirefoundation.org/en/news/start-fed-twin-programma-from-script-to-sound/" target="_blank">From Script to Sound: Connecting Heritage and Art through Research and Technology</a>.</p><br>
+            <p><a href="https://1520s-project.org/browse/?q=Nivarlet" target="_blank" class="see-scores">See scores edited by Nivarlet.</a></p>
+        </div>
+    </div>
 </div>
 
 <h3>Advisory Board</h3>
