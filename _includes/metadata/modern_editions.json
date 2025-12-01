@@ -218,7 +218,17 @@
 		"Publication Year": "1961"
 	},
 	{
-		"ID": "Jas_2018",
+		"ID": "Jas_2018a",
+		"Composer/Author": "Jheronimus Vinders",
+		"Name of Volume": "Collected Works: Part 1, Motets and Secular Works",
+		"Editor": "Eric Jas",
+		"Series and Volume": "Recent Researches in the Music of the Renaissance, vol. 167",
+		"Location": "Middleton",
+		"Publisher": "A-R Editions",
+		"Publication Year": "2018"
+	},
+	{
+		"ID": "Jas_2018b",
 		"Composer/Author": "Jheronimus Vinders",
 		"Name of Volume": "Collected Works: Part 2, Masses",
 		"Editor": "Eric Jas",
