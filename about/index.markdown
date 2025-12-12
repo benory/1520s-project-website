@@ -130,7 +130,7 @@ order: 1
   <li>Philippe Vendrix (Centre d'études supérieures de la Renaissance, Université de Tours)</li>
   <li>Giovanni Zanovello (Indiana University)</li>
   <li>Emily Zazulia (University of California, Berkeley)</li>
-</ul>
+</ul><br>
 
 <h2>Support</h2>
 
@@ -155,14 +155,20 @@ order: 1
       <img src="Propel_logo.png" alt="Propel Grant logo" class="support-logo">
     </a>
   </div>
-</div>
+</div><br>
+
+<h2>Project reviews</h2>
+
+"The 1520s Project is another step ahead... the project features an exquisite and thorough treatment of the metadata and a sophisticated array of analytical tools."
+
+<ul>Frans Wiering, ed., "Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy" (Utrecht University, 2025), 24. <a href="https://zenodo.org/records/17543932" target="_blank">https://doi.org/10.5281/zenodo.17543932</a></ul><br>
 
 <h2>Collaborations</h2>
 
 <div id="paragraph"><h3>New Senfl Edition</h3>
   <div id="paragraph"> Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank">New Senfl Edition</a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank">available pieces</a>, each of which links to the New Senfl Edition's critical commentary.</div>
   <a href="https://senflonline-eng.com/new-senfl-edition/"><img src="/images/Senfl_banner.png" alt="Senfl Banner"></a>
-</div>
+</div><br>
 
 <h2>Data Donations</h2>
 
