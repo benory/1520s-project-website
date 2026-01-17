@@ -255,12 +255,7 @@ function displayTopComposers() {
 	let plotInfo = {
 		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 		"background": "#FFFAF1",
-		"config": {
-		  "view": {
-		    "width": window.innerWidth < 768 ? 200 : 550,
-    		"height": 600
-		  }
-		},
+		"width": isMobile ? 260 : 320,
 		"data": {
 			"values": data
 		},
@@ -372,7 +367,9 @@ function displayTopComposers() {
 		elements[i].classList.toggle("hidden");
 	}
 
-	vegaEmbed('#composer-plot', plotInfo, { actions: false });
+	requestAnimationFrame(() => {
+	  vegaEmbed('#composer-plot', plotInfo, { actions: false });
+	});
 
 }
 

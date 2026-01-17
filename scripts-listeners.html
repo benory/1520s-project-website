@@ -33,8 +33,119 @@ function setupUserSearchEnterKey() {
 	}
 }
 
+//////////////////////////////
+//
+// Apple-style live search (DOMContentLoaded-safe)
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const searchInput = document.querySelector("#input");
+  const suggestionPanel = document.querySelector("#search-suggestions");
+
+  if (!searchInput || !suggestionPanel) {
+    console.warn("Search input or suggestion panel not found.");
+    return;
+  }
+
+  const SUGGESTION_LIMIT = 4;
+
+  searchInput.addEventListener("input", function () {
+    const q = this.value.toLowerCase().trim();
+
+    if (q.length < 2) {
+      suggestionPanel.classList.add("hidden");
+      return;
+    }
+
+    const results = METADATA.filter(entry => {
+      return (
+        entry.Composer?.toLowerCase().includes(q) ||
+        entry.Title?.toLowerCase().includes(q) ||
+        entry.Subtitle?.toLowerCase().includes(q) ||
+        entry.Genre?.toLowerCase().includes(q) ||
+        entry["First Source"]?.toLowerCase().includes(q)
+      );
+    }).slice(0, SUGGESTION_LIMIT);
+
+    if (results.length === 0) {
+      suggestionPanel.classList.add("hidden");
+      return;
+    }
+
+    suggestionPanel.innerHTML =
+	  results.map(renderSuggestion).join("") +
+	  renderSeeMoreRow(q);
+
+    suggestionPanel.classList.remove("hidden");
+  });
+
+  // Hide suggestions when clicking outside search
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".apple-search")) {
+      suggestionPanel.classList.add("hidden");
+    }
+  });
+
+});
+
+function renderSuggestion(entry) {
+  const title = entry.Subtitle
+    ? `${entry.Title}, <i>${entry.Subtitle}</i>`
+    : entry.Title;
+
+  const composer = entry.Composer || "Unknown";
+  const genre = entry.Genre || "";
+  const source = entry["First Source"] || "";
+
+  return `
+    <div class="search-suggestion"
+         onclick="goToWork('${entry.ID}')">
+      <div class="primary">${title}</div>
+      <div class="secondary">
+        ${composer}
+        ${genre ? " · " + genre : ""}
+      </div>
+    </div>
+  `;
+}
+
+function goToWork(id) {
+  window.location.href = `/work?id=${id}`;
+}
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".apple-search")) {
+    document.querySelector("#search-suggestions").classList.add("hidden");
+  }
+});
+
+//////////////////////////////
+//
+// renderSeeMoreRow -- link to browse page
+//
+
+function renderSeeMoreRow(query) {
+  const encoded = encodeURIComponent(query);
+  return `
+    <div class="search-see-more"
+         onclick="goToBrowse('${encoded}')">
+      See more results →
+    </div>
+  `;
+}
+
+//////////////////////////////
+//
+// goToBrowse -- navigate to browse page
+//
+
+function goToBrowse(query) {
+  window.location.href = `/browse?q=${query}`;
+}
+
+window.addEventListener("resize", () => {
+	displayTopComposers();
+});
 
 </script>
-
-
-

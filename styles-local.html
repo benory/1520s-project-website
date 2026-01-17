@@ -4,6 +4,17 @@ article.post {
   width: 100%;
 }
 
+.homepage-grid {
+  margin-top: -20px; /* pull content into hero */
+}
+
+/* Make Minima pages wider */
+.wrapper {
+  max-width: 800px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 main.page-content {
   padding: 0px;
   background-color: #FFFAF1;
@@ -58,8 +69,6 @@ table.most-recent tr:hover {
 
 .browse-box,
 .data-box {
-  flex: 1 1 48%;
-  max-width: 48%;
   padding: 12px;
   background: #FFFAF1;
   box-sizing: border-box;
@@ -109,10 +118,118 @@ table.most-recent tr:hover {
 }
 
 #composer-plot {
-  padding-top: 20px; /* Adjust the value as needed */
+  background: #FFFAF1;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* === Apple-style Search === */
+
+.apple-search {
+  position: relative;
+}
+
+.apple-search input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 17px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.apple-search input:focus {
+  outline: none;
+  border-color: #999;
+}
+
+/* Suggestions panel */
+
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.95);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.search-suggestions.hidden {
+  display: none;
+}
+
+.search-suggestion {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.search-suggestion:hover {
+  background: #f1e9d9;
+}
+
+.search-suggestion .primary {
+  font-weight: 600;
+}
+
+.search-suggestion .secondary {
+  font-size: 13px;
+  color: #6A6156;
+}
+
+/* === Search "See more" footer === */
+
+.search-see-more {
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #6A6156;
+  text-align: right;
+  cursor: pointer;
+  border-top: 1px solid #e9e2d3;
+}
+
+.search-see-more:hover {
+  text-decoration: underline;
+}
+
+/* === Homepage condensed grid === */
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 24px;
+  align-items: start;
+}
+
+.left-column {
+
+}
+
+/* Left column stacks naturally */
+.left-column > * {
+  margin-bottom: 24px;
+}
+
+/* Right column: let the chart breathe */
+.right-column {
+  padding-top: 8px;
 }
 
 /* === Mobile-Specific Styles (Fully Functional) === */
+@media (max-width: 900px) {
+  .homepage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .right-column {
+    order: -1; /* chart first on mobile */
+  }
+}
+
 @media (max-width: 768px) {
   /* Stack Browse and Data Boxes Vertically */
   .browse-data-wrapper {
