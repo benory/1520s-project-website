@@ -1,7 +1,57 @@
 <style>
 
+h1.post-title {
+  display: none;
+}
+
+p + .section-header {
+  margin-top: 32px;
+}
+
 main.page-content {
   background-color: #FFFAF1;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1c1c1e;
+}
+
+main.page-content ul.tight-list {
+  padding-left: 36px;
+}
+
+/* Headings */
+main.page-content h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 24px auto 8px;
+  max-width: 800px;
+  color: #1c1c1e;
+}
+
+main.page-content h3 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 16px auto 4px;
+  max-width: 800px;
+  color: #1c1c1e;
+}
+
+/* Body text */
+main.page-content p,
+main.page-content ul {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1c1c1e;
+}
+
+main.page-content a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+main.page-content a:hover {
+  text-decoration: underline;
 }
 
 article.post {
@@ -11,22 +61,22 @@ article.post {
 .team-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .team-member {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding-bottom: 10px;
   flex-wrap: nowrap; /* Prevents awkward stacking on desktop */
 }
 
 .team-member img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin-right: 20px;
   flex-shrink: 0;
@@ -46,22 +96,11 @@ article.post {
   font-size: 18px;
 }
 
-.team-member p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-#paragraph {
-  font-size: 15px;
-  line-height: 1.5;
-  padding-left: 30px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
+p + .role {
+  margin: 4px 0 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #4D463D;          /* warm gray, matches your palette */
 }
 
 #advisory-list {
@@ -117,17 +156,6 @@ article.post {
   padding-bottom: 30px;
 }
 
-/* Specific Styling for the Senfl Banner */
-img[src="/images/Senfl_banner.png"] {
-  max-width: 500px; /* Adjust this value to your preference */
-  height: auto;
-  display: block;
-  margin-top: 15px;
-  margin-left: 30px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
 .see-scores {
   color: #666;
   display: inline-block;
@@ -137,6 +165,86 @@ img[src="/images/Senfl_banner.png"] {
 .see-scores:hover {
   color: #000;
   text-decoration: underline;
+}
+
+ul.tight-list.review-list {
+  padding-left: 18px;
+  border-left: 2px solid rgba(0,0,0,0.08);
+}
+
+ul.tight-list.review-list li {
+  list-style: none;
+}
+
+.process-steps {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.process-steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 10px 0 10px 36px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.process-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.06);
+  color: #1c1c1e;
+  text-align: center;
+  line-height: 22px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.process-steps strong {
+  font-weight: 500;
+}
+
+.collaboration-block {
+  max-width: 800px;
+  margin: 0 auto 28px;
+}
+
+.collaboration-block h3 {
+  margin: 16px 0 6px;
+}
+
+.collaboration-block p {
+  margin-bottom: 10px;
+}
+
+.collaboration-logo {
+  display: inline-block;
+}
+
+.collaboration-logo img {
+  max-width: 360px;          /* tighter than 500px */
+  height: auto;
+  display: block;
+  margin-top: 6px;
+  transition: transform 0.25s ease;
+}
+
+.collaboration-logo img:hover {
+  transform: scale(1.03);
+}
+
+.collaboration-block p {
+  margin: 6px 0 8px;
+  padding: 0;
+  line-height: 1.5;
 }
 
 /* Mobile-Specific Adjustments */
@@ -169,14 +277,6 @@ img[src="/images/Senfl_banner.png"] {
     overflow-wrap: break-word;
   }
 
-  #paragraph {
-    padding-left: 0;
-    text-align: left;
-    font-size: 15px;
-    white-space: normal;
-    line-height: 1.6;
-  }
-
   /* Make logos responsive */
   .support-logos {
     gap: 12px;
@@ -186,13 +286,6 @@ img[src="/images/Senfl_banner.png"] {
   .support-logos img {
     max-width: 100px;
     margin: 10px auto;
-  }
-
-  #paragraph {
-    display: block;
-    text-align: left;
-    line-height: 1.6;
-    padding: 0 5px;
   }
 
   #years-plot {
@@ -242,6 +335,10 @@ img[src="/images/Senfl_banner.png"] {
 
   #advisory-list li:before {
     left: 10px;
+  }
+
+  .collaboration-logo img {
+    max-width: 240px;
   }
 
 }

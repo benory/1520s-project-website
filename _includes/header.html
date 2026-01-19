@@ -10,8 +10,8 @@
 }
 
 .site-header .wrapper {
-  padding-top: 10px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 4px;
 }
 
 .wrapper {
@@ -36,9 +36,9 @@
 }
 
 .site-nav .page-link {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  padding: 6px 10px;
+  padding: 5px 9px;
   color: #6A6156; /* keep your existing palette */
   letter-spacing: 0.01em;
   border-radius: 8px;
@@ -63,6 +63,7 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 12px;
   padding: 4px;
   min-width: 140px;
@@ -140,7 +141,8 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{ '/images/1520s_logo.png' | relative_url }}" alt="The 1520s Project Logo" style="height: 80px; vertical-align: middle;">
+      <img src="{{ '/images/1520s_logo.png' | relative_url }}"
+     alt="The 1520s Project Logo">
     </a>
 
     {%- if page_paths -%}

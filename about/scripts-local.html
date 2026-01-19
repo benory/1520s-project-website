@@ -45,54 +45,41 @@ function displayYearsPlot(data) {
     return;
   }
 
-  let threshold = element.dataset.threshold;
-  if (threshold < 1) {
-    threshold = 10;
-  } else if (threshold > 50) {
-    threshold = 50;
-  }
-
   const isMobile = window.innerWidth < 768;
-  const fontSize = isMobile ? 11 : 14;
-  const headerFontSize = isMobile ? 14 : 18;
-  const labelFrequency = isMobile ? 5 : 2; // Adjust frequency here
+  const fontSize = isMobile ? 11 : 13;
+  const headerFontSize = isMobile ? 14 : 16;
+  const labelFrequency = isMobile ? 5 : 2;
 
-  const chartTitle = "Number of Works by Year of First Source";
-
-  // Merging Data to Avoid Duplicate Years
+  /* ---- Merge duplicate years ---- */
   const mergedData = {};
   for (const entry of data) {
-    let year = entry["Date"].replace("~", ""); // Clean year data
-    if (mergedData[year]) {
-      mergedData[year]["Number of Works"] += parseInt(entry["Number of Works"]);
-    } else {
+    let year = entry["Date"].replace("~", "");
+    if (!mergedData[year]) {
       mergedData[year] = {
-        "Date": year,
-        "Number of Works": parseInt(entry["Number of Works"])
+        Date: year,
+        "Number of Works": 0
       };
     }
+    mergedData[year]["Number of Works"] += parseInt(entry["Number of Works"]);
   }
 
-  // Convert merged data to array
-  const mergedDataArray = Object.values(mergedData);
-  const yearData = prepareYearData(mergedDataArray);
+  const yearData = prepareYearData(Object.values(mergedData));
 
-  let plotInfo = {
+  const plotInfo = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {
-      "background": "#FFFAF1",
-      "view": {
-        "width": isMobile ? 300 : 725,
-        "height": isMobile ? 250 : 300
-      }
-    },
-    "data": {
-      "values": yearData
-    },
+
+    "background": "#FFFAF1",
+
+    "width": isMobile ? 300 : 725,
+    "height": isMobile ? 240 : 300,
+
+    "data": { "values": yearData },
+
     "mark": {
       "type": "bar",
-      "tooltip": true
+      "opacity": 0.9
     },
+
     "encoding": {
       "x": {
         "field": "Date",
@@ -100,12 +87,17 @@ function displayYearsPlot(data) {
         "title": "Year of First Source",
         "axis": {
           "labelFontSize": fontSize,
-          "titleFontSize": headerFontSize,
+          "titleFontSize": fontSize,
           "labelAngle": isMobile ? -45 : -90,
-          "tickCount": labelFrequency, // Automatically manage ticks
-          "labelExpr": "parseInt(datum.label) % " + labelFrequency + " === 0 ? datum.label : ''"
+          "labelColor": "#6A6156",
+          "titleColor": "#6A6156",
+          "tickColor": "rgba(0,0,0,0.15)",
+          "domainColor": "rgba(0,0,0,0.2)",
+          "labelExpr":
+            "parseInt(datum.label) % " + labelFrequency + " === 0 ? datum.label : ''"
         }
       },
+
       "y": {
         "field": "Number of Works",
         "type": "quantitative",
@@ -113,28 +105,36 @@ function displayYearsPlot(data) {
         "axis": {
           "tickMinStep": 5,
           "labelFontSize": fontSize,
-          "titleFontSize": headerFontSize
+          "titleFontSize": fontSize,
+          "labelColor": "#6A6156",
+          "titleColor": "#6A6156",
+          "gridColor": "rgba(0,0,0,0.06)",
+          "domain": false
         }
       },
+
       "color": {
-        "field": "Date",
+        "field": "Number of Works",
         "type": "ordinal",
         "scale": {
-          "scheme": "viridis",
-          "interpolate": "light-blue-green"
+          "scheme": "goldorange"
         },
         "legend": null
-      }
+      },
+
+      "tooltip": [
+        { "field": "Date", "type": "ordinal", "title": "Year" },
+        { "field": "Number of Works", "type": "quantitative", "title": "Works" }
+      ]
     },
-    "title": {
-      "text": chartTitle,
-      "fontSize": headerFontSize,
-      "anchor": "start",
-      "subtitleFontSize": fontSize
+
+    "config": {
+      "font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "view": { "stroke": "transparent" }
     }
   };
 
-  vegaEmbed('#years-plot', plotInfo, { actions: false });
+  vegaEmbed("#years-plot", plotInfo, { actions: false });
 }
 
 

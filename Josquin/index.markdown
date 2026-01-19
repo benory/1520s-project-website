@@ -19,6 +19,9 @@ nav: false
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
+{% include styles/most_recent_table.css.html %}
+
+<div class="section-header"><h4>Josquin attributions by the numbers</h4></div>
 
 <div class="page-wrapper">
 <div class="page-header">
