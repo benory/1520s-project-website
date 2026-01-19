@@ -35,20 +35,32 @@ layout: page
       <div id="search-suggestions"
            class="search-suggestions hidden"></div>
     </div>
-    <div class="data-box">
-      <h4>Project data</h4>
-      <ul>
-        <li><b>Number of works:</b> <span id="work-count"></span></li>
-        <li><b>Number of notes:</b> <span id="note-count"></span></li>
-        <li>
-          <b>By genre:</b>
-          <span class="count-box">
-            <span id="mass-count"></span> mass movements<br>
-            <span id="motet-count"></span> motets<br>
-            <span id="secular-count"></span> secular works
-          </span>
-        </li>
-      </ul>
+    <div class="data-box apple-data">
+  <div class="data-header">Project data</div>
+      <div class="data-metrics">
+        <div class="metric">
+          <div class="metric-value" id="work-count"></div>
+          <div class="metric-label">Works</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value" id="note-count"></div>
+          <div class="metric-label">Notes</div>
+        </div>
+      </div>
+      <div class="data-genres">
+        <div class="genre-row">
+          <span class="genre-count" id="mass-count"></span>
+          <span class="genre-label">Mass movements</span>
+        </div>
+        <div class="genre-row">
+          <span class="genre-count" id="motet-count"></span>
+          <span class="genre-label">Motets</span>
+        </div>
+        <div class="genre-row">
+          <span class="genre-count" id="secular-count"></span>
+          <span class="genre-label">Secular works</span>
+        </div>
+      </div>
     </div>
   </div>
 
