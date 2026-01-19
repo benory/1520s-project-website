@@ -1,7 +1,12 @@
 <style>
 
 .site-header {
-  background-color: #fef7e7;
+  background: rgba(254, 247, 231, 0.92); /* #fef7e7 */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 100;
 }
 
 .wrapper {
@@ -22,14 +27,19 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  position: relative;
 }
 
 .site-nav .page-link {
-  font-size: 17px;         /* Bigger text */
-  padding: 4px 6px;      /* More space around links */
-  display: inline-block;   /* Ensures padding applies correctly */
-  color: black;            /* Optional: adjust text color */
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px 10px;
+  color: #6A6156; /* keep your existing palette */
+  letter-spacing: 0.01em;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
+
 
 /* Dropdown container */
 .site-nav .dropdown {
@@ -37,32 +47,29 @@
   display: inline-block;
 }
 
-/* Dropdown Trigger Link (Resources) */
-.site-nav .dropdown > .page-link {
-  cursor: pointer;
-  font-weight: 400; /* Prevent bold by default */
-}
-
-
-/* Prevent only the "resources" link from becoming bold on hover */
-.site-nav .dropdown > .page-link:hover {
-  font-weight: 400 !important;
-}
-
 /* Dropdown content */
 .site-nav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fef7e7;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  left: 0;
+  z-index: 200;
+
+  background: rgba(254, 247, 231, 0.98); /* #fef7e7 */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 12px;
+  padding: 4px;
+  min-width: 140px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 /* Dropdown links */
 .site-nav .dropdown-content a {
   color: black;
-  padding: 10px 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
   text-decoration: none;
   display: block;
   white-space: nowrap;
@@ -74,15 +81,22 @@
   color: #6A6156;
 }
 
+.site-nav .dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #1c1c1e;
+}
+
 .site-nav .page-link:hover {
-  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #1c1c1e;
   text-decoration: none;
 }
 
-.site-nav .dropdown-content a:hover {
-  font-weight: 600;
-  text-decoration: none;
+.site-nav .dropdown-trigger:hover {
+  background-color: transparent;
+  color: #6A6156;
 }
+
 
 /* Show dropdown on hover */
 .site-nav .dropdown:hover .dropdown-content {
@@ -149,7 +163,7 @@
               {%- if counter == 2 -%}
                 <!-- Insert the dropdown after the second link -->
                 <div class="dropdown">
-                  <span class="page-link">resources</span>
+                  <a class="page-link dropdown-trigger" href="#">resources</a>
                   <div class="dropdown-content">
                     <a class="page-link" href="/Josquin/">Josquin attributions</a>
                   </div>
