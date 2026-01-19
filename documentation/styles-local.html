@@ -12,29 +12,74 @@ body {
   background-color: #FFFAF1;
 }
 
-#paragraph {
-  padding-left: 10px;
-  word-wrap: normal;
-  overflow-wrap: normal;
-  white-space: normal;
+.page-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
 }
 
-h1 {
-  font-size: 45px;
+.main-content {
+  flex: 1;
 }
 
-h2 {
-  font-size: 32px;
-  font-weight: bold;
+.main-content p,
+.main-content div > p {
+  max-width: 760px;
+  margin: 0 auto 14px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #1c1c1e;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: bold;
+.main-content h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0px auto 12px;
+  max-width: 760px;
 }
 
-h4 {
-  font-size: 20px;
+.main-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 28px auto 8px;
+  max-width: 760px;
+}
+
+.main-content section {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.main-content section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 5px auto 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0)
+  );
+}
+
+/* remove divider after the last section only */
+.main-content section:last-of-type::after {
+  display: none;
+}
+
+/* Strong section breaks between major sections */
+.main-content h2:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.main-content h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 32px auto 12px;
+  max-width: 760px;
 }
 
 .wrapper {
@@ -45,40 +90,38 @@ h4 {
   transform: translateX(50px);
 }
 
-.page-content {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
-}
-
 .toc-container {
-  width: 250px;
-  min-width: 250px;
-  max-width: 250px;
+  position: sticky;
+  align-self: flex-start;
+  top: 96px;
+  max-width: 240px;
+  min-width: 240px;
+  padding: 8px 16px 8px 0;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  font-size: 15px;
+  line-height: 1.6;
   flex-shrink: 0;
 }
 
-.toc-container {
-  position: sticky;
-  top: 100px;
-  align-self: start;
-  background-color: #fcf7f4;
-  border-right: 4px solid #888;
-  padding: 20px;
-  margin-right: 40px;
-  font-family: system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  height: fit-content;
+.toc-container a {
+  color: #1c1c1e;
+  text-decoration: none;
+}
+
+.toc-container a:hover {
+  color: #007aff;
 }
 
 .toc-container li a {
   display: inline-block;
   padding-left: 1.2em;
   text-indent: -1.2em;
+}
+
+.toc-container li ul {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #6e6e73;
 }
 
 .toc-container h4 {
@@ -109,6 +152,131 @@ h4 {
   text-decoration: underline;
 }
 
+.main-content ul,
+.main-content ol {
+  max-width: 760px;
+  margin: 0 auto 16px;
+  padding-left: 20px;
+}
+
+.main-content li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 14px auto 20px;
+}
+
+/* More generous indentation for documentation lists */
+.main-content ul.spaced-list {
+  padding-left: 32px;
+  font-size: 14px;
+}
+
+.main-content ul.narrow-list {
+  padding-left: 32px;
+  font-size: 14px;
+}
+
+.main-content ul.spaced-list li {
+  padding-left: 0;
+}
+
+code {
+  display: block;
+  max-width: 760px;
+  margin: 12px auto 20px;
+  padding: 10px 12px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.url-block {
+  max-width: 760px;
+  margin: 0 auto 16px;
+  padding-left: 18px;
+  border-left: 2px solid rgba(0,0,0,0.08);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.url-block a {
+  color: #0366d6;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.url-block a:hover {
+  text-decoration: underline;
+}
+
+.workflow-list {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+}
+
+.workflow-list > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.workflow-list > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.06);
+  color: #1c1c1e;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.workflow-list strong {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.workflow-list p {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.workflow-list img {
+  margin-top: 0.5rem;
+}
+
+/* Reset nested lists inside workflow steps to normal body style */
+.workflow-list ul {
+  font-size: 15px;
+  line-height: 1.65;
+  margin-top: 0.5rem;
+}
+
+.workflow-list ul li {
+  padding-left: 0;
+  margin-bottom: 0.4rem;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .page-content,
@@ -122,17 +290,6 @@ h4 {
 
   .toc-container {
     display: none;
-  }
-
-  /* Ensure text wraps properly without breaking awkwardly */
-  #paragraph,
-  p {
-    max-width: 100%;
-    word-wrap: normal;
-    overflow-wrap: normal;
-    white-space: normal;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   h1 {
@@ -168,6 +325,7 @@ h4 {
   ol.spaced-list li {
     margin-bottom: 0.4em;
   }
+
 
   /* Image adjustments */
   img {
