@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //////////////////////////////
 //
-// setupUserSearchEnterKey -- Allow the Enter key to move you to the browse
-//     page.
+// setupUserSearchEnterKey -- Allow the Enter key to move you to the repertoire page.
 //
 
 function setupUserSearchEnterKey() {
@@ -122,14 +121,14 @@ document.addEventListener("click", (e) => {
 
 //////////////////////////////
 //
-// renderSeeMoreRow -- link to browse page
+// renderSeeMoreRow -- link to repertoire page
 //
 
 function renderSeeMoreRow(query) {
   const encoded = encodeURIComponent(query);
   return `
     <div class="search-see-more"
-         onclick="goToBrowse('${encoded}')">
+         onclick="goToRepertoire('${encoded}')">
       See more results →
     </div>
   `;
@@ -137,11 +136,11 @@ function renderSeeMoreRow(query) {
 
 //////////////////////////////
 //
-// goToBrowse -- navigate to browse page
+// goToRepertoire -- navigate to repertoire page
 //
 
-function goToBrowse(query) {
-  window.location.href = `/browse?q=${query}`;
+function goToRepertoire(query) {
+  window.location.href = `/repertoire?q=${query}`;
 }
 
 window.addEventListener("resize", () => {

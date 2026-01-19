@@ -26,6 +26,7 @@ layout: page
 
   <!-- LEFT COLUMN -->
   <div class="left-column">
+    <div class="section-header"><h4>Browse</h4></div>
     <div class="browse-box apple-search">
       <input
         type="search"
@@ -36,8 +37,8 @@ layout: page
       <div id="search-suggestions"
            class="search-suggestions hidden"></div>
     </div>
+    <div class="section-header"><h4>Project Data</h4></div>
     <div class="data-box apple-data">
-  <div class="data-header">Project data</div>
       <div class="data-metrics">
         <div class="metric">
           <div class="metric-value" id="work-count"></div>
@@ -67,10 +68,11 @@ layout: page
 
   <!-- RIGHT COLUMN -->
   <div class="right-column">
+    <div class="section-header"><h4>Best-Represented Composers</h4></div>
     <div id="composer-plot"></div>
   </div>
 
 </div>
 
-<div class="most-recent-header"><h4>Recently added works</h4></div>
+<div class="section-header"><h4>Recently added works</h4></div>
 <div data-count="10" id="most-recent"><a href="recently_added">More works added by date</a></div>

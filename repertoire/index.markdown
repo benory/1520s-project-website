@@ -1,6 +1,6 @@
 ---
 layout: page
-title: browse scores
+title: repertoire
 order: 3
 
 ---

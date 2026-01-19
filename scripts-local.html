@@ -20,7 +20,7 @@ function fillMostRecentList(metadata) {
 
 function UserSearch() {
 	let query = encodeURIComponent(input.value);
-	window.location.href = `/browse?q=${query}`;
+	window.location.href = `/repertoire?q=${query}`;
 }
 
 //////////////////////////////
@@ -241,7 +241,6 @@ function displayTopComposers() {
 	const fontSize = isMobile ? 11 : 14;
 	const headerfontSize = isMobile ? 14 : 16;
 	const labelOffset = isMobile ? -110 : -140;
-	const chartTitle = "Best-Represented Composers";
 
 	let element = document.querySelector("#composer-plot");
 	if (!element) {
@@ -253,6 +252,41 @@ function displayTopComposers() {
 	let plotInfo = {
 		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 		"background": "#FFFAF1",
+		"config": {
+		  "font": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+
+		  "title": {
+		    "fontSize": headerfontSize,
+		    "fontWeight": 600,
+		    "color": "#1c1c1e",
+		    "anchor": "start",
+		    "offset": 8
+		  },
+
+		  "axis": {
+		    "labelFontSize": fontSize,
+		    "labelColor": "#6A6156",
+		    "titleFontSize": fontSize,
+		    "titleColor": "#6A6156",
+		    "titleFontWeight": 500,
+		    "tickColor": "rgba(0,0,0,0.15)",
+		    "domainColor": "rgba(0,0,0,0.15)",
+		    "grid": false
+		  },
+
+		  "legend": {
+		    "labelFontSize": fontSize,
+		    "labelColor": "#6A6156",
+		    "titleFontSize": fontSize,
+		    "titleColor": "#6A6156"
+		  },
+
+		  "text": {
+		    "fontSize": fontSize,
+		    "fontWeight": 500,
+		    "color": "#6A6156"
+		  }
+		},
 		"width": isMobile ? 240 : 280,
 		"data": {
 			"values": data
@@ -273,7 +307,7 @@ function displayTopComposers() {
 				"as": "ComposerCount"
 			},
 			{
-        "calculate": " '/browse/?c=' + datum.Composer", // Combine the fixed URL and composer name
+        "calculate": " '/repertoire/?c=' + datum.Composer", // Combine the fixed URL and composer name
         "as": "ComposerURL"
 	    }
 		],
@@ -317,11 +351,13 @@ function displayTopComposers() {
 			},
 			{
 				"mark": {
-					"type": "text",
-					"align": "left",
-					"baseline": "middle",
-					"fontSize": fontSize
-				},
+					  "type": "text",
+					  "align": "left",
+					  "baseline": "middle",
+					  "fontSize": fontSize,
+					  "fontWeight": 500,
+					  "color": "#6A6156"
+					},
 				"encoding": {
 					"x": {
 						"value": labelOffset
@@ -350,10 +386,6 @@ function displayTopComposers() {
 				}
 			}
 		],
-		"title": {
-			"text": chartTitle,
-			"fontSize": headerfontSize
-		},
 		"height": {
 			"step": 25
 		}
