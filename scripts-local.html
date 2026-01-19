@@ -241,9 +241,7 @@ function displayTopComposers() {
 	const fontSize = isMobile ? 11 : 14;
 	const headerfontSize = isMobile ? 14 : 16;
 	const labelOffset = isMobile ? -110 : -140;
-	const chartTitle = isMobile
-  ? ["Best-Represented Composers"]
-  : "Best-Represented Composers in The 1520s Project";
+	const chartTitle = "Best-Represented Composers";
 
 	let element = document.querySelector("#composer-plot");
 	if (!element) {
@@ -255,7 +253,7 @@ function displayTopComposers() {
 	let plotInfo = {
 		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 		"background": "#FFFAF1",
-		"width": isMobile ? 260 : 320,
+		"width": isMobile ? 240 : 280,
 		"data": {
 			"values": data
 		},
@@ -311,8 +309,7 @@ function displayTopComposers() {
 				    "field": "Count",
 				    "type": "quantitative",
 				    "scale": {
-				        "scheme": "viridis",
-				        "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
+				        "scheme": "goldorange"
 				    },
 				    "legend": null
 					}
