@@ -213,38 +213,43 @@ ul.tight-list.review-list li {
 }
 
 .collaboration-block {
-  max-width: 800px;
-  margin: 0 auto 28px;
+  max-width: 760px;
+  margin: 36px auto 48px;
 }
 
 .collaboration-block h3 {
-  margin: 16px 0 6px;
+  margin: 10 0 8px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.collaboration-block p {
-  margin-bottom: 10px;
+/* Everything BELOW the header */
+.collaboration-content {
+  padding-left: 18px;
+  border-left: 2px solid rgba(0,0,0,0.08);
+}
+
+.collaboration-content p {
+  margin: 6px 0 10px;
+  line-height: 1.55;
 }
 
 .collaboration-logo {
   display: inline-block;
+  margin-top: 8px;
 }
 
 .collaboration-logo img {
-  max-width: 360px;          /* tighter than 500px */
+  max-width: 320px;
   height: auto;
   display: block;
-  margin-top: 6px;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .collaboration-logo img:hover {
   transform: scale(1.03);
-}
-
-.collaboration-block p {
-  margin: 6px 0 8px;
-  padding: 0;
-  line-height: 1.5;
+  opacity: 0.95;
 }
 
 /* Mobile-Specific Adjustments */

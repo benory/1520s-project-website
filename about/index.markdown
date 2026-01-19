@@ -190,17 +190,18 @@ order: 1
 <h2>Collaborations</h2>
 
 <div class="collaboration-block">
-  <h3>New Senfl Edition</h3>
-  <p> Thanks to Stefan Gasch, Birgit Lodes, and the
-    <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank">New Senfl Edition</a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing
-    to contribute their scores to this project.
-    See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank"> available pieces</a>, each of which links to the New Senfl Edition’s critical commentary.
-  </p>
-  <a href="https://senflonline-eng.com/new-senfl-edition/" class="collaboration-logo">
-    <img src="/images/Senfl_banner.png" alt="Senfl Banner">
-  </a>
+  <h3><strong>New Senfl Edition</strong></h3>
+
+  <div class="collaboration-content">
+    <p>
+      Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"> New Senfl Edition
+      </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank"> available pieces</a>.
+    </p>
+    <a href="https://senflonline-eng.com/new-senfl-edition/" class="collaboration-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
+    </a>
+  </div>
 </div>
 
 <h2>Data Donations</h2>
 
-<div id="paragraph"> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Rex Eakins, Simon Frisch, Lance Morrison, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</div>
+<p> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Rex Eakins, Simon Frisch, Lance Morrison, and Jessie Ann Owens for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</p>
