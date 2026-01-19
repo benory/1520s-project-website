@@ -1,0 +1,134 @@
+<style>
+
+.most-recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 6px 0 6px 0;
+  padding: 0 4px;
+}
+
+.most-recent-header h4 {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #6A6156;
+}
+
+.most-recent-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin-left: 12px;
+
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0)
+  );
+}
+
+.most-recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0;
+  padding: 0 4px;
+}
+
+.most-recent-header h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6A6156;
+}
+
+.most-recent-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin-left: 12px;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0)
+  );
+}
+
+table.most-recent {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+  font: 400 14px/1.4 -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+table.most-recent th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #6A6156;
+  background: transparent;
+
+  padding: 7px 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+table.most-recent td {
+  padding: 4px 5px;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+table.most-recent tbody tr:hover {
+  background-color: rgba(0,0,0,0.035);
+}
+
+table.most-recent a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+table.most-recent a:hover {
+  text-decoration: underline;
+}
+
+table.most-recent .last-name {
+  font-weight: 600;
+}
+
+table.most-recent .first-name {
+  color: #6A6156;
+}
+
+table.most-recent tr:last-child td {
+  font-size: 13px;
+  padding: 7px 8px;
+}
+
+table.most-recent tr:last-child a {
+  color: #007aff;
+  font-weight: 500;
+}
+
+</style>
