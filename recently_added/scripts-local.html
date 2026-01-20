@@ -16,21 +16,21 @@ function fillMostRecentList(metadata) {
 // displayMostRecent --  Display the most recently added works.   The
 //    number of works displayed is controled by a data parameter in the
 //    HTML code where the table will be displayed:
-//        <div data-count="10" id="most-recent"></div>
+//        <div data-count="10" id="general"></div>
 //    in this case the 10 most recent works will be displayed in the list.
 //
 
 function displayMostRecent(metadata) {
 	metadata.sort(compareByDateAdded);
 
-	let element = document.querySelector("#most-recent");
+	let element = document.querySelector("#general");
 	if (!element) {
-		console.error("Cannot find #most-recent.");
+		console.error("Cannot find #general.");
 		return;
 	}
 	let count = element.dataset.count;
 
-	let output = "<table class='most-recent'>";
+	let output = "<table class='general'>";
 	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
 	for (let i=0; i<count; i++) {
 		

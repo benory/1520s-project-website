@@ -121,9 +121,9 @@ function formatBigNumber(number) {
 function displayMostRecent(metadata) {
 	metadata.sort(compareByDateAdded);
 
-	let element = document.querySelector("#most-recent");
+	let element = document.querySelector("#general");
 	if (!element) {
-		console.error("Cannot find #most-recent.");
+		console.error("Cannot find #general.");
 		return;
 	}
 	let count = element.dataset.count;
@@ -134,7 +134,7 @@ function displayMostRecent(metadata) {
 		count = 50;
 	}
 
-	let output = "<table class='most-recent'>";
+	let output = "<table class='general'>";
 	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
 	for (let i=0; i<count; i++) {
 		let entry = metadata[i];

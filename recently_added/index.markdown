@@ -10,4 +10,4 @@ layout: page
 {% include styles/styles-common.css.html %}
 
 <div class="section-header"><h4>Works added by date</h4></div>
-<div data-count="10000" id="most-recent"></div>
+<div data-count="10000" id="general"></div>

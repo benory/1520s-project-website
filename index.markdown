@@ -75,4 +75,4 @@ layout: page
 </div>
 
 <div class="section-header"><h4>Recently added works</h4></div>
-<div data-count="10" id="most-recent"><a href="recently_added">More works added by date</a></div>
+<div data-count="10" id="general"><a href="recently_added">More works added by date</a></div>
