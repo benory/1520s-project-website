@@ -156,49 +156,77 @@ select:focus {
   transform: scale(1.2);
 }
 
-.mensuration-tag {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 3px 8px;
-}
-
-.mensuration-tag img {
-  height: 20px;
-}
-
-.mensuration-tag .remove-btn {
-  cursor: pointer;
-  font-weight: bold;
-  color: red;
-}
-
 .selected-mensurations {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: 8px;
   margin-bottom: 10px;
 }
 
+/* Apple-style pill */
 .selected-mensuration {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 5px;
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  padding: 4px 10px;
-  background-color: rgba(0, 0, 0, 0.05);
-  font-size: 14px;
+  gap: 6px;
+
+  padding: 5px 12px;
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #1c1c1e;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 2px 6px rgba(0, 0, 0, 0.06);
+
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.1s ease;
 }
 
+.selected-mensuration:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtle Apple-style remove button */
 .selected-mensuration .remove-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+
+  border-radius: 50%;
+  color: #6e6e73;
+  background: rgba(0, 0, 0, 0.06);
+
   cursor: pointer;
-  font-weight: bold;
-  color: red;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.selected-mensuration .remove-btn:hover {
+  background: rgba(255, 59, 48, 0.15);
+  color: #ff3b30;
 }
 
 .mensuration-menu {

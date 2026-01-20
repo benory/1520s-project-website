@@ -23,6 +23,7 @@ function buildSearchInterface(data) {
   document.getElementById("year-container").innerHTML = "";
   document.getElementById("voice-container").innerHTML = "";
   document.getElementById("mensuration-container").innerHTML = "";
+  document.getElementById("mensuration-selected-container").innerHTML = "";
 
   // Top dropdowns
   document.getElementById("composer-container").appendChild(createElementFromHTML(buildComposerSelect(data)));
@@ -81,7 +82,10 @@ function buildSearchInterface(data) {
   const selectedTags = document.createElement("div");
   selectedTags.id = "selected-mensurations";
   selectedTags.className = "selected-mensurations";
-  mensWrapper.appendChild(selectedTags);
+  const selectedContainer = document.getElementById("mensuration-selected-container");
+	if (selectedContainer) {
+	  selectedContainer.appendChild(selectedTags);
+	};
 
   const mensurationContainer = document.getElementById("mensuration-container");
 	if (mensurationContainer) {

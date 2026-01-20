@@ -40,6 +40,7 @@ order: 3
         </div>
       </div>
       <div id="texted-container"></div>
+      <div id="mensuration-selected-container"></div>
     </div>
   </div>
 </div>
