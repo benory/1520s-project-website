@@ -22,44 +22,40 @@ main {
 	min-width: 500px;
 }
 
+/* --- WORK INFO CARD --- */
+
 #work-info {
-	font-size: 1.1rem;
-	width: 100%;
-	border: none;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+
+  background-color: rgba(155, 184, 168, 0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 16px;
+  padding: 12px 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
-#work-info th {
-	display: none;
+/* hide headers completely */
+#work-info thead {
+  display: none;
 }
 
-#work-info td, #work-info th {
-	border: none; /* Remove borders from table cells */
+/* turn row into 3-column card layout */
+#work-info tbody tr {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 24px;
 }
 
-.work-item {
-	text-indent: -2em;
-	padding-left: 2em;
-	display: block;
-}
-
-.work-item:before {
-	content: "\00a0";
-}
-
-#work-info tbody {
+/* remove all table borders */
+#work-info td {
+  border: none;
   vertical-align: top;
-}
-
-#work-info td:nth-child(1) {
-	width: 400px;
-} 
-
-#work-info td:nth-child(2) {
-	min-width: 150px;
-}
-
-table#work-info {
-  table-layout: fixed;
+  padding: 0;
 }
 
 #work-footer {
@@ -81,28 +77,54 @@ table#work-info {
 	content: ":";
 	padding-right: 10px;
 }
-  
-.work-item {
-	margin-bottom: 2px;
-}
 
 .info-link {
 	font-size: small;
 	opacity: 0.5;
 }
 
-.button, .analysis-toggle.button {
-	background: #ffffff;
-	border: 1px solid black;
-	border-radius: 3px;
-	padding: 5px;
-	cursor: pointer;
-	display: inline-block;
-	margin-right: 4px; 
+.button,
+.analysis-toggle.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 12px;      /* tighter fit */
+  min-height: 28px;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #1c1c1e;
+  background: rgba(255,255,255,0.85);
+
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 999px;   /* full pill */
+
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.7) inset,
+    0 2px 6px rgba(0,0,0,0.06);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.1s ease;
 }
 
-.button:hover, .analysis-toggle.button:hover {
-	background: #eeeeee;
+.button:hover,
+.analysis-toggle.button:hover {
+  background: rgba(255,255,255,1);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.7) inset,
+    0 4px 10px rgba(0,0,0,0.08);
+}
+
+.analysis-toggle.active {
+  background: rgba(0,122,255,0.12);
+  border-color: rgba(0,122,255,0.4);
 }
 
 .hidden {
@@ -115,10 +137,11 @@ table#work-info {
 }
 
 .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  align-items: center;          
+  margin: 12px 0 20px;
 }
 
 [id$="-display"] svg {
@@ -145,27 +168,20 @@ table#work-info {
 	width: 60%;
 }
 
-.play, .mp3play {
-	display: inline-block;
-	text-indent: -19999px;
-	background: url('/images/mp3.svg') no-repeat 0 0;
-	width: 56px;
-	height: 40px;
-	margin-left: 15px;
-	position: relative;
-	top: 3px;
-}
-
-
+.play, .mp3play,
 .pause, .mp3pause {
-	display: inline-block;
-	text-indent: -19999px;
-	background: url('/images/mp3-pause.svg') no-repeat 0 0;
-	width: 56px;
-	height: 40px;
-	margin-left: 15px;
-	position: relative;
-	top: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-indent: -19999px;
+  background: url('/images/mp3.svg') no-repeat center;
+
+  width: 56px;
+  height: 40px;
+
+  margin-right: 6px;   /* space before pills */
+  position: static;    /* remove baseline hack */
 }
 
 
@@ -194,6 +210,13 @@ audio {
     text-indent: -4em; /* Ensures the second citation starts on a new line, indented once from "Modern Editions:" */
     margin-left: -1.8em; /* Moves the start of the second citation one level deeper */
     padding-left: 0em; /* Indents wrapped lines twice from "Modern Editions:" */
+}
+
+.mensuration-sign {
+  height: 28px;
+  margin-right: 6px;
+  vertical-align: middle;
+  opacity: 0.9;
 }
 
 .mensuration-sign:first-of-type {

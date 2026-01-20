@@ -1,6 +1,5 @@
 ---
 layout: work
-vim:    ts=3:nowrap
 ---
 
 {% include_relative styles-local.html %}
@@ -56,6 +55,3 @@ vim:    ts=3:nowrap
 {% include_relative listeners.html %}
 {% include_relative scripts-local.html %}
 {% include styles/svgdefs.html %}
-
-
-
