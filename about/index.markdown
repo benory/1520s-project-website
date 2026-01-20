@@ -177,27 +177,24 @@ order: 1
 
 <h2>Project reviews</h2>
 
+<div class="block">
 "The 1520s Project is another step ahead... the project features an exquisite and thorough treatment of the metadata and a sophisticated array of analytical tools."
-
-<ul class="tight-list review-list">
-  <li>Frans Wiering, ed., “Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy” (Utrecht University, 2025), 24.
-    <a href="https://zenodo.org/records/17543932" target="_blank">
-      https://doi.org/10.5281/zenodo.17543932
-    </a>
-  </li>
-</ul>
+  <div class="block-content">
+    <p>Frans Wiering, ed., “Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy” (Utrecht University, 2025), 24. <a href="https://zenodo.org/records/17543932" target="_blank">https://doi.org/10.5281/zenodo.17543932</a></p>
+  </div>
+</div>
 
 <h2>Collaborations</h2>
 
-<div class="collaboration-block">
+<div class="block">
   <h3><strong>New Senfl Edition</strong></h3>
 
-  <div class="collaboration-content">
+  <div class="block-content">
     <p>
       Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"> New Senfl Edition
       </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank"> available pieces</a>.
     </p>
-    <a href="https://senflonline-eng.com/new-senfl-edition/" class="collaboration-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
+    <a href="https://senflonline-eng.com/new-senfl-edition/" class="block-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
     </a>
   </div>
 </div>
