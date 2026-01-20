@@ -86,15 +86,6 @@ main.page-content h2:first-of-type {
   flex-shrink: 0;
 }
 
-.toc-container a {
-  color: #1c1c1e;
-  text-decoration: none;
-}
-
-.toc-container a:hover {
-  color: #007aff;
-}
-
 .toc-container li a {
   display: inline-block;
   padding-left: 1.2em;
@@ -124,15 +115,6 @@ main.page-content h2:first-of-type {
 
 .toc-container li ul {
   margin-left: 16px;
-}
-
-.toc-container a {
-  text-decoration: none;
-  color: #0366d6;
-}
-
-.toc-container a:hover {
-  text-decoration: underline;
 }
 
 .main-content ul,
@@ -263,6 +245,49 @@ code {
 .workflow-list ul li {
   padding-left: 0;
   margin-bottom: 0.4rem;
+}
+
+/* === Condensed TOC for documentation page === */
+
+.toc-container {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* Section labels */
+.toc-container > ul > li {
+  margin: 4px 0;
+}
+
+/* TOC links */
+.toc-container a {
+  line-height: 1.3;
+}
+
+/* Nested lists */
+.toc-container li ul {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 14px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* Individual nested items */
+.toc-container li ul li {
+  margin: 2px 0;
+}
+
+/* Reduce TOC heading size */
+.toc-container h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Reduce indentation + vertical padding on links */
+.toc-container li a {
+  padding-left: 1em;
+  text-indent: -1em;
 }
 
 /* Mobile Styles */
