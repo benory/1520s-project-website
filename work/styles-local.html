@@ -150,12 +150,6 @@ main {
   margin: 12px 0 20px;
 }
 
-[id$="-display"] svg {
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
-
 #analysis-plots {
 	text-align: center;
 }
@@ -169,9 +163,16 @@ main {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1000px;
-	min-width: 500px;
-	width: 60%;
+	max-width: 800px;
+	width: 100%;
+}
+
+.analysis-plot svg {
+  width: 100%;
+  min-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .play, .mp3play,
