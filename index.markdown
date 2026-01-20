@@ -20,7 +20,7 @@ layout: page
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
-{% include styles/most_recent_table.css.html %}
+{% include styles/styles-common.css.html %}
 
 <div class="homepage-grid">
 
