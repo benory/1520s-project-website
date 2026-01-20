@@ -23,16 +23,10 @@ nav: false
 
 <div class="section-header"><h4>Josquin attributions by the numbers</h4></div>
 
-<div class="page-wrapper">
-<div class="page-header">
-  <h1>Josquin attributions by the numbers</h1>
-</div>
+<p>This page serves as an appendix to the article "Josquin Attributions by the Numbers," which will be published in the volume <i>Josquin: A New Approach</i>. The assembled data set accounts for 2,593 individual appearances of works in some 708 sources ca. 1471–1660, where for any given work at least one source attributes it to the composer Josquin des Prez. A majority of attributions to the composer circulate during this project's period of focus: three-quarters of Josquin attributions postdate his death in 1521; nearly sixty percent appear ca. 1520–60.</p>
+<p>Data is drawn from the <i>New Josquin Edition</i> (NJE) and the tiered works list published by Jesse Rodin and Joshua Rifkin in "The Josquin Canon at 500 with an Appendix Produced in Collaboration with Joshua Rifkin," <i>Early Music</i> 49 (2021): 473–97. Thanks to Brett Kostrzewski for his assistance in checking source dates and origins.</p>
 
-<div class="description">This page serves as an appendix to the article "Josquin Attributions by the Numbers," which will be published in the volume <i>Josquin: A New Approach</i>. The assembled data set accounts for 2,593 individual appearances of works in some 708 sources ca. 1471–1660, where for any given work at least one source attributes it to the composer Josquin des Prez. A majority of attributions to the composer circulate during this project's period of focus: three-quarters of Josquin attributions postdate his death in 1521; nearly sixty percent appear ca. 1520–60.<br><br>
-
-Data is drawn from the <i>New Josquin Edition</i> (NJE) and the tiered works list published by Jesse Rodin and Joshua Rifkin in "The Josquin Canon at 500 with an Appendix Produced in Collaboration with Joshua Rifkin," <i>Early Music</i> 49 (2021): 473–97. Thanks to Brett Kostrzewski for his assistance in checking source dates and origins. <br><br>
-
-<a href="/Josquin/Josquin.csv" download>Download the dataset as a CSV file</a> (last updated {{ site.data.Josquin.csv_metadata.last_updated }}).</div>
+<a href="/Josquin/Josquin.csv" download>Download the dataset as a CSV file</a> (last updated {{ site.data.Josquin.csv_metadata.last_updated }}).
 
 <div id="search-interface">
   <div id="search-top">
@@ -60,4 +54,3 @@ Data is drawn from the <i>New Josquin Edition</i> (NJE) and the tiered works lis
 </div>
 
 <div id="list"></div>
-</div>
