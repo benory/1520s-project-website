@@ -8,134 +8,131 @@ main.page-content {
   background-color: #FFFAF1;
 }
 
-.browse-page .page-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  transform: translateX(-125px);
-}
-
-.browse-page .post-title {
-  transform: translateX(-125px);
-}
-
-.browse-page .page-wrapper {
-	font: 400 14px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
-}
-
-.browse-page .page-wrapper h1 {
-	font-size: 40px;
-}
-
-
-.browse-page table.browse {
-  border-collapse: collapse;
-  margin: 0 auto;
-  width: 100%;
+.wrapper {
   max-width: 1000px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.browse-page table.browse th,
-.browse-page table.browse td {
-  padding: 4px 6px;
-  border: 1px solid #e0e0e0;
-  text-align: left;
-  vertical-align: top;
+table.most-recent thead th {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,122,255,0.14),
+    rgba(0,122,255,0.08)
+  );
+  color: #003a8f;
+  border-bottom: 1px solid rgba(0,122,255,0.25);
 }
 
-.browse-page table.browse th {
-  background-color: #e6f0fa;
-  color: #003366;
-  font-weight: 600;
-  border-bottom: 2px solid #ccc;
-}
-
-.browse-page table.browse tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.browse-page table.browse tr:hover {
-  background-color: #f1f7ff;
-}
-
-.browse-page table.browse td a {
-  text-decoration: none;
-}
-
-.browse-page table.browse td a:hover {
-  text-decoration: underline;
-}
-
-/* Specific column formatting */
-.browse-page table.browse td:nth-child(1),
-.browse-page table.browse td:nth-child(2),
-.browse-page table.browse td:nth-child(3),
-.browse-page table.browse td:nth-child(4) {
+/* Truncate long text in 5th column with ellipsis */
+table.most-recent td:nth-child(5) {
+  max-width: 220px;
   white-space: nowrap;
-}
-
-
-.browse-page table.browse td:nth-child(5) {
-  max-width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
-.browse-page table.browse td:nth-child(5) {
-  min-width: 60px;
-  text-align: left;
-}
-
-.browse-page table.browse td:nth-child(6) {
-  min-width: 100px;
-}
-
-.browse-page .page-wrapper a {
-	text-decoration: none;
-}
-
-
-.browse-page #search-interface {
+#search-interface {
 	margin-bottom: 30px;
 }
 
-.browse-page #input {
-  flex: 1 1 300px;
-  min-width: 200px;
-  max-width: 260px;
+#input {
+  width: 250px;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  padding: 10px 12px 10px 38px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.18);
+
+  background-color: rgba(255,255,255,0.9);
+
   background-image: url('/images/searchicon.png');
-  background-position: 10px 12px;
+  background-position: 12px center;
   background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 12px 12px 12px 40px;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.06);
+
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#input:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow:
+    0 0 0 1px rgba(0,122,255,0.5),
+    0 6px 16px rgba(0,122,255,0.15);
+}
+
+select {
+  font-size: 14px;
+  padding: 8px 12px;
+  max-width: 200px;
+
   border-radius: 10px;
-  border: 2px solid #ddd;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.18);
+
+  background-color: rgba(255,255,255,0.9);
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.06);
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('data:image/svg+xml;utf8,\
+  <svg fill="%236e6e73" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">\
+  <path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+
+  cursor: pointer;
 }
 
-.browse-page select {
-	border: 1px solid #ddd; /* Add a grey border */
-	font-size: 0.85rem;
-	margin: 3px;
-	padding: 5px;
+#source-container select {
+  max-width: 175px;
 }
 
-.browse-page #list table td {
-	padding-right: 10px;
+#composer-container select {
+  max-width: 150px;
 }
 
-.browse-page .mensuration-selected {
+#year-container select {
+  max-width: 110px;
+}
+
+#voice-container select, 
+#genre-container select {
+  max-width: 90px;
+}
+
+select:hover {
+  border-color: rgba(0,0,0,0.3);
+}
+
+select:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow:
+    0 0 0 1px rgba(0,122,255,0.5),
+    0 6px 16px rgba(0,122,255,0.15);
+}
+
+.mensuration-selected {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   min-height: 32px;
 }
 
-.browse-page .mensuration-options {
+.mensuration-options {
   display: none;
   position: absolute;
   top: 100%;
@@ -153,22 +150,21 @@ main.page-content {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.browse-page .mensuration-wrapper {
-  margin: 0;
-  padding: 0;
+.mensuration-wrapper {
+  display: flex;
 }
 
-.browse-page .mensuration-options img {
+.mensuration-options img {
   height: 28px;
   cursor: pointer;
   transition: transform 0.1s ease;
 }
 
-.browse-page .mensuration-options img:hover {
+.mensuration-options img:hover {
   transform: scale(1.2);
 }
 
-.browse-page .mensuration-tag {
+.mensuration-tag {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -178,17 +174,17 @@ main.page-content {
   padding: 3px 8px;
 }
 
-.browse-page .mensuration-tag img {
+.mensuration-tag img {
   height: 20px;
 }
 
-.browse-page .mensuration-tag .remove-btn {
+.mensuration-tag .remove-btn {
   cursor: pointer;
   font-weight: bold;
   color: red;
 }
 
-.browse-page .selected-mensurations {
+.selected-mensurations {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -196,7 +192,7 @@ main.page-content {
   margin-bottom: 10px;
 }
 
-.browse-page .selected-mensuration {
+.selected-mensuration {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -207,13 +203,13 @@ main.page-content {
   font-size: 14px;
 }
 
-.browse-page .selected-mensuration .remove-btn {
+.selected-mensuration .remove-btn {
   cursor: pointer;
   font-weight: bold;
   color: red;
 }
 
-.browse-page .mensuration-menu {
+.mensuration-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -221,36 +217,71 @@ main.page-content {
   padding: 6px 0;
 }
 
-.browse-page .custom-dropdown {
+.custom-dropdown {
   position: relative;
   display: inline-block; /* or block, depending on your layout */
   vertical-align: top;   /* aligns nicely if inline */
 }
 
-.browse-page .dropdown-toggle {
+.dropdown-toggle {
   display: flex;
-  align-items: center; /* vertical align */
+  align-items: center;
   justify-content: space-between;
-  padding: 8px 14px;
+
+  max-width: 275px;
+  height: 40px;
+
   font-size: 14px;
-  background-color: #f5e9d6;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  cursor: pointer;
-  box-sizing: border-box;
-  height: 73px;
-  width: 170px;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  line-height: 1.2;
+
+  padding: 8px 36px 8px 12px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.18);
+
+  background-color: rgba(255,255,255,0.9);
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.06);
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url('data:image/svg+xml;utf8,\
+<svg fill="%236e6e73" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">\
+<path d="M7 10l5 5 5-5z"/>\
+</svg>');
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 20px;
+  background-position: right 12px center;
+  background-size: 18px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.browse-page .dropdown-toggle .toggle-text {
+.dropdown-toggle:hover {
+  border-color: rgba(0,0,0,0.3);
+}
+
+.custom-dropdown.open .dropdown-toggle,
+.dropdown-toggle:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow:
+    0 0 0 1px rgba(0,122,255,0.5),
+    0 6px 16px rgba(0,122,255,0.15);
+}
+
+
+.dropdown-toggle .toggle-text {
   text-align: left;
 }
 
-.browse-page .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   top: calc(100% + 4px); /* directly below the button */
@@ -269,12 +300,12 @@ main.page-content {
   gap: 10px;
 }
 
-.browse-page .custom-dropdown.open .dropdown-content {
+.custom-dropdown.open .dropdown-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.browse-page .mensuration-item {
+.mensuration-item {
   padding: 4px;
   border-radius: 6px;
   cursor: pointer;
@@ -282,165 +313,154 @@ main.page-content {
   transition: transform 0.1s ease, border-color 0.2s ease;
 }
 
-.browse-page .mensuration-item:hover {
+.mensuration-item:hover {
   transform: scale(1.1);
   border-color: #bbb;
 }
 
-.browse-page .mensuration-item.selected {
+.mensuration-item.selected {
   border-color: steelblue;
   background-color: #eef;
 }
 
-.browse-page .mensuration-img {
+.mensuration-img {
   height: 28px;
   width: auto;
 }
 
-.browse-page .mensuration-item.selected {
+.mensuration-item.selected {
   border-color: steelblue;
   background-color: #eef;
 }
 
-.browse-page .mensuration-img {
+.mensuration-img {
   height: 28px;
   width: auto;
 }
 
-.browse-page .dropdown-row {
-  display: flex;
-  flex-wrap: nowrap; /* prevent wrapping */
-  max-width: 1000px;
-  gap: 12px;
-  align-items: flex-start;
-  overflow-x: auto; /* allow scrolling if needed */
-}
-
-.browse-page .dropdown-row select,
-.browse-page .dropdown-row {
-  min-width: 160px;
-  max-width: 160px;
-  box-sizing: border-box;
-}
-
-.browse-page #top-dropdowns {
+#dropdowns {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  align-items: flex-end;
 }
 
-.browse-page #top-dropdowns select {
+#dropdowns select {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
 }
 
-.browse-page .top-line, .browse-page .bottom-line {
+.top-line, .bottom-line {
   display: flex;
-  align-items: center; /* this aligns dropdowns vertically */
   gap: 12px;
 }
 
-.browse-page .top-line {
-  padding-top: 20px;
+.left-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
 }
 
-.browse-page .bottom-line {
-  flex-wrap: wrap;
-  padding-bottom: 20px;
-}
-
-.browse-page .left-search-group {
+.row {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.browse-page .top-row {
-  display: flex;
-  align-items: center; /* This centers items vertically */
   gap: 12px;
   margin-bottom: 8px;
-  width: 1000px;
 }
 
-.browse-page .left-search-group {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
 
-.browse-page #search-count {
-  white-space: nowrap;
-  font-size: 16px;
-  padding-right: 20px;
+#search-count {
+  font-size: 13px;
+  color: #6e6e73;         
+  padding-left: 6px;
 }
 
 /* Standard size for all four top dropdowns */
-.browse-page #composer-container select,
-.browse-page #genre-container select,
-.browse-page #year-container select,
-.browse-page #voice-container select,
-.browse-page #source-container select {
-  padding: 5px 8px;
+.select {
+  padding: 6px 10px;
   font-size: 14px;
-  background-color: #f5e9d6;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  height: 30px;
-  box-sizing: border-box;
-  appearance: none;              /* Remove default arrow in most browsers */
-  -webkit-appearance: none;      /* Safari */
-  -moz-appearance: none;         /* Firefox */
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+
+  height: 32px;
+  max-width: 250px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.18);
+
+  background-color: rgba(255,255,255,0.75);
+  /*backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);*/
+
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.6) inset,
+    0 2px 6px rgba(0,0,0,0.06);
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('data:image/svg+xml;utf8,\
+<svg fill="%236e6e73" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">\
+<path d="M7 10l5 5 5-5z"/>\
+</svg>');
   background-repeat: no-repeat;
   background-position: right 10px center;
-  background-size: 20px;
-  padding-right: 30px;           /* Space for dropdown arrow */
+  background-size: 18px;
+  padding-right: 34px;
+
   cursor: pointer;
-  width: 150px;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
 }
 
-.browse-page #composer-container select,
-.browse-page #genre-container select,
-.browse-page #year-container select,
-.browse-page #voice-container select { 
-  width: 150px;
-}
-
-.browse-page #source-container select {
-  width: 317px;
-}
-
-.browse-page .text-checkbox-wrapper.full-width {
+.text-checkbox-wrapper.full-width {
   flex-basis: 100%;
   margin-top: 6px;        /* adds space between rows */
 }
 
-.browse-page .text-checkbox-wrapper {
+.text-checkbox-wrapper {
   margin: 0;
   padding-left: 2px;   /* adjust if you want to nudge horizontally */
 }
 
-.browse-page .text-checkbox-label {
+.text-checkbox-label {
   font-size: 14px;
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.browse-page .dropdown-row {
+.dropdown-row {
   overflow: visible !important;
   position: relative; /* ensures absolute children are positioned correctly */
 }
 
-.browse-page .top-section {
+.right-group {
   display: flex;
-  gap: 24px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-end; 
+  gap: 6px;
+  margin-left: auto;
 }
 
-.browse-page .mensuration-right {
+/* stack dropdowns + checkbox vertically */
+#texted-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+/* Apple-ish checkbox styling */
+.text-checkbox-wrapper {
+  font-size: 13px;
+  color: #6e6e73;
+}
+
+.mensuration-container {
   display: flex;
   flex-direction: column;
   gap: 10px;

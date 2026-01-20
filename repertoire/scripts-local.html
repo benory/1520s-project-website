@@ -13,15 +13,16 @@
 //
 
 function buildSearchInterface(data) {
-  const topDropdowns = document.querySelector("#top-dropdowns");
+  const Dropdowns = document.querySelector("#dropdowns");
 
-  if (!topDropdowns) return;
+  if (!Dropdowns) return;
 
   // Clear all areas
   document.getElementById("composer-container").innerHTML = "";
   document.getElementById("genre-container").innerHTML = "";
   document.getElementById("year-container").innerHTML = "";
   document.getElementById("voice-container").innerHTML = "";
+  document.getElementById("mensuration-container").innerHTML = "";
 
   // Top dropdowns
   document.getElementById("composer-container").appendChild(createElementFromHTML(buildComposerSelect(data)));
@@ -41,12 +42,13 @@ function buildSearchInterface(data) {
   label.appendChild(checkbox);
   label.appendChild(document.createTextNode("Texted scores only"));
 
-  const bottomLine = document.querySelector(".bottom-line");
-
-	const wrapper = document.createElement("div");
-	wrapper.className = "text-checkbox-wrapper full-width";
-	wrapper.appendChild(label);
-	bottomLine.appendChild(wrapper);
+  const textedContainer = document.getElementById("texted-container");
+	if (textedContainer) {
+	  const wrapper = document.createElement("div");
+	  wrapper.className = "text-checkbox-wrapper";
+	  wrapper.appendChild(label);
+	  textedContainer.appendChild(wrapper);
+	}
 
   // Bottom row: source + mensuration
   const row = document.createElement("div");
@@ -60,7 +62,8 @@ function buildSearchInterface(data) {
 
 	const toggleButton = document.createElement("button");
 	toggleButton.className = "dropdown-toggle";
-	toggleButton.innerHTML = `<span class="toggle-text">Mensuration signs<br>in earliest source</span>`;
+	toggleButton.innerHTML =
+  `<span class="toggle-text">Mensuration(s) (earliest source)</span>`;
 	toggleButton.onclick = () => {
 	  dropdownContainer.classList.toggle("open");
 	};
@@ -80,10 +83,9 @@ function buildSearchInterface(data) {
   selectedTags.className = "selected-mensurations";
   mensWrapper.appendChild(selectedTags);
 
-  row.appendChild(mensWrapper);
-  const mensurationRight = document.querySelector(".mensuration-right");
-	if (mensurationRight) {
-	  mensurationRight.appendChild(mensWrapper);
+  const mensurationContainer = document.getElementById("mensuration-container");
+	if (mensurationContainer) {
+	  mensurationContainer.appendChild(mensWrapper);
 	}
 
 }
@@ -105,7 +107,7 @@ function displayBrowseTable(data, selector) {
 	}
 	let headings = [INDEX_composer, INDEX_title, INDEX_genre, INDEX_voice, INDEX_firstsource, INDEX_firstsourcedate];
 	let contents = "";
-	contents += "<table class='browse'>\n";
+	contents += "<table class='most-recent'>\n";
 	contents += "<thead>\n";
 	contents += makeTableHeader(headings);
 	contents += "</thead>\n";
@@ -331,9 +333,8 @@ function buildGenreSelect(data) {
 	}
 
 	let glist = Object.keys(counter).sort();
-	let genreCount = glist.length;
 	let output = "<select class='genre' onchange='doSearch()'>\n";
-	output += `<option value="">Genre [${genreCount}]</option>`;
+	output += `<option value="">Genre</option>`;
 	for (let i=0; i<glist.length; i++) {
 		let name = glist[i];
 		let count = counter[glist[i]];
@@ -399,7 +400,7 @@ function buildVoiceSelect(data) {
 	// May need to sort numerically if 10 or more voices in any work:
 	let vlist = Object.keys(counter).sort();
 	let output = "<select class='voice' onchange='doSearch()'>\n";
-	output += `<option value="">Voice count</option>`;
+	output += `<option value="">Voices</option>`;
 	for (let i=0; i<vlist.length; i++) {
 		let vcount = vlist[i];
 		let text = "voices";
@@ -908,7 +909,7 @@ function setComposerSelectMenu(input) {
 	}
 
 	// Convert composer ID to exact name ("last, first"):
-	if (input.length = 3) {
+	if (input.length === 3) {
 		for (let i=0; i<COMPOSERS.length; i++) {
 			if (COMPOSERS[i].ID.toLowerCase() === input.toLowerCase()) {
 				input = COMPOSERS[i].Composer;
@@ -1318,6 +1319,3 @@ function createElementFromHTML(html) {
 }
 
 </script>
-
-
-
