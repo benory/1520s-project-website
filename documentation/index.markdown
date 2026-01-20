@@ -12,6 +12,8 @@ order: 2
 
   gtag('config', 'G-38882FHV3H');
 </script>
+<script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin-worker.js"></script>
+
 
 {% include_relative styles-local.html %}
 {% include styles/styles-common.css.html %}
@@ -106,11 +108,11 @@ order: 2
 	<ul class="workflow-list">
 		<li>
 			<strong>avoid melodic tritones</strong>
-			<p>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the E following the B-flat. A second tritone produced by stepwise motion in m. 15 can be sidestepped through the addition of a second flat. <br><img src="/images/Bau3001_ficta_example.png" alt="Bauldeweyn editorial accidentals example"></p>
+			<p>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><i>En douleur en tristesse</i></a>, a tritone in m. 14 is avoided by flatting the E following the B-flat. A second tritone produced by stepwise motion in m. 15 can be sidestepped through the addition of a second flat.<img src="/images/Bau3001_example.svg" alt="Bauldeweyn editorial accidentals example"></p>
 		</li>
 		<li>
 			<strong>inflect cadences</strong>
-			<p>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, cadences often (but not always) feature sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–62 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Bau3001"><i>De profundis clamavi</i></a>, in which a seven-to-six suspension is followed by movement to an octave: <br><br><img src="/images/Cha2001_ficta_example.png" alt="Champion editorial accidentals example"></p>
+			<p>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, cadences often (but not always) feature sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–61 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Bau3001"><i>De profundis clamavi</i></a>, in which a seven-to-six suspension is followed by movement to an octave:<img src="/images/Cha2001_example.svg" alt="Champion editorial accidentals example"></p>
 		</li>
 	</ul>
 	<p>This project views cadences as having both a contrapuntal and a rhetorical component. In order to be classified as a cadence, the required contrapuntal elements must coincide with one or both of the voices ending a line of text. Usually——although by ca. 1530 not always——one or both of the voices will rest following the cadence.</p>

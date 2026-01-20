@@ -159,18 +159,18 @@ order: 1
 
   <div class="support-logos-top">
     <a href="https://itatti.harvard.edu/" target="_blank">
-      <img src="ITatti_logo.png" alt="i Tatti logo" class="support-logo">
+      <img src="/images/ITatti_logo.png" alt="i Tatti logo" class="support-logo">
     </a>
     <a href="https://cesta.stanford.edu/" target="_blank">
-      <img src="CESTA_logo.png" alt="CESTA logo" class="support-logo">
+      <img src="/images/CESTA_logo.png" alt="CESTA logo" class="support-logo">
     </a>
   </div>
   <div class="support-logos-bottom">
     <a href="http://www.ccarh.org/" target="_blank">
-      <img src="CCARH_logo.png" alt="CCARH logo" class="support-logo">
+      <img src="/images/CCARH_logo.png" alt="CCARH logo" class="support-logo">
     </a>
     <a href="https://propelgrants.stanford.edu" target="_blank">
-      <img src="Propel_logo.png" alt="Propel Grant logo" class="support-logo">
+      <img src="/images/Propel_logo.png" alt="Propel Grant logo" class="support-logo">
     </a>
   </div>
 </div>
