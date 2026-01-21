@@ -306,7 +306,7 @@ function buildComposerSelect(data) {
 	clist.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 	let composerCount = clist.length;
 	let output = "<select class='composer' onchange='doSearch()'>\n";
-	output += `<option value="">Composers [${composerCount}]</option>`;
+	output += `<option value="">Composers (${composerCount})</option>`;
 	for (let i=0; i<clist.length; i++) {
 		let name = clist[i];
 		let count = counter[clist[i]];
@@ -371,7 +371,7 @@ function buildSourceSelect(data) {
 	let slist = Object.keys(counter).sort();
 	let sourceCount = slist.length;
 	let output = "<select class='source' onchange='doSearch()'>\n";
-	output += `<option value="">Earliest source [${sourceCount}]</option>`;
+	output += `<option value="">Earliest source (${sourceCount})</option>`;
 	for (let i=0; i<slist.length; i++) {
 		let name = slist[i];
 		let count = counter[slist[i]];
@@ -611,7 +611,7 @@ function buildYearSelect(data) {
 
 	let output = "";
 	output += "<select class='year' onchange='doSearch()'>\n";
-	output += `<option value=''>Year [${yearCount}]</options>`;
+	output += `<option value=''>Year (${yearCount})</options>`;
 	for (let year of keys) {
 		if (!year.match(/~/)) {
 			output += `<option value="${year}">&nbsp;&nbsp;&thinsp;${year} (${years[year]})</option>`;
