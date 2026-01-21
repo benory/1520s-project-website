@@ -2,6 +2,7 @@
 // vim: ts=3
 
 let METADATA = {% include metadata/works.json %};
+let COMPOSERS = {% include metadata/composers.json %};
 
 //////////////////////////////
 //
@@ -34,7 +35,7 @@ function setupUserSearchEnterKey() {
 
 //////////////////////////////
 //
-// Apple-style live search (DOMContentLoaded-safe)
+// Live search (DOMContentLoaded-safe)
 //
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,34 +48,50 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  const SUGGESTION_LIMIT = 4;
+  const WORK_SUGGESTION_LIMIT = 4;
+  const COMPOSER_SUGGESTION_LIMIT = 3;
 
   searchInput.addEventListener("input", function () {
     const q = this.value.toLowerCase().trim();
 
     if (q.length < 2) {
       suggestionPanel.classList.add("hidden");
+      suggestionPanel.innerHTML = "";
       return;
     }
 
-    const results = METADATA.filter(entry => {
-      return (
-        entry.Composer?.toLowerCase().includes(q) ||
-        entry.Title?.toLowerCase().includes(q) ||
-        entry.Subtitle?.toLowerCase().includes(q) ||
-        entry.Genre?.toLowerCase().includes(q) ||
-        entry["First Source"]?.toLowerCase().includes(q)
-      );
-    }).slice(0, SUGGESTION_LIMIT);
+    // --- Composer matches (ranked first)
+    const composerMatches = COMPOSERS
+      .filter(c =>
+        c.Composer &&
+        c.Composer.toLowerCase().includes(q)
+      )
+      .slice(0, COMPOSER_SUGGESTION_LIMIT);
 
-    if (results.length === 0) {
+    // --- Work matches
+    const workMatches = METADATA
+      .filter(entry => {
+        return (
+          entry.Composer?.toLowerCase().includes(q) ||
+          entry.Title?.toLowerCase().includes(q) ||
+          entry.Subtitle?.toLowerCase().includes(q) ||
+          entry.Genre?.toLowerCase().includes(q) ||
+          entry["First Source"]?.toLowerCase().includes(q)
+        );
+      })
+      .slice(0, WORK_SUGGESTION_LIMIT);
+
+    if (composerMatches.length === 0 && workMatches.length === 0) {
       suggestionPanel.classList.add("hidden");
+      suggestionPanel.innerHTML = "";
       return;
     }
 
-    suggestionPanel.innerHTML =
-	  results.map(renderSuggestion).join("") +
-	  renderSeeMoreRow(q);
+    suggestionPanel.innerHTML = [
+      ...composerMatches.map(renderComposerSuggestion),
+      ...workMatches.map(renderSuggestion),
+      renderSeeMoreRow(q)
+    ].join("");
 
     suggestionPanel.classList.remove("hidden");
   });
@@ -88,63 +105,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-function renderSuggestion(entry) {
-  const title = entry.Subtitle
-    ? `${entry.Title}, <i>${entry.Subtitle}</i>`
-    : entry.Title;
+document.addEventListener("click", function (e) {
+  const composerRow = e.target.closest(".composer-suggestion");
+  if (!composerRow) return;
 
-  const composer = entry.Composer || "Unknown";
-  const genre = entry.Genre || "";
-  const source = entry["First Source"] || "";
+  const composerId = composerRow.dataset.id;
+  if (!composerId) return;
 
-  return `
-    <div class="search-suggestion"
-         onclick="goToWork('${entry.ID}')">
-      <div class="primary">${title}</div>
-      <div class="secondary">
-        ${composer}
-        ${genre ? " · " + genre : ""}
-      </div>
-    </div>
-  `;
-}
-
-function goToWork(id) {
-  window.location.href = `/work?id=${id}`;
-}
-
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".apple-search")) {
-    document.querySelector("#search-suggestions").classList.add("hidden");
-  }
-});
-
-//////////////////////////////
-//
-// renderSeeMoreRow -- link to repertoire page
-//
-
-function renderSeeMoreRow(query) {
-  const encoded = encodeURIComponent(query);
-  return `
-    <div class="search-see-more"
-         onclick="goToRepertoire('${encoded}')">
-      See more results →
-    </div>
-  `;
-}
-
-//////////////////////////////
-//
-// goToRepertoire -- navigate to repertoire page
-//
-
-function goToRepertoire(query) {
-  window.location.href = `/repertoire?q=${query}`;
-}
-
-window.addEventListener("resize", () => {
-	displayTopComposers();
+  window.location.href = `/repertoire/?c=${encodeURIComponent(composerId)}`;
 });
 
 </script>

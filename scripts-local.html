@@ -402,4 +402,116 @@ function displayTopComposers() {
 
 }
 
+function renderSuggestion(entry) {
+  const title = entry.Subtitle
+    ? `${entry.Title}, <i>${entry.Subtitle}</i>`
+    : entry.Title;
+
+  const composer = entry.Composer || "Unknown";
+  const genre = entry.Genre || "";
+  const source = entry["First Source"] || "";
+
+  return `
+    <div class="search-suggestion"
+         onclick="goToWork('${entry.ID}')">
+      <div class="primary">${title}</div>
+      <div class="secondary">
+        ${composer}
+        ${genre ? " · " + genre : ""}
+      </div>
+    </div>
+  `;
+}
+
+function goToWork(id) {
+  window.location.href = `/work?id=${id}`;
+}
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".apple-search")) {
+    document.querySelector("#search-suggestions").classList.add("hidden");
+  }
+});
+
+//////////////////////////////
+//
+// renderSeeMoreRow -- link to repertoire page
+//
+
+function renderSeeMoreRow(query) {
+  const encoded = encodeURIComponent(query);
+  return `
+    <div class="search-see-more"
+         onclick="goToRepertoire('${encoded}')">
+      See more results →
+    </div>
+  `;
+}
+
+//////////////////////////////
+//
+// goToRepertoire -- navigate to repertoire page
+//
+
+function goToRepertoire(query) {
+  window.location.href = `/repertoire?q=${query}`;
+}
+
+window.addEventListener("resize", () => {
+	displayTopComposers();
+});
+
+//////////////////////////////
+//
+// renderComposerSuggestion -- composer suggestions for browse
+//
+
+function renderComposerSuggestion(composer) {
+  const name = formatComposerName(composer.Composer);
+  const flourish = formatFlourish(composer);
+  const places = formatPlaces(composer);
+
+  const metaParts = [flourish, places].filter(Boolean).join("; ");
+
+  return `
+    <div class="search-suggestion composer-suggestion"
+         data-id="${composer.ID}">
+      <div class="suggestion-main">See all works by ${name}</div>
+      ${metaParts ? `<div class="suggestion-meta">${metaParts}</div>` : ""}
+    </div>
+  `;
+}
+
+function formatComposerName(name) {
+  if (!name) return "";
+
+  // If "Last, First" → "First Last"
+  if (name.includes(",")) {
+    const [last, first] = name.split(",").map(s => s.trim());
+    return `${first} ${last}`;
+  }
+
+  // Otherwise leave unchanged
+  return name;
+}
+
+function formatComposerName(name) {
+  if (!name) return "";
+  if (name.includes(",")) {
+    const [last, first] = name.split(",").map(s => s.trim());
+    return `${first} ${last}`;
+  }
+  return name;
+}
+
+function formatFlourish(composer) {
+  return composer.Flourished ? `<i>fl.</i> ${composer.Flourished}` : "";
+}
+
+function formatPlaces(composer) {
+  return composer["Places Active"]
+    ? `active in ${composer["Places Active"]}`
+    : "";
+}
+
 </script>
