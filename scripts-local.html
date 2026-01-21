@@ -467,6 +467,17 @@ window.addEventListener("resize", () => {
 //
 
 function renderComposerSuggestion(composer) {
+  // Special case: Anonymous
+  if (composer.ID === "Any" || composer.Composer === "Anonymous") {
+    return `
+      <div class="search-suggestion composer-suggestion"
+           data-id="Any">
+        <div class="suggestion-main">See all anonymous works</div>
+      </div>
+    `;
+  }
+
+  // Normal composer case
   const name = formatComposerName(composer.Composer);
   const flourish = formatFlourish(composer);
   const places = formatPlaces(composer);
