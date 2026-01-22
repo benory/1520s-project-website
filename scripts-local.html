@@ -1,7 +1,6 @@
 {% include_relative scripts-listeners.html %}
 
 <script>
-// vim: ts=3
 
 //////////////////////////////
 //
@@ -523,6 +522,57 @@ function formatPlaces(composer) {
   return composer["Places Active"]
     ? `active in ${composer["Places Active"]}`
     : "";
+}
+
+function buildGenreIndex(metadata) {
+  const map = {};
+
+  metadata.forEach(entry => {
+    if (!entry.Genre) return;
+
+    const raw = entry.Genre.trim().toLowerCase();
+
+    if (!map[raw]) {
+      map[raw] = {
+        raw,
+        count: 0
+      };
+    }
+    map[raw].count++;
+  });
+
+  return map;
+}
+
+function normalizeSearchString(str) {
+  return (str || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function getGenreMatches(query) {
+  return Object.values(GENRE_INDEX)
+    .filter(g => g.raw.includes(query))
+    .map(g => ({
+      key: g.raw,
+      label: GENRE_LABELS[g.raw] || g.raw,
+      count: g.count
+    }));
+}
+
+function renderGenreSuggestion(genre) {
+  return `
+    <div class="search-suggestion genre-suggestion"
+         data-genre="${genre.key}">
+      <div class="suggestion-main">
+        See all ${genre.label}
+      </div>
+      <div class="suggestion-meta">
+        ${genre.count} works
+      </div>
+    </div>
+  `;
 }
 
 </script>

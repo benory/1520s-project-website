@@ -2,7 +2,6 @@
 {% include_relative scripts-listeners.html %}
 
 <script>
-// vim: ts=3:nowrap
 
 {% include scripts/getCgiParameters.js %}
 
@@ -784,69 +783,60 @@ function doSearch(data) {
 //
 
 function FreeTextSearch(query) {
-    let tr = document.querySelectorAll("#list tbody tr");
-    let input = document.querySelector("#input");
-    if (query) {
-        input.value = query;
-    } else {
-        query = input.value;
-    }
-    if (!query) {
-        displaySearchCount(tr.length);
-        showAllBrowseRows();
-        updateBrowseUrlDisplay();
-        return;
-    }
+  const tr = document.querySelectorAll("#list tbody tr");
+  const input = document.querySelector("#input");
 
-    // Function to remove accents from characters
-    function removeAccents(str) {
-    	return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    }
+  if (query !== undefined) {
+    input.value = query;
+  } else {
+    query = input.value;
+  }
 
-    // Convert query to a regex pattern that matches both accented and non-accented characters
-    let regexPattern = query.split("").map(char => {
-        let charWithoutAccent = removeAccents(char);
-        return `[${char}${charWithoutAccent}]`;
-    }).join("");
-
-    let regex = new RegExp(regexPattern, 'i');
-
-    let searchCount = 0;
-
-    // Loop through all table rows, hiding those that don't match the search query:
-    for (let i = 0; i < tr.length; i++) {
-        let td = tr[i].querySelectorAll("td");
-        let found = false;
-        for (let j = 0; j < td.length; j++) {
-            if (td[j].innerText.match(regex)) {
-                found = true;
-                searchCount++;
-                break;
-            }
-            let rowData = METADATA[i];
-            if (rowData && rowData.Linkage && rowData.Linkage.match(regex)) {
-                found = true;
-                searchCount++;
-                break;
-            } else if (rowData && rowData.ID && rowData.ID.match(regex)){
-								found = true;
-                searchCount++;
-                break;
-            } else if (rowData && rowData.Transcriber && rowData.Transcriber.match(regex)) {
-						    found = true;
-						    searchCount++;
-						    break;
-						} else if (rowData && rowData["External Project Name"] && rowData["External Project Name"].match(regex)){
-								found = true;
-						    searchCount++;
-						    break;
-						}
-        }
-        tr[i].style.display = found ? "" : "none";
-    }
-
-    displaySearchCount(searchCount);
+  if (!query) {
+    displaySearchCount(tr.length);
+    showAllBrowseRows();
     updateBrowseUrlDisplay();
+    return;
+  }
+
+  // --- normalization helpers
+  const normalize = str =>
+    str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+
+  const tokens = normalize(query)
+    .split(/\s+/)
+    .filter(Boolean);
+
+  let searchCount = 0;
+
+  for (let i = 0; i < tr.length; i++) {
+    const rowData = METADATA[i];
+    if (!rowData) continue;
+
+    // Build a unified searchable string for the row
+    const haystack = normalize([
+      rowData.Composer,
+      rowData.Title,
+      rowData.Subtitle,
+      rowData.Genre,
+      rowData["First Source"],
+      rowData.Linkage,
+      rowData.ID,
+      rowData.Transcriber,
+      rowData["External Project Name"]
+    ].filter(Boolean).join(" "));
+
+    const matched = tokens.every(token => haystack.includes(token));
+
+    tr[i].style.display = matched ? "" : "none";
+    if (matched) searchCount++;
+  }
+
+  displaySearchCount(searchCount);
+  updateBrowseUrlDisplay();
 }
 
 

@@ -1,8 +1,15 @@
 <script>
-// vim: ts=3
 
 let METADATA = {% include metadata/works.json %};
 let COMPOSERS = {% include metadata/composers.json %};
+let GENRE_INDEX;
+
+const GENRE_LABELS = {
+  mass: "mass movements",
+  motet: "motets",
+  "secular work": "secular works"
+};
+
 
 //////////////////////////////
 //
@@ -12,6 +19,7 @@ let COMPOSERS = {% include metadata/composers.json %};
 document.addEventListener("DOMContentLoaded", function () {
 	fillMostRecentList(METADATA);
 	displayTopComposers(METADATA);
+  GENRE_INDEX = buildGenreIndex(METADATA);
 	setupUserSearchEnterKey();
 });
 
@@ -48,11 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  const WORK_SUGGESTION_LIMIT = 4;
-  const COMPOSER_SUGGESTION_LIMIT = 3;
+  const TOTAL_LIMIT = 4;
 
   searchInput.addEventListener("input", function () {
-    const q = this.value.toLowerCase().trim();
+    const q = normalizeSearchString(this.value.trim());
 
     if (q.length < 2) {
       suggestionPanel.classList.add("hidden");
@@ -60,38 +67,50 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // --- Composer matches (ranked first)
-    const composerMatches = COMPOSERS
-      .filter(c =>
-        c.Composer &&
-        c.Composer.toLowerCase().includes(q)
-      )
-      .slice(0, COMPOSER_SUGGESTION_LIMIT);
+    // --- Genre matches (from works.json)
+    const genreMatches = getGenreMatches(q);
+
+    // --- Composer matches
+    const composerMatches = COMPOSERS.filter(c =>
+      c.Composer &&
+      normalizeSearchString(c.Composer).includes(q)
+    );
 
     // --- Work matches
-    const workMatches = METADATA
-      .filter(entry => {
-        return (
-          entry.Composer?.toLowerCase().includes(q) ||
-          entry.Title?.toLowerCase().includes(q) ||
-          entry.Subtitle?.toLowerCase().includes(q) ||
-          entry.Genre?.toLowerCase().includes(q) ||
-          entry["First Source"]?.toLowerCase().includes(q)
-        );
-      })
-      .slice(0, WORK_SUGGESTION_LIMIT);
+    const tokens = q.split(/\s+/).filter(Boolean);
 
-    if (composerMatches.length === 0 && workMatches.length === 0) {
+    const workMatches = METADATA.filter(entry => {
+      const haystack = normalizeSearchString(
+        [
+          entry.Composer,
+          entry.Title,
+          entry.Subtitle,
+          entry.Genre,
+          entry["First Source"]
+        ]
+          .filter(Boolean)
+          .join(" ")
+      );
+
+      // every token must appear somewhere
+      return tokens.every(token => haystack.includes(token));
+    });
+
+    // --- Merge in priority order, then cap to 4 total
+    const suggestions = [
+      ...genreMatches.map(renderGenreSuggestion),
+      ...composerMatches.map(renderComposerSuggestion),
+      ...workMatches.map(renderSuggestion)
+    ].slice(0, 4);
+
+    if (!suggestions.length) {
       suggestionPanel.classList.add("hidden");
       suggestionPanel.innerHTML = "";
       return;
     }
 
-    suggestionPanel.innerHTML = [
-      ...composerMatches.map(renderComposerSuggestion),
-      ...workMatches.map(renderSuggestion),
-      renderSeeMoreRow(q)
-    ].join("");
+    suggestionPanel.innerHTML =
+      suggestions.join("") + renderSeeMoreRow(q);
 
     suggestionPanel.classList.remove("hidden");
   });
@@ -113,6 +132,16 @@ document.addEventListener("click", function (e) {
   if (!composerId) return;
 
   window.location.href = `/repertoire/?c=${encodeURIComponent(composerId)}`;
+});
+
+document.addEventListener("click", function (e) {
+  const genreRow = e.target.closest(".genre-suggestion");
+  if (!genreRow) return;
+
+  const genre = genreRow.dataset.genre;
+  if (!genre) return;
+
+  window.location.href = `/repertoire/?g=${encodeURIComponent(genre)}`;
 });
 
 </script>
