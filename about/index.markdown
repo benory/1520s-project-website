@@ -106,7 +106,7 @@ order: 1
             <h3>Janosch Umbreit</h3>
             <p class="role">Team Member</p>
             <p>Janosch Umbreit studied musicology, digital humanities, and English literature at the University of Regensburg, where he also worked as a research assistant for the Deutsche Forschungsgemeinschaft-funded research project <a href="https://orgelpredigt.ur.de/" target="_blank">Orgelpredigtdrucke</a>. He is currently part of the Specialized Information Service for Musicology (<a href="https://www.musiconn.de/en/" target="_blank">musiconn</a>) at the Bavarian State Library.</p>
-            <p><a href="https://1520s-project.org/browse/?q=Umbreit" target="_blank" class="see-scores">See scores edited by Umbreit.</a></p>
+            <p><a href="https://1520s-project.org/repertoire/?q=Umbreit" target="_blank" class="see-scores">See scores edited by Umbreit.</a></p>
         </div>
     </div>
     <div class="team-member">
@@ -115,7 +115,7 @@ order: 1
             <h3>Max Blistain</h3>
             <p class="role">Team Member</p>
             <p>Max Blistain studied piano at the Royal Conservatory of Mons, Belgium. He is a piano teacher, accompanist and concert performer, mainly playing with his trio Star Vinsky, and he is studying musicology at the Free University of Brussels. Passionate about the heritage of his native region, his research focuses on Charles Chastelain (ca. 1490-1578), provost and musician at the Collégiale-Saint-Vincent in Soignies. He also conducts a choir to revive Chastelain's works.</p>
-            <p><a href="https://1520s-project.org/browse/?q=Blistain" target="_blank" class="see-scores">See scores edited by Blistain.</a></p>
+            <p><a href="https://1520s-project.org/repertoire/?q=Blistain" target="_blank" class="see-scores">See scores edited by Blistain.</a></p>
         </div>
     </div>
     <div class="team-member">
@@ -124,7 +124,7 @@ order: 1
             <h3>David Nivarlet</h3>
             <p class="role">Team Member</p>
             <p>David Nivarlet is a research assistant in early modern palaeography at CESR (University of Tours). His research focuses on HTR technology applied to fifteenth- and sixteenth-century civic archives. He previously interned at KBR (Royal Library of Belgium), where he contributed to the federal research project <a href="https://www.alamirefoundation.org/en/news/start-fed-twin-programma-from-script-to-sound/" target="_blank">From Script to Sound: Connecting Heritage and Art through Research and Technology</a>.</p>
-            <p><a href="https://1520s-project.org/browse/?q=Nivarlet" target="_blank" class="see-scores">See scores edited by Nivarlet.</a></p>
+            <p><a href="https://1520s-project.org/repertoire/?q=Nivarlet" target="_blank" class="see-scores">See scores edited by Nivarlet.</a></p>
         </div>
     </div>
 </div>
