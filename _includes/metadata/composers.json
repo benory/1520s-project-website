@@ -82,6 +82,17 @@
 		"Places Active": "Paris, Rome, Cambrai"
 	},
 	{
+		"ID": "Crp",
+		"Composer": "Carpentras",
+		"Composer RISM ID": "pe30005089",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/223/",
+		"Start of CYA": "1505",
+		"End of CYA": "1532",
+		"Death Date": "14 June 1548",
+		"Flourished": "1505–1532",
+		"Places Active": "Rome, Avignon"
+	},
+	{
 		"ID": "Era",
 		"Composer": "Erasmus?",
 		"Start of CYA": "1518",
