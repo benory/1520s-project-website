@@ -196,12 +196,16 @@ function prepareDate(inputDateString) {
 //
 
 function prepareComposer(name) {
-	let matches = name.match(/^\s*([^,]+)\s*,\s*([^,]+)\s*$/);
-	if (!matches) {
-		return name;
-	} else {
-		return `<span class="first-name">${matches[2]}</span> <span class="last-name">${matches[1]}</span>`;
-	}
+  if (!name) return "";
+
+  // Case 1: "Last, First" → First Last (normal weight first, bold last via CSS)
+  let matches = name.match(/^\s*([^,]+)\s*,\s*([^,]+)\s*$/);
+  if (matches) {
+    return `<span class="first-name">${matches[2]}</span> <span class="last-name">${matches[1]}</span>`;
+  }
+
+  // Case 2: single-name composer → bold
+  return `<span class="last-name">${name}</span>`;
 }
 
 
