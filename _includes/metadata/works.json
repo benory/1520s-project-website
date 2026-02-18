@@ -7080,6 +7080,27 @@
 		"FILEBASE": "Ric2032-Sicut_locutus_est"
 	},
 	{
+		"ID": "Ric2034",
+		"Composer": "Richafort, Jean",
+		"Title": "Salve regina",
+		"Genre": "motet",
+		"Voices": "2",
+		"Original Voices": "3",
+		"Modern Editions": "Elzinga_1999a",
+		"First Source": "Elletione de motetti a tre voci (Venice: Girolamo Scotto)",
+		"RISM Source Link": "https://rism.online/sources/993104575",
+		"RISM or CC Source Sigla": "1549|13",
+		"First Source Exact Date": "1549",
+		"Source Date": "1549",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Transcriber": "Janosch Umbreit",
+		"Date Added": "2026-2-18",
+		"Note Count": "1044",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Ric/Ric2034-Salve_regina.krn",
+		"FILEBASE": "Ric2034-Salve_regina"
+	},
+	{
 		"ID": "Ric2036",
 		"Composer": "Richafort, Jean",
 		"Title": "Hoc signum crucis",
