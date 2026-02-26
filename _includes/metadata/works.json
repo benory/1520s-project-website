@@ -3355,6 +3355,25 @@
 		"FILEBASE": "Gsc2001-Dulcis_mater"
 	},
 	{
+		"ID": "Gsc2005",
+		"Composer": "Gascongne, Mathieu",
+		"Title": "Osculetur me",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"Modern Editions": "Meier_1987",
+		"First Source": "I-Fbsm Gianfigliazzi 4.1.13.0.1",
+		"First Source Exact Date": "~1519",
+		"Source Date": "~1519",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Transcriber": "Irene Holzer",
+		"Date Added": "2026-2-26",
+		"Note Count": "1381",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Gsc/Gsc2005-Osculetur_me.krn",
+		"FILEBASE": "Gsc2005-Osculetur_me"
+	},
+	{
 		"ID": "Gsc2006",
 		"Composer": "Gascongne, Mathieu",
 		"Title": "Dignare me",
