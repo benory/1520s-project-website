@@ -93,6 +93,16 @@
 		"Places Active": "Rome, Avignon"
 	},
 	{
+		"ID": "Div",
+		"Composer": "Antonius Divitis",
+		"Composer RISM ID": "pe30019873",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/107/",
+		"Start of CYA": "1501",
+		"End of CYA": "1525",
+		"Flourished": "1501–1525",
+		"Places Active": "Liege, Bruges, Mechelen, Spain, France"
+	},
+	{
 		"ID": "Era",
 		"Composer": "Erasmus?",
 		"Start of CYA": "1518",
