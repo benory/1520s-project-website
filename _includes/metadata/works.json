@@ -5885,6 +5885,28 @@
 		"FILEBASE": "Mou3008-La_rousee_du_mois_de_may_I"
 	},
 	{
+		"ID": "Mou3009",
+		"Composer": "Mouton, Jean",
+		"Title": "Jamais n'aymeray machon",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "MacCracken_2014",
+		"First Source": "GB-Lbl Add. MS 35087 (\"Chansonnier of Jérôme Lauweryn of Watervliet\")",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1897/",
+		"RISM or CC Source Sigla": "LonBL 35087",
+		"Pages, Folios, or Numbers": "fols. 55v–56r",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"First Source Exact Date": "~1506",
+		"Source Date": "~1506",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Date Added": "2026-3-26",
+		"Note Count": "249",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Mou/Mou3009-Jamais_naymeray_machon.krn",
+		"FILEBASE": "Mou3009-Jamais_naymeray_machon"
+	},
+	{
 		"ID": "Ren1001a",
 		"Composer": "Renaldo",
 		"Title": "Missa Sine nomine",
