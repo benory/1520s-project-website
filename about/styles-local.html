@@ -1,7 +1,11 @@
 <style>
 
 p + .section-header {
-  margin-top: 32px;
+  margin-top: 52px;
+}
+
+main.page-content article.post h2 {
+  margin-top: 56px;
 }
 
 main.page-content ul.tight-list {
@@ -81,24 +85,34 @@ p + .role {
   font-weight: bold;
 }
 
-.support-logos-top,
-.support-logos-bottom {
+.support-logos-neh,
+.support-logos-secondary {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
-  margin-top: 10px;
+  gap: 16px;
+  max-width: 1000px;
+  margin: 10px auto 0;
+  flex-wrap: wrap;
 }
 
-.support-logos-top a,
-.support-logos-bottom a {
+.support-logos-neh a,
+.support-logos-secondary a {
   display: inline-block;
 }
 
-.support-logos-top img,
-.support-logos-bottom img {
+.support-logos-neh img,
+.support-logos-secondary img {
+  max-height: 120px;
+  max-width: 390px;
+  width: auto;
   height: auto;
+  object-fit: contain;
   transition: transform 0.3s ease;
+}
+
+.support-logo-neh {
+  max-width: 520px;
 }
 
 .support-section {

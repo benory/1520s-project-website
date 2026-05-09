@@ -24,24 +24,28 @@ order: 1
 
 <div class="section-header"><h4>about</h4></div>
 
-<h2>A new aesthetic paradigm</h2>
+<p>The 1520s Project is an open-access digital library of music from ca. 1510 to ca. 1540. Users can browse, search, analyze, listen to, and perform from a growing corpus of Renaissance scores centered on the decades around 1520.</p>
 
-<p>Sometime during the 1520s, a new aesthetic paradigm for sacred European art music took hold.</p>
+<p>The project partners with the <a href="https://www.josqu.in" target="_blank">Josquin Research Project</a>, which focuses primarily on music from ca. 1400 to ca. 1520. From 2025 to 2028 both projects are supported by a National Endowment for the Humanities <a href="https://www.neh.gov/grants/research/scholarly-editions-and-translations-grants" target="_blank">Scholarly Editions & Translations Grant</a>.
 
-<p>Musical sources from this decade evince a decisive stylistic change: in place of what might be described as a contrastive aesthetic preferred by earlier composers, with individual lines coming and going, we now find nearly pervasive sonic saturation–that is, music for five or six independent voices with relatively few rests.</p>
+<h2>Emergence of a New Style</h2>
 
-<p>This new style is easy to describe in general terms, but difficult to analyze in detail. Making matters still more difficult is that scholars have long been unsure exactly how, when, and where these stylistic changes occurred, owing to limited information about composer biographies and a fuzzy understanding of seminal musical sources from the 1520s. As a result, historians have tended to tell an oversimplified story that prioritizes the major composers of the early sixteenth century, or those of the mid sixteenth century, at the expense of those in between.</p> 
+<p>Sometime during the 1520s, sacred European polyphony underwent a decisive aesthetic transformation. In place of the more contrastive aesthetic favored by earlier composers, with individual voices coming and going, much of the sacred music from the decade is marked by near-pervasive sonic saturation&mdash;that is, five or six independent voices sounding with relatively few rests.</p>
 
-<p>Complicating matters further: more works from during the 1520s survive than from any previous decade in Western music history. Indeed, more music survives than any individual scholar can hope to control.</p>
+<p>This style is easy to describe in general terms but difficult to analyze in detail. Scholars have long been uncertain about exactly how, when, and where these changes occurred, in part because composer biographies remain fragmentary and many of the decade’s most important sources are still poorly understood. As a result, historians have tended to tell an oversimplified story that privileges either the major composers of the early sixteenth century or those of the mid-sixteenth century, often at the expense of those in between.</p>
 
-<h2>Meeting the challenge</h2>
+<p>The problem is also one of scale. More music survives from the 1520s than from any previous decade in Western music history. More music survives than any individual scholar can hope to control.</p>
 
-<p>The 1520s Project aims to meet this challenge head on by making the repertoire of the early sixteenth century available for performance, study, and analysis. Founded in 2019 by <a href="https://benjaminory.com" target="_blank">Benjamin Ory</a>, the project offers high-quality digital editions of the music in four data types: as PDFs, as Sibelius files, as MusicXML files, and as Humdrum files. At present, the corpus features <span id="work-count"></span> scores and roughly <span id="note-count"></span> notes, making it the largest online database of music from the period in the world. The figure below shows the distribution of works by date of the first surviving source.</p>
+<h2>Aims and Scope</h2>
+
+<p>The 1520s Project responds to this challenge by making the repertory of the early sixteenth century available for performance, study, and analysis. Founded in 2019 by <a href="https://benjaminory.com" target="_blank">Benjamin Ory</a>, the project offers high-quality digital editions in four formats: PDF, Sibelius, MusicXML, and Humdrum.</p>
+
+<p>At present, the corpus includes <span id="work-count"></span> scores and roughly <span id="note-count"></span> notes, making it the largest online database of music from the period. The figure below shows the distribution of works by date of first surviving source.</p>
 
 <div class="section-header"><h4>Number of Works by Year of First Source</h4></div>
 <div id="years-plot"></div>
 
-<p>The project takes advantage of <a href="/documentation" target="_blank">editorial and encoding standards</a> developed by the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a> (JRP) over the past decade. This standardization enables the data from both projects to be shared; such interoperability is especially useful with respect to composers active right around 1520, such as Jean Mouton, Noel Bauldeweyn, or Jean Richafort, whose music is shared between projects.</p>
+<p>The project takes advantage of <a href="/documentation" target="_blank">editorial and encoding standards</a> developed by the <a href="https://josqu.in" target="_blank">Josquin Research Project</a> (JRP). These standards allow data from the two projects to be shared and compared, creating a larger, interoperable corpus of early sixteenth-century music. This is especially useful for composers active around 1520, such as Jean Mouton, Noel Bauldeweyn, and Jean Richafort, whose music appears in both projects.</p>
 
 <h2>Editorial workflow</h2>
 
@@ -71,13 +75,13 @@ order: 1
   </li>
 </ol>
 
-<p>Do you see an mistake in a score? Do you disagree with our editorial choices? Would you like a particular score to be texted? <a href="mailto:The1520sProject@gmail.com">Let us know</a>.</p>
+<p>Do you see a mistake in a score? Do you disagree with our editorial choices? Would you like a particular score to be texted? <a href="mailto:The1520sProject@gmail.com">Let us know</a>.</p>
 
 <h2>People</h2>
 
 <div class="team-container">
     <div class="team-member">
-        <img src="/images/headshots/Ory.jpg" alt="Benajmin Ory">
+        <img src="/images/headshots/Ory.jpg" alt="Benjamin Ory">
         <div class="bio">
             <h3>Benjamin Ory</h3>
             <p class="role">Director</p>
@@ -162,21 +166,24 @@ order: 1
 <h2>Support</h2>
 
 <div class="support-section">
-  <p>
-    This project has been generously supported by <a href="https://itatti.harvard.edu/" target="_blank">Villa I Tatti</a>, Harvard's Center for Italian Renaissance Studies, as part of a <a href="https://propelgrants.stanford.edu" target="_blank">Stanford Vice Provost and Dean of Research Propel Grant</a>, by the <a href="https://cesta.stanford.edu" target="_blank"> Stanford Center for Spatial and Textual Analysis</a>, and by the <a href="http://www.ccarh.org" target="_blank">Stanford Center for Computer Assisted Research in the Humanities</a>.
-  </p>
+  <p>From 2025 to 2028 the project is supported by a National Endowment for the Humanities <a href="https://www.neh.gov/grants/research/scholarly-editions-and-translations-grants" target="_blank">Scholarly Editions & Translations Grant</a>.</p>
+  
+  <p>At earlier stages this project was made possible by <a href="https://itatti.harvard.edu/" target="_blank">Villa I Tatti</a>, Harvard's Center for Italian Renaissance Studies, as part of a <a href="https://propelgrants.stanford.edu" target="_blank">Stanford Vice Provost and Dean of Research Propel Grant</a>, by the <a href="https://cesta.stanford.edu" target="_blank"> Stanford Center for Spatial and Textual Analysis</a>, and by the <a href="http://www.ccarh.org" target="_blank">Stanford Center for Computer Assisted Research in the Humanities</a>.</p>
 
-  <div class="support-logos-top">
-    <a href="https://itatti.harvard.edu/" target="_blank">
-      <img src="/images/ITatti_logo.png" alt="i Tatti logo" class="support-logo">
+  <div class="support-logos-neh">
+    <a href="https://www.neh.gov/" target="_blank">
+      <img src="/images/NEH_logo.png" alt="National Endowment for the Humanities logo" class="support-logo support-logo-neh">
+    </a>
+    <a href="http://www.ccarh.org/" target="_blank">
+      <img src="/images/CCARH_logo.png" alt="CCARH logo" class="support-logo support-logo-ccarh">
     </a>
     <a href="https://cesta.stanford.edu/" target="_blank">
       <img src="/images/CESTA_logo.png" alt="CESTA logo" class="support-logo">
     </a>
   </div>
-  <div class="support-logos-bottom">
-    <a href="http://www.ccarh.org/" target="_blank">
-      <img src="/images/CCARH_logo.png" alt="CCARH logo" class="support-logo">
+  <div class="support-logos-secondary">
+    <a href="https://itatti.harvard.edu/" target="_blank">
+      <img src="/images/ITatti_logo.png" alt="i Tatti logo" class="support-logo">
     </a>
     <a href="https://propelgrants.stanford.edu" target="_blank">
       <img src="/images/Propel_logo.png" alt="Propel Grant logo" class="support-logo">
