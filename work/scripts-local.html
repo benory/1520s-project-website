@@ -364,9 +364,10 @@ function displayWorkInfo(id) {
 
 	let mei      = `${DATA1520.dataurl}/${DATA1520.workid}.mei`;  // URL from data server
 	let midi     = `${DATA1520.dataurl}/${DATA1520.workid}.mid`;  // URL from data server
+	let musicxml = `${DATA1520.dataurl}/${DATA1520.workid}.musicxml`;  // URL from data server
 
 	let humdrum  = workinfo["Humdrum URL"];                       // URL from GitHub
-	let musicxml = workinfo["Humdrum URL"];                       // URL from GitHub
+	let musicxmlFallback = workinfo["Humdrum URL"];               // URL from GitHub
 	let pdf      = workinfo["Humdrum URL"];                       // URL from GitHub
 	let sibelius = workinfo["Humdrum URL"];                       // URL from GitHub
 
@@ -375,10 +376,10 @@ function displayWorkInfo(id) {
 	// Convert Humdrum URLs to other parallel data files on GitHub:
 	pdf      = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	musicxml = musicxml.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
+	musicxmlFallback = musicxmlFallback.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	humdrum  = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 
-	downloadoutput += `<div class="work-item"><b>Download:</b> <a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a></div>`;
+	downloadoutput += `<div class="work-item"><b>Download:</b> <a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}" data-fallback-url="${musicxmlFallback}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a></div>`;
 
 	let github = workinfo["Humdrum URL"];
 	let githuboutput = "";
@@ -441,8 +442,9 @@ function forceDownload(event) {
 	event.preventDefault();    // Prevent default behavior for <a>
 	let target = event.target;
 	let url = target.getAttribute("href");
+	let fallbackUrl = target.dataset.fallbackUrl;
 	let filename = url.replace(/.*\//, "");
-	downloadFile(url, filename);
+	downloadFile(url, filename, fallbackUrl);
 }
 
 
@@ -452,9 +454,14 @@ function forceDownload(event) {
 // downloadFile -- Save file contents to local computer.
 //
 
-function downloadFile(url, filename) {
+function downloadFile(url, filename, fallbackUrl) {
 	fetch(url)
-	.then(response => response.blob())
+	.then(response => {
+		if (!response.ok) {
+			throw new Error(`Could not download ${url}: ${response.status}`);
+		}
+		return response.blob();
+	})
 	.then(blob => {
 		const a = document.createElement('a');
 		const objectURL = URL.createObjectURL(blob);
@@ -465,6 +472,10 @@ function downloadFile(url, filename) {
 	})
 	.catch(error => {
 		console.error('Error:', error);
+		if (fallbackUrl) {
+			let fallbackFilename = fallbackUrl.replace(/.*\//, "");
+			downloadFile(fallbackUrl, fallbackFilename);
+		}
 	});
 }
 
