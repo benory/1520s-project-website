@@ -109,7 +109,7 @@ order: 1
         <div class="bio">
             <h3>Maura Sugg</h3>
             <p class="role">Team Member</p>
-            <p>Maura Sugg is a PhD candidate in musicology at Case Western Reserve University. Her dissertation, "More Than Meets the Ear: Embodied Memory, Theology, and Identity in Tomás Luis de Victoria’s Self-Borrowed Imitation Masses,” explores how Victoria created layers of meaning for Catholic singers in post-Tridentine Europe. Sugg is the recipient of an American Musicological Society <a href="https://www.amsmusicology.org/funding/ams-50/" target="_blank">Alvin H. Johnson AMS 50 Dissertation Fellowship</a>. Her digital humanities experience includes work with the <a href="https://sites.google.com/haverford.edu/crim-project/home" target="_blank">Citations: The Renaissance Imitation Mass (CRIM) Project</a>.</p>
+            <p>Maura Sugg recently completed her PhD in musicology at Case Western Reserve University. Her dissertation, "More Than Meets the Ear: Crafting and Embodying Post-Tridentine Catholicism in Tomás Luis de Victoria’s Imitation Masses,” explores how Victoria created layers of meaning for Catholic singers in the post-Tridentine period. She was a 2025–26 recipient of an American Musicological Society <a href="https://www.amsmusicology.org/funding/ams-50/" target="_blank">Alvin H. Johnson AMS 50 Dissertation Fellowship</a>. Her digital humanities experience includes work with the <a href="https://sites.google.com/haverford.edu/crim-project/home" target="_blank">CRIM (Citations: The Renaissance Imitation Mass) Project</a>.</p>
             <p><a href="https://1520s-project.org/repertoire/?q=Sugg" target="_blank" class="see-scores">See scores edited by Sugg.</a></p>
         </div>
     </div>
