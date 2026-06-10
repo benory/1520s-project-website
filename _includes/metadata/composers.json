@@ -261,6 +261,15 @@
 		"Places Active": "Nesle, Amiens, Grenoble, Paris, Bologna"
 	},
 	{
+		"ID": "Opi",
+		"Composer": "de Opitiis, Benedictus",
+		"Composer RISM ID": "pe30009778",
+		"Start of CYA": "1492",
+		"End of CYA": "1521",
+		"Flourished": "1492–1521",
+		"Places Active": "Strasbourg, Antwerp, London"
+	},
+	{
 		"ID": "Ren",
 		"Composer": "Renaldo",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/78/",
