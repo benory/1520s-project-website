@@ -16123,21 +16123,6 @@
 	},
 	{
 		"Attribution ID": "Attr_1073",
-		"Source": "BolC R142",
-		"Dating": "1537",
-		"Dating (range)": "~1522-38",
-		"Source Origin": "Veneto",
-		"Modern Country for Source Origin": "Italy",
-		"Source type": "manuscript",
-		"Piece": "Nimphes, nappés",
-		"Attributed to Josquin?": "yes",
-		"NJE Number": "30.6",
-		"Genre": "songs and instrumental pieces",
-		"Voices": "6",
-		"Attribution Category": "1"
-	},
-	{
-		"Attribution ID": "Attr_1074",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16152,7 +16137,7 @@
 		"Probable Composer": "Pierre Moulu"
 	},
 	{
-		"Attribution ID": "Attr_1075",
+		"Attribution ID": "Attr_1074",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16166,7 +16151,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1076",
+		"Attribution ID": "Attr_1075",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16180,7 +16165,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1077",
+		"Attribution ID": "Attr_1076",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16195,7 +16180,7 @@
 		"Probable Composer": "Ludwig Senfl"
 	},
 	{
-		"Attribution ID": "Attr_1078",
+		"Attribution ID": "Attr_1077",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16209,7 +16194,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1079",
+		"Attribution ID": "Attr_1078",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16223,7 +16208,7 @@
 		"Attribution Category": "2"
 	},
 	{
-		"Attribution ID": "Attr_1080",
+		"Attribution ID": "Attr_1079",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16239,7 +16224,7 @@
 		"Other Attribution in Source": "Johannes Heugel"
 	},
 	{
-		"Attribution ID": "Attr_1081",
+		"Attribution ID": "Attr_1080",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16253,7 +16238,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1082",
+		"Attribution ID": "Attr_1081",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16267,7 +16252,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1083",
+		"Attribution ID": "Attr_1082",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16281,7 +16266,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1084",
+		"Attribution ID": "Attr_1083",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16295,7 +16280,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1085",
+		"Attribution ID": "Attr_1084",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16309,7 +16294,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1086",
+		"Attribution ID": "Attr_1085",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16323,7 +16308,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1087",
+		"Attribution ID": "Attr_1086",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16337,7 +16322,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1088",
+		"Attribution ID": "Attr_1087",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16352,7 +16337,7 @@
 		"Other Attribution in Source": "Heinrich Isaac"
 	},
 	{
-		"Attribution ID": "Attr_1089",
+		"Attribution ID": "Attr_1088",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16367,7 +16352,7 @@
 		"Probable Composer": "Antoine de Févin"
 	},
 	{
-		"Attribution ID": "Attr_1090",
+		"Attribution ID": "Attr_1089",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16382,7 +16367,7 @@
 		"Probable Composer": "Andreas de Silva"
 	},
 	{
-		"Attribution ID": "Attr_1091",
+		"Attribution ID": "Attr_1090",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16396,7 +16381,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1092",
+		"Attribution ID": "Attr_1091",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16410,7 +16395,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1093",
+		"Attribution ID": "Attr_1092",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16425,7 +16410,7 @@
 		"Other Attribution in Source": "Conrad Rupsch"
 	},
 	{
-		"Attribution ID": "Attr_1094",
+		"Attribution ID": "Attr_1093",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16439,7 +16424,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1095",
+		"Attribution ID": "Attr_1094",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16453,7 +16438,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1096",
+		"Attribution ID": "Attr_1095",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16467,7 +16452,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1097",
+		"Attribution ID": "Attr_1096",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16481,7 +16466,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1098",
+		"Attribution ID": "Attr_1097",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16495,7 +16480,7 @@
 		"Attribution Category": "2"
 	},
 	{
-		"Attribution ID": "Attr_1099",
+		"Attribution ID": "Attr_1098",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16509,7 +16494,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1100",
+		"Attribution ID": "Attr_1099",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16523,7 +16508,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1101",
+		"Attribution ID": "Attr_1100",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16537,7 +16522,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1102",
+		"Attribution ID": "Attr_1101",
 		"Source": "Heyden 1537",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16551,7 +16536,7 @@
 		"Attribution Category": "1"
 	},
 	{
-		"Attribution ID": "Attr_1103",
+		"Attribution ID": "Attr_1102",
 		"Source": "ReggioSP s.s.",
 		"Dating": "1537",
 		"Dating (range)": "~1534–37",
@@ -16566,7 +16551,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1104",
+		"Attribution ID": "Attr_1103",
 		"Source": "VatS 19",
 		"Dating": "1537",
 		"Dating (range)": "~1535–37",
@@ -16581,7 +16566,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1105",
+		"Attribution ID": "Attr_1104",
 		"Source": "Grapheus 1537|1",
 		"Dating": "1537",
 		"Source Origin": "Nuremberg",
@@ -16595,7 +16580,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1106",
+		"Attribution ID": "Attr_1105",
 		"Source": "BerlPS 40031",
 		"Dating": "1538",
 		"Dating (range)": "~1525–38",
@@ -16609,7 +16594,7 @@
 		"Attribution Category": "4a"
 	},
 	{
-		"Attribution ID": "Attr_1107",
+		"Attribution ID": "Attr_1106",
 		"Source": "BerlPS 40031",
 		"Dating": "1538",
 		"Dating (range)": "~1525–38",
@@ -16621,6 +16606,21 @@
 		"Genre": "motet",
 		"Voices": "4",
 		"Attribution Category": "4a"
+	},
+	{
+		"Attribution ID": "Attr_1107",
+		"Source": "BolC R142",
+		"Dating": "1538",
+		"Dating (range)": "~1522-38",
+		"Source Origin": "Veneto",
+		"Modern Country for Source Origin": "Italy",
+		"Source type": "manuscript",
+		"Piece": "Nimphes, nappés",
+		"Attributed to Josquin?": "yes",
+		"NJE Number": "30.6",
+		"Genre": "songs and instrumental pieces",
+		"Voices": "6",
+		"Attribution Category": "1"
 	},
 	{
 		"Attribution ID": "Attr_1108",
