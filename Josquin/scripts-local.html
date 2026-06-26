@@ -27,6 +27,7 @@ function displayBrowseTable(data, selector) {
 	contents += "</tbody>\n";
 	contents += "</table>\n";
 	element.innerHTML = contents;
+	displaySearchCount(data.length);
 }
 
 function populateFilters(data) {
@@ -186,7 +187,8 @@ function FreeTextSearch(query) {
 }
 
 function displaySearchCount(count) {
-  document.getElementById("search-count").textContent = `[${count} match${count === 1 ? "" : "es"}]`;
+	const label = count === 1 ? "attribution" : "attributions";
+	document.getElementById("search-count").textContent = `${count.toLocaleString()} ${label} found`;
 }
 
 //////////////////////////////

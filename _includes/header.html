@@ -20,11 +20,14 @@
 }
 
 .site-header .wrapper {
-  padding-top: 8px;
-  padding-bottom: 4px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 24px 4px;
+  box-sizing: border-box;
 }
 
-.wrapper {
+.site-header .header-main {
   display: flex;
   align-items: center; /* vertical centering */
   justify-content: space-between;
@@ -41,18 +44,47 @@
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   position: relative;
 }
 
+.site-nav .trigger {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .site-nav .page-link {
+  position: relative;
   font-size: 15px;
-  font-weight: 400;
-  padding: 5px 9px;
-  color: #6A6156; /* keep your existing palette */
-  letter-spacing: 0.01em;
-  border-radius: 8px;
+  font-weight: 500;
+  padding: 6px 2px;
+  color: #284b63;
+  letter-spacing: 0.015em;
+  border-radius: 0;
   transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.site-nav .trigger > .page-link::after,
+.site-nav .dropdown > .dropdown-trigger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  height: 1px;
+  background-color: #132f43;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.22s ease, opacity 0.18s ease;
+}
+
+.site-nav .trigger > .page-link:hover::after,
+.site-nav .dropdown:hover > .dropdown-trigger::after,
+.site-nav .dropdown > .dropdown-trigger:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 
@@ -98,33 +130,37 @@
 /* Dropdown links */
 .site-nav .dropdown-content a {
   color: black;
-  padding: 6px 10px;
+  padding: 7px 11px;
   border-radius: 8px;
   text-decoration: none;
   display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
 /* Change nav link colors */
 .site-nav .page-link,
 .site-nav .dropdown-content a {
-  color: #6A6156;
+  color: #284b63;
 }
 
 .site-nav .dropdown-content a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-  color: #1c1c1e;
+  background-color: rgba(40, 75, 99, 0.08);
+  color: #132f43;
+  text-decoration: none;
 }
 
 .site-nav .page-link:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-  color: #1c1c1e;
+  background-color: transparent;
+  color: #132f43;
   text-decoration: none;
 }
 
 .site-nav .dropdown-trigger:hover {
   background-color: transparent;
-  color: #6A6156;
+  color: #132f43;
 }
 
 
@@ -163,6 +199,7 @@
 <header class="site-header" role="banner">
   <link type="image/x-icon" href="/images/favicon.png" rel="shortcut icon">
   <div class="wrapper">
+    <div class="header-main">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
@@ -206,6 +243,7 @@
         </div>
       </nav>
     {%- endif -%}
+    </div>
     {% if page.url == "/" or page.url == "/index.html" %}
     <div class="banner">
       <img src="{{ '/images/1520s_banner.png' | relative_url }}" alt="Banner Image" class="desktop-banner">

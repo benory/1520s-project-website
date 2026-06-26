@@ -1,7 +1,7 @@
 ---
 layout: page
 title: repertoire
-order: 3
+order: 2
 
 ---
 
@@ -20,11 +20,13 @@ order: 3
 
 <div class="section-header"><h4>Repertoire</h4></div>
 
-<div id="search-interface">
+<div id="search-interface" class="catalogue-toolbar">
   <div class="row">
     <div class="left-group">
-      <input type="text" id="input" onkeyup="FreeTextSearch()" placeholder="Enter title, composer, etc.">
-      <span id="search-count"></span>
+      <input type="text" id="input" aria-label="Search repertoire" onkeyup="FreeTextSearch()" placeholder="Search title, composer, source...">
+      <div class="search-meta">
+        <span id="search-count"></span>
+      </div>
     </div>
     <div class="right-group">
       <div id="dropdowns">
@@ -37,9 +39,9 @@ order: 3
         <div class="bottom-line">
           <div id="source-container"></div>
           <div id="mensuration-container"></div>
+          <div id="texted-container"></div>
         </div>
       </div>
-      <div id="texted-container"></div>
       <div id="mensuration-selected-container"></div>
     </div>
   </div>

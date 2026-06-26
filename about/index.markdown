@@ -26,7 +26,7 @@ order: 1
 
 <p>The 1520s Project is an open-access digital library of music from ca. 1510 to ca. 1540. Users can browse, search, analyze, listen to, and perform from a growing corpus of Renaissance scores centered on the decades around 1520.</p>
 
-<p>The project partners with the <a href="https://www.josqu.in" target="_blank">Josquin Research Project</a>, which focuses primarily on music from ca. 1400 to ca. 1520. From 2025 to 2028 both projects are supported by a National Endowment for the Humanities <a href="https://www.neh.gov/grants/research/scholarly-editions-and-translations-grants" target="_blank">Scholarly Editions & Translations Grant</a>.
+<p>The project partners with the <a href="https://www.josqu.in" target="_blank">Josquin Research Project</a>, which focuses primarily on music from ca. 1400 to ca. 1520. From 2025 to 2028 both projects are supported by a National Endowment for the Humanities <a href="https://www.neh.gov/grants/research/scholarly-editions-and-translations-grants" target="_blank">Scholarly Editions & Translations Grant</a>.</p>
 
 <h2>Emergence of a New Style</h2>
 
@@ -142,7 +142,7 @@ order: 1
     </div>
 </div>
 
-<h3>Advisory Board</h3>
+<h2>Advisory Board</h2>
 <ul id="advisory-list">
   <li>Philippe Canguilhem (Centre d'études supérieures de la Renaissance, Université de Tours)</li>
   <li>Antonio Chemotti (Katholieke Universiteit Leuven)</li>
@@ -193,24 +193,26 @@ order: 1
 
 <h2>Project reviews</h2>
 
-<div class="block">
-"The 1520s Project is another step ahead... the project features an exquisite and thorough treatment of the metadata and a sophisticated array of analytical tools."
-  <div class="block-content">
-    <p>Frans Wiering, ed., “Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy” (Utrecht University, 2025), 24. <a href="https://zenodo.org/records/17543932" target="_blank">https://doi.org/10.5281/zenodo.17543932</a></p>
-  </div>
-</div>
+<figure class="scholarly-block review-block">
+  <blockquote>
+    <p>"The 1520s Project is another step ahead... the project features an exquisite and thorough treatment of the metadata and a sophisticated array of analytical tools."</p>
+  </blockquote>
+  <figcaption>
+    Frans Wiering, ed., “Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy” (Utrecht University, 2025), 24. <a href="https://zenodo.org/records/17543932" target="_blank">https://doi.org/10.5281/zenodo.17543932</a>
+  </figcaption>
+</figure>
 
 <h2>Collaborations</h2>
 
-<div class="block">
-  <h3><strong>New Senfl Edition</strong></h3>
+<div class="scholarly-block collaboration-block">
+  <h3>New Senfl Edition</h3>
 
-  <div class="block-content">
+  <div class="scholarly-block-content">
     <p>
       Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"> New Senfl Edition
-      </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute their scores to this project. See the <a href="https://1520s-project.org/browse/?q=senfl" target="_blank"> available pieces</a>.
+      </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute <a href="https://1520s-project.org/browse/?q=senfl" target="_blank">their scores</a> to this project.
     </p>
-    <a href="https://senflonline-eng.com/new-senfl-edition/" class="block-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
+    <a href="https://senflonline-eng.com/new-senfl-edition/" class="scholarly-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
     </a>
   </div>
 </div>

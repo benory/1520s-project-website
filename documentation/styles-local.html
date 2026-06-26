@@ -8,10 +8,15 @@ body {
   background-color: #FFFAF1;
 }
 
-.page-content {
+html {
+  scroll-padding-top: 110px;
+}
+
+.documentation-layout {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 22px;
   gap: 30px;
 }
 
@@ -27,7 +32,7 @@ body {
 
 .main-content section {
   position: relative;
-  padding-bottom: 4px;
+  margin-bottom: 18px;
 }
 
 .main-content section::after {
@@ -44,18 +49,31 @@ body {
   );
 }
 
-/* remove divider after the last section only */
 .main-content section:last-of-type::after {
   display: none;
 }
 
-main.page-content h2:first-of-type {
+.main-content h2:first-of-type {
   margin-top: 0;
 }
 
-/* Strong section breaks between major sections */
+.main-content h2 {
+  padding-top: 0;
+  max-width: 760px;
+}
+
 .main-content h2:not(:first-of-type) {
-  margin-top: 40px;
+  margin-top: 24px;
+  padding-top: 0;
+}
+
+.main-content h3 {
+  max-width: 760px;
+  margin: 26px auto 8px;
+}
+
+.main-content [id] {
+  scroll-margin-top: 110px;
 }
 
 .main-content h4 {
@@ -79,42 +97,54 @@ main.page-content h2:first-of-type {
   top: 96px;
   max-width: 240px;
   min-width: 240px;
-  padding: 8px 16px 8px 0;
-  border-right: 1px solid rgba(0,0,0,0.08);
-  font-size: 15px;
-  line-height: 1.6;
+  padding: 6px 18px 8px 0;
+  border-right: 1px solid rgba(40, 75, 99, 0.16);
+  font-size: 13px;
+  line-height: 1.35;
   flex-shrink: 0;
 }
 
-.toc-container li a {
-  display: inline-block;
-  padding-left: 1.2em;
-  text-indent: -1.2em;
-}
-
-.toc-container li ul {
-  margin-left: 12px;
-  font-size: 14px;
-  color: #6e6e73;
-}
-
 .toc-container h4 {
-  margin-top: 0;
-  font-size: 20px;
+  margin: 0 0 10px;
+  color: #5f5951;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .toc-container ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .toc-container li {
-  margin: 6px 0;
+  margin: 3px 0;
 }
 
 .toc-container li ul {
-  margin-left: 16px;
+  margin: 3px 0 6px 14px;
+  color: #6A6156;
+  font-size: 12.5px;
+  line-height: 1.3;
+}
+
+.toc-container li ul li {
+  margin: 2px 0;
+}
+
+.toc-container li a {
+  display: inline-block;
+  padding-left: 1em;
+  color: #284b63;
+  text-indent: -1em;
+  text-decoration: none;
+}
+
+.toc-container li a:hover {
+  color: #132f43;
+  text-decoration: underline;
 }
 
 .main-content ul,
@@ -161,29 +191,36 @@ code {
   max-width: 760px;
   margin: 12px auto 20px;
   padding: 10px 12px;
-  background: rgba(0,0,0,0.04);
-  border-radius: 6px;
+  overflow-x: auto;
+  color: #1c1c1e;
+  background: rgba(255, 253, 248, 0.74);
+  border: 1px solid rgba(40, 75, 99, 0.22);
+  border-radius: 4px;
   font-size: 13px;
+  line-height: 1.45;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 .url-block {
   max-width: 760px;
   margin: 0 auto 16px;
-  padding-left: 18px;
-  border-left: 2px solid rgba(0,0,0,0.08);
+  padding: 9px 12px;
+  border: 1px solid rgba(40, 75, 99, 0.22);
+  border-radius: 4px;
+  background: rgba(255, 253, 248, 0.74);
 
   font-size: 14px;
   line-height: 1.6;
 }
 
 .url-block a {
-  color: #0366d6;
+  color: #284b63;
   text-decoration: none;
   word-break: break-all;
 }
 
 .url-block a:hover {
+  color: #132f43;
   text-decoration: underline;
 }
 
@@ -247,58 +284,18 @@ code {
   margin-bottom: 0.4rem;
 }
 
-/* === Condensed TOC for documentation page === */
-
-.toc-container {
-  font-size: 14px;
-  line-height: 1.35;
-}
-
-/* Section labels */
-.toc-container > ul > li {
-  margin: 4px 0;
-}
-
-/* TOC links */
-.toc-container a {
-  line-height: 1.3;
-}
-
-/* Nested lists */
-.toc-container li ul {
-  margin-top: 2px;
-  margin-bottom: 4px;
-  margin-left: 14px;
-  font-size: 13px;
-  line-height: 1.3;
-}
-
-/* Individual nested items */
-.toc-container li ul li {
-  margin: 2px 0;
-}
-
-/* Reduce TOC heading size */
-.toc-container h4 {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/* Reduce indentation + vertical padding on links */
-.toc-container li a {
-  padding-left: 1em;
-  text-indent: -1em;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .page-content,
-  .main-content {
+  .documentation-layout {
     flex-direction: column;
     width: 100%;
     padding: 0 16px;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  .main-content {
+    width: 100%;
   }
 
   .toc-container {

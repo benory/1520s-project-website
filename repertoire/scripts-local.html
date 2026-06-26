@@ -21,6 +21,8 @@ function buildSearchInterface(data) {
   document.getElementById("genre-container").innerHTML = "";
   document.getElementById("year-container").innerHTML = "";
   document.getElementById("voice-container").innerHTML = "";
+  document.getElementById("source-container").innerHTML = "";
+  document.getElementById("texted-container").innerHTML = "";
   document.getElementById("mensuration-container").innerHTML = "";
   document.getElementById("mensuration-selected-container").innerHTML = "";
 
@@ -40,7 +42,7 @@ function buildSearchInterface(data) {
   checkbox.onchange = doSearch;
 
   label.appendChild(checkbox);
-  label.appendChild(document.createTextNode("Texted scores only"));
+  label.appendChild(document.createTextNode("Yes"));
 
   const textedContainer = document.getElementById("texted-container");
 	if (textedContainer) {
@@ -61,11 +63,15 @@ function buildSearchInterface(data) {
 	dropdownContainer.className = "custom-dropdown";
 
 	const toggleButton = document.createElement("button");
+	toggleButton.type = "button";
 	toggleButton.className = "dropdown-toggle";
+	toggleButton.setAttribute("aria-expanded", "false");
+	toggleButton.setAttribute("aria-haspopup", "true");
 	toggleButton.innerHTML =
-  `<span class="toggle-text">Mensuration(s) (earliest source)</span>`;
+  `<span class="toggle-text">All mensurations</span>`;
 	toggleButton.onclick = () => {
 	  dropdownContainer.classList.toggle("open");
+	  toggleButton.setAttribute("aria-expanded", dropdownContainer.classList.contains("open"));
 	};
 
 	const dropdownContent = document.createElement("div");
@@ -119,6 +125,7 @@ function displayBrowseTable(data, selector) {
 	contents += "</tbody>\n";
 	contents += "</table>\n";
 	element.innerHTML = contents;
+	displaySearchCount(data.length);
 }
 
 
@@ -144,7 +151,8 @@ function makeTableBody(headings, data) {
 	let output = "";
 	for (let i=0; i<data.length; i++) {
 		let entry = data[i];
-		output += "<tr>";
+		let searchText = escapeHtmlAttribute(getSearchText(entry));
+		output += `<tr data-search="${searchText}">`;
 				for (let i=0; i<headings.length; i++) {
 			let value = "";
 			if (typeof entry[headings[i]] !== "undefined") {
@@ -176,6 +184,38 @@ function makeTableBody(headings, data) {
 		output += "</tr>\n";
 	}
 	return output;
+}
+
+
+function getSearchText(entry) {
+	return normalizeSearchText([
+		entry.Composer,
+		entry.Title,
+		entry.Subtitle,
+		entry.Genre,
+		entry["First Source"],
+		entry.Linkage,
+		entry.ID,
+		entry.Transcriber,
+		entry["External Project Name"]
+	].filter(Boolean).join(" "));
+}
+
+
+function normalizeSearchText(input) {
+	return String(input)
+		.toLowerCase()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "");
+}
+
+
+function escapeHtmlAttribute(input) {
+	return String(input)
+		.replace(/&/g, "&amp;")
+		.replace(/"/g, "&quot;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;");
 }
 
 
@@ -303,9 +343,8 @@ function buildComposerSelect(data) {
 
 	let clist = Object.keys(counter).sort();
 	clist.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-	let composerCount = clist.length;
 	let output = "<select class='composer' onchange='doSearch()'>\n";
-	output += `<option value="">Composers (${composerCount})</option>`;
+	output += `<option value="">All composers</option>`;
 	for (let i=0; i<clist.length; i++) {
 		let name = clist[i];
 		let count = counter[clist[i]];
@@ -337,7 +376,7 @@ function buildGenreSelect(data) {
 
 	let glist = Object.keys(counter).sort();
 	let output = "<select class='genre' onchange='doSearch()'>\n";
-	output += `<option value="">Genre</option>`;
+	output += `<option value="">All genres</option>`;
 	for (let i=0; i<glist.length; i++) {
 		let name = glist[i];
 		let count = counter[glist[i]];
@@ -368,9 +407,8 @@ function buildSourceSelect(data) {
 	}
 
 	let slist = Object.keys(counter).sort();
-	let sourceCount = slist.length;
 	let output = "<select class='source' onchange='doSearch()'>\n";
-	output += `<option value="">Earliest source (${sourceCount})</option>`;
+	output += `<option value="">All sources</option>`;
 	for (let i=0; i<slist.length; i++) {
 		let name = slist[i];
 		let count = counter[slist[i]];
@@ -403,7 +441,7 @@ function buildVoiceSelect(data) {
 	// May need to sort numerically if 10 or more voices in any work:
 	let vlist = Object.keys(counter).sort();
 	let output = "<select class='voice' onchange='doSearch()'>\n";
-	output += `<option value="">Voices</option>`;
+	output += `<option value="">All voices</option>`;
 	for (let i=0; i<vlist.length; i++) {
 		let vcount = vlist[i];
 		let text = "voices";
@@ -490,6 +528,10 @@ function buildCustomMensurationMenu(container) {
 		  const dropdown = container.closest(".custom-dropdown");
 		  if (dropdown) {
 		    dropdown.classList.remove("open");
+		    const toggle = dropdown.querySelector(".dropdown-toggle");
+		    if (toggle) {
+		      toggle.setAttribute("aria-expanded", "false");
+		    }
 		  }
 		};
 
@@ -543,84 +585,33 @@ function buildTextSelect(data) {
 function buildYearSelect(data) {
 	let years = {};
 	for (let entry of data) {
-		let parameter = "First Source Exact Date";
-		let year = entry[parameter];
+		let year = getEntryYear(entry);
 		let matches = year.match(/(\d{4})/);
 		if (matches) {
-			digits = matches[1];
+			let digits = matches[1];
+			years[digits] = (typeof years[digits] !== "undefined") ? years[digits] + 1 : 1;
 		} else {
 			continue;
-		}
-		let circa = year.match(/~/) ? true : false;
-		let tag = (circa ? "~" : "") + digits;
-		if (typeof years[tag] !== "undefined") {
-			years[tag]++;
-		} else {
-			years[tag] = 1;
 		}
 	}
 	let keys = Object.getOwnPropertyNames(years);
 	keys.sort((a, b) => {
-		let yearA = a;
-		let yearB = b;
-		if (typeof yearA === "undefined") {
-			return +1;
-		}
-		if (typeof yearB === "undefined") {
-			return -1;
-		}
-
-		let matches;
-
-		matches = yearA.match(/(\d{4})/);
-		if (matches) {
-			digitsA = matches[1];
-		} else {
-			return 1;
-		}
-		matches = yearB.match(/(\d{4})/);
-		if (matches) {
-			digitsB = matches[1];
-		} else {
-			return -1;
-		}
-
-		if (digitsA != digitsB) {
-			return parseInt(digitsA) - parseInt(digitsB);
-		}
-
-		// years are the same, so sort by circa
-		let circaA = false;
-		let circaB = false;
-		if (yearA.match(/~/)) {
-			circaA = true;
-		}
-		if (yearB.match(/~/)) {
-			circaB = true;
-		}
-		if (circaA) {
-			return +1;
-		}
-		if (circaB) {
-			return -1;
-		}
-		return 0;
+		return parseInt(a) - parseInt(b);
 	});
-	let yearCount = keys.length;
-
 	let output = "";
 	output += "<select class='year' onchange='doSearch()'>\n";
-	output += `<option value=''>Year (${yearCount})</options>`;
+	output += `<option value=''>All years</options>`;
 	for (let year of keys) {
-		if (!year.match(/~/)) {
-			output += `<option value="${year}">&nbsp;&nbsp;&thinsp;${year} (${years[year]})</option>`;
-		} else {
-			output += `<option value="${year}">${year} (${years[year]})</option>`;
-		}
+		output += `<option value="${year}">${year} (${years[year]})</option>`;
 	}
 	output += "</select>";
 	return output;
 
+}
+
+
+function getEntryYear(entry) {
+	return String(entry["First Source Exact Date"] || entry[INDEX_firstsourcedate] || "");
 }
 
 
@@ -735,8 +726,9 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let year = entry[INDEX_firstsourcedate];
-			if (year == yearQuery) {
+			let year = getEntryYear(entry);
+			let matches = year.match(/(\d{4})/);
+			if (matches && matches[1] == yearQuery) {
 				tempdata.push(entry);
 			}
 		}
@@ -799,35 +791,14 @@ function FreeTextSearch(query) {
     return;
   }
 
-  // --- normalization helpers
-  const normalize = str =>
-    str
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
-
-  const tokens = normalize(query)
+  const tokens = normalizeSearchText(query)
     .split(/\s+/)
     .filter(Boolean);
 
   let searchCount = 0;
 
   for (let i = 0; i < tr.length; i++) {
-    const rowData = METADATA[i];
-    if (!rowData) continue;
-
-    // Build a unified searchable string for the row
-    const haystack = normalize([
-      rowData.Composer,
-      rowData.Title,
-      rowData.Subtitle,
-      rowData.Genre,
-      rowData["First Source"],
-      rowData.Linkage,
-      rowData.ID,
-      rowData.Transcriber,
-      rowData["External Project Name"]
-    ].filter(Boolean).join(" "));
+    const haystack = tr[i].dataset.search || normalizeSearchText(tr[i].textContent);
 
     const matched = tokens.every(token => haystack.includes(token));
 
@@ -864,9 +835,9 @@ function showAllBrowseRows() {
 function displaySearchCount(count) {
 	let output = "";
 	if (count == 1) {
-		output = `[${count} result]`;
+		output = `${count.toLocaleString()} work found`;
 	} else {
-		output = `[${count} results]`;
+		output = `${count.toLocaleString()} works found`;
 	}
 	let searchCountElement = document.querySelector("#search-count");
 	if (searchCountElement) {
@@ -1074,6 +1045,7 @@ function setYearSelectMenu(input) {
 	}
 
 	input = input.replace(/^\s+/, "").replace(/\s+$/, "").replace(/\s+/, " ", "g");
+	input = input.replace(/^~/, "");
 
 	let yearSelect = document.querySelector("select.year");
 	if (!yearSelect) {
@@ -1290,18 +1262,38 @@ function clearSearchFields() {
 	let freetextElement = document.querySelector("input#input");
 	let composerElement = document.querySelector("select.composer");
 	let voiceElement    = document.querySelector("select.voice");
-	let textElement     = document.querySelector("select.text");
+	let textElement     = document.querySelector("#text-checkbox");
 	let yearElement     = document.querySelector("select.year");
 	let genreElement    = document.querySelector("select.genre");
 	let sourceElement   = document.querySelector("select.source");
 
-	freetextElement.value = "";
-	composerElement.value = "";
-	voiceElement.value    = "";
-	textElement.value     = "";
-	yearElement.value     = "";
-	genreElement.value    = "";
-	sourceElement.value   = "";
+	if (freetextElement) {
+		freetextElement.value = "";
+	}
+	if (composerElement) {
+		composerElement.value = "";
+	}
+	if (voiceElement) {
+		voiceElement.value = "";
+	}
+	if (textElement) {
+		textElement.checked = false;
+	}
+	if (yearElement) {
+		yearElement.value = "";
+	}
+	if (genreElement) {
+		genreElement.value = "";
+	}
+	if (sourceElement) {
+		sourceElement.value = "";
+	}
+
+	selectedMensurations.clear();
+	document.querySelectorAll(".mensuration-item.selected").forEach(item => {
+		item.classList.remove("selected");
+	});
+	renderSelectedMensurations();
 
 	doSearch();
 }

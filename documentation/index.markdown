@@ -1,7 +1,7 @@
 ---
 layout: page
 title: documentation
-order: 2
+order: 3
 ---
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-38882FHV3H"></script>
@@ -20,7 +20,7 @@ order: 2
 
 <div class="section-header"><h4>documentation</h4></div>
 
-<div class="page-content">
+<div class="documentation-layout">
 	<div class="toc-container">
 	  <h4>Table of Contents</h4>
 	  <ul>
@@ -240,4 +240,5 @@ order: 2
 	</ul>
 </section>
 
+</div>
 </div>
