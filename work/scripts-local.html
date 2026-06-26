@@ -236,17 +236,17 @@ function displayWorkInfo(id) {
 			sourcetype = "First";
 		}
 		if (diammsource) {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${diammsource}">${source}</a>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b><span><a target="_blank" href="${diammsource}">${source}</a>`;
 		} else if (rismsource) {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> <a target="_blank" href="${rismsource}">${source}</a>`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b><span><a target="_blank" href="${rismsource}">${source}</a>`;
 		} else {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b> ${source}`;
+			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b><span>${source}`;
 		}
 
 		if (foliosnumberspages) {
-			sourceoutput += `, ${foliosnumberspages}</div>`;
+			sourceoutput += `, ${foliosnumberspages}</span></div>`;
 		} else {
-			sourceoutput += `</div>`;
+			sourceoutput += `</span></div>`;
 		}
 
 	}
@@ -276,7 +276,7 @@ function displayWorkInfo(id) {
 		let signImages = signs.map(sign => {
 			let filename = mensurationSigns[sign];
 			if (filename) {
-				return `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${sign}" title="${sign}" style="height: 30px; margin-right: 5px;">`;
+				return `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${sign}" title="${sign}">`;
 			} else {
 				console.warn(`Warning: Mensuration sign not found in map: "${sign}"`);
 				return `<span class="missing-sign" title="${sign}">${sign}</span>`;
@@ -284,7 +284,7 @@ function displayWorkInfo(id) {
 		}).join("");
 
 
-		mensurationOutput = `<div class="work-item"><b>${label}:</b> ${signImages}</div>`;
+		mensurationOutput = `<div class="work-item mensuration-item"><b>${label}:</b><span class="mensuration-signs">${signImages}</span></div>`;
 	}
 
 	let editionsource       = workinfo["Edition Source"];
@@ -319,10 +319,10 @@ function displayWorkInfo(id) {
 
 	       // Create HTML output for modern editions
 			if (editionsInfo.length > 0) {
-			    modernEditionsOutput = `<div class="work-item"><b>Modern Editions:</b> `; // Keep space instead of <br>
+			    modernEditionsOutput = `<div class="work-item bibliography-block"><b>Modern Editions:</b><div class="bibliography-list">`;
 
 			    let formattedEditions = editionsInfo.map(ed => {
-			        let entry = `<span class="bibliographic-entry">`;
+			        let entry = `<div class="bibliographic-entry">`;
 
 			        if (ed["Composer/Author"]) entry += `${ed["Composer/Author"]}, `;
 			        if (ed["Name of Article"]) entry += ` "${ed["Name of Article"]}," `;
@@ -348,12 +348,12 @@ function displayWorkInfo(id) {
 			        if (ed["Number of Piece"]) entry += `, ${ed["Number of Piece"]}`;
 			        if (ed["Page Numbers"]) entry += `: ${ed["Page Numbers"]}`;
 			        
-			        entry += `.</span><br>`; // Use <span> instead of <div> to prevent forced new line
+			        entry += `.</div>`;
 
 			        return entry;
-				    }).join(""); // Join with semicolon and "and" for proper formatting
+				    }).join("");
 
-				    modernEditionsOutput += formattedEditions + `</div>`; // Closing the main div
+				    modernEditionsOutput += formattedEditions + `</div></div>`;
 				}
 		    } else {
 		        console.error("Error: DATA1520.lookup.modern_editions is undefined.");
@@ -379,7 +379,7 @@ function displayWorkInfo(id) {
 	musicxmlFallback = musicxmlFallback.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 	humdrum  = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
 
-	downloadoutput += `<div class="work-item"><b>Download:</b> <a onclick="forceDownload(event)" href="${pdf}" download>PDF</a> | <a onclick="forceDownload(event)" href="${musicxml}" data-fallback-url="${musicxmlFallback}">MusicXML</a> | <a onclick="forceDownload(event)" href="${mei}">MEI</a> | <a onclick="forceDownload(event)" href="${humdrum}">Humdrum</a> | <a onclick="forceDownload(event)" href="${sibelius}">Sibelius</a> | <a onclick="forceDownload(event)" href="${midi}">MIDI</a></div>`;
+	downloadoutput += `<div class="work-item work-link-group"><b>Download:</b><span class="work-link-list"><a class="work-action-link" onclick="forceDownload(event)" href="${pdf}" download>PDF</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${musicxml}" data-fallback-url="${musicxmlFallback}">MusicXML</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${mei}">MEI</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${humdrum}">Humdrum</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${sibelius}">Sibelius</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${midi}">MIDI</a></span></div>`;
 
 	let github = workinfo["Humdrum URL"];
 	let githuboutput = "";
@@ -390,7 +390,7 @@ function displayWorkInfo(id) {
 		efilter = encodeURIComponent(DATA1520.filter);
 		efilter = `&filter=${efilter}`;
 	}
-	githuboutput += `<div class="work-item"><b>View on:</b> <a target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a> | <a target='_blank' href='${github}'>Github</a></div>`;
+	githuboutput += `<div class="work-item work-link-group"><b>View on:</b><span class="work-link-list"><a class="work-action-link" target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a><span class="work-link-separator">·</span><a class="work-action-link" target='_blank' href='${github}'>Github</a></span></div>`;
 
 	let tbody = document.querySelector("tbody#work-info-body");
 	if (!tbody){
@@ -403,6 +403,8 @@ function displayWorkInfo(id) {
     const row = document.createElement("tr");
 
 	const leftColumnCell = document.createElement("td");
+	leftColumnCell.className = "work-info-column";
+	leftColumnCell.setAttribute("data-section-label", "Work");
     leftColumnCell.innerHTML = `${titleoutput}
         ${composeroutput}
         ${genreoutput}
@@ -413,6 +415,8 @@ function displayWorkInfo(id) {
     row.appendChild(leftColumnCell);
 
 	const middleColumnCell = document.createElement("td");
+	middleColumnCell.className = "work-info-column";
+	middleColumnCell.setAttribute("data-section-label", "Source");
     middleColumnCell.innerHTML = `${sourceoutput}
     	${dateoutput}
     	${mensurationOutput}
@@ -421,6 +425,8 @@ function displayWorkInfo(id) {
     row.appendChild(middleColumnCell);
 
 	const rightColumnCell = document.createElement("td");
+	rightColumnCell.className = "work-info-column";
+	rightColumnCell.setAttribute("data-section-label", "Access");
     rightColumnCell.innerHTML = `
     	${downloadoutput}
     	${githuboutput}
@@ -530,9 +536,9 @@ function displayExternalInfo(id) {
 
 	if (externalURL && externalName) {
 			if (criticalCommentary == "yes") {
-					output += `<center>For more information on <i>${title}</i> and the critical commentary, see <a target="_blank" href="${externalURL}">${externalName}</a>.</center><br><br>`;
+					output += `<div class="external-note">For more information on <i>${title}</i> and the critical commentary, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
 			} else {
-				output += `<center>For more information on <i>${title}</i>, see <a target="_blank" href="${externalURL}">${externalName}</a>.</center><br><br>`;
+				output += `<div class="external-note">For more information on <i>${title}</i>, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
 			}
 	}
 	element.innerHTML = output;
