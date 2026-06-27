@@ -206,12 +206,13 @@
     margin-left: auto;
   }
 
-  .site-nav label {
+  .site-nav label[for="nav-trigger"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 38px;
     height: 34px;
+    float: none;
     color: #284b63;
     background: rgba(255, 253, 248, 0.72);
     border: 1px solid rgba(40, 75, 99, 0.26);
@@ -219,7 +220,7 @@
     cursor: pointer;
   }
 
-  .site-nav label:hover {
+  .site-nav label[for="nav-trigger"]:hover {
     color: #132f43;
     border-color: rgba(40, 75, 99, 0.44);
     background: rgba(255, 253, 248, 0.94);
@@ -235,7 +236,14 @@
     height: auto;
     margin: 0;
     padding: 0;
+    float: none;
     line-height: 0;
+    text-align: center;
+  }
+
+  .site-nav .menu-icon svg {
+    width: 18px;
+    height: 15px;
   }
 
   .site-nav .menu-icon svg path {
@@ -286,8 +294,8 @@
     display: block;
   }
 
-  .site-nav .dropdown-trigger {
-    display: none;
+  .site-nav .dropdown > .dropdown-trigger.page-link {
+    display: none !important;
   }
 
   .site-nav .dropdown-content {
