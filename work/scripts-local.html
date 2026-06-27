@@ -236,11 +236,11 @@ function displayWorkInfo(id) {
 			sourcetype = "First";
 		}
 		if (diammsource) {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b><span><a target="_blank" href="${diammsource}">${source}</a>`;
+			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value"><a target="_blank" href="${diammsource}">${source}</a>`;
 		} else if (rismsource) {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b><span><a target="_blank" href="${rismsource}">${source}</a>`;
+			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value"><a target="_blank" href="${rismsource}">${source}</a>`;
 		} else {
-			sourceoutput += `<div class="work-item"><b>${sourcetype} source:</b><span>${source}`;
+			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value">${source}`;
 		}
 
 		if (foliosnumberspages) {
@@ -319,10 +319,11 @@ function displayWorkInfo(id) {
 
 	       // Create HTML output for modern editions
 			if (editionsInfo.length > 0) {
-			    modernEditionsOutput = `<div class="work-item bibliography-block"><b>Modern Editions:</b><div class="bibliography-list">`;
+			    modernEditionsOutput = `<div class="work-item bibliography-block">`;
 
-			    let formattedEditions = editionsInfo.map(ed => {
-			        let entry = `<div class="bibliographic-entry">`;
+			    let formattedEditions = editionsInfo.map((ed, index) => {
+			        let entry = `<div class="bibliographic-entry"><span class="bibliographic-text">`;
+			        if (index === 0) entry += `<b>Modern Editions:</b> `;
 
 			        if (ed["Composer/Author"]) entry += `${ed["Composer/Author"]}, `;
 			        if (ed["Name of Article"]) entry += ` "${ed["Name of Article"]}," `;
@@ -348,12 +349,12 @@ function displayWorkInfo(id) {
 			        if (ed["Number of Piece"]) entry += `, ${ed["Number of Piece"]}`;
 			        if (ed["Page Numbers"]) entry += `: ${ed["Page Numbers"]}`;
 			        
-			        entry += `.</div>`;
+			        entry += `.</span></div>`;
 
 			        return entry;
 				    }).join("");
 
-				    modernEditionsOutput += formattedEditions + `</div></div>`;
+				    modernEditionsOutput += formattedEditions + `</div>`;
 				}
 		    } else {
 		        console.error("Error: DATA1520.lookup.modern_editions is undefined.");

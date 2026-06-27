@@ -23,6 +23,7 @@ main {
 }
 
 #work-info {
+  --work-info-indent: 1.1rem;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -113,6 +114,21 @@ main {
 .info-link {
 	font-size: 12px;
 	opacity: 1;
+}
+
+.source-item {
+	display: block;
+	padding-left: var(--work-info-indent);
+	text-indent: calc(-1 * var(--work-info-indent));
+	white-space: normal;
+}
+
+.source-value {
+	display: inline;
+	padding-left: 0;
+	text-indent: 0;
+	overflow-wrap: break-word;
+	white-space: normal;
 }
 
 #work-info a,
@@ -314,18 +330,8 @@ audio {
 	padding: 0;
 }
 
-.bibliography-list {
-	display: inline;
-	font-size: 13px;
-	line-height: 1.42;
-	max-width: 100%;
-	white-space: normal;
-}
-
 .bibliography-block {
 	display: block;
-	padding-left: 1.1rem;
-	text-indent: -1.1rem;
 	white-space: normal;
 }
 
@@ -334,12 +340,10 @@ audio {
 	margin-bottom: 0;
 }
 
-.bibliography-block b::after {
-	content: " ";
-}
-
 .bibliographic-entry {
-	display: inline;
+	display: block;
+	font-size: 13px;
+	line-height: 1.42;
 	margin-top: 0;
 	padding-left: 0;
 	text-indent: 0;
@@ -351,8 +355,10 @@ audio {
 	margin-top: 0;
 }
 
-.bibliographic-entry + .bibliographic-entry::before {
-	content: " ";
+.bibliographic-text {
+	display: block;
+	padding-left: var(--work-info-indent);
+	text-indent: calc(-1 * var(--work-info-indent));
 }
 
 .mensuration-sign {
