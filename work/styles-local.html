@@ -377,13 +377,56 @@ audio {
 }
 
 @media (max-width: 900px) {
+	main {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.page-content {
+		min-width: 0;
+	}
+
+	#work-info {
+		width: 100%;
+		max-width: 100%;
+		padding: 12px;
+		overflow-wrap: break-word;
+	}
+
 	#work-info tbody tr {
 		grid-template-columns: 1fr;
+		justify-content: stretch;
 		gap: 14px;
+	}
+
+	#work-info td,
+	#work-info td:nth-child(3) {
+		justify-self: stretch;
+		width: 100%;
+		max-width: none;
+	}
+
+	.work-item,
+	.source-item,
+	.work-link-group,
+	.mensuration-item,
+	.bibliography-block,
+	.bibliographic-entry,
+	.bibliographic-text {
+		max-width: 100%;
+	}
+
+	.work-link-group,
+	.mensuration-item {
+		grid-template-columns: max-content minmax(0, 1fr);
 	}
 
 	.work-link-list {
 		flex-wrap: wrap;
+	}
+
+	.work-action-link {
+		white-space: normal;
 	}
 }
 
