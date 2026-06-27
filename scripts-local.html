@@ -241,9 +241,9 @@ function displayTopComposers() {
 	let data = METADATA;
 
 	const isMobile = window.innerWidth < 768;
-	const fontSize = isMobile ? 11 : 14;
+	const fontSize = isMobile ? 10.5 : 14;
 	const headerfontSize = isMobile ? 14 : 16;
-	const labelOffset = isMobile ? -110 : -140;
+	const labelOffset = isMobile ? -104 : -140;
 
 	let element = document.querySelector("#composer-plot");
 	if (!element) {
@@ -290,7 +290,7 @@ function displayTopComposers() {
 		    "color": "#6A6156"
 		  }
 		},
-		"width": isMobile ? 240 : 280,
+		"width": isMobile ? 228 : 280,
 		"data": {
 			"values": data
 		},
@@ -390,7 +390,7 @@ function displayTopComposers() {
 			}
 		],
 		"height": {
-			"step": 25
+			"step": isMobile ? 24 : 25
 		}
 	};
 

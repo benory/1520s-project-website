@@ -260,6 +260,26 @@ table.general tr:last-child a {
 }
 
 @media (max-width: 768px) {
+  .homepage-grid {
+    width: 100%;
+    max-width: 100%;
+    gap: 18px;
+    margin-top: 0;
+  }
+
+  .left-column,
+  .right-column,
+  .left-column > *,
+  .right-column > * {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .left-column > * {
+    margin-bottom: 18px;
+  }
+
   /* Stack Browse and Data Boxes Vertically */
   .browse-data-wrapper {
     flex-direction: column;
@@ -269,10 +289,48 @@ table.general tr:last-child a {
   .browse-box {
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
     margin: 0;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgba(40, 75, 99, 0.22);
+    border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  .data-box.apple-data {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 4px;
+  }
+
+  .data-metrics {
+    gap: 12px;
+  }
+
+  .metric-value {
+    font-size: 24px;
+  }
+
+  .data-header,
+  .metric-label,
+  .genre-label {
+    font-size: 12.5px;
+  }
+
+  #composer-plot {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 8px 0;
+  }
+
+  #composer-plot .vega-embed,
+  #composer-plot canvas,
+  #composer-plot svg {
+    max-width: 100%;
   }
 
   /* Aligning Search Box and Button Vertically */
@@ -284,6 +342,13 @@ table.general tr:last-child a {
 
   .search-container input {
     width: 100%;
+  }
+
+  .apple-search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border-radius: 4px;
   }
 
   .search-container .button {
@@ -301,6 +366,7 @@ table.general tr:last-child a {
 
   table.general {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     overflow-x: auto;
     display: block; /* Allows horizontal scrolling */
@@ -348,6 +414,13 @@ table.general tr:last-child a {
   /* Adjust row height for better readability */
   table.general td {
     line-height: 1.4; /* Space between lines */
+  }
+
+  #general {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
 }
