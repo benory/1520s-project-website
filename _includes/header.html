@@ -48,6 +48,10 @@
   position: relative;
 }
 
+.site-nav label {
+  display: none;
+}
+
 .site-nav .trigger {
   display: flex;
   align-items: center;
@@ -180,6 +184,117 @@
 
 /* Mobile view adjustments */
 @media (max-width: 768px) {
+  .site-header {
+    min-height: 0;
+  }
+
+  .site-header .wrapper {
+    max-width: none;
+    padding: 6px 16px;
+  }
+
+  .site-header .header-main {
+    flex-wrap: nowrap;
+    gap: 14px;
+  }
+
+  .site-title img {
+    height: 52px;
+  }
+
+  .site-nav {
+    margin-left: auto;
+  }
+
+  .site-nav label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 34px;
+    color: #284b63;
+    background: rgba(255, 253, 248, 0.72);
+    border: 1px solid rgba(40, 75, 99, 0.26);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .site-nav label:hover {
+    color: #132f43;
+    border-color: rgba(40, 75, 99, 0.44);
+    background: rgba(255, 253, 248, 0.94);
+  }
+
+  .site-nav .menu-icon,
+  .site-nav .menu-icon svg {
+    display: block;
+  }
+
+  .site-nav .menu-icon svg path {
+    fill: currentColor;
+  }
+
+  .site-nav .nav-trigger {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .site-nav .trigger {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: min(260px, calc(100vw - 32px));
+    padding: 7px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: rgba(254, 247, 231, 0.98);
+    border: 1px solid rgba(40, 75, 99, 0.18);
+    border-radius: 4px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.14);
+  }
+
+  .site-nav .nav-trigger:checked ~ .trigger {
+    display: flex;
+  }
+
+  .site-nav .page-link,
+  .site-nav .dropdown-content a {
+    display: block;
+    padding: 10px 11px;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .site-nav .trigger > .page-link::after,
+  .site-nav .dropdown > .dropdown-trigger::after,
+  .site-nav .dropdown::after {
+    display: none;
+  }
+
+  .site-nav .dropdown {
+    display: block;
+  }
+
+  .site-nav .dropdown-content {
+    display: block;
+    position: static;
+    min-width: 0;
+    margin: 0 0 3px;
+    padding: 0 0 0 10px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .site-nav .dropdown-content a {
+    font-size: 14px;
+    color: #426176;
+  }
+
   .banner img.desktop-banner {
     display: none; /* Hide the full banner on mobile */
   }
@@ -210,7 +325,7 @@
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
+        <label for="nav-trigger" aria-label="Open navigation menu">
           <span class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
               <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>

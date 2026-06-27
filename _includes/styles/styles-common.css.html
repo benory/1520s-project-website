@@ -144,4 +144,60 @@ table.general .first-name {
   color: #6A6156;
 }
 
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main.page-content {
+    padding: 0 16px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  main.page-content .wrapper {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  main.page-content p,
+  main.page-content ul {
+    font-size: 15px;
+    line-height: 1.58;
+  }
+
+  main.page-content h2 {
+    font-size: 20px;
+    line-height: 1.28;
+    margin-top: 24px;
+  }
+
+  main.page-content h3 {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .section-header {
+    padding: 0;
+  }
+
+  table.general {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table.general th,
+  table.general td {
+    white-space: nowrap;
+  }
+}
+
 </style>
