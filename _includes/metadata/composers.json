@@ -110,6 +110,16 @@
 		"Flourished": "1518–1518"
 	},
 	{
+		"ID": "For",
+		"Composer": "Forestier, Mathurin",
+		"Composer RISM ID": "pe30006148",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/268/",
+		"Start of CYA": "1500",
+		"End of CYA": "1535",
+		"Flourished": "1500–1535",
+		"Places Active": "France"
+	},
+	{
 		"ID": "Fsc",
 		"Composer": "Festa, Costanzo",
 		"Composer RISM ID": "pe30004621",
