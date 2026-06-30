@@ -41,6 +41,7 @@ order: 3
 	        <li><a href="#score-preparation">Score preparation</a></li>
 	        <li><a href="#encoded-information">Encoded information</a></li>
 	        <li><a href="#source-metadata">Source metadata</a></li>
+	        <li><a href="#pitch-range-plots">Pitch range plots</a></li>
 	        <li><a href="#website">Website</a>
 	          <ul>
 	            <li><a href="#javascript-tools">JavaScript tools</a></li>
@@ -181,6 +182,20 @@ order: 3
 <h3 id="source-metadata">Source metadata</h3>
 
 <section><p>Metadata for each piece includes the (probable) earliest source in the piece's transmission and its dating. External links are provided to <a href="https://www.diamm.ac.uk/" target="_blank">DIAMM</a> or <a href="https://rism.online/" target="_blank">RISM</a> as appropriate. Names of manuscript sources on the browse page and on individual work pages follow RISM nomenclature.</p></section>
+
+<h3 id="pitch-range-plots">Pitch range plots</h3>
+
+<section>
+	<p>On work pages, pitch range plots summarize the pitch space of each voice. Each voice has its own staff; the final <i>all</i> row combines them.</p>
+	<figure class="documentation-figure pitch-range-figure">
+		<object class="interactive-svg" data="/images/pitch_range_plot_example.svg" type="image/svg+xml" aria-label="Example pitch range plot showing individual voice ranges and the combined all-voices row">
+			<img src="/images/pitch_range_plot_example.svg" alt="Example pitch range plot showing individual voice ranges and the combined all-voices row">
+		</object>
+	</figure>
+	<p>Large black noteheads mark lowest and highest pitches, the small white notehead the median, and gray noteheads final notes. Hover over noteheads for marker explanations.</p>
+	<p>Histogram bars show pitch prevalence. In <strong>Note counts</strong>, pitches are weighted by attacks; in <strong>Durations</strong>, by total sounding duration. Hover over a bar for its pitch and count or duration.</p>
+	<p>Accidental colors come from the encoded score: flats in dark red/brown, sharps in blue. Because notated and sounding accidentals are not always fully distinguished, the colors are a practical performance guide, not a definitive record of original notation.</p>
+</section>
 
 <h3 id="website">Website</h3>
 

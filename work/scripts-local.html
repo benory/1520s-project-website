@@ -34,6 +34,7 @@ function displayWork(id) {
 			// callback function to run after SVG score has been displayed.
 			removeWait();
 			prepareQEvents(id);
+			preloadAnalysisAssets();
 		};
 		DATA1520.INITIALIZED = true;
 	}
@@ -648,10 +649,59 @@ async function downloadAndDisplayInlineSvg(url, container) {
 	try {
 		const response = await fetch(url);
 		const text     = await response.text();
-		container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
+		const parser   = new DOMParser();
+		const doc      = parser.parseFromString(text, "image/svg+xml");
+		const svg      = doc.querySelector("svg");
+
+		if (!svg) {
+			container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
+			return;
+		}
+
+		repairMalformedAnalysisViewBox(svg);
+		svg.removeAttribute("width");
+		svg.removeAttribute("height");
+		svg.classList.add("analysis-svg");
+		svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
+		let link = document.createElement("a");
+		link.className = "analysis-svg-link";
+		link.style.cursor = "pointer";
+		link.target = "_blank";
+		link.href = url;
+		link.appendChild(document.importNode(svg, true));
+		container.replaceChildren(link);
 	} catch (error) {
 		console.error("Error fetching or displaying the image:", error);
 	}
+}
+
+
+//////////////////////////////
+//
+// repairMalformedAnalysisViewBox -- Some generated range SVGs are missing
+//    the min-y viewBox value, e.g. "29   550 102" instead of "29 0 550 102".
+//
+
+function repairMalformedAnalysisViewBox(svg) {
+	let viewBox = svg.getAttribute("viewBox");
+	if (!viewBox) {
+		return;
+	}
+
+	let values = viewBox.trim().split(/\s+/);
+	if (values.length !== 3) {
+		return;
+	}
+
+	let minX = values[0];
+	let width = values[1] || svg.getAttribute("width");
+	let height = values[2] || svg.getAttribute("height");
+	if (!minX || !width || !height) {
+		return;
+	}
+
+	svg.setAttribute("viewBox", `${minX} 0 ${width} ${height}`);
 }
 
 
@@ -667,6 +717,32 @@ function downloadData(container, id, ext, ID) {
 		downloadAndDisplayInlinePng(url, container);
 	} else if (ext === "svg") {
 		downloadAndDisplayInlineSvg(url, container);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// preloadAnalysisAssets -- Load analysis images after the score renders so
+//    toggles can reveal cached content without waiting on the network.
+//
+
+function preloadAnalysisAssets() {
+	let assets = [
+		{ id: "activity-merged-notitle", ext: "png" },
+		{ id: "activity-separate-notitle", ext: "png" },
+		{ id: "prange-attack", ext: "svg" },
+		{ id: "prange-duration", ext: "svg" }
+	];
+
+	for (let i=0; i<assets.length; i++) {
+		let asset = assets[i];
+		let container = document.querySelector(`#${asset.id}-display`);
+		if (!container || container.innerHTML.length) {
+			continue;
+		}
+		downloadData(container, asset.id, asset.ext);
 	}
 }
 

@@ -219,6 +219,7 @@ main {
 
 .button,
 .analysis-toggle.button {
+  appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -226,9 +227,12 @@ main {
   height: 32px;
   padding: 0 11px;
 
+  font-family: inherit;
   font-size: 13.5px;
   font-weight: 500;
   line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
 
   color: #142f46;
   background: #f8f9f8;
@@ -273,12 +277,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 7px 8px;
-  align-items: center;          
-  margin: 12px 0 18px;
+  align-items: center;
+  margin: 12px 0 10px;
 }
 
 #analysis-plots {
 	text-align: center;
+	margin: 0 0 18px;
 }
 
 #accidentalSelect .button {
@@ -286,20 +291,150 @@ main {
 	text-align: center;
 }
 
+#accidentalSelect {
+	display: inline-flex;
+}
+
 .analysis-plot {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 800px;
+	max-width: 763px;
 	width: 100%;
+	overflow-x: auto;
+	box-sizing: border-box;
 }
 
 .analysis-plot svg {
-  width: 100%;
-  min-width: 720px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+	width: 100%;
+	min-width: 720px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.analysis-plot img {
+	max-width: 100%;
+	height: auto;
+}
+
+.analysis-panel {
+	padding: 10px 12px 14px;
+	background: #fbfcfc;
+	border: 1px solid #d4dde1;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(12, 24, 32, 0.035);
+}
+
+.activity-analysis-plot a {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.activity-analysis-plot img {
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.activity-analysis-plot .work-activity-controls,
+.range-analysis-plot .work-range-controls {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 0 10px;
+}
+
+.work-range-mode-toggle {
+	align-items: center;
+	color: #5c6a70;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 13px;
+	font-weight: 500;
+	gap: 8px;
+	line-height: 18px;
+}
+
+.work-range-mode-toggle input {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.work-range-mode-label.is-active {
+	color: #102d45;
+}
+
+.work-range-mode-switch {
+	background: #dbe4e8;
+	border: 1px solid #b7c5cc;
+	border-radius: 999px;
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	transition: background-color 120ms ease, border-color 120ms ease;
+	width: 40px;
+}
+
+.work-range-mode-switch::after {
+	background: #ffffff;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+	content: "";
+	height: 16px;
+	left: 2px;
+	position: absolute;
+	top: 1px;
+	transition: transform 120ms ease;
+	width: 16px;
+}
+
+.work-range-mode-toggle input:checked + .work-range-mode-switch {
+	background: #123654;
+	border-color: #123654;
+}
+
+.work-range-mode-toggle input:checked + .work-range-mode-switch::after {
+	transform: translateX(20px);
+}
+
+.analysis-help-note {
+	margin: 0 0 10px;
+	color: #364850;
+	font-size: 12.5px;
+	line-height: 1.42;
+	text-align: left;
+}
+
+.analysis-help-note summary {
+	width: max-content;
+	color: #123654;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.analysis-help-note p {
+	margin: 6px 0 0;
+}
+
+.range-plot {
+	width: 100%;
+}
+
+.range-plot a {
+	display: block;
+	width: 100%;
+}
+
+.range-plot .analysis-svg {
+	display: block;
+	width: 100% !important;
+	min-width: 0;
+	max-width: 100%;
+	height: auto !important;
+	margin: 0 auto;
 }
 
 .play, .mp3play,
@@ -406,6 +541,18 @@ audio {
 		justify-self: stretch;
 		width: 100%;
 		max-width: none;
+	}
+
+	.button-container,
+	#analysis-plots {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+	.button,
+	.analysis-toggle.button {
+		height: auto;
+		min-height: 32px;
 	}
 
 	.work-item,

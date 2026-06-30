@@ -101,20 +101,26 @@ document.addEventListener("DOMContentLoaded", function () {
 // toggleAnalysisDisplay -- Show or hide analysis plots.
 //
 
-document.addEventListener("click", function(event) {
-	let target = event.target;
-	if (!target.classList.contains("analysis-toggle")) {
-		return;
+function setAnalysisToggleState(target, isActive) {
+	target.classList.toggle("active", isActive);
+	if (target.hasAttribute("aria-pressed")) {
+		target.setAttribute("aria-pressed", isActive ? "true" : "false");
 	}
-	let analysisType = target.id;
+	if (target.hasAttribute("aria-expanded")) {
+		target.setAttribute("aria-expanded", isActive ? "true" : "false");
+	}
+}
 
-	if (event.target.classList.contains("analysis-toggle")) {
-		if (event.target.classList.contains("active")) {
-			event.target.classList.remove("active");
-		} else {
-			event.target.classList.add("active");
-		}
+
+function downloadAnalysisDataIfNeeded(container, analysisType, ext) {
+	if (!container.innerHTML.length) {
+		downloadData(container, analysisType, ext);
 	}
+}
+
+
+function toggleSingleAnalysisDisplay(target) {
+	let analysisType = target.id;
 	if (!analysisType) {
 		console.warn("Analysis element ID was not given");
 		return;
@@ -129,15 +135,147 @@ document.addEventListener("click", function(event) {
 		console.warn("No analysis container", `#${analysisType}-display`);
 		return;
 	}
-	let contents = container.innerHTML;
-	let empty = contents.length ? false : true;
-	if (empty) {
-		downloadData(container, analysisType, ext);
-	}
-	if (container.classList.contains("hidden")) {
+	let willShow = container.classList.contains("hidden");
+	if (willShow) {
+		downloadAnalysisDataIfNeeded(container, analysisType, ext);
 		container.classList.remove("hidden");
 	} else {
 		container.classList.add("hidden");
+	}
+	setAnalysisToggleState(target, willShow);
+}
+
+
+function getSelectedRangeAnalysisType() {
+	let rangeMode = document.querySelector("#work-range-mode");
+	if (rangeMode && rangeMode.checked) {
+		return "prange-duration";
+	}
+	return "prange-attack";
+}
+
+
+function updateRangeModeLabels() {
+	let selectedType = getSelectedRangeAnalysisType();
+	let labels = document.querySelectorAll("#prange-display .work-range-mode-label");
+	for (let i=0; i<labels.length; i++) {
+		let isSelected = (
+			(labels[i].dataset.rangeLabel === "attack" && selectedType === "prange-attack") ||
+			(labels[i].dataset.rangeLabel === "duration" && selectedType === "prange-duration")
+		);
+		labels[i].classList.toggle("is-active", isSelected);
+	}
+}
+
+
+function showSelectedRangeAnalysis() {
+	let selectedType = getSelectedRangeAnalysisType();
+	let plots = document.querySelectorAll("#prange-display .range-plot");
+	for (let i=0; i<plots.length; i++) {
+		plots[i].classList.toggle("hidden", plots[i].id !== `${selectedType}-display`);
+	}
+	let container = document.querySelector(`#${selectedType}-display`);
+	if (container) {
+		downloadAnalysisDataIfNeeded(container, selectedType, "svg");
+	}
+	updateRangeModeLabels();
+}
+
+
+function getSelectedActivityAnalysisType() {
+	let activityMode = document.querySelector("#work-activity-mode");
+	if (activityMode && activityMode.checked) {
+		return "activity-separate-notitle";
+	}
+	return "activity-merged-notitle";
+}
+
+
+function updateActivityModeLabels() {
+	let selectedType = getSelectedActivityAnalysisType();
+	let labels = document.querySelectorAll("#activity-display .work-range-mode-label");
+	for (let i=0; i<labels.length; i++) {
+		let isSelected = (
+			(labels[i].dataset.activityLabel === "merged" && selectedType === "activity-merged-notitle") ||
+			(labels[i].dataset.activityLabel === "separate" && selectedType === "activity-separate-notitle")
+		);
+		labels[i].classList.toggle("is-active", isSelected);
+	}
+}
+
+
+function showSelectedActivityAnalysis() {
+	let selectedType = getSelectedActivityAnalysisType();
+	let plots = document.querySelectorAll("#activity-display .activity-plot");
+	for (let i=0; i<plots.length; i++) {
+		plots[i].classList.toggle("hidden", plots[i].id !== `${selectedType}-display`);
+	}
+	let container = document.querySelector(`#${selectedType}-display`);
+	if (container) {
+		downloadAnalysisDataIfNeeded(container, selectedType, "png");
+	}
+	updateActivityModeLabels();
+}
+
+
+function toggleActivityAnalysis(target) {
+	let container = document.querySelector("#activity-display");
+	if (!container) {
+		console.warn("No analysis container", "#activity-display");
+		return;
+	}
+	let willShow = container.classList.contains("hidden");
+	if (willShow) {
+		container.classList.remove("hidden");
+		showSelectedActivityAnalysis();
+	} else {
+		container.classList.add("hidden");
+	}
+	setAnalysisToggleState(target, willShow);
+}
+
+
+function toggleVocalRangeAnalysis(target) {
+	let container = document.querySelector("#prange-display");
+	if (!container) {
+		console.warn("No analysis container", "#prange-display");
+		return;
+	}
+	let willShow = container.classList.contains("hidden");
+	if (willShow) {
+		container.classList.remove("hidden");
+		showSelectedRangeAnalysis();
+	} else {
+		container.classList.add("hidden");
+	}
+	setAnalysisToggleState(target, willShow);
+}
+
+
+document.addEventListener("click", function(event) {
+	let target = event.target.closest(".analysis-toggle");
+	if (!target) {
+		return;
+	}
+	if (target.dataset.analysisGroup === "activity") {
+		toggleActivityAnalysis(target);
+		return;
+	}
+	if (target.dataset.analysisGroup === "vocal-ranges") {
+		toggleVocalRangeAnalysis(target);
+		return;
+	}
+	toggleSingleAnalysisDisplay(target);
+});
+
+
+document.addEventListener("change", function(event) {
+	if (event.target.id === "work-range-mode") {
+		showSelectedRangeAnalysis();
+		return;
+	}
+	if (event.target.id === "work-activity-mode") {
+		showSelectedActivityAnalysis();
 	}
 });
 
@@ -330,6 +468,4 @@ document.addEventListener('keydown', function(event) {
 
 
 </script>
-
-
 
