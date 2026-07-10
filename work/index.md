@@ -39,6 +39,7 @@ layout: work
     </div>
     <button type="button" id="activity" data-analysis-group="activity" class="analysis-toggle button" aria-expanded="false" aria-controls="activity-display">Activity plots</button>
     <button type="button" id="prange" data-analysis-group="vocal-ranges" class="analysis-toggle button" aria-expanded="false" aria-controls="prange-display">Vocal ranges</button>
+    <button type="button" id="autocadence-filter" class="filter-toggle button" aria-pressed="false" onclick="toggleAutocadenceFilter()">Automatic Cadence Finder</button>
 </div>
 
 <div id="analysis-plots">

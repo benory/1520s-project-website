@@ -3,6 +3,8 @@
 <script>
 // vim: ts=3:nowrap
 
+const AUTOCADENCE_FILTER = "autocadence -c -d | shed -ke 's/:cvf:([^:]*):t=[^:]*/:cvf:$1/gL' | shed -ke 's/:diss:([^:]*):t=[^:]*/:diss:$1/gL'";
+
 
 //////////////////////////////
 //
@@ -52,6 +54,7 @@ function displayWork(id) {
 	displayWorkInfo(id);
 	displayExternalInfo(id);
 	displayWorkFooter(id);
+	updateWorkPageFilterControls(id);
 }
 
 
@@ -386,13 +389,7 @@ function displayWorkInfo(id) {
 	let github = workinfo["Humdrum URL"];
 	let githuboutput = "";
 
-	let urlParam = encodeURIComponent(github);
-	let efilter = "";
-	if (DATA1520.filter) {
-		efilter = encodeURIComponent(DATA1520.filter);
-		efilter = `&filter=${efilter}`;
-	}
-	githuboutput += `<div class="work-item work-link-group"><b>View on:</b><span class="work-link-list"><a class="work-action-link" target='_blank' href='https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}'>VHV</a><span class="work-link-separator">·</span><a class="work-action-link" target='_blank' href='${github}'>Github</a></span></div>`;
+	githuboutput += `<div class="work-item work-link-group"><b>View on:</b><span class="work-link-list"><a id="work-vhv-link" class="work-action-link" target='_blank' href='${getVhvUrl(github)}'>VHV</a><span class="work-link-separator">·</span><a class="work-action-link" target='_blank' href='${github}'>Github</a></span></div>`;
 
 	let tbody = document.querySelector("tbody#work-info-body");
 	if (!tbody){
@@ -436,6 +433,89 @@ function displayWorkInfo(id) {
         `;
     row.appendChild(rightColumnCell);
     tbody.appendChild(row);
+}
+
+
+
+//////////////////////////////
+//
+// getVhvUrl -- Create the current VHV link, including active work filters.
+//
+
+function getVhvUrl(github) {
+	let urlParam = encodeURIComponent(github);
+	let efilter = "";
+	if (DATA1520.filter) {
+		efilter = `&filter=${encodeURIComponent(DATA1520.filter)}`;
+	}
+	return `https://verovio.humdrum.org/?k=e&file=${urlParam}${efilter}`;
+}
+
+
+
+//////////////////////////////
+//
+// updateWorkVhvLink -- Keep the VHV link aligned with the active filter.
+//
+
+function updateWorkVhvLink(id) {
+	let link = document.querySelector("#work-vhv-link");
+	if (!link) {
+		return;
+	}
+	if (!id) {
+		id = DATA1520.workid;
+	}
+	let workinfo = DATA1520.lookup.works[id];
+	if (!workinfo) {
+		return;
+	}
+	link.href = getVhvUrl(workinfo["Humdrum URL"]);
+}
+
+
+
+//////////////////////////////
+//
+// updateWorkPageFilterControls -- Show active states for notation filters.
+//
+
+function updateWorkPageFilterControls(id) {
+	updateAutocadenceButtonState();
+	updateWorkVhvLink(id);
+}
+
+
+
+//////////////////////////////
+//
+// toggleAutocadenceFilter -- Toggle the autocadence filter for notation.
+//
+
+function toggleAutocadenceFilter() {
+	if (DATA1520.filter === AUTOCADENCE_FILTER) {
+		DATA1520.filter = "";
+	} else {
+		DATA1520.filter = AUTOCADENCE_FILTER;
+	}
+	displayWork();
+}
+
+
+
+//////////////////////////////
+//
+// updateAutocadenceButtonState -- Show whether the autocadence filter is active.
+//
+
+function updateAutocadenceButtonState() {
+	let element = document.querySelector("#autocadence-filter");
+	if (!element) {
+		return;
+	}
+	let isActive = DATA1520.filter === AUTOCADENCE_FILTER;
+	element.classList.toggle("active", isActive);
+	element.setAttribute("aria-pressed", isActive ? "true" : "false");
 }
 
 
