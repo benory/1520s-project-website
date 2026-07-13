@@ -144,6 +144,7 @@ order: 1
 
 <h2>Advisory Board</h2>
 <ul id="advisory-list">
+  <li>David Burn (Katholieke Universiteit Leuven)</li>
   <li>Philippe Canguilhem (Centre d'études supérieures de la Renaissance, Université de Tours)</li>
   <li>Antonio Chemotti (Katholieke Universiteit Leuven)</li>
   <li>Julie Cumming (McGill University)</li>
