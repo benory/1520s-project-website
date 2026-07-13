@@ -6559,6 +6559,28 @@
 		"FILEBASE": "Opi2001-Sub_tuum_presidium"
 	},
 	{
+		"ID": "Opi2002",
+		"Composer": "de Opitiis, Benedictus",
+		"Title": "Summe laudis o Maria",
+		"Genre": "motet",
+		"Voices": "4",
+		"Original Voices": "4",
+		"First Source": "Lofzangen ter eere van Keizer Maximiliaan (Antwerp: Jan de Gheet)",
+		"RISM Source Link": "https://rism.online/sources/990047450",
+		"RISM or CC Source Sigla": "O 96",
+		"Pages, Folios, or Numbers": "fols. 6v–12v",
+		"Mensuration Signs in Earliest Source": "O; C2; 3; Cut-C",
+		"First Source Exact Date": "1515",
+		"Source Date": "1515",
+		"Unique Source": "yes",
+		"Texted": "no",
+		"Transcriber": "Raphaela Herzfeld",
+		"Date Added": "2026-7-13",
+		"Note Count": "2054",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Opi/Opi2002-Summe_laudis_o_Maria--Lofzangen.krn",
+		"FILEBASE": "Opi2002-Summe_laudis_o_Maria--Lofzangen"
+	},
+	{
 		"ID": "Ren1001a",
 		"Composer": "Renaldo",
 		"Title": "Missa Sine nomine",
