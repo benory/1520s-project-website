@@ -1,5 +1,4 @@
 
-// vim: ts=3:nowrap
 
 let QEVENTS   = [];
 let LASTTIME  = -1;
