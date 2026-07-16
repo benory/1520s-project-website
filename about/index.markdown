@@ -145,6 +145,7 @@ order: 1
   <li>Sean Gallagher (New England Conservatory)</li>
   <li>Nori Jacoby (Cornell University)</li>
   <li>Marcin Konik (Fryderyk Chopin Institute, Warsaw)</li>
+  <li>Birgit Lodes (Universität Wien)</li>
   <li>Laurent Pugin (Universität Bern/Répertoire International des Sources Musicales)</li>
   <li>Jamie Reuland (Princeton University)</li>
   <li>Emiliano Ricciardi (University of Massachusetts, Amherst)</li>
