@@ -118,10 +118,6 @@ function makeTableBody(headings, data) {
 				value = value.replace(/\//g, '/<wbr>');
 			}
 
-			if (key === INDEX_title) {
-				value = `<i>${value}</i>`;
-			}
-
 			if (key === INDEX_dating) {
 				let range = entry["Dating (range)"];
 				if (range) {

@@ -162,7 +162,7 @@ function displayMostRecent(metadata) {
 function prepareTitle(entry) {
 	let output = entry.Title;
 	if (entry.Subtitle) {
-		output += `, <i>${entry.Subtitle}</i>`;
+		output += `, <span class="work-subtitle">${entry.Subtitle}</span>`;
 	}
 	let id = entry.ID || "";
 	if (id) {
@@ -407,7 +407,7 @@ function displayTopComposers() {
 
 function renderSuggestion(entry) {
   const title = entry.Subtitle
-    ? `${entry.Title}, <i>${entry.Subtitle}</i>`
+    ? `${entry.Title}, ${entry.Subtitle}`
     : entry.Title;
 
   const composer = entry.Composer || "Unknown";

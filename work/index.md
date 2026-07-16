@@ -3,6 +3,10 @@ layout: work
 ---
 
 {% include_relative styles-local.html %}
+{% assign error_report = site.error_report %}
+{% if error_report.turnstile_sitekey %}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{% endif %}
 
 <audio id="audio"></audio>
 
@@ -31,6 +35,82 @@ layout: work
     <button type="button" id="activity" data-analysis-group="activity" class="analysis-toggle button" aria-expanded="false" aria-controls="activity-display">Activity plots</button>
     <button type="button" id="prange" data-analysis-group="vocal-ranges" class="analysis-toggle button" aria-expanded="false" aria-controls="prange-display">Vocal ranges</button>
     <button type="button" id="autocadence-filter" class="filter-toggle button" aria-pressed="false" onclick="toggleAutocadenceFilter()">Automatic Cadence Finder</button>
+    <button type="button" id="error-report-open" class="button error-report-open" aria-haspopup="dialog" aria-controls="error-report-modal">Report an error</button>
+</div>
+
+<div id="error-report-modal" class="error-report-modal hidden" role="dialog" aria-modal="true" aria-labelledby="error-report-title" aria-describedby="error-report-intro">
+    <div class="error-report-backdrop" data-error-report-close></div>
+    <div class="error-report-dialog" tabindex="-1">
+        <div class="error-report-header">
+            <h2 id="error-report-title">Report an error</h2>
+            <button type="button" class="error-report-close" aria-label="Close error report form" data-error-report-close>&times;</button>
+        </div>
+        <p id="error-report-intro" class="error-report-intro">Use this form to report a problem with this work's score, metadata, audio, downloads, or page display. Fields marked * are required.</p>
+
+        <form
+            id="error-report-form"
+            class="error-report-form"
+            action="{{ error_report.worker_url | escape }}"
+            method="POST"
+            novalidate
+        >
+            <input type="hidden" name="category" value="Error report">
+
+            <div class="error-report-field error-report-target-field">
+                <span class="error-report-label">Work or page being reported</span>
+                <p id="error_report_target_display" class="error-report-target-display"></p>
+                <input
+                    id="error_report_target"
+                    name="target"
+                    type="hidden"
+                    value=""
+                >
+            </div>
+
+            <div class="error-report-field">
+                <label for="error_report_description">Description *</label>
+                <textarea
+                    id="error_report_description"
+                    name="description"
+                    rows="5"
+                    required
+                    placeholder="Describe the problem..."
+                ></textarea>
+            </div>
+
+            <div class="error-report-field">
+                <label for="error_report_email">Email address *</label>
+                <input
+                    id="error_report_email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                >
+            </div>
+
+            {% if error_report.turnstile_sitekey %}
+            <div class="error-report-field error-report-field--turnstile">
+                <div
+                    class="cf-turnstile"
+                    data-sitekey="{{ error_report.turnstile_sitekey | escape }}"
+                ></div>
+            </div>
+            {% else %}
+            <div class="error-report-config-note" role="note">Cloudflare Turnstile will appear here after the site key is configured.</div>
+            {% endif %}
+
+            <input id="error_report_user_agent" type="hidden" name="user_agent" value="">
+
+            <div class="error-report-actions">
+                <button type="button" class="button error-report-cancel" data-error-report-close>Cancel</button>
+                <button type="submit" class="button error-report-submit">Submit report</button>
+            </div>
+
+            <div id="error-report-status" class="error-report-status" aria-live="polite"></div>
+        </form>
+    </div>
 </div>
 
 <div id="analysis-plots">

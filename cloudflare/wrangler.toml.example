@@ -1,0 +1,15 @@
+name = "the1520s-error-report"
+main = "error-report-worker.js"
+compatibility_date = "2026-07-16"
+
+[vars]
+GOOGLE_FORM_POST_URL = "https://docs.google.com/forms/d/e/REPLACE_FORM_ID/formResponse"
+GOOGLE_FORM_ENTRY_CATEGORY = "entry.REPLACE_CATEGORY"
+GOOGLE_FORM_ENTRY_TARGET = "entry.REPLACE_TARGET"
+GOOGLE_FORM_ENTRY_DESCRIPTION = "entry.REPLACE_DESCRIPTION"
+GOOGLE_FORM_ENTRY_EMAIL = "entry.REPLACE_EMAIL"
+GOOGLE_FORM_ENTRY_USER_AGENT = "entry.REPLACE_USER_AGENT"
+ALLOWED_ORIGINS = "https://1520s-project.org,https://www.1520s-project.org,http://localhost:4000,http://127.0.0.1:4000,http://localhost:4001,http://127.0.0.1:4001"
+
+# Set this secret outside source control:
+# wrangler secret put TURNSTILE_SECRET_KEY

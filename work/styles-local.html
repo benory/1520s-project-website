@@ -282,6 +282,229 @@ main {
   margin: 12px 0 10px;
 }
 
+.error-report-open {
+	margin-left: auto;
+	color: #ffffff;
+	background: rgba(193, 116, 82, 0.84);
+	border-color: rgba(193, 116, 82, 0.92);
+	font-weight: 650;
+}
+
+.error-report-open:hover {
+	color: #ffffff;
+	background: rgba(193, 116, 82, 0.98);
+	border-color: rgba(193, 116, 82, 1);
+}
+
+body.error-report-modal-open {
+	overflow: hidden;
+}
+
+.error-report-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	padding: 24px;
+}
+
+.error-report-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(15, 28, 38, 0.48);
+}
+
+.error-report-dialog {
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	width: min(560px, 100%);
+	max-height: min(720px, calc(100vh - 48px));
+	overflow: auto;
+	padding: 16px 18px 14px;
+	color: #1e2b31;
+	background: #ffffff;
+	border: 1px solid #b7c2c8;
+	border-radius: 6px;
+	box-shadow: 0 18px 45px rgba(12, 24, 32, 0.26);
+}
+
+.error-report-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 6px;
+}
+
+.error-report-header h2 {
+	margin: 0;
+	color: #123654;
+	font-size: 20px;
+	font-weight: 650;
+	line-height: 1.2;
+}
+
+.error-report-close {
+	appearance: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	flex: 0 0 32px;
+	padding: 0;
+	color: #41515a;
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font: inherit;
+	font-size: 25px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.error-report-close:hover,
+.error-report-close:focus {
+	color: #071f36;
+	background: #eef3f5;
+	border-color: #b9c4c8;
+	outline: none;
+}
+
+.error-report-intro,
+.error-report-config-note,
+.error-report-status {
+	font-size: 13.5px;
+	line-height: 1.45;
+}
+
+.error-report-intro {
+	margin: 0 0 11px;
+	color: #40505a;
+}
+
+.error-report-form {
+	margin: 0;
+}
+
+.error-report-field {
+	margin-bottom: 10px;
+}
+
+.error-report-field label,
+.error-report-label {
+	display: block;
+	margin-bottom: 5px;
+	color: #242b2f;
+	font-size: 13.5px;
+	font-weight: 650;
+}
+
+.error-report-target-display {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 7px 9px;
+	color: #24333b;
+	background: #f5f7f7;
+	border: 1px solid #d4dde1;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1.35;
+}
+
+.error-report-field textarea,
+.error-report-field input[type="email"],
+.error-report-field input[type="text"] {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px 9px;
+	color: #1e2b31;
+	background: #fbfcfc;
+	border: 1px solid #b9c4c8;
+	border-radius: 4px;
+	font: inherit;
+	font-size: 14px;
+	line-height: 1.35;
+}
+
+.error-report-field textarea:focus,
+.error-report-field input[type="email"]:focus,
+.error-report-field input[type="text"]:focus {
+	background: #ffffff;
+	border-color: #527895;
+	box-shadow: 0 0 0 3px rgba(82, 120, 149, 0.18);
+	outline: none;
+}
+
+.error-report-field textarea {
+	min-height: 96px;
+	resize: vertical;
+}
+
+.error-report-field--turnstile {
+	min-height: 65px;
+}
+
+.error-report-config-note {
+	margin: 2px 0 14px;
+	padding: 8px 10px;
+	color: #40505a;
+	background: #f5f7f7;
+	border: 1px solid #d4dde1;
+	border-radius: 4px;
+}
+
+.error-report-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 2px;
+}
+
+.error-report-cancel {
+	color: #40505a;
+	background: #ffffff;
+}
+
+.error-report-submit {
+	color: #ffffff;
+	background: #123654;
+	border-color: #123654;
+}
+
+.error-report-submit:hover {
+	color: #ffffff;
+	background: #0a2a45;
+	border-color: #0a2a45;
+}
+
+.error-report-form button[disabled] {
+	opacity: 0.72;
+	cursor: wait;
+}
+
+.error-report-status {
+	margin-top: 7px;
+	color: #40505a;
+}
+
+.error-report-status:empty {
+	display: none;
+}
+
+.error-report-status--success {
+	color: #2f6f45;
+}
+
+.error-report-status--error {
+	color: #a12a2a;
+}
+
 #analysis-plots {
 	text-align: center;
 	margin: 0 0 18px;
@@ -577,6 +800,27 @@ audio {
 
 	.work-action-link {
 		white-space: normal;
+	}
+
+	.error-report-modal {
+		padding: 12px;
+	}
+
+	.error-report-dialog {
+		max-height: calc(100vh - 24px);
+		padding: 17px 16px 18px;
+	}
+
+	.error-report-header h2 {
+		font-size: 20px;
+	}
+
+	.error-report-actions {
+		justify-content: stretch;
+	}
+
+	.error-report-actions .button {
+		flex: 1 1 140px;
 	}
 }
 

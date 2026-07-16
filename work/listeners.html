@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	displayWork(DATA1520.workid);
 	initializeAudio(DATA1520.workid);
+	initializeErrorReportModal();
 });
 
 
@@ -93,6 +94,267 @@ document.addEventListener("DOMContentLoaded", function () {
     document.title = `${id} | The 1520s Project`;
 
 });
+
+
+//////////////////////////////
+//
+// initializeErrorReportModal -- Configure the work-page error report popup.
+//
+
+function initializeErrorReportModal() {
+	let modal = document.querySelector("#error-report-modal");
+	let openButton = document.querySelector("#error-report-open");
+	let form = document.querySelector("#error-report-form");
+
+	if (!modal || !openButton || !form) {
+		return;
+	}
+
+	let dialog = modal.querySelector(".error-report-dialog");
+	let targetEl = form.querySelector("#error_report_target");
+	let targetDisplayEl = form.querySelector("#error_report_target_display");
+	let descriptionEl = form.querySelector("#error_report_description");
+	let emailEl = form.querySelector("#error_report_email");
+	let userAgentEl = form.querySelector("#error_report_user_agent");
+	let statusEl = form.querySelector("#error-report-status");
+	let submitButton = form.querySelector('[type="submit"]');
+	let closeControls = modal.querySelectorAll("[data-error-report-close]");
+	let returnFocusElement = null;
+	let focusableSelector = [
+		"a[href]",
+		"button:not([disabled])",
+		"textarea:not([disabled])",
+		"input:not([disabled])",
+		"select:not([disabled])",
+		'[tabindex]:not([tabindex="-1"])'
+	].join(",");
+
+	function isValidEmail(value) {
+		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+	}
+
+	function currentWorkUrl() {
+		let url = new URL(window.location.href);
+		if (DATA1520.workid) {
+			url.searchParams.set("id", DATA1520.workid);
+		}
+		return url.toString();
+	}
+
+	function formatComposerName(composer) {
+		if (!composer) {
+			return "";
+		}
+		let matches = composer.match(/^(.*?)\s*,\s*(.*?)$/);
+		if (matches) {
+			return `${matches[2]} ${matches[1]}`;
+		}
+		return composer;
+	}
+
+	function escapeHtml(value) {
+		return String(value)
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;")
+			.replace(/'/g, "&#39;");
+	}
+
+	function currentWorkLabelText() {
+		let id = DATA1520.workid || DATA1520.cgi.id || "Jac2001";
+		let workinfo = DATA1520.lookup.works ? DATA1520.lookup.works[id] : null;
+		if (!workinfo) {
+			return currentWorkUrl();
+		}
+
+		let composer = formatComposerName(workinfo.Composer);
+		let title = workinfo.Title || "Untitled work";
+		let subtitle = workinfo.Subtitle;
+		let titleText = subtitle ? `${title}, ${subtitle}` : title;
+		let label = composer ? `${composer}, ${titleText}` : titleText;
+		return `${label} (${id})`;
+	}
+
+	function currentWorkLabelHtml() {
+		let id = DATA1520.workid || DATA1520.cgi.id || "Jac2001";
+		let workinfo = DATA1520.lookup.works ? DATA1520.lookup.works[id] : null;
+		if (!workinfo) {
+			return escapeHtml(currentWorkUrl());
+		}
+
+		let composer = formatComposerName(workinfo.Composer);
+		let title = workinfo.Title || "Untitled work";
+		let subtitle = workinfo.Subtitle;
+		let titleText = `<i>${escapeHtml(title)}</i>`;
+		if (subtitle) {
+			titleText += `, ${escapeHtml(subtitle)}`;
+		}
+		let label = composer ? `${escapeHtml(composer)}, ${titleText}` : titleText;
+		return `${label} (${escapeHtml(id)})`;
+	}
+
+	function setReportContext() {
+		let workLabel = currentWorkLabelText();
+		if (targetDisplayEl) {
+			targetDisplayEl.innerHTML = currentWorkLabelHtml();
+		}
+		if (targetEl) {
+			targetEl.value = workLabel;
+		}
+		if (userAgentEl) {
+			userAgentEl.value = navigator.userAgent;
+		}
+	}
+
+	function setStatus(message, modifier) {
+		if (!statusEl) {
+			return;
+		}
+		statusEl.className = modifier
+			? `error-report-status error-report-status--${modifier}`
+			: "error-report-status";
+		statusEl.textContent = message;
+	}
+
+	function resetTurnstile() {
+		if (window.turnstile && typeof window.turnstile.reset === "function") {
+			window.turnstile.reset();
+		}
+	}
+
+	function isConfigured() {
+		let endpoint = form.getAttribute("action");
+		return endpoint && endpoint.trim();
+	}
+
+	function getFocusableElements() {
+		return Array.from(dialog.querySelectorAll(focusableSelector)).filter(function(element) {
+			return element.offsetParent !== null;
+		});
+	}
+
+	function openModal() {
+		returnFocusElement = document.activeElement;
+		setReportContext();
+		setStatus("");
+		modal.classList.remove("hidden");
+		document.body.classList.add("error-report-modal-open");
+		window.requestAnimationFrame(function() {
+			if (descriptionEl) {
+				descriptionEl.focus();
+			} else if (dialog) {
+				dialog.focus();
+			}
+		});
+	}
+
+	function closeModal() {
+		modal.classList.add("hidden");
+		document.body.classList.remove("error-report-modal-open");
+		if (returnFocusElement && typeof returnFocusElement.focus === "function") {
+			returnFocusElement.focus();
+		}
+	}
+
+	function handleModalKeydown(event) {
+		if (modal.classList.contains("hidden")) {
+			return;
+		}
+
+		if (event.key === "Escape") {
+			event.preventDefault();
+			closeModal();
+			return;
+		}
+
+		if (event.key !== "Tab") {
+			return;
+		}
+
+		let focusableElements = getFocusableElements();
+		if (!focusableElements.length) {
+			event.preventDefault();
+			dialog.focus();
+			return;
+		}
+
+		let first = focusableElements[0];
+		let last = focusableElements[focusableElements.length - 1];
+		if (event.shiftKey && document.activeElement === first) {
+			event.preventDefault();
+			last.focus();
+		} else if (!event.shiftKey && document.activeElement === last) {
+			event.preventDefault();
+			first.focus();
+		}
+	}
+
+	openButton.addEventListener("click", openModal);
+	for (let i=0; i<closeControls.length; i++) {
+		closeControls[i].addEventListener("click", closeModal);
+	}
+	document.addEventListener("keydown", handleModalKeydown);
+
+	form.addEventListener("submit", async function(event) {
+		event.preventDefault();
+
+		if (!isConfigured()) {
+			setStatus("Error reporting is not configured yet.", "error");
+			return;
+		}
+
+		let description = descriptionEl ? descriptionEl.value.trim() : "";
+		let email = emailEl ? emailEl.value.trim() : "";
+		let turnstileWidget = form.querySelector(".cf-turnstile");
+		let turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value.trim();
+
+		if (!description || !email) {
+			setStatus("Please complete all required fields.", "error");
+			return;
+		}
+
+		if (!isValidEmail(email)) {
+			setStatus("Please enter a valid email address.", "error");
+			return;
+		}
+
+		if (turnstileWidget && !turnstileToken) {
+			setStatus("Please complete the verification.", "error");
+			return;
+		}
+
+		setReportContext();
+		setStatus("Submitting error report...");
+		submitButton.disabled = true;
+
+		try {
+			let response = await fetch(form.getAttribute("action").trim(), {
+				method: "POST",
+				body: new FormData(form),
+			});
+
+			let result = await response.json().catch(function() {
+				return {};
+			});
+
+			if (!response.ok || !result.ok) {
+				throw new Error(result.error || "Submission failed");
+			}
+
+			form.reset();
+			setReportContext();
+			resetTurnstile();
+			setStatus("Thank you for your report.", "success");
+		} catch (error) {
+			console.error("Error report submission failed:", error);
+			resetTurnstile();
+			setStatus("Sorry, your report could not be submitted. Please try again.", "error");
+		} finally {
+			submitButton.disabled = false;
+		}
+	});
+}
 
 
 //////////////////////////////
@@ -457,8 +719,19 @@ function initializeAudio(id) {
 // keydown event listener -- For keyboard shortcuts.
 //
 
+function shouldIgnoreAudioShortcut(event) {
+	let target = event.target;
+	if (document.body.classList.contains("error-report-modal-open")) {
+		return true;
+	}
+	if (target && target.closest) {
+		return Boolean(target.closest("input, textarea, select, button, [contenteditable='true']"));
+	}
+	return false;
+}
+
 document.addEventListener('keydown', function(event) {
-    if (event.code === 'Space' || event.keyCode === 32) {
+    if ((event.code === 'Space' || event.keyCode === 32) && !shouldIgnoreAudioShortcut(event)) {
         event.preventDefault();
         togglePlayPauseOfAudio();
     }
@@ -467,4 +740,3 @@ document.addEventListener('keydown', function(event) {
 
 
 </script>
-

@@ -236,9 +236,9 @@ function getTitle(entry) {
 	}
 	if (!subtitle.match(/^\s*$/)) {
 		if (!title.match(/^\s*$/)) {
-			return `${title}, <i>${subtitle}</i>`;
+			return `${title}, <span class="work-subtitle">${subtitle}</span>`;
 		} else {
-			return `${subtitle}`;
+			return `<span class="work-subtitle">${subtitle}</span>`;
 		}
 	}
 	if (title.match(/^\s*$/)) {

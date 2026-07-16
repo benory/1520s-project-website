@@ -126,7 +126,7 @@ function displayWorkInfo(id) {
 	let titleoutput = "";
 	if (title) {
 		if (subtitle){
-			titleoutput = `<div class="work-item"><b>Title:</b> ${title}, <i>${subtitle}</i></div>`;
+			titleoutput = `<div class="work-item"><b>Title:</b> ${title}, ${subtitle}</div>`;
 		}
 		else {
 			titleoutput = `<div class="work-item"><b>Title:</b> ${title}</div>`;
@@ -617,9 +617,9 @@ function displayExternalInfo(id) {
 
 	if (externalURL && externalName) {
 			if (criticalCommentary == "yes") {
-					output += `<div class="external-note">For more information on <i>${title}</i> and the critical commentary, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
+					output += `<div class="external-note">For more information on ${title} and the critical commentary, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
 			} else {
-				output += `<div class="external-note">For more information on <i>${title}</i>, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
+				output += `<div class="external-note">For more information on ${title}, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
 			}
 	}
 	element.innerHTML = output;
