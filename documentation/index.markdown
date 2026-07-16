@@ -36,6 +36,7 @@ order: 3
 	        <li><a href="#pitch-range-plots">Pitch range plots</a></li>
 	        <li><a href="#website">Website</a>
 	          <ul>
+	            <li><a href="#cloudflare">Cloudflare</a></li>
 	            <li><a href="#javascript-tools">JavaScript tools</a></li>
 	          </ul>
 	        </li>
@@ -203,6 +204,9 @@ order: 3
   <p>The website is served through <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
      and uses the markdown language <a href="https://jekyllrb.com" target="_blank">Jekyll</a>.
   </p>
+
+<h4 id="cloudflare">Cloudflare</h4>
+	<p>Work pages include an error-report popup. Submissions are protected by <a href="https://www.cloudflare.com/application-services/products/turnstile/" target="_blank">Cloudflare Turnstile</a>, routed through a <a href="https://developers.cloudflare.com/workers/" target="_blank">Cloudflare Worker</a>, and saved to a Google Form. An Apps Script trigger sends plain-text notification emails to the project account.</p>
 
 <h4 id="javascript-tools">JavaScript tools</h4>
 	<ul class="spaced-list">
