@@ -110,6 +110,11 @@ layout: work
 
             <div id="error-report-status" class="error-report-status" aria-live="polite"></div>
         </form>
+
+        <div id="error-report-success" class="error-report-success hidden" tabindex="-1">
+            <p id="error-report-success-message" class="error-report-success-message">Thank you for your report.</p>
+            <p class="error-report-success-instruction">Please close this popup to return to the work page.</p>
+        </div>
     </div>
 </div>
 

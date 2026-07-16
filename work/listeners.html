@@ -111,6 +111,9 @@ function initializeErrorReportModal() {
 	}
 
 	let dialog = modal.querySelector(".error-report-dialog");
+	let titleEl = modal.querySelector("#error-report-title");
+	let introEl = modal.querySelector("#error-report-intro");
+	let successEl = modal.querySelector("#error-report-success");
 	let targetEl = form.querySelector("#error_report_target");
 	let targetDisplayEl = form.querySelector("#error_report_target_display");
 	let descriptionEl = form.querySelector("#error_report_description");
@@ -228,6 +231,41 @@ function initializeErrorReportModal() {
 		return endpoint && endpoint.trim();
 	}
 
+	function showFormView() {
+		modal.classList.remove("error-report-modal--success");
+		if (titleEl) {
+			titleEl.textContent = "Report an error";
+		}
+		if (introEl) {
+			introEl.classList.remove("hidden");
+		}
+		form.classList.remove("hidden");
+		if (successEl) {
+			successEl.classList.add("hidden");
+		}
+		modal.setAttribute("aria-describedby", "error-report-intro");
+	}
+
+	function showSuccessView() {
+		modal.classList.add("error-report-modal--success");
+		if (titleEl) {
+			titleEl.textContent = "Thank you for your report.";
+		}
+		if (introEl) {
+			introEl.classList.add("hidden");
+		}
+		form.classList.add("hidden");
+		if (successEl) {
+			successEl.classList.remove("hidden");
+		}
+		modal.setAttribute("aria-describedby", "error-report-success-message");
+		window.requestAnimationFrame(function() {
+			if (successEl) {
+				successEl.focus();
+			}
+		});
+	}
+
 	function getFocusableElements() {
 		return Array.from(dialog.querySelectorAll(focusableSelector)).filter(function(element) {
 			return element.offsetParent !== null;
@@ -236,6 +274,7 @@ function initializeErrorReportModal() {
 
 	function openModal() {
 		returnFocusElement = document.activeElement;
+		showFormView();
 		setReportContext();
 		setStatus("");
 		modal.classList.remove("hidden");
@@ -281,6 +320,15 @@ function initializeErrorReportModal() {
 
 		let first = focusableElements[0];
 		let last = focusableElements[focusableElements.length - 1];
+		if (!focusableElements.includes(document.activeElement)) {
+			event.preventDefault();
+			if (event.shiftKey) {
+				last.focus();
+			} else {
+				first.focus();
+			}
+			return;
+		}
 		if (event.shiftKey && document.activeElement === first) {
 			event.preventDefault();
 			last.focus();
@@ -345,7 +393,8 @@ function initializeErrorReportModal() {
 			form.reset();
 			setReportContext();
 			resetTurnstile();
-			setStatus("Thank you for your report.", "success");
+			setStatus("");
+			showSuccessView();
 		} catch (error) {
 			console.error("Error report submission failed:", error);
 			resetTurnstile();
