@@ -118,6 +118,8 @@ layout: work
     </div>
 </div>
 
+<div id="score-credit" class="work-score-credit"></div>
+
 <div id="analysis-plots">
 	<div id="activity-display" class="analysis-plot analysis-panel activity-analysis-plot hidden">
 		<div class="work-activity-controls">

@@ -52,6 +52,7 @@ function displayWork(id) {
 	displayHumdrum(hnpOptions);
 	displayWorkInfo(id);
 	displayExternalInfo(id);
+	displayScoreCredit(id);
 	displayWorkFooter(id);
 	updateWorkPageFilterControls(id);
 }
@@ -77,6 +78,108 @@ function createLookup(dataArray) {
 		output[id] = entry;
 	}
 	return output;
+}
+
+
+
+//////////////////////////////
+//
+// formatCreditNames -- Convert semicolon-separated names to a natural-language
+//     list while leaving already formatted credits unchanged.
+//
+
+function formatCreditNames(value) {
+	let names = String(value || "")
+		.split(";")
+		.map(function(name) { return name.trim(); })
+		.filter(Boolean);
+
+	if (names.length < 2) {
+		return names[0] || "";
+	}
+	if (names.length === 2) {
+		return `${names[0]} and ${names[1]}`;
+	}
+	return `${names.slice(0, -1).join(", ")}, and ${names[names.length - 1]}`;
+}
+
+
+
+//////////////////////////////
+//
+// appendCreditLink -- Append an external credit link.
+//
+
+function appendCreditLink(element, text, url) {
+	let link = document.createElement("a");
+	link.href = url;
+	link.target = "_blank";
+	link.rel = "noopener noreferrer";
+	link.textContent = text;
+	element.appendChild(link);
+}
+
+
+
+//////////////////////////////
+//
+// displayScoreCredit -- Display editor and transcriber credits immediately
+//     above the score.
+//
+
+function displayScoreCredit(id) {
+	let element = document.querySelector("#score-credit");
+	if (!element) {
+		console.error("ERROR: no #score-credit element");
+		return;
+	}
+
+	element.replaceChildren();
+
+	if (!id) {
+		id = DATA1520.workid;
+	}
+	let workinfo = DATA1520.lookup.works[id];
+	if (!workinfo) {
+		console.error(`Error: Cannot find workinfo for ${id} in displayScoreCredit()`);
+		return;
+	}
+
+	let editor = formatCreditNames(workinfo.Editor) || "The 1520s Project";
+	let transcriber = formatCreditNames(workinfo.Transcriber);
+	let commentaryUrl = String(workinfo["Critical Commentary"] || "").trim();
+	let otherUrl = String(workinfo["Other URL"] || "").trim();
+
+	if (editor) {
+		let editorLine = document.createElement("div");
+		editorLine.className = "work-score-credit-line";
+		let editorLabel = document.createElement("b");
+		editorLabel.textContent = "Edited";
+		editorLine.appendChild(editorLabel);
+		editorLine.appendChild(document.createTextNode(" by "));
+
+		if (commentaryUrl) {
+			editorLine.appendChild(document.createTextNode(`${editor} (`));
+			appendCreditLink(editorLine, "critical commentary", commentaryUrl);
+			editorLine.appendChild(document.createTextNode(")"));
+		} else if (otherUrl) {
+			appendCreditLink(editorLine, editor, otherUrl);
+		} else {
+			editorLine.appendChild(document.createTextNode(editor));
+		}
+
+		element.appendChild(editorLine);
+	}
+
+	if (transcriber) {
+		let transcriberLine = document.createElement("div");
+		transcriberLine.className = "work-score-credit-line";
+		let transcriberLabel = document.createElement("b");
+		transcriberLabel.textContent = "Transcribed";
+		transcriberLine.appendChild(transcriberLabel);
+		transcriberLine.appendChild(document.createTextNode(` by ${transcriber}`));
+		element.appendChild(transcriberLine);
+	}
 }
 
 
