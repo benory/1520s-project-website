@@ -153,31 +153,49 @@ function displayScoreCredit(id) {
 	if (editor) {
 		let editorLine = document.createElement("div");
 		editorLine.className = "work-score-credit-line";
-		let editorLabel = document.createElement("b");
-		editorLabel.textContent = "Edited";
+		let editorLabel = document.createElement("span");
+		editorLabel.className = "work-score-credit-label";
+		editorLabel.textContent = "Edited ";
 		editorLine.appendChild(editorLabel);
-		editorLine.appendChild(document.createTextNode(" by "));
 
-		if (commentaryUrl) {
-			editorLine.appendChild(document.createTextNode(`${editor} (`));
-			appendCreditLink(editorLine, "critical commentary", commentaryUrl);
-			editorLine.appendChild(document.createTextNode(")"));
-		} else if (otherUrl) {
-			appendCreditLink(editorLine, editor, otherUrl);
+		let editorValue = document.createElement("span");
+		editorValue.className = "work-score-credit-value";
+		editorValue.appendChild(document.createTextNode("by "));
+
+		if (otherUrl) {
+			let leadingArticle = "the ";
+			if (editor.startsWith(leadingArticle)) {
+				editorValue.appendChild(document.createTextNode(leadingArticle));
+				appendCreditLink(editorValue, editor.slice(leadingArticle.length), otherUrl);
+			} else {
+				appendCreditLink(editorValue, editor, otherUrl);
+			}
 		} else {
-			editorLine.appendChild(document.createTextNode(editor));
+			editorValue.appendChild(document.createTextNode(editor));
 		}
 
+		if (commentaryUrl) {
+			editorValue.appendChild(document.createTextNode(" ("));
+			appendCreditLink(editorValue, "critical commentary", commentaryUrl);
+			editorValue.appendChild(document.createTextNode(")"));
+		}
+
+		editorLine.appendChild(editorValue);
 		element.appendChild(editorLine);
 	}
 
 	if (transcriber) {
 		let transcriberLine = document.createElement("div");
 		transcriberLine.className = "work-score-credit-line";
-		let transcriberLabel = document.createElement("b");
-		transcriberLabel.textContent = "Transcribed";
+		let transcriberLabel = document.createElement("span");
+		transcriberLabel.className = "work-score-credit-label";
+		transcriberLabel.textContent = "Transcribed ";
 		transcriberLine.appendChild(transcriberLabel);
-		transcriberLine.appendChild(document.createTextNode(` by ${transcriber}`));
+
+		let transcriberValue = document.createElement("span");
+		transcriberValue.className = "work-score-credit-value";
+		transcriberValue.textContent = `by ${transcriber}`;
+		transcriberLine.appendChild(transcriberValue);
 		element.appendChild(transcriberLine);
 	}
 }

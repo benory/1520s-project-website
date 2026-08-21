@@ -166,7 +166,7 @@ main {
 
 .work-link-list {
 	display: inline-flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: baseline;
 	gap: 4px;
 	min-width: 0;
@@ -208,33 +208,50 @@ main {
 }
 
 .work-score-credit {
-	color: #3f3f3f;
-	font-family: -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--work-credit-inline-offset: 9px;
+	--work-credit-label-color: #242b2f;
+	--work-credit-link-color: #007aff;
+	--work-credit-text-color: #3f3f3f;
+	color: var(--work-credit-text-color);
+	display: grid;
+	font-family: inherit;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.45;
-	margin: 0 0 8px 9px;
+	margin: 0 0 8px var(--work-credit-inline-offset);
+	row-gap: 1px;
 }
 
 .work-score-credit:empty {
 	display: none;
 }
 
-.work-score-credit b {
-	color: #242b2f;
+.work-score-credit-line {
+	align-items: baseline;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 0.28em;
+}
+
+.work-score-credit-label {
+	color: var(--work-credit-label-color);
+	flex: 0 0 auto;
 	font-weight: 650;
 }
 
+.work-score-credit-value {
+	min-width: 0;
+}
+
 .work-score-credit a {
-	color: #007aff;
+	color: var(--work-credit-link-color);
 	font: inherit;
 	text-decoration: none;
 }
 
 .work-score-credit a:hover,
 .work-score-credit a:focus {
-	color: #007aff;
+	color: var(--work-credit-link-color);
 	text-decoration: underline;
 }
 
@@ -866,7 +883,7 @@ audio {
 	}
 
 	.work-score-credit {
-		margin-left: 17px;
+		--work-credit-inline-offset: 17px;
 		margin-right: 8px;
 	}
 
