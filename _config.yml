@@ -37,7 +37,7 @@ the1520sProject_data_url: https://data.1520s-project.org
 # Error-report popup configuration. The Google Form URL and field IDs live in
 # the Cloudflare Worker, so they are not exposed in the public site markup.
 error_report:
-  worker_url: "https://1520s-project-error.benjaminory.workers.dev/"
+  worker_url: "https://1520s-project-submissions.benjaminory.workers.dev/"
   turnstile_sitekey: "0x4AAAAAAD3NIL73ga8wkLDT"
 
 # Exclude from processing.

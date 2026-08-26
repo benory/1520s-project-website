@@ -1,4 +1,4 @@
-name = "the1520s-error-report"
+name = "1520s-project-submissions"
 main = "error-report-worker.js"
 compatibility_date = "2026-07-16"
 

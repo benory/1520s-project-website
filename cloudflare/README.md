@@ -6,6 +6,10 @@ field names to private Google Forms `entry.*` field IDs, and forwards each
 submission to the same Google Form. The Category field distinguishes `Error
 report` submissions from `Contact` submissions.
 
+`form-notification.gs` is the category-aware Apps Script attached to the Google
+Form. It sends a contact-specific email for `Contact` submissions and preserves
+the detailed error-report email for `Error report` submissions.
+
 ## Required setup
 
 1. Create a Google Form with these fields:
