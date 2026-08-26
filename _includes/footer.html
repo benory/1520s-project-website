@@ -36,6 +36,18 @@
   white-space: nowrap;
 }
 
+.footer-left {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1.1;
+}
+
+.site-footer .footer-email {
+  color: #8e8e93;
+  font-weight: 400;
+}
+
 .site-footer a {
   color: #007aff;
   text-decoration: none;
@@ -43,6 +55,23 @@
 }
 
 .site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact-button {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  color: #007aff;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-contact-button:hover,
+.footer-contact-button:focus-visible {
   text-decoration: underline;
 }
 
@@ -55,10 +84,11 @@
   <div class="footer-inner">
     <div class="footer-left">
       <span class="footer-title">{{ site.title }}</span>
+      <a class="footer-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
 
     <div class="footer-right">
-      <a href="mailto:{{ site.email }}">Contact</a>
+      <button type="button" id="contact-form-open" class="footer-contact-button" aria-haspopup="dialog" aria-controls="contact-form-modal">Contact</button>
       <span class="footer-sep">·</span>
       <a href="https://github.com/{{ site.github_username }}" target="_blank">
         GitHub
@@ -66,3 +96,5 @@
     </div>
   </div>
 </footer>
+
+{% include contact-form.html %}

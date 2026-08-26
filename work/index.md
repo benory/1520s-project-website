@@ -4,9 +4,6 @@ layout: work
 
 {% include_relative styles-local.html %}
 {% assign error_report = site.error_report %}
-{% if error_report.turnstile_sitekey %}
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-{% endif %}
 
 <audio id="audio"></audio>
 

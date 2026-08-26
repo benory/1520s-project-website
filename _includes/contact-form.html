@@ -1,0 +1,543 @@
+{% assign contact_form = site.error_report %}
+{% if contact_form.turnstile_sitekey %}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{% endif %}
+
+<style>
+body.contact-form-modal-open {
+  overflow: hidden;
+}
+
+.contact-form-modal[hidden],
+.contact-form-form[hidden],
+.contact-form-success[hidden] {
+  display: none !important;
+}
+
+.contact-form-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.contact-form-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 28, 38, 0.48);
+}
+
+.contact-form-dialog {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: min(560px, 100%);
+  max-height: min(720px, calc(100vh - 48px));
+  overflow: auto;
+  padding: 16px 18px 14px;
+  color: #1e2b31;
+  background: #ffffff;
+  border: 1px solid #b7c2c8;
+  border-radius: 6px;
+  box-shadow: 0 18px 45px rgba(12, 24, 32, 0.26);
+  font-size: 16px;
+  text-align: left;
+}
+
+.contact-form-modal--success .contact-form-dialog {
+  max-width: 430px;
+  padding: 26px 32px 28px;
+  overflow: visible;
+}
+
+.contact-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.contact-form-header h2 {
+  margin: 0;
+  color: #123654;
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.contact-form-close {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  margin: 0;
+  padding: 0;
+  color: #41515a;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.contact-form-close:hover,
+.contact-form-close:focus-visible {
+  color: #071f36;
+  background: #eef3f5;
+  border-color: #b9c4c8;
+  outline: none;
+}
+
+.contact-form-modal--success .contact-form-header {
+  display: block;
+  margin: 0;
+}
+
+.contact-form-modal--success .contact-form-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 28px;
+  height: 28px;
+  flex-basis: 28px;
+  font-size: 24px;
+}
+
+.contact-form-modal--success .contact-form-header h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.contact-form-intro,
+.contact-form-config-note,
+.contact-form-status {
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.contact-form-intro {
+  margin: 0 0 11px;
+  color: #40505a;
+}
+
+.contact-form-form {
+  margin: 0;
+}
+
+.contact-form-success {
+  margin: 0;
+  padding-right: 28px;
+}
+
+.contact-form-success-message {
+  margin: 0 0 7px;
+  color: #2f6f45;
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.contact-form-success-instruction {
+  margin: 0;
+  color: #40505a;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.contact-form-field {
+  margin-bottom: 10px;
+}
+
+.contact-form-field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #242b2f;
+  font-size: 13.5px;
+  font-weight: 650;
+}
+
+.contact-form-field textarea,
+.contact-form-field input[type="email"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 9px;
+  color: #1e2b31;
+  background: #fbfcfc;
+  border: 1px solid #b9c4c8;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.contact-form-field textarea:focus,
+.contact-form-field input[type="email"]:focus {
+  background: #ffffff;
+  border-color: #527895;
+  box-shadow: 0 0 0 3px rgba(82, 120, 149, 0.18);
+  outline: none;
+}
+
+.contact-form-field textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.contact-form-field--turnstile {
+  min-height: 65px;
+}
+
+.contact-form-config-note {
+  margin: 2px 0 14px;
+  padding: 8px 10px;
+  color: #40505a;
+  background: #f5f7f7;
+  border: 1px solid #d4dde1;
+  border-radius: 4px;
+}
+
+.contact-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.contact-form-button {
+  appearance: none;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid #b9c4c8;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.contact-form-cancel {
+  color: #40505a;
+  background: #ffffff;
+}
+
+.contact-form-submit {
+  color: #ffffff;
+  background: #123654;
+  border-color: #123654;
+}
+
+.contact-form-submit:hover,
+.contact-form-submit:focus-visible {
+  color: #ffffff;
+  background: #0a2a45;
+  border-color: #0a2a45;
+}
+
+.contact-form-form button[disabled] {
+  opacity: 0.72;
+  cursor: wait;
+}
+
+.contact-form-status {
+  margin-top: 7px;
+  color: #40505a;
+}
+
+.contact-form-status:empty {
+  display: none;
+}
+
+.contact-form-status--error {
+  color: #a12a2a;
+}
+
+@media (max-width: 600px) {
+  .contact-form-modal {
+    padding: 12px;
+  }
+
+  .contact-form-dialog {
+    max-height: calc(100vh - 24px);
+    padding: 17px 16px 18px;
+  }
+
+  .contact-form-actions {
+    justify-content: stretch;
+  }
+
+  .contact-form-actions .contact-form-button {
+    flex: 1 1 140px;
+  }
+}
+</style>
+
+<div id="contact-form-modal" class="contact-form-modal" role="dialog" aria-modal="true" aria-labelledby="contact-form-title" aria-describedby="contact-form-intro" hidden>
+  <div class="contact-form-backdrop" data-contact-form-close></div>
+  <div class="contact-form-dialog" tabindex="-1">
+    <div class="contact-form-header">
+      <h2 id="contact-form-title">Contact The 1520s Project</h2>
+      <button type="button" class="contact-form-close" aria-label="Close contact form" data-contact-form-close>&times;</button>
+    </div>
+
+    <p id="contact-form-intro" class="contact-form-intro">Send a message to The 1520s Project. Fields marked * are required.</p>
+
+    <form id="contact-form" class="contact-form-form" action="{{ contact_form.worker_url | escape }}" method="POST" novalidate>
+      <input type="hidden" name="category" value="Contact">
+      <input id="contact-form-target" type="hidden" name="target" value="">
+      <input id="contact-form-user-agent" type="hidden" name="user_agent" value="">
+
+      <div class="contact-form-field">
+        <label for="contact-form-email">Email address *</label>
+        <input id="contact-form-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+      </div>
+
+      <div class="contact-form-field">
+        <label for="contact-form-message">Message *</label>
+        <textarea id="contact-form-message" name="description" rows="6" required placeholder="How can we help?"></textarea>
+      </div>
+
+      {% if contact_form.turnstile_sitekey %}
+      <div class="contact-form-field contact-form-field--turnstile">
+        <div id="contact-form-turnstile" class="cf-turnstile" data-sitekey="{{ contact_form.turnstile_sitekey | escape }}" data-action="contact"></div>
+      </div>
+      {% else %}
+      <div class="contact-form-config-note" role="note">Cloudflare Turnstile will appear here after the site key is configured.</div>
+      {% endif %}
+
+      <div class="contact-form-actions">
+        <button type="button" class="contact-form-button contact-form-cancel" data-contact-form-close>Cancel</button>
+        <button type="submit" class="contact-form-button contact-form-submit">Send message</button>
+      </div>
+
+      <div id="contact-form-status" class="contact-form-status" aria-live="polite"></div>
+    </form>
+
+    <div id="contact-form-success" class="contact-form-success" tabindex="-1" hidden>
+      <p class="contact-form-success-message">Thank you for contacting The 1520s Project.</p>
+      <p class="contact-form-success-instruction">Please close this popup to return to the site.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var modal = document.querySelector("#contact-form-modal");
+  var openButton = document.querySelector("#contact-form-open");
+  var form = document.querySelector("#contact-form");
+
+  if (!modal || !openButton || !form) {
+    return;
+  }
+
+  var dialog = modal.querySelector(".contact-form-dialog");
+  var title = modal.querySelector("#contact-form-title");
+  var intro = modal.querySelector("#contact-form-intro");
+  var success = modal.querySelector("#contact-form-success");
+  var email = form.querySelector("#contact-form-email");
+  var message = form.querySelector("#contact-form-message");
+  var target = form.querySelector("#contact-form-target");
+  var userAgent = form.querySelector("#contact-form-user-agent");
+  var status = form.querySelector("#contact-form-status");
+  var submitButton = form.querySelector('[type="submit"]');
+  var closeControls = modal.querySelectorAll("[data-contact-form-close]");
+  var returnFocusElement = null;
+  var focusableSelector = [
+    "a[href]",
+    "button:not([disabled])",
+    "textarea:not([disabled])",
+    "input:not([disabled])",
+    '[tabindex]:not([tabindex="-1"])'
+  ].join(",");
+
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  function setContext() {
+    target.value = document.title + " — " + window.location.href;
+    userAgent.value = navigator.userAgent;
+  }
+
+  function setStatus(text, modifier) {
+    status.className = modifier
+      ? "contact-form-status contact-form-status--" + modifier
+      : "contact-form-status";
+    status.textContent = text;
+  }
+
+  function resetTurnstile() {
+    if (window.turnstile && typeof window.turnstile.reset === "function") {
+      window.turnstile.reset("#contact-form-turnstile");
+    }
+  }
+
+  function showForm() {
+    modal.classList.remove("contact-form-modal--success");
+    title.textContent = "Contact The 1520s Project";
+    intro.hidden = false;
+    form.hidden = false;
+    success.hidden = true;
+    modal.setAttribute("aria-describedby", "contact-form-intro");
+  }
+
+  function showSuccess() {
+    modal.classList.add("contact-form-modal--success");
+    title.textContent = "Thank you for contacting The 1520s Project.";
+    intro.hidden = true;
+    form.hidden = true;
+    success.hidden = false;
+    modal.setAttribute("aria-describedby", "contact-form-success");
+    window.requestAnimationFrame(function () {
+      success.focus();
+    });
+  }
+
+  function openModal() {
+    returnFocusElement = document.activeElement;
+    showForm();
+    setContext();
+    setStatus("");
+    modal.hidden = false;
+    document.body.classList.add("contact-form-modal-open");
+    window.requestAnimationFrame(function () {
+      message.focus();
+    });
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.classList.remove("contact-form-modal-open");
+    if (returnFocusElement && typeof returnFocusElement.focus === "function") {
+      returnFocusElement.focus();
+    }
+  }
+
+  function visibleFocusableElements() {
+    return Array.prototype.slice.call(dialog.querySelectorAll(focusableSelector)).filter(function (element) {
+      return element.offsetParent !== null;
+    });
+  }
+
+  function handleKeydown(event) {
+    if (modal.hidden) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeModal();
+      return;
+    }
+
+    if (event.key !== "Tab") {
+      return;
+    }
+
+    var focusable = visibleFocusableElements();
+    if (!focusable.length) {
+      event.preventDefault();
+      dialog.focus();
+      return;
+    }
+
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+
+    if (!focusable.includes(document.activeElement)) {
+      event.preventDefault();
+      (event.shiftKey ? last : first).focus();
+    } else if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  openButton.addEventListener("click", openModal);
+  closeControls.forEach(function (control) {
+    control.addEventListener("click", closeModal);
+  });
+  document.addEventListener("keydown", handleKeydown);
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    var endpoint = form.getAttribute("action").trim();
+    var emailValue = email.value.trim();
+    var messageValue = message.value.trim();
+    var turnstileWidget = form.querySelector(".cf-turnstile");
+    var tokenField = form.querySelector('[name="cf-turnstile-response"]');
+    var turnstileToken = tokenField ? tokenField.value.trim() : "";
+
+    if (!endpoint) {
+      setStatus("Contact form submissions are not configured yet.", "error");
+      return;
+    }
+
+    if (!emailValue || !messageValue) {
+      setStatus("Please complete all required fields.", "error");
+      return;
+    }
+
+    if (!isValidEmail(emailValue)) {
+      setStatus("Please enter a valid email address.", "error");
+      return;
+    }
+
+    if (turnstileWidget && !turnstileToken) {
+      setStatus("Please complete the verification.", "error");
+      return;
+    }
+
+    setContext();
+    setStatus("Sending message...");
+    submitButton.disabled = true;
+
+    try {
+      var response = await fetch(endpoint, {
+        method: "POST",
+        body: new FormData(form)
+      });
+      var result = await response.json().catch(function () {
+        return {};
+      });
+
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "Submission failed");
+      }
+
+      form.reset();
+      setContext();
+      resetTurnstile();
+      setStatus("");
+      showSuccess();
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+      resetTurnstile();
+      setStatus("Sorry, your message could not be sent. Please try again.", "error");
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}());
+</script>

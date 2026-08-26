@@ -1,8 +1,10 @@
-# Error Report Worker
+# Error Report and Contact Worker
 
-This Worker receives the work-page error report popup, verifies the Cloudflare
-Turnstile token, maps the public popup field names to private Google Forms
-`entry.*` field IDs, and forwards the report to a Google Form.
+This Worker receives both the work-page error report popup and the site-wide
+contact popup, verifies the Cloudflare Turnstile token, maps the public form
+field names to private Google Forms `entry.*` field IDs, and forwards each
+submission to the same Google Form. The Category field distinguishes `Error
+report` submissions from `Contact` submissions.
 
 ## Required setup
 
@@ -12,6 +14,8 @@ Turnstile token, maps the public popup field names to private Google Forms
    - Email address
    - Work or page being reported
    - User agent
+   If Category is a multiple-choice or dropdown field, include both `Error
+   report` and `Contact` as choices.
 2. Find each Google Forms `entry.*` field ID and copy it into the Worker
    environment variables in `wrangler.toml`.
 3. Copy `wrangler.toml.example` to `wrangler.toml`, then set:
