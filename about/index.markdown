@@ -212,4 +212,4 @@ order: 1
 
 <h2>Data Donations</h2>
 
-<p> Thanks to Marnix van Berchum, David Burn, Theodor Dumitrescu, Rex Eakins, Simon Frisch, Irene Holzer, Lance Morrison, Jessie Ann Owens, and Zoe Saunders for generously donating data to the project. <a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</p>
+<p>Thanks to <span id="data-donor-names">our contributing editors</span> for generously donating data to the project.<br><br><a href="mailto:The1520sProject@gmail.com">Let us know</a> if you'd like to contribute data of your own.</p>

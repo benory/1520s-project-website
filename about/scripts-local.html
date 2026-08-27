@@ -38,6 +38,64 @@ function fillInCensusData(data) {
   }
 }
 
+//////////////////////////////
+//
+// displayDataDonations -- Populate the Data Donations list from the unique
+//     Editor values in works metadata.  Personal credits sort by the first
+//     credited person's surname.  Institutional labels such as "the" and
+//     "Citations:" are ignored only for alphabetization.
+//
+
+function displayDataDonations(data) {
+  const element = document.querySelector("#data-donor-names");
+  if (!element) {
+    console.error("ERROR: Cannot find #data-donor-names");
+    return;
+  }
+
+  const uniqueEditors = new Map();
+  for (const entry of data) {
+    const editor = (entry.Editor || "").trim();
+    if (!editor) continue;
+
+    const key = editor.toLocaleLowerCase();
+    if (!uniqueEditors.has(key)) {
+      uniqueEditors.set(key, editor);
+    }
+  }
+
+  const collator = new Intl.Collator(undefined, { sensitivity: "base" });
+  const editors = Array.from(uniqueEditors.values()).sort((a, b) => {
+    const aSort = getEditorSortKey(a);
+    const bSort = getEditorSortKey(b);
+    return collator.compare(aSort, bSort) || collator.compare(a, b);
+  });
+
+  element.textContent = formatNameList(editors);
+}
+
+function getEditorSortKey(editor) {
+  const isInstitution = /^(?:the\s+|Citations:\s*)/i.test(editor);
+  const primaryCredit = editor
+    .replace(/^Citations:\s*/i, "")
+    .replace(/^the\s+/i, "")
+    .split(/\s+and\s+/i)[0]
+    .replace(/\s*\([^)]*\)\s*$/, "")
+    .trim();
+
+  if (isInstitution) return primaryCredit;
+
+  const nameParts = primaryCredit.split(/\s+/);
+  return nameParts[nameParts.length - 1] || primaryCredit;
+}
+
+function formatNameList(names) {
+  if (names.length === 0) return "";
+  if (names.length === 1) return names[0];
+  if (names.length === 2) return `${names[0]} and ${names[1]}`;
+  return `${names.slice(0, -1).join(", ")}, and ${names[names.length - 1]}`;
+}
+
 function displayYearsPlot(data) {
   let element = document.querySelector("#years-plot");
   if (!element) {

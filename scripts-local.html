@@ -267,8 +267,9 @@ function displayTopComposers() {
 
 	const isMobile = window.innerWidth <= 768;
 	const fontSize = isMobile ? 10.5 : 14;
+	const composerLabelFontSize = isMobile ? 12.5 : fontSize;
 	const headerfontSize = isMobile ? 14 : 16;
-	const labelOffset = isMobile ? -104 : -140;
+	const labelOffset = isMobile ? -82 : -140;
 	const chartData = data.map(entry => ({
 		...entry,
 		"Composer Display": isMobile ? (getShortComposerName(entry) || entry.Composer) : entry.Composer
@@ -319,7 +320,7 @@ function displayTopComposers() {
 		    "color": "#6A6156"
 		  }
 		},
-		"width": isMobile ? 228 : 280,
+		"width": isMobile ? 250 : 280,
 		"data": {
 			"values": chartData
 		},
@@ -386,7 +387,7 @@ function displayTopComposers() {
 					  "type": "text",
 					  "align": "left",
 					  "baseline": "middle",
-					  "fontSize": fontSize,
+					  "fontSize": composerLabelFontSize,
 					  "fontWeight": 500,
 					  "color": "#6A6156"
 					},
