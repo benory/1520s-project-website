@@ -138,7 +138,7 @@ function displayMostRecent(metadata) {
 	for (let i=0; i<count; i++) {
 		let entry = metadata[i];
 		let date = prepareDate(entry["Date Added"]);
-		let composer = prepareComposer(entry.Composer);
+		let composer = prepareComposer(entry);
 		let title = prepareTitle(entry);
 
 		output += "<tr>";
@@ -196,20 +196,41 @@ function prepareDate(inputDateString) {
 
 //////////////////////////////
 //
-// prepareComposer -- Make "first last" from "last, first".
+// prepareComposer -- Show the full composer name on desktop and the
+//     spreadsheet's short name on mobile.
 //
 
-function prepareComposer(name) {
-  if (!name) return "";
+function prepareComposer(entry) {
+  if (!entry) return "";
+
+  const name = entry.Composer || "";
+  const shortName = getShortComposerName(entry) || name;
+
+  let fullName = "";
 
   // Case 1: "Last, First" → First Last (normal weight first, bold last via CSS)
   let matches = name.match(/^\s*([^,]+)\s*,\s*([^,]+)\s*$/);
   if (matches) {
-    return `<span class="first-name">${matches[2]}</span> <span class="last-name">${matches[1]}</span>`;
+    fullName = `<span class="first-name">${matches[2]}</span> <span class="last-name">${matches[1]}</span>`;
+  } else {
+    // Case 2: single-name composer → bold
+    fullName = `<span class="last-name">${name}</span>`;
   }
 
-  // Case 2: single-name composer → bold
-  return `<span class="last-name">${name}</span>`;
+  return `<span class="composer-name-full">${fullName}</span><span class="composer-name-short">${shortName}</span>`;
+}
+
+function getShortComposerName(entry) {
+  const idMatch = (entry.ID || "").match(/^([A-Z][a-z]{2})/);
+  let composerInfo = idMatch
+    ? COMPOSERS.find(composer => composer.ID === idMatch[1])
+    : null;
+
+  if (!composerInfo && entry.Composer) {
+    composerInfo = COMPOSERS.find(composer => composer.Composer === entry.Composer);
+  }
+
+  return composerInfo ? composerInfo["Short Name"] : "";
 }
 
 
@@ -244,10 +265,14 @@ function displayTopComposers() {
 
 	let data = METADATA;
 
-	const isMobile = window.innerWidth < 768;
+	const isMobile = window.innerWidth <= 768;
 	const fontSize = isMobile ? 10.5 : 14;
 	const headerfontSize = isMobile ? 14 : 16;
 	const labelOffset = isMobile ? -104 : -140;
+	const chartData = data.map(entry => ({
+		...entry,
+		"Composer Display": isMobile ? (getShortComposerName(entry) || entry.Composer) : entry.Composer
+	}));
 
 	let element = document.querySelector("#composer-plot");
 	if (!element) {
@@ -296,7 +321,7 @@ function displayTopComposers() {
 		},
 		"width": isMobile ? 228 : 280,
 		"data": {
-			"values": data
+			"values": chartData
 		},
 		"transform": [{
 				"aggregate": [{
@@ -304,7 +329,7 @@ function displayTopComposers() {
 					"field": "Composer",
 					"as": "Count"
 				}],
-				"groupby": ["Composer"]
+				"groupby": ["Composer", "Composer Display"]
 			},
 			{
 				"filter": `datum.Count > ${threshold}`
@@ -387,7 +412,7 @@ function displayTopComposers() {
               "type": "nominal"
           },
 					"text": {
-						"field": "Composer",
+						"field": "Composer Display",
 						"type": "nominal"
 					}
 				}

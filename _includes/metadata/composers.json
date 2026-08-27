@@ -2,11 +2,13 @@
 	{
 		"ID": "Any",
 		"Composer": "Anonymous",
+		"Short Name": "Anonymous",
 		"Composer RISM ID": "pe30004985"
 	},
 	{
 		"ID": "Arc",
 		"Composer": "Arcadelt, Jacques",
+		"Short Name": "Arcadelt",
 		"Composer RISM ID": "pe30004860",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/286/",
 		"Start of CYA": "1530",
@@ -17,6 +19,7 @@
 	{
 		"ID": "Bar",
 		"Composer": "Barra, Hotinet",
+		"Short Name": "Barra",
 		"Composer RISM ID": "pe30002116",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/211/",
 		"Start of CYA": "1510",
@@ -27,6 +30,7 @@
 	{
 		"ID": "Bau",
 		"Composer": "Bauldeweyn, Noel",
+		"Short Name": "Bauldeweyn",
 		"Composer RISM ID": "pe30001642",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/265/",
 		"Start of CYA": "1509",
@@ -37,6 +41,7 @@
 	{
 		"ID": "Bis",
 		"Composer": "Bisgueria",
+		"Short Name": "Bisgueria",
 		"Composer RISM ID": "pe30102210",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/1106/",
 		"Start of CYA": "1520",
@@ -46,6 +51,7 @@
 	{
 		"ID": "Bnt",
 		"Composer": "Brunet, Johannes",
+		"Short Name": "Brunet",
 		"Composer RISM ID": "pe50041963",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/331",
 		"Start of CYA": "1510",
@@ -56,6 +62,7 @@
 	{
 		"ID": "Boy",
 		"Composer": "Boyleau",
+		"Short Name": "Boyleau",
 		"Start of CYA": "1518",
 		"End of CYA": "1518",
 		"Flourished": "1518–1518"
@@ -63,6 +70,7 @@
 	{
 		"ID": "Cha",
 		"Composer": "Champion, Nicolas",
+		"Short Name": "Champion",
 		"Composer RISM ID": "pe30102560",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/627/",
 		"Start of CYA": "1510",
@@ -74,6 +82,7 @@
 	{
 		"ID": "Con",
 		"Composer": "Conseil, Jean",
+		"Short Name": "Conseil",
 		"Composer RISM ID": "pe30025536",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/232/",
 		"Start of CYA": "1520",
@@ -84,6 +93,7 @@
 	{
 		"ID": "Crp",
 		"Composer": "Carpentras",
+		"Short Name": "Carpentras",
 		"Composer RISM ID": "pe30005089",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/223/",
 		"Start of CYA": "1505",
@@ -95,6 +105,7 @@
 	{
 		"ID": "Div",
 		"Composer": "Divitis, Antonius",
+		"Short Name": "Divitis",
 		"Composer RISM ID": "pe30019873",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/107/",
 		"Start of CYA": "1501",
@@ -105,6 +116,7 @@
 	{
 		"ID": "Era",
 		"Composer": "Erasmus?",
+		"Short Name": "Erasmus?",
 		"Start of CYA": "1518",
 		"End of CYA": "1518",
 		"Flourished": "1518–1518"
@@ -112,6 +124,7 @@
 	{
 		"ID": "For",
 		"Composer": "Forestier, Mathurin",
+		"Short Name": "Forestier",
 		"Composer RISM ID": "pe30006148",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/268/",
 		"Start of CYA": "1500",
@@ -122,6 +135,7 @@
 	{
 		"ID": "Fsc",
 		"Composer": "Festa, Costanzo",
+		"Short Name": "Co. Festa",
 		"Composer RISM ID": "pe30004621",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/213/",
 		"Start of CYA": "1517",
@@ -133,6 +147,7 @@
 	{
 		"ID": "Fss",
 		"Composer": "Festa, Sebastiano",
+		"Short Name": "Seb. Festa",
 		"Composer RISM ID": "pe30006139",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/207/",
 		"Start of CYA": "1516",
@@ -143,7 +158,8 @@
 	},
 	{
 		"ID": "Fva",
-		"Composer": "Fevin, Antoine de",
+		"Composer": "Févin, Antoine de",
+		"Short Name": "A. Févin",
 		"Composer RISM ID": "pe30006140",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/228/",
 		"Start of CYA": "1507",
@@ -154,6 +170,7 @@
 	{
 		"ID": "Gom",
 		"Composer": "Gombert, Nicolas",
+		"Short Name": "Gombert",
 		"Composer RISM ID": "pe30006168",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/263/",
 		"Start of CYA": "1525",
@@ -164,6 +181,7 @@
 	{
 		"ID": "Gsc",
 		"Composer": "Gascongne, Mathieu",
+		"Short Name": "Gascongne",
 		"Composer RISM ID": "pe30022179",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/227/",
 		"Start of CYA": "1517",
@@ -174,6 +192,7 @@
 	{
 		"ID": "Jac",
 		"Composer": "Jacotin Frontin?",
+		"Short Name": "Jacotin?",
 		"Start of CYA": "1518",
 		"End of CYA": "1518",
 		"Flourished": "1518–1518"
@@ -181,6 +200,7 @@
 	{
 		"ID": "Jan",
 		"Composer": "Jan, Maistre",
+		"Short Name": "Jan",
 		"Composer RISM ID": "pe30005590",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/218/",
 		"Start of CYA": "1512",
@@ -192,6 +212,7 @@
 	{
 		"ID": "Jom",
 		"Composer": "Jacquet of Mantua",
+		"Short Name": "Jacquet",
 		"Composer RISM ID": "pe30003816",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/215/",
 		"Start of CYA": "1519",
@@ -203,6 +224,7 @@
 	{
 		"ID": "Lfg",
 		"Composer": "de la Fage, Jean",
+		"Short Name": "la Fage",
 		"Composer RISM ID": "pe30018710",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/282/",
 		"Start of CYA": "1518",
@@ -213,6 +235,7 @@
 	{
 		"ID": "Lhe",
 		"Composer": "Lhéritier, Jean",
+		"Short Name": "Lhéritier",
 		"Composer RISM ID": "pe30012541",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/219/",
 		"Start of CYA": "1506",
@@ -223,6 +246,7 @@
 	{
 		"ID": "Lpi",
 		"Composer": "Lupi, Johannes",
+		"Short Name": "Lupi",
 		"Composer RISM ID": "pe30012552",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/2370/",
 		"Start of CYA": "1526",
@@ -234,6 +258,7 @@
 	{
 		"ID": "Lps",
 		"Composer": "Hellinck, Lupus",
+		"Short Name": "Hellinck",
 		"Composer RISM ID": "pe30006996",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/264/",
 		"Start of CYA": "1518",
@@ -245,6 +270,7 @@
 	{
 		"ID": "Lsa",
 		"Composer": "Le Santier, Jean",
+		"Short Name": "Le Santier",
 		"Start of CYA": "1518",
 		"End of CYA": "1518",
 		"Flourished": "1518–1518"
@@ -252,6 +278,7 @@
 	{
 		"ID": "Mlu",
 		"Composer": "Moulu, Pierre",
+		"Short Name": "Moulu",
 		"Composer RISM ID": "pe30016304",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/208/",
 		"Start of CYA": "1514",
@@ -262,6 +289,7 @@
 	{
 		"ID": "Mou",
 		"Composer": "Mouton, Jean",
+		"Short Name": "Mouton",
 		"Composer RISM ID": "pe30005489",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/318/",
 		"Start of CYA": "1483",
@@ -273,6 +301,7 @@
 	{
 		"ID": "Opi",
 		"Composer": "de Opitiis, Benedictus",
+		"Short Name": "Opitiis",
 		"Composer RISM ID": "pe30009778",
 		"Start of CYA": "1492",
 		"End of CYA": "1521",
@@ -282,6 +311,7 @@
 	{
 		"ID": "Ren",
 		"Composer": "Renaldo",
+		"Short Name": "Renaldo",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/78/",
 		"Start of CYA": "1515",
 		"End of CYA": "1521",
@@ -293,6 +323,7 @@
 	{
 		"ID": "Res",
 		"Composer": "Regnes, Nicole",
+		"Short Name": "Regnes",
 		"Composer RISM ID": "pe30018759",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/723/",
 		"Start of CYA": "1530",
@@ -303,6 +334,7 @@
 	{
 		"ID": "Ric",
 		"Composer": "Richafort, Jean",
+		"Short Name": "Richafort",
 		"Composer RISM ID": "pe30012751",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/214/",
 		"Start of CYA": "1509",
@@ -313,6 +345,7 @@
 	{
 		"ID": "Ror",
 		"Composer": "Rore, Cipriano de",
+		"Short Name": "Rore",
 		"Composer RISM ID": "pe30006899",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/363/",
 		"Start of CYA": "1535",
@@ -323,6 +356,7 @@
 	{
 		"ID": "Ser",
 		"Composer": "Sermisy, Claudin de",
+		"Short Name": "Sermisy",
 		"Composer RISM ID": "pe20000369",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/222/",
 		"Start of CYA": "1508",
@@ -334,6 +368,7 @@
 	{
 		"ID": "Snf",
 		"Composer": "Senfl, Ludwig",
+		"Short Name": "Senfl",
 		"Composer RISM ID": "pe20000370",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/3599/",
 		"Start of CYA": "1507",
@@ -344,6 +379,7 @@
 	{
 		"ID": "Sil",
 		"Composer": "Silva, Andreas de",
+		"Short Name": "Silva",
 		"Composer RISM ID": "pe30024652",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/209/",
 		"Start of CYA": "1513",
@@ -354,6 +390,7 @@
 	{
 		"ID": "The",
 		"Composer": "Therache, Pierrequin de",
+		"Short Name": "Therache",
 		"Composer RISM ID": "pe30102136",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/315/",
 		"Start of CYA": "1492",
@@ -365,6 +402,7 @@
 	{
 		"ID": "Ver",
 		"Composer": "Verdelot, Philippe",
+		"Short Name": "Verdelot",
 		"Composer RISM ID": "pe30013948",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/249/",
 		"Start of CYA": "1521",
@@ -375,6 +413,7 @@
 	{
 		"ID": "Vin",
 		"Composer": "Vinders, Jheronimus",
+		"Short Name": "Vinders",
 		"Composer RISM ID": "pe30007720",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/508/",
 		"Start of CYA": "1525",
@@ -385,6 +424,7 @@
 	{
 		"ID": "Wil",
 		"Composer": "Willaert, Adrian",
+		"Short Name": "Willaert",
 		"Composer RISM ID": "pe30005312",
 		"Composer DIAMM page": "https://www.diamm.ac.uk/people/217/",
 		"Start of CYA": "1515",

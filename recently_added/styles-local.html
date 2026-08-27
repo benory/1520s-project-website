@@ -8,6 +8,10 @@ main.page-content {
 	display: none;
 }
 
+.composer-name-short {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	#general {
 		width: 100%;
@@ -41,11 +45,13 @@ main.page-content {
 	}
 
 	#general .first-name,
+	#general .composer-name-full,
 	#general .recent-date-full {
 		display: none;
 	}
 
-	#general .recent-date-mobile {
+	#general .recent-date-mobile,
+	#general .composer-name-short {
 		display: inline;
 	}
 }
