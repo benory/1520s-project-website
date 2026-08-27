@@ -84,8 +84,12 @@ function prepareDate(inputDateString) {
 	}
 	let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
 	let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
-	return formattedDate;
+	let day = parsedDate.getDate();
+	let month = monthNames[parsedDate.getMonth()];
+	let year = parsedDate.getFullYear();
+	let fullDate = `${day} ${month} ${year}`;
+	let mobileDate = `${day} ${month.slice(0, 3)} ${year}`;
+	return `<span class="recent-date-full">${fullDate}</span><span class="recent-date-mobile">${mobileDate}</span>`;
 }
 
 

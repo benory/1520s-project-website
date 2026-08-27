@@ -67,4 +67,4 @@ layout: page
 </div>
 
 <div class="section-header"><h4>Recently added works</h4></div>
-<div data-count="10" id="general"><a href="recently_added"><span class="recent-works-desktop-label">More works added by date</span><span class="recent-works-mobile-label">More works</span></a></div>
+<div data-count="10" id="general"><a href="recently_added"><span class="recent-works-desktop-label">More works added by date</span><span class="recent-works-mobile-label">More works added by date</span></a></div>

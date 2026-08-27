@@ -4,4 +4,50 @@ main.page-content {
 	padding: 0px;
 }
 
+.recent-date-mobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	#general {
+		width: 100%;
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	#general table.general {
+		display: table;
+		table-layout: fixed;
+		overflow: hidden;
+		font-size: 13px;
+	}
+
+	#general table.general th,
+	#general table.general td {
+		padding: 6px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#general table.general th:nth-child(1),
+	#general table.general td:nth-child(1) {
+		width: 88px;
+	}
+
+	#general table.general th:nth-child(2),
+	#general table.general td:nth-child(2) {
+		width: 78px;
+	}
+
+	#general .first-name,
+	#general .recent-date-full {
+		display: none;
+	}
+
+	#general .recent-date-mobile {
+		display: inline;
+	}
+}
+
 </style>
