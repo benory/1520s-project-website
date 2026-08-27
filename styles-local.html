@@ -248,6 +248,11 @@ table.general tr:last-child a {
   font-weight: 500;
 }
 
+.recent-date-mobile,
+.recent-works-mobile-label {
+  display: none;
+}
+
 /* === Mobile-Specific Styles (Fully Functional) === */
 @media (max-width: 900px) {
   .homepage-grid {
@@ -419,8 +424,42 @@ table.general tr:last-child a {
   #general {
     width: 100%;
     max-width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+  }
+
+  #general table.general {
+    display: table;
+    table-layout: fixed;
+    overflow: hidden;
+    font-size: 13px;
+  }
+
+  #general table.general th,
+  #general table.general td {
+    padding: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  #general table.general th:nth-child(1),
+  #general table.general td:nth-child(1) {
+    width: 92px;
+  }
+
+  #general table.general th:nth-child(2),
+  #general table.general td:nth-child(2) {
+    width: 78px;
+  }
+
+  #general .first-name,
+  #general .recent-date-full,
+  #general .recent-works-desktop-label {
+    display: none;
+  }
+
+  #general .recent-date-mobile,
+  #general .recent-works-mobile-label {
+    display: inline;
   }
 
 }
