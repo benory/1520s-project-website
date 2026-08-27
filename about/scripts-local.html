@@ -42,8 +42,8 @@ function fillInCensusData(data) {
 //
 // displayDataDonations -- Populate the Data Donations list from the unique
 //     Editor values in works metadata.  Personal credits sort by the first
-//     credited person's surname.  Institutional labels such as "the" and
-//     "Citations:" are ignored only for alphabetization.
+//     credited person's surname.  A leading "the" in institutional credits
+//     is ignored only for alphabetization.
 //
 
 function displayDataDonations(data) {
@@ -75,15 +75,13 @@ function displayDataDonations(data) {
 }
 
 function getEditorSortKey(editor) {
-  const isInstitution = /^(?:the\s+|Citations:\s*)/i.test(editor);
+  if (/^Citations:\s*/i.test(editor)) return editor;
+  if (/^the\s+/i.test(editor)) return editor.replace(/^the\s+/i, "");
+
   const primaryCredit = editor
-    .replace(/^Citations:\s*/i, "")
-    .replace(/^the\s+/i, "")
     .split(/\s+and\s+/i)[0]
     .replace(/\s*\([^)]*\)\s*$/, "")
     .trim();
-
-  if (isInstitution) return primaryCredit;
 
   const nameParts = primaryCredit.split(/\s+/);
   return nameParts[nameParts.length - 1] || primaryCredit;
