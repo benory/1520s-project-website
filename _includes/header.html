@@ -63,7 +63,7 @@
   font-size: 15px;
   font-weight: 500;
   padding: 6px 2px;
-  color: #284b63;
+  color: #6A6156;
   letter-spacing: 0.015em;
   border-radius: 0;
   transition: background-color 0.15s ease, color 0.15s ease;
@@ -147,7 +147,7 @@
 /* Change nav link colors */
 .site-nav .page-link,
 .site-nav .dropdown-content a {
-  color: #284b63;
+  color: #6A6156;
 }
 
 .site-nav .dropdown-content a:hover {
@@ -172,14 +172,6 @@
 .site-nav .dropdown:hover > .dropdown-content,
 .site-nav .dropdown-content:hover {
   display: block;
-}
-
-.banner img.desktop-banner {
-  display: block; /* Specified target class .desktop-banner */
-}
-
-.banner .banner-mobile {
-  display: none; /* Hidden by default (Desktop) */
 }
 
 /* Mobile view adjustments */
@@ -312,21 +304,9 @@
 
   .site-nav .dropdown-content a {
     font-size: 14px;
-    color: #426176;
+    color: #6A6156;
   }
 
-  .banner img.desktop-banner {
-    display: none; /* Hide the full banner on mobile */
-  }
-
-  .banner .banner-mobile {
-    display: flex; /* Flexbox for stacking images vertically */
-    flex-direction: column;
-  }
-
-  .banner .banner-mobile img {
-    width: 100%; /* Full width for mobile images */
-  }
 }
 
 </style>
@@ -379,14 +359,5 @@
       </nav>
     {%- endif -%}
     </div>
-    {% if page.url == "/" or page.url == "/index.html" %}
-    <div class="banner">
-      <img src="{{ '/images/1520s_banner.png' | relative_url }}" alt="Banner Image" class="desktop-banner">
-      <div class="banner-mobile">
-        <img src="/images/1520s_banner_left.png" alt="Banner Left">
-        <img src="/images/1520s_banner_right.png" alt="Banner Right">
-      </div>
-    </div>
-    {% endif %}
   </div>
 </header>

@@ -14,6 +14,23 @@ layout: page
 {% include_relative scripts-local.html %}
 {% include styles/styles-common.css.html %}
 
+<section class="home-hero" aria-labelledby="home-hero-title">
+  <div class="home-hero-artwork">
+    <img
+      src="{{ '/images/enixa-est-puerpera-wide.png' | relative_url }}"
+      alt="Detail from the opening of Enixa est puerpera"
+      width="885"
+      height="140"
+      fetchpriority="high"
+    >
+  </div>
+  <h1 class="home-hero-title" id="home-hero-title">
+    <span>Explore and listen to</span>
+    <span>European polyphonic music,</span>
+    <span>ca. 1510–1540</span>
+  </h1>
+</section>
+
 <div class="homepage-grid">
 
   <!-- LEFT COLUMN -->
