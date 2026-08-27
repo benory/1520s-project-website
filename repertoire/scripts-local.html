@@ -165,6 +165,11 @@ function makeTableBody(headings, data) {
 				let scoreURL = getScoreURL(entry);
 				output += `<a href=${scoreURL}>${title}</a>`;
 			}
+			else if (headings[i] == INDEX_composer) {
+				let shortName = getShortComposerName(entry) || value;
+				output += `<span class="composer-name-full">${value}</span>`;
+				output += `<span class="composer-name-short">${shortName}</span>`;
+			}
 
 			else if (headings[i] == INDEX_firstsource) {
 				let url = getSource(entry);
@@ -184,6 +189,20 @@ function makeTableBody(headings, data) {
 		output += "</tr>\n";
 	}
 	return output;
+}
+
+
+function getShortComposerName(entry) {
+	const idMatch = (entry.ID || "").match(/^([A-Z][a-z]{2})/);
+	let composerInfo = idMatch
+		? COMPOSERS.find(composer => composer.ID === idMatch[1])
+		: null;
+
+	if (!composerInfo && entry.Composer) {
+		composerInfo = COMPOSERS.find(composer => composer.Composer === entry.Composer);
+	}
+
+	return composerInfo ? composerInfo["Short Name"] : "";
 }
 
 

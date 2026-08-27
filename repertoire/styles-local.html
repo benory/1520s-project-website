@@ -35,6 +35,10 @@ table.general td:nth-child(5) {
   text-overflow: ellipsis;
 }
 
+.composer-name-short {
+  display: none;
+}
+
 #search-interface {
   margin: 10px 0 20px;
 }
@@ -429,6 +433,16 @@ select {
   #texted-container {
     grid-column: auto;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  table.general .composer-name-full {
+    display: none;
+  }
+
+  table.general .composer-name-short {
+    display: inline;
   }
 }
 
