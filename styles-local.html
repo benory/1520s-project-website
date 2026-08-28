@@ -11,9 +11,9 @@ article.post {
 .home-hero {
   display: grid;
   grid-template-areas: "artwork title";
-  grid-template-columns: minmax(0, 1fr) 270px;
+  grid-template-columns: minmax(0, 1fr) 255px;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   width: 100%;
   margin-left: 0;
   padding: 20px 0 24px;
@@ -26,29 +26,46 @@ article.post {
 
 .home-hero-artwork img {
   display: block;
-  width: 104%;
+  width: 103%;
   max-width: none;
   height: auto;
 }
 
+.home-hero-copy {
+  grid-area: title;
+  transform: translateY(-6px);
+}
+
+.home-hero .home-hero-kicker {
+  margin: 0 0 5px;
+  color: #5C8077;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .home-hero .home-hero-title {
   display: block;
-  grid-area: title;
   margin: 0;
-  color: #1c1c1e;
+  color: #6A6156;
   font-family: inherit;
-  font-size: clamp(21px, 2.2vw, 23px);
+  font-size: 22px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
   line-height: 1.22;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  transform: translateY(-6px);
 }
 
 .home-hero-title span {
   display: block;
   white-space: nowrap;
+}
+
+.home-hero-title span:last-child {
+  font-weight: 400;
 }
 
 .homepage-grid {
@@ -70,8 +87,11 @@ article.post {
 
   .home-hero .home-hero-title {
     max-width: 100%;
-    font-size: clamp(19px, 5.4vw, 22px);
+    font-size: 20px;
     line-height: 1.24;
+  }
+
+  .home-hero-copy {
     transform: none;
   }
 

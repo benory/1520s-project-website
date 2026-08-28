@@ -24,11 +24,13 @@ layout: page
       fetchpriority="high"
     >
   </div>
-  <h1 class="home-hero-title" id="home-hero-title">
-    <span>Explore and listen to</span>
-    <span>European polyphonic music,</span>
-    <span>ca. 1510–1540</span>
-  </h1>
+  <div class="home-hero-copy">
+    <p class="home-hero-kicker">Explore and listen to</p>
+    <h1 class="home-hero-title" id="home-hero-title">
+      <span>European polyphonic music</span>
+      <span>ca. 1510–1540</span>
+    </h1>
+  </div>
 </section>
 
 <div class="homepage-grid">
