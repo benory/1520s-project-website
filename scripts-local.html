@@ -281,6 +281,10 @@ function displayTopComposers() {
 		return;
 	}
 
+	const plotWidth = isMobile
+		? Math.max(120, Math.floor(element.clientWidth - 93))
+		: 296;
+
 	let threshold = 20;
 	let plotInfo = {
 		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -320,7 +324,7 @@ function displayTopComposers() {
 		    "color": "#6A6156"
 		  }
 		},
-		"width": isMobile ? 250 : 296,
+		"width": plotWidth,
 		"data": {
 			"values": chartData
 		},

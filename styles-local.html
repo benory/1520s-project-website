@@ -87,16 +87,36 @@ article.post {
 
   .home-hero .home-hero-title {
     max-width: 100%;
-    font-size: clamp(11px, 3.45vw, 14px);
+    font-size: 16px;
     line-height: 1.24;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .home-hero-title span {
     display: inline;
+    color: #5C8077;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .home-hero-title span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .home-hero .home-hero-kicker {
+    margin: 0;
   }
 
   .home-hero-copy {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    row-gap: 0;
     transform: none;
   }
 
@@ -104,6 +124,14 @@ article.post {
     width: 100%;
     max-width: 100%;
   }
+}
+
+@media (max-width: 480px) {
+  .home-hero {
+    gap: 6px;
+    padding-bottom: 12px;
+  }
+
 }
 
 .wrapper {
@@ -374,7 +402,7 @@ table.general tr:last-child a {
   .homepage-grid {
     width: 100%;
     max-width: 100%;
-    gap: 18px;
+    gap: 8px;
     margin-top: 0;
   }
 
@@ -402,10 +430,10 @@ table.general tr:last-child a {
     max-width: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
-    border: 1px solid rgba(40, 75, 99, 0.22);
-    border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    padding: 0 0 12px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .data-box.apple-data {
@@ -413,7 +441,7 @@ table.general tr:last-child a {
     max-width: 100%;
     box-sizing: border-box;
     padding: 12px;
-    border-radius: 4px;
+    border-radius: 16px;
   }
 
   .data-metrics {
@@ -435,7 +463,7 @@ table.general tr:last-child a {
     max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 8px 0;
+    padding: 8px 0 2px;
   }
 
   #composer-plot .vega-embed,
@@ -459,7 +487,7 @@ table.general tr:last-child a {
     width: 100%;
     box-sizing: border-box;
     padding: 12px 14px;
-    border-radius: 4px;
+    border-radius: 14px;
   }
 
   .search-container .button {
@@ -536,6 +564,9 @@ table.general tr:last-child a {
   #general table.general {
     display: table;
     table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 16px;
     overflow: hidden;
     font-size: 13px;
   }
