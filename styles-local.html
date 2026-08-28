@@ -87,8 +87,13 @@ article.post {
 
   .home-hero .home-hero-title {
     max-width: 100%;
-    font-size: 20px;
+    font-size: clamp(11px, 3.45vw, 14px);
     line-height: 1.24;
+    white-space: nowrap;
+  }
+
+  .home-hero-title span {
+    display: inline;
   }
 
   .home-hero-copy {
@@ -232,7 +237,7 @@ article.post {
 #composer-plot {
   background: #FFFAF1;
   border-radius: 12px;
-  padding: 12px;
+  padding: 12px 4px;
 }
 
 /* === Apple-style Search === */
@@ -243,6 +248,7 @@ article.post {
 
 .apple-search input {
   width: 100%;
+  box-sizing: border-box;
   padding: 14px 18px;
   font-size: 17px;
   border-radius: 14px;
@@ -250,6 +256,12 @@ article.post {
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+@media (min-width: 769px) {
+  .browse-box.apple-search {
+    padding: 0;
+  }
 }
 
 .apple-search input:focus {
@@ -312,7 +324,7 @@ article.post {
 
 .homepage-grid {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 43% 57%;
   gap: 24px;
   align-items: start;
 }
