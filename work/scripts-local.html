@@ -472,7 +472,13 @@ function displayWorkInfo(id) {
 			        }
 
 			        if (ed["Number of Piece"]) entry += `, ${ed["Number of Piece"]}`;
-			        if (ed["Page Numbers"]) entry += `: ${ed["Page Numbers"]}`;
+			        if (ed["Page Numbers (large)"] && ed["Page Numbers"]) {
+			            entry += `: ${ed["Page Numbers (large)"]}, at ${ed["Page Numbers"]}`;
+			        } else if (ed["Page Numbers (large)"]) {
+			            entry += `: ${ed["Page Numbers (large)"]}`;
+			        } else if (ed["Page Numbers"]) {
+			            entry += `: ${ed["Page Numbers"]}`;
+			        }
 			        
 			        entry += `.</span></div>`;
 
