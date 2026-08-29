@@ -453,6 +453,7 @@ function displayWorkInfo(id) {
 			        if (ed["Name of Article"]) entry += ` "${ed["Name of Article"]}," `;
 			        if (ed["Name of Dissertation"]) entry += ` "${ed["Name of Dissertation"]}" `;
 			        if (ed["Name of Volume"]) entry += `<i>${ed["Name of Volume"]}</i>`;
+			        if (ed["Journal Number"]) entry += ` ${ed["Journal Number"]}`;
 
 			        if (ed["Editor"]) entry += `, ed. ${ed["Editor"]}`;
 			        if (ed["Series and Volume"]) entry += `, ${ed["Series and Volume"]}`;
