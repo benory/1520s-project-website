@@ -9,7 +9,7 @@ order: 2
 {% include_relative scripts-local.html %}
 {% include styles/styles-common.css.html %}
 
-<div class="section-header"><h4>Repertoire</h4></div>
+<div class="section-header page-title"><h4>Repertoire</h4></div>
 
 <div id="search-interface" class="catalogue-toolbar">
   <div class="row">

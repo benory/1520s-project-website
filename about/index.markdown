@@ -13,7 +13,7 @@ order: 1
 {% include_relative scripts-local.html %}
 {% include styles/styles-common.css.html %}
 
-<div class="section-header"><h4>about</h4></div>
+<div class="section-header page-title"><h4>About</h4></div>
 
 <p>The 1520s Project is an open-access digital library of music from ca. 1510 to ca. 1540. Users can browse, search, analyze, listen to, and perform from a growing corpus of Renaissance scores centered on the decades around 1520.</p>
 

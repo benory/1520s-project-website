@@ -10,7 +10,7 @@ order: 3
 {% include_relative styles-local.html %}
 {% include styles/styles-common.css.html %}
 
-<div class="section-header"><h4>documentation</h4></div>
+<div class="section-header page-title"><h4>Documentation</h4></div>
 
 <div class="documentation-layout">
 	<div class="toc-container">
