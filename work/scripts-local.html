@@ -168,7 +168,10 @@ function getWorkCommentary(workinfo) {
 		let toggle = others.length > 3
 			? `<button type="button" class="commentary-toggle" aria-expanded="false" aria-controls="commentary-source-list" onclick="toggleCommentarySources(this)">See more</button>`
 			: "";
-		output = `<div class="commentary-sources"><b>Other sources for <i>${escapeCommentaryText(workinfo.Title)}</i>:</b><ul id="commentary-source-list" class="commentary-source-list" role="list">${sources}</ul>${toggle}</div>`;
+		let heading = String(workinfo.Subtitle || "").trim()
+			? `Other sources for <i>${escapeCommentaryText(workinfo.Title)}</i>:`
+			: "Other sources:";
+		output = `<div class="commentary-sources"><b>${heading}</b><ul id="commentary-source-list" class="commentary-source-list" role="list">${sources}</ul>${toggle}</div>`;
 	}
 	return {earliest, output};
 }
