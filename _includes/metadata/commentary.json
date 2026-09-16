@@ -11,7 +11,7 @@
 		"Commentary ID": "Ric1001",
 		"Source": "Susato, Liber tertius missarum quatuor vocum (1546)",
 		"RISM link": "https://rism.online/sources/993104493",
-		"Fols./pp./no.": "fols. 5v-8v",
+		"Fols./pp./no.": "fols. 5v–8v",
 		"Attribution": "Richafort"
 	},
 	{
@@ -73,5 +73,109 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1463/",
 		"Fols./pp./no.": "fols. [iii]v–23r",
 		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ror0105",
+		"Source": "Gardano, Di Cipriano il primo libro de madregali cromatici a cinque voci (1544)",
+		"RISM link": "https://rism.online/sources/990055809",
+		"Fols./pp./no.": "pp. 15–16",
+		"Attribution": "Cipriano"
+	},
+	{
+		"Commentary ID": "Ror0105",
+		"Source": "Scotto, Di Cipriano Rore i madrigali a cinque voci (1544)",
+		"RISM link": "https://rism.online/sources/993104410",
+		"Fols./pp./no.": "fol. DD4v",
+		"Attribution": "Cipriano Rore",
+		"Notes": "only two of five partbooks extant"
+	},
+	{
+		"Commentary ID": "Ror0105",
+		"Source": "Scotto, Di Cipriano Rore i madrigali a cinque voci (1542)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/990055808",
+		"Fols./pp./no.": "no. 5",
+		"Attribution": "Cipriano Rore"
+	},
+	{
+		"Commentary ID": "Ror0105",
+		"Source": "Paris 851",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
+		"Fols./pp./no.": "pp. 142–143",
+		"Attribution": "Rore"
+	},
+	{
+		"Commentary ID": "Ror0105",
+		"Source": "Milano s.s.",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2150/",
+		"Fols./pp./no.": "fols. 56r–57v",
+		"Attribution": "C.R."
+	},
+	{
+		"Commentary ID": "Ror0106",
+		"Source": "Gardano, Di Cipriano il primo libro de madregali cromatici a cinque voci (1544)",
+		"RISM link": "https://rism.online/sources/990055809",
+		"Fols./pp./no.": "pp. 11–12",
+		"Attribution": "Cipriano"
+	},
+	{
+		"Commentary ID": "Ror0106",
+		"Source": "Scotto, Di Cipriano Rore i madrigali a cinque voci (1544)",
+		"RISM link": "https://rism.online/sources/993104410",
+		"Fols./pp./no.": "fol. EE1v",
+		"Attribution": "Cipriano Rore",
+		"Notes": "only two of five partbooks extant"
+	},
+	{
+		"Commentary ID": "Ror0106",
+		"Source": "Scotto, Di Cipriano Rore i madrigali a cinque voci (1542)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/990055808",
+		"Fols./pp./no.": "no. 6",
+		"Attribution": "Cipriano Rore"
+	},
+	{
+		"Commentary ID": "Ror0106",
+		"Source": "Paris 851",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
+		"Fols./pp./no.": "pp. 139–40",
+		"Attribution": "Cypriano Rore"
+	},
+	{
+		"Commentary ID": "Ror0107",
+		"Source": "Gardano, Di Cipriano il primo libro de madregali cromatici a cinque voci (1544)",
+		"RISM link": "https://rism.online/sources/990055809",
+		"Fols./pp./no.": "pp. 7–8",
+		"Attribution": "Cipriano"
+	},
+	{
+		"Commentary ID": "Ror0107",
+		"Source": "Scotto, Di Cipriano Rore i madrigali a cinque voci (1544)",
+		"RISM link": "https://rism.online/sources/993104410",
+		"Fols./pp./no.": "fol. EE2v",
+		"Attribution": "Cipriano Rore",
+		"Notes": "only two of five partbooks extant"
+	},
+	{
+		"Commentary ID": "Ror0107",
+		"Source": "Scotto, Di Cipriano Rore i madrigali a cinque voci (1542)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/990055808",
+		"Fols./pp./no.": "no. 7",
+		"Attribution": "Cipriano Rore"
+	},
+	{
+		"Commentary ID": "Ror0107",
+		"Source": "Paris 851",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
+		"Fols./pp./no.": "pp. 136–37",
+		"Attribution": "Cipriano Rore"
+	},
+	{
+		"Commentary ID": "Ror0107",
+		"Source": "Milano s.s.",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2150/",
+		"Fols./pp./no.": "fols. 57v–58r",
+		"Attribution": "anonymous"
 	}
 ]
