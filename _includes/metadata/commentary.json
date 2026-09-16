@@ -1,0 +1,77 @@
+[
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Attaingnant, Quartus liber tres missas continet (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104074",
+		"Fols./pp./no.": "fols. 117r–129v",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Susato, Liber tertius missarum quatuor vocum (1546)",
+		"RISM link": "https://rism.online/sources/993104493",
+		"Fols./pp./no.": "fols. 5v-8v",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Cambrai 3",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1663/",
+		"Fols./pp./no.": "fols. 14v–26r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Cividale del Friula 53",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/951/",
+		"Fols./pp./no.": "fols. 91v–103r",
+		"Attribution": "Richafort",
+		"Notes": "Lacking fols. 95r–v"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Coimbra 9",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1695/",
+		"Fols./pp./no.": "fols. 34–55r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "'s-Hertogenbosch 154",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1812/",
+		"Fols./pp./no.": "fols. 111v–133r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Leiden 1443",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1863/",
+		"Fols./pp./no.": "fols. 293v–316r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Munich F",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2063/",
+		"Fols./pp./no.": "fols. 37v–57v",
+		"Attribution": "anonymous",
+		"Notes": "Lacking Agnus Dei II duo"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Treviso 9",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2578/",
+		"Fols./pp./no.": "fols. 124v–126r",
+		"Attribution": "anonymous",
+		"Movements": "SA",
+		"Notes": "Agnus Dei III set to music of Kyrie II"
+	},
+	{
+		"Commentary ID": "Ric1001",
+		"Source": "Vatican 17",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1463/",
+		"Fols./pp./no.": "fols. [iii]v–23r",
+		"Attribution": "Richafort"
+	}
+]

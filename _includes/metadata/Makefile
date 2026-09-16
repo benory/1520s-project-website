@@ -7,20 +7,23 @@
 
 
 #SID for 1520s Project Metadata
-SID = AKfycbxz4kQ33FUXUl5zg4jbG6EhccphbCf3EZ07GWzD2YFMZc8Dnsp-hUTYMU26DU5hLNkLoQ
+SID = AKfycbzPjKo_5RlBSDPoHM8vWdw93fisuU6RcKCPpl7cT18qLY7Tx-qhXKxwONcznwbshA-ZmA
 
 #SID for Josquin Attribution Table Metadata
 SID2 = AKfycbyg7jch405kNehIY8d1fTirMm0BSZgeHXDHoK913A9MjKmMFqIaKBMGN1mphdh_EUArpQ
 
 all: download
 
-download: works composers modern_editions statistics Josquin
+download: works composers commentary modern_editions statistics Josquin
 
 works:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=works" > works.json
 
 composers:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=composers" > composers.json
+
+commentary:
+	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=commentary" > commentary.json
 
 modern_editions:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=modern_editions" > modern_editions.json
