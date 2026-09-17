@@ -177,5 +177,116 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2150/",
 		"Fols./pp./no.": "fols. 57v–58r",
 		"Attribution": "anonymous"
+	},
+	{
+		"Commentary ID": "Con2008",
+		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales quatyuor (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104111",
+		"Fols./pp./no.": "fol. 13r",
+		"Attribution": "Consilium"
+	},
+	{
+		"Commentary ID": "Con2008",
+		"Source": "Susato, Sacrarum cantionum, liber 4 (1547)",
+		"RISM link": "https://rism.online/sources/993104536",
+		"Fols./pp./no.": "fol. 8v",
+		"Attribution": "Consilium"
+	},
+	{
+		"Commentary ID": "Con2008",
+		"Source": "Berg and Neuber, Tertia pars magni operis musici (1559)",
+		"RISM link": "https://rism.online/sources/993120232",
+		"Fols./pp./no.": "no. 66",
+		"Attribution": "Consilium"
+	},
+	{
+		"Commentary ID": "Con2008",
+		"Source": "Krakow 40031",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1566",
+		"Fols./pp./no.": "fols. 5v–9r",
+		"Attribution": "anonymous",
+		"Notes": "secunda pars only"
+	},
+	{
+		"Commentary ID": "Con2008",
+		"Source": "Cambrai 125–128",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
+		"Fols./pp./no.": "fol. 93v",
+		"Attribution": "anonymous"
+	},
+	{
+		"Commentary ID": "Con2007",
+		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104111",
+		"Fols./pp./no.": "fols. 7r–8r",
+		"Attribution": "Consilium"
+	},
+	{
+		"Commentary ID": "Con2011",
+		"Source": "Attaingnant, Liber septimus (1534)",
+		"RISM link": "https://rism.online/sources/993111538",
+		"Fols./pp./no.": "fols. 4r–4v [S.]; fol. 4v [A.]; fols. 4r–4v [T.]; fols. 4r–4v [B.]",
+		"Attribution": "Consilium"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Rome S1 35-40",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1021/",
+		"Fols./pp./no.": "no. 11",
+		"Attribution": "Nicho. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Regensburg A. R. 857-860",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2409/",
+		"Fols./pp./no.": "[no. 38]",
+		"Attribution": "Gombert",
+		"Notes": "Altus missing"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Treviso 8",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2577/",
+		"Fols./pp./no.": "fols. 11v–13r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Treviso 29",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2593/",
+		"Fols./pp./no.": "no. 18",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Gardano, Fior de mottetti tratti dalli mottetti del fiore, liber 2 (1539)",
+		"RISM link": "https://rism.online/sources/993104258",
+		"Fols./pp./no.": "pp. 27–28",
+		"Attribution": "N Gombert"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Formschneider, Novum et insigne opus musicum, tomus 2 (1538)",
+		"RISM link": "https://rism.online/sources/993104214",
+		"Fols./pp./no.": "no. 26",
+		"Attribution": "anonymous"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Berg and Neuber, Secunda pars magni operis musici (1559)",
+		"RISM link": "https://rism.online/sources/993120221",
+		"Fols./pp./no.": "no. 16",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2003",
+		"Source": "Hradec Králové II A 29",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1830",
+		"Fols./pp./no.": "pp. 493–95",
+		"Attribution": "anonymous",
+		"Notes": "secunda pars only"
 	}
 ]
