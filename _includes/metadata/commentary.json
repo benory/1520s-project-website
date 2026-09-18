@@ -47,6 +47,7 @@
 	{
 		"Commentary ID": "Con2011",
 		"Source": "Attaingnant, Liber septimus (1534)",
+		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/sources/993111538",
 		"Fols./pp./no.": "fols. 4r–4v [S.]; fol. 4v [A.]; fols. 4r–4v [T.]; fols. 4r–4v [B.]",
 		"Attribution": "Consilium"
@@ -109,6 +110,49 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2577/",
 		"Fols./pp./no.": "fols. 11v–13r",
 		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Scotto, Gomberti... musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/993104316",
+		"Fols./pp./no.": "pp. 30–31",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Gardano, Musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "pp. 30–31",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Petreius, Selectissimarum mutetarum (1540)",
+		"RISM link": "https://rism.online/sources/993104290",
+		"Fols./pp./no.": "no. 23",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "pp. 32–33",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Scotto, Musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "no. 17",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Gardano, Musica quatuor vocum (1549)",
+		"RISM link": "https://rism.online/sources/993104615",
+		"Fols./pp./no.": "no. 5",
+		"Attribution": "N. Gombert"
 	},
 	{
 		"Commentary ID": "Ric1001",
@@ -292,6 +336,7 @@
 	{
 		"Commentary ID": "Ser1004",
 		"Source": "Attaingnant, Quartus liber tres missas (1532)",
+		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/sources/993104074",
 		"Fols./pp./no.": "fols. 129r–140r",
 		"Attribution": "Claudin"
@@ -302,47 +347,5 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/967/",
 		"Fols./pp./no.": "fols. 155v–166r",
 		"Attribution": "Claudin"
-	},
-	{
-		"Commentary ID": "Gom2014",
-		"Source": "Scotto, Gomberti... musica quatuor vocum (1541)",
-		"RISM link": "https://rism.online/sources/993104316",
-		"Fols./pp./no.": "pp. 30–31",
-		"Attribution": "Gomberth"
-	},
-	{
-		"Commentary ID": "Gom2014",
-		"Source": "Gardano, Musica quatuor vocum (1541)",
-		"RISM link": "https://rism.online/sources/990022089",
-		"Fols./pp./no.": "pp. 30–31",
-		"Attribution": "Gomberth"
-	},
-	{
-		"Commentary ID": "Gom2014",
-		"Source": "Petreius, Selectissimarum mutetarum (1540)",
-		"RISM link": "https://rism.online/sources/993104290",
-		"Fols./pp./no.": "no. 23",
-		"Attribution": "N. Gombert"
-	},
-	{
-		"Commentary ID": "Gom2014",
-		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
-		"RISM link": "https://rism.online/sources/993104067",
-		"Fols./pp./no.": "pp. 32–33",
-		"Attribution": "N. Gombert"
-	},
-	{
-		"Commentary ID": "Gom2014",
-		"Source": "Scotto, Musica quatuor vocum (1539)",
-		"RISM link": "https://rism.online/sources/990022089",
-		"Fols./pp./no.": "no. 17",
-		"Attribution": "Gomberth"
-	},
-	{
-		"Commentary ID": "Gom2014",
-		"Source": "Gardano, Musica quatuor vocum (1549)",
-		"RISM link": "https://rism.online/sources/993104615",
-		"Fols./pp./no.": "no. 5",
-		"Attribution": "N. Gombert"
 	}
 ]

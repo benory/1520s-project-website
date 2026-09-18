@@ -150,6 +150,20 @@ function formatCommentaryNotes(entry) {
 	return notes ? `<span class="commentary-notes">${notes}</span>` : "";
 }
 
+function compareCommentarySources(a, b) {
+	let [left, right] = [a, b].map(entry => {
+		let name = String(entry.Source || "").trim();
+		// Printed sources follow Printer, Title (date); use the date, not the title.
+		let print = name.match(/^([^,]+),\s*(.+?)\s+\(([^()]*)\)$/);
+		let year = print && print[3].match(/\b\d{4}\b/);
+		return {name, group: print ? print[1].trim() : name, year: year ? Number(year[0]) : Infinity};
+	});
+	let options = {sensitivity: "base", numeric: true, ignorePunctuation: true};
+	return left.group.localeCompare(right.group, "en", options)
+		|| left.year - right.year
+		|| left.name.localeCompare(right.name, "en", options);
+}
+
 function getWorkCommentary(workinfo) {
 	let commentaryId = String(workinfo["Commentary ID"] || "").trim();
 	let entries = commentaryId ? (DATA1520.metadata.commentary || []).filter(entry =>
@@ -157,11 +171,7 @@ function getWorkCommentary(workinfo) {
 		String(entry.Source || "").trim()
 	) : [];
 	let earliest = entries.find(entry => /^yes$/i.test(String(entry["Earliest Source"] || "").trim()));
-	let others = entries.filter(entry => entry !== earliest).sort((a, b) =>
-		String(a.Source).trim().localeCompare(String(b.Source).trim(), "en", {
-			sensitivity: "base", numeric: true, ignorePunctuation: true
-		})
-	);
+	let others = entries.filter(entry => entry !== earliest).sort(compareCommentarySources);
 	let output = "";
 	if (others.length) {
 		let sources = others.map((entry, index) => {
