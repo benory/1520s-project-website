@@ -520,12 +520,19 @@ function displayWorkInfo(id) {
 		: "Mensuration signs in earliest source";
 
 		let signImages = signs.map(sign => {
-			let filename = mensurationSigns[sign];
+			sign = String(sign).trim();
+			// Preserve editorial annotations beside the symbol, outside its lookup key.
+			let annotated = sign.match(/^(.*?)\s*((?:\[[^\]]*\]\s*)+)$/);
+			let symbol = annotated ? annotated[1].trim() : sign;
+			let annotation = annotated ? annotated[2].trim() : "";
+			let filename = mensurationSigns[symbol];
+			let escapedSign = escapeCommentaryText(sign);
 			if (filename) {
-				return `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${sign}" title="${sign}">`;
+				let image = `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${escapeCommentaryText(symbol)}" title="${escapedSign}">`;
+				return image + (annotation ? `<span class="mensuration-annotation">${escapeCommentaryText(annotation)}</span>` : "");
 			} else {
 				console.warn(`Warning: Mensuration sign not found in map: "${sign}"`);
-				return `<span class="missing-sign" title="${sign}">${sign}</span>`;
+				return `<span class="missing-sign" title="${escapedSign}">${escapedSign}</span>`;
 			}
 		}).join("");
 
