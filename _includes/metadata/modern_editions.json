@@ -147,6 +147,26 @@
 		"Publication Year": "1994"
 	},
 	{
+		"ID": "Clinkscale_1994",
+		"Composer/Author": "Antoine de Févin",
+		"Name of Volume": "Collected Works: Lamentations, Magnificats, Motets and Chansons",
+		"Editor": "Edward Clinkscale",
+		"Series and Volume": "Collected Works XI/3",
+		"Location": "Ottawa",
+		"Publisher": "Institute of Mediaeval Music",
+		"Publication Year": "1994"
+	},
+	{
+		"ID": "Clinkscale_1996",
+		"Composer/Author": "Antoine de Févin",
+		"Name of Volume": "Collected Works: Opera Dubia, Fragments and Intabulations",
+		"Editor": "Edward Clinkscale",
+		"Series and Volume": "Collected Works XI/4",
+		"Location": "Ottawa",
+		"Publisher": "Institute of Mediaeval Music",
+		"Publication Year": "1996"
+	},
+	{
 		"ID": "Edwards_2021",
 		"Composer/Author": "Ludwig Senfl",
 		"Name of Volume": "New Senfl Edition: Motets for Four Voices (A-I)",
