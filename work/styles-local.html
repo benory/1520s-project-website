@@ -847,20 +847,68 @@ body.error-report-modal-open {
 	margin: 0 auto;
 }
 
-.play, .mp3play,
-.pause, .mp3pause {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.audio-toggle {
+	appearance: none;
+	box-sizing: border-box;
+	display: grid;
+	place-items: center;
+	position: relative;
+	width: 41.6px;
+	height: 41.6px;
+	padding: 0;
+	border: 1px solid #bed4e9;
+	border-radius: 50%;
+	background: #edf5fd;
+	color: #246bac;
+	cursor: pointer;
+	transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
 
-  text-indent: -19999px;
-  background: url('/images/mp3.svg') no-repeat center;
+.audio-toggle:hover {
+	background: #dcecff;
+	border-color: #9dbedd;
+	box-shadow: 0 2px 6px rgba(31, 91, 148, 0.14);
+}
 
-  width: 46px;
-  height: 32px;
+.audio-toggle:focus-visible {
+	outline: 2px solid #246bac;
+	outline-offset: 3px;
+}
 
-  margin-right: 4px;
-  position: static;
+.audio-toggle:active {
+	transform: scale(0.95);
+}
+
+.audio-toggle .audio-icon {
+	position: absolute;
+	width: 19.5px;
+	height: 19.5px;
+	fill: currentColor;
+	transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.audio-icon-play {
+	stroke: currentColor;
+	stroke-width: 1;
+	stroke-linejoin: round;
+}
+
+.audio-icon-pause,
+.audio-toggle[data-playing="true"] .audio-icon-play {
+	opacity: 0;
+	transform: scale(0.8);
+}
+
+.audio-toggle[data-playing="true"] .audio-icon-pause {
+	opacity: 1;
+	transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.audio-toggle,
+	.audio-toggle .audio-icon {
+		transition: none;
+	}
 }
 
 
@@ -874,8 +922,9 @@ audio {
 
 
 #audiobutton-container {
-	display: inline-block;
-	margin: 0;
+	display: flex;
+	flex-shrink: 0;
+	margin: 0 4px 0 0;
 	padding: 0;
 }
 

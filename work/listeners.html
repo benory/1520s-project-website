@@ -742,6 +742,9 @@ function initializeAudio(id) {
 	audio.addEventListener("play", playAudioCallback);
 	audio.addEventListener("playing", playAudioCallback);
 	audio.addEventListener("pause", pauseAudioCallback);
+	audio.addEventListener("ended", pauseAudioCallback);
+	audio.addEventListener("emptied", pauseAudioCallback);
+	audio.addEventListener("error", pauseAudioCallback);
 
 
 	let url = `${DATA1520.dataurl}/${DATA1520.workid}-timemap.json`;

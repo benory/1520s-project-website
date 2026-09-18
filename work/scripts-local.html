@@ -157,7 +157,11 @@ function getWorkCommentary(workinfo) {
 		String(entry.Source || "").trim()
 	) : [];
 	let earliest = entries.find(entry => /^yes$/i.test(String(entry["Earliest Source"] || "").trim()));
-	let others = entries.filter(entry => entry !== earliest);
+	let others = entries.filter(entry => entry !== earliest).sort((a, b) =>
+		String(a.Source).trim().localeCompare(String(b.Source).trim(), "en", {
+			sensitivity: "base", numeric: true, ignorePunctuation: true
+		})
+	);
 	let output = "";
 	if (others.length) {
 		let sources = others.map((entry, index) => {
@@ -565,7 +569,7 @@ function displayWorkInfo(id) {
 
 			    let formattedEditions = editionsInfo.map((ed, index) => {
 			        let entry = `<div class="bibliographic-entry"><span class="bibliographic-text">`;
-			        if (index === 0) entry += `<b>Modern Editions:</b> `;
+			        if (index === 0) entry += `<b>${editionsInfo.length === 1 ? "Modern Edition" : "Modern Editions"}:</b> `;
 
 			        if (ed["Composer/Author"]) entry += `${ed["Composer/Author"]}, `;
 			        if (ed["Name of Article"]) entry += ` "${ed["Name of Article"]}," `;
@@ -1107,22 +1111,21 @@ function printSeekableAudioInfo() {
 // playAudioCallback --
 //
 
+function updateAudioButton() {
+	let button = document.querySelector("#audiobutton-toggle");
+	if (!button) return;
+	let audio = DATA1520.audio;
+	let playing = Boolean(audio && !audio.paused && !audio.ended && !audio.error);
+	button.dataset.playing = String(playing);
+	button.setAttribute("aria-label", playing ? "Pause" : "Play");
+	button.title = playing ? "Pause" : "Play";
+}
+
 function playAudioCallback() {
-	console.warn("STARTING PLABACK, CURRENT TIME", DATA1520.audio.currentTime);
-	let audioButtonPlay  = document.querySelector("#audiobutton-play");
-	let audioButtonPause = document.querySelector("#audiobutton-pause");
-	if (audioButtonPlay) {
-		console.warn("HIDING PLAY BUTTON");
-		audioButtonPlay.classList.add("hidden");
-	} else {
-		console.error("Cannot find #audiobutton-play");
-	}
-	if (audioButtonPause) {
-		audioButtonPause.classList.remove("hidden");
-	} else {
-		console.error("Cannot find #audiobutton-pause");
-	}
+	updateAudioButton();
 	DATA1520.audio.setAttribute('controls', 'controls');
+	// Both play and playing events can fire for the same playback session.
+	if (REFRESH) clearInterval(REFRESH);
 	initializeTimemap();
 }
 
@@ -1134,19 +1137,7 @@ function playAudioCallback() {
 //
 
 function pauseAudioCallback() {
-	console.log("PAUSING audio");
-	let audioButtonPlay  = document.querySelector("#audiobutton-play");
-	let audioButtonPause = document.querySelector("#audiobutton-pause");
-	if (audioButtonPlay) {
-		audioButtonPlay.classList.remove("hidden");
-	} else {
-		console.error("Cannot find #audiobutton-play");
-	}
-	if (audioButtonPause) {
-		audioButtonPause.classList.add("hidden");
-	} else {
-		console.error("Cannot find #audiobutton-pause");
-	}
+	updateAudioButton();
 	unhighlightAllNotesInSvg();
 	if (REFRESH) {
 		clearInterval(REFRESH);
@@ -1160,10 +1151,16 @@ function pauseAudioCallback() {
 // TogglePlayPauseOfAudio --
 //
 
-function togglePlayPauseOfAudio() {
+async function togglePlayPauseOfAudio() {
     let audio = DATA1520.audio;
+    if (!audio) return;
     if (audio.paused) {
-        audio.play();
+        try {
+            await audio.play();
+        } catch (error) {
+            updateAudioButton();
+            console.error("Unable to start audio playback:", error);
+        }
     } else {
         audio.pause();
     }

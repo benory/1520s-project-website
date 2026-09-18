@@ -22,8 +22,10 @@ layout: work
 
 <div id="button-container" class="button-container">
     <div id="audiobutton-container">
-        <span id="audiobutton-play" class="play" onclick="DATA1520.audio.play();">play</span>
-        <span id="audiobutton-pause" class="pause hidden" onclick="DATA1520.audio.pause();">pause</span>
+        <button type="button" id="audiobutton-toggle" class="audio-toggle" aria-label="Play" title="Play" data-playing="false" onclick="togglePlayPauseOfAudio()">
+            <svg class="audio-icon audio-icon-play" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6 3.5L16 10L6 16.5Z" /></svg>
+            <svg class="audio-icon audio-icon-pause" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="4" y="3.5" width="4" height="13" rx="1" /><rect x="12" y="3.5" width="4" height="13" rx="1" /></svg>
+        </button>
     </div>
     <div id="accidentalSelect">
        <button type="button" class="button hide" onclick="displayNoAccidentals()">Hide Editorial Accidentals</button>
