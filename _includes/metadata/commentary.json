@@ -9,7 +9,7 @@
 	},
 	{
 		"Commentary ID": "Con2008",
-		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales quatyuor (1534)",
+		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales (1534)",
 		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/sources/993104111",
 		"Fols./pp./no.": "fol. 13r",
@@ -26,15 +26,13 @@
 		"Commentary ID": "Con2008",
 		"Source": "Cambrai 125–128",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
-		"Fols./pp./no.": "fol. 93v",
-		"Attribution": "anonymous"
+		"Fols./pp./no.": "fol. 93v"
 	},
 	{
 		"Commentary ID": "Con2008",
 		"Source": "Krakow 40031",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1566",
 		"Fols./pp./no.": "fols. 5v–9r",
-		"Attribution": "anonymous",
 		"Notes": "secunda pars only"
 	},
 	{
@@ -53,6 +51,59 @@
 		"Attribution": "Consilium"
 	},
 	{
+		"Commentary ID": "Fva3002",
+		"Source": "Cambridge 1760",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1671/",
+		"Fols./pp./no.": "fols. 67v–68r",
+		"Attribution": "Antho. defevin"
+	},
+	{
+		"Commentary ID": "Fva3002",
+		"Source": "Florence XIX.117",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1404/",
+		"Fols./pp./no.": "fols. 14v–15r"
+	},
+	{
+		"Commentary ID": "Fva3002",
+		"Source": "London 35087",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 53v–54r"
+	},
+	{
+		"Commentary ID": "Fva3002",
+		"Source": "London 5242",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
+		"Fols./pp./no.": "fols. 20v–21r"
+	},
+	{
+		"Commentary ID": "Fva3002",
+		"Source": "Uppsala 76a",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
+		"Fols./pp./no.": "fols. 35v–36r",
+		"Attribution": "A. de Fevin"
+	},
+	{
+		"Commentary ID": "Fva3007",
+		"Source": "Cambridge 1760",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1671/",
+		"Fols./pp./no.": "fols. 57v–59r",
+		"Attribution": "Anth. de fevin"
+	},
+	{
+		"Commentary ID": "Fva3007",
+		"Source": "Florence XIX.117",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1404/",
+		"Fols./pp./no.": "fols. 2v–3r"
+	},
+	{
+		"Commentary ID": "Fva3007",
+		"Source": "Uppsala 76a",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
+		"Fols./pp./no.": "fols. 74v–76r"
+	},
+	{
 		"Commentary ID": "Gom2003",
 		"Source": "Berg and Neuber, Secunda pars magni operis musici (1559)",
 		"RISM link": "https://rism.online/sources/993120221",
@@ -63,8 +114,7 @@
 		"Commentary ID": "Gom2003",
 		"Source": "Formschneider, Novum et insigne opus musicum, tomus 2 (1538)",
 		"RISM link": "https://rism.online/sources/993104214",
-		"Fols./pp./no.": "no. 26",
-		"Attribution": "anonymous"
+		"Fols./pp./no.": "no. 26"
 	},
 	{
 		"Commentary ID": "Gom2003",
@@ -78,7 +128,6 @@
 		"Source": "Hradec Králové II A 29",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1830",
 		"Fols./pp./no.": "pp. 493–95",
-		"Attribution": "anonymous",
 		"Notes": "secunda pars only"
 	},
 	{
@@ -112,10 +161,187 @@
 		"Attribution": "Gombert"
 	},
 	{
-		"Commentary ID": "Gom2014",
-		"Source": "Scotto, Gomberti... musica quatuor vocum (1541)",
+		"Commentary ID": "Gom2006",
+		"Source": "Gardano, Musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "pp. 32–33",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2006",
+		"Source": "Herdringen 9821",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2956/",
+		"Fols./pp./no.": "fols. 17r–24v",
+		"Attribution": "N. Gombert",
+		"Notes": "prima pars only"
+	},
+	{
+		"Commentary ID": "Gom2006",
+		"Source": "Moderne, Primus liber cum quatuor vocibus. Motteti del fiore (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104066",
+		"Fols./pp./no.": "pp. 13–15",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2006",
+		"Source": "Scotto, Intabulatura di lautto libro sesto (1546)",
+		"RISM link": "https://rism.online/sources/993104478",
+		"Fols./pp./no.": "fol. 27v",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2006",
+		"Source": "Scotto, Musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022087",
+		"Fols./pp./no.": "no. 15",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2007",
+		"Source": "Moderne, Primus liber cum quatuor vocibus. Motteti del fiore (1532)",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://rism.online/sources/993104066",
+		"Fols./pp./no.": "pp. 41–43",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2007",
+		"Source": "Scotto, Intabulatura di lautto libro sesto (1546)",
+		"DIAMM link": "https://rism.online/sources/993104478",
+		"Fols./pp./no.": "fol. 22r"
+	},
+	{
+		"Commentary ID": "Gom2007",
+		"Source": "Scotto, Musica quatuor vocum, liber primus (1539)",
+		"DIAMM link": "https://rism.online/sources/990022087",
+		"Fols./pp./no.": "no. 21",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2008",
+		"Source": "Moderne, Secundus liber cum quinque vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104083",
+		"Fols./pp./no.": "pp. 9–10 [S]; pp. 9–10 [A]; pp. 14–16 [T I]; pp. 15–17 [T II]; pp. 11–12 [B]",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2008",
+		"Source": "Treviso 29",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2593",
+		"Fols./pp./no.": "p. 7",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2010",
+		"Source": "Gardano, Musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "pp. 42–43",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2010",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "pp. 3–4",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2010",
+		"Source": "Scotto, Musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "no. 22",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Cambrai 125–128",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
+		"Fols./pp./no.": "fol. 5",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Coimbra MM.32",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1697",
+		"Fols./pp./no.": "fols. 46v–48r"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Coimbra MM.48",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/4721/",
+		"Fols./pp./no.": "fols. 120v–122r"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Gardano, Fior de mottetti tratti dalli mottetti del fiore, liber 1 (1539)",
+		"RISM link": "https://rism.online/sources/993104233",
+		"Fols./pp./no.": "pp. 26–27",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Gardano, Gomberti ... musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "pp. 34–35",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Herdringen 9821",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2956/",
+		"Fols./pp./no.": "fols. 1r–8v",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Hradec Králové II A 17a–c",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1819",
+		"Fols./pp./no.": "fols. 43r–44r [S]; fols. 44r–45r [T]; fols. 40r–41r [B]",
+		"Notes": "altus not extant; first page of superius missing, features different text"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Leiden 1441",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1861",
+		"Fols./pp./no.": "fols. 47v–51r",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Leipzig 49–50",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1151/",
+		"Fols./pp./no.": "fols. 286r–287r [S]; fols. 315r–v [A]; fols. 268r–269r [T]; fols. 292v–293 [B]"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "pp. 17–18",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Palma B99",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1156/",
+		"Fols./pp./no.": "fols. 111r–113r",
+		"Attribution": "Gonber"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Scotto, Gomberti ... musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "no. 18",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2011",
+		"Source": "Scotto, Gomberti ... musica quatuor vocum (1541)",
 		"RISM link": "https://rism.online/sources/993104316",
-		"Fols./pp./no.": "pp. 30–31",
+		"Fols./pp./no.": "pp. 34–35",
 		"Attribution": "Gomberth"
 	},
 	{
@@ -127,9 +353,9 @@
 	},
 	{
 		"Commentary ID": "Gom2014",
-		"Source": "Petreius, Selectissimarum mutetarum (1540)",
-		"RISM link": "https://rism.online/sources/993104290",
-		"Fols./pp./no.": "no. 23",
+		"Source": "Gardano, Musica quatuor vocum (1549)",
+		"RISM link": "https://rism.online/sources/993104615",
+		"Fols./pp./no.": "no. 5",
 		"Attribution": "N. Gombert"
 	},
 	{
@@ -142,17 +368,24 @@
 	},
 	{
 		"Commentary ID": "Gom2014",
-		"Source": "Scotto, Musica quatuor vocum (1539)",
-		"RISM link": "https://rism.online/sources/990022089",
-		"Fols./pp./no.": "no. 17",
+		"Source": "Petreius, Selectissimarum mutetarum (1540)",
+		"RISM link": "https://rism.online/sources/993104290",
+		"Fols./pp./no.": "no. 23",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2014",
+		"Source": "Scotto, Gomberti ... musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/993104316",
+		"Fols./pp./no.": "pp. 30–31",
 		"Attribution": "Gomberth"
 	},
 	{
 		"Commentary ID": "Gom2014",
-		"Source": "Gardano, Musica quatuor vocum (1549)",
-		"RISM link": "https://rism.online/sources/993104615",
-		"Fols./pp./no.": "no. 5",
-		"Attribution": "N. Gombert"
+		"Source": "Scotto, Musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "no. 17",
+		"Attribution": "Gomberth"
 	},
 	{
 		"Commentary ID": "Ric1001",
@@ -203,7 +436,6 @@
 		"Source": "Munich F",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2063/",
 		"Fols./pp./no.": "fols. 37v–57v",
-		"Attribution": "anonymous",
 		"Notes": "Lacking Agnus Dei II duo"
 	},
 	{
@@ -218,7 +450,6 @@
 		"Source": "Treviso 9",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2578/",
 		"Fols./pp./no.": "fols. 124v–126r",
-		"Attribution": "anonymous",
 		"Movements": "SA",
 		"Notes": "Agnus Dei III set to music of Kyrie II"
 	},
@@ -227,6 +458,61 @@
 		"Source": "Vatican 17",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1463/",
 		"Fols./pp./no.": "fols. [iii]v–23r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2030",
+		"Source": "Leiden 1442",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1862/",
+		"Fols./pp./no.": "fols. 226v–232r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2030",
+		"Source": "s-Hertogenbosch 158",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1814",
+		"Fols./pp./no.": "fols. 141v–144r",
+		"Notes": "altus and tenor swapped in ‘Quia fecit’"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Hradec Králové II A 26a/b",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
+		"Fols./pp./no.": "pp. 33–34"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Kriesstein, Cantiones septem, sex et quinque vocum (1545)",
+		"RISM link": "https://rism.online/sources/993104446",
+		"Fols./pp./no.": "fol. D1",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Leipzig 49–50",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1151/",
+		"Fols./pp./no.": "fols. 284v–85r [S.]; fols. 313r–14r [A.]; fols. 103v–104r [Q.]; fols. 266r–v [T.]; fols. 291r–v [B.]"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Lucca 775",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1006",
+		"Fols./pp./no.": "fols. 32v–33r"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Montanus and Neuber, Secundus Tomus (1555)",
+		"RISM link": "https://rism.online/sources/993120125",
+		"Fols./pp./no.": "no. 2",
+		"Attribution": "Ioannes Richafort"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Munich 401",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2246/",
+		"Fols./pp./no.": "fols. 36v–37r [S.]; fols. 37v–38r [A.]; fols. 34v–35r [T.]; fols. 35v–36r [B.]",
 		"Attribution": "Richafort"
 	},
 	{
@@ -307,8 +593,7 @@
 		"Commentary ID": "Ror0107",
 		"Source": "Milano s.s.",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2150/",
-		"Fols./pp./no.": "fols. 57v–58r",
-		"Attribution": "anonymous"
+		"Fols./pp./no.": "fols. 57v–58r"
 	},
 	{
 		"Commentary ID": "Ror0107",
