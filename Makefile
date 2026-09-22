@@ -7,7 +7,13 @@
 ## metadata into the _includes/metadata directory.
 ##
 
-all: download
+.PHONY: all download texts
+
+all: download texts
 
 download:
-	(cd _includes/metadata && make download)
+	$(MAKE) -C _includes/metadata download
+
+# Refresh the work-ID index from the published scores repository.
+texts:
+	ruby _includes/metadata/build-text-index.rb

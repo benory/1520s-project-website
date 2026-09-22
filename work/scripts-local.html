@@ -4,6 +4,58 @@
 
 const AUTOCADENCE_FILTER = "autocadence -c -d | shed -ke 's/:cvf:([^:]*):t=[^:]*/:cvf:$1/gL' | shed -ke 's/:diss:([^:]*):t=[^:]*/:diss:$1/gL'";
 
+const WORK_TEXT_BASE_URL = "https://raw.githubusercontent.com/benory/1520s-project-scores/main/";
+const WORK_TEXT_INDEX = {% include metadata/texts.json %};
+
+async function displayWorkText(id, container) {
+	try {
+		const path = Object.hasOwn(WORK_TEXT_INDEX, id) ? WORK_TEXT_INDEX[id] : null;
+		if (!path) return;
+		if (typeof path !== "string" || !path.startsWith("texts/") ||
+			!path.endsWith(".txt") || path.split("/").includes("..")) {
+			throw new Error(`Invalid text path for ${id}`);
+		}
+		const response = await fetch(WORK_TEXT_BASE_URL + path.split("/").map(encodeURIComponent).join("/"));
+		if (!response.ok) throw new Error(`Work text: HTTP ${response.status}`);
+		const text = (await response.text()).replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n").replace(/\n+$/, "");
+		if (!text.trim() || !container.isConnected) return;
+		const lines = text.split("\n");
+		const label = document.createElement("b");
+		label.textContent = "Text:";
+		const content = document.createElement("span");
+		content.className = "work-text-content";
+		content.id = "work-text-content";
+		const renderLines = visibleLines => {
+			content.replaceChildren(...visibleLines.map(line => {
+				const verse = document.createElement("span");
+				verse.className = "work-text-line";
+				verse.textContent = line;
+				return verse;
+			}));
+		};
+		renderLines(lines.slice(0, 3));
+		container.replaceChildren(label, document.createTextNode(" "), content);
+		if (lines.length > 3) {
+			const button = document.createElement("button");
+			button.type = "button";
+			button.className = "commentary-toggle";
+			button.textContent = "See more";
+			button.setAttribute("aria-expanded", "false");
+			button.setAttribute("aria-controls", content.id);
+			button.addEventListener("click", () => {
+				const expanded = button.getAttribute("aria-expanded") !== "true";
+				renderLines(expanded ? lines : lines.slice(0, 3));
+				button.setAttribute("aria-expanded", String(expanded));
+				button.textContent = expanded ? "See less" : "See more";
+			});
+			container.appendChild(button);
+		}
+		container.hidden = false;
+	} catch (error) {
+		console.warn(`Unable to load text for ${id}:`, error);
+	}
+}
+
 
 //////////////////////////////
 //
@@ -695,6 +747,7 @@ function displayWorkInfo(id) {
     leftColumnCell.innerHTML = `${titleoutput}
         ${composeroutput}
         ${genreoutput}
+        <div class="work-item work-text" hidden></div>
         ${attrplausibleoutput || ""}
         ${attrimprobableoutput || ""}
         ${attrimplausibleoutput || ""}
@@ -722,6 +775,7 @@ function displayWorkInfo(id) {
         `;
     row.appendChild(rightColumnCell);
     tbody.appendChild(row);
+	displayWorkText(id, leftColumnCell.querySelector(".work-text"));
 }
 
 

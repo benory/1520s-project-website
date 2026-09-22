@@ -15,6 +15,10 @@ The website is one part of a larger digital edition infrastructure:
 
 Score files are maintained in the score repository. The data server processes Humdrum files and generates derivative formats and analyses used by the website, including MusicXML, MEI, MIDI, MP3, SVG notation, activity plots, keyscape plots, and playback highlighting data.
 
+Work texts are maintained as UTF-8 `.txt` files under `texts/` in the score repository, named with the matching metadata ID, for example `texts/Fva/Fva3002-Adieu_solas.txt`. That directory contains only the edited texts. Running `make` in this website repository refreshes `_includes/metadata/texts.json` from the scores repository's published `main` branch using Ruby and curl. The generator rejects malformed filenames, duplicate IDs, and incomplete listings, preserving the existing index on failure. Commit the updated index with website changes when adding, renaming, or removing texts; `make texts` refreshes just this index.
+
+Work pages include the generated index and fetch the matching text directly from the scores repository. Edits to an existing text require no index rebuild and appear after GitHub's cache refreshes. Text appears beneath Genre, preserving line and stanza breaks; texts longer than three file lines have a See more / See less control. Missing texts leave no empty field. No spreadsheet column or scores-repository script or GitHub Action is required.
+
 ## Metadata
 
 Website metadata is stored in `_includes/metadata/` as JSON files. These files support search, filtering, work pages, composer information, modern edition data, and statistical visualizations.

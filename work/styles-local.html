@@ -115,6 +115,35 @@ main {
 	content: " ";
 }
 
+.work-text {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	--commentary-source-gap: 5px;
+	line-height: 1.45;
+}
+
+.work-text[hidden] {
+	display: none;
+}
+
+.work-text-content {
+	grid-column: 2;
+}
+
+.work-text-line {
+	display: block;
+	min-height: 1.45em;
+	padding-left: 1em;
+	text-indent: -1em;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
+.work-text .commentary-toggle {
+	grid-column: 2;
+	margin-left: 0;
+}
+
 .info-link {
 	font-size: 12px;
 	opacity: 1;
