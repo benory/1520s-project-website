@@ -172,14 +172,15 @@ function makeTableBody(headings, data) {
 			}
 
 			else if (headings[i] == INDEX_firstsource) {
-				let url = getSource(entry);
-				let sourcevalue = value;
-				if (url) {
-					output += `<a target="_blank" href="${url}">${sourcevalue}</a>`;
-				}
-				else {
-					output += `${sourcevalue}`;
-				}
+				output += String(value || "").split(";").map((name, index) => {
+					let sourceEntry = {...entry};
+					for (let field of ["DIAMM Source Link", "RISM Source Link"]) {
+						let parts = String(entry[field] || "").split(";");
+						sourceEntry[field] = parts.length === String(value || "").split(";").length ? parts[index].trim() : "";
+					}
+					let url = getSource(sourceEntry);
+					return url ? `<a target="_blank" href="${url}">${name.trim()}</a>` : name.trim();
+				}).join("; ");
 			}
 			else {
 				output += value;
@@ -422,7 +423,9 @@ function buildSourceSelect(data) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A SOURCE");
 			continue;
 		}
-		counter[source] = (counter[source] === undefined) ? 1 : counter[source] + 1;
+		for (let name of new Set(source.split(";").map(value => value.trim()).filter(Boolean))) {
+			counter[name] = (counter[name] || 0) + 1;
+		}
 	}
 
 	let slist = Object.keys(counter).sort();
@@ -718,7 +721,7 @@ function doSearch(data) {
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
 			let source = entry[INDEX_firstsource];
-			if (source === sourceQuery) {
+			if (String(source || "").split(";").map(value => value.trim()).includes(sourceQuery)) {
 				tempdata.push(entry);
 			}
 		}
@@ -764,7 +767,7 @@ function doSearch(data) {
 	    if (!raw) continue;
 
 	    const signsInPiece = raw
-	      .split(";")
+	      .split(/[;/]/)
 	      .map(sign => sign.trim())
 	      .filter(Boolean);
 

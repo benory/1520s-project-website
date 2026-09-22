@@ -164,14 +164,56 @@ function compareCommentarySources(a, b) {
 		|| left.name.localeCompare(right.name, "en", options);
 }
 
+// Preserve empty positions: a missing first link must not become the second link.
+function getFirstSources(workinfo) {
+	let names = String(workinfo["First Source"] || "").split(";").map(value => value.trim());
+	let sources = names.map(name => ({"First Source": name}));
+	let fields = ["DIAMM Source Link", "RISM Source Link", "IIIF Source", "IIIF Manifest",
+		"RISM or CC Source Sigla", "Pages, Folios, or Numbers", "Mensuration Signs in Earliest Source"];
+	for (let field of fields) {
+		let raw = workinfo[field];
+		if (Array.isArray(raw)) raw = raw.join(";");
+		let values = sources.length === 1 ? [String(raw || "").trim()] : String(raw || "").split(field === "Mensuration Signs in Earliest Source" ? "/" : ";").map(value => value.trim());
+		if (raw && values.length !== sources.length) {
+			console.warn(`Source field count mismatch for ${workinfo.ID}: ${field}`);
+			// An incomplete list is ambiguous; never assign it to an arbitrary source.
+			continue;
+		}
+		sources.forEach((source, index) => source[field] = values[index] || "");
+	}
+	return sources;
+}
+
 function getWorkCommentary(workinfo) {
 	let commentaryId = String(workinfo["Commentary ID"] || "").trim();
 	let entries = commentaryId ? (DATA1520.metadata.commentary || []).filter(entry =>
 		String(entry["Commentary ID"] || "").trim() === commentaryId &&
 		String(entry.Source || "").trim()
 	) : [];
-	let earliest = entries.find(entry => /^yes$/i.test(String(entry["Earliest Source"] || "").trim()));
-	let others = entries.filter(entry => entry !== earliest).sort(compareCommentarySources);
+	let sources = getFirstSources(workinfo);
+	let earliest = new Array(sources.length).fill(null);
+	let candidates = sources.map(() => []);
+	for (let entry of entries) {
+		let marker = String(entry["Earliest Source"] || "").trim();
+		let match = marker.match(/^yes([1-9]\d*)?$/i);
+		if (!match) {
+			if (/^yes/i.test(marker)) console.warn("Invalid earliest source marker", workinfo.ID, marker);
+			continue;
+		}
+		let index = match[1] ? Number(match[1]) - 1 : (sources.length === 1 ? 0 : -1);
+		if (index < 0 || index >= sources.length || !sources[index]["First Source"]) {
+			console.warn("Unmatched earliest source marker", workinfo.ID, marker);
+			continue;
+		}
+		candidates[index].push(entry);
+	}
+	candidates.forEach((matches, index) => {
+		if (matches.length === 1) earliest[index] = matches[0];
+		else if (matches.length > 1 || (entries.length && sources.length > 1)) {
+			console.warn("Missing or duplicate earliest source match", workinfo.ID, index + 1);
+		}
+	});
+	let others = entries.filter(entry => !earliest.includes(entry)).sort(compareCommentarySources);
 	let output = "";
 	if (others.length) {
 		let sources = others.map((entry, index) => {
@@ -465,47 +507,24 @@ function displayWorkInfo(id) {
 		genreoutput += `<div class="work-item"><b>Genre:</b> ${genre}</div>`;
 	}
 
-	let source = workinfo["First Source"];
 	let uniquesource = workinfo["Unique Source"];
 	let sourceoutput = "";
 	let commentary = getWorkCommentary(workinfo);
-	let earliest = commentary.earliest;
-	if (earliest) {
-		source = earliest.Source;
-	}
-
-	if (source) {
-		let diammsource = (earliest && earliest["DIAMM link"]) || workinfo["DIAMM Source Link"];
-		let rismsource = (earliest && earliest["RISM link"]) || workinfo["RISM Source Link"];
-		let foliosnumberspages = workinfo["Pages, Folios, or Numbers"];
-		let sourcetype = "";
-		if (uniquesource == "yes") {
-			sourcetype = "Unique";
-		} else if (earliest) {
-			sourcetype = "Earliest";
-		} else {
-			sourcetype = "First";
-		}
-		if (earliest) {
-			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value">${formatCommentarySource(source, diammsource, rismsource)}`;
-		} else if (diammsource) {
-			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value"><a target="_blank" href="${diammsource}">${source}</a>`;
-		} else if (rismsource) {
-			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value"><a target="_blank" href="${rismsource}">${source}</a>`;
-		} else {
-			sourceoutput += `<div class="work-item source-item"><b>${sourcetype} source:</b><span class="source-value">${source}`;
-		}
-
-		if (foliosnumberspages) {
-			sourceoutput += `, ${foliosnumberspages}`;
-		}
-		if (earliest) {
-			sourceoutput += formatCommentaryDetails(earliest, workinfo, false);
-			sourceoutput += formatCommentaryNotes(earliest);
-		}
+	let firstSources = getFirstSources(workinfo);
+	firstSources.forEach((sourceInfo, index) => {
+		let earliest = commentary.earliest[index];
+		let source = earliest ? earliest.Source : sourceInfo["First Source"];
+		if (!source) return;
+		let diamm = (earliest && earliest["DIAMM link"]) || sourceInfo["DIAMM Source Link"];
+		let rism = (earliest && earliest["RISM link"]) || sourceInfo["RISM Source Link"];
+		let folios = sourceInfo["Pages, Folios, or Numbers"];
+		let type = firstSources.length > 1 ? "Earliest" : uniquesource === "yes" ? "Unique" : earliest ? "Earliest" : "First";
+		let number = firstSources.length > 1 ? ` ${index + 1}` : "";
+		sourceoutput += `<div class="work-item source-item"><b>${type} source${number}:</b><span class="source-value">${formatCommentarySource(source, diamm, rism)}`;
+		if (folios) sourceoutput += `, ${escapeCommentaryText(folios)}`;
+		if (earliest) sourceoutput += formatCommentaryDetails(earliest, workinfo, false) + formatCommentaryNotes(earliest);
 		sourceoutput += `</span></div>`;
-
-	}
+	});
 
 	let date = workinfo["First Source Date"];
 	let dateoutput = "";
@@ -518,37 +537,40 @@ function displayWorkInfo(id) {
 		dateoutput = `<div class="work-item"><b>${label}:</b> ${date}</div>`;
 	}
 
-	let emensurations	  = workinfo["Mensuration Signs in Earliest Source"];
-
 	let mensurationOutput = "";
-	if (emensurations) {
-		// Ensure emensurations is an array; if it's a string, split on semicolons:
-		let signs = Array.isArray(emensurations) ? emensurations : emensurations.split(";").map(sign => sign.trim());
+	firstSources.forEach((sourceInfo, index) => {
+		let emensurations = sourceInfo["Mensuration Signs in Earliest Source"];
+		if (emensurations) {
+			// Ensure emensurations is an array; if it's a string, split on semicolons:
+			let signs = Array.isArray(emensurations) ? emensurations : emensurations.split(";").map(sign => sign.trim());
 
-		let label = (uniquesource === "yes") 
-		? "Mensuration sign in source" 
-		: "Mensuration signs in earliest source";
+			let label = (uniquesource === "yes")
+			? "Mensuration sign in source"
+			: "Mensuration signs in earliest source";
+			if (firstSources.length > 1) label = `Mensuration signs in earliest source ${index + 1}`;
 
-		let signImages = signs.map(sign => {
-			sign = String(sign).trim();
-			// Preserve editorial annotations beside the symbol, outside its lookup key.
-			let annotated = sign.match(/^(.*?)\s*((?:\[[^\]]*\]\s*)+)$/);
-			let symbol = annotated ? annotated[1].trim() : sign;
-			let annotation = annotated ? annotated[2].trim() : "";
-			let filename = mensurationSigns[symbol];
-			let escapedSign = escapeCommentaryText(sign);
-			if (filename) {
-				let image = `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${escapeCommentaryText(symbol)}" title="${escapedSign}">`;
-				return image + (annotation ? `<span class="mensuration-annotation">${escapeCommentaryText(annotation)}</span>` : "");
-			} else {
-				console.warn(`Warning: Mensuration sign not found in map: "${sign}"`);
-				return `<span class="missing-sign" title="${escapedSign}">${escapedSign}</span>`;
-			}
-		}).join("");
+			let signImages = signs.map(sign => {
+				sign = String(sign).trim();
+				// Preserve editorial annotations beside the symbol, outside its lookup key.
+				let annotated = sign.match(/^(.*?)\s*((?:\[[^\]]*\]\s*)+)$/);
+				let symbol = annotated ? annotated[1].trim() : sign;
+				let annotation = annotated ? annotated[2].trim() : "";
+				let filename = mensurationSigns[symbol];
+				let escapedSign = escapeCommentaryText(sign);
+				if (filename) {
+					let image = `<img class="mensuration-sign" src="/images/mensurations/${filename}" alt="${escapeCommentaryText(symbol)}" title="${escapedSign}">`;
+					return image + (annotation ? `<span class="mensuration-annotation">${escapeCommentaryText(annotation)}</span>` : "");
+				} else {
+					console.warn(`Warning: Mensuration sign not found in map: "${sign}"`);
+					return `<span class="missing-sign" title="${escapedSign}">${escapedSign}</span>`;
+				}
+			}).join("");
 
 
-		mensurationOutput = `<div class="work-item mensuration-item"><b>${label}:</b><span class="mensuration-signs">${signImages}</span></div>`;
-	}
+			mensurationOutput += `<div class="work-item mensuration-item"><b>${label}:</b><span class="mensuration-signs">${signImages}</span></div>`;
+		}
+
+	});
 
 	let editionsource       = workinfo["Edition Source"];
 	let editionsourceURL    = workinfo["Edition Source URL"];

@@ -44,10 +44,10 @@
 	},
 	{
 		"Commentary ID": "Con2011",
-		"Source": "Attaingnant, Liber septimus (1534)",
+		"Source": "Attaingnant, Liber septimus. xxiiii. trium, quatuor, quinque, sex ve vocum (1534)",
 		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/sources/993111538",
-		"Fols./pp./no.": "fols. 4r–4v [S.]; fol. 4v [A.]; fols. 4r–4v [T.]; fols. 4r–4v [B.]",
+		"Fols./pp./no.": "fols. 4r–v [S.]; fol. 4v [A.]; fols. 4r–v [T.]; fols. 4r–v [B.]",
 		"Attribution": "Consilium"
 	},
 	{
@@ -162,7 +162,7 @@
 	},
 	{
 		"Commentary ID": "Gom2006",
-		"Source": "Gardano, Musica quatuor vocum (1541)",
+		"Source": "Gardano, Gomberti ... musica quatuor vocum (1541)",
 		"RISM link": "https://rism.online/sources/990022089",
 		"Fols./pp./no.": "pp. 32–33",
 		"Attribution": "Gomberth"
@@ -201,20 +201,20 @@
 		"Commentary ID": "Gom2007",
 		"Source": "Moderne, Primus liber cum quatuor vocibus. Motteti del fiore (1532)",
 		"Earliest Source": "yes",
-		"DIAMM link": "https://rism.online/sources/993104066",
+		"RISM link": "https://rism.online/sources/993104066",
 		"Fols./pp./no.": "pp. 41–43",
 		"Attribution": "Nicolaus Gombert"
 	},
 	{
 		"Commentary ID": "Gom2007",
 		"Source": "Scotto, Intabulatura di lautto libro sesto (1546)",
-		"DIAMM link": "https://rism.online/sources/993104478",
+		"RISM link": "https://rism.online/sources/993104478",
 		"Fols./pp./no.": "fol. 22r"
 	},
 	{
 		"Commentary ID": "Gom2007",
 		"Source": "Scotto, Musica quatuor vocum, liber primus (1539)",
-		"DIAMM link": "https://rism.online/sources/990022087",
+		"RISM link": "https://rism.online/sources/990022087",
 		"Fols./pp./no.": "no. 21",
 		"Attribution": "Gomberth"
 	},
@@ -235,7 +235,7 @@
 	},
 	{
 		"Commentary ID": "Gom2010",
-		"Source": "Gardano, Musica quatuor vocum (1541)",
+		"Source": "Gardano, Gomberti ... musica quatuor vocum (1541)",
 		"RISM link": "https://rism.online/sources/990022089",
 		"Fols./pp./no.": "pp. 42–43",
 		"Attribution": "Gomberth"
@@ -345,8 +345,84 @@
 		"Attribution": "Gomberth"
 	},
 	{
+		"Commentary ID": "Gom2012",
+		"Source": "Gardano, Gomberti ... musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "p. 55",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2012",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "p. 19",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2012",
+		"Source": "Scotto, Musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "no. 16",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2012",
+		"Source": "Scotto, Musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/993104316",
+		"Fols./pp./no.": "p. 55",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Cambrai 125–128",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
+		"Fols./pp./no.": "fol. 89r"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Coimbra 48",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/4721",
+		"Fols./pp./no.": "fols. 40v–42r",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Gardano, Fior de mottetti tratti dalli mottetti del fiore, liber 1 (1539)",
+		"RISM link": "https://rism.online/sources/993104233",
+		"Fols./pp./no.": "no. 27",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "pp. 27–28",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Munich 401",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2246",
+		"Fols./pp./no.": "fols. 66v–68r [S.]; fols. 68v–70r [A.]; fols. 62r–63v [T.]; fols. 64r–65v [B.]"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Padua D27",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1450/",
+		"Fols./pp./no.": "pp. 50–52"
+	},
+	{
+		"Commentary ID": "Gom2013",
+		"Source": "Scotto, Musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "no. 19",
+		"Attribution": "Gomberth"
+	},
+	{
 		"Commentary ID": "Gom2014",
-		"Source": "Gardano, Musica quatuor vocum (1541)",
+		"Source": "Gardano, Gomberti ... musica quatuor vocum (1541)",
 		"RISM link": "https://rism.online/sources/990022089",
 		"Fols./pp./no.": "pp. 30–31",
 		"Attribution": "Gomberth"
@@ -388,6 +464,401 @@
 		"Attribution": "Gomberth"
 	},
 	{
+		"Commentary ID": "Gom2015",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "p. 34",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2015",
+		"Source": "Toledo 10",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2550/",
+		"Fols./pp./no.": "fols. 97v–99r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2015",
+		"Source": "Ulm 237",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2599/",
+		"Fols./pp./no.": "fols. 47r–v"
+	},
+	{
+		"Commentary ID": "Gom2015",
+		"Source": "Valladolid 15",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2618",
+		"Fols./pp./no.": "fol. 14v"
+	},
+	{
+		"Commentary ID": "Gom2016",
+		"Source": "Attaingnant, Liber septimus. xxiiii. trium, quatuor, quinque, sex ve vocum (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104120",
+		"Fols./pp./no.": "no. 2",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2016",
+		"Source": "Gardano, Nicolai Gomberti ... quinque vocibus liber secundus (1551)",
+		"RISM link": "https://rism.online/sources/990022096",
+		"Fols./pp./no.": "pp. 28–29",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2016",
+		"Source": "Hradec Králové 32",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
+		"Fols./pp./no.": "pp. 192–94",
+		"Notes": "superius and quintus only"
+	},
+	{
+		"Commentary ID": "Gom2016",
+		"Source": "Scotto, Nicolai Gomberti ... motectorum quinque vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022094",
+		"Fols./pp./no.": "no. 9",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2016",
+		"Source": "Scotto, Nicolai Gomberti motetti cum quinque vocibus (1550)",
+		"RISM link": "https://rism.online/sources/990022095",
+		"Fols./pp./no.": "no. 9",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2016",
+		"Source": "Treviso 29",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2593/",
+		"Fols./pp./no.": "no. II 42",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2017",
+		"Source": "Attaingnant, Liber octavus. xx. musicales motetos quatuor, quinque vel sex vocum modulos habet. (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104099",
+		"Fols./pp./no.": "fols. 5r–v",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2017",
+		"Source": "Coimbra MM.48",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/4721/",
+		"Fols./pp./no.": "fols. 42v–43v",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2017",
+		"Source": "Munich 401",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2246/",
+		"Fols./pp./no.": "fols. 63r–64v [S.]; fols. 65r–67r [A.]; fols. 58v–60r [T.]; fols. 61v–63r [B.]"
+	},
+	{
+		"Commentary ID": "Gom2017",
+		"Source": "Rein 101",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1170/",
+		"Fols./pp./no.": "fol. 51v",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2018",
+		"Source": "Attaingnant, Lib. duodecimus. xvii. musicales ad virginem christiparam salutationes habet. (1535)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104133",
+		"Fols./pp./no.": "fols. 6v–8r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2018",
+		"Source": "Verona 218",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1034/",
+		"Fols./pp./no.": "fols. 28v–29r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2019",
+		"Source": "Gardano, Gomberti ... musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/990022089",
+		"Fols./pp./no.": "pp. 50–53",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2019",
+		"Source": "Königsberg 7",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2809",
+		"Fols./pp./no.": "[no. 41]",
+		"Attribution": "Richafort",
+		"Notes": "only bassus extant"
+	},
+	{
+		"Commentary ID": "Gom2019",
+		"Source": "Scotto, Gomberti ... musica quatuor vocum (1539)",
+		"RISM link": "https://rism.online/sources/95499005",
+		"Fols./pp./no.": "no. 11",
+		"Attribution": "Nicolaus Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2019",
+		"Source": "Scotto, Gomberti ... musica quatuor vocum (1541)",
+		"RISM link": "https://rism.online/sources/993104316",
+		"Fols./pp./no.": "pp. 50–53",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2019",
+		"Source": "Scotto, Intabolatura di lauto libro primo (1546)",
+		"RISM link": "https://rism.online/sources/993104489",
+		"Fols./pp./no.": "fol. 35v",
+		"Attribution": "Gomb"
+	},
+	{
+		"Commentary ID": "Gom2021",
+		"Source": "Formschneider, Novum et insigne opus musicum, tomus 2 (1538)",
+		"RISM link": "https://rism.online/sources/993104214",
+		"Fols./pp./no.": "no. 42",
+		"Attribution": "Natalis Gombert"
+	},
+	{
+		"Commentary ID": "Gom2022",
+		"Source": "Berg and Neuber, Novum et insigne opus musicum (1558)",
+		"RISM link": "https://rism.online/sources/993120216",
+		"Fols./pp./no.": "fols. h2v–h3r [S.]; fols. hh4v–ii1r [A1]; fols. G2v–G3r [T]; fols. HH2v–HH3r [B1]; fols. Hh2v–Hh3r [A2]; fols. Ggg3v–Ggg4r [B2]",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2022",
+		"Source": "Formschneider, Secundus tomus novi operis musici, sex, quinque et quatuor vocum (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104214",
+		"Fols./pp./no.": "no. 6"
+	},
+	{
+		"Commentary ID": "Gom2022",
+		"Source": "Gardano, Primus liber cum sex vocibus (1539)",
+		"RISM link": "https://rism.online/sources/993104253",
+		"Fols./pp./no.": "p. 3",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2024",
+		"Source": "Bologna Q27 Iº",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1393/",
+		"Fols./pp./no.": "fols. 19v–21r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2024",
+		"Source": "Gardano, Primus liber cum quinque vocibus (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104216",
+		"Fols./pp./no.": "p. 8",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2024",
+		"Source": "Moderne, Quartus liber mottetorum ad quinque et sex voces (1539)",
+		"RISM link": "https://rism.online/sources/993104256",
+		"Fols./pp./no.": "p. 32",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2024",
+		"Source": "Schöffer, Cantiones quinque vocum selectissimae (1539)",
+		"RISM link": "https://rism.online/sources/993114335",
+		"Fols./pp./no.": "fol. Dd3v",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2024",
+		"Source": "Scotto, Excellentis. Autorum Diverse Modulationes (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Fols./pp./no.": "pp. 7–8",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2025",
+		"Source": "Berg and Neuber, Quintus tomus evangeliorum, et piarum sententiarum: Quinque vocum (1546)",
+		"RISM link": "https://rism.online/sources/993120177",
+		"Fols./pp./no.": "no. 11",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2025",
+		"Source": "Gardano, Primus liber cum quinque vocibus (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104216",
+		"Fols./pp./no.": "pp. 24–25",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2025",
+		"Source": "Scotto, Liber Primus cum quinque vocibus (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2026",
+		"Source": "Berg and Neuber, Quintus tomus evangeliorum, et piarum sententiarum: Quinque vocum (1546)",
+		"RISM link": "https://rism.online/sources/993120177",
+		"Fols./pp./no.": "no. 19",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2026",
+		"Source": "Gardano, Primus liber cum quinque vocibus (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104216",
+		"Fols./pp./no.": "p. 27",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2026",
+		"Source": "Scotto, Liber Primus cum quinque vocibus (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2027",
+		"Source": "Bologna Q27 Iº",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1393",
+		"Fols./pp./no.": "fols. 57r–58v",
+		"Attribution": "Gombert",
+		"Notes": "only discantus extant"
+	},
+	{
+		"Commentary ID": "Gom2027",
+		"Source": "Cappella Giulia XII,4",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1498/",
+		"Fols./pp./no.": "fols. 7v–9r",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2027",
+		"Source": "Scotto, Excellentis. Autorum Diverse Modulationes (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Fols./pp./no.": "pp. 28–29",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2027",
+		"Source": "Scotto, Liber Primus cum quinque vocibus (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Fols./pp./no.": "pp. 28–29",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Bologna Q27 Iº",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1393/",
+		"Fols./pp./no.": "fols. 66v–67r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1539)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104260",
+		"Fols./pp./no.": "fols. 2v–3r",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Paris 851",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
+		"Fols./pp./no.": "fols. 538r–539r",
+		"Attribution": "Nicolai Gombert"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Schöffer, Cantiones quinque vocum selectissimae (1539)",
+		"RISM link": "https://rism.online/sources/98854078",
+		"Fols./pp./no.": "no. 3",
+		"Attribution": "Nico. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Scotto, Musica excellentissimi Nicolai Gomberti (1539)",
+		"RISM link": "https://rism.online/sources/990022091",
+		"Fols./pp./no.": "no. 7",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Scotto, Nicolai Gomberti ... quinque vocum motetta vulgo nominatur (1541)",
+		"RISM link": "https://rism.online/sources/98854078",
+		"Fols./pp./no.": "fol. A4v",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2029",
+		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1539)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104260",
+		"Fols./pp./no.": "fol. 6r",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2029",
+		"Source": "Paris 851",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
+		"Fols./pp./no.": "fols. 539r–540r",
+		"Attribution": "Nicolai Gombert"
+	},
+	{
+		"Commentary ID": "Gom2029",
+		"Source": "Scotto, Musica excellentissimi Nicolai Gomberti (1539)",
+		"RISM link": "https://rism.online/sources/990022091",
+		"Fols./pp./no.": "no. 12",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2029",
+		"Source": "Scotto, Nicolai Gomberti ... quinque vocum motetta vulgo nominatur (1541)",
+		"RISM link": "https://rism.online/sources/993104315",
+		"Fols./pp./no.": "fol. A3v",
+		"Attribution": "Gomberth"
+	},
+	{
+		"Commentary ID": "Gom2030",
+		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1539)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104260",
+		"Fols./pp./no.": "fol. 7r",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2030",
+		"Source": "Gardano, Nicolai Gomberti ... cum quinque vocibus liber secundus (1552)",
+		"RISM link": "https://rism.online/sources/990022096",
+		"Fols./pp./no.": "no. 18",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2030",
+		"Source": "Hradec Králové 32",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
+		"Fols./pp./no.": "pp. 178–80",
+		"Attribution": "Gombert",
+		"Notes": "only cantus and quintus partbooks extant"
+	},
+	{
+		"Commentary ID": "Gom2031",
+		"Source": "Moderne, Tertius liber mottetorum ad quinque et sex voces (1538)",
+		"RISM link": "https://rism.online/sources/993104209",
+		"Fols./pp./no.": "fols. 6r–7r",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2031",
+		"Source": "Treviso 29",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2593",
+		"Fols./pp./no.": "p. 19",
+		"Attribution": "Finot"
+	},
+	{
 		"Commentary ID": "Ric1001",
 		"Source": "'s-Hertogenbosch 154",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1812/",
@@ -396,7 +867,7 @@
 	},
 	{
 		"Commentary ID": "Ric1001",
-		"Source": "Attaingnant, Quartus liber tres missas continet (1532)",
+		"Source": "Attaingnant, Quartus liber tres missas (1532)",
 		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/sources/993104074",
 		"Fols./pp./no.": "fols. 117r–129v",
@@ -477,7 +948,7 @@
 	},
 	{
 		"Commentary ID": "Ric2033",
-		"Source": "Hradec Králové II A 26a/b",
+		"Source": "Hradec Králové 32",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
 		"Fols./pp./no.": "pp. 33–34"
 	},
@@ -492,7 +963,7 @@
 		"Commentary ID": "Ric2033",
 		"Source": "Leipzig 49–50",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1151/",
-		"Fols./pp./no.": "fols. 284v–85r [S.]; fols. 313r–14r [A.]; fols. 103v–104r [Q.]; fols. 266r–v [T.]; fols. 291r–v [B.]"
+		"Fols./pp./no.": "fols. 284v–285r [S.]; fols. 313r–314r [A.]; fols. 103v–104r [Q.]; fols. 266r–v [T.]; fols. 291r–v [B.]"
 	},
 	{
 		"Commentary ID": "Ric2033",
