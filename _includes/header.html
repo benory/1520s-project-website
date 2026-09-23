@@ -34,6 +34,14 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: 901px) {
+  .site-header--work .wrapper {
+    max-width: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .site-title img {
   display: block;
   height: 64px;
@@ -55,7 +63,7 @@
 .site-nav .trigger {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 26px;
 }
 
 .site-nav .page-link {
@@ -75,6 +83,30 @@
   display: inline-block;
 }
 
+.site-nav .dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: transparent;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.site-nav .dropdown-trigger::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.site-nav .page-link:focus-visible {
+  outline: 2px solid #6A6156;
+  outline-offset: 4px;
+}
+
 .site-nav .dropdown::after {
   content: "";
   position: absolute;
@@ -88,7 +120,7 @@
 .site-nav .dropdown-content {
   display: none;
   position: absolute;
-  left: 0;
+  left: 2px;
   top: 100%;
   margin-top: 8px;
   z-index: 200;
@@ -149,10 +181,18 @@
 }
 
 
-/* Show dropdown on hover */
-.site-nav .dropdown:hover > .dropdown-content,
-.site-nav .dropdown-content:hover {
+/* Keep visual and accessible disclosure state in sync. */
+.site-nav .dropdown-trigger[aria-expanded="true"] + .dropdown-content {
   display: block;
+}
+
+@media (min-width: 769px) {
+  .site-nav .dropdown-content a:hover,
+  .site-nav .dropdown-content a:focus-visible {
+    background-color: rgba(106, 97, 86, 0.08);
+    color: #27231F;
+    text-decoration: none;
+  }
 }
 
 /* Mobile view adjustments */
@@ -291,7 +331,7 @@
 
 </style>
 
-<header class="site-header" role="banner">
+<header class="site-header{% if page.layout == 'work' %} site-header--work{% endif %}" role="banner">
   <link type="image/x-icon" href="/images/favicon.png" rel="shortcut icon">
   <div class="wrapper">
     <div class="header-main">
@@ -327,8 +367,8 @@
               {%- if counter == 2 -%}
                 <!-- Insert the dropdown after the second link -->
                 <div class="dropdown">
-                  <a class="page-link dropdown-trigger" href="#">resources</a>
-                  <div class="dropdown-content">
+                  <button class="page-link dropdown-trigger" type="button" aria-expanded="false" aria-controls="resources-navigation">resources</button>
+                  <div class="dropdown-content" id="resources-navigation">
                     <a class="page-link" href="/Josquin/">Josquin attributions</a>
                   </div>
                 </div>
@@ -341,3 +381,44 @@
     </div>
   </div>
 </header>
+
+<script>
+(() => {
+  const dropdown = document.querySelector('.site-header .dropdown');
+  if (!dropdown) return;
+  const button = dropdown.querySelector('.dropdown-trigger');
+  let pinned = false;
+  const setOpen = (open) => {
+    button.setAttribute('aria-expanded', String(open));
+    if (!open) pinned = false;
+  };
+
+  button.addEventListener('click', () => {
+    pinned = !pinned;
+    setOpen(pinned);
+  });
+  dropdown.addEventListener('pointerenter', (event) => {
+    if (event.pointerType === 'mouse') setOpen(true);
+  });
+  dropdown.addEventListener('pointerleave', (event) => {
+    if (event.pointerType === 'mouse' && !pinned && !dropdown.contains(document.activeElement)) setOpen(false);
+  });
+  dropdown.addEventListener('focusin', () => setOpen(true));
+  dropdown.addEventListener('focusout', (event) => {
+    if (!dropdown.contains(event.relatedTarget)) setOpen(false);
+  });
+  dropdown.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      button.focus();
+      setOpen(false);
+    } else if (event.key === 'ArrowDown' && event.target === button) {
+      event.preventDefault();
+      setOpen(true);
+      dropdown.querySelector('.dropdown-content a').focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (!dropdown.contains(event.target)) setOpen(false);
+  });
+})();
+</script>
