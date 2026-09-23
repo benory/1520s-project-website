@@ -21,20 +21,21 @@ layout: work
 <div id="external-info"></div>
 
 <div id="button-container" class="button-container">
-    <div id="audiobutton-container">
+    <div id="audiobutton-container" hidden>
         <button type="button" id="audiobutton-toggle" class="audio-toggle" aria-label="Play" title="Play" data-playing="false" onclick="togglePlayPauseOfAudio()">
             <svg class="audio-icon audio-icon-play" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6 3.5L16 10L6 16.5Z" /></svg>
             <svg class="audio-icon audio-icon-pause" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="4" y="3.5" width="4" height="13" rx="1" /><rect x="12" y="3.5" width="4" height="13" rx="1" /></svg>
         </button>
     </div>
     <div id="accidentalSelect">
-       <button type="button" class="button hide" onclick="displayNoAccidentals()">Hide Editorial Accidentals</button>
-       <button type="button" class="button show hidden" onclick="displayAccidentals()">Show Editorial Accidentals</button>
+        <button type="button" id="editorial-accidentals" class="accidentals-switch" role="switch" aria-checked="true" onclick="this.getAttribute('aria-checked') === 'true' ? displayNoAccidentals() : displayAccidentals()">
+            <span class="switch-track" aria-hidden="true"></span>Editorial accidentals
+        </button>
     </div>
-    <button type="button" id="activity" data-analysis-group="activity" class="analysis-toggle button" aria-expanded="false" aria-controls="activity-display">Activity plots</button>
-    <button type="button" id="prange" data-analysis-group="vocal-ranges" class="analysis-toggle button" aria-expanded="false" aria-controls="prange-display">Vocal ranges</button>
-    <button type="button" id="autocadence-filter" class="filter-toggle button" aria-pressed="false" onclick="toggleAutocadenceFilter()">Automatic Cadence Finder</button>
-    <button type="button" id="error-report-open" class="button error-report-open" aria-haspopup="dialog" aria-controls="error-report-modal">Report an error</button>
+    <button type="button" id="activity" hidden data-analysis-group="activity" class="analysis-toggle button" aria-expanded="false" aria-controls="activity-display"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V12M9 18V6M14 18V9M19 18V3"/></svg>Activity plots</button>
+    <button type="button" id="prange" hidden data-analysis-group="vocal-ranges" class="analysis-toggle button" aria-expanded="false" aria-controls="prange-display"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M3 5h6M3 19h6M17 8v8M14 8h6M14 16h6"/></svg>Vocal ranges</button>
+    <button type="button" id="autocadence-filter" class="filter-toggle button" aria-pressed="false" onclick="toggleAutocadenceFilter()"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 17l4-3 4 3-4 3-4-3M17 14V2M4 8v12M8 6v12M2 12l8-2M2 17l8-2"/></svg>Cadence finder</button>
+    <button type="button" id="error-report-open" class="button error-report-open" aria-haspopup="dialog" aria-controls="error-report-modal"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 1c5-4 9 4 14 0v10c-5 4-9-4-14 0"/></svg>Report an error</button>
 </div>
 
 <div id="error-report-modal" class="error-report-modal hidden" role="dialog" aria-modal="true" aria-labelledby="error-report-title" aria-describedby="error-report-intro">
@@ -117,7 +118,28 @@ layout: work
     </div>
 </div>
 
-<div id="score-credit" class="work-score-credit"></div>
+<div class="work-credit-row">
+    <div id="score-credit" class="work-score-credit"></div>
+    <button type="button" id="citation-open" class="citation-open" aria-haspopup="dialog" aria-controls="citation-dialog" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4h12a3 3 0 0 1 3 3v2h-5V7a3 3 0 0 1 3-3M7 4a3 3 0 0 0-3 3v10H2v2a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-2h-4M20 9v8M4 17h12v2a3 3 0 0 1-3 3M8 9h5M8 13h5" /></svg>
+        <span><strong>Cite</strong> this work</span>
+    </button>
+</div>
+
+<dialog id="citation-dialog" class="citation-dialog" aria-labelledby="citation-heading">
+    <div class="error-report-header">
+        <h2 id="citation-heading">Suggested citation</h2>
+        <button type="button" id="citation-close" class="error-report-close" aria-label="Close citation">&times;</button>
+    </div>
+    <p id="citation-text" class="citation-text"></p>
+    <div class="citation-actions">
+    <button type="button" id="citation-copy" class="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>
+        Copy citation
+    </button>
+    <p id="citation-status" class="citation-status" role="status"></p>
+    </div>
+</dialog>
 
 <div id="analysis-plots">
 	<div id="activity-display" class="analysis-plot analysis-panel activity-analysis-plot hidden">
@@ -156,4 +178,5 @@ layout: work
 
 {% include_relative listeners.html %}
 {% include_relative scripts-local.html %}
+{% include_relative citation.html %}
 {% include styles/svgdefs.html %}

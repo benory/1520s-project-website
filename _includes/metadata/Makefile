@@ -12,7 +12,15 @@ SID = AKfycbzPjKo_5RlBSDPoHM8vWdw93fisuU6RcKCPpl7cT18qLY7Tx-qhXKxwONcznwbshA-ZmA
 #SID for Josquin Attribution Table Metadata
 SID2 = AKfycbyg7jch405kNehIY8d1fTirMm0BSZgeHXDHoK913A9MjKmMFqIaKBMGN1mphdh_EUArpQ
 
-all: download
+.PHONY: all download assets refresh-assets works composers commentary modern_editions statistics Josquin
+
+all: refresh-assets
+
+refresh-assets: download
+	$(MAKE) assets
+
+assets:
+	python3 build-asset-index.py
 
 download: works composers commentary modern_editions statistics Josquin
 

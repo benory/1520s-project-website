@@ -166,7 +166,7 @@ function prepareTitle(entry) {
 	}
 	let id = entry.ID || "";
 	if (id) {
-		output = `<a target="_blank" href="/work?id=${id}">${output}</a>`;
+		output = `<a href="/work?id=${id}">${output}</a>`;
 	}
 	return output;
 }

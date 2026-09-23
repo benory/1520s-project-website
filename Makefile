@@ -7,9 +7,13 @@
 ## metadata into the _includes/metadata directory.
 ##
 
-.PHONY: all download texts
+.PHONY: all download texts assets
 
-all: download texts
+all: assets texts
+
+# Metadata must finish before checking its work IDs, including with make -j.
+assets: download
+	$(MAKE) -C _includes/metadata assets
 
 download:
 	$(MAKE) -C _includes/metadata download

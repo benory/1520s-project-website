@@ -1,0 +1,66 @@
+<script>
+(() => {
+    const opener = document.getElementById("citation-open");
+    const dialog = document.getElementById("citation-dialog");
+    const citation = document.getElementById("citation-text");
+    const status = document.getElementById("citation-status");
+
+    opener.addEventListener("click", () => {
+        const id = DATA1520.workid;
+        const work = DATA1520.lookup.works[id];
+        if (!work) return;
+        const title = document.createElement("i");
+        title.textContent = [work.Title, work.Subtitle].filter(Boolean).join(": ");
+        const editor = formatCreditNames(work.Editor) || "The 1520s Project";
+        const publisher = editor === "The 1520s Project" ? "" : " The 1520s Project.";
+        const accessed = new Intl.DateTimeFormat("en-US", {
+            year: "numeric", month: "long", day: "numeric"
+        }).format(new Date());
+        const url = document.createElement("a");
+        url.href = `https://1520s-project.org/work?id=${encodeURIComponent(id)}`;
+        url.textContent = url.href;
+        citation.replaceChildren(
+            document.createTextNode(`${work.Composer || "Anonymous"}. `),
+            title,
+            document.createTextNode(`. Edited by ${editor}.${publisher} ${id}. Accessed ${accessed}. `),
+            url,
+            document.createTextNode(".")
+        );
+        status.textContent = "";
+        dialog.showModal();
+        // Clear the browser's automatic initial focus without disabling keyboard navigation.
+        if (dialog.contains(document.activeElement)) document.activeElement.blur();
+    });
+
+    document.getElementById("citation-close").addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", event => {
+        const bounds = dialog.getBoundingClientRect();
+        if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right ||
+            event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
+    });
+    dialog.addEventListener("close", () => opener.focus());
+    document.getElementById("citation-copy").addEventListener("click", async () => {
+        try {
+            await navigator.clipboard.writeText(citation.textContent);
+            const check = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            check.setAttribute("class", "citation-copy-check");
+            check.setAttribute("viewBox", "0 0 24 24");
+            check.setAttribute("aria-hidden", "true");
+            const stroke = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            stroke.setAttribute("d", "M5 12l4 4L19 6");
+            check.appendChild(stroke);
+            const announcement = document.createElement("span");
+            announcement.className = "citation-copy-announcement";
+            announcement.textContent = "Citation copied.";
+            status.replaceChildren(check, announcement);
+        } catch (error) {
+            const selection = window.getSelection();
+            const range = document.createRange();
+            range.selectNodeContents(citation);
+            selection.removeAllRanges();
+            selection.addRange(range);
+            status.textContent = "Could not copy automatically. The citation is selected; use your browser’s Copy command.";
+        }
+    });
+})();
+</script>

@@ -33,6 +33,10 @@ The main metadata files are:
 
 The top-level `Makefile` refreshes metadata by delegating to `_includes/metadata/Makefile`, which downloads current data from project Google Sheets via Google Apps Script.
 
+Running `make` also regenerates `_includes/metadata/assets.json` after the metadata download. This work-ID inventory lists existing downloads, MP3s, timemaps, and both activity and vocal-range plot variants. The generator uses the published scores repository listing for source files and checks data-server response headers for generated assets, rejecting the HTML pages the server returns for missing files. MusicXML uses the repository version when the data-server version is absent.
+
+The asset scan requires Python 3 and curl, checks up to 12 URLs concurrently, and can take several minutes. Network errors, unexpected HTTP errors, or incomplete repository listings fail the update and preserve the previous inventory. Commit `assets.json` with website updates. To refresh only assets using the existing work metadata, run `make -C _includes/metadata assets`; top-level `make assets` refreshes metadata first. Work pages use this inventory instead of per-visit availability requests. Assets published after a scan appear after the next refresh and site build.
+
 ## Repository Structure
 
 - `_config.yml` - Jekyll site configuration

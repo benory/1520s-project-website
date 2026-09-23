@@ -360,6 +360,7 @@ function displayScoreCredit(id) {
 	}
 
 	let editor = formatCreditNames(workinfo.Editor) || "The 1520s Project";
+	document.querySelector("#citation-open").hidden = false;
 	let transcriber = formatCreditNames(workinfo.Transcriber);
 	let commentaryUrl = String(workinfo["Critical Commentary"] || "").trim();
 	let otherUrl = String(workinfo["Other URL"] || "").trim();
@@ -707,24 +708,11 @@ function displayWorkInfo(id) {
 		    console.warn("Warning: No modern editions found for this work.");
 	}
 
-	let mei      = `${DATA1520.dataurl}/${DATA1520.workid}.mei`;  // URL from data server
-	let midi     = `${DATA1520.dataurl}/${DATA1520.workid}.mid`;  // URL from data server
-	let musicxml = `${DATA1520.dataurl}/${DATA1520.workid}.musicxml`;  // URL from data server
-
-	let humdrum  = workinfo["Humdrum URL"];                       // URL from GitHub
-	let musicxmlFallback = workinfo["Humdrum URL"];               // URL from GitHub
-	let pdf      = workinfo["Humdrum URL"];                       // URL from GitHub
-	let sibelius = workinfo["Humdrum URL"];                       // URL from GitHub
-
-	let downloadoutput = "";
-
-	// Convert Humdrum URLs to other parallel data files on GitHub:
-	pdf      = pdf.replace("humdrum", "pdf").replace(".krn", ".pdf").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	sibelius = sibelius.replace("humdrum", "sibelius").replace(".krn", ".sib").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	musicxmlFallback = musicxmlFallback.replace("humdrum", "musicxml").replace(".krn", ".musicxml").replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-	humdrum  = humdrum.replace("github.com", "raw.githubusercontent.com").replace("/blob", "").replace("tree", "");
-
-	downloadoutput += `<div class="work-item work-link-group"><b>Download:</b><span class="work-link-list"><a class="work-action-link" onclick="forceDownload(event)" href="${pdf}" download>PDF</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${musicxml}" data-fallback-url="${musicxmlFallback}">MusicXML</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${mei}">MEI</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${humdrum}">Humdrum</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${sibelius}">Sibelius</a><span class="work-link-separator">·</span><a class="work-action-link" onclick="forceDownload(event)" href="${midi}">MIDI</a></span></div>`;
+	const downloadoutput = `<div id="work-downloads" class="work-item work-link-group" hidden><b>Download:</b><span class="work-link-list"></span></div>`;
+	const verifiedDownloads = DATA1520.assets[DATA1520.workid]?.downloads || {};
+	const downloads = ["PDF", "MusicXML", "MEI", "Humdrum", "Sibelius", "MIDI"]
+		.filter(label => verifiedDownloads[label])
+		.map(label => ({ label, url: verifiedDownloads[label] }));
 
 	let github = workinfo["Humdrum URL"];
 	let githuboutput = "";
@@ -775,6 +763,7 @@ function displayWorkInfo(id) {
         `;
     row.appendChild(rightColumnCell);
     tbody.appendChild(row);
+	showAvailableDownloads(rightColumnCell.querySelector("#work-downloads"), downloads);
 	displayWorkText(id, leftColumnCell.querySelector(".work-text"));
 }
 
@@ -885,6 +874,26 @@ function forceDownload(event) {
 // downloadFile -- Save file contents to local computer.
 //
 
+function showAvailableDownloads(container, available) {
+	if (!container.isConnected) return;
+	const list = container.querySelector(".work-link-list");
+	for (const entry of available.filter(Boolean)) {
+		if (list.childElementCount) {
+			const separator = document.createElement("span");
+			separator.className = "work-link-separator";
+			separator.textContent = "·";
+			list.appendChild(separator);
+		}
+		const link = document.createElement("a");
+		link.className = "work-action-link";
+		link.textContent = entry.label;
+		link.href = entry.url;
+		link.addEventListener("click", forceDownload);
+		list.appendChild(link);
+	}
+	container.hidden = !list.childElementCount;
+}
+
 function downloadFile(url, filename, fallbackUrl) {
 	fetch(url)
 	.then(response => {
@@ -977,11 +986,8 @@ function displayExternalInfo(id) {
 //
 
 function displayNoAccidentals() {
-	let elements = document.querySelectorAll("#accidentalSelect .button");
-	for (let i=0; i<elements.length; i++) {
-		elements[i].classList.toggle("hidden");
-	}
 	window.localStorage.AccidentalState = "hide";
+	initializeAccidentalStateButton();
 	displayWork();
 }
 
@@ -993,11 +999,8 @@ function displayNoAccidentals() {
 //
 
 function displayAccidentals() {
-	let elements = document.querySelectorAll("#accidentalSelect .button");
-	for (let i=0; i<elements.length; i++) {
-		elements[i].classList.toggle("hidden");
-	}
 	window.localStorage.AccidentalState = "show";
+	initializeAccidentalStateButton();
 	displayWork();
 }
 
@@ -1014,27 +1017,8 @@ function initializeAccidentalStateButton() {
 		state = "show";
 		window.localStorage.AccidentalState = "show";
 	}
-	let element = document.querySelector("#accidentalSelect");
-	if (!element) {
-		return;
-	}
-	let showElement = element.querySelector(".show");
-	if (!showElement) {
-		console.error("Cannot find accidental show button");
-		return;
-	}
-	let hideElement = element.querySelector(".hide");
-	if (!showElement) {
-		console.error("Cannot find accidental hide button");
-		return;
-	}
-	if (state === "show") {
-		showElement.classList.add("hidden");
-		hideElement.classList.remove("hidden");
-	} else {
-		showElement.classList.remove("hidden");
-		hideElement.classList.add("hidden");
-	}
+	let element = document.querySelector("#editorial-accidentals");
+	if (element) element.setAttribute("aria-checked", String(state === "show"));
 }
 
 
@@ -1048,11 +1032,13 @@ async function downloadAndDisplayInlinePng(url, container) {
 	try {
 		let titleurl    = url //.replace(/-notitle/, "");
 		const response  = await fetch(url);
+		if (!response.ok) return;
 		const blob      = await response.blob();
 		const reader    = new FileReader();
 		reader.onloadend = function () {
 			container.innerHTML = `<a target="_blank" href="${titleurl}"><img style="cursor:pointer"></a>`;
 			let imgDiv = container.querySelector("img");
+			imgDiv.onload = () => markAnalysisAssetAvailable(container);
 			imgDiv.src = reader.result;
 		};
 		reader.readAsDataURL(blob);
@@ -1071,6 +1057,7 @@ async function downloadAndDisplayInlinePng(url, container) {
 async function downloadAndDisplayInlineSvg(url, container) {
 	try {
 		const response = await fetch(url);
+		if (!response.ok) return;
 		const text     = await response.text();
 		const parser   = new DOMParser();
 		const doc      = parser.parseFromString(text, "image/svg+xml");
@@ -1094,6 +1081,7 @@ async function downloadAndDisplayInlineSvg(url, container) {
 		link.href = url;
 		link.appendChild(document.importNode(svg, true));
 		container.replaceChildren(link);
+		markAnalysisAssetAvailable(container);
 	} catch (error) {
 		console.error("Error fetching or displaying the image:", error);
 	}
@@ -1151,6 +1139,24 @@ function downloadData(container, id, ext, ID) {
 //    toggles can reveal cached content without waiting on the network.
 //
 
+function markAnalysisAssetAvailable(container) {
+	container.dataset.available = "true";
+	const groups = [
+		{ button: "activity", mode: "work-activity-mode", types: ["activity-merged-notitle", "activity-separate-notitle"] },
+		{ button: "prange", mode: "work-range-mode", types: ["prange-attack", "prange-duration"] }
+	];
+	for (const group of groups) {
+		const available = group.types.map(type => document.getElementById(`${type}-display`).dataset.available === "true");
+		const button = document.getElementById(group.button);
+		const mode = document.getElementById(group.mode);
+		button.hidden = !available.some(Boolean);
+		mode.disabled = !available.every(Boolean);
+		if (!available[mode.checked ? 1 : 0]) mode.checked = available[1];
+		if (group.button === "activity") updateActivityModeLabels();
+		else updateRangeModeLabels();
+	}
+}
+
 function preloadAnalysisAssets() {
 	let assets = [
 		{ id: "activity-merged-notitle", ext: "png" },
@@ -1161,6 +1167,7 @@ function preloadAnalysisAssets() {
 
 	for (let i=0; i<assets.length; i++) {
 		let asset = assets[i];
+		if (!DATA1520.assets[DATA1520.workid]?.plots?.[asset.id]) continue;
 		let container = document.querySelector(`#${asset.id}-display`);
 		if (!container || container.innerHTML.length) {
 			continue;

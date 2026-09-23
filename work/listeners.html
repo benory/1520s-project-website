@@ -18,6 +18,7 @@ DATA1520.metadata.works           = {% include metadata/works.json %};
 DATA1520.metadata.composers       = {% include metadata/composers.json %};
 DATA1520.metadata.modern_editions = {% include metadata/modern_editions.json %};
 DATA1520.metadata.commentary      = {% include metadata/commentary.json %};
+DATA1520.assets                   = {% include metadata/assets.json %};
 DATA1520.lookup                   = {};
 DATA1520.filter                   = "";
 DATA1520.timemap                  = [];  // Mapping between notes in SVG and timeline for audio
@@ -68,6 +69,7 @@ const mensurationSigns = {
 //
 
 document.addEventListener("DOMContentLoaded", function (event) {
+	window.localStorage.AccidentalState = "show";
 	initializeAccidentalStateButton();
 
 	// Create lookup tables for metadata:
@@ -680,6 +682,8 @@ window.addEventListener("click", function(event) {
 //
 
 function initializeAudio(id) {
+	const control = document.getElementById("audiobutton-container");
+	control.hidden = true;
 	DATA1520.audio = document.querySelector("audio#audio");
 	let audio = DATA1520.audio;
 
@@ -688,14 +692,11 @@ function initializeAudio(id) {
 		return;
 	}
 
-	// audio.innerHTML = `<source src="${DATA1520.dataurl}/${DATA1520.workid}.mp3" type="audio/mpeg" preload="metadata" />`;
-	// Set the audio infomation explicitly:
-	let audioUrl = `${DATA1520.dataurl}/${DATA1520.workid}.mp3`;
-	audio.preload = "auto";
-	audio.src = audioUrl;
-	audio.load();
+	const audioUrl = DATA1520.assets[id]?.audio;
+	if (!audioUrl) return;
 
 	audio.addEventListener('loadedmetadata', function() {
+		document.getElementById('audiobutton-container').hidden = false;
 		console.log("Metadata for audio loaded. Duration:", audio.duration);
 		console.log("Audio readyState:", audio.readyState);
 		console.log("Audio seekable length: ", audio.seekable.length);
@@ -722,6 +723,7 @@ function initializeAudio(id) {
 
 
 	audio.addEventListener('error', function() {
+		document.getElementById('audiobutton-container').hidden = true;
 		console.error(`Error loading the audio file ${audioUrl}`);
 	});
 
@@ -745,9 +747,13 @@ function initializeAudio(id) {
 	audio.addEventListener("ended", pauseAudioCallback);
 	audio.addEventListener("emptied", pauseAudioCallback);
 	audio.addEventListener("error", pauseAudioCallback);
+	audio.preload = "auto";
+	audio.src = audioUrl;
+	audio.load();
 
 
-	let url = `${DATA1520.dataurl}/${DATA1520.workid}-timemap.json`;
+	let url = DATA1520.assets[id]?.timemap;
+	if (!url) return;
 	console.warn("TIMEMAP URL", url);
 	fetch(url)
 	.then(response => {
