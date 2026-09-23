@@ -1,5 +1,8 @@
 """Run with python3 scripts/test_asset_index.py (no network required)."""
 import importlib.util
+from datetime import datetime, timedelta, timezone
+import json
+import tempfile
 from pathlib import Path
 import unittest
 from unittest.mock import patch
@@ -11,6 +14,22 @@ spec.loader.exec_module(assets)
 
 
 class AssetResponses(unittest.TestCase):
+    def test_weekly_refresh_and_failure_limit(self):
+        now = datetime(2026, 9, 23, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as directory, patch.object(assets, 'ROOT', Path(directory)):
+            with patch.object(assets, 'build', return_value={'work': {}}) as build:
+                assets.refresh(now)
+                assets.refresh(now + timedelta(days=7, seconds=-1))
+                self.assertEqual(build.call_count, 1)
+                assets.refresh(now + timedelta(days=7))
+                self.assertEqual(build.call_count, 2)
+            with patch.object(assets, 'build', side_effect=OSError('Offline')) as build:
+                with self.assertRaises(OSError):
+                    assets.refresh(now + timedelta(days=14))
+                assets.refresh(now + timedelta(days=15))
+                self.assertEqual(build.call_count, 1)
+                self.assertEqual(json.loads((Path(directory) / 'assets.json').read_text()), {'work': {}})
+
     def test_available_and_missing_files(self):
         cases = [
             ('HTTP/1.1 200 OK\nContent-Type: audio/mpeg\n', True),

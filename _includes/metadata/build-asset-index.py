@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Refresh verified work-page assets; never replace the index on an incomplete scan."""
 import concurrent.futures
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import re
@@ -82,13 +83,31 @@ def build():
     return index
 
 
+def write_json(destination, value):
+    with tempfile.NamedTemporaryFile(mode='w', dir=ROOT, suffix='.tmp', delete=False) as output:
+        json.dump(value, output, indent=2, sort_keys=True)
+        output.write('\n')
+    Path(output.name).replace(destination)
+
+
+def refresh(now=None):
+    now = now or datetime.now(timezone.utc)
+    stamp = ROOT / 'assets-check.json'
+    if stamp.exists():
+        last_check = datetime.fromisoformat(json.loads(stamp.read_text())['last_attempt'])
+        next_check = last_check + timedelta(days=7)
+        if now < next_check:
+            print(f'Using existing asset inventory; next scan eligible {next_check.isoformat()}')
+            return
+    # Count failed attempts too, so repeated make runs cannot hammer the server.
+    write_json(stamp, {'last_attempt': now.isoformat()})
+    inventory = build()
+    write_json(ROOT / 'assets.json', inventory)
+    print(f'Updated {ROOT / "assets.json"}', flush=True)
+
+
 if __name__ == '__main__':
     try:
-        inventory = build()
-        with tempfile.NamedTemporaryFile(mode='w', dir=ROOT, suffix='.tmp', delete=False) as output:
-            json.dump(inventory, output, indent=2, sort_keys=True)
-            output.write('\n')
-        Path(output.name).replace(ROOT / 'assets.json')
-        print(f'Updated {ROOT / "assets.json"}', flush=True)
+        refresh()
     except Exception as error:
         raise SystemExit(f'Asset inventory unchanged: {error}')

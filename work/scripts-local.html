@@ -136,8 +136,8 @@ function createLookup(dataArray) {
 //////////////////////////////
 //
 // Commentary formatting -- Keep each source occurrence, including multiple
-//     entries from the same manuscript. The shared Commentary ID is explicit
-//     in Works; it must not be inferred from movement or version suffixes.
+//     entries from the same manuscript. Match the Commentary ID to the first
+//     seven characters of the work ID to share commentary across movements.
 //
 
 function escapeCommentaryText(value) {
@@ -237,7 +237,7 @@ function getFirstSources(workinfo) {
 }
 
 function getWorkCommentary(workinfo) {
-	let commentaryId = String(workinfo["Commentary ID"] || "").trim();
+	let commentaryId = String(workinfo.ID || "").trim().slice(0, 7);
 	let entries = commentaryId ? (DATA1520.metadata.commentary || []).filter(entry =>
 		String(entry["Commentary ID"] || "").trim() === commentaryId &&
 		String(entry.Source || "").trim()

@@ -1,8 +1,16 @@
 {
+  "Any1003": "texts/Any/Any1003-Missa_Miserere_mihi_Domine--Munich_6.txt",
+  "Any1008": "texts/Any/Any1008-Missa_de_Assumptione--Montserrat_766.txt",
+  "Any2022": "texts/Any/Any2022-Regina_celi--Vatican_City_Capp_Sist_155A.txt",
+  "Any2023": "texts/Any/Any2023-Fecit_potentiam--Vatican_City_Capp_Sist_155A.txt",
   "Con2007": "texts/Con/Con2007-Egredere_ab_occidente--Liber_secundus_quatuor_et_viginiti_musicales.txt",
   "Con2008": "texts/Con/Con2008-Pater_peccavi--Liber-secundus-quatuor-et-viginti-musicales.txt",
   "Con2011": "texts/Con/Con2011-In_illa_die_suscipiam_te.txt",
   "Fva3002": "texts/Fva/Fva3002-Adieu_solas.txt",
   "Fva3007": "texts/Fva/Fva3007-Chacun_maudit_ces_jaleux.txt",
-  "Gom2003": "texts/Gom/Gom2003-Suscipe_verbum.txt"
+  "Gom2003": "texts/Gom/Gom2003-Suscipe_verbum.txt",
+  "Gom2007": "texts/Gom/Gom2007-Dignare_me.txt",
+  "Gom2008": "texts/Gom/Gom2008-Egregie_martir.txt",
+  "Gom2010": "texts/Gom/Gom2010-Fidelium_deus_omnium.txt",
+  "Wil2033": "texts/Wil/Wil2033-Peccavi_supra_numerum.txt"
 }
