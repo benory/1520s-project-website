@@ -133,7 +133,7 @@ layout: work
     </div>
     <div class="citation-format-control">
         <select id="citation-format" class="button" aria-label="Citation format">
-            <option value="note" selected>Chicago note format</option>
+            <option value="note" selected>Chicago footnote format</option>
             <option value="bibliography">Chicago bibliography format</option>
         </select>
     </div>

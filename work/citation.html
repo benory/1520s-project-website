@@ -12,13 +12,14 @@
         if (!work) return;
         const title = document.createElement("i");
         title.textContent = [work.Title, work.Subtitle].filter(Boolean).join(": ");
-        const editor = formatCreditNames(work.Editor) || "The 1520s Project";
+        const editor = (formatCreditNames(work.Editor) || "The 1520s Project")
+            .replace(/^the Josquin Research Project$/i, "Josquin Research Project");
         const isNote = format.value === "note";
         const composer = String(work.Composer || "Anonymous").trim();
         const composerName = isNote ? composer.replace(/^([^,]+),\s*(.+)$/, "$2 $1") : composer;
         const separator = isNote ? ", " : ". ";
         const publisher = editor === "The 1520s Project" ? "" : `${separator}The 1520s Project`;
-        const accessed = new Intl.DateTimeFormat("en-US", {
+        const accessed = new Intl.DateTimeFormat("en-GB", {
             year: "numeric", month: "long", day: "numeric"
         }).format(new Date());
         const url = document.createElement("a");
@@ -27,9 +28,9 @@
         citation.replaceChildren(
             document.createTextNode(`${composerName}${separator}`),
             title,
-            document.createTextNode(`${separator}${isNote ? "ed." : "Edited by"} ${editor}${publisher}${separator}${id}${separator}${isNote ? "accessed" : "Accessed"} ${accessed}${separator}`),
+            document.createTextNode(`${separator}${isNote ? "ed." : "Edited by"} ${editor}${publisher}${separator}${id}${separator}`),
             url,
-            document.createTextNode(".")
+            document.createTextNode(` (accessed ${accessed}).`)
         );
         status.textContent = "";
     }
