@@ -203,7 +203,7 @@ order: 1
   <div class="scholarly-block-content">
     <p>
       Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"> New Senfl Edition
-      </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute <a href="https://1520s-project.org/browse/?q=senfl" target="_blank">their scores</a> to this project.
+      </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute <a href="https://1520s-project.org/repertoire/?q=senfl" target="_blank">their scores</a> to this project.
     </p>
     <a href="https://senflonline-eng.com/new-senfl-edition/" class="scholarly-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
     </a>

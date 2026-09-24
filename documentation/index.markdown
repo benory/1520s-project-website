@@ -106,7 +106,7 @@ order: 3
 		</li>
 		<li>
 			<strong>inflect cadences</strong>
-			<p>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, cadences often (but not always) feature sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–61 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Bau3001">De profundis clamavi</a>, in which a seven-to-six suspension is followed by movement to an octave:<img src="/images/Cha2001_example.svg" alt="Champion editorial accidentals example"></p>
+			<p>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, cadences often (but not always) feature sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–61 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Cha2001">De profundis clamavi</a>, in which a seven-to-six suspension is followed by movement to an octave:<img src="/images/Cha2001_example.svg" alt="Champion editorial accidentals example"></p>
 		</li>
 	</ul>
 	<p>This project views cadences as having both a contrapuntal and a rhetorical component. In order to be classified as a cadence, the required contrapuntal elements must coincide with one or both of the voices ending a line of text. Usually——although by ca. 1530 not always——one or both of the voices will rest following the cadence.</p>
@@ -119,7 +119,7 @@ order: 3
 
 <section>
 	<p><strong>Composer codes and numbering</strong></p>
-	<p>Each piece is assigned a three-letter composer code <a href="https://wiki.ccarh.org/wiki/Josquin_Project_encoding_standards#Composer_codes" target="_blank"> in close coordination with the Josquin Research Project</a>. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre, typically moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert.</p>
+	<p>Each piece is assigned a three-letter composer code in close coordination with the Josquin Research Project. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre, typically moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert.</p>
 	<p>If a piece, such as a mass, consists of multiple parts, the filename for each section additionally assumes a letter. For instance, Wil1001a is the Kyrie from Willaert's Missa Mente tota; Wil1001b is the Gloria from the same mass.</p>
 	<p>Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"><i>New Senfl Edition</i></a>. In this case, Snf0101 is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, Snf0238 is no. 38 in the overall series and is in the second volume.</p>
 	<p><strong>Work name</strong></p>
@@ -242,7 +242,7 @@ order: 3
 	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:</p>
 	<code>git clone https://github.com/benory/1520s-project-scores.git</code>
 	<p><strong>Note:</strong> the Sibelius and MusicXML files on the project's GitHub repository are pre-corrected version of the Humdrum files (the data server provides post-corrected MusicXML files that are derived from the corrected Humdrum files).</p>
-	<p>Metadata used to search on the <a href="https://1520s-project.org/browse/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:</p>
+	<p>Metadata used to search on the <a href="https://1520s-project.org/repertoire/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:</p>
 	<ul class="spaced-list">
 		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the scores used for searches on the browse page)</li>
 		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a> (metadata and links for composers used on the browse and work pages)</li>
