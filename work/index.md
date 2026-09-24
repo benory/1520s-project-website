@@ -131,6 +131,12 @@ layout: work
         <h2 id="citation-heading">Suggested citation</h2>
         <button type="button" id="citation-close" class="error-report-close" aria-label="Close citation">&times;</button>
     </div>
+    <div class="citation-format-control">
+        <select id="citation-format" class="button" aria-label="Citation format">
+            <option value="note" selected>Chicago note format</option>
+            <option value="bibliography">Chicago bibliography format</option>
+        </select>
+    </div>
     <p id="citation-text" class="citation-text"></p>
     <div class="citation-actions">
     <button type="button" id="citation-copy" class="button">

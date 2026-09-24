@@ -4,15 +4,20 @@
     const dialog = document.getElementById("citation-dialog");
     const citation = document.getElementById("citation-text");
     const status = document.getElementById("citation-status");
+    const format = document.getElementById("citation-format");
 
-    opener.addEventListener("click", () => {
+    function renderCitation() {
         const id = DATA1520.workid;
         const work = DATA1520.lookup.works[id];
         if (!work) return;
         const title = document.createElement("i");
         title.textContent = [work.Title, work.Subtitle].filter(Boolean).join(": ");
         const editor = formatCreditNames(work.Editor) || "The 1520s Project";
-        const publisher = editor === "The 1520s Project" ? "" : " The 1520s Project.";
+        const isNote = format.value === "note";
+        const composer = String(work.Composer || "Anonymous").trim();
+        const composerName = isNote ? composer.replace(/^([^,]+),\s*(.+)$/, "$2 $1") : composer;
+        const separator = isNote ? ", " : ". ";
+        const publisher = editor === "The 1520s Project" ? "" : `${separator}The 1520s Project`;
         const accessed = new Intl.DateTimeFormat("en-US", {
             year: "numeric", month: "long", day: "numeric"
         }).format(new Date());
@@ -20,13 +25,19 @@
         url.href = `https://1520s-project.org/work?id=${encodeURIComponent(id)}`;
         url.textContent = url.href;
         citation.replaceChildren(
-            document.createTextNode(`${work.Composer || "Anonymous"}. `),
+            document.createTextNode(`${composerName}${separator}`),
             title,
-            document.createTextNode(`. Edited by ${editor}.${publisher} ${id}. Accessed ${accessed}. `),
+            document.createTextNode(`${separator}${isNote ? "ed." : "Edited by"} ${editor}${publisher}${separator}${id}${separator}${isNote ? "accessed" : "Accessed"} ${accessed}${separator}`),
             url,
             document.createTextNode(".")
         );
         status.textContent = "";
+    }
+
+    format.addEventListener("change", renderCitation);
+    opener.addEventListener("click", () => {
+        if (!DATA1520.lookup.works[DATA1520.workid]) return;
+        renderCitation();
         dialog.showModal();
         // Clear the browser's automatic initial focus without disabling keyboard navigation.
         if (dialog.contains(document.activeElement)) document.activeElement.blur();
