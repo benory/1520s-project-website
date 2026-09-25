@@ -62,3 +62,6 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Shared R2 assets; change only this base when JRP gets its own hostname.
+asset_base_url: "https://assets.1520s-project.org/1520s"

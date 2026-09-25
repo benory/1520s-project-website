@@ -62,7 +62,7 @@ async function displayWorkText(id, container) {
 // displayWork -- Given the input work ID, display the work.
 //
 
-function displayWork(id) {
+async function displayWork(id) {
 	if (!id) {
 		id = DATA1520.workid;
 	}
@@ -82,7 +82,20 @@ function displayWork(id) {
 
 	if (!DATA1520.INITIALIZED) {
 		let url = DATA1520.lookup.works[id]["Humdrum URL"];
-		hnpOptions.url = url;
+        try {
+            const response = await ASSET_DELIVERY.fetch(url);
+            const text = await response.text();
+            if (!text.includes('**kern')) throw new Error('Invalid Humdrum score');
+            if (DATA1520.workid !== id) return;
+            document.getElementById('my-score').textContent = text;
+        } catch (error) {
+            removeWait();
+            console.error('Could not load score', error);
+            displayWorkInfo(id);
+            displayExternalInfo(id);
+            displayScoreCredit(id);
+            return;
+        }
 		hnpOptions.postFunction = function() {
 			// callback function to run after SVG score has been displayed.
 			removeWait();
@@ -860,7 +873,7 @@ function updateAutocadenceButtonState() {
 function forceDownload(event) {
 	event.stopPropagation();   // Do not open the hyperlink.
 	event.preventDefault();    // Prevent default behavior for <a>
-	let target = event.target;
+	let target = event.currentTarget;
 	let url = target.getAttribute("href");
 	let fallbackUrl = target.dataset.fallbackUrl;
 	let filename = url.replace(/.*\//, "");
@@ -887,7 +900,7 @@ function showAvailableDownloads(container, available) {
 		const link = document.createElement("a");
 		link.className = "work-action-link";
 		link.textContent = entry.label;
-		link.href = entry.url;
+		link.href = ASSET_DELIVERY.preferred(entry.url);
 		link.addEventListener("click", forceDownload);
 		list.appendChild(link);
 	}
@@ -895,7 +908,7 @@ function showAvailableDownloads(container, available) {
 }
 
 function downloadFile(url, filename, fallbackUrl) {
-	fetch(url)
+	ASSET_DELIVERY.fetch(url)
 	.then(response => {
 		if (!response.ok) {
 			throw new Error(`Could not download ${url}: ${response.status}`);
@@ -1031,7 +1044,7 @@ function initializeAccidentalStateButton() {
 async function downloadAndDisplayInlinePng(url, container) {
 	try {
 		let titleurl    = url //.replace(/-notitle/, "");
-		const response  = await fetch(url);
+		const response  = await ASSET_DELIVERY.fetch(url);
 		if (!response.ok) return;
 		const blob      = await response.blob();
 		const reader    = new FileReader();
@@ -1056,7 +1069,7 @@ async function downloadAndDisplayInlinePng(url, container) {
 
 async function downloadAndDisplayInlineSvg(url, container) {
 	try {
-		const response = await fetch(url);
+		const response = await ASSET_DELIVERY.fetch(url);
 		if (!response.ok) return;
 		const text     = await response.text();
 		const parser   = new DOMParser();

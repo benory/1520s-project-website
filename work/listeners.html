@@ -2,6 +2,12 @@
 <script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin-worker.js"></script>
 
 <script>
+{% include scripts/asset-delivery.js %}
+const ASSET_DELIVERY = createAssetDelivery(
+  {{ site.asset_base_url | jsonify }},
+  {% include metadata/cloudflare-assets.json %},
+  ["https://data.1520s-project.org/"]);
+
 {% include scripts/getCgiParameters.js %}
 {% include_relative notation-highlighting.js %}
 </script>
@@ -723,7 +729,7 @@ function initializeAudio(id) {
 
 
 	audio.addEventListener('error', function() {
-		document.getElementById('audiobutton-container').hidden = true;
+		if (audio.src === ASSET_DELIVERY.candidates(audioUrl).at(-1)) document.getElementById('audiobutton-container').hidden = true;
 		console.error(`Error loading the audio file ${audioUrl}`);
 	});
 
@@ -748,14 +754,14 @@ function initializeAudio(id) {
 	audio.addEventListener("emptied", pauseAudioCallback);
 	audio.addEventListener("error", pauseAudioCallback);
 	audio.preload = "auto";
-	audio.src = audioUrl;
+	ASSET_DELIVERY.media(audio, audioUrl);
 	audio.load();
 
 
 	let url = DATA1520.assets[id]?.timemap;
 	if (!url) return;
 	console.warn("TIMEMAP URL", url);
-	fetch(url)
+	ASSET_DELIVERY.fetch(url)
 	.then(response => {
 		if (!response.ok) {
 			throw new Error('Network response was not ok');

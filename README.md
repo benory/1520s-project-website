@@ -72,3 +72,7 @@ The site uses:
 ## License
 
 See `LICENSE`.
+
+### Cloudflare asset delivery
+
+`asset_base_url` selects the project prefix in the shared R2 bucket. The browser tries Cloudflare first, then the existing data server(s) and repository URLs. `cloudflare-assets.json` maps preserved repository/PDF files to their uploaded object keys; it is a snapshot of the verified September 2026 transfer, not a claim of current source revision. Refresh it when publishing a new archive. Known blank JRP PDFs remain blocked. The identical `asset-delivery.js` helpers in both websites implement bounded request timeouts and reject HTML error responses. The bucket needs read-only GET/HEAD CORS for browser score and download requests. Dynamic legacy CGI services remain separate.
