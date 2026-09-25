@@ -1043,13 +1043,12 @@ function initializeAccidentalStateButton() {
 
 async function downloadAndDisplayInlinePng(url, container) {
 	try {
-		let titleurl    = url //.replace(/-notitle/, "");
 		const response  = await ASSET_DELIVERY.fetch(url);
 		if (!response.ok) return;
 		const blob      = await response.blob();
 		const reader    = new FileReader();
 		reader.onloadend = function () {
-			container.innerHTML = `<a target="_blank" href="${titleurl}"><img style="cursor:pointer"></a>`;
+			container.innerHTML = `<a target="_blank" href="${response.url}"><img style="cursor:pointer"></a>`;
 			let imgDiv = container.querySelector("img");
 			imgDiv.onload = () => markAnalysisAssetAvailable(container);
 			imgDiv.src = reader.result;
@@ -1077,7 +1076,7 @@ async function downloadAndDisplayInlineSvg(url, container) {
 		const svg      = doc.querySelector("svg");
 
 		if (!svg) {
-			container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${url}">${text}</a>`;
+			container.innerHTML = `<a style="cursor:pointer" target="_blank" href="${response.url}">${text}</a>`;
 			return;
 		}
 
@@ -1091,7 +1090,7 @@ async function downloadAndDisplayInlineSvg(url, container) {
 		link.className = "analysis-svg-link";
 		link.style.cursor = "pointer";
 		link.target = "_blank";
-		link.href = url;
+		link.href = response.url;
 		link.appendChild(document.importNode(svg, true));
 		container.replaceChildren(link);
 		markAnalysisAssetAvailable(container);
