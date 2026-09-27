@@ -92,6 +92,7 @@
   "Any1003a": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1003a-Missa_Miserere_mihi_Domine-Kyrie--Munich_6.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any1003a.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any1003a-Missa_Miserere_mihi_Domine-Kyrie--Munich_6.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any1003a-Missa_Miserere_mihi_Domine-Kyrie--Munich_6.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any1003a-Missa_Miserere_mihi_Domine-Kyrie--Munich_6.sib"
@@ -290,6 +291,7 @@
   "Any1006d": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1006d-Missa_Sine_nomine-Sanctus--Jena_21.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any1006d.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any1006d-Missa_Sine_nomine-Sanctus--Jena_21.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any1006d-Missa_Sine_nomine-Sanctus--Jena_21.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any1006d-Missa_Sine_nomine-Sanctus--Jena_21.sib"
@@ -379,6 +381,7 @@
   "Any1008a": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1008a-Missa_de_Assumptione-Kyrie--Montserrat_766.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any1008a.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any1008a-Missa_de_Assumptione-Kyrie--Montserrat_766.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any1008a-Missa_de_Assumptione-Kyrie--Montserrat_766.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any1008a-Missa_de_Assumptione-Kyrie--Montserrat_766.sib"
@@ -388,6 +391,7 @@
   "Any1008b": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1008b-Missa_de_Assumptione-Gloria--Montserrat_766.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any1008b.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any1008b-Missa_de_Assumptione-Gloria--Montserrat_766.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any1008b-Missa_de_Assumptione-Gloria--Montserrat_766.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any1008b-Missa_de_Assumptione-Gloria--Montserrat_766.sib"
@@ -397,6 +401,7 @@
   "Any1008c": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1008c-Missa_de_Assumptione-Credo--Montserrat_766.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any1008c.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any1008c-Missa_de_Assumptione-Credo--Montserrat_766.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any1008c-Missa_de_Assumptione-Credo--Montserrat_766.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any1008c-Missa_de_Assumptione-Credo--Montserrat_766.sib"
@@ -415,6 +420,7 @@
   "Any1008e": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1008e-Missa_de_Assumptione-Agnus--Montserrat_766.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any1008e.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any1008e-Missa_de_Assumptione-Agnus--Montserrat_766.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any1008e-Missa_de_Assumptione-Agnus--Montserrat_766.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any1008e-Missa_de_Assumptione-Agnus--Montserrat_766.sib"
@@ -847,6 +853,7 @@
   "Any2023": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any2023-Fecit_potentiam--Cappella_Sistina_155B.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any2023.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any2023-Fecit_potentiam--Cappella_Sistina_155B.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any2023-Fecit_potentiam--Cappella_Sistina_155B.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any2023-Fecit_potentiam--Cappella_Sistina_155B.sib"
@@ -10309,6 +10316,7 @@
   "Wil1002c": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Wil/Wil1002c-Missa_Laudate_Deum-Credo.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Wil1002c.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Wil/Wil1002c-Missa_Laudate_Deum-Credo.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Wil/Wil1002c-Missa_Laudate_Deum-Credo.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Wil/Wil1002c-Missa_Laudate_Deum-Credo.sib"
@@ -10318,6 +10326,7 @@
   "Wil1002d": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Wil/Wil1002d-Missa_Laudate_Deum-Sanctus.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Wil1002d.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Wil/Wil1002d-Missa_Laudate_Deum-Sanctus.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Wil/Wil1002d-Missa_Laudate_Deum-Sanctus.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Wil/Wil1002d-Missa_Laudate_Deum-Sanctus.sib"
@@ -10327,6 +10336,7 @@
   "Wil1002e": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Wil/Wil1002e-Missa_Laudate_Deum-Agnus.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Wil1002e.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Wil/Wil1002e-Missa_Laudate_Deum-Agnus.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Wil/Wil1002e-Missa_Laudate_Deum-Agnus.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Wil/Wil1002e-Missa_Laudate_Deum-Agnus.sib"
@@ -10426,6 +10436,7 @@
   "Wil1004a": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Wil/Wil1004a-Missa_Christus_resurgens-Kyrie.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Wil1004a.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Wil/Wil1004a-Missa_Christus_resurgens-Kyrie.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Wil/Wil1004a-Missa_Christus_resurgens-Kyrie.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Wil/Wil1004a-Missa_Christus_resurgens-Kyrie.sib"
@@ -10543,6 +10554,7 @@
   "Wil1005e": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Wil/Wil1005e-Missa_Gaude_Barbara-Agnus.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Wil1005e.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Wil/Wil1005e-Missa_Gaude_Barbara-Agnus.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Wil/Wil1005e-Missa_Gaude_Barbara-Agnus.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Wil/Wil1005e-Missa_Gaude_Barbara-Agnus.sib"
