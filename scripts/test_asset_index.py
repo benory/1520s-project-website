@@ -60,7 +60,7 @@ class R2Routing(unittest.TestCase):
         base = 'https://assets.test/1520s/'
         source = assets.SERVER + '/Any1001a.mp3'
         urls = assets.candidates(source, base, {})
-        self.assertEqual(urls, [base + 'mirror-assets/Any1001a.mp3', source])
+        self.assertEqual(urls, [base + 'score-assets/Any1001a.mp3', source])
         with patch.object(assets, 'exists', return_value=True) as check:
             self.assertEqual(assets.first_available(urls), urls[0])
             check.assert_called_once_with(urls[0])

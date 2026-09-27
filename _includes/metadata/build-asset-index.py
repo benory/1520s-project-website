@@ -64,10 +64,10 @@ def candidates(source, base, index):
     if source.startswith(base):
         key = source[len(base):]
     if not key and source.startswith(SERVER + '/'):
-        key = 'mirror-assets/' + source[len(SERVER) + 1:]
+        key = 'score-assets/' + source[len(SERVER) + 1:]
     urls = [base + key] if key else []
-    if key and key.startswith('mirror-assets/'):
-        urls.append(SERVER + '/' + key[len('mirror-assets/'):])
+    if key and key.startswith('score-assets/'):
+        urls.append(SERVER + '/' + key[len('score-assets/'):])
     if key:
         urls.extend(url for url, value in index.get('sources', {}).items() if value == key)
     urls.append(source)
