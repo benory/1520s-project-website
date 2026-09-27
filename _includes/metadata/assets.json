@@ -844,6 +844,7 @@
   "Any2022": {
     "downloads": {
       "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any2022-Regina_celi--Cappella_Sistina_155B.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/mirror-assets/Any2022.mei",
       "MusicXML": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/musicxml/Any/Any2022-Regina_celi--Cappella_Sistina_155B.musicxml",
       "PDF": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/pdf/Any/Any2022-Regina_celi--Cappella_Sistina_155B.pdf",
       "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/sibelius/Any/Any2022-Regina_celi--Cappella_Sistina_155B.sib"
