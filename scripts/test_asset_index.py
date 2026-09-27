@@ -55,5 +55,34 @@ class AssetResponses(unittest.TestCase):
                 assets.exists('https://example.test/asset')
 
 
+class R2Routing(unittest.TestCase):
+    def test_r2_first_and_fallback(self):
+        base = 'https://assets.test/1520s/'
+        source = assets.SERVER + '/Any1001a.mp3'
+        urls = assets.candidates(source, base, {})
+        self.assertEqual(urls, [base + 'mirror-assets/Any1001a.mp3', source])
+        with patch.object(assets, 'exists', return_value=True) as check:
+            self.assertEqual(assets.first_available(urls), urls[0])
+            check.assert_called_once_with(urls[0])
+        with patch.object(assets, 'exists', side_effect=[False, True]):
+            self.assertEqual(assets.first_available(urls), source)
+
+    def test_explicit_mapping_and_pdf_holds(self):
+        base = 'https://assets.test/1520s/'
+        source = assets.SERVER + '/Any1001a.mp3'
+        index = {'sources': {source: 'audio/Any1001a.mp3'}}
+        self.assertEqual(assets.candidates(source, base, index)[0], base + 'audio/Any1001a.mp3')
+        pdf = 'https://old.test/A.pdf'
+        self.assertEqual(assets.candidates(pdf, base, {'pdfs': {'A.pdf': None}}), [])
+        self.assertEqual(assets.candidates(pdf, base, {'pdfs': {'A.pdf': 'pdfs/A.pdf'}, 'blocked': [pdf]}), [base + 'pdfs/A.pdf'])
+
+    def test_uncertainty_preserved_unless_fallback_succeeds(self):
+        with patch.object(assets, 'exists', side_effect=[OSError('offline'), False]):
+            with self.assertRaises(OSError):
+                assets.first_available(['r2', 'legacy'])
+        with patch.object(assets, 'exists', side_effect=[OSError('offline'), True]):
+            self.assertEqual(assets.first_available(['r2', 'legacy']), 'legacy')
+
+
 if __name__ == '__main__':
     unittest.main()
