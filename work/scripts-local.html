@@ -722,8 +722,13 @@ function displayWorkInfo(id) {
 	}
 
 	const downloadoutput = `<div id="work-downloads" class="work-item work-link-group" hidden><b>Download:</b><span class="work-link-list"></span></div>`;
-	const verifiedDownloads = DATA1520.assets[DATA1520.workid]?.downloads || {};
-	const downloads = ["PDF", "MusicXML", "MEI", "Humdrum", "Sibelius", "MIDI"]
+	const verifiedDownloads = {...(DATA1520.assets[DATA1520.workid]?.downloads || {})};
+	const generatedPdfs = ASSET_DELIVERY.index.generatedPdfs?.[DATA1520.workid];
+	if (generatedPdfs) {
+		verifiedDownloads.PDF = ASSET_DELIVERY.base + generatedPdfs.no_edit;
+		verifiedDownloads["PDF (editorial accidentals)"] = ASSET_DELIVERY.base + generatedPdfs.edit;
+	}
+	const downloads = ["PDF", "PDF (editorial accidentals)", "MusicXML", "MEI", "Humdrum", "Sibelius", "MIDI"]
 		.filter(label => verifiedDownloads[label])
 		.map(label => ({ label, url: verifiedDownloads[label] }));
 
