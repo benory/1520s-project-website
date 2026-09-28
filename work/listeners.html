@@ -6,7 +6,7 @@
 const ASSET_DELIVERY = createAssetDelivery(
   {{ site.asset_base_url | jsonify }},
   {% include metadata/cloudflare-assets.json %},
-  ["https://data.1520s-project.org/"]);
+  []);
 
 {% include scripts/getCgiParameters.js %}
 {% include_relative notation-highlighting.js %}
@@ -28,7 +28,7 @@ DATA1520.assets                   = {% include metadata/assets.json %};
 DATA1520.lookup                   = {};
 DATA1520.filter                   = "";
 DATA1520.timemap                  = [];  // Mapping between notes in SVG and timeline for audio
-DATA1520.dataurl                  = "{{site.the1520sProject_data_url}}";
+DATA1520.dataurl                  = ASSET_DELIVERY.base + "score-assets";
 DATA1520.audio                    = null; // HTML5 audio element (see initializeAudio() function);
 DATA1520.INITIALIZED = false;  // for notation display setup
 DATA1520.hnp_options = {

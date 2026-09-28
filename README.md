@@ -11,7 +11,7 @@ The website is one part of a larger digital edition infrastructure:
 - Public website: `https://1520s-project.org`
 - Website repository: `benory/1520s-project-website`
 - Score repository: `benory/1520s-project-scores`
-- Data server: `https://data.1520s-project.org`
+- Generated assets: `https://assets.1520s-project.org/1520s`
 
 Score files are maintained in the score repository. The data server processes Humdrum files and generates derivative formats and analyses used by the website, including MusicXML, MEI, MIDI, MP3, SVG notation, activity plots, keyscape plots, and playback highlighting data.
 
@@ -75,6 +75,6 @@ See `LICENSE`.
 
 ### Cloudflare asset delivery
 
-`asset_base_url` selects the project prefix in the shared R2 bucket. The browser tries Cloudflare first, then the existing data server(s) and repository URLs. `cloudflare-assets.json` maps preserved repository/PDF files to their uploaded object keys; it is a snapshot of the verified September 2026 transfer, not a claim of current source revision. Refresh it when publishing a new archive. Known blank JRP PDFs remain blocked. The identical `asset-delivery.js` helpers in both websites implement bounded request timeouts and reject HTML error responses. The bucket needs read-only GET/HEAD CORS for browser score and download requests. Dynamic legacy CGI services remain separate.
+`asset_base_url` selects the project prefix in the shared R2 bucket. The browser uses Cloudflare R2 for generated assets and retains repository URLs for source files. `cloudflare-assets.json` maps preserved repository/PDF files to their uploaded object keys; it is a snapshot of the verified September 2026 transfer, not a claim of current source revision. Refresh it when publishing a new archive. Known blank JRP PDFs remain blocked. The `asset-delivery.js` helper implement bounded request timeouts and reject HTML error responses. The bucket needs read-only GET/HEAD CORS for browser score and download requests.
 
 For an immediate asset-only refresh, run `python3 _includes/metadata/build-asset-index.py --force`. For an isolated pilot, add `--ids Any1001a --output-dir /tmp/1520s-asset-check`. Limited scans cannot replace the full website inventory.

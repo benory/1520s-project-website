@@ -11,7 +11,6 @@ import tempfile
 from urllib.parse import quote, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent
-SERVER = 'https://data.1520s-project.org'
 REPO = 'https://raw.githubusercontent.com/benory/1520s-project-scores/main/'
 FORMATS = {'mei': 'MEI', 'musicxml': 'MusicXML', 'mid': 'MIDI'}
 PLOTS = {'activity-merged-notitle': 'png', 'activity-separate-notitle': 'png',
@@ -38,7 +37,7 @@ def exists(url):
     types = re.findall(r'^content-type:\s*([^\r\n;]+)', headers, re.I | re.M)
     if not types:
         raise RuntimeError(f'No content type: {url}')
-    # This server returns HTTP 200 with HTML for missing assets.
+    # Reject HTML error pages and empty responses.
     lengths = re.findall(r'^content-length:\s*(\d+)', headers, re.I | re.M)
     return types[-1].lower() not in ('text/html', 'application/xhtml+xml') and (not lengths or lengths[-1] != '0')
 
@@ -63,11 +62,7 @@ def candidates(source, base, index):
         key = index['pdfs'][name]
     if source.startswith(base):
         key = source[len(base):]
-    if not key and source.startswith(SERVER + '/'):
-        key = 'score-assets/' + source[len(SERVER) + 1:]
     urls = [base + key] if key else []
-    if key and key.startswith('score-assets/'):
-        urls.append(SERVER + '/' + key[len('score-assets/'):])
     if key:
         urls.extend(url for url, value in index.get('sources', {}).items() if value == key)
     urls.append(source)
@@ -90,6 +85,7 @@ def first_available(urls):
 def build(ids=None):
     works = json.loads((ROOT / 'works.json').read_text())
     base, routing_index = routing()
+    asset_base = base + "score-assets"
     index = {}
     checks = []
     for work in works:
@@ -112,7 +108,7 @@ def build(ids=None):
             urls = []
             for url in sources:
                 urls.extend(candidates(url, base, routing_index))
-            # Prefer every R2 candidate before any legacy/repository fallback.
+            # Prefer R2 assets before repository source files.
             urls = list(dict.fromkeys(urls))
             urls.sort(key=lambda url: not url.startswith(base))
             if urls:
@@ -122,14 +118,14 @@ def build(ids=None):
         add('downloads', 'PDF', pdf_sources + [repository.get('PDF')])
         if generated.get('edit'):
             add('downloads', 'PDF (editorial accidentals)', [base + generated['edit']])
-        add('downloads', 'Humdrum', [f'{SERVER}/{work_id}.krn', repository.get('Humdrum')])
+        add('downloads', 'Humdrum', [f'{asset_base}/{work_id}.krn', repository.get('Humdrum')])
         add('downloads', 'Sibelius', [repository.get('Sibelius')])
         for extension, label in FORMATS.items():
-            add('downloads', label, [f'{SERVER}/{work_id}.{extension}', repository.get(label)])
-        add('audio', '', [f'{SERVER}/{work_id}.mp3'])
-        add('timemap', '', [f'{SERVER}/{work_id}-timemap.json'])
+            add('downloads', label, [f'{asset_base}/{work_id}.{extension}', repository.get(label)])
+        add('audio', '', [f'{asset_base}/{work_id}.mp3'])
+        add('timemap', '', [f'{asset_base}/{work_id}-timemap.json'])
         for name, extension in PLOTS.items():
-            add('plots', name, [f'{SERVER}/{work_id}-{name}.{extension}'])
+            add('plots', name, [f'{asset_base}/{work_id}-{name}.{extension}'])
     if ids and set(ids) - index.keys():
         raise RuntimeError('Unknown work IDs: ' + ', '.join(sorted(set(ids) - index.keys())))
     print(f'Checking {len(checks)} assets for {len(index)} works (R2 first)...', flush=True)

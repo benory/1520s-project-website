@@ -40,7 +40,7 @@ order: 3
 	            <li><a href="#javascript-tools">JavaScript tools</a></li>
 	          </ul>
 	        </li>
-	        <li><a href="#data-server">Data server</a></li>
+	        <li><a href="#generated-assets">Generated scores and media</a></li>
 	      </ul>
 	    </li>
 	    <li><strong><a href="#download-data">Download project data</a></strong></li>
@@ -229,19 +229,19 @@ order: 3
 	</ul>
 </section>
 
-<h3 id="data-server">Data server</h3>
+<h3 id="generated-assets">Generated scores and media</h3>
 
 <section>
-	<p> Scores uploaded to GitHub are processed using a <a href="https://data.1520s-project.org" target="_blank">data server</a> created by Sapp and hosted at Stanford University. The data server supports The 1520s Project, the Josquin Research Project, and the <a href="http://tassomusic.org" target="_blank">Tasso in Music Project</a>. Below is a screenshot of The 1520s Project's data server API webpage:<br><br><a href="https://data.1520s-project.org" target="_blank"><img src="/images/data_server.png" alt="data server"></a></p>
-	<p> The data server creates alternate digital score formats and analyses that are inconvenient to process within the web browser. The Humdrum files in The 1520s Project's score repository are first copied onto the server. The server then generates derivative digital scores that exactly match the Humdrum files (MusicXML, MEI, MIDI, MP3, etc), renders data visualizations such as activity plots and keyscape plots, and builds the timemap required for MP3 playback highlighting. All files created by the data server (including more than are shown on this website) are freely available for download and use. Users also have the ability to incorporate this project's data on their own websites using Verovio, and to embed generated analyses within their own projects.</p>
+  <p>The project's Humdrum scores are the master files for generating PDF scores, MEI, MusicXML, MIDI, MP3, activity and vocal-range plots, and playback timemaps. These files are built locally and hosted on Cloudflare R2, shared with the Josquin Research Project. Downloads are available on each work page.</p>
+  <p>The generation process uses music software developed by Craig Sapp and other contributors. The project maintains its own build process and asset storage.</p>
 </section>
 
 <h2 id="download-data">Download project data</h2>
 
 <section>
-	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius files, MusicXML files, Humdrum files, and PDFs, can be cloned in terminal by using the following command:</p>
+	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius and Humdrum source files, can be cloned in terminal by using the following command:</p>
 	<code>git clone https://github.com/benory/1520s-project-scores.git</code>
-	<p><strong>Note:</strong> the Sibelius and MusicXML files on the project's GitHub repository are pre-corrected version of the Humdrum files (the data server provides post-corrected MusicXML files that are derived from the corrected Humdrum files).</p>
+	<p><strong>Note:</strong> corrected Humdrum scores are used to generate the MusicXML and PDF downloads available on the work pages.</p>
 	<p>Metadata used to search on the <a href="https://1520s-project.org/repertoire/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:</p>
 	<ul class="spaced-list">
 		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the scores used for searches on the browse page)</li>

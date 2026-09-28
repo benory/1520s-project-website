@@ -32,7 +32,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-the1520sProject_data_url: https://data.1520s-project.org
 
 # Error-report popup configuration. The Google Form URL and field IDs live in
 # the Cloudflare Worker, so they are not exposed in the public site markup.
