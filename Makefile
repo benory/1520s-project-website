@@ -1,23 +1,22 @@
-## Download metadata for the 1520s project from the Google Spreadsheet
-## for the project's metadata. You need to update the SID variable in
-## _includes/metadata/Makefile when the deployment of the Google Apps
-## Script has changed.
-##
-## Type "make" in this directory to download the JSON files for the
-## metadata into the _includes/metadata directory.
-##
+# Default: refresh metadata, build changed/missing assets, and verify R2 uploads.
+.DEFAULT_GOAL := all
+ASSET_TOOL_DIR ?= ../digital-library-build
+ASSET_PYTHON ?= $(ASSET_TOOL_DIR)/.venv/bin/python
+ASSET_IDS ?=
+ASSET_ARGS ?=
+WORKFLOW = $(ASSET_PYTHON) "$(ASSET_TOOL_DIR)/tools/workflow/run.py" --project 1520s --website "$(CURDIR)" $(if $(ASSET_IDS),--ids "$(ASSET_IDS)")
 
-.PHONY: all download texts assets
+.PHONY: all assets assets-plan download texts
+all: assets
 
-all: assets texts
+assets:
+	$(WORKFLOW) $(ASSET_ARGS)
 
-# Metadata must finish before checking its work IDs, including with make -j.
-assets: download
-	$(MAKE) -C _includes/metadata assets
+assets-plan:
+	$(WORKFLOW) --plan $(ASSET_ARGS)
 
 download:
 	$(MAKE) -C _includes/metadata download
 
-# Refresh the work-ID index from the published scores repository.
 texts:
 	ruby _includes/metadata/build-text-index.rb
