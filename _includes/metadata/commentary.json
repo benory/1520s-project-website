@@ -29,6 +29,13 @@
 		"Fols./pp./no.": "fols. 98v–118r"
 	},
 	{
+		"Commentary ID": "Any1007",
+		"Source": "Vienna 4810",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2066/",
+		"Fols./pp./no.": "fols. 98v–118r"
+	},
+	{
 		"Commentary ID": "Any1008",
 		"Source": "Montserrat 766",
 		"Earliest Source": "yes",
@@ -116,6 +123,14 @@
 		"Attribution": "Consilium"
 	},
 	{
+		"Commentary ID": "Crp1001",
+		"Source": "Channay, Liber primus missarum (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/990020764",
+		"Fols./pp./no.": "no. 1",
+		"Attribution": "Carpentras"
+	},
+	{
 		"Commentary ID": "Crp1002",
 		"Source": "Bologna Q25",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1610/",
@@ -135,6 +150,139 @@
 		"Source": "Toledo 32",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2566/",
 		"Fols./pp./no.": "fols. 94v–118r"
+	},
+	{
+		"Commentary ID": "Div2001",
+		"Source": "Petrucci, Motetti de la corona, libro primo (1514)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993103869",
+		"Fols./pp./no.": "fol. 10r [S.]; fol. 26r [A.]; fol. 42r [T.]; fol. 58r [B.]",
+		"Attribution": "Divitis"
+	},
+	{
+		"Commentary ID": "Div2001",
+		"Source": "Pasoti and Dorico, Motetti de la corona, libro primo (1526)",
+		"RISM link": "https://rism.online/sources/993103983",
+		"Fols./pp./no.": "fol. 10r [S.]; fol. 26r [A.]; fol. 42r [T.]; fol. 58r [B.]"
+	},
+	{
+		"Commentary ID": "Div2001",
+		"Source": "Bologna Q27(2)",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1394/",
+		"Fols./pp./no.": "fols. 11r–12r",
+		"Attribution": "A. Divitis",
+		"Notes": "only superius partbook extant"
+	},
+	{
+		"Commentary ID": "Div2002",
+		"Source": "Rhau, Magnificat octo modorum seu tonorum (1544)",
+		"RISM link": "https://rism.online/sources/993104414",
+		"Fols./pp./no.": "fols. 50r–51v",
+		"Attribution": "Anto. Divitis"
+	},
+	{
+		"Commentary ID": "Div2002",
+		"Source": "Montanus and Neuber, Diphona amoema et florida (1549)",
+		"RISM link": "https://rism.online/sources/993104578",
+		"Fols./pp./no.": "nos. 66 and 72",
+		"Attribution": "Anto. Divitis",
+		"Notes": "Fecit potentiam and Sicut locutus est only"
+	},
+	{
+		"Commentary ID": "Div2002",
+		"Source": "Jena 20",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1227/",
+		"Fols./pp./no.": "fols. 25v–31r",
+		"Attribution": "Anthonius Divitis"
+	},
+	{
+		"Commentary ID": "Div2003",
+		"Source": "Jena 20",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1227/",
+		"Fols./pp./no.": "fols. 110v–115r",
+		"Attribution": "Anthonius Divitis"
+	},
+	{
+		"Commentary ID": "Div2004",
+		"Source": "Antico, Motetti libro secondo (1521)",
+		"RISM link": "https://rism.online/sources/993103934",
+		"Fols./pp./no.": "no. 15",
+		"Attribution": "Anto di Viti",
+		"Notes": "only altus partbook extant"
+	},
+	{
+		"Commentary ID": "Div2004",
+		"Source": "Cappella Sistina 54",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2634/",
+		"Fols./pp./no.": "fols. 121v–122r"
+	},
+	{
+		"Commentary ID": "Div2004",
+		"Source": "Bologna Q19",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1390/",
+		"Fols./pp./no.": "fols. 83v–84r",
+		"Attribution": "Devitis"
+	},
+	{
+		"Commentary ID": "Div2004",
+		"Source": "Florence 666 (\"Medici Codex\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1399/",
+		"Fols./pp./no.": "fols. 98v–100r",
+		"Attribution": "An. Divitis"
+	},
+	{
+		"Commentary ID": "Div2004",
+		"Source": "Padua A17",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1449/",
+		"Fols./pp./no.": "fols. 109r–109v",
+		"Attribution": "A. Divitis"
+	},
+	{
+		"Commentary ID": "Div2004",
+		"Source": "Bergamo 1209D",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1559/",
+		"Fols./pp./no.": "fols. 96v–97r",
+		"Attribution": "An. de viti"
+	},
+	{
+		"Commentary ID": "Div2005",
+		"Source": "Antico, Motetti novi e chanzoni (1520)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993103920",
+		"Fols./pp./no.": "fols. 14v–15r",
+		"Attribution": "Divitis"
+	},
+	{
+		"Commentary ID": "Div2005",
+		"Source": "Rhau, Secundus tomus biciniorum (1545)",
+		"RISM link": "https://rism.online/sources/993104453",
+		"Fols./pp./no.": "fol. 130r"
+	},
+	{
+		"Commentary ID": "Div3001",
+		"Source": "Bologna Q19",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1390/",
+		"Fols./pp./no.": "fols. 9v–11r",
+		"Attribution": "Antonius Devitis"
+	},
+	{
+		"Commentary ID": "Fva1003",
+		"Source": "Jena 5",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1222/",
+		"Fols./pp./no.": "fols. 73v–86r",
+		"Attribution": "Anthoi de Fevin"
+	},
+	{
+		"Commentary ID": "Fva1003",
+		"Source": "Vienna 15497",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2070/",
+		"Fols./pp./no.": "fols. 69v–82r",
+		"Attribution": "Anthonius Fevin"
 	},
 	{
 		"Commentary ID": "Fva3002",
@@ -969,6 +1117,59 @@
 		"Notes": "attributed to Lupus in the index; Moton in the bassus 1 partbook"
 	},
 	{
+		"Commentary ID": "Mou3009",
+		"Source": "Antico, Chansons a troys (1520)",
+		"RISM link": "https://rism.online/sources/993103924",
+		"Fols./pp./no.": "no. 12",
+		"Notes": "only superius and bassus extant"
+	},
+	{
+		"Commentary ID": "Mou3009",
+		"Source": "London 35087",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 55v–56r",
+		"Attribution": "Jo. Mouton"
+	},
+	{
+		"Commentary ID": "Mou3009",
+		"Source": "St. Gall 463",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/960/",
+		"Fols./pp./no.": "no. 34"
+	},
+	{
+		"Commentary ID": "Mou3009",
+		"Source": "Rhau, Tricinia (1542)",
+		"RISM link": "https://rism.online/sources/993104348",
+		"Fols./pp./no.": "no. 86"
+	},
+	{
+		"Commentary ID": "Mou3009",
+		"Source": "Berg and Neuber, Selectissimorum triciniorum (1560)",
+		"RISM link": "https://rism.online/sources/993122164",
+		"Fols./pp./no.": "no. 47"
+	},
+	{
+		"Commentary ID": "Mou3010",
+		"Source": "Cortona 95–96",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/242/",
+		"Fols./pp./no.": "no. 45"
+	},
+	{
+		"Commentary ID": "Mou3010",
+		"Source": "Florence 2442",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/246/",
+		"Fols./pp./no.": "no. 53",
+		"Attribution": "Mouton"
+	},
+	{
+		"Commentary ID": "Mou3010",
+		"Source": "Paris 1817",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2385/",
+		"Fols./pp./no.": "no. 45"
+	},
+	{
 		"Commentary ID": "Mou3011",
 		"Source": "Antico, Chansons a troys (1520)",
 		"Earliest Source": "yes",
@@ -1050,7 +1251,7 @@
 	},
 	{
 		"Commentary ID": "Opi2001",
-		"Source": "Lofzangen ter eere van Keizer Maximiliaan (Antwerp: Jan de Gheet, O 96)",
+		"Source": "Gheet, Lofzangen ter eere van Keizer Maximiliaan (1515)",
 		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/search?q=lofzangen%20ter%20eere&mode=sources&page=1&rows=40#sources-990047450",
 		"Fols./pp./no.": "fols. 3v–5r",
@@ -1087,7 +1288,7 @@
 	},
 	{
 		"Commentary ID": "Ric1001",
-		"Source": "Cividale del Friula 53",
+		"Source": "Cividale del Friuli 53",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/951/",
 		"Fols./pp./no.": "fols. 91v–103r",
 		"Attribution": "Richafort",
@@ -1187,6 +1388,21 @@
 		"Fols./pp./no.": "fols. 38r–40v"
 	},
 	{
+		"Commentary ID": "Ric2021",
+		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104111",
+		"Fols./pp./no.": "fol. 5v",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2021",
+		"Source": "Le Roy and Ballard, Joannis Richafort Modulorum (1556)",
+		"RISM link": "https://rism.online/sources/990054665",
+		"Fols./pp./no.": "no. 11",
+		"Attribution": "Joannis Richafort"
+	},
+	{
 		"Commentary ID": "Ric2022",
 		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales (1534)",
 		"Earliest Source": "yes",
@@ -1215,6 +1431,90 @@
 		"RISM link": "https://rism.online/sources/990054665",
 		"Fols./pp./no.": "no. 9",
 		"Attribution": "Joannis Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Attaingnant, Liber sextus XIII quinque ultimorum tonorum magnificat (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104118/",
+		"Fols./pp./no.": "fols. 11v–12v",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Florence 46",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1789/",
+		"Fols./pp./no.": "fols. 123v–247r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Leiden 1442",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1862/",
+		"Fols./pp./no.": "fols. 244v–249r"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Stuttgart 41",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2537/",
+		"Fols./pp./no.": "fols. 231v–247r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Toledo 23",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1183/",
+		"Fols./pp./no.": "fols. 45v–52r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Vienna 15500",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2659/",
+		"Fols./pp./no.": "fols. 14v–24r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Attaingnant, Liber sextus XIII quinque ultimorum tonorum magnificat (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104118/",
+		"Fols./pp./no.": "fols. 11v–12v",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Leiden 1442",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1862/",
+		"Fols./pp./no.": "fols. 244v–249r"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Florence 46",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1789/",
+		"Fols./pp./no.": "fols. 123v–247r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Stuttgart 41",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2537/",
+		"Fols./pp./no.": "fols. 231v–247r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Toledo 23",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1183/",
+		"Fols./pp./no.": "fols. 45v–52r",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2024",
+		"Source": "Vienna 15500",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2659/",
+		"Fols./pp./no.": "fols. 14v–24r",
+		"Attribution": "Richafort"
 	},
 	{
 		"Commentary ID": "Ric2025",
@@ -1285,6 +1585,36 @@
 		"Notes": "altus and tenor swapped in ‘Quia fecit’"
 	},
 	{
+		"Commentary ID": "Ric2031",
+		"Source": "Gardane, Il primo libro a due voci (1543)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104363",
+		"Fols./pp./no.": "p. 17",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2031",
+		"Source": "Gardane, Il primo libro a due voci (1553)",
+		"RISM link": "https://rism.online/sources/993120072",
+		"Fols./pp./no.": "p. 17",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2032",
+		"Source": "Gardane, Il primo libro a due voci (1543)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104363",
+		"Fols./pp./no.": "p. 18",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2032",
+		"Source": "Gardane, Il primo libro a due voci (1553)",
+		"RISM link": "https://rism.online/sources/993120072",
+		"Fols./pp./no.": "p. 18",
+		"Attribution": "Richafort"
+	},
+	{
 		"Commentary ID": "Ric2033",
 		"Source": "Hradec Králové 32",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
@@ -1323,6 +1653,77 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2246/",
 		"Fols./pp./no.": "fols. 36v–37r [S.]; fols. 37v–38r [A.]; fols. 34v–35r [T.]; fols. 35v–36r [B.]",
 		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Kriesstein, Cantiones septem, sex et quinque vocum (1545)",
+		"RISM link": "https://rism.online/sources/993104446",
+		"Fols./pp./no.": "fol. D1",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Montanus and Neuber, Secundus Tomus (1555)",
+		"RISM link": "https://rism.online/sources/993120125",
+		"Fols./pp./no.": "no. 2",
+		"Attribution": "Ioannes Richafort"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Hradec Králové 32",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
+		"Fols./pp./no.": "pp. 33–34"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Leipzig 49–50",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1151/",
+		"Fols./pp./no.": "fols. 284v–285r [S.]; fols. 313r–314r [A.]; fols. 103v–104r [Q.]; fols. 266r–266v [T.]; fols. 291r–291v [B.]"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Lucca 775",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1006/",
+		"Fols./pp./no.": "fols. 32v–33r",
+		"Notes": "only quintus partbook extant"
+	},
+	{
+		"Commentary ID": "Ric2033",
+		"Source": "Munich 401",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2246/",
+		"Fols./pp./no.": "fols. 36v–37r [S.]; fols. 37v–38r [A.]; fols. 34v–35r [T.]; fols. 35v–36r [B.]",
+		"Attribution": "Richafort",
+		"Notes": "quintus not extant"
+	},
+	{
+		"Commentary ID": "Ric2034",
+		"Source": "Scotto, Elletione de motetti a tre voci libro primo (1549)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104575",
+		"Fols./pp./no.": "p. 20",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2034",
+		"Source": "Le Roy and Ballard, Modulorum ternis vocibus diversis (1565)",
+		"RISM link": "https://rism.online/sources/993120377"
+	},
+	{
+		"Commentary ID": "Ric2035",
+		"Source": "Le Roy and Ballard, Joannis Richafort Modulorum (1556)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/990054665",
+		"Fols./pp./no.": "no. 3",
+		"Attribution": "Joannis Richafort"
+	},
+	{
+		"Commentary ID": "Ric2036",
+		"Source": "Regensburg 2–3",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1169/",
+		"Fols./pp./no.": "no. 72",
+		"Notes": "only discantus and bassus partbooks extant"
 	},
 	{
 		"Commentary ID": "Ror0105",
@@ -1443,6 +1844,30 @@
 		"Attribution": "Claudin"
 	},
 	{
+		"Commentary ID": "Vin2001",
+		"Source": "Munich 34",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2062/",
+		"Fols./pp./no.": "fols. 33v–37r",
+		"Attribution": "Jheronimus Vinders"
+	},
+	{
+		"Commentary ID": "Vin2002",
+		"Source": "Munich 34",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2062/",
+		"Fols./pp./no.": "fols. 124v–127r",
+		"Attribution": "Jheronimus Vinders"
+	},
+	{
+		"Commentary ID": "Vin2003",
+		"Source": "Munich 34",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2062/",
+		"Fols./pp./no.": "fols. 127v–131r",
+		"Attribution": "Jheronimus Vinders"
+	},
+	{
 		"Commentary ID": "Wil1002",
 		"Source": "Coimbra MM.2",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1137/",
@@ -1479,6 +1904,80 @@
 		"Source": "Piacenza s.s. (1)",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1016/",
 		"Fols./pp./no.": "fols. 58v–65v, 73r–v",
+		"Notes": "bassus not extant"
+	},
+	{
+		"Commentary ID": "Wil1004",
+		"Source": "Bologna Q.25",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1610/",
+		"Fols./pp./no.": "fols. 37r–40r",
+		"Notes": "only altus and tenor partbooks extant"
+	},
+	{
+		"Commentary ID": "Wil1004",
+		"Source": "Cambrai 125–128",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
+		"Fols./pp./no.": "fols. 65v–69v",
+		"Attribution": "Willaert",
+		"Movements": "KGCS"
+	},
+	{
+		"Commentary ID": "Wil1004",
+		"Source": "Marcolini, Liber quinque missarum Adriani Willaert (1536)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/1001305325",
+		"Fols./pp./no.": "no. 2",
+		"Attribution": "Adriani Willaert"
+	},
+	{
+		"Commentary ID": "Wil1004",
+		"Source": "Piacenza s.s. (1)",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1016/",
+		"Fols./pp./no.": "fols. 40v–49r",
+		"Notes": "bassus not extant"
+	},
+	{
+		"Commentary ID": "Wil1005",
+		"Source": "Cambrai 125–128",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
+		"Fols./pp./no.": "fols. 7r–10v",
+		"Attribution": "Adriano Willaert"
+	},
+	{
+		"Commentary ID": "Wil1005",
+		"Source": "Cividale del Friuli 53",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/951/",
+		"Fols./pp./no.": "fols. 151v–167r",
+		"Attribution": "Willaert",
+		"Notes": "Only two voices"
+	},
+	{
+		"Commentary ID": "Wil1005",
+		"Source": "Marcolini, Liber quinque missarum Adriani Willaert (1536)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/1001305327",
+		"Fols./pp./no.": "no. 4",
+		"Attribution": "Adriani Willaert"
+	},
+	{
+		"Commentary ID": "Wil1005",
+		"Source": "s-Hertogenbosch 157",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1816/",
+		"Fols./pp./no.": "fols. 180v–201r"
+	},
+	{
+		"Commentary ID": "Wil1006",
+		"Source": "Marcolini, Liber quinque missarum Adriani Willaert (1536)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/1001305328",
+		"Fols./pp./no.": "no. 5",
+		"Attribution": "Adriani Willaert"
+	},
+	{
+		"Commentary ID": "Wil1006",
+		"Source": "Piacenza s.s. (1)",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1016/",
+		"Fols./pp./no.": "fols. 49v–58r",
 		"Notes": "bassus not extant"
 	}
 ]
