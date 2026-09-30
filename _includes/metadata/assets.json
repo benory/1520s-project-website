@@ -12627,7 +12627,9 @@
       "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2022.krn",
       "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2022.mei",
       "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2022.mid",
-      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2022.musicxml"
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2022.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2022-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2022-edit.pdf"
     },
     "plots": {
       "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2022-activity-merged-notitle.png",
@@ -12643,7 +12645,9 @@
       "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2024.krn",
       "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2024.mei",
       "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2024.mid",
-      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2024.musicxml"
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2024.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2024-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2024-edit.pdf"
     },
     "plots": {
       "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2024-activity-merged-notitle.png",

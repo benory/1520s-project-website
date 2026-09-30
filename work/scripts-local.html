@@ -723,10 +723,16 @@ function displayWorkInfo(id) {
 
 	const downloadoutput = `<div id="work-downloads" class="work-item work-link-group" hidden><b>Download:</b><span class="work-link-list"></span></div>`;
 	const verifiedDownloads = {...(DATA1520.assets[DATA1520.workid]?.downloads || {})};
-	const generatedPdfs = ASSET_DELIVERY.index.generatedPdfs?.[DATA1520.workid];
-	if (generatedPdfs) {
-		verifiedDownloads.PDF = ASSET_DELIVERY.base + generatedPdfs.no_edit;
-		verifiedDownloads["PDF (editorial accidentals)"] = ASSET_DELIVERY.base + generatedPdfs.edit;
+	const generatedPdfs = ASSET_DELIVERY.index.generatedPdfs?.[DATA1520.workid] || {};
+	const pdfs = ASSET_DELIVERY.index.pdfs || {};
+	for (const [edition, label] of [["no_edit", "PDF"], ["edit", "PDF (editorial accidentals)"]]) {
+		const name = DATA1520.workid + "-" + edition + ".pdf";
+		const key = Object.prototype.hasOwnProperty.call(pdfs, name) ? pdfs[name] : generatedPdfs[edition];
+		if (key === null) {
+			delete verifiedDownloads[label];
+		} else if (key) {
+			verifiedDownloads[label] = ASSET_DELIVERY.base + key;
+		}
 	}
 	const downloads = ["PDF", "PDF (editorial accidentals)", "MusicXML", "MEI", "Humdrum", "Sibelius", "MIDI"]
 		.filter(label => verifiedDownloads[label])

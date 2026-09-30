@@ -114,10 +114,17 @@ def build(ids=None):
             if urls:
                 checks.append((work_id, group, key, urls))
         generated = routing_index.get('generatedPdfs', {}).get(work_id, {})
-        pdf_sources = [base + generated['no_edit']] if generated.get('no_edit') else []
-        add('downloads', 'PDF', pdf_sources + [repository.get('PDF')])
-        if generated.get('edit'):
-            add('downloads', 'PDF (editorial accidentals)', [base + generated['edit']])
+        for edition, label in [('no_edit', 'PDF'), ('edit', 'PDF (editorial accidentals)')]:
+            name = f'{work_id}-{edition}.pdf'
+            pdfs = routing_index.get('pdfs', {})
+            # Explicit nulls hold publication, including legacy alternatives.
+            if name in pdfs and pdfs[name] is None:
+                continue
+            key = pdfs.get(name, generated.get(edition))
+            sources = [base + key] if key else []
+            if edition == 'no_edit':
+                sources.append(repository.get('PDF'))
+            add('downloads', label, sources)
         add('downloads', 'Humdrum', [f'{asset_base}/{work_id}.krn', repository.get('Humdrum')])
         add('downloads', 'Sibelius', [repository.get('Sibelius')])
         for extension, label in FORMATS.items():

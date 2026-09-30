@@ -58,8 +58,8 @@ class AssetResponses(unittest.TestCase):
 class R2Routing(unittest.TestCase):
     def test_r2_first_and_fallback(self):
         base = 'https://assets.test/1520s/'
-        source = assets.SERVER + '/Any1001a.mp3'
-        urls = assets.candidates(source, base, {})
+        source = 'https://source.test/Any1001a.mp3'
+        urls = assets.candidates(source, base, {'sources': {source: 'score-assets/Any1001a.mp3'}})
         self.assertEqual(urls, [base + 'score-assets/Any1001a.mp3', source])
         with patch.object(assets, 'exists', return_value=True) as check:
             self.assertEqual(assets.first_available(urls), urls[0])
@@ -69,12 +69,36 @@ class R2Routing(unittest.TestCase):
 
     def test_explicit_mapping_and_pdf_holds(self):
         base = 'https://assets.test/1520s/'
-        source = assets.SERVER + '/Any1001a.mp3'
+        source = 'https://source.test/Any1001a.mp3'
         index = {'sources': {source: 'audio/Any1001a.mp3'}}
         self.assertEqual(assets.candidates(source, base, index)[0], base + 'audio/Any1001a.mp3')
         pdf = 'https://old.test/A.pdf'
         self.assertEqual(assets.candidates(pdf, base, {'pdfs': {'A.pdf': None}}), [])
         self.assertEqual(assets.candidates(pdf, base, {'pdfs': {'A.pdf': 'pdfs/A.pdf'}, 'blocked': [pdf]}), [base + 'pdfs/A.pdf'])
+
+    def test_new_pdf_publication_and_holds(self):
+        base = 'https://assets.test/1520s/'
+        cases = [
+            ({'pdfs': {'Gom2022-no_edit.pdf': 'pdfs/Gom/Gom2022-no_edit.pdf',
+                       'Gom2022-edit.pdf': 'pdfs/Gom/Gom2022-edit.pdf'}},
+             {'PDF': base + 'pdfs/Gom/Gom2022-no_edit.pdf',
+              'PDF (editorial accidentals)': base + 'pdfs/Gom/Gom2022-edit.pdf'}),
+            ({'pdfs': {'Gom2022-edit.pdf': 'pdfs/Gom/Gom2022-edit.pdf'}},
+             {'PDF (editorial accidentals)': base + 'pdfs/Gom/Gom2022-edit.pdf'}),
+            ({'pdfs': {'Gom2022-no_edit.pdf': None},
+              'generatedPdfs': {'Gom2022': {'no_edit': 'old.pdf'}}}, {}),
+            ({'generatedPdfs': {'Gom2022': {'no_edit': 'old.pdf'}}},
+             {'PDF': base + 'old.pdf'}),
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'works.json').write_text(json.dumps([{'ID': 'Gom2022'}]))
+            for index, expected in cases:
+                with self.subTest(index=index), patch.object(assets, 'ROOT', root), \
+                     patch.object(assets, 'routing', return_value=(base, index)), \
+                     patch.object(assets, 'exists', return_value=True):
+                    downloads = assets.build(ids={'Gom2022'})['Gom2022']['downloads']
+                    self.assertEqual({k: v for k, v in downloads.items() if k.startswith('PDF')}, expected)
 
     def test_uncertainty_preserved_unless_fallback_succeeds(self):
         with patch.object(assets, 'exists', side_effect=[OSError('offline'), False]):
