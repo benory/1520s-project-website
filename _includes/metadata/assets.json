@@ -12658,7 +12658,9 @@
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2024-timemap.json"
   },
   "Gom2025": {
-    "downloads": {},
+    "downloads": {
+      "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2025-Respice_Domine.krn"
+    },
     "plots": {}
   }
 }
