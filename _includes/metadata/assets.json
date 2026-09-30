@@ -12656,5 +12656,9 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2024-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2024-timemap.json"
+  },
+  "Gom2025": {
+    "downloads": {},
+    "plots": {}
   }
 }
