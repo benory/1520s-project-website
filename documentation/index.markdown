@@ -239,7 +239,7 @@ order: 3
 <h2 id="download-data">Download project data</h2>
 
 <section>
-	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius and Humdrum source files, can be cloned in terminal by using the following command:</p>
+	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius, MuseScore, and Humdrum source files, can be cloned in terminal by using the following command:</p>
 	<code>git clone https://github.com/benory/1520s-project-scores.git</code>
 	<p><strong>Note:</strong> corrected Humdrum scores are used to generate the MusicXML and PDF downloads available on the work pages.</p>
 	<p>Metadata used to search on the <a href="https://1520s-project.org/repertoire/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:</p>

@@ -734,7 +734,7 @@ function displayWorkInfo(id) {
 			verifiedDownloads[label] = ASSET_DELIVERY.base + key;
 		}
 	}
-	const downloads = ["PDF", "PDF (editorial accidentals)", "MusicXML", "MEI", "Humdrum", "Sibelius", "MIDI"]
+	const downloads = ["PDF", "PDF (editorial accidentals)", "MusicXML", "MEI", "Humdrum", "Sibelius", "MuseScore", "MIDI"]
 		.filter(label => verifiedDownloads[label])
 		.map(label => ({
 			label: label === "PDF" ? "PDF score" : label === "PDF (editorial accidentals)" ? "PDF with editorial accidentals" : label,

@@ -100,7 +100,7 @@ def build(ids=None):
         repository = {}
         if source.startswith('humdrum/') and source.endswith('.krn'):
             for label, directory, extension in [('PDF', 'pdf', 'pdf'), ('Humdrum', 'humdrum', 'krn'),
-                                               ('Sibelius', 'sibelius', 'sib'), ('MusicXML', 'musicxml', 'musicxml')]:
+                                               ('Sibelius', 'notation-files', 'sib'), ('MuseScore', 'notation-files', 'mscz'), ('MusicXML', 'musicxml', 'musicxml')]:
                 path = re.sub(r'^humdrum/', directory + '/', source)
                 path = re.sub(r'\.krn$', '.' + extension, path)
                 repository[label] = REPO + quote(path)
@@ -127,6 +127,7 @@ def build(ids=None):
             add('downloads', label, sources)
         add('downloads', 'Humdrum', [f'{asset_base}/{work_id}.krn', repository.get('Humdrum')])
         add('downloads', 'Sibelius', [repository.get('Sibelius')])
+        add('downloads', 'MuseScore', [repository.get('MuseScore')])
         for extension, label in FORMATS.items():
             add('downloads', label, [f'{asset_base}/{work_id}.{extension}', repository.get(label)])
         add('audio', '', [f'{asset_base}/{work_id}.mp3'])
