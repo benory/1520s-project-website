@@ -12692,5 +12692,23 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2026-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2026-timemap.json"
+  },
+  "Gom2027": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Gom2027.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2027.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2027.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2027.mid",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2027.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2027-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2027-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-timemap.json"
   }
 }
