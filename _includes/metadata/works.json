@@ -3618,6 +3618,28 @@
 		"FILEBASE": "Fva2001-Sancta_trinitas"
 	},
 	{
+		"ID": "Fva3001",
+		"Composer": "Févin, Antoine de",
+		"Title": "En amours n’a sinon que bien",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Clinkscale_1994",
+		"First Source": "I-Tn MS Ris.mus I. 27",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1503/",
+		"RISM or CC Source Sigla": "TurBN I.27",
+		"Pages, Folios, or Numbers": "fol. 46v",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"First Source Exact Date": "~1505",
+		"Source Date": "~1505",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Transcriber": "Áine Palmer",
+		"Date Added": "2026-10-5",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fva/Fva3001-En_amours_na_sinon_que_bien.krn",
+		"FILEBASE": "Fva3001-En_amours_na_sinon_que_bien"
+	},
+	{
 		"ID": "Fva3002",
 		"Composer": "Févin, Antoine de",
 		"Title": "Adieu solas",

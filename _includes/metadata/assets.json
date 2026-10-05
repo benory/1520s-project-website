@@ -12802,5 +12802,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2027-timemap.json"
+  },
+  "Fva3001": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva3001.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva3001.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva3001.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva3001.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva3001-En_amours_na_sinon_que_bien.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva3001.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3001-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3001-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-timemap.json"
   }
 }
