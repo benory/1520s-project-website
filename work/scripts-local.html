@@ -682,7 +682,10 @@ function displayWorkInfo(id) {
 
 			    let formattedEditions = editionsInfo.map((ed, index) => {
 			        let entry = `<div class="bibliographic-entry"><span class="bibliographic-text">`;
-			        if (index === 0) entry += `<b>${editionsInfo.length === 1 ? "Modern Edition" : "Modern Editions"}:</b> `;
+			        let editionLabel = /^Ror02\d{2}$/i.test(id)
+			            ? "Edition source"
+			            : (editionsInfo.length === 1 ? "Modern Edition" : "Modern Editions");
+			        if (index === 0) entry += `<b>${editionLabel}:</b> `;
 
 			        if (ed["Composer/Author"]) entry += `${ed["Composer/Author"]}, `;
 			        if (ed["Name of Article"]) entry += ` "${ed["Name of Article"]}," `;
@@ -715,7 +718,13 @@ function displayWorkInfo(id) {
 			            entry += `: ${ed["Page Numbers"]}`;
 			        }
 			        
-			        entry += `.</span></div>`;
+			        entry += ".";
+			        let permission = String(ed["Permission"] || "").trim();
+			        if (permission) {
+			            entry += ` ${escapeCommentaryText(permission)}`;
+			            if (!/[.!?]$/.test(permission)) entry += ".";
+			        }
+			        entry += `</span></div>`;
 
 			        return entry;
 				    }).join("");
