@@ -13,6 +13,7 @@
         const title = document.createElement("i");
         title.textContent = [work.Title, work.Subtitle].filter(Boolean).join(": ");
         const editor = (formatCreditNames(work.Editor) || "The 1520s Project")
+            .replace(/\[([^\[\]]+)\]/g, "$1")
             .replace(/^the Josquin Research Project$/i, "Josquin Research Project");
         const isNote = format.value === "note";
         const composer = String(work.Composer || "Anonymous").trim();
