@@ -381,8 +381,17 @@
 		"Publication Year": "1963"
 	},
 	{
+		"ID": "Meier_1975",
+		"Composer/Author": "Cipriano de Rore",
+		"Name of Volume": "Opera Omnia: Motets",
+		"Editor": "Bernhard Meier",
+		"Series and Volume": "Corpus Mensurabilis Musicae 14/6",
+		"Publisher": "American Institute of Musicology",
+		"Publication Year": "1975"
+	},
+	{
 		"ID": "Meier_1987",
-		"Composer/Author": "Adriani Willaert",
+		"Composer/Author": "Adrian Willaert",
 		"Name of Volume": "Opera Omnia: Liber quinque missarum IV vocum 1536",
 		"Editor": "Helga Meier",
 		"Series and Volume": "Corpus Mensurabilis Musicae 3/9",
@@ -578,7 +587,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1954",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Missae V Vocum",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/2",
@@ -588,7 +597,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1961",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Cantiones Sacre",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/5",
@@ -597,7 +606,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1963",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Missae VI Vocum, Credo (8 vocum)",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/3",
@@ -606,7 +615,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1968",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Motecta 5v.",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/7",
@@ -615,7 +624,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1970",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Motecta 5v.",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/8",
@@ -624,7 +633,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1974",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Motecta 6v.",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/9",
@@ -633,7 +642,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1975a",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Motecta 4, 5, et 12 v.",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/10",
@@ -642,7 +651,7 @@
 	},
 	{
 		"ID": "Schmidt-Görg_1975b",
-		"Composer/Author": "Nicolai Gombert",
+		"Composer/Author": "Nicolas Gombert",
 		"Name of Volume": "Opera Omnia: Cantiones saeculares, prima pars",
 		"Editor": "Joseph Schmidt-Görg",
 		"Series and Volume": "Corpus Mensurabilis Musicae 6/11",
@@ -898,7 +907,7 @@
 	},
 	{
 		"ID": "Zanon_1957",
-		"Composer/Author": "Adrianus Willaert",
+		"Composer/Author": "Adrian Willaert",
 		"Name of Volume": "In tua patientia",
 		"Editor": "Maffeo Zanon-Vené",
 		"Series and Volume": "Choral Classics of the Golden Era, N.Y. 1888–9",
@@ -908,7 +917,7 @@
 	},
 	{
 		"ID": "Zenck_1950a",
-		"Composer/Author": "Adriani Willaert",
+		"Composer/Author": "Adrian Willaert",
 		"Name of Volume": "Opera Omnia: Motetta IV vocum, Liber primus, 1539 et 1545",
 		"Editor": "Hermann Zenck",
 		"Series and Volume": "Corpus Mensurabilis Musicae 3/1",
@@ -918,7 +927,7 @@
 	},
 	{
 		"ID": "Zenck_1950b",
-		"Composer/Author": "Adriani Willaert",
+		"Composer/Author": "Adrian Willaert",
 		"Name of Volume": "Opera Omnia: Motetta IV vocum, Liber secundus, 1539 et 1545",
 		"Editor": "Hermann Zenck",
 		"Series and Volume": "Corpus Mensurabilis Musicae 3/2",
@@ -928,7 +937,7 @@
 	},
 	{
 		"ID": "Zenck_1950c",
-		"Composer/Author": "Adriani Willaert",
+		"Composer/Author": "Adrian Willaert",
 		"Name of Volume": "Opera Omnia: Motetta V vocum, 1539 et 1550",
 		"Editor": "Hermann Zenck",
 		"Series and Volume": "Corpus Mensurabilis Musicae 3/3",
@@ -938,7 +947,7 @@
 	},
 	{
 		"ID": "Zenck_1952",
-		"Composer/Author": "Adriani Willaert",
+		"Composer/Author": "Adrian Willaert",
 		"Name of Volume": "Opera Omnia: Motetta VI vocum, 1542",
 		"Editor": "Hermann Zenck",
 		"Series and Volume": "Corpus Mensurabilis Musicae 3/4",

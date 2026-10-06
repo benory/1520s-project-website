@@ -12821,5 +12821,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3001-timemap.json"
+  },
+  "Ror0239": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Ror0239.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Ror0239.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Ror0239.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Ror0239.mid",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Ror0239.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Ror/Ror0239-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Ror/Ror0239-edit.pdf",
+      "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Ror/Ror0239-O_qui_populos--Munich_B.sib"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-timemap.json"
   }
 }

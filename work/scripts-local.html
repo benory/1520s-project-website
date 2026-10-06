@@ -377,6 +377,8 @@ function displayScoreCredit(id) {
 	let transcriber = formatCreditNames(workinfo.Transcriber);
 	let commentaryUrl = String(workinfo["Critical Commentary"] || "").trim();
 	let otherUrl = String(workinfo["Other URL"] || "").trim();
+	// Brackets select the part of the credit linked to Other URL.
+	let linkedCredit = /\[([^\[\]]+)\]/.exec(editor);
 
 	if (editor) {
 		let editorLine = document.createElement("div");
@@ -392,14 +394,20 @@ function displayScoreCredit(id) {
 
 		if (otherUrl) {
 			let leadingArticle = "the ";
-			if (editor.startsWith(leadingArticle)) {
+			if (linkedCredit) {
+				editorValue.appendChild(document.createTextNode(editor.slice(0, linkedCredit.index)));
+				appendCreditLink(editorValue, linkedCredit[1], otherUrl);
+				editorValue.appendChild(document.createTextNode(editor.slice(linkedCredit.index + linkedCredit[0].length)));
+			} else if (editor.startsWith(leadingArticle)) {
 				editorValue.appendChild(document.createTextNode(leadingArticle));
 				appendCreditLink(editorValue, editor.slice(leadingArticle.length), otherUrl);
 			} else {
 				appendCreditLink(editorValue, editor, otherUrl);
 			}
 		} else {
-			editorValue.appendChild(document.createTextNode(editor));
+			editorValue.appendChild(document.createTextNode(linkedCredit
+				? editor.slice(0, linkedCredit.index) + linkedCredit[1] + editor.slice(linkedCredit.index + linkedCredit[0].length)
+				: editor));
 		}
 
 		if (commentaryUrl) {

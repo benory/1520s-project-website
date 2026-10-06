@@ -2012,7 +2012,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2025-Respice_Domine.krn": "score-assets/Gom2025.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2026-Tribulatio_cordis.krn": "score-assets/Gom2026.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2027-Sancta_et_immaculata.krn": "score-assets/Gom2027.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3001-En_amours_na_sinon_que_bien.krn": "score-assets/Fva3001.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3001-En_amours_na_sinon_que_bien.krn": "score-assets/Fva3001.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ror/Ror0239-O_qui_populos--Munich_B.krn": "score-assets/Ror0239.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3418,7 +3419,9 @@
     "Snf0113-no_edit.pdf": "pdfs/Snf/Snf0113-no_edit.pdf",
     "Snf0113-edit.pdf": "pdfs/Snf/Snf0113-edit.pdf",
     "Fva3001-no_edit.pdf": "pdfs/Fva/Fva3001-no_edit.pdf",
-    "Fva3001-edit.pdf": "pdfs/Fva/Fva3001-edit.pdf"
+    "Fva3001-edit.pdf": "pdfs/Fva/Fva3001-edit.pdf",
+    "Ror0239-no_edit.pdf": "pdfs/Ror/Ror0239-no_edit.pdf",
+    "Ror0239-edit.pdf": "pdfs/Ror/Ror0239-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
