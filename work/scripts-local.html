@@ -587,16 +587,16 @@ function displayWorkInfo(id) {
 	let firstSources = getFirstSources(workinfo);
 	firstSources.forEach((sourceInfo, index) => {
 		let earliest = commentary.earliest[index];
-		let source = earliest ? earliest.Source : sourceInfo["First Source"];
+		let source = sourceInfo["First Source"];
 		if (!source) return;
-		let diamm = (earliest && earliest["DIAMM link"]) || sourceInfo["DIAMM Source Link"];
-		let rism = (earliest && earliest["RISM link"]) || sourceInfo["RISM Source Link"];
+		let diamm = sourceInfo["DIAMM Source Link"];
+		let rism = sourceInfo["RISM Source Link"];
 		let folios = sourceInfo["Pages, Folios, or Numbers"];
-		let type = firstSources.length > 1 ? "Earliest" : uniquesource === "yes" ? "Unique" : earliest ? "Earliest" : "First";
+		let type = firstSources.length > 1 ? "Earliest" : uniquesource === "yes" ? "Unique" : "First";
 		let number = firstSources.length > 1 ? ` ${index + 1}` : "";
 		sourceoutput += `<div class="work-item source-item"><b>${type} source${number}:</b><span class="source-value">${formatCommentarySource(source, diamm, rism)}`;
 		if (folios) sourceoutput += `, ${escapeCommentaryText(folios)}`;
-		if (earliest) sourceoutput += formatCommentaryDetails(earliest, workinfo, false) + formatCommentaryNotes(earliest);
+		if (earliest) sourceoutput += formatCommentaryDetails({Attribution: earliest.Attribution}, workinfo, false);
 		sourceoutput += `</span></div>`;
 	});
 
