@@ -12840,5 +12840,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ror0239-timemap.json"
+  },
+  "Lhe2024": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2024-Beata_es_virgo_Maria.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2024-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2024-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2024-timemap.json"
   }
 }

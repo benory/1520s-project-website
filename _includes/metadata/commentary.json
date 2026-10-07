@@ -797,14 +797,6 @@
 	},
 	{
 		"Commentary ID": "Gom2018",
-		"Source": "Attaingnant, Lib. duodecimus. xvii. musicales ad virginem christiparam salutationes habet. (1535)",
-		"Earliest Source": "yes",
-		"RISM link": "https://rism.online/sources/993104133",
-		"Fols./pp./no.": "fols. 6v–8r",
-		"Attribution": "Gombert"
-	},
-	{
-		"Commentary ID": "Gom2018",
 		"Source": "Verona 218",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1034/",
 		"Fols./pp./no.": "fols. 28v–29r",
@@ -1585,36 +1577,6 @@
 		"Notes": "altus and tenor swapped in ‘Quia fecit’"
 	},
 	{
-		"Commentary ID": "Ric2031",
-		"Source": "Gardane, Il primo libro a due voci (1543)",
-		"Earliest Source": "yes",
-		"RISM link": "https://rism.online/sources/993104363",
-		"Fols./pp./no.": "p. 17",
-		"Attribution": "Richafort"
-	},
-	{
-		"Commentary ID": "Ric2031",
-		"Source": "Gardane, Il primo libro a due voci (1553)",
-		"RISM link": "https://rism.online/sources/993120072",
-		"Fols./pp./no.": "p. 17",
-		"Attribution": "Richafort"
-	},
-	{
-		"Commentary ID": "Ric2032",
-		"Source": "Gardane, Il primo libro a due voci (1543)",
-		"Earliest Source": "yes",
-		"RISM link": "https://rism.online/sources/993104363",
-		"Fols./pp./no.": "p. 18",
-		"Attribution": "Richafort"
-	},
-	{
-		"Commentary ID": "Ric2032",
-		"Source": "Gardane, Il primo libro a due voci (1553)",
-		"RISM link": "https://rism.online/sources/993120072",
-		"Fols./pp./no.": "p. 18",
-		"Attribution": "Richafort"
-	},
-	{
 		"Commentary ID": "Ric2033",
 		"Source": "Hradec Králové 32",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1827/",
@@ -1987,5 +1949,111 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2225/",
 		"Fols./pp./no.": "fols. 103v–106r",
 		"Attribution": "Cyprianus de Rore"
+	},
+	{
+		"Commentary ID": "Gom2018",
+		"Source": "Attaingnant, Lib. duodecimus. xvii. musicales (1535)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104133",
+		"Fols./pp./no.": "fols. 6v–8r",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Attaingnant, Liber primus quinque et viginti musicales (1534)",
+		"RISM link": "https://rism.online/sources/993104109",
+		"Fols./pp./no.": "fols. 6v–7r",
+		"Attribution": "Io. Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Bologna 45",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/236/",
+		"Fols./pp./no.": "fols. 16v–18r"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Dresden 51",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1724/",
+		"Attribution": "Crecquillon"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Du Chemin and Goudimel, Collectorum modulorum, liber 1 (1553)",
+		"RISM link": "https://rism.online/sources/993120066",
+		"Fols./pp./no.": "fol. 16v",
+		"Attribution": "Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Gardano, Motetti del frutto (1539)",
+		"RISM link": "https://rism.online/sources/993104234",
+		"Fols./pp./no.": "p. 29",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Moderne, Tertius Liber cum Quatuor vocibus. Motteti del Fiore (1539)",
+		"RISM link": "https://rism.online/sources/993104231",
+		"Fols./pp./no.": "p. 41",
+		"Attribution": "Lheretier/Lhereitier"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Montanus and Neuber, Tertia pars magni operis musici (1559)",
+		"RISM link": "https://rism.online/sources/993120232",
+		"Fols./pp./no.": "fols. g2v-g3r [S.], fols. hhv-hh2r [A.], fols. G4v-Hr [T.], fols. GG2v-GG3r [B.]",
+		"Attribution": "Verdelot"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Scotto, Motetti del frutto (1562)",
+		"RISM link": "https://rism.online/sources/993120302",
+		"Fols./pp./no.": "p. 25",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Utrecht 3.L.16",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1047/",
+		"Fols./pp./no.": "fols. 180v–182r"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Verona 760",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/974/",
+		"Fols./pp./no.": "fols. 20v–21r",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Ric2031",
+		"Source": "Gardano, Il primo libro a due voci (1543)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104363",
+		"Fols./pp./no.": "p. 17",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2031",
+		"Source": "Gardano, Il primo libro a due voci (1553)",
+		"RISM link": "https://rism.online/sources/993120072",
+		"Fols./pp./no.": "p. 17",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2032",
+		"Source": "Gardano, Il primo libro a due voci (1543)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104363",
+		"Fols./pp./no.": "p. 18",
+		"Attribution": "Richafort"
+	},
+	{
+		"Commentary ID": "Ric2032",
+		"Source": "Gardano, Il primo libro a due voci (1553)",
+		"RISM link": "https://rism.online/sources/993120072",
+		"Fols./pp./no.": "p. 18",
+		"Attribution": "Richafort"
 	}
 ]
