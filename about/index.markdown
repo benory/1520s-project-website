@@ -184,14 +184,21 @@ order: 1
   </div>
 </div>
 
-<h2>Project reviews</h2>
+<h2>Project reviews and mentions</h2>
 
 <figure class="scholarly-block review-block">
   <blockquote>
     <p>"The 1520s Project is another step ahead... the project features an exquisite and thorough treatment of the metadata and a sophisticated array of analytical tools."</p>
   </blockquote>
   <figcaption>
-    Frans Wiering, ed., “Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy” (Utrecht University, 2025), 24. <a href="https://zenodo.org/records/17543932" target="_blank">https://doi.org/10.5281/zenodo.17543932</a>
+    Frans Wiering, ed., “Making Corpus Creation in Early Music Rewarding and Effective: Finding the Optimum Between Standardisation and Autonomy” (Utrecht University, 2025), 24. <a href="https://doi.org/10.5281/zenodo.17543932" target="_blank">https://doi.org/10.5281/zenodo.17543932</a>.
+  </figcaption>
+</figure>
+
+<figure class="scholarly-block review-block">
+  <p>Highlighted in EarlyMuse’s <em>Six Reports on Musicology in Europe</em> (2026) as a prominent example of computational research into musical relationships and stylistic influences in early music.</p>
+  <figcaption>
+    Philippe Vendrix and Rebekah Ahrendt, eds., <em>Musicology and Artificial Intelligence</em> (Tours: CESR, 2026), 29–30. <a href="https://doi.org/10.5281/zenodo.20639784" target="_blank">https://doi.org/10.5281/zenodo.20639784</a>.
   </figcaption>
 </figure>
 
