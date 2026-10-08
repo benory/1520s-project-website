@@ -2081,5 +2081,21 @@
 		"Source": "Uppsala 76a",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
 		"Fols./pp./no.": "fols. 47v–48r"
+	},
+	{
+		"Commentary ID": "Fva3008",
+		"Source": "Cambridge 1760",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1671/",
+		"Fols./pp./no.": "fols. 68v–69r",
+		"Attribution": "feuin"
+	},
+	{
+		"Commentary ID": "Fva3003",
+		"Source": "London 35087",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 88v–89r",
+		"Attribution": "Anthoine Feuin"
 	}
 ]
