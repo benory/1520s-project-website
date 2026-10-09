@@ -12916,5 +12916,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3008-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3008-timemap.json"
+  },
+  "Gom2028": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Gom2028.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2028.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2028.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2028.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Gom/Gom2028-Inviolata_integra_et_casta_es.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2028.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2028-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2028-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-timemap.json"
   }
 }

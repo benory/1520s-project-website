@@ -983,14 +983,6 @@
 	},
 	{
 		"Commentary ID": "Gom2028",
-		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1539)",
-		"Earliest Source": "yes",
-		"RISM link": "https://rism.online/sources/993104260",
-		"Fols./pp./no.": "fols. 2v–3r",
-		"Attribution": "N. Gombert"
-	},
-	{
-		"Commentary ID": "Gom2028",
 		"Source": "Paris 851",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
 		"Fols./pp./no.": "fols. 538r–539r",
@@ -1019,14 +1011,6 @@
 	},
 	{
 		"Commentary ID": "Gom2029",
-		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1539)",
-		"Earliest Source": "yes",
-		"RISM link": "https://rism.online/sources/993104260",
-		"Fols./pp./no.": "fol. 6r",
-		"Attribution": "Nicolaus Gombert"
-	},
-	{
-		"Commentary ID": "Gom2029",
 		"Source": "Paris 851",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2378/",
 		"Fols./pp./no.": "fols. 539r–540r",
@@ -1045,14 +1029,6 @@
 		"RISM link": "https://rism.online/sources/993104315",
 		"Fols./pp./no.": "fol. A3v",
 		"Attribution": "Gomberth"
-	},
-	{
-		"Commentary ID": "Gom2030",
-		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1539)",
-		"Earliest Source": "yes",
-		"RISM link": "https://rism.online/sources/993104260",
-		"Fols./pp./no.": "fol. 7r",
-		"Attribution": "N. Gombert"
 	},
 	{
 		"Commentary ID": "Gom2030",
@@ -2097,5 +2073,29 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
 		"Fols./pp./no.": "fols. 88v–89r",
 		"Attribution": "Anthoine Feuin"
+	},
+	{
+		"Commentary ID": "Gom2028",
+		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104260",
+		"Fols./pp./no.": "fols. 2v–3r",
+		"Attribution": "N. Gombert"
+	},
+	{
+		"Commentary ID": "Gom2029",
+		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104260",
+		"Fols./pp./no.": "fol. 6r",
+		"Attribution": "Nicolaus Gombert"
+	},
+	{
+		"Commentary ID": "Gom2030",
+		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104260",
+		"Fols./pp./no.": "fol. 7r",
+		"Attribution": "N. Gombert"
 	}
 ]
