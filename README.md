@@ -31,7 +31,14 @@ The main metadata files are:
 - `statistics.json` - aggregate data for charts and summaries
 - `Josquin.json` - Josquin attribution table metadata
 
-The top-level `Makefile` refreshes metadata by delegating to `_includes/metadata/Makefile`, which downloads current data from project Google Sheets via Google Apps Script.
+Metadata now comes directly from Google Sheets CSV exports through the separate
+`digital-library-build/tools/metadata` helper. Normal `make` uses that reader in
+the asset workflow; `make download` calls it through the metadata Makefile. Source
+tab IDs, headers and boundaries live in `digital-library-build/config/sheets/1520s.json`.
+The existing JSON contract, commentary ordering and Josquin CSV/date stamp are
+retained. Downloads validate before replacement; unchanged files keep their bytes
+and timestamps. This website does not depend on Mapping's helper. See the metadata
+helper README for repeatable read-only comparison commands.
 
 Running `make` refreshes `_includes/metadata/assets.json` after the metadata download only when at least seven days have elapsed since the last asset-scan attempt. Otherwise it reuses the existing inventory without contacting GitHub or the data server for asset checks. The tracked `assets-check.json` timestamp preserves this limit across checkouts. This work-ID inventory lists existing downloads, MP3s, timemaps, and both activity and vocal-range plot variants. The generator checks Cloudflare R2 first using the configured asset base URL and routing index, then tries legacy data-server or repository URLs when necessary. It preserves PDF publication exclusions and includes both generated PDF editions. Empty files and HTML error pages are rejected.
 
