@@ -242,12 +242,14 @@ order: 3
 	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius, MuseScore, and Humdrum source files, can be cloned in terminal by using the following command:</p>
 	<code>git clone https://github.com/benory/1520s-project-scores.git</code>
 	<p><strong>Note:</strong> corrected Humdrum scores are used to generate the MusicXML and PDF downloads available on the work pages.</p>
-	<p>Metadata used to search on the <a href="https://1520s-project.org/repertoire/">browse page</a>, as well as display additional information about scores on the work pages, is available as a set of JSON files used by the website:</p>
+	<p>Project metadata is maintained in Google Sheets and converted into JSON files by the project’s build tools. The generated files are published in the website repository and support repertoire searches, work pages, and statistical visualizations.</p>
+	<p>The following datasets are available for download:</p>
 	<ul class="spaced-list">
-		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a> (metadata about the scores used for searches on the browse page)</li>
-		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a> (metadata and links for composers used on the browse and work pages)</li>
-		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern Editions</a> (information about modern editions for works used on the workpages)</li>
-		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a> (number of works by year, compiled for use on the browse page)</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/works.json" target="_blank">Works</a>: work titles, composers, genres, voice counts, earliest sources, dates, editorial credits, and links to Humdrum scores.</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/composers.json" target="_blank">Composers</a>: composer names, identifiers, and reference links.</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/commentary.json" target="_blank">Commentary</a>: source information and commentary displayed on work pages.</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/modern_editions.json" target="_blank">Modern editions</a>: bibliographic references for modern editions.</li>
+		<li><a href="https://raw.githubusercontent.com/benory/1520s-project-website/main/_includes/metadata/statistics.json" target="_blank">Statistics</a>: counts of works grouped by source date, used in the chart on the About page.</li>
 	</ul>
 </section>
 
