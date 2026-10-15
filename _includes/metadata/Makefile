@@ -1,7 +1,4 @@
 # Direct Google Sheets CSV downloads; helper lives in digital-library-build.
-# These legacy IDs are retained only for the earlier standalone comparison pilot.
-SID = AKfycbzPjKo_5RlBSDPoHM8vWdw93fisuU6RcKCPpl7cT18qLY7Tx-qhXKxwONcznwbshA-ZmA
-SID2 = AKfycbyg7jch405kNehIY8d1fTirMm0BSZgeHXDHoK913A9MjKmMFqIaKBMGN1mphdh_EUArpQ
 
 LIBRARY_BUILD ?= ../../../digital-library-build
 SHEET_PYTHON ?= python3

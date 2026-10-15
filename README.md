@@ -13,7 +13,7 @@ The website is one part of a larger digital edition infrastructure:
 - Score repository: `benory/1520s-project-scores`
 - Generated assets: `https://assets.1520s-project.org/1520s`
 
-Score files are maintained in the score repository. The data server processes Humdrum files and generates derivative formats and analyses used by the website, including MusicXML, MEI, MIDI, MP3, SVG notation, activity plots, keyscape plots, and playback highlighting data.
+Score files are maintained in the score repository. The shared `digital-library-build` tools generate PDFs, MEI, MusicXML, MIDI, MP3, incipits, vocal-range and activity plots, and playback timemaps from Humdrum scores. Published assets are stored in Cloudflare R2.
 
 Work texts are maintained as UTF-8 `.txt` files under `texts/` in the score repository, named with the matching metadata ID, for example `texts/Fva/Fva3002-Adieu_solas.txt`. That directory contains only the edited texts. Running `make` in this website repository refreshes `_includes/metadata/texts.json` from the scores repository's published `main` branch using Ruby and curl. The generator rejects malformed filenames, duplicate IDs, and incomplete listings, preserving the existing index on failure. Commit the updated index with website changes when adding, renaming, or removing texts; `make texts` refreshes just this index.
 
@@ -31,18 +31,22 @@ The main metadata files are:
 - `statistics.json` - aggregate data for charts and summaries
 - `Josquin.json` - Josquin attribution table metadata
 
-Metadata now comes directly from Google Sheets CSV exports through the separate
-`digital-library-build/tools/metadata` helper. Normal `make` uses that reader in
-the asset workflow; `make download` calls it through the metadata Makefile. Source
-tab IDs, headers and boundaries live in `digital-library-build/config/sheets/1520s.json`.
-The existing JSON contract, commentary ordering and Josquin CSV/date stamp are
-retained. Downloads validate before replacement; unchanged files keep their bytes
-and timestamps. This website does not depend on Mapping's helper. See the metadata
-helper README for repeatable read-only comparison commands.
+Metadata is downloaded directly from Google Sheets as CSV and validated before
+updating the local JSON snapshots. The download tools live in the separate
+`digital-library-build` toolkit; Google Apps Script is not required. Unchanged
+metadata retains its existing contents and timestamps, including the date shown
+for the Josquin attribution dataset.
 
-Running `make` refreshes `_includes/metadata/assets.json` after the metadata download only when at least seven days have elapsed since the last asset-scan attempt. Otherwise it reuses the existing inventory without contacting GitHub or the data server for asset checks. The tracked `assets-check.json` timestamp preserves this limit across checkouts. This work-ID inventory lists existing downloads, MP3s, timemaps, and both activity and vocal-range plot variants. The generator checks Cloudflare R2 first using the configured asset base URL and routing index, then tries legacy data-server or repository URLs when necessary. It preserves PDF publication exclusions and includes both generated PDF editions. Empty files and HTML error pages are rejected.
+Running `make` checks metadata and local scores for changes, generates and uploads
+changed or missing assets to Cloudflare R2, and updates the affected download
+records. An unchanged successful run skips asset generation and remote asset
+checks. Individual failures are reported and remain queued for retry while other
+pieces continue. Commit and push the website changes to publish updated links.
 
-The asset scan requires Python 3 and curl, checks up to 12 URLs concurrently, and can take several minutes. Network errors, unexpected HTTP errors, fail the update and preserve the previous inventory. Commit `assets.json` and `assets-check.json` with website updates. Failed scans also count toward the seven-day limit. To refresh only assets using the existing work metadata, run `make -C _includes/metadata assets`; top-level `make assets` refreshes metadata first. Both commands respect the same seven-day limit. Work pages use this inventory instead of per-visit availability requests. Assets published after a scan appear after the next refresh and site build.
+- `make download` refreshes metadata only.
+- `make assets-plan` shows the proposed asset work without generating or uploading.
+- `make assets-audit` performs a full remote asset check.
+- `make texts` refreshes the work-text index only.
 
 ## Repository Structure
 
@@ -57,7 +61,7 @@ The asset scan requires Python 3 and curl, checks up to 12 URLs concurrently, an
 - `work/` - individual work page template and notation tools
 - `Josquin/` - Josquin attribution table page and data
 - `images/` - logos, banners, icons, examples, mensuration signs, and headshots
-- `Makefile` - metadata refresh command
+- `Makefile` - metadata and incremental asset workflow
 - `CNAME` - GitHub Pages custom domain
 
 ## Site Organization
@@ -82,6 +86,7 @@ See `LICENSE`.
 
 ### Cloudflare asset delivery
 
-`asset_base_url` selects the project prefix in the shared R2 bucket. The browser uses Cloudflare R2 for generated assets and retains repository URLs for source files. `cloudflare-assets.json` maps preserved repository/PDF files to their uploaded object keys; it is a snapshot of the verified September 2026 transfer, not a claim of current source revision. Refresh it when publishing a new archive. Known blank JRP PDFs remain blocked. The `asset-delivery.js` helper implement bounded request timeouts and reject HTML error responses. The bucket needs read-only GET/HEAD CORS for browser score and download requests.
-
-For an immediate asset-only refresh, run `python3 _includes/metadata/build-asset-index.py --force`. For an isolated pilot, add `--ids Any1001a --output-dir /tmp/1520s-asset-check`. Limited scans cannot replace the full website inventory.
+The website serves generated files from `https://assets.1520s-project.org/1520s`.
+The local asset inventory controls which downloads appear on work pages.
+`cloudflare-assets.json` records asset routing and publication holds. Browser
+requests use read-only access; upload credentials are kept outside this repository.
