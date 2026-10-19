@@ -306,12 +306,6 @@
 	},
 	{
 		"Commentary ID": "Fva3002",
-		"Source": "London 5242",
-		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
-		"Fols./pp./no.": "fols. 20v–21r"
-	},
-	{
-		"Commentary ID": "Fva3002",
 		"Source": "Uppsala 76a",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
 		"Fols./pp./no.": "fols. 35v–36r",
@@ -1978,7 +1972,7 @@
 		"Commentary ID": "Lhe2024",
 		"Source": "Montanus and Neuber, Tertia pars magni operis musici (1559)",
 		"RISM link": "https://rism.online/sources/993120232",
-		"Fols./pp./no.": "fols. g2v-g3r [S.], fols. hhv-hh2r [A.], fols. G4v-Hr [T.], fols. GG2v-GG3r [B.]",
+		"Fols./pp./no.": "fols. g2v–g3r [S.], fols. hhv–hh2r [A.], fols. G4v–Hr [T.], fols. GG2v–GG3r [B.]",
 		"Attribution": "Verdelot"
 	},
 	{
@@ -2045,12 +2039,6 @@
 		"Source": "Florence 117",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1404/",
 		"Fols./pp./no.": "fols. 1v–2r"
-	},
-	{
-		"Commentary ID": "Fva3010",
-		"Source": "London 5242",
-		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
-		"Fols./pp./no.": "fols. 24v–26r"
 	},
 	{
 		"Commentary ID": "Fva3010",
@@ -2143,5 +2131,45 @@
 		"Source": "Munich 326",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2238/",
 		"Fols./pp./no.": "fols. 34v–35r"
+	},
+	{
+		"Commentary ID": "Fva3002",
+		"Source": "London 5242 (\"Chansonnier of Françoise de Foix\")",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
+		"Fols./pp./no.": "fols. 20v–21r"
+	},
+	{
+		"Commentary ID": "Fva3010",
+		"Source": "London 5242 (\"Chansonnier of Françoise de Foix\")",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
+		"Fols./pp./no.": "fols. 24v–26r"
+	},
+	{
+		"Commentary ID": "Fva3011",
+		"Source": "Bruges 538, Muziekfragmenten 87–96",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/3984/",
+		"Fols./pp./no.": "fol. Br"
+	},
+	{
+		"Commentary ID": "Fva3011",
+		"Source": "Cambridge 1760",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1671/",
+		"Fols./pp./no.": "fols. 67v–68r",
+		"Attribution": "Anth. defevin"
+	},
+	{
+		"Commentary ID": "Fva3011",
+		"Source": "London 5242 (\"Chansonnier of Françoise de Foix\")",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
+		"Fols./pp./no.": "fols. 38v–40r"
+	},
+	{
+		"Commentary ID": "Fva3012",
+		"Source": "Cambridge 1760",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1671/",
+		"Fols./pp./no.": "fols. 69v–71r",
+		"Attribution": "Anth. de fevin"
 	}
 ]

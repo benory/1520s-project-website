@@ -13011,5 +13011,43 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-timemap.json"
+  },
+  "Fva3011": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva3011.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva3011.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva3011.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva3011.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva3011-Il_fait_bon_aymer.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva3011.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3011-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3011-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3011-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3011-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva3011-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3011-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3011-timemap.json"
+  },
+  "Fva3012": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva3012.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva3012.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva3012.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva3012.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva3012-Jay_veu_la_beaute--Cambridge_1760.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva3012.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3012-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3012-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-timemap.json"
   }
 }
