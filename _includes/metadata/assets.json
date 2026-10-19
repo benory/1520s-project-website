@@ -13049,5 +13049,81 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3012-timemap.json"
+  },
+  "Div1001a": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Div1001a.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Div1001a.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Div1001a.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Div1001a.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Div/Div1001a-Missa_Quem_dicunt_homines-Kyrie.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Div1001a.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001a-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001a-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001a-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001a-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Div1001a-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Div1001a-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Div1001a-timemap.json"
+  },
+  "Div1001b": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Div1001b.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Div1001b.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Div1001b.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Div1001b.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Div/Div1001b-Missa_Quem_dicunt_homines-Gloria.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Div1001b.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001b-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001b-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001b-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001b-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Div1001b-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Div1001b-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Div1001b-timemap.json"
+  },
+  "Div1001c": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Div1001c.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Div1001c.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Div1001c.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Div1001c.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Div/Div1001c-Missa_Quem_dicunt_homines-Credo.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Div1001c.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001c-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001c-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001c-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001c-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Div1001c-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Div1001c-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Div1001c-timemap.json"
+  },
+  "Div1001e": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Div1001e.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Div1001e.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Div1001e.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Div1001e.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Div/Div1001e-Missa_Quem_dicunt_homines-Agnus.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Div1001e.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001e-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Div/Div1001e-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-timemap.json"
   }
 }

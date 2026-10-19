@@ -2024,7 +2024,11 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2031-Gabriel_nunciavit_Marie.krn": "score-assets/Gom2031.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2018-Regnum_mundi.krn": "score-assets/Lhe2018.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3011-Il_fait_bon_aymer.krn": "score-assets/Fva3011.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3012-Jay_veu_la_beaute--Cambridge_1760.krn": "score-assets/Fva3012.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3012-Jay_veu_la_beaute--Cambridge_1760.krn": "score-assets/Fva3012.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001a-Missa_Quem_dicunt_homines-Kyrie.krn": "score-assets/Div1001a.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001b-Missa_Quem_dicunt_homines-Gloria.krn": "score-assets/Div1001b.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001c-Missa_Quem_dicunt_homines-Credo.krn": "score-assets/Div1001c.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001e-Missa_Quem_dicunt_homines-Agnus.krn": "score-assets/Div1001e.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3454,7 +3458,17 @@
     "Fva3011-no_edit.pdf": "pdfs/Fva/Fva3011-no_edit.pdf",
     "Fva3011-edit.pdf": "pdfs/Fva/Fva3011-edit.pdf",
     "Fva3012-no_edit.pdf": "pdfs/Fva/Fva3012-no_edit.pdf",
-    "Fva3012-edit.pdf": "pdfs/Fva/Fva3012-edit.pdf"
+    "Fva3012-edit.pdf": "pdfs/Fva/Fva3012-edit.pdf",
+    "Div1001a-no_edit.pdf": "pdfs/Div/Div1001a-no_edit.pdf",
+    "Div1001a-edit.pdf": "pdfs/Div/Div1001a-edit.pdf",
+    "Div1001b-no_edit.pdf": "pdfs/Div/Div1001b-no_edit.pdf",
+    "Div1001b-edit.pdf": "pdfs/Div/Div1001b-edit.pdf",
+    "Div1001c-no_edit.pdf": "pdfs/Div/Div1001c-no_edit.pdf",
+    "Div1001c-edit.pdf": "pdfs/Div/Div1001c-edit.pdf",
+    "Div1001e-no_edit.pdf": "pdfs/Div/Div1001e-no_edit.pdf",
+    "Div1001e-edit.pdf": "pdfs/Div/Div1001e-edit.pdf",
+    "Div1001-no_edit.pdf": "pdfs/Div/Div1001-no_edit.pdf",
+    "Div1001-edit.pdf": "pdfs/Div/Div1001-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
