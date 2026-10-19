@@ -1049,7 +1049,7 @@
 		"Commentary ID": "Gom2031",
 		"Source": "Moderne, Tertius liber mottetorum ad quinque et sex voces (1538)",
 		"RISM link": "https://rism.online/sources/993104209",
-		"Fols./pp./no.": "fols. 6r–7r",
+		"Fols./pp./no.": "fols. 6v–7r",
 		"Attribution": "N. Gombert"
 	},
 	{
@@ -2103,5 +2103,45 @@
 		"Source": "Antico, Chansons a troys (1520)",
 		"RISM link": "https://rism.online/sources/993103924",
 		"Fols./pp./no.": "fols. 19v–20v"
+	},
+	{
+		"Commentary ID": "Lhe2018",
+		"Source": "Rome S1 35-40 (\"Vallicelliana Partbooks\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1021/",
+		"Fols./pp./no.": "series 1, no. 4",
+		"Attribution": "Lirithyier"
+	},
+	{
+		"Commentary ID": "Lhe2018",
+		"Source": "Moderne, Secundus liber cum quinque vocibus (1532)",
+		"RISM link": "https://rism.online/sources/993104083",
+		"Fols./pp./no.": "pp. 20–21 [S], p. 24 [A], p. 34 [T], p. 23 [B]",
+		"Attribution": "Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2018",
+		"Source": "Petreius, Selectissimarum mutetarum (1540)",
+		"RISM link": "https://rism.online/sources/993104290",
+		"Fols./pp./no.": "no. 4",
+		"Attribution": "Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2018",
+		"Source": "Piacenza s.s. (5)",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2394/",
+		"Fols./pp./no.": "fol. 1r"
+	},
+	{
+		"Commentary ID": "Lhe2018",
+		"Source": "Vatican 571",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1486/",
+		"Fols./pp./no.": "fol. 24r"
+	},
+	{
+		"Commentary ID": "Lhe2018",
+		"Source": "Munich 326",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2238/",
+		"Fols./pp./no.": "fols. 34v–35r"
 	}
 ]

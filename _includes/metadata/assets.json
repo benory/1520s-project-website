@@ -12935,5 +12935,81 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2028-timemap.json"
+  },
+  "Gom2029": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Gom2029.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2029.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2029.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2029.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Gom/Gom2029-Domine_Deus_omnipotens.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2029.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2029-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2029-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2029-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2029-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Gom2029-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2029-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2029-timemap.json"
+  },
+  "Gom2030": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Gom2030.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2030.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2030.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2030.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Gom/Gom2030-Sit_Trinitati.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2030.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2030-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2030-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2030-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2030-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Gom2030-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2030-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2030-timemap.json"
+  },
+  "Gom2031": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Gom2031.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Gom2031.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Gom2031.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Gom2031.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Gom/Gom2031-Gabriel_nunciavit_Marie.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Gom2031.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2031-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Gom/Gom2031-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2031-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Gom2031-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Gom2031-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Gom2031-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Gom2031-timemap.json"
+  },
+  "Lhe2018": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2018-Regnum_mundi.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2018-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2018-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2018-timemap.json"
   }
 }

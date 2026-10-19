@@ -2018,7 +2018,11 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3010-Helas_je_suis_mary.krn": "score-assets/Fva3010.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3003-Fuyes_regretz--London_35087.krn": "score-assets/Fva3003.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3008-Faulte_dargent--Cambridge_1760.krn": "score-assets/Fva3008.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2028-Inviolata_integra_et_casta_es.krn": "score-assets/Gom2028.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2028-Inviolata_integra_et_casta_es.krn": "score-assets/Gom2028.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2029-Domine_Deus_omnipotens.krn": "score-assets/Gom2029.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2030-Sit_Trinitati.krn": "score-assets/Gom2030.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Gom/Gom2031-Gabriel_nunciavit_Marie.krn": "score-assets/Gom2031.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2018-Regnum_mundi.krn": "score-assets/Lhe2018.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3436,7 +3440,15 @@
     "Fva3008-no_edit.pdf": "pdfs/Fva/Fva3008-no_edit.pdf",
     "Fva3008-edit.pdf": "pdfs/Fva/Fva3008-edit.pdf",
     "Gom2028-no_edit.pdf": "pdfs/Gom/Gom2028-no_edit.pdf",
-    "Gom2028-edit.pdf": "pdfs/Gom/Gom2028-edit.pdf"
+    "Gom2028-edit.pdf": "pdfs/Gom/Gom2028-edit.pdf",
+    "Gom2029-no_edit.pdf": "pdfs/Gom/Gom2029-no_edit.pdf",
+    "Gom2029-edit.pdf": "pdfs/Gom/Gom2029-edit.pdf",
+    "Gom2030-no_edit.pdf": "pdfs/Gom/Gom2030-no_edit.pdf",
+    "Gom2030-edit.pdf": "pdfs/Gom/Gom2030-edit.pdf",
+    "Gom2031-no_edit.pdf": "pdfs/Gom/Gom2031-no_edit.pdf",
+    "Gom2031-edit.pdf": "pdfs/Gom/Gom2031-edit.pdf",
+    "Lhe2018-no_edit.pdf": "pdfs/Lhe/Lhe2018-no_edit.pdf",
+    "Lhe2018-edit.pdf": "pdfs/Lhe/Lhe2018-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
