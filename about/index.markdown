@@ -17,7 +17,7 @@ order: 1
 
 <p>The 1520s Project is an open-access digital library of music from ca. 1510 to ca. 1540. Users can browse, search, analyze, listen to, and perform from a growing corpus of Renaissance scores centered on the decades around 1520.</p>
 
-<p>The project partners with the <a href="https://www.josqu.in" target="_blank">Josquin Research Project</a>, which focuses primarily on music from ca. 1400 to ca. 1520. From 2025 to 2028 both projects are supported by a National Endowment for the Humanities <a href="https://www.neh.gov/grants/research/scholarly-editions-and-translations-grants" target="_blank">Scholarly Editions & Translations Grant</a>.</p>
+<p>The project partners with the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a>, which focuses primarily on music from ca. 1400 to ca. 1520. From 2025 to 2028 both projects are supported by a National Endowment for the Humanities <a href="https://www.neh.gov/grants/research/scholarly-editions-and-translations-grants" target="_blank">Scholarly Editions & Translations Grant</a>.</p>
 
 <h2>Emergence of a New Style</h2>
 
@@ -36,7 +36,7 @@ order: 1
 <div class="section-header"><h4>Number of Works by Year of First Source</h4></div>
 <div id="years-plot"></div>
 
-<p>The project takes advantage of <a href="/documentation" target="_blank">editorial and encoding standards</a> developed by the <a href="https://josqu.in" target="_blank">Josquin Research Project</a> (JRP). These standards allow data from the two projects to be shared and compared, creating a larger, interoperable corpus of early sixteenth-century music. This is especially useful for composers active around 1520, such as Jean Mouton, Noel Bauldeweyn, and Jean Richafort, whose music appears in both projects.</p>
+<p>The project takes advantage of <a href="/documentation" target="_blank">editorial and encoding standards</a> developed by the <a href="https://josquin.stanford.edu" target="_blank">Josquin Research Project</a> (JRP). These standards allow data from the two projects to be shared and compared, creating a larger, interoperable corpus of early sixteenth-century music. This is especially useful for composers active around 1520, such as Jean Mouton, Noel Bauldeweyn, and Jean Richafort, whose music appears in both projects.</p>
 
 <h2>Editorial workflow</h2>
 
