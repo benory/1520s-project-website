@@ -13182,5 +13182,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-timemap.json"
+  },
+  "Lhe2020": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2020-Redde_mihi_letitiam.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2020-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2020-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-timemap.json"
   }
 }
