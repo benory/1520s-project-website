@@ -13125,5 +13125,12 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Div1001e-timemap.json"
+  },
+  "Lhe2019": {
+    "downloads": {
+      "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2019-Miserere_mei_Domine--Vallicelliana_Partbooks.krn",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2019-Miserere_mei_Domine--Vallicelliana_Partbooks.mscz"
+    },
+    "plots": {}
   }
 }
