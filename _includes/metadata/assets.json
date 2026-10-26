@@ -13163,5 +13163,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001a-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001a-timemap.json"
+  },
+  "Crp1001b": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Crp/Crp1001b-Missa_Se_mieulx_ne_vient-Gloria--Channay_1532.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001b-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001b-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001b-timemap.json"
   }
 }
