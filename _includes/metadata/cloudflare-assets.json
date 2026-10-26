@@ -2029,7 +2029,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001b-Missa_Quem_dicunt_homines-Gloria.krn": "score-assets/Div1001b.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001c-Missa_Quem_dicunt_homines-Credo.krn": "score-assets/Div1001c.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001e-Missa_Quem_dicunt_homines-Agnus.krn": "score-assets/Div1001e.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2019-Miserere_mei_Domine--Vallicelliana_Partbooks.krn": "score-assets/Lhe2019.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2019-Miserere_mei_Domine--Vallicelliana_Partbooks.krn": "score-assets/Lhe2019.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Crp/Crp1001a-Missa_Se_mieulx_ne_vient-Kyrie--Channay_1532.krn": "score-assets/Crp1001a.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3471,7 +3472,9 @@
     "Div1001-no_edit.pdf": "pdfs/Div/Div1001-no_edit.pdf",
     "Div1001-edit.pdf": "pdfs/Div/Div1001-edit.pdf",
     "Lhe2019-no_edit.pdf": "pdfs/Lhe/Lhe2019-no_edit.pdf",
-    "Lhe2019-edit.pdf": "pdfs/Lhe/Lhe2019-edit.pdf"
+    "Lhe2019-edit.pdf": "pdfs/Lhe/Lhe2019-edit.pdf",
+    "Crp1001a-no_edit.pdf": "pdfs/Crp/Crp1001a-no_edit.pdf",
+    "Crp1001a-edit.pdf": "pdfs/Crp/Crp1001a-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
