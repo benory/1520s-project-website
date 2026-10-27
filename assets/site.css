@@ -258,9 +258,9 @@ body.project-site {
   .project-site .site-nav { flex: 0 0 auto; margin-left: auto; max-width: none; }
   .project-site .site-nav .trigger { width: min(280px, calc(100vw - 40px)); background: var(--project-white); border-color: var(--project-line); gap: 0; }
   .project-site .site-nav .page-link { padding: 10px 11px; font-size: 18px; }
-  .project-site .site-nav .dropdown > .dropdown-trigger.page-link { display: flex !important; }
-  .project-site .site-nav .dropdown-content { display: none; position: static; width: auto; border: 0; box-shadow: none; margin: 0; padding: 0 0 0 12px; }
-  .project-site .site-nav .dropdown-content a { padding: 10px; }
+  .project-site .site-nav .dropdown > .dropdown-trigger.page-link { display: none !important; }
+  .project-site .site-nav .dropdown-content { display: block; position: static; width: auto; border: 0; box-shadow: none; margin: 0; padding: 0; background: transparent; }
+  .project-site .site-nav .dropdown-content a { padding: 10px 11px; font-size: 18px; }
   .project-site .site-nav .dropdown-trigger[aria-expanded="true"] + .dropdown-content { display: block; }
   .project-site .site-nav label[for="nav-trigger"] { color: var(--project-ink); background: var(--project-white); border-color: var(--project-line); }
   .project-site .site-footer { padding: 19px 20px; }

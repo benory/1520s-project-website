@@ -205,13 +205,14 @@ order: 1
 <h2>Collaborations</h2>
 
 <div class="scholarly-block collaboration-block">
-  <h3>New Senfl Edition</h3>
-
   <div class="scholarly-block-content">
-    <p>
-      Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"> New Senfl Edition
-      </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute <a href="https://1520s-project.org/repertoire/?q=senfl" target="_blank">their scores</a> to this project.
-    </p>
+    <div class="collaboration-copy">
+      <h3>New Senfl Edition</h3>
+      <p>
+        Thanks to Stefan Gasch, Birgit Lodes, and the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"> New Senfl Edition
+        </a> at the Universität für Musik und darstellende Kunst Wien for generously agreeing to contribute <a href="https://1520s-project.org/repertoire/?q=senfl" target="_blank">their scores</a> to this project.
+      </p>
+    </div>
     <a href="https://senflonline-eng.com/new-senfl-edition/" class="scholarly-logo"><img src="/images/Senfl_banner.png" alt="Senfl Banner">
     </a>
   </div>

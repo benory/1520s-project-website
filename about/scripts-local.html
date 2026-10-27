@@ -55,7 +55,7 @@ function displayDataDonations(data) {
 
   const uniqueEditors = new Map();
   for (const entry of data) {
-    const editor = (entry.Editor || "").trim();
+    const editor = (entry.Editor || "").trim().replace(/^\[?Magnificat\]?(?:,\s*with the assistance of Jessie Ann Owens)?$/, "Magnificat");
     if (!editor) continue;
 
     const key = editor.toLocaleLowerCase();

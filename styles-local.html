@@ -90,6 +90,10 @@
   .page-home .home-hero-left { padding-top:0; }
   .project-site.page-home h1.home-hero-title { font-size:27px; }
   .page-home .home-search { width:100%; margin-top:16px; margin-bottom:22px; }
+  .page-home .home-search-field { padding-left:8px; gap:6px; }
+  .page-home .home-search-field input { padding-left:22px; }
+  .page-home .home-search-field input::placeholder { font-size:clamp(12px, 3.6vw, 14px); }
+  .page-home .home-search-field button { padding-left:10px; padding-right:10px; }
   .page-home .home-hero-artwork img { grid-column:1; grid-row:2; }
   .page-home .home-hero-artwork figcaption { grid-column:1; grid-row:3; }
   .page-home .homepage-grid { grid-template-columns:minmax(0,1fr); gap:24px; }
@@ -104,5 +108,11 @@
   .page-home .recent-works-column + ul { border-top:0; }
   .page-home .recent-work-title-row { gap:8px; }
   .page-home .recent-work-date { font-size:13px; }
+}
+@media(max-width:360px) {
+  .page-home .home-search-field { padding-left:6px; gap:4px; }
+  .page-home .home-search-field input { padding-left:20px; }
+  .page-home .home-search-field input::placeholder { font-size:11px; }
+  .page-home .home-search-field button { padding-left:6px; padding-right:6px; }
 }
 </style>
