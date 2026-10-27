@@ -13201,5 +13201,62 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2020-timemap.json"
+  },
+  "Crp1001c": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Crp/Crp1001c-Missa_Se_mieulx_ne_vient-Credo--Channay_1532.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001c-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001c-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001c-timemap.json"
+  },
+  "Crp1001d": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Crp/Crp1001d-Missa_Se_mieulx_ne_vient-Sanctus--Channay_1532.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001d-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001d-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001d-timemap.json"
+  },
+  "Crp1001e": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Crp/Crp1001e-Missa_Se_mieulx_ne_vient-Agnus--Channay_1532.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001e-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Crp/Crp1001e-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-timemap.json"
   }
 }

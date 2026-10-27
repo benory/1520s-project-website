@@ -2032,7 +2032,10 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2019-Miserere_mei_Domine--Vallicelliana_Partbooks.krn": "score-assets/Lhe2019.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Crp/Crp1001a-Missa_Se_mieulx_ne_vient-Kyrie--Channay_1532.krn": "score-assets/Crp1001a.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Crp/Crp1001b-Missa_Se_mieulx_ne_vient-Gloria--Channay_1532.krn": "score-assets/Crp1001b.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2020-Redde_mihi_letitiam.krn": "score-assets/Lhe2020.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2020-Redde_mihi_letitiam.krn": "score-assets/Lhe2020.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Crp/Crp1001c-Missa_Se_mieulx_ne_vient-Credo--Channay_1532.krn": "score-assets/Crp1001c.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Crp/Crp1001d-Missa_Se_mieulx_ne_vient-Sanctus--Channay_1532.krn": "score-assets/Crp1001d.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Crp/Crp1001e-Missa_Se_mieulx_ne_vient-Agnus--Channay_1532.krn": "score-assets/Crp1001e.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3482,7 +3485,13 @@
     "Crp1001-no_edit.pdf": "pdfs/Crp/Crp1001-no_edit.pdf",
     "Crp1001-edit.pdf": "pdfs/Crp/Crp1001-edit.pdf",
     "Lhe2020-no_edit.pdf": "pdfs/Lhe/Lhe2020-no_edit.pdf",
-    "Lhe2020-edit.pdf": "pdfs/Lhe/Lhe2020-edit.pdf"
+    "Lhe2020-edit.pdf": "pdfs/Lhe/Lhe2020-edit.pdf",
+    "Crp1001c-no_edit.pdf": "pdfs/Crp/Crp1001c-no_edit.pdf",
+    "Crp1001c-edit.pdf": "pdfs/Crp/Crp1001c-edit.pdf",
+    "Crp1001d-no_edit.pdf": "pdfs/Crp/Crp1001d-no_edit.pdf",
+    "Crp1001d-edit.pdf": "pdfs/Crp/Crp1001d-edit.pdf",
+    "Crp1001e-no_edit.pdf": "pdfs/Crp/Crp1001e-no_edit.pdf",
+    "Crp1001e-edit.pdf": "pdfs/Crp/Crp1001e-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
