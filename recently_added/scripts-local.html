@@ -30,26 +30,13 @@ function displayMostRecent(metadata) {
 	}
 	let count = element.dataset.count;
 
-	let output = "<table class='general'>";
-	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
-	for (let i=0; i<count; i++) {
-		
-		let entry = metadata[i];
-		if (entry && entry["Date Added"]){ 
-			let date = prepareDate(entry["Date Added"]);
-			let composer = prepareComposer(entry);
-			let title = prepareTitle(entry);
-			output += "<tr>";
-			output += `<td>${date}</td>`;
-			output += `<td>${composer}</td>`;
-			output += `<td>${title}</td>`;
-			output += "</tr>";
-		} else {
-			continue;
-		}
-	}
-	output += "</table>";
-	element.innerHTML = output;
+	const entries = metadata.slice(0, Number(count)).filter(entry => entry["Date Added"]);
+	element.innerHTML = `<ol class="recent-added-list" aria-label="Works added by date">${entries.map(entry => `
+		<li class="recent-added-work">
+			<div class="recent-added-title">${prepareTitle(entry)}</div>
+			<span class="recent-added-date">${prepareDate(entry["Date Added"])}</span>
+			<p class="recent-added-composer">${prepareComposer(entry)}</p>
+		</li>`).join("")}</ol>`;
 }
 
 
@@ -60,17 +47,22 @@ function displayMostRecent(metadata) {
 //
 
 function prepareTitle(entry) {
-	let output = entry.Title;
+	let output = `<em>${escapeRecentText(entry.Title)}</em>`;
 	if (entry.Subtitle) {
-		output += `, <span class="work-subtitle">${entry.Subtitle}</span>`;
+		output += `, <span class="work-subtitle">${escapeRecentText(entry.Subtitle)}</span>`;
 	}
 	let id = entry.ID || "";
 	if (id) {
-		output = `<a target="_blank" href="/work?id=${id}">${output}</a>`;
+		output = `<a target="_blank" rel="noopener" href="/work/?id=${encodeURIComponent(id)}">${output}</a>`;
 	}
 	return output;
 }
 
+function escapeRecentText(value) {
+	return String(value ?? "").replace(/[&<>"']/g, character => ({
+		"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+	}[character]));
+}
 
 
 //////////////////////////////
@@ -103,8 +95,8 @@ function prepareDate(inputDateString) {
 function prepareComposer(entry) {
 	if (!entry) return "";
 
-	const name = entry.Composer || "";
-	const shortName = getShortComposerName(entry) || name;
+	const name = escapeRecentText(entry.Composer || "");
+	const shortName = escapeRecentText(getShortComposerName(entry) || entry.Composer || "");
 	let matches = name.match(/^\s*([^,]+)\s*,\s*([^,]+)\s*$/);
 	let fullName = matches
 		? `<span class="first-name">${matches[2]}</span> <span class="last-name">${matches[1]}</span>`

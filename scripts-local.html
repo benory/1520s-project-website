@@ -19,7 +19,7 @@ function fillMostRecentList(metadata) {
 
 function UserSearch() {
 	let query = encodeURIComponent(input.value);
-	window.location.href = `/repertoire?q=${query}`;
+	window.location.href = `/repertoire/?q=${query}`;
 }
 
 //////////////////////////////
@@ -60,7 +60,7 @@ function fillInCensusData(data) {
 
 	let noteElement = document.querySelector("#note-count");
 	if (noteElement) {
-		noteElement.innerHTML = noteCount;
+		noteElement.textContent = String(noteCount);
 	}
 
 	let workElement = document.querySelector("#work-count");
@@ -133,23 +133,14 @@ function displayMostRecent(metadata) {
 		count = 50;
 	}
 
-	let output = "<table class='general'>";
-	output += "<tr><th>Date Added</th><th>Composer</th><th>Work</th></tr>";
-	for (let i=0; i<count; i++) {
-		let entry = metadata[i];
-		let date = prepareDate(entry["Date Added"]);
-		let composer = prepareComposer(entry);
-		let title = prepareTitle(entry);
-
-		output += "<tr>";
-		output += `<td>${date}</td>`;
-		output += `<td>${composer}</td>`;
-		output += `<td>${title}</td>`;
-		output += "</tr>";
-	}
-	output += `<tr><td colspan="3"><a href="recently_added"><span class="recent-works-desktop-label">More works added by date</span><span class="recent-works-mobile-label">More works added by date</span></a></td></tr>`;
-	output += "</table>";
-	element.innerHTML = output;
+	const recent = metadata.slice(0, Math.min(Number(count), metadata.length));
+	const midpoint = Math.ceil(recent.length / 2);
+	element.innerHTML = `<div class="recent-works-grid">${[recent.slice(0, midpoint), recent.slice(midpoint)].map(column =>
+		`<ul class="recent-works-column">${column.map(entry => `<li class="recent-work">
+			<div class="recent-work-title-row">${prepareTitle(entry)}<span class="recent-work-date">${prepareDate(entry["Date Added"])}</span></div>
+			<p class="recent-work-composer">${prepareComposer(entry)}</p>
+		</li>`).join("")}</ul>`
+	).join("")}</div>`;
 }
 
 
@@ -160,13 +151,13 @@ function displayMostRecent(metadata) {
 //
 
 function prepareTitle(entry) {
-	let output = entry.Title;
+	let output = `<em>${escapeHomeText(entry.Title)}</em>`;
 	if (entry.Subtitle) {
-		output += `, <span class="work-subtitle">${entry.Subtitle}</span>`;
+		output += `, <span class="work-subtitle">${escapeHomeText(entry.Subtitle)}</span>`;
 	}
 	let id = entry.ID || "";
 	if (id) {
-		output = `<a href="/work?id=${id}">${output}</a>`;
+		output = `<a href="/work/?id=${encodeURIComponent(id)}">${output}</a>`;
 	}
 	return output;
 }
@@ -261,188 +252,33 @@ function compareByDateAdded(a, b) {
 // displayTopComposers --
 //
 
+function escapeHomeText(value) {
+  return String(value ?? "").replace(/[&<>"']/g, character => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[character]));
+}
+
 function displayTopComposers() {
-
-	let data = METADATA;
-
-	const isMobile = window.innerWidth <= 768;
-	const fontSize = isMobile ? 10.5 : 14;
-	const composerLabelFontSize = isMobile ? 12.5 : fontSize;
-	const headerfontSize = isMobile ? 14 : 16;
-	const labelOffset = isMobile ? -82 : -140;
-	const chartData = data.map(entry => ({
-		...entry,
-		"Composer Display": isMobile ? (getShortComposerName(entry) || entry.Composer) : entry.Composer
-	}));
-
-	let element = document.querySelector("#composer-plot");
-	if (!element) {
-		console.error("ERROR: Cannot find #composer-plot");
-		return;
-	}
-
-	const plotWidth = isMobile
-		? Math.max(120, Math.floor(element.clientWidth - 93))
-		: 296;
-
-	let threshold = 20;
-	let plotInfo = {
-		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-		"background": "#FFFAF1",
-		"config": {
-		  "font": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
-
-		  "title": {
-		    "fontSize": headerfontSize,
-		    "fontWeight": 600,
-		    "color": "#1c1c1e",
-		    "anchor": "start",
-		    "offset": 8
-		  },
-
-		  "axis": {
-		    "labelFontSize": fontSize,
-		    "labelColor": "#6A6156",
-		    "titleFontSize": fontSize,
-		    "titleColor": "#6A6156",
-		    "titleFontWeight": 500,
-		    "tickColor": "rgba(0,0,0,0.15)",
-		    "domainColor": "rgba(0,0,0,0.15)",
-		    "grid": false
-		  },
-
-		  "legend": {
-		    "labelFontSize": fontSize,
-		    "labelColor": "#6A6156",
-		    "titleFontSize": fontSize,
-		    "titleColor": "#6A6156"
-		  },
-
-		  "text": {
-		    "fontSize": fontSize,
-		    "fontWeight": 500,
-		    "color": "#6A6156"
-		  }
-		},
-		"width": plotWidth,
-		"data": {
-			"values": chartData
-		},
-		"transform": [{
-				"aggregate": [{
-					"op": "count",
-					"field": "Composer",
-					"as": "Count"
-				}],
-				"groupby": ["Composer", "Composer Display"]
-			},
-			{
-				"filter": `datum.Count > ${threshold}`
-			},
-			{
-				"calculate": "datum.Composer + ' (' + datum.Count + ')'",
-				"as": "ComposerCount"
-			},
-			{
-        "calculate": " '/repertoire/?c=' + datum.Composer", // Combine the fixed URL and composer name
-        "as": "ComposerURL"
-	    }
-		],
-		"layer": [{
-				"mark": {
-					"type": "bar",
-				},
-				"encoding": {
-					"x": {
-						"field": "Count",
-						"type": "quantitative",
-						"title": "Number of Works",
-						"axis": {
-							"tickMinStep": 5,
-							"labelFontSize": fontSize,
-							"titleFontSize": fontSize
-						}
-					},
-					"y": {
-						"field": "Composer",
-						"type": "nominal",
-						"title": "",
-						"sort": {
-							"field": "Count",
-							"order": "descending"
-						},
-						"axis": {
-							"labels": false,
-							"ticks": false
-						}
-					},
-					"color": {
-				    "field": "Count",
-				    "type": "quantitative",
-				    "scale": {
-				        "scheme": "goldorange"
-				    },
-				    "legend": null
-					}
-				}
-			},
-			{
-				"mark": {
-					  "type": "text",
-					  "align": "left",
-					  "baseline": "middle",
-					  "fontSize": composerLabelFontSize,
-					  "fontWeight": 400,
-					  "color": "#6A6156"
-					},
-				"encoding": {
-					"x": {
-						"value": labelOffset
-					},
-					"y": {
-						"field": "Composer",
-						"type": "nominal",
-						"title": "",
-						"sort": {
-							"field": "Count",
-							"order": "descending"
-						},
-						"axis": {
-							"labels": false,
-							"ticks": false
-						}
-					},
-					"href": {
-              "field": "ComposerURL", // Add a new field for the URL
-              "type": "nominal"
-          },
-					"text": {
-						"field": "Composer Display",
-						"type": "nominal"
-					}
-				}
-			}
-		],
-		"height": {
-			"step": isMobile ? 24 : 25
-		}
-	};
-
-	let elements = document.querySelectorAll("#composerSelect .button");
-	for (let i=0; i<elements.length; i++) {
-		elements[i].classList.toggle("hidden");
-	}
-
-	requestAnimationFrame(() => {
-	  vegaEmbed('#composer-plot', plotInfo, { actions: false });
-	});
-
+  const element = document.getElementById("composer-plot");
+  if (!element) return;
+  const totals = new Map();
+  METADATA.forEach(entry => {
+    if (entry.Composer) totals.set(entry.Composer, (totals.get(entry.Composer) || 0) + 1);
+  });
+  const composers = [...totals].filter(([, count]) => count >= 25).sort((a, b) => b[1] - a[1]);
+  const maximum = Math.max(30, Math.ceil(Math.max(0, ...composers.map(([, count]) => count)) / 30) * 30);
+  element.innerHTML = `<div class="composer-chart" aria-label="Works by composer">${composers.map(([name, count]) => {
+    const intensity = Math.min(1, (count - 21) / Math.max(1, maximum - 22));
+    const channel = (light, dark) => Math.round(light + (dark - light) * intensity);
+    const color = `rgb(${channel(245, 192)},${channel(238, 115)},${channel(220, 81)})`;
+    return `<div class="composer-row"><a href="/repertoire/?c=${encodeURIComponent(name)}">${escapeHomeText(name)}</a><span class="composer-track" aria-hidden="true"><span class="composer-bar" style="width:${count / maximum * 100}%;background:${color}"></span></span><span class="composer-count">${count}</span></div>`;
+  }).join("")}</div><div class="composer-axis" aria-hidden="true">${[0, maximum / 3, maximum * 2 / 3, maximum].map(tick => `<span>${tick}</span>`).join("")}</div><p class="composer-axis-title">Number of Works</p>`;
 }
 
 function renderSuggestion(entry) {
-  const title = entry.Subtitle
-    ? `${entry.Title}, ${entry.Subtitle}`
-    : entry.Title;
+  const title = `<em>${escapeHomeText(entry.Title)}</em>${entry.Subtitle
+    ? `, <span class="work-subtitle">${escapeHomeText(entry.Subtitle)}</span>`
+    : ""}`;
 
   const composer = entry.Composer || "Unknown";
   const genre = entry.Genre || "";
@@ -478,9 +314,8 @@ document.addEventListener("click", (e) => {
 function renderSeeMoreRow(query) {
   const encoded = encodeURIComponent(query);
   return `
-    <div class="search-see-more"
-         onclick="goToRepertoire('${encoded}')">
-      See more results →
+    <div class="search-see-more">
+      <a class="search-more-button" href="/repertoire/?q=${encoded}">See more results <span aria-hidden="true">↗</span></a>
     </div>
   `;
 }
@@ -509,13 +344,13 @@ function renderComposerSuggestion(composer) {
     return `
       <div class="search-suggestion composer-suggestion"
            data-id="Any">
-        <div class="suggestion-main">See all anonymous works</div>
+        <div class="suggestion-main"><span class="suggestion-name">See all anonymous works</span></div>
       </div>
     `;
   }
 
   // Normal composer case
-  const name = formatComposerName(composer.Composer);
+  const name = escapeHomeText(formatComposerName(composer.Composer));
   const flourish = formatFlourish(composer);
   const places = formatPlaces(composer);
 
@@ -524,7 +359,7 @@ function renderComposerSuggestion(composer) {
   return `
     <div class="search-suggestion composer-suggestion"
          data-id="${composer.ID}">
-      <div class="suggestion-main">See all works by ${name}</div>
+      <div class="suggestion-main">See all works by <span class="suggestion-name">${name}</span></div>
       ${metaParts ? `<div class="suggestion-meta">${metaParts}</div>` : ""}
     </div>
   `;

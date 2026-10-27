@@ -159,13 +159,19 @@ function escapeCommentaryText(value) {
 	}[character]));
 }
 
-function formatCommentarySource(source, diamm, rism) {
+function formatCommentarySource(source, diamm, rism, firstSource = false) {
 	let name = String(source || "").trim();
 	// Printed sources use the editors' convention: Printer, Title (date).
 	let print = name.match(/^([^,]+),\s*(.+?)(\s+\([^()]*\))$/);
 	let label = print
 		? `${escapeCommentaryText(print[1])}, <i>${escapeCommentaryText(print[2])}</i> ${escapeCommentaryText(print[3])}`
 		: escapeCommentaryText(name);
+	if (firstSource) {
+		label = /^[A-Z]{1,3}-[A-Za-z]/.test(name) ? escapeCommentaryText(name) : name.split(/(\([^)]*\))/g).filter(part => part.trim()).map(part => {
+			const text = escapeCommentaryText(part);
+			return part.startsWith("(") ? text : `<em>${text}</em>`;
+		}).join(" ");
+	}
 	let links = [diamm, rism].map(value => String(value || "").trim());
 	let link = links.find(value => /^https?:\/\//i.test(value));
 	if (!link) {
@@ -482,12 +488,8 @@ function displayWorkInfo(id) {
 	let subtitle    = workinfo.Subtitle;
 	let titleoutput = "";
 	if (title) {
-		if (subtitle){
-			titleoutput = `<div class="work-item"><b>Title:</b> ${title}, ${subtitle}</div>`;
-		}
-		else {
-			titleoutput = `<div class="work-item"><b>Title:</b> ${title}</div>`;
-		}
+		const movement = subtitle ? `, <span class="work-subtitle">${escapeCommentaryText(subtitle)}</span>` : "";
+		titleoutput = `<div class="work-item"><b>Title:</b> <span class="work-title"><em>${escapeCommentaryText(title)}</em>${movement}</span></div>`;
 	}
 
 	let composer = workinfo.Composer;
@@ -594,7 +596,7 @@ function displayWorkInfo(id) {
 		let folios = sourceInfo["Pages, Folios, or Numbers"];
 		let type = firstSources.length > 1 ? "Earliest" : uniquesource === "yes" ? "Unique" : "First";
 		let number = firstSources.length > 1 ? ` ${index + 1}` : "";
-		sourceoutput += `<div class="work-item source-item"><b>${type} source${number}:</b><span class="source-value">${formatCommentarySource(source, diamm, rism)}`;
+		sourceoutput += `<div class="work-item source-item"><b>${type} source${number}:</b><span class="source-value">${formatCommentarySource(source, diamm, rism, true)}`;
 		if (folios) sourceoutput += `, ${escapeCommentaryText(folios)}`;
 		if (earliest) sourceoutput += formatCommentaryDetails({Attribution: earliest.Attribution}, workinfo, false);
 		sourceoutput += `</span></div>`;
@@ -1020,9 +1022,9 @@ function displayExternalInfo(id) {
 
 	if (externalURL && externalName) {
 			if (criticalCommentary == "yes") {
-					output += `<div class="external-note">For more information on ${title} and the critical commentary, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
+					output += `<div class="external-note">For more information on <em>${escapeCommentaryText(title)}</em> and the critical commentary, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
 			} else {
-				output += `<div class="external-note">For more information on ${title}, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
+					output += `<div class="external-note">For more information on <em>${escapeCommentaryText(title)}</em>, see <a target="_blank" href="${externalURL}">${externalName}</a>.</div>`;
 			}
 	}
 	element.innerHTML = output;

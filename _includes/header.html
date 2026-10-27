@@ -360,7 +360,7 @@
 
           {%- for my_page in pages_list -%}
             {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              <a class="page-link" href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ my_page.title | escape }}</a>
 
               {%- assign counter = counter | plus: 1 -%}
 
@@ -369,7 +369,7 @@
                 <div class="dropdown">
                   <button class="page-link dropdown-trigger" type="button" aria-expanded="false" aria-controls="resources-navigation">resources</button>
                   <div class="dropdown-content" id="resources-navigation">
-                    <a class="page-link" href="/Josquin/">Josquin attributions</a>
+                    <a class="page-link" href="/Josquin/"{% if page.url == '/Josquin/' %} aria-current="page"{% endif %}>Josquin attributions</a>
                   </div>
                 </div>
               {%- endif -%}

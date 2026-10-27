@@ -14,7 +14,7 @@ main.page-content article.post .post-header {
 
 main.page-content .post-content {
   margin-top: 0;
-  padding-top: 15px;
+  padding-top: 27px;
 }
 
 main.page-content .section-header {
@@ -26,6 +26,33 @@ table.general thead th {
   color: #284b63;
   border-bottom: 1px solid rgba(40, 75, 99, 0.2);
 }
+
+.project-site.page-repertoire table.general {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.project-site.page-repertoire table.general td {
+  padding: 6px 8px;
+}
+
+.project-site.page-repertoire table.general td:nth-child(5) a {
+  font-weight: 400;
+}
+
+.page-repertoire table.general .title em { font-style: italic; }
+.project-site.page-repertoire table.general td.title a { font-weight: 400; }
+.page-repertoire table.general .work-subtitle { font-style: normal; }
+.page-repertoire .source-cell { max-width: 204px; }
+.page-repertoire .source-preview { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.page-repertoire .source-cell em, .page-repertoire .repertoire-source-popup em { font-style: italic; }
+.page-repertoire .source-details { font-style: normal; }
+.page-repertoire .source-cell.has-overflow { cursor: pointer; }
+.page-repertoire .repertoire-source-popup { position: fixed; z-index: 1100; box-sizing: border-box; width: max-content; max-width: min(400px, calc(100vw - 24px)); max-height: 240px; overflow: auto; padding: 6px 9px; border: 1px solid var(--project-line); border-radius: 5px; background: var(--project-white); color: var(--project-ink); box-shadow: 0 8px 24px rgb(32 48 59 / 14%); font: 400 14px/1.35 var(--project-sans); overflow-wrap: anywhere; }
+.page-repertoire .repertoire-source-popup a { font-weight: 400; }
+.page-repertoire .repertoire-sticky-header { position: fixed; z-index: 40; overflow: hidden; pointer-events: none; box-shadow: 0 2px 5px rgb(35 54 65 / 8%); }
+.project-site.page-repertoire .repertoire-sticky-header table.general { display: table; max-width: none; table-layout: fixed; margin: 0; border-radius: 0; overflow: visible; box-shadow: none; }
+.page-repertoire .repertoire-sticky-header th { box-sizing: border-box; }
 
 /* Truncate long source names without widening the table. */
 table.general td:nth-child(5) {

@@ -7,6 +7,7 @@ order: 2
 
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
+{% include_relative table-enhancements.html %}
 {% include styles/styles-common.css.html %}
 
 <div class="section-header page-title"><h4>Repertoire</h4></div>

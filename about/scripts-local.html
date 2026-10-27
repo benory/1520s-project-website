@@ -124,9 +124,10 @@ function displayYearsPlot(data) {
   const plotInfo = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "background": "#FFFAF1",
+    "background": "transparent",
 
-    "width": isMobile ? 300 : 725,
+    "width": "container",
+    "autosize": { "type": "fit-x", "contains": "padding" },
     "height": isMobile ? 240 : 300,
 
     "data": { "values": yearData },
@@ -145,8 +146,8 @@ function displayYearsPlot(data) {
           "labelFontSize": fontSize,
           "titleFontSize": fontSize,
           "labelAngle": isMobile ? -45 : -90,
-          "labelColor": "#6A6156",
-          "titleColor": "#6A6156",
+          "labelColor": "#647780",
+          "titleColor": "#647780",
           "tickColor": "rgba(0,0,0,0.15)",
           "domainColor": "rgba(0,0,0,0.2)",
           "labelExpr":
@@ -162,8 +163,8 @@ function displayYearsPlot(data) {
           "tickMinStep": 5,
           "labelFontSize": fontSize,
           "titleFontSize": fontSize,
-          "labelColor": "#6A6156",
-          "titleColor": "#6A6156",
+          "labelColor": "#647780",
+          "titleColor": "#647780",
           "gridColor": "rgba(0,0,0,0.06)",
           "domain": false
         }
@@ -171,9 +172,9 @@ function displayYearsPlot(data) {
 
       "color": {
         "field": "Number of Works",
-        "type": "ordinal",
+        "type": "quantitative",
         "scale": {
-          "scheme": "goldorange"
+          "range": ["#dedbc5", "#65867c"]
         },
         "legend": null
       },
@@ -185,7 +186,7 @@ function displayYearsPlot(data) {
     },
 
     "config": {
-      "font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "font": "IBM Plex Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
       "view": { "stroke": "transparent" }
     }
   };

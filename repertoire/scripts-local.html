@@ -126,6 +126,7 @@ function displayBrowseTable(data, selector) {
 	contents += "</table>\n";
 	element.innerHTML = contents;
 	displaySearchCount(data.length);
+	document.dispatchEvent(new Event("repertoire:table-updated"));
 }
 
 
@@ -136,7 +137,7 @@ function displayBrowseTable(data, selector) {
 //
 
 function makeTableHeader(headings) {
-	let output = `<th>${headings.join("</th><th>")}</th>\n`;
+	let output = `<tr><th scope="col">${headings.join('</th><th scope="col">')}</th></tr>\n`;
 	return output;
 }
 
@@ -172,15 +173,17 @@ function makeTableBody(headings, data) {
 			}
 
 			else if (headings[i] == INDEX_firstsource) {
-				output += String(value || "").split(";").map((name, index) => {
+				const sources = String(value || "").split(";").map((name, index) => {
 					let sourceEntry = {...entry};
 					for (let field of ["DIAMM Source Link", "RISM Source Link"]) {
 						let parts = String(entry[field] || "").split(";");
 						sourceEntry[field] = parts.length === String(value || "").split(";").length ? parts[index].trim() : "";
 					}
 					let url = getSource(sourceEntry);
-					return url ? `<a target="_blank" href="${url}">${name.trim()}</a>` : name.trim();
+					const label = formatFirstSource(name);
+					return url ? `<a target="_blank" rel="noopener" href="${escapeHtmlAttribute(url)}">${label}</a>` : label;
 				}).join("; ");
+				output += `<div class="source-cell"><span class="source-preview">${sources}</span></div>`;
 			}
 			else {
 				output += value;
@@ -238,6 +241,17 @@ function escapeHtmlAttribute(input) {
 		.replace(/>/g, "&gt;");
 }
 
+function formatFirstSource(name) {
+	const source = String(name || "").trim();
+	// Manuscript names use the library's country and institution siglum.
+	if (/^[A-Z]{1,3}-[A-Za-z]/.test(source)) return escapeHtmlAttribute(source);
+	return source.split(/(\([^)]*\))/g).map(part => {
+		if (!part) return "";
+		const text = escapeHtmlAttribute(part);
+		return part.startsWith("(") ? `<span class="source-details">${text}</span>` : `<em>${text}</em>`;
+	}).join("");
+}
+
 
 
 //////////////////////////////
@@ -256,15 +270,15 @@ function getTitle(entry) {
 	}
 	if (!subtitle.match(/^\s*$/)) {
 		if (!title.match(/^\s*$/)) {
-			return `${title}, <span class="work-subtitle">${subtitle}</span>`;
+			return `<em>${escapeHtmlAttribute(title)}</em>, <span class="work-subtitle">${escapeHtmlAttribute(subtitle)}</span>`;
 		} else {
-			return `<span class="work-subtitle">${subtitle}</span>`;
+			return `<span class="work-subtitle">${escapeHtmlAttribute(subtitle)}</span>`;
 		}
 	}
 	if (title.match(/^\s*$/)) {
 		return "";
 	} else {
-		return title;
+		return `<em>${escapeHtmlAttribute(title)}</em>`;
 	}
 }
 
@@ -810,6 +824,7 @@ function FreeTextSearch(query) {
     displaySearchCount(tr.length);
     showAllBrowseRows();
     updateBrowseUrlDisplay();
+    document.dispatchEvent(new Event("repertoire:table-updated"));
     return;
   }
 
@@ -830,6 +845,7 @@ function FreeTextSearch(query) {
 
   displaySearchCount(searchCount);
   updateBrowseUrlDisplay();
+  document.dispatchEvent(new Event("repertoire:table-updated"));
 }
 
 

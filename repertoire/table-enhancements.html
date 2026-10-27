@@ -1,0 +1,172 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const list = document.getElementById("list");
+  const navbar = document.querySelector(".site-header");
+  if (!list || !navbar) return;
+
+  // A visual copy keeps headings pinned without changing the table's mobile scrolling.
+  const sticky = document.createElement("div");
+  sticky.className = "repertoire-sticky-header";
+  sticky.setAttribute("aria-hidden", "true");
+  sticky.hidden = true;
+  document.body.append(sticky);
+
+  const popup = document.createElement("div");
+  popup.id = "repertoire-source-popup";
+  popup.className = "repertoire-source-popup";
+  popup.setAttribute("role", "dialog");
+  popup.setAttribute("aria-label", "Full source name");
+  popup.hidden = true;
+  document.body.append(popup);
+
+  let table, headerCopy, activeCell, pinned = false, closeTimer, frame;
+
+  function closeSource() {
+    clearTimeout(closeTimer);
+    activeCell?.querySelectorAll(".source-preview a, .source-preview[role='button']").forEach(trigger => trigger.setAttribute("aria-expanded", "false"));
+    popup.hidden = true;
+    activeCell = null;
+    pinned = false;
+  }
+
+  function openSource(cell, pin = false) {
+    clearTimeout(closeTimer);
+    if (activeCell !== cell) {
+      closeSource();
+      popup.innerHTML = cell.querySelector(".source-preview").innerHTML;
+      popup.querySelectorAll("a").forEach(link => {
+        ["aria-haspopup", "aria-controls", "aria-expanded"].forEach(attribute => link.removeAttribute(attribute));
+      });
+    }
+    activeCell = cell;
+    pinned = pin || pinned;
+    popup.hidden = false;
+    popup.style.width = "";
+    // Trim unused space after wrapping, keeping the existing line breaks.
+    const textRange = document.createRange();
+    textRange.selectNodeContents(popup);
+    const popupBounds = popup.getBoundingClientRect();
+    const textRight = Math.max(popupBounds.left, ...Array.from(textRange.getClientRects(), rect => rect.right));
+    const popupStyle = getComputedStyle(popup);
+    const fittedWidth = Math.ceil(textRight - popupBounds.left + parseFloat(popupStyle.paddingRight) + parseFloat(popupStyle.borderRightWidth)) + 1;
+    popup.style.width = `${Math.min(popupBounds.width, fittedWidth)}px`;
+    cell.querySelectorAll(".source-preview a, .source-preview[role='button']").forEach(trigger => trigger.setAttribute("aria-expanded", "true"));
+    const bounds = cell.getBoundingClientRect();
+    const width = popup.getBoundingClientRect().width;
+    popup.style.left = `${Math.max(12, Math.min(bounds.left, window.innerWidth - width - 12))}px`;
+    const height = popup.getBoundingClientRect().height;
+    const below = bounds.bottom + 7;
+    popup.style.top = `${below + height <= window.innerHeight - 12 ? below : Math.max(navbar.getBoundingClientRect().bottom + 7, bounds.top - height - 7)}px`;
+  }
+
+  function closeAfterPointerLeaves(event) {
+    if (pinned || !activeCell) return;
+    const next = event.relatedTarget;
+    if (next instanceof Node && (activeCell.contains(next) || popup.contains(next))) return;
+    closeTimer = setTimeout(closeSource, 150);
+  }
+
+  function updateStickyHeader() {
+    frame = null;
+    if (!table?.isConnected || !headerCopy) { sticky.hidden = true; return; }
+    const bounds = table.getBoundingClientRect();
+    const head = table.tHead.getBoundingClientRect();
+    const top = Math.max(0, navbar.getBoundingClientRect().bottom);
+    sticky.hidden = head.top >= top || bounds.bottom <= top;
+    if (sticky.hidden) return;
+    sticky.style.top = `${Math.min(top, bounds.bottom - head.height)}px`;
+    sticky.style.left = `${bounds.left}px`;
+    sticky.style.width = `${table.clientWidth}px`;
+    headerCopy.style.width = `${head.width}px`;
+    headerCopy.style.marginLeft = `${-table.scrollLeft}px`;
+    Array.from(table.tHead.rows[0].cells).forEach((cell, index) => {
+      headerCopy.tHead.rows[0].cells[index].style.width = `${cell.getBoundingClientRect().width}px`;
+    });
+  }
+
+  function scheduleStickyHeader() {
+    if (!frame) frame = requestAnimationFrame(updateStickyHeader);
+  }
+
+  function refresh() {
+    closeSource();
+    table = list.querySelector("table.general");
+    if (!table?.tHead) { sticky.hidden = true; return; }
+    headerCopy = table.cloneNode(false);
+    headerCopy.append(table.tHead.cloneNode(true));
+    sticky.replaceChildren(headerCopy);
+    const cells = Array.from(list.querySelectorAll(".source-cell"));
+    const overflow = cells.map(cell => {
+      const text = cell.querySelector(".source-preview");
+      return text.clientWidth > 0 && text.scrollWidth > text.clientWidth + 1;
+    });
+    cells.forEach((cell, index) => {
+      cell.classList.toggle("has-overflow", overflow[index]);
+      const preview = cell.querySelector(".source-preview");
+      if (!preview.querySelector("a")) {
+        if (overflow[index]) { preview.tabIndex = 0; preview.setAttribute("role", "button"); }
+        else { preview.removeAttribute("tabindex"); preview.removeAttribute("role"); }
+      }
+      cell.querySelectorAll(".source-preview a, .source-preview[role='button']").forEach(trigger => {
+        if (overflow[index]) {
+          trigger.setAttribute("aria-haspopup", "dialog");
+          trigger.setAttribute("aria-controls", popup.id);
+          trigger.setAttribute("aria-expanded", "false");
+        } else {
+          ["aria-haspopup", "aria-controls", "aria-expanded"].forEach(attribute => trigger.removeAttribute(attribute));
+        }
+      });
+    });
+    scheduleStickyHeader();
+  }
+
+  list.addEventListener("pointerover", event => {
+    if (event.pointerType !== "mouse") return;
+    const cell = event.target.closest(".source-cell.has-overflow");
+    if (cell && (!pinned || cell === activeCell)) openSource(cell);
+  });
+  list.addEventListener("pointerout", closeAfterPointerLeaves);
+  popup.addEventListener("pointerover", () => clearTimeout(closeTimer));
+  popup.addEventListener("pointerout", closeAfterPointerLeaves);
+  document.addEventListener("click", event => {
+    const cell = event.target.closest(".source-cell.has-overflow");
+    if (cell) {
+      event.preventDefault();
+      if (pinned && activeCell === cell) closeSource();
+      else {
+        openSource(cell, true);
+        if (event.detail === 0) popup.querySelector("a")?.focus();
+      }
+    } else if (!popup.contains(event.target)) closeSource();
+  });
+  document.addEventListener("focusin", event => {
+    const cell = event.target.closest(".source-cell.has-overflow");
+    if (cell) openSource(cell);
+    else if (!popup.contains(event.target)) closeSource();
+  });
+  document.addEventListener("keydown", event => {
+    const plainSource = event.target.closest(".source-preview[role='button']");
+    if (plainSource && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      openSource(plainSource.closest(".source-cell"), true);
+      return;
+    }
+    if (event.key !== "Escape" || !activeCell) return;
+    const trigger = activeCell.querySelector(".source-preview a, .source-preview[role='button']");
+    closeSource();
+    trigger?.focus();
+    // Returning focus should not reopen a dismissed popup.
+    closeSource();
+  });
+  document.addEventListener("scroll", event => {
+    if (popup.contains(event.target)) return;
+    closeSource();
+    scheduleStickyHeader();
+  }, { capture: true, passive: true });
+  window.addEventListener("resize", refresh);
+  new ResizeObserver(scheduleStickyHeader).observe(navbar);
+  document.addEventListener("repertoire:table-updated", refresh);
+  document.fonts.ready.then(refresh);
+  refresh();
+});
+</script>

@@ -7,13 +7,15 @@ order: 3
 <script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin-worker.js"></script>
 
 
-{% include_relative styles-local.html %}
 {% include styles/styles-common.css.html %}
+{% include_relative styles-local.html %}
 
 <div class="section-header page-title"><h4>Documentation</h4></div>
 
 <div class="documentation-layout">
-	<div class="toc-container">
+	<nav class="toc-container" aria-label="Documentation contents">
+	  <button class="toc-toggle" type="button" aria-expanded="false" aria-controls="documentation-contents">Table of Contents<span class="toc-toggle-symbol" aria-hidden="true">+</span></button>
+	  <div class="toc-content" id="documentation-contents">
 	  <h4>Table of Contents</h4>
 	  <ul>
 	    <li><strong><a href="#musical-documentation">Musical documentation</a></strong>
@@ -45,7 +47,8 @@ order: 3
 	    </li>
 	    <li><strong><a href="#download-data">Download project data</a></strong></li>
 	  </ul>
-	</div>
+	  </div>
+	</nav>
 
 <div class="main-content">
 
@@ -63,13 +66,13 @@ order: 3
 	<ul class="spaced-list">
 		<li><strong>Secure attributions</strong> are listed under the composer's name.</li>
 		<li><strong>Plausible attributions</strong> need to be carefully considered but given the information available, lack sufficient strength to assign authorship. 
-			<p>A test case might be the attributions to Lupus Hellinck for the motet <a href="https://1520s-project.org/work/?id=Ric2016">Jerusalem surge</a>, believed to be by Jean Richafort. On the whole, the sources favor Richafort, but an early Pierre Attaingnant print, constituting a separate branch of transmission, attributes the motet to Lupus. The attributions to Lupus are therefore plausible.</p>
+			<p>A test case might be the attributions to Lupus Hellinck for the motet <a href="https://1520s-project.org/work/?id=Ric2016"><em>Jerusalem surge</em></a>, believed to be by Jean Richafort. On the whole, the sources favor Richafort, but an early Pierre Attaingnant print, constituting a separate branch of transmission, attributes the motet to Lupus. The attributions to Lupus are therefore plausible.</p>
 		</li>
 		<li><strong>Improbable attributions</strong> cannot be ruled out but are unlikely to be correct.
 			<p>A five- or six-voice imitative chanson in a mid-sixteenth-century style and attributed in a late sixteenth-century source to Jean Mouton for the first time——some forty years after Mouton's death——is unlikely to be accurate.</p>
 		</li>
 		<li><strong>Implausible attributions</strong> are all but impossible.
-			<p>One example: Jachet of Mantua's <a href="https://1520s-project.org/work/?id=Jom2014">Omnes sancti tui quesumus</a> is attributed to Adrian Willaert in a single source geographically distant from Willaert with no clear connection to Willaert. Attributions to Jachet, by contrast, appear in an overwhelming number of sources closer to the composer, including in a number of single-author prints of his motets. The attribution to Willaert is therefore implausible.</p>
+			<p>One example: Jachet of Mantua's <a href="https://1520s-project.org/work/?id=Jom2014"><em>Omnes sancti tui quesumus</em></a> is attributed to Adrian Willaert in a single source geographically distant from Willaert with no clear connection to Willaert. Attributions to Jachet, by contrast, appear in an overwhelming number of sources closer to the composer, including in a number of single-author prints of his motets. The attribution to Willaert is therefore implausible.</p>
 		</li>
 	</ul>
 	<p>This project only considers attributions in sixteenth-century sources. Implied attributions on the basis of so-called <i>Nestertheorie</i> are not adopted. Where modern scholarship has attributed works to a given composer without a sixteenth-century attribution, these pieces are "linked" to the composer. This means: results of a search for the composer Philippe Verdelot will include anonymous madrigals in the Newberry Partbooks long assumed to be by Verdelot, but for which no sixteenth-century concordance attributes the work to the Florentine composer.</p>
@@ -102,11 +105,11 @@ order: 3
 	<ul class="workflow-list">
 		<li>
 			<strong>avoid melodic tritones</strong>
-			<p>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001">En douleur en tristesse</a>, a tritone in m. 14 is avoided by flatting the E following the B-flat. A second tritone produced by stepwise motion in m. 15 can be sidestepped through the addition of a second flat.<img src="/images/Bau3001_example.svg" alt="Bauldeweyn editorial accidentals example"></p>
+			<p>In the following example, taken from the bassus of Noel Bauldeweyn's <a href="https://1520s-project.org/work/?id=Bau3001"><em>En douleur en tristesse</em></a>, a tritone in m. 14 is avoided by flatting the E following the B-flat. A second tritone produced by stepwise motion in m. 15 can be sidestepped through the addition of a second flat.<img src="/images/Bau3001_example.svg" alt="Bauldeweyn editorial accidentals example"></p>
 		</li>
 		<li>
 			<strong>inflect cadences</strong>
-			<p>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, cadences often (but not always) feature sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–61 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Cha2001">De profundis clamavi</a>, in which a seven-to-six suspension is followed by movement to an octave:<img src="/images/Cha2001_example.svg" alt="Champion editorial accidentals example"></p>
+			<p>Editorial accidentals are added when moving from an imperfect consonance to a perfect consonance. In this repertoire, cadences often (but not always) feature sixth-to-octave motion preceded by a seven-to-six suspension in the top voice. See, for instance, mm. 59–61 of Nicolas Champion's <a href="https://1520s-project.org/work/?id=Cha2001"><em>De profundis clamavi</em></a>, in which a seven-to-six suspension is followed by movement to an octave:<img src="/images/Cha2001_example.svg" alt="Champion editorial accidentals example"></p>
 		</li>
 	</ul>
 	<p>This project views cadences as having both a contrapuntal and a rhetorical component. In order to be classified as a cadence, the required contrapuntal elements must coincide with one or both of the voices ending a line of text. Usually——although by ca. 1530 not always——one or both of the voices will rest following the cadence.</p>
@@ -119,13 +122,13 @@ order: 3
 
 <section>
 	<p><strong>Composer codes and numbering</strong></p>
-	<p>Each piece is assigned a three-letter composer code in close coordination with the Josquin Research Project. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre, typically moving from the first circulating work by a composer to the last. For example, Wil2001 is the first circulating motet (or one of the first) by the composer Adrian Willaert.</p>
-	<p>If a piece, such as a mass, consists of multiple parts, the filename for each section additionally assumes a letter. For instance, Wil1001a is the Kyrie from Willaert's Missa Mente tota; Wil1001b is the Gloria from the same mass.</p>
-	<p>Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"><i>New Senfl Edition</i></a>. In this case, Snf0101 is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, Snf0238 is no. 38 in the overall series and is in the second volume.</p>
+	<p>Each piece is assigned a three-letter composer code in close coordination with the Josquin Research Project. Each work is then assigned a four-digit number. The first digit indicates the genre (1 for a mass; 2 for a motet; 3 for a secular work). The last two or three digits are an enumeration of the works in the given genre, typically moving from the first circulating work by a composer to the last. For example, <code>Wil2001</code> is the first circulating motet (or one of the first) by the composer Adrian Willaert.</p>
+	<p>If a piece, such as a mass, consists of multiple parts, the filename for each section additionally assumes a letter. For instance, <code>Wil1001a</code> is the Kyrie from Willaert's <em>Missa Mente tota</em>; <code>Wil1001b</code> is the Gloria from the same mass.</p>
+	<p>Where this project collaborates with existing editions, the first two digits reflect the volume in the series. For example, The 1520s Project incorporates scores from the <a href="https://senflonline-eng.com/new-senfl-edition/" target="_blank"><i>New Senfl Edition</i></a>. In this case, <code>Snf0101</code> is the first work in the first volume of the <i>New Senfl Edition</i>. Following the NSE's numbering, <code>Snf0238</code> is no. 38 in the overall series and is in the second volume.</p>
 	<p><strong>Work name</strong></p>
-	<p>After the composer code and number, the filename continues with a dash, followed by the name of the work, using only the characters A-Z, a-z, and 0-9, with underscores separating individual words, then (if applicable) followed by a dash and then the section name. For example, the Kyrie of Willaert's Missa Mente tota would be Wil1001a-Missa_Mente_tota-Kyrie. All special characters (e.g., apostrophes and accents) are removed.</p>
+	<p>After the composer code and number, the filename continues with a dash, followed by the name of the work, using only the characters A-Z, a-z, and 0-9, with underscores separating individual words, then (if applicable) followed by a dash and then the section name. For example, the Kyrie of Willaert's <em>Missa Mente tota</em> would be <code>Wil1001a-Missa_Mente_tota-Kyrie</code>. All special characters (e.g., apostrophes and accents) are removed.</p>
 	<p><strong>Unique sources</strong></p>
-	<p>If a piece survives uniquely in one source (<i>unicum</i>), these naming conventions are followed by two dashes (--) and then the name of the source, written in an easy-to-read shorthand. For instance, Maistre Jan's Vox de celis is <i>unicum</i> in the manuscript I-Bc Q.19, better known as Bologna Q19. The filename is therefore Jan2002-Vox_de_celis--Bologna_Q19. The shorthand consists of the source location followed by a short version of the source signature, separated by an underscore.</p>
+	<p>If a piece survives uniquely in one source (<i>unicum</i>), these naming conventions are followed by two dashes (--) and then the name of the source, written in an easy-to-read shorthand. For instance, Maistre Jan's <em>Vox de celis</em> is <i>unicum</i> in the manuscript I-Bc Q.19, better known as Bologna Q19. The filename is therefore <code>Jan2002-Vox_de_celis--Bologna_Q19</code>. The shorthand consists of the source location followed by a short version of the source signature, separated by an underscore.</p>
 </section>
 
 <h3 id="score-preparation">Score preparation</h3>
@@ -149,27 +152,33 @@ order: 3
 
 <section>
 	<p> A range of information is encoded in the humdrum files:</p>
-		<ul class="narrow-list"> 
-			<li>id: the ID for the work</li>
-			<li>AGN: the genre</li>
-			<li>voices: the number of voices</li>
-			<li>COM: the composer </li>
-			<li>OTL: the title of the work</li>
-			<li>OPR: the title of the parent work</li>
-			<li>ENC: the encoder</li>
-			<li>END: the date of the encoding</li>
-		</ul>
+	<table class="documentation-fields" aria-label="Humdrum metadata fields">
+		<thead><tr><th scope="col">Field</th><th scope="col">Meaning</th></tr></thead>
+		<tbody>
+			<tr><th scope="row"><code>id</code></th><td>the ID for the work</td></tr>
+			<tr><th scope="row"><code>AGN</code></th><td>the genre</td></tr>
+			<tr><th scope="row"><code>voices</code></th><td>the number of voices</td></tr>
+			<tr><th scope="row"><code>COM</code></th><td>the composer</td></tr>
+			<tr><th scope="row"><code>OTL</code></th><td>the title of the work</td></tr>
+			<tr><th scope="row"><code>OPR</code></th><td>the title of the parent work</td></tr>
+			<tr><th scope="row"><code>ENC</code></th><td>the encoder</td></tr>
+			<tr><th scope="row"><code>END</code></th><td>the date of the encoding</td></tr>
+		</tbody>
+	</table>
 	<p>Scores coming from published editions have additional categories of information:</p>
-	<ul class="narrow-list"> 
-		<li>PTL: the title of the edition</li>
-		<li>PPR: publisher of the edition</li>
-		<li>PC#: the edition's series</li>
-		<li>PDT: the year of the edition</li>
-		<li>PED: the editors</li>
-		<li>YEC: copyright information</li>
-		<li>EED: the electornic encoder of the edition</li>
-		<li>EEV: the date of the encoding</li>
-	</ul>
+	<table class="documentation-fields" aria-label="Published edition metadata fields">
+		<thead><tr><th scope="col">Field</th><th scope="col">Meaning</th></tr></thead>
+		<tbody>
+			<tr><th scope="row"><code>PTL</code></th><td>the title of the edition</td></tr>
+			<tr><th scope="row"><code>PPR</code></th><td>publisher of the edition</td></tr>
+			<tr><th scope="row"><code>PC#</code></th><td>the edition's series</td></tr>
+			<tr><th scope="row"><code>PDT</code></th><td>the year of the edition</td></tr>
+			<tr><th scope="row"><code>PED</code></th><td>the editors</td></tr>
+			<tr><th scope="row"><code>YEC</code></th><td>copyright information</td></tr>
+			<tr><th scope="row"><code>EED</code></th><td>the electornic encoder of the edition</td></tr>
+			<tr><th scope="row"><code>EEV</code></th><td>the date of the encoding</td></tr>
+		</tbody>
+	</table>
 </section>
 
 <h3 id="source-metadata">Source metadata</h3>
@@ -240,7 +249,7 @@ order: 3
 
 <section>
 	<p><a href="https://github.com/benory/1520s-project-scores" target="_blank">The project's GitHub repository</a>, which hosts Sibelius, MuseScore, and Humdrum source files, can be cloned in terminal by using the following command:</p>
-	<code>git clone https://github.com/benory/1520s-project-scores.git</code>
+	<pre class="documentation-command"><code>git clone https://github.com/benory/1520s-project-scores.git</code></pre>
 	<p><strong>Note:</strong> corrected Humdrum scores are used to generate the MusicXML and PDF downloads available on the work pages.</p>
 	<p>Project metadata is maintained in Google Sheets and converted into JSON files by the project’s build tools. The generated files are published in the website repository and support repertoire searches, work pages, and statistical visualizations.</p>
 	<p>The following datasets are available for download:</p>
@@ -255,3 +264,5 @@ order: 3
 
 </div>
 </div>
+
+{% include_relative scripts-local.html %}

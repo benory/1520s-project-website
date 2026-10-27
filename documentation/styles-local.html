@@ -1,385 +1,235 @@
 <style>
-
-article.post {
-  width: 100%;
-}
-
-body {
-  background-color: #FFFAF1;
-}
-
 html {
-  scroll-padding-top: 110px;
+  scroll-padding-top: calc(var(--documentation-nav-height, 106px) + 24px);
 }
 
-.documentation-layout {
+.page-documentation article.post { width: 100%; }
+.page-documentation .documentation-layout {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 22px;
   gap: 30px;
 }
-
-.main-content {
-  flex: 1;
+.page-documentation .main-content { flex: 1; min-width: 0; }
+.project-site.page-documentation .main-content p,
+.project-site.page-documentation .main-content ul,
+.project-site.page-documentation .main-content ol {
+  font-size: 15px;
+  line-height: 1.6;
 }
-
-.main-content p,
-.main-content div > p {
-  max-width: 760px;
-  margin: 0 auto 14px;
+.project-site.page-documentation .main-content .spaced-list,
+.project-site.page-documentation .main-content .narrow-list { font-size: 14px; }
+.page-documentation .main-content p { margin: 0 0 16px; }
+.page-documentation .main-content section { margin-bottom: 20px; }
+.page-documentation .main-content section::after { display: none; }
+.project-site.page-documentation .main-content h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 48px 0 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--project-line);
 }
-
-.main-content section {
-  position: relative;
-  margin-bottom: 18px;
-}
-
-.main-content section::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  margin: 5px auto 0;
-
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.15),
-    rgba(0,0,0,0)
-  );
-}
-
-.main-content section:last-of-type::after {
-  display: none;
-}
-
-.main-content h2:first-of-type {
+.project-site.page-documentation .main-content h2:first-child {
   margin-top: 0;
-}
-
-.main-content h2 {
   padding-top: 0;
-  max-width: 760px;
+  border-top: 0;
 }
-
-.main-content h2:not(:first-of-type) {
-  margin-top: 24px;
-  padding-top: 0;
+.project-site.page-documentation .main-content h3 {
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 32px 0 12px;
 }
-
-.main-content h3 {
-  max-width: 760px;
-  margin: 26px auto 8px;
-}
-
-.main-content [id] {
-  scroll-margin-top: 110px;
-}
-
-.main-content h4 {
+.page-documentation .main-content h4 {
   font-size: 15px;
   font-weight: 500;
-  margin: 32px auto 12px;
-  max-width: 760px;
+  line-height: 1.4;
+  margin: 28px 0 12px;
 }
+.page-documentation .main-content [id] { scroll-margin-top: 0; }
 
-.wrapper {
-  max-width: 1000px;
-}
-
-.post-title {
-  transform: translateX(50px);
-}
-
-.toc-container {
+.page-documentation .toc-container {
   position: sticky;
   align-self: flex-start;
-  top: 96px;
-  max-width: 240px;
-  min-width: 240px;
+  top: calc(var(--documentation-nav-height, 106px) + 18px);
+  box-sizing: border-box;
+  width: 240px;
+  flex: 0 0 240px;
+  max-height: calc(100dvh - var(--documentation-nav-height, 106px) - 36px);
+  overflow-y: auto;
+  scrollbar-width: thin;
   padding: 6px 18px 8px 0;
-  border-right: 1px solid rgba(40, 75, 99, 0.16);
-  font-size: 13px;
-  line-height: 1.35;
-  flex-shrink: 0;
+  border-right: 1px solid var(--project-line);
+  font-size: 15px;
+  line-height: 1.4;
 }
-
-.toc-container h4 {
-  margin: 0 0 10px;
-  color: #5f5951;
+.page-documentation .toc-container h4 {
+  margin: 0 0 12px;
+  color: var(--project-muted);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-
-.toc-container ul {
+.project-site.page-documentation .toc-container ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
 }
-
-.toc-container li {
-  margin: 3px 0;
-}
-
-.toc-container li ul {
-  margin: 3px 0 6px 14px;
-  color: #6A6156;
-  font-size: 12.5px;
-  line-height: 1.3;
-}
-
-.toc-container li ul li {
-  margin: 2px 0;
-}
-
-.toc-container li a {
+.page-documentation .toc-container li { margin: 8px 0; }
+.project-site.page-documentation .toc-container li ul { margin: 8px 0 14px 18px; }
+.page-documentation .toc-container li ul li { margin: 6px 0; }
+.page-documentation .toc-container strong { font-weight: 600; }
+.page-documentation .toc-container a {
   display: inline-block;
   padding-left: 1em;
-  color: #284b63;
   text-indent: -1em;
   text-decoration: none;
 }
-
-.toc-container li a:hover {
-  color: #132f43;
+.project-site.page-documentation .toc-container a:hover,
+.project-site.page-documentation .toc-container a[aria-current="location"] {
+  color: #164878;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
+.page-documentation .toc-toggle { display: none; }
 
-.main-content ul,
-.main-content ol {
-  max-width: 760px;
-  margin: 0 auto 16px;
-  padding-left: 20px;
-}
-
-.main-content li {
-  margin-bottom: 6px;
-  line-height: 1.6;
-}
-
-.main-content img {
+.page-documentation .main-content ul,
+.page-documentation .main-content ol { margin: 0 0 18px; padding-left: 24px; }
+.page-documentation .main-content li { margin-bottom: 6px; }
+.page-documentation .main-content .spaced-list > li { margin-bottom: 6px; }
+.page-documentation .main-content li > p { margin: 4px 0 0; }
+.page-documentation .main-content img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 14px auto 20px;
+  margin: 24px 0 28px;
 }
-
-.documentation-figure {
-  max-width: 760px;
-  margin: 16px auto 18px;
-}
-
-.documentation-figure object,
-.documentation-figure img {
-  margin: 0 auto 8px;
-}
-
-.documentation-figure object {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 550 / 102;
-  pointer-events: auto;
-}
-
-.main-content svg {
-  width: 100% !important;
-  height: auto !important;
-}
-
-/* More generous indentation for documentation lists */
-.main-content ul.spaced-list {
-  padding-left: 32px;
-  font-size: 14px;
-}
-
-.main-content ul.narrow-list {
-  padding-left: 32px;
-  font-size: 14px;
-}
-
-.main-content ul.spaced-list li {
-  padding-left: 0;
-}
-
-code {
-  display: block;
-  max-width: 760px;
-  margin: 12px auto 20px;
-  padding: 10px 12px;
-  overflow-x: auto;
-  color: #1c1c1e;
-  background: rgba(255, 253, 248, 0.74);
-  border: 1px solid rgba(40, 75, 99, 0.22);
-  border-radius: 4px;
-  font-size: 13px;
-  line-height: 1.45;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.url-block {
-  max-width: 760px;
-  margin: 0 auto 16px;
-  padding: 9px 12px;
-  border: 1px solid rgba(40, 75, 99, 0.22);
-  border-radius: 4px;
-  background: rgba(255, 253, 248, 0.74);
-
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.url-block a {
-  color: #284b63;
-  text-decoration: none;
-  word-break: break-all;
-}
-
-.url-block a:hover {
-  color: #132f43;
-  text-decoration: underline;
-}
-
-.workflow-list {
+.page-documentation .documentation-figure { margin: 24px 0 28px; }
+.page-documentation .documentation-figure object,
+.page-documentation .documentation-figure img { display: block; margin: 0; width: 100%; height: auto; }
+.page-documentation .documentation-figure object { aspect-ratio: 550 / 102; pointer-events: auto; }
+.page-documentation .main-content svg { width: 100% !important; height: auto !important; }
+.page-documentation .main-content .workflow-list {
   list-style: none;
   counter-reset: step;
   padding-left: 0;
 }
-
-.workflow-list > li {
+.page-documentation .workflow-list > li {
   counter-increment: step;
   position: relative;
-  padding-left: 2.6rem;
-  margin-bottom: 1.6rem;
+  padding-left: 38px;
+  margin-bottom: 28px;
 }
-
-.workflow-list > li::before {
+.page-documentation .workflow-list > li::before {
   content: counter(step);
   position: absolute;
   left: 0;
-  top: 0.1rem;
-
-  width: 22px;
-  height: 22px;
+  top: 2px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: rgba(0,0,0,0.06);
-  color: #1c1c1e;
-
   font-size: 13px;
   font-weight: 500;
 }
+.page-documentation .workflow-list strong { display: block; font-weight: 500; }
 
-.workflow-list strong {
-  display: block;
+.project-site.page-documentation .main-content code {
+  display: inline;
+  padding: 1px 4px;
+  border: 0;
+  border-radius: 3px;
+  color: var(--project-ink);
+  background: var(--project-blue-wash);
+  font: 0.9em/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+  overflow-wrap: anywhere;
+}
+.page-documentation .documentation-command {
+  margin: 18px 0 24px;
+  padding: 12px 14px;
+  border: 1px solid var(--project-line);
+  border-radius: 5px;
+  background: var(--project-white);
+  overflow-x: auto;
+}
+.project-site.page-documentation .documentation-command code {
+  padding: 0;
+  background: transparent;
+  font-size: 14px;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+.page-documentation .documentation-fields {
+  width: auto;
+  max-width: 100%;
+  margin: 16px 0 24px;
+  border-collapse: collapse;
+  color: var(--project-ink);
+  font: 400 14px/1.45 var(--project-sans);
+}
+.page-documentation .documentation-fields th,
+.page-documentation .documentation-fields td {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 12px;
+  border: 0;
+  border-bottom: 1px solid var(--project-line);
+}
+.page-documentation .documentation-fields thead th {
+  background: var(--project-blue-wash);
+  font-size: 14px;
   font-weight: 500;
-  margin-bottom: 0.25rem;
+}
+.page-documentation .documentation-fields tbody th { width: 65px; font-weight: 400; }
+.project-site.page-documentation .documentation-fields code { padding: 0; background: transparent; }
+.page-documentation .url-block {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--project-line);
+  border-radius: 5px;
+  overflow-wrap: anywhere;
 }
 
-.workflow-list p {
-  margin: 0.25rem 0 0.75rem;
-}
-
-.workflow-list img {
-  margin-top: 0.5rem;
-}
-
-/* Reset nested lists inside workflow steps to normal body style */
-.workflow-list ul {
-  font-size: 15px;
-  line-height: 1.65;
-  margin-top: 0.5rem;
-}
-
-.workflow-list ul li {
-  padding-left: 0;
-  margin-bottom: 0.4rem;
-}
-
-/* Mobile Styles */
 @media (max-width: 768px) {
-  .documentation-layout {
-    flex-direction: column;
+  .project-site.page-documentation .main-content h2 { font-size: 20px; }
+  .project-site.page-documentation .main-content h3 { font-size: 16px; }
+  .page-documentation .documentation-layout { flex-direction: column; padding-top: 8px; gap: 24px; }
+  .page-documentation .toc-container {
+    position: static;
+    flex: none;
     width: 100%;
-    padding: 0 16px;
-    margin: 0;
-    box-sizing: border-box;
+    max-height: none;
+    padding: 0 0 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--project-line);
   }
-
-  .main-content {
+  .page-documentation .toc-ready .toc-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-  }
-
-  .toc-container {
-    display: none;
-  }
-
-  h1 {
-    font-size: 28px;
-    line-height: 1.3;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 1.4;
-    margin-top: 1em;
-  }
-
-  h3 {
-    font-size: 20px;
-    line-height: 1.3;
-    margin-top: 0.8em;
-  }
-
-  h4 {
-    font-size: 18px;
-    line-height: 1.3;
-    margin-top: 0.6em;
-  }
-
-  /* List adjustments */
-  ul,
-  ol {
-    padding-left: 4px;
-  }
-
-  ul.spaced-list li,
-  ol.spaced-list li {
-    margin-bottom: 0.4em;
-  }
-
-
-  /* Image adjustments */
-  img {
-    max-width: 100%;
-    height: auto;
-    padding: 10px 0;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* Table adjustments for mobile */
-  table {
-    width: 100%;
-    overflow-x: auto;
-    display: block;
-  }
-
-  table th, 
-  table td {
+    border: 0;
+    padding: 6px 0;
+    color: var(--project-link);
+    background: transparent;
+    font-size: 16px;
     text-align: left;
-    padding: 8px;
+    cursor: pointer;
   }
-
-  /* Reduced padding between lines for readability */
-  .main-content div {
-    margin-bottom: 1em;
-  }
+  .page-documentation .toc-toggle-symbol { font-size: 22px; line-height: 1; }
+  .page-documentation .toc-ready .toc-content { display: none; }
+  .page-documentation .toc-ready.is-open .toc-content { display: block; padding-top: 12px; }
+  .page-documentation .toc-ready .toc-content h4 { display: none; }
+  .page-documentation .toc-container a { padding-top: 3px; padding-bottom: 3px; }
+  .page-documentation .documentation-fields th,
+  .page-documentation .documentation-fields td { padding: 8px; }
+  .page-documentation .documentation-fields tbody th { width: 65px; }
+  .page-documentation .workflow-list > li { padding-left: 32px; }
 }
 </style>

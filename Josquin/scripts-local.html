@@ -19,6 +19,7 @@ function displayBrowseTable(data, selector) {
 	let headings = [INDEX_dating, INDEX_source, INDEX_source_origin, INDEX_title, INDEX_NJE,  INDEX_attribution_category, INDEX_probable_composer, INDEX_Josquin_attribution];
 	let contents = "";
 	contents += "<table class='general'>\n";
+	contents += "<colgroup><col style='width:12%'><col style='width:12%'><col style='width:11%'><col style='width:20%'><col style='width:6%'><col style='width:10%'><col style='width:15%'><col style='width:14%'></colgroup>\n";
 	contents += "<thead>\n";
 	contents += makeTableHeader(headings);
 	contents += "</thead>\n";
@@ -28,6 +29,7 @@ function displayBrowseTable(data, selector) {
 	contents += "</table>\n";
 	element.innerHTML = contents;
 	displaySearchCount(data.length);
+	document.dispatchEvent(new Event("josquin:table-updated"));
 }
 
 function populateFilters(data) {
@@ -78,7 +80,7 @@ function getUniqueValuesNormalized(data, key) {
 //
 
 function makeTableHeader(headings) {
-	let output = "";
+	let output = "<tr>";
 	for (let heading of headings) {
 		let label = heading;
 		if (heading === INDEX_dating) {
@@ -90,11 +92,15 @@ function makeTableHeader(headings) {
 		}
 
 		if (heading === INDEX_Josquin_attribution) {
-			label = "Attributed to Josquin? (Other attribution)"
+			label = "Attributed to Josquin?<span class='heading-note'>(Other attribution)</span>";
 		}
-		output += `<th>${label}</th>`;
+		output += `<th scope="col">${label}</th>`;
 	}
-	return output;
+	return output + "</tr>";
+}
+
+function escapeJosquinText(value) {
+	return String(value).replace(/[&<>"']/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character]));
 }
 
 //////////////////////////////
@@ -108,20 +114,17 @@ function makeTableBody(headings, data) {
 		let entry = data[i];
 		let rowText = headings.map(h => entry[h] || "").join(" ");
 		rowText = removeAccents(rowText.toLowerCase());
-		output += `<tr data-search="${rowText}">`;
+		output += `<tr data-search="${escapeJosquinText(rowText)}">`;
 
 		for (let j = 0; j < headings.length; j++) {
 			let key = headings[j];
 			let value = entry[key] || "";
-
-			if (typeof value === "string") {
-				value = value.replace(/\//g, '/<wbr>');
-			}
+			let dateRange = "";
 
 			if (key === INDEX_dating) {
 				let range = entry["Dating (range)"];
 				if (range) {
-					value += ` (${range})`;
+					dateRange = range;
 				}
 			}
 
@@ -132,6 +135,9 @@ function makeTableBody(headings, data) {
 				}
 			}
 
+			value = escapeJosquinText(value).replace(/\//g, '/<wbr>');
+			if (dateRange) value += ` <span class="date-range">(${escapeJosquinText(dateRange)})</span>`;
+			if (key === INDEX_title) value = `<em>${value}</em>`;
 			output += `<td>${value}</td>`;
 		}
 
@@ -180,6 +186,7 @@ function FreeTextSearch(query) {
 	});
 
 	displaySearchCount(searchCount);
+	document.dispatchEvent(new Event("josquin:table-updated"));
 }
 
 function displaySearchCount(count) {

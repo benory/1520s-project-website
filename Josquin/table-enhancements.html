@@ -1,0 +1,55 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const list = document.querySelector(".page-josquin #list");
+  const navbar = document.querySelector(".site-header");
+  if (!list || !navbar) return;
+
+  // Copy only the headings so they can follow the table's horizontal scroll.
+  const sticky = document.createElement("div");
+  sticky.className = "josquin-sticky-header";
+  sticky.setAttribute("aria-hidden", "true");
+  sticky.hidden = true;
+  document.body.append(sticky);
+  let table, headerCopy, frame;
+
+  function update() {
+    frame = null;
+    if (!table?.isConnected || !headerCopy) { sticky.hidden = true; return; }
+    const bounds = table.getBoundingClientRect();
+    const head = table.tHead.getBoundingClientRect();
+    const viewport = list.getBoundingClientRect();
+    const top = Math.max(0, navbar.getBoundingClientRect().bottom);
+    sticky.hidden = head.top >= top || bounds.bottom <= top;
+    if (sticky.hidden) return;
+    sticky.style.top = `${Math.min(top, bounds.bottom - head.height)}px`;
+    sticky.style.left = `${viewport.left}px`;
+    sticky.style.width = `${list.clientWidth}px`;
+    headerCopy.style.width = `${head.width}px`;
+    headerCopy.style.marginLeft = `${-list.scrollLeft}px`;
+    Array.from(table.tHead.rows[0].cells).forEach((cell, index) => {
+      headerCopy.tHead.rows[0].cells[index].style.width = `${cell.getBoundingClientRect().width}px`;
+    });
+  }
+
+  function schedule() {
+    if (!frame) frame = requestAnimationFrame(update);
+  }
+
+  function refresh() {
+    table = list.querySelector("table.general");
+    if (!table?.tHead) { sticky.hidden = true; return; }
+    headerCopy = table.cloneNode(false);
+    headerCopy.append(table.tHead.cloneNode(true));
+    sticky.replaceChildren(headerCopy);
+    schedule();
+  }
+
+  window.addEventListener("scroll", schedule, { passive: true });
+  list.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", schedule);
+  document.addEventListener("josquin:table-updated", refresh);
+  new ResizeObserver(schedule).observe(navbar);
+  document.fonts.ready.then(schedule);
+  refresh();
+});
+</script>

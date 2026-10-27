@@ -1,0 +1,59 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const contents = document.querySelector(".page-documentation .toc-container");
+  const header = document.querySelector(".site-header");
+  if (!contents || !header) return;
+
+  const toggle = contents.querySelector(".toc-toggle");
+  const links = Array.from(contents.querySelectorAll('a[href^="#"]'));
+  const sections = links.map(link => document.getElementById(link.hash.slice(1)));
+  const mobile = window.matchMedia("(max-width: 768px)");
+  let headerHeight = header.getBoundingClientRect().height;
+  let frame;
+
+  function setOpen(open) {
+    contents.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.querySelector(".toc-toggle-symbol").textContent = open ? "−" : "+";
+  }
+
+  function updateCurrentSection() {
+    frame = null;
+    let current = 0;
+    sections.forEach((section, index) => {
+      if (section && section.getBoundingClientRect().top <= headerHeight + 36) current = index;
+    });
+    links.forEach((link, index) => {
+      if (index === current) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }
+
+  function scheduleUpdate() {
+    if (!frame) frame = requestAnimationFrame(updateCurrentSection);
+  }
+
+  function updateHeaderHeight() {
+    headerHeight = header.getBoundingClientRect().height;
+    document.documentElement.style.setProperty("--documentation-nav-height", `${headerHeight}px`);
+    scheduleUpdate();
+  }
+
+  contents.classList.add("toc-ready");
+  toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+  contents.addEventListener("click", event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || !mobile.matches) return;
+    // Collapse first so the native anchor jump uses the final page geometry.
+    setOpen(false);
+    document.getElementById(link.hash.slice(1))?.focus({ preventScroll: true });
+  });
+  sections.forEach(section => { if (section) section.tabIndex = -1; });
+  mobile.addEventListener("change", () => { setOpen(false); scheduleUpdate(); });
+  window.addEventListener("scroll", scheduleUpdate, { passive: true });
+  window.addEventListener("resize", scheduleUpdate);
+  window.addEventListener("hashchange", scheduleUpdate);
+  new ResizeObserver(updateHeaderHeight).observe(header);
+  updateHeaderHeight();
+});
+</script>
