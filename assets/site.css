@@ -3,7 +3,8 @@
   --project-white: #fff;
   --project-ink: #263c4b;
   --project-muted: #647780;
-  --project-line: #e4eaed;
+  --project-line: #dfe6e9;
+  --project-field-line: #d1dfe9;
   --project-link: #1d5d9f;
   --project-green: #65867c;
   --project-blue-wash: #eaf3fb;
@@ -69,16 +70,16 @@ body.project-site {
 .project-site.page-work .footer-inner { max-width: none; }
 
 /* Keep the catalogue geometry, filtering, and compact row density. */
-.project-site table.general { font-family: var(--project-sans); color: var(--project-ink); background: var(--project-white); border-radius: 10px; box-shadow: 0 5px 18px rgb(35 54 65 / 4.5%); backdrop-filter: none; }
+.project-site table.general { font-family: var(--project-sans); color: var(--project-ink); background: var(--project-white); border-color: var(--project-line); border-radius: 10px; box-shadow: 0 5px 18px rgb(35 54 65 / 4.5%); backdrop-filter: none; }
 .project-site table.general th { color: var(--project-ink); background: #edf3f8; border-color: var(--project-line); }
 .project-site table.general td { border-color: var(--project-line); }
 .project-site table.general tr:nth-child(even) { background: #f6f8fa; }
 .project-site table.general tbody tr:hover { background: #eef5fc; }
 .project-site table.general .work-subtitle, .project-site table.general .first-name { color: var(--project-muted); }
 .project-site #search-interface .right-group { border-left-color: var(--project-line); }
-.project-site #search-interface #input { color: var(--project-ink); background-color: var(--project-white); border-color: #d9e4ed; border-radius: 4px; box-shadow: 0 2px 8px rgb(53 92 124 / 4%); }
+.project-site #search-interface #input { color: var(--project-ink); background-color: var(--project-white); border-color: var(--project-field-line); border-radius: 4px; box-shadow: 0 2px 8px rgb(53 92 124 / 4%); }
 .project-site #search-interface #input::placeholder { color: var(--project-muted); }
-.project-site #search-interface #input:focus { outline: none; border-color: #d9e4ed; background-color: #f6faff; box-shadow: none; }
+.project-site #search-interface #input:focus { outline: none; border-color: var(--project-field-line); background-color: #f6faff; box-shadow: none; }
 .project-site #search-interface select, .project-site #search-interface .dropdown-toggle { color: var(--project-ink); background-color: var(--project-white); border-color: var(--project-line); font-family: var(--project-sans); }
 .project-site #search-interface select:hover, .project-site #search-interface .dropdown-toggle:hover { background-color: #f6faff; border-color: #b7ccdf; }
 .project-site #search-interface select:focus, .project-site #search-interface .dropdown-toggle:focus { border-color: #86a9ca; box-shadow: 0 0 0 2px rgb(80 130 175 / 12%); }
@@ -106,6 +107,8 @@ body.project-site {
 .project-site.page-work .work-action-link, .project-site.page-work .work-action-link:hover { color: var(--project-link); }
 .project-site.page-work .button, .project-site.page-work .analysis-toggle.button { color: var(--project-ink); background: var(--project-white); border-color: var(--project-line); }
 .project-site.page-work .button:hover { background: var(--project-blue-wash); border-color: #b7ccdf; }
+/* The toolbar already has heavier borders. Keep its existing contrast. */
+.project-site.page-work .button-container { --project-line: #e4eaed; }
 .project-site.page-work .button-container .button, .project-site.page-work .button-container .accidentals-switch { border-width: 2px; }
 .project-site.page-work .filter-toggle.button.active, .project-site.page-work .analysis-toggle.button.active { color: var(--project-white); background: #3277ab; border-color: #3277ab; }
 .project-site.page-work .audio-toggle { color: var(--project-link); background: var(--project-blue-wash); border-color: var(--project-link); }
@@ -179,7 +182,7 @@ body.project-site {
   padding: 10px 12px;
   color: var(--project-ink);
   background: var(--project-paper);
-  border: 1px solid #d9e4ed;
+  border: 1px solid var(--project-field-line);
   border-radius: 5px;
   font: 400 15px/1.5 var(--project-sans);
 }
@@ -212,11 +215,11 @@ body.project-site {
   box-shadow: none;
   font: 400 14px/1.4 var(--project-sans);
 }
-.project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-cancel, .error-report-cancel):hover { background: #f6f8fa; border-color: #d9e4ed; }
+.project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-cancel, .error-report-cancel):hover { background: #f6f8fa; border-color: var(--project-field-line); }
 .project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-submit, .error-report-submit) {
   color: var(--project-link);
   background: var(--project-blue-wash);
-  border-color: #d6e5f1;
+  border-color: #cee0ee;
   font-weight: 500;
 }
 .project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-submit, .error-report-submit):is(:hover, :focus-visible) { color: var(--project-link); background: #dcebf7; border-color: #c6daeb; }

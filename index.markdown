@@ -7,13 +7,10 @@ layout: page
 {% include styles/styles-common.css.html %}
 
 <section class="home-hero" aria-labelledby="home-hero-title">
+  <div class="home-hero-left">
   <div class="home-hero-copy">
     <h1 class="home-hero-title" id="home-hero-title">Explore and listen to European polyphonic music, <span class="home-date-range">ca. 1510–1540</span></h1>
   </div>
-  <figure class="home-hero-artwork">
-    <img src="{{ '/images/willaert-enixa-source.jpg' | relative_url }}" alt="Opening of Adrian Willaert’s Enixa est puerpera in Selectissimae necnon familiarissimae cantiones, Augsburg, 1540" width="1080" height="651" fetchpriority="high">
-    <figcaption>The motet <em>Enixa est puerpera</em> by Adrian Willaert in <em>Selectissimae necnon familiarissimae cantiones</em> (Augsburg: Melchior Kriesstein, RISM 1540<sup>7</sup>)</figcaption>
-  </figure>
   <section class="home-search" aria-labelledby="home-search-heading">
     <h2 id="home-search-heading">Search</h2>
     <form class="browse-box apple-search" action="{{ '/repertoire/' | relative_url }}" method="get" role="search">
@@ -24,6 +21,11 @@ layout: page
       <div id="search-suggestions" class="search-suggestions hidden"></div>
     </form>
   </section>
+  </div>
+  <figure class="home-hero-artwork">
+    <img src="{{ '/images/willaert-enixa-source.jpg' | relative_url }}" alt="Opening of Adrian Willaert’s Enixa est puerpera in Selectissimae necnon familiarissimae cantiones, Augsburg, 1540" width="1080" height="651" fetchpriority="high">
+    <figcaption>The motet <em>Enixa est puerpera</em> by Adrian Willaert in <em>Selectissimae necnon familiarissimae cantiones</em> (Augsburg: Melchior Kriesstein, RISM 1540<sup>7</sup>)</figcaption>
+  </figure>
 </section>
 
 <div class="homepage-grid">

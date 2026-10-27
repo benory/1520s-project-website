@@ -8,8 +8,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = Array.from(contents.querySelectorAll('a[href^="#"]'));
   const sections = links.map(link => document.getElementById(link.hash.slice(1)));
   const mobile = window.matchMedia("(max-width: 768px)");
+  const laptop = window.matchMedia("(min-width: 769px) and (max-height: 1000px)");
   let headerHeight = header.getBoundingClientRect().height;
   let frame;
+  let naturalContentsHeight = 0;
+  let previousAvailableHeight = -1;
+
+  links.at(-1)?.classList.add("toc-last-link");
+
+  function fillContentsHeight() {
+    if (!laptop.matches) {
+      contents.style.removeProperty("--toc-fill-gap");
+      naturalContentsHeight = 0;
+      previousAvailableHeight = -1;
+      return;
+    }
+    const top = Math.max(headerHeight + 18, contents.getBoundingClientRect().top);
+    const availableHeight = Math.floor(window.innerHeight - top - 18);
+    if (availableHeight === previousAvailableHeight && naturalContentsHeight) return;
+    if (!naturalContentsHeight) {
+      contents.style.setProperty("--toc-fill-gap", "0px");
+      naturalContentsHeight = contents.getBoundingClientRect().height;
+    }
+    const spaces = Math.max(1, links.length - 1);
+    let gap = Math.max(0, (availableHeight - naturalContentsHeight) / spaces);
+    contents.style.setProperty("--toc-fill-gap", `${gap}px`);
+    // Account for inline link baselines when distributing the spare height.
+    if (gap > 0) {
+      gap = Math.max(0, gap + (availableHeight - contents.getBoundingClientRect().height) / spaces);
+      contents.style.setProperty("--toc-fill-gap", `${gap}px`);
+    }
+    previousAvailableHeight = availableHeight;
+  }
+
+  function resetContentsHeight() {
+    naturalContentsHeight = 0;
+    previousAvailableHeight = -1;
+    scheduleUpdate();
+  }
 
   function setOpen(open) {
     contents.classList.toggle("is-open", open);
@@ -19,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateCurrentSection() {
     frame = null;
+    fillContentsHeight();
     let current = 0;
     sections.forEach((section, index) => {
       if (section && section.getBoundingClientRect().top <= headerHeight + 36) current = index;
@@ -36,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateHeaderHeight() {
     headerHeight = header.getBoundingClientRect().height;
     document.documentElement.style.setProperty("--documentation-nav-height", `${headerHeight}px`);
-    scheduleUpdate();
+    resetContentsHeight();
   }
 
   contents.classList.add("toc-ready");
@@ -49,11 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById(link.hash.slice(1))?.focus({ preventScroll: true });
   });
   sections.forEach(section => { if (section) section.tabIndex = -1; });
-  mobile.addEventListener("change", () => { setOpen(false); scheduleUpdate(); });
+  mobile.addEventListener("change", () => { setOpen(false); resetContentsHeight(); });
   window.addEventListener("scroll", scheduleUpdate, { passive: true });
-  window.addEventListener("resize", scheduleUpdate);
+  window.addEventListener("resize", resetContentsHeight);
   window.addEventListener("hashchange", scheduleUpdate);
   new ResizeObserver(updateHeaderHeight).observe(header);
+  document.fonts.ready.then(resetContentsHeight);
   updateHeaderHeight();
 });
 </script>

@@ -21,18 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	displayTopComposers(METADATA);
   GENRE_INDEX = buildGenreIndex(METADATA);
 	setupUserSearchEnterKey();
-	const heroImage = document.querySelector('.home-hero-artwork img');
-	if (heroImage) {
-		const alignIntro = () => {
-			const imageHeight = heroImage.getBoundingClientRect().height;
-			const hero = document.querySelector('.home-hero');
-			hero.style.setProperty('--home-intro-lift', `${imageHeight * .17}px`);
-			hero.style.setProperty('--home-search-lift', `${imageHeight * .10}px`);
-		};
-		new ResizeObserver(alignIntro).observe(heroImage);
-		heroImage.addEventListener('load', alignIntro);
-		alignIntro();
-	}
 });
 
 

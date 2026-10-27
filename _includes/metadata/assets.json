@@ -13258,5 +13258,31 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Crp1001e-timemap.json"
+  },
+  "Any1010a": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Any1010a.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Any1010a.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Any1010a.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Any1010a.mid",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Any1010a.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Any/Any1010a-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Any/Any1010a-edit.pdf",
+      "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Any/Any1010a-Missa_Memor_esto-Kyrie--Montserrat_766.sib"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Any1010a-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Any1010a-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Any1010a-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Any1010a-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Any1010a-timemap.json"
+  },
+  "Any1010b": {
+    "downloads": {
+      "Humdrum": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1010b-Missa_Memor_esto-Gloria--Montserrat_766.krn",
+      "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Any/Any1010b-Missa_Memor_esto-Gloria--Montserrat_766.sib"
+    },
+    "plots": {}
   }
 }
