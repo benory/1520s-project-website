@@ -265,7 +265,7 @@ function displayTopComposers() {
   METADATA.forEach(entry => {
     if (entry.Composer) totals.set(entry.Composer, (totals.get(entry.Composer) || 0) + 1);
   });
-  const composers = [...totals].filter(([, count]) => count >= 25).sort((a, b) => b[1] - a[1]);
+  const composers = [...totals].sort((a, b) => b[1] - a[1]).slice(0, 9);
   const maximum = Math.max(30, Math.ceil(Math.max(0, ...composers.map(([, count]) => count)) / 30) * 30);
   element.innerHTML = `<div class="composer-chart" aria-label="Works by composer">${composers.map(([name, count]) => {
     const intensity = Math.min(1, (count - 21) / Math.max(1, maximum - 22));

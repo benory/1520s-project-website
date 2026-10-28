@@ -68,7 +68,7 @@ nav: false
         <div><dt>4a <span>(IVa)</span></dt><dd><strong>No convincing argument at present</strong> for Josquin's authorship.</dd></div>
         <div><dt>4b <span>(IVb)</span></dt><dd><strong>Another named composer.</strong> Works almost certainly by another named composer.</dd></div>
       </dl>
-      <p>Categories follow the appendix to Jesse Rodin's <a href="https://academic.oup.com/em/article/49/4/473/6507395" target="_blank" rel="noopener">“The Josquin Canon at 500”</a> (2021), pp. 482–97. The codes used in this dataset correspond to the appendix's Roman numerals shown in parentheses.</p>
+      <p>Categories follow the appendix to Jesse Rodin's <a href="https://academic.oup.com/em/article/49/4/473/6507395" target="_blank" rel="noopener">“The Josquin Canon at 500”</a> (2021), pp. 482–97.</p>
     </div>
   </details>
 </div>

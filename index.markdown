@@ -50,7 +50,7 @@ layout: page
 </div>
 
 <section class="home-recent" aria-labelledby="recent-works-heading">
-  <h2 id="recent-works-heading">Recently added works</h2>
+  <h2 id="recent-works-heading">Recently Added Works</h2>
   <div data-count="10" id="general"></div>
   <a class="recent-works-more" href="{{ '/recently_added/' | relative_url }}">More works added by date <span aria-hidden="true">↗</span></a>
 </section>
