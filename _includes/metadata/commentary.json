@@ -299,13 +299,6 @@
 	},
 	{
 		"Commentary ID": "Fva3002",
-		"Source": "London 35087",
-		"Earliest Source": "yes",
-		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
-		"Fols./pp./no.": "fols. 53v–54r"
-	},
-	{
-		"Commentary ID": "Fva3002",
 		"Source": "Uppsala 76a",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
 		"Fols./pp./no.": "fols. 35v–36r",
@@ -1084,14 +1077,6 @@
 		"RISM link": "https://rism.online/sources/993103924",
 		"Fols./pp./no.": "no. 12",
 		"Notes": "only superius and bassus extant"
-	},
-	{
-		"Commentary ID": "Mou3009",
-		"Source": "London 35087",
-		"Earliest Source": "yes",
-		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
-		"Fols./pp./no.": "fols. 55v–56r",
-		"Attribution": "Jo. Mouton"
 	},
 	{
 		"Commentary ID": "Mou3009",
@@ -2055,14 +2040,6 @@
 		"Attribution": "feuin"
 	},
 	{
-		"Commentary ID": "Fva3003",
-		"Source": "London 35087",
-		"Earliest Source": "yes",
-		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
-		"Fols./pp./no.": "fols. 88v–89r",
-		"Attribution": "Anthoine Feuin"
-	},
-	{
 		"Commentary ID": "Gom2028",
 		"Source": "Buglhat, Campis, and Hucher, Moteti de la simia (1538)",
 		"Earliest Source": "yes",
@@ -2291,5 +2268,103 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
 		"Fols./pp./no.": "fols. 43v–44r",
 		"Attribution": "A Fevin"
+	},
+	{
+		"Commentary ID": "Fva3002",
+		"Source": "London 35087 (\"Chansonnier of Jérôme Lauweryn of Watervliet\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 53v–54r"
+	},
+	{
+		"Commentary ID": "Fva3003",
+		"Source": "London 35087 (\"Chansonnier of Jérôme Lauweryn of Watervliet\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 88v–89r",
+		"Attribution": "Anthoine Feuin"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Antico, Chansons a troys (1520)",
+		"RISM link": "https://rism.online/sources/993103924",
+		"Fols./pp./no.": "fols. 16v–17r"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Attaingnant, Quarante et deus chansons musicales a troys (1529)",
+		"RISM link": "https://rism.online/sources/993104023",
+		"Fols./pp./no.": "fol. 12v"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Cambridge 1760",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1671/",
+		"Fols./pp./no.": "fols. 51v–52r",
+		"Attribution": "Anth de Fevin"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Florence 117",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1404/",
+		"Fols./pp./no.": "fols. 7v–8r"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Kassel 53b",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1841/",
+		"Fols./pp./no.": "fol. 17r"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "London 35087 (\"Chansonnier of Jérôme Lauweryn of Watervliet\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 93v–94r"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "London 5242",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
+		"Fols./pp./no.": "fols. 41v–43r"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Munich 1516",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2219/",
+		"Fols./pp./no.": "fol. 68v"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "St. Gallen 463",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/960/",
+		"Fols./pp./no.": "fol. 73r"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Ulm 237",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2599/",
+		"Fols./pp./no.": "fols. 23r–v"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Uppsala 76a",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2611/",
+		"Fols./pp./no.": "fols. 76v–77r",
+		"Attribution": "A de Fevin"
+	},
+	{
+		"Commentary ID": "Fva3004",
+		"Source": "Le Roy and Ballard, Second livre de chansons a trois parties (1578)",
+		"RISM link": "https://rism.online/sources/993120648",
+		"Fols./pp./no.": "fols. 11v–12r"
+	},
+	{
+		"Commentary ID": "Mou3009",
+		"Source": "London 35087 (\"Chansonnier of Jérôme Lauweryn of Watervliet\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
+		"Fols./pp./no.": "fols. 55v–56r",
+		"Attribution": "Jo. Mouton"
 	}
 ]

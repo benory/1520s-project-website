@@ -3999,6 +3999,29 @@
 		"FILEBASE": "Fva3003-Fuyes_regretz--London_35087"
 	},
 	{
+		"ID": "Fva3004",
+		"Composer": "Févin, Antoine de",
+		"Title": "On a mal dit de mon amy",
+		"Genre": "secular work",
+		"Voices": "3",
+		"Original Voices": "3",
+		"Modern Editions": "Clinkscale_1994",
+		"First Source": "GB-Lbl Add. MS 35087 (\"Chansonnier of Jérôme Lauweryn of Watervliet\")",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1897/",
+		"RISM or CC Source Sigla": "LonBL 35087",
+		"Pages, Folios, or Numbers": "fols. 93v–94r",
+		"Mensuration Signs in Earliest Source": "Cut-C",
+		"First Source Exact Date": "~1506",
+		"Source Date": "~1506",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Transcriber": "Áine Palmer",
+		"Date Added": "2026-10-29",
+		"Note Count": "373",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fva/Fva3004-On_a_mal_dit_de_mon_amy.krn",
+		"FILEBASE": "Fva3004-On_a_mal_dit_de_mon_amy"
+	},
+	{
 		"ID": "Fva3007",
 		"Composer": "Févin, Antoine de",
 		"Title": "Chacun maudit ces jaleux",
@@ -4131,7 +4154,7 @@
 		"Unique Source": "no",
 		"Texted": "no",
 		"Transcriber": "Áine Palmer",
-		"Date Added": "2026-10-26",
+		"Date Added": "2026-10-28",
 		"Note Count": "438",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Fva/Fva3013-Je_le_lairray.krn",
 		"FILEBASE": "Fva3013-Je_le_lairray"

@@ -2039,7 +2039,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1010a-Missa_Memor_esto-Kyrie--Montserrat_766.krn": "score-assets/Any1010a.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1010c-Missa_Memor_esto-Credo--Montserrat_766.krn": "score-assets/Any1010c.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1010e-Missa_Memor_esto-Agnus--Montserrat_766.krn": "score-assets/Any1010e.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3013-Je_le_lairray.krn": "score-assets/Fva3013.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3013-Je_le_lairray.krn": "score-assets/Fva3013.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3004-On_a_mal_dit_de_mon_amy.krn": "score-assets/Fva3004.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3503,7 +3504,9 @@
     "Any1010e-no_edit.pdf": "pdfs/Any/Any1010e-no_edit.pdf",
     "Any1010e-edit.pdf": "pdfs/Any/Any1010e-edit.pdf",
     "Fva3013-no_edit.pdf": "pdfs/Fva/Fva3013-no_edit.pdf",
-    "Fva3013-edit.pdf": "pdfs/Fva/Fva3013-edit.pdf"
+    "Fva3013-edit.pdf": "pdfs/Fva/Fva3013-edit.pdf",
+    "Fva3004-no_edit.pdf": "pdfs/Fva/Fva3004-no_edit.pdf",
+    "Fva3004-edit.pdf": "pdfs/Fva/Fva3004-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
