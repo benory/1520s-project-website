@@ -2366,5 +2366,80 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1897/",
 		"Fols./pp./no.": "fols. 55v–56r",
 		"Attribution": "Jo. Mouton"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Attaingnant, Lib. nonus. xviii. daviticos musicales psalmos habet (1535)",
+		"RISM link": "https://rism.online/sources/993104124",
+		"Fols./pp./no.": "fols. 15v–16v",
+		"Attribution": "G. le Heurteur"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Cambrai 125–128",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1669/",
+		"Fols./pp./no.": "fols. 2v–3r"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Coimbra 48",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/4721/",
+		"Fols./pp./no.": "fols. 50v–52v",
+		"Attribution": "Leritier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Gardane, Fior de mottetti tratti dalli mottetti del fiore, liber 1 (1539)",
+		"RISM link": "https://rism.online/sources/993104233",
+		"Fols./pp./no.": "pp. 12–13",
+		"Attribution": "Leritier, Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Gardane, Flos florum, primus liber (1545)",
+		"RISM link": "https://rism.online/sources/993104447",
+		"Fols./pp./no.": "pp. 10–11",
+		"Attribution": "Lerithier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Kassel 24",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1837/",
+		"Fols./pp./no.": "fols. 111v–113r [S]; 119r–120v [A]; 117r–118v [T]; 111r–112v [B]"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Leiden 1442",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1862/",
+		"Fols./pp./no.": "fols. 101v–107r"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Moderne, Primus liber cum quatvor vocibus. Motteti del fiore (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104066",
+		"Fols./pp./no.": "fols. 43r–45r",
+		"Attribution": "Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Petreius, Tomus secundus psalmorum selctorum (1539)",
+		"RISM link": "https://rism.online/sources/993104264",
+		"Fols./pp./no.": "no. 27",
+		"Attribution": "Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Rampazetto, Mottetti del Fiore, libro 1 (1564)",
+		"RISM link": "https://rism.online/sources/993120359",
+		"Fols./pp./no.": "pp. 11–14",
+		"Attribution": "Lerithier, Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Scotto, Moteti de la fama, libro primo (1555)",
+		"RISM link": "https://rism.online/sources/990037982",
+		"Fols./pp./no.": "pp. 12–14",
+		"Attribution": "G. le Heurteur"
 	}
 ]
