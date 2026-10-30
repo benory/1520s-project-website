@@ -2936,6 +2936,28 @@
 		"FILEBASE": "Div1001c-Missa_Quem_dicunt_homines-Credo"
 	},
 	{
+		"ID": "Div1001d",
+		"Composer": "Divitis, Antonius",
+		"Title": "Missa Quem dicunt homines",
+		"Subtitle": "Sanctus",
+		"Genre": "mass",
+		"Voices": "2-4",
+		"Original Voices": "2-4",
+		"Modern Editions": "Nugent_1993",
+		"First Source": "D-B MS Mus. 40091",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1582/",
+		"RISM or CC Source Sigla": "BerlS 40091",
+		"First Source Exact Date": "~1516",
+		"Source Date": "~1516",
+		"Unique Source": "no",
+		"Texted": "no",
+		"Transcriber": "Max Blistain",
+		"Date Added": "2026-10-30",
+		"Note Count": "1229",
+		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Div/Div1001d-Missa_Quem_dicunt_homines-Sanctus.krn",
+		"FILEBASE": "Div1001d-Missa_Quem_dicunt_homines-Sanctus"
+	},
+	{
 		"ID": "Div1001e",
 		"Composer": "Divitis, Antonius",
 		"Title": "Missa Quem dicunt homines",
