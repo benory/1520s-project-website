@@ -2042,7 +2042,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3013-Je_le_lairray.krn": "score-assets/Fva3013.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3004-On_a_mal_dit_de_mon_amy.krn": "score-assets/Fva3004.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2026-Nisi_Dominus_edificaverit.krn": "score-assets/Lhe2026.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001d-Missa_Quem_dicunt_homines-Sanctus.krn": "score-assets/Div1001d.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001d-Missa_Quem_dicunt_homines-Sanctus.krn": "score-assets/Div1001d.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003a-Missa_Pro_fidelibus_defunctis-Introit.krn": "score-assets/Fva1003a.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3512,7 +3513,9 @@
     "Lhe2026-no_edit.pdf": "pdfs/Lhe/Lhe2026-no_edit.pdf",
     "Lhe2026-edit.pdf": "pdfs/Lhe/Lhe2026-edit.pdf",
     "Div1001d-no_edit.pdf": "pdfs/Div/Div1001d-no_edit.pdf",
-    "Div1001d-edit.pdf": "pdfs/Div/Div1001d-edit.pdf"
+    "Div1001d-edit.pdf": "pdfs/Div/Div1001d-edit.pdf",
+    "Fva1003a-no_edit.pdf": "pdfs/Fva/Fva1003a-no_edit.pdf",
+    "Fva1003a-edit.pdf": "pdfs/Fva/Fva1003a-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
