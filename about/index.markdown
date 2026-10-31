@@ -105,6 +105,15 @@ order: 1
         </div>
     </div>
     <div class="team-member">
+        <img src="/images/headshots/Palmer.jpg" alt="Áine Palmer">
+        <div class="bio">
+            <h3>Áine Palmer</h3>
+            <p class="role">Team Member</p>
+            <p>Áine Palmer received her PhD in Music History from Yale University in 2026 and teaches undergraduate and graduate courses at West Chester University. Her research has been supported by the Alvin H. Johnson AMS 50 and Chateaubriand fellowships and situates the chansonniers that collect trouvère song amidst rapid changes in book production and new ideas about identity and the self in thirteenth-century Europe. Áine’s writing has appeared in <i>Early Music America</i> and <i>Journal of the Society for Musicology in Ireland</i>, and is forthcoming in the <i>Journal of Musicology.</i></p>
+            <p><a href="https://1520s-project.org/repertoire/?q=Palmer" target="_blank" class="see-scores">See scores edited by Palmer.</a></p>
+        </div>
+    </div>
+    <div class="team-member">
         <img src="/images/headshots/Umbreit.jpg" alt="Janosch Umbreit">
         <div class="bio">
             <h3>Janosch Umbreit</h3>
