@@ -2480,5 +2480,20 @@
 		"Source": "Petreius, Trium vocum cantiones centum (1541)",
 		"RISM link": "https://rism.online/sources/993104313",
 		"Fols./pp./no.": "no. 74"
+	},
+	{
+		"Commentary ID": "Ser1002",
+		"Source": "Attaingnant, Secundus liber tres missas (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104071",
+		"Fols./pp./no.": "fols. 52v–63r",
+		"Attribution": "Claudin"
+	},
+	{
+		"Commentary ID": "Ser1002",
+		"Source": "Le Roy and Ballard, Missae tres a Claudio de Sermisy (1558)",
+		"RISM link": "https://rism.online/sources/993120213",
+		"Fols./pp./no.": "fols. 1v–12r",
+		"Attribution": "Claudio de Sermisi"
 	}
 ]
