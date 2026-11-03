@@ -2043,7 +2043,9 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3004-On_a_mal_dit_de_mon_amy.krn": "score-assets/Fva3004.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2026-Nisi_Dominus_edificaverit.krn": "score-assets/Lhe2026.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Div/Div1001d-Missa_Quem_dicunt_homines-Sanctus.krn": "score-assets/Div1001d.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003a-Missa_Pro_fidelibus_defunctis-Introit.krn": "score-assets/Fva1003a.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003a-Missa_Pro_fidelibus_defunctis-Introit.krn": "score-assets/Fva1003a.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003b-Missa_pro_fidelibus_defunctis-Kyrie.krn": "score-assets/Fva1003b.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003c-Missa_pro_fidelibus_defunctis-Gradual.krn": "score-assets/Fva1003c.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3515,7 +3517,13 @@
     "Div1001d-no_edit.pdf": "pdfs/Div/Div1001d-no_edit.pdf",
     "Div1001d-edit.pdf": "pdfs/Div/Div1001d-edit.pdf",
     "Fva1003a-no_edit.pdf": "pdfs/Fva/Fva1003a-no_edit.pdf",
-    "Fva1003a-edit.pdf": "pdfs/Fva/Fva1003a-edit.pdf"
+    "Fva1003a-edit.pdf": "pdfs/Fva/Fva1003a-edit.pdf",
+    "Fva1003b-no_edit.pdf": "pdfs/Fva/Fva1003b-no_edit.pdf",
+    "Fva1003b-edit.pdf": "pdfs/Fva/Fva1003b-edit.pdf",
+    "Fva1003c-no_edit.pdf": "pdfs/Fva/Fva1003c-no_edit.pdf",
+    "Fva1003c-edit.pdf": "pdfs/Fva/Fva1003c-edit.pdf",
+    "Fva1003-no_edit.pdf": "pdfs/Fva/Fva1003-no_edit.pdf",
+    "Fva1003-edit.pdf": "pdfs/Fva/Fva1003-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {

@@ -13417,5 +13417,43 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva1003a-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva1003a-timemap.json"
+  },
+  "Fva1003b": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b.mid",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva1003b-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva1003b-edit.pdf",
+      "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva1003b-Missa_pro_fidelibus_defunctis-Kyrie.sib"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva1003b-timemap.json"
+  },
+  "Fva1003c": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c.mid",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva1003c-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva1003c-edit.pdf",
+      "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva1003c-Missa_pro_fidelibus_defunctis-Gradual.sib"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva1003c-timemap.json"
   }
 }
