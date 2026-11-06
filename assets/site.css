@@ -77,6 +77,8 @@ body.project-site {
   white-space: normal;
 }
 
+.project-site .footer-image-credit-label-short { display: none; }
+
 .project-site .site-footer .footer-image-credit a {
   color: inherit;
   text-decoration: underline;
@@ -286,4 +288,14 @@ body.project-site {
   .project-site .site-nav label[for="nav-trigger"] { color: var(--project-ink); background: var(--project-white); border-color: var(--project-line); }
   .project-site .site-footer { padding: 19px 20px; }
   .project-site .footer-inner { flex-wrap: wrap; }
+}
+
+@media (max-width: 480px) {
+  .project-site .footer-image-credit-label-full { display: none; }
+  .project-site .footer-image-credit-label-short { display: inline; }
+}
+
+@media (max-width: 400px) {
+  .project-site.page-home .site-footer { padding-inline: 10px; }
+  .project-site .footer-image-credit { font-size: clamp(10px, 3.125vw, 12px); }
 }
