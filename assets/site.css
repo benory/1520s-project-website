@@ -69,6 +69,27 @@ body.project-site {
 .project-site.page-home .footer-inner { max-width: 1116px; }
 .project-site.page-work .footer-inner { max-width: none; }
 
+.project-site .footer-image-credit {
+  margin: 0;
+  color: #85827d;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.project-site .site-footer .footer-image-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(133, 130, 125, 0.36);
+  text-underline-offset: 2px;
+}
+
+.project-site .site-footer .footer-image-credit a:hover,
+.project-site .site-footer .footer-image-credit a:focus-visible {
+  color: #66635f;
+  text-decoration-color: currentColor;
+}
+
 /* Keep the catalogue geometry, filtering, and compact row density. */
 .project-site table.general { font-family: var(--project-sans); color: var(--project-ink); background: var(--project-white); border-color: var(--project-line); border-radius: 10px; box-shadow: 0 5px 18px rgb(35 54 65 / 4.5%); backdrop-filter: none; }
 .project-site table.general th { color: var(--project-ink); background: #edf3f8; border-color: var(--project-line); }
