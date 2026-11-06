@@ -906,12 +906,6 @@
 		"Attribution": "Gombert"
 	},
 	{
-		"Commentary ID": "Gom2025",
-		"Source": "Scotto, Liber Primus cum quinque vocibus (1549)",
-		"RISM link": "https://rism.online/sources/993104607",
-		"Attribution": "Gombert"
-	},
-	{
 		"Commentary ID": "Gom2026",
 		"Source": "Berg and Neuber, Quintus tomus evangeliorum, et piarum sententiarum: Quinque vocum (1546)",
 		"RISM link": "https://rism.online/sources/993120177",
@@ -924,12 +918,6 @@
 		"Earliest Source": "yes",
 		"RISM link": "https://rism.online/sources/993104216",
 		"Fols./pp./no.": "p. 27",
-		"Attribution": "Gombert"
-	},
-	{
-		"Commentary ID": "Gom2026",
-		"Source": "Scotto, Liber Primus cum quinque vocibus (1549)",
-		"RISM link": "https://rism.online/sources/993104607",
 		"Attribution": "Gombert"
 	},
 	{
@@ -950,13 +938,6 @@
 	{
 		"Commentary ID": "Gom2027",
 		"Source": "Scotto, Excellentis. Autorum Diverse Modulationes (1549)",
-		"RISM link": "https://rism.online/sources/993104607",
-		"Fols./pp./no.": "pp. 28–29",
-		"Attribution": "Gombert"
-	},
-	{
-		"Commentary ID": "Gom2027",
-		"Source": "Scotto, Liber Primus cum quinque vocibus (1549)",
 		"RISM link": "https://rism.online/sources/993104607",
 		"Fols./pp./no.": "pp. 28–29",
 		"Attribution": "Gombert"
@@ -1948,13 +1929,6 @@
 	},
 	{
 		"Commentary ID": "Lhe2024",
-		"Source": "Moderne, Tertius Liber cum Quatuor vocibus. Motteti del Fiore (1539)",
-		"RISM link": "https://rism.online/sources/993104231",
-		"Fols./pp./no.": "p. 41",
-		"Attribution": "Lheretier/Lhereitier"
-	},
-	{
-		"Commentary ID": "Lhe2024",
 		"Source": "Montanus and Neuber, Tertia pars magni operis musici (1559)",
 		"RISM link": "https://rism.online/sources/993120232",
 		"Fols./pp./no.": "fols. g2v–g3r [S.], fols. hhv–hh2r [A.], fols. G4v–Hr [T.], fols. GG2v–GG3r [B.]",
@@ -2495,5 +2469,94 @@
 		"RISM link": "https://rism.online/sources/993120213",
 		"Fols./pp./no.": "fols. 1v–12r",
 		"Attribution": "Claudio de Sermisi"
+	},
+	{
+		"Commentary ID": "Gom2025",
+		"Source": "Scotto, Liber primus cum quinque vocibus (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2026",
+		"Source": "Scotto, Liber primus cum quinque vocibus (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2027",
+		"Source": "Scotto, Liber primus cum quinque vocibus (1549)",
+		"RISM link": "https://rism.online/sources/993104607",
+		"Fols./pp./no.": "pp. 28–29",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Gom2027",
+		"Source": "Gardano, Primus liber cum quinque vocibus (1538)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104216",
+		"Fols./pp./no.": "pp. 28–29",
+		"Attribution": "Gombert"
+	},
+	{
+		"Commentary ID": "Lhe2024",
+		"Source": "Moderne, Tertius liber cum quatuor vocibus. Motteti del fiore (1539)",
+		"RISM link": "https://rism.online/sources/993104231",
+		"Fols./pp./no.": "p. 41",
+		"Attribution": "Lheretier/Lhereitier"
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Vatican 571",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1486/",
+		"Fols./pp./no.": "fols. 24v–25r"
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Scotto, Musica quinque vocum, liber primus (1550)",
+		"RISM link": "https://rism.online/sources/990068536",
+		"Fols./pp./no.": "no. 12",
+		"Attribution": "Willaert"
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Scotto, Del primo libro de i motetti (1539)",
+		"RISM link": "https://rism.online/sources/990068535",
+		"Fols./pp./no.": "no. 12",
+		"Attribution": "Willaert"
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Schöffer, Cantiones quinque vocum selectissimae (1539)",
+		"RISM link": "https://rism.online/sources/993104262",
+		"Fols./pp./no.": "no. 22",
+		"Attribution": "Willaert"
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Rome S1 35-40 (\"Vallicelliana Partbooks\")",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1021/",
+		"Fols./pp./no.": "fol. 5"
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Modena C313",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2157/",
+		"Fols./pp./no.": "fol. 133",
+		"Attribution": "Adrianus W."
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Coimbra 48",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/4721/",
+		"Fols./pp./no.": "fols. 28v–29v",
+		"Attribution": "Adrian W."
+	},
+	{
+		"Commentary ID": "Wil2033",
+		"Source": "Bologna Q27 I°",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1393/",
+		"Fols./pp./no.": "fols. 35v–36r",
+		"Attribution": "Adrian"
 	}
 ]
