@@ -123,6 +123,15 @@ order: 1
         </div>
     </div>
     <div class="team-member">
+        <img src="/images/headshots/Hensel.jpg" alt="Simon Hensel">
+        <div class="bio">
+            <h3>Simon Hensel</h3>
+            <p class="role">Team Member</p>
+            <p>Simon Hensel is a composer and musicologist pursuing a PhD at the University of Regensburg and KU Leuven on the musical and cultural significance of rap in Broadway musicals. In Regensburg, Simon worked as a research assistant on the DFG-funded project <a href="https://orgelpredigt.ur.de/" target="_blank">Orgelpredigtdrucke</a> and contributed to <i>Orgelpredigten in Europa</i> (2022). They co-direct the Regensburg Musical Choir and Orchestra with Isa Fallenbacher.</p>
+            <p><a href="https://1520s-project.org/repertoire/?q=Hensel" target="_blank" class="see-scores">See scores edited by Hensel.</a></p>
+        </div>
+    </div>
+    <div class="team-member">
         <img src="/images/headshots/Blistain.jpg" alt="Max Blistain">
         <div class="bio">
             <h3>Max Blistain</h3>
