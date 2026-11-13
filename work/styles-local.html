@@ -1211,7 +1211,7 @@ audio {
 @media (max-width: 480px) {
 	.button-container {
 		display: grid;
-		grid-template-columns: auto minmax(0, max-content) minmax(0, max-content) 1fr;
+		grid-template-columns: auto minmax(0, 1.2fr) minmax(0, 1fr);
 		column-gap: 0;
 		reading-flow: grid-rows;
 	}
@@ -1224,6 +1224,15 @@ audio {
 		display: flex;
 		grid-area: 2 / 1 / auto / -1;
 		gap: 5px;
+	}
+
+	.analysis-buttons .button,
+	#accidentalSelect .accidentals-switch {
+		flex: 1 1 auto;
+	}
+
+	#accidentalSelect .accidentals-switch {
+		justify-content: center;
 	}
 
 	.button-container .button,
