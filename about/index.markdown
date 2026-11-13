@@ -145,7 +145,7 @@ order: 1
         <div class="bio">
             <h3>David Nivarlet</h3>
             <p class="role">Team Member</p>
-            <p>David Nivarlet is a PhD student at KU Leuven, where his doctoral research forms part of the FWO-funded project <a href="https://research.kuleuven.be/portal/en/project/3H260500" target="_blank">Funeral soundscapes. Hearing death rituals in the age of confessionalization (c. 1550–c. 1650)</a>. He previously worked as a research assistant in early modern paleography at CESR (University of Tours) and contributed to the project <a href="https://www.alamirefoundation.org/en/news/start-fed-twin-programma-from-script-to-sound/" target="_blank">From Script to Sound: Connecting Heritage and Art through Research and Technology</a> at KBR (Royal Library of Belgium).</p>
+            <p>David Nivarlet is a PhD student at KU Leuven, where his doctoral research forms part of the FWO-funded project <a href="https://research.kuleuven.be/portal/en/project/3H260500" target="_blank">Funeral soundscapes. Hearing death rituals in the age of confessionalization (c. 1550–c. 1650)</a>. He previously worked as a research assistant in early modern paleography at CESR (University of Tours) and contributed to the project <a href="https://www.alamirefoundation.org/en/news/start-fed-twin-programma-from-script-to-sound/" target="_blank">From Script to Sound: Connecting Heritage and Art through Research and Technology</a> at the Royal Library of Belgium.</p>
             <p><a href="https://1520s-project.org/repertoire/?q=Nivarlet" target="_blank" class="see-scores">See scores edited by Nivarlet.</a></p>
         </div>
     </div>
