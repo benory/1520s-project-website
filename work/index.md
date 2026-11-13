@@ -32,9 +32,11 @@ layout: work
             <span class="switch-track" aria-hidden="true"></span>Editorial accidentals
         </button>
     </div>
-    <button type="button" id="activity" hidden data-analysis-group="activity" class="analysis-toggle button" aria-expanded="false" aria-controls="activity-display"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V12M9 18V6M14 18V9M19 18V3"/></svg>Activity plots</button>
-    <button type="button" id="prange" hidden data-analysis-group="vocal-ranges" class="analysis-toggle button" aria-expanded="false" aria-controls="prange-display"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M3 5h6M3 19h6M17 8v8M14 8h6M14 16h6"/></svg>Vocal ranges</button>
-    <button type="button" id="autocadence-filter" class="filter-toggle button" aria-pressed="false" onclick="toggleAutocadenceFilter()"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 17l4-3 4 3-4 3-4-3M17 14V2M4 8v12M8 6v12M2 12l8-2M2 17l8-2"/></svg>Cadence finder</button>
+    <div class="analysis-buttons">
+        <button type="button" id="activity" hidden data-analysis-group="activity" class="analysis-toggle button" aria-expanded="false" aria-controls="activity-display"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V12M9 18V6M14 18V9M19 18V3"/></svg>Activity plots</button>
+        <button type="button" id="prange" hidden data-analysis-group="vocal-ranges" class="analysis-toggle button" aria-expanded="false" aria-controls="prange-display"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M3 5h6M3 19h6M17 8v8M14 8h6M14 16h6"/></svg>Vocal ranges</button>
+        <button type="button" id="autocadence-filter" class="filter-toggle button" aria-pressed="false" onclick="toggleAutocadenceFilter()"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 17l4-3 4 3-4 3-4-3M17 14V2M4 8v12M8 6v12M2 12l8-2M2 17l8-2"/></svg>Cadence finder</button>
+    </div>
     <button type="button" id="error-report-open" class="button error-report-open" aria-haspopup="dialog" aria-controls="error-report-modal"><svg class="toolbar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 1c5-4 9 4 14 0v10c-5 4-9-4-14 0"/></svg>Report an error</button>
 </div>
 
