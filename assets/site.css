@@ -269,8 +269,12 @@ body.project-site {
   .project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-button, .button) { min-height: 42px; }
 }
 
+@media (min-width: 769px) {
+  .project-site .site-nav .trigger .page-link { margin-right: 0; }
+}
+
 @media (max-width: 940px) and (min-width: 769px) {
-  .project-site .site-header .wrapper { padding: 14px 24px; }
+  .project-site .site-header .wrapper { padding: 14px 32px 14px 24px; }
   .project-site .site-title img { width: 166px; }
   .project-site .site-nav { margin-left: 18px; }
   .project-site .site-nav .trigger { gap: 22px; }

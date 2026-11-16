@@ -42,7 +42,15 @@ description: Search The 1520s Project scores by pitch, interval, or rhythm.
     </div>
     <p id="musical-search-count" role="status"></p>
     <div id="musical-search-share" role="status"></div>
-    <ol id="musical-search-matches"></ol>
+    <table class="general" id="musical-search-matches" aria-labelledby="musical-search-results-title" hidden>
+      <thead>
+        <tr>
+          <th scope="col">Work</th>
+          <th scope="col">Highlighted PDF</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
     <nav id="musical-search-pages" aria-label="Search result pages" hidden>
       <button type="button" id="musical-search-previous">Previous</button>
       <span id="musical-search-page"></span>

@@ -5,7 +5,8 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
   const verification = document.getElementById('musical-search-verification');
   const results = document.getElementById('musical-search-results');
   const resultsTitle = document.getElementById('musical-search-results-title');
-  const list = document.getElementById('musical-search-matches');
+  const table = document.getElementById('musical-search-matches');
+  const body = table.querySelector('tbody');
   const pagination = document.getElementById('musical-search-pages');
   const previous = document.getElementById('musical-search-previous');
   const next = document.getElementById('musical-search-next');
@@ -43,13 +44,13 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
     return anchor;
   }
 
-  function scoreLinks(match) {
+  function scoreLinks(match, title) {
     const links = document.createElement('div');
     links.className = 'musical-search-score-links';
     const endpoint = new URL(api);
     for (const [edition, field, label] of [
-      ['no_edit', 'highlightPdf', 'Highlighted PDF'],
-      ['edit', 'highlightPdfEdited', 'Highlighted PDF with editorial accidentals']
+      ['no_edit', 'highlightPdf', 'PDF'],
+      ['edit', 'highlightPdfEdited', 'PDF with editorial accidentals']
     ]) {
       const name = match.id + '-' + edition + '.pdf';
       const key = Object.hasOwn(assets.pdfs, name) ? assets.pdfs[name] : assets.generatedPdfs?.[match.id]?.[edition];
@@ -59,6 +60,7 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
       if (url.origin !== endpoint.origin || url.pathname !== '/api/highlight-pdf' || !url.searchParams.get('ticket')) continue;
       const anchor = link(url.href, label);
       if (edition === 'edit') anchor.className = 'musical-search-edited-pdf';
+      anchor.setAttribute('aria-label', label + ' for ' + title);
       anchor.target = '_blank';
       anchor.rel = 'noopener noreferrer';
       links.append(anchor);
@@ -72,10 +74,11 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
     next.disabled = page >= pages;
     pagination.hidden = pages < 2;
     document.getElementById('musical-search-page').textContent = 'Page ' + page + ' of ' + pages;
-    list.replaceChildren();
+    table.hidden = matches.length === 0;
+    body.replaceChildren();
     for (const match of matches.slice((page - 1) * pageSize, page * pageSize)) {
       const work = workById.get(match.id);
-      const row = document.createElement('li');
+      const row = document.createElement('tr');
       const heading = document.createElement('h3');
       const title = [work.Title, work.Subtitle].filter(Boolean).join(', ') || match.id;
       heading.append(link(workPath + '?id=' + encodeURIComponent(match.id), title));
@@ -85,13 +88,13 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
         part.loc.map(point => point.match(/=(\d+)/)?.[1]).filter(Boolean)))].sort(collator.compare);
       const location = measures.length ? (measures.length === 1 ? 'm. ' : 'mm. ') + measures.join(', ') : '';
       details.textContent = [work.Composer, count(match.count, 'match', 'matches'), location].filter(Boolean).join(' · ');
-      const metadata = document.createElement('div');
-      metadata.className = 'musical-search-match-meta';
-      const links = scoreLinks(match);
-      metadata.append(details);
-      if (links.children.length) metadata.append(links);
-      row.append(heading, metadata);
-      list.append(row);
+      const workCell = document.createElement('td');
+      workCell.append(heading, details);
+      const pdfCell = document.createElement('td');
+      const links = scoreLinks(match, title);
+      if (links.children.length) pdfCell.append(links);
+      row.append(workCell, pdfCell);
+      body.append(row);
     }
   }
 
