@@ -75,7 +75,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px 12px;
+  margin-inline-start: auto;
 }
 .musical-search-sort {
   display: inline-flex;
@@ -92,7 +94,20 @@
   border-radius: 4px;
   font-size: 15px;
 }
-#musical-search-count { margin-top: 12px; }
+.musical-search-result-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+  margin: 12px 0 15px;
+}
+#musical-search-count { margin: 0; }
+#musical-search-share {
+  max-width: 100%;
+  margin-inline-start: auto;
+  text-align: end;
+}
+#musical-search-share input { max-width: 100%; box-sizing: border-box; }
 #musical-search-matches {
   display: table;
   table-layout: fixed;
