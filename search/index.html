@@ -61,7 +61,6 @@ initializeMusicalSearch({
   api: {{ site.musical_search.api_url | jsonify }},
   sitekey: {{ site.musical_search.turnstile_sitekey | jsonify }},
   workPath: {{ '/work/' | relative_url | jsonify }},
-  assetBase: {{ site.asset_base_url | jsonify }},
   works: {% include metadata/works.json %},
   composers: {% include metadata/composers.json %},
   assets: {% include metadata/cloudflare-assets.json %}

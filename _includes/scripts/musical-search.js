@@ -1,4 +1,4 @@
-function initializeMusicalSearch({api, sitekey, workPath, assetBase, works, composers, assets}) {
+function initializeMusicalSearch({api, sitekey, workPath, works, composers, assets}) {
   const form = document.getElementById('musical-search-form');
   const status = document.getElementById('search-status');
   const submit = form.querySelector('[type="submit"]');
@@ -11,7 +11,7 @@ function initializeMusicalSearch({api, sitekey, workPath, assetBase, works, comp
   const next = document.getElementById('musical-search-next');
   const fields = ['pitch', 'interval', 'rhythm', 'composer', 'genre', 'voice'];
   const workById = new Map(works.map(work => [work.ID, work]));
-  const pageSize = 20;
+  const pageSize = 30;
   let token = '';
   let widget;
   let pending = false;
@@ -47,24 +47,21 @@ function initializeMusicalSearch({api, sitekey, workPath, assetBase, works, comp
     const links = document.createElement('div');
     links.className = 'musical-search-score-links';
     const endpoint = new URL(api);
-    for (const [edition, field, label, highlightLabel] of [
-      ['no_edit', 'highlightPdf', 'PDF', 'Highlighted PDF'],
-      ['edit', 'highlightPdfEdited', 'PDF with editorial accidentals', 'Highlighted PDF with editorial accidentals']
+    for (const [edition, field, label] of [
+      ['no_edit', 'highlightPdf', 'Highlighted PDF'],
+      ['edit', 'highlightPdfEdited', 'Highlighted PDF with editorial accidentals']
     ]) {
       const name = match.id + '-' + edition + '.pdf';
       const key = Object.hasOwn(assets.pdfs, name) ? assets.pdfs[name] : assets.generatedPdfs?.[match.id]?.[edition];
-      if (key === null) continue;
-      if (key) links.append(link(assetBase.replace(/\/$/, '') + '/' + key, label));
-      if (typeof match[field] !== 'string') continue;
+      if (key === null || typeof match[field] !== 'string') continue;
       let url;
       try { url = new URL(match[field], endpoint); } catch { continue; }
-      if (url.origin === endpoint.origin && url.pathname === '/api/highlight-pdf' && url.searchParams.get('ticket')) {
-        links.append(link(url.href, highlightLabel));
-      }
-    }
-    for (const anchor of links.children) {
+      if (url.origin !== endpoint.origin || url.pathname !== '/api/highlight-pdf' || !url.searchParams.get('ticket')) continue;
+      const anchor = link(url.href, label);
+      if (edition === 'edit') anchor.className = 'musical-search-edited-pdf';
       anchor.target = '_blank';
       anchor.rel = 'noopener noreferrer';
+      links.append(anchor);
     }
     return links;
   }
@@ -88,7 +85,12 @@ function initializeMusicalSearch({api, sitekey, workPath, assetBase, works, comp
         part.loc.map(point => point.match(/=(\d+)/)?.[1]).filter(Boolean)))].sort(collator.compare);
       const location = measures.length ? (measures.length === 1 ? 'm. ' : 'mm. ') + measures.join(', ') : '';
       details.textContent = [work.Composer, count(match.count, 'match', 'matches'), location].filter(Boolean).join(' · ');
-      row.append(heading, details, scoreLinks(match));
+      const metadata = document.createElement('div');
+      metadata.className = 'musical-search-match-meta';
+      const links = scoreLinks(match);
+      metadata.append(details);
+      if (links.children.length) metadata.append(links);
+      row.append(heading, metadata);
       list.append(row);
     }
   }

@@ -69,10 +69,41 @@
 .musical-search .musical-search-result-heading h2 { margin: 0; }
 #musical-search-count { margin-top: 12px; }
 #musical-search-matches { padding: 0; margin: 0 0 18px; list-style: none; }
-#musical-search-matches li { padding: 12px 0; border-bottom: 1px solid var(--project-line); }
-#musical-search-matches h3, #musical-search-matches p { margin: 0 0 4px; }
+#musical-search-matches li { padding: 6px 0; border-bottom: 1px solid var(--project-line); }
+#musical-search-matches h3 { margin: 0 0 2px; line-height: 1.25; }
+#musical-search-matches p { margin: 0; }
+.musical-search-match-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 14px;
+}
+
+#musical-search-matches .musical-search-match-details,
+.musical-search-score-links { font-size: 14px; line-height: 1.4; }
 .musical-search-match-details { color: var(--project-muted); }
-.musical-search-score-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.musical-search-score-links { display: flex; flex-wrap: wrap; gap: 2px 8px; }
+.musical-search-score-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.musical-search-score-links a + a {
+  border-inline-start: 1px solid var(--project-line);
+  padding-inline-start: 8px;
+}
+
+.musical-search-score-links a::before {
+  content: "";
+  flex: 0 0 12px;
+  height: 15px;
+  background: url("search-highlighted-pdf.png") center / contain no-repeat;
+}
+
+.musical-search-score-links .musical-search-edited-pdf::before {
+  background-image: url("search-highlighted-pdf-edit.png");
+}
 #musical-search-pages { justify-content: center; }
 
 @media (max-width: 575px) {
