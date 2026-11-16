@@ -81,28 +81,39 @@
   overflow-wrap: anywhere;
 }
 
-#musical-search-matches th:last-child { width: 35%; }
+#musical-search-matches th:last-child { width: 40%; }
 #musical-search-matches td:last-child { vertical-align: middle; }
 #musical-search-matches h3 { margin: 0 0 2px; line-height: 1.25; }
 #musical-search-matches p { margin: 0; }
 #musical-search-matches .musical-search-match-details,
 .musical-search-score-links { font-size: 14px; line-height: 1.4; }
 .musical-search-match-details { color: var(--project-muted); }
-.musical-search-score-links { display: flex; flex-wrap: wrap; gap: 2px 8px; }
+.musical-search-score-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  overflow-wrap: break-word;
+}
 .musical-search-score-links a {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  max-width: 100%;
+  gap: 6px;
+}
+
+.musical-search-score-links a:not(.musical-search-edited-pdf) {
+  white-space: nowrap;
 }
 
 .musical-search-score-links a + a {
   border-inline-start: 1px solid var(--project-line);
-  padding-inline-start: 8px;
+  padding-inline-start: 16px;
 }
 
 .musical-search-score-links a::before {
   content: "";
-  flex: 0 0 18px;
+  flex: none;
+  width: 18px;
   height: 22.5px;
   background: url("search-highlighted-pdf.png") center / contain no-repeat;
 }

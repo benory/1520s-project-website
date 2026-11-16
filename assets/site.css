@@ -48,7 +48,7 @@ body.project-site {
 .project-site .site-header .header-main { flex-wrap: nowrap; gap: 24px; }
 .project-site .site-title { margin: 0; flex-shrink: 0; }
 .project-site .site-title img { width: 190px; height: auto; mix-blend-mode: darken; }
-.project-site .site-nav { flex: 1; max-width: 530px; margin-left: 38px; }
+.project-site .site-nav { flex: 1; max-width: 583px; margin-left: 38px; }
 .project-site .site-nav .trigger { width: 100%; justify-content: space-between; gap: 35px; }
 .project-site .site-nav .page-link { font: 400 18px/1.25 var(--project-serif); letter-spacing: 0; color: #35454e; padding: 8px 0; white-space: nowrap; }
 .project-site .site-nav .page-link:hover { color: var(--project-link); background: transparent; }
