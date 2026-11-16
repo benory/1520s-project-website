@@ -1,0 +1,70 @@
+---
+layout: page
+permalink: /search/
+description: Search The 1520s Project scores by pitch, interval, or rhythm.
+---
+{% include styles/styles-common.css.html %}
+<link rel="stylesheet" href="{{ '/assets/musical-search.css' | relative_url }}">
+
+<section class="musical-search" aria-labelledby="musical-search-title">
+  <div class="section-header page-title"><h4 id="musical-search-title" aria-level="1">Search</h4></div>
+  <p>Search the scores of The 1520s Project for sequences of pitches, intervals, or note durations. Narrow the search by composer, genre, or number of voices. Each result links to the score and lists the measures in which the matches occur.</p>
+  {% if site.musical_search.api_url and site.musical_search.turnstile_sitekey %}
+  <form id="musical-search-form" aria-describedby="search-status">
+    <div class="musical-search-fields">
+      <label>Composer <select name="composer"><option value="">All composers</option></select></label>
+      <label>Genre <select name="genre"><option value="">All genres</option></select></label>
+      <label>Voices <select name="voice"><option value="">All voices</option></select></label>
+    </div>
+    <details class="musical-search-help">
+      <summary>Search syntax</summary>
+      <ul>
+        <li>Use letter names for pitches, with <code>#</code> for sharp and <code>b</code> for flat, as in <code>c# d eb</code>.</li>
+        <li>Use interval numbers and add <code>+</code> or <code>-</code> for direction, as in <code>+3 -2</code>.</li>
+        <li>Use <code>0</code>, <code>1</code>, <code>2</code>, <code>4</code>, and <code>8</code> for a breve, semibreve, minim, semiminim, and fusa. Add a dot for a dotted duration.</li>
+        <li>Fill in multiple fields to match them at the same location. Use <code>AND</code> between patterns to find works containing each pattern, possibly in different movements.</li>
+      </ul>
+    </details>
+    <div class="musical-search-fields">
+      <label>Pitch <input name="pitch" type="text" maxlength="160" placeholder="c d e" spellcheck="false"></label>
+      <label>Interval <input name="interval" type="text" maxlength="160" placeholder="+2 +2" spellcheck="false"></label>
+      <label>Rhythm <input name="rhythm" type="text" maxlength="160" placeholder="2. 4 2" spellcheck="false"></label>
+    </div>
+    <div id="musical-search-verification"></div>
+    <button class="musical-search-submit" type="submit">Search</button>
+    <p id="search-status" role="status" aria-live="polite"></p>
+  </form>
+  <noscript><p>JavaScript is required to search scores.</p></noscript>
+  <section id="musical-search-results" aria-labelledby="musical-search-results-title" hidden>
+    <div class="musical-search-result-heading">
+      <h2 id="musical-search-results-title" tabindex="-1">Results</h2>
+      <button id="musical-search-copy" type="button">Copy search link</button>
+    </div>
+    <p id="musical-search-count" role="status"></p>
+    <div id="musical-search-share" role="status"></div>
+    <ol id="musical-search-matches"></ol>
+    <nav id="musical-search-pages" aria-label="Search result pages" hidden>
+      <button type="button" id="musical-search-previous">Previous</button>
+      <span id="musical-search-page"></span>
+      <button type="button" id="musical-search-next">Next</button>
+    </nav>
+  </section>
+  {% else %}
+  <p>Musical search is currently unavailable.</p>
+  {% endif %}
+</section>
+
+{% if site.musical_search.api_url and site.musical_search.turnstile_sitekey %}
+<script>
+{% include scripts/musical-search.js %}
+initializeMusicalSearch({
+  api: {{ site.musical_search.api_url | jsonify }},
+  sitekey: {{ site.musical_search.turnstile_sitekey | jsonify }},
+  workPath: {{ '/work/' | relative_url | jsonify }},
+  assetBase: {{ site.asset_base_url | jsonify }},
+  works: {% include metadata/works.json %},
+  composers: {% include metadata/composers.json %},
+  assets: {% include metadata/cloudflare-assets.json %}
+});
+</script>
+{% endif %}

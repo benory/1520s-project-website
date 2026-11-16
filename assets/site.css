@@ -239,13 +239,19 @@ body.project-site {
   font: 400 14px/1.4 var(--project-sans);
 }
 .project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-cancel, .error-report-cancel):hover { background: #f6f8fa; border-color: var(--project-field-line); }
-.project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-submit, .error-report-submit) {
+.project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-submit, .error-report-submit),
+.project-site .musical-search .musical-search-submit {
   color: var(--project-link);
   background: var(--project-blue-wash);
   border-color: #cee0ee;
   font-weight: 500;
 }
-.project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-submit, .error-report-submit):is(:hover, :focus-visible) { color: var(--project-link); background: #dcebf7; border-color: #c6daeb; }
+.project-site :is(.contact-form-modal, .error-report-modal) :is(.contact-form-submit, .error-report-submit):is(:hover, :focus-visible),
+.project-site .musical-search .musical-search-submit:enabled:is(:hover, :focus-visible) {
+  color: var(--project-link);
+  background: #dcebf7;
+  border-color: #c6daeb;
+}
 .project-site :is(.contact-form-status, .error-report-status, .contact-form-success-instruction, .error-report-success-instruction) { color: var(--project-muted); font-size: 14px; line-height: 1.5; }
 .project-site :is(.contact-form-status--error, .error-report-status--error) { color: #9b463e; }
 .project-site :is(.contact-form-success-message, .error-report-success-message) { color: var(--project-green); font: 400 24px/1.3 var(--project-serif); white-space: normal; }

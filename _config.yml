@@ -39,6 +39,11 @@ error_report:
   worker_url: "https://1520s-project-submissions.benjaminory.workers.dev/"
   turnstile_sitekey: "0x4AAAAAAD3NIL73ga8wkLDT"
 
+# 1520s musical-search endpoint and public Turnstile site key.
+musical_search:
+  api_url: "https://search-1520s-384288870841.us-central1.run.app/api/search"
+  turnstile_sitekey: "0x4AAAAAAGDjLjgiliJyPTWr"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

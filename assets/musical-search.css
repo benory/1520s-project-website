@@ -1,0 +1,80 @@
+.musical-search {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 27px 20px 0;
+}
+
+.musical-search > .section-header.page-title { margin-top: 0; }
+
+.musical-search form { margin: 24px 0 32px; }
+.musical-search-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 16px;
+}
+
+.musical-search-fields label { font-weight: 500; }
+.musical-search-fields input,
+.musical-search-fields select {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 7px 9px;
+  color: var(--project-ink);
+  background: var(--project-white);
+  border: 1px solid var(--project-field-line);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.musical-search-help { margin: 10px 0 20px; }
+.musical-search-help summary { cursor: pointer; color: var(--project-link); }
+.musical-search-help ul { margin-block: 8px 0; }
+#musical-search-verification { margin-top: 16px; }
+#musical-search-verification iframe { max-width: 100%; }
+
+.musical-search button {
+  padding: 6px 12px;
+  color: var(--project-link);
+  border: 1px solid var(--project-field-line);
+  border-radius: 4px;
+  background: var(--project-white);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.musical-search button.musical-search-submit {
+  margin-top: 12px;
+  min-width: 128px;
+  min-height: 44px;
+  padding: 10px 28px;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.musical-search button:disabled { opacity: 0.55; cursor: default; }
+#search-status { margin-top: 6px; }
+#search-status:empty, #musical-search-share:empty { display: none; }
+.musical-search-result-heading, #musical-search-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.musical-search-result-heading { border-bottom: 1px solid var(--project-line); padding-bottom: 8px; }
+.musical-search .musical-search-result-heading h2 { margin: 0; }
+#musical-search-count { margin-top: 12px; }
+#musical-search-matches { padding: 0; margin: 0 0 18px; list-style: none; }
+#musical-search-matches li { padding: 12px 0; border-bottom: 1px solid var(--project-line); }
+#musical-search-matches h3, #musical-search-matches p { margin: 0 0 4px; }
+.musical-search-match-details { color: var(--project-muted); }
+.musical-search-score-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+#musical-search-pages { justify-content: center; }
+
+@media (max-width: 575px) {
+  .musical-search-fields { grid-template-columns: 1fr; }
+}

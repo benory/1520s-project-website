@@ -57,6 +57,7 @@ pieces continue. Commit and push the website changes to publish updated links.
 - `about/` - project description, people, support, collaborations, and acknowledgments
 - `documentation/` - editorial and technical documentation
 - `repertoire/` - searchable repertoire page
+- `search/` - musical pattern search by pitch, interval, or rhythm, with filters for composer, genre, and number of voices
 - `recently_added/` - recently added works page
 - `work/` - individual work page template and notation tools
 - `Josquin/` - Josquin attribution table page and data
