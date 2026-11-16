@@ -65,8 +65,33 @@
   gap: 12px;
 }
 
-.musical-search-result-heading { border-bottom: 1px solid var(--project-line); padding-bottom: 8px; }
+.musical-search-result-heading {
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--project-line);
+  padding-bottom: 8px;
+}
 .musical-search .musical-search-result-heading h2 { margin: 0; }
+.musical-search-result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+.musical-search-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+.musical-search-sort select {
+  min-height: 34px;
+  padding: 5px 8px;
+  color: var(--project-ink);
+  background: var(--project-white);
+  border: 1px solid var(--project-field-line);
+  border-radius: 4px;
+  font-size: 15px;
+}
 #musical-search-count { margin-top: 12px; }
 #musical-search-matches {
   display: table;

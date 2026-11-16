@@ -5,6 +5,8 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
   const verification = document.getElementById('musical-search-verification');
   const results = document.getElementById('musical-search-results');
   const resultsTitle = document.getElementById('musical-search-results-title');
+  const sortControl = document.getElementById('musical-search-sort');
+  const sortOrder = sortControl.querySelector('select');
   const table = document.getElementById('musical-search-matches');
   const body = table.querySelector('tbody');
   const pagination = document.getElementById('musical-search-pages');
@@ -68,6 +70,10 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
     return links;
   }
 
+  function workTitle(work) {
+    return [work.Title, work.Subtitle].filter(Boolean).join(', ') || work.ID;
+  }
+
   function renderMatches() {
     const pages = Math.ceil(matches.length / pageSize);
     previous.disabled = page <= 1;
@@ -76,11 +82,18 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
     document.getElementById('musical-search-page').textContent = 'Page ' + page + ' of ' + pages;
     table.hidden = matches.length === 0;
     body.replaceChildren();
-    for (const match of matches.slice((page - 1) * pageSize, page * pageSize)) {
+    const orderedMatches = [...matches];
+    if (sortOrder.value === 'title') {
+      orderedMatches.sort((a, b) => collator.compare(workTitle(workById.get(a.id)), workTitle(workById.get(b.id))));
+    } else {
+      const direction = sortOrder.value === 'fewest' ? 1 : -1;
+      orderedMatches.sort((a, b) => direction * (a.count - b.count));
+    }
+    for (const match of orderedMatches.slice((page - 1) * pageSize, page * pageSize)) {
       const work = workById.get(match.id);
       const row = document.createElement('tr');
       const heading = document.createElement('h3');
-      const title = [work.Title, work.Subtitle].filter(Boolean).join(', ') || match.id;
+      const title = workTitle(work);
       heading.append(link(workPath + '?id=' + encodeURIComponent(match.id), title));
       const details = document.createElement('p');
       details.className = 'musical-search-match-details';
@@ -104,6 +117,7 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
 
   function showResults(payload) {
     matches = payload.locations.filter(match => workById.has(match.id));
+    sortControl.hidden = matches.length < 2;
     const matchCount = matches.reduce((sum, match) => sum + match.count, 0);
     const workCount = new Set(matches.map(match => match.id.replace(/(?<=\d)[a-z](?:\.[A-Za-z0-9]+)?$/, ''))).size;
     document.getElementById('musical-search-count').textContent = matchCount
@@ -170,6 +184,10 @@ function initializeMusicalSearch({api, sitekey, workPath, works, composers, asse
   }
 
   form.addEventListener('submit', runSearch);
+  sortOrder.addEventListener('change', () => {
+    page = 1;
+    renderMatches();
+  });
   for (const [button, step] of [[previous, -1], [next, 1]]) {
     button.addEventListener('click', () => {
       page += step;
