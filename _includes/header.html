@@ -365,7 +365,7 @@
               {%- assign counter = counter | plus: 1 -%}
 
               {%- if counter == 2 -%}
-                <a class="page-link" href="{{ '/search/' | relative_url }}"{% if page.url == '/search/' %} aria-current="page"{% endif %}>search</a>
+                <a class="page-link" href="{{ '/search/' | relative_url }}"{% if page.url == '/search/' %} aria-current="page"{% endif %}>search/analysis</a>
                 <div class="dropdown">
                   <button class="page-link dropdown-trigger" type="button" aria-expanded="false" aria-controls="resources-navigation">resources</button>
                   <div class="dropdown-content" id="resources-navigation">
