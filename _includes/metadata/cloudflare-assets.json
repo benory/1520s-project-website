@@ -2052,7 +2052,9 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2027-In_te_Domine_speravi.krn": "score-assets/Lhe2027.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2028-Alma_redemptoris_mater.krn": "score-assets/Lhe2028.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2029-Angelus_Domini_descendit_de_celo.krn": "score-assets/Lhe2029.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003f-Missa_pro_fidelibus_defunctis-Sanctus.krn": "score-assets/Fva1003f.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003f-Missa_pro_fidelibus_defunctis-Sanctus.krn": "score-assets/Fva1003f.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003g-Missa_pro_fidelibus_defunctis-Agnus.krn": "score-assets/Fva1003g.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003h-Missa_pro_fidelibus_defunctis-Communio.krn": "score-assets/Fva1003h.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3546,7 +3548,11 @@
     "Lhe2029-no_edit.pdf": "pdfs/Lhe/Lhe2029-no_edit.pdf",
     "Lhe2029-edit.pdf": "pdfs/Lhe/Lhe2029-edit.pdf",
     "Fva1003f-no_edit.pdf": "pdfs/Fva/Fva1003f-no_edit.pdf",
-    "Fva1003f-edit.pdf": "pdfs/Fva/Fva1003f-edit.pdf"
+    "Fva1003f-edit.pdf": "pdfs/Fva/Fva1003f-edit.pdf",
+    "Fva1003g-no_edit.pdf": "pdfs/Fva/Fva1003g-no_edit.pdf",
+    "Fva1003g-edit.pdf": "pdfs/Fva/Fva1003g-edit.pdf",
+    "Fva1003h-no_edit.pdf": "pdfs/Fva/Fva1003h-no_edit.pdf",
+    "Fva1003h-edit.pdf": "pdfs/Fva/Fva1003h-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
