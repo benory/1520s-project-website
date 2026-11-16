@@ -2051,7 +2051,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Any/Any1010b-Missa_Memor_esto-Gloria--Montserrat_766.krn": "score-assets/Any1010b.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2027-In_te_Domine_speravi.krn": "score-assets/Lhe2027.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2028-Alma_redemptoris_mater.krn": "score-assets/Lhe2028.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2029-Angelus_Domini_descendit_de_celo.krn": "score-assets/Lhe2029.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Lhe/Lhe2029-Angelus_Domini_descendit_de_celo.krn": "score-assets/Lhe2029.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003f-Missa_pro_fidelibus_defunctis-Sanctus.krn": "score-assets/Fva1003f.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3543,7 +3544,9 @@
     "Lhe2028-no_edit.pdf": "pdfs/Lhe/Lhe2028-no_edit.pdf",
     "Lhe2028-edit.pdf": "pdfs/Lhe/Lhe2028-edit.pdf",
     "Lhe2029-no_edit.pdf": "pdfs/Lhe/Lhe2029-no_edit.pdf",
-    "Lhe2029-edit.pdf": "pdfs/Lhe/Lhe2029-edit.pdf"
+    "Lhe2029-edit.pdf": "pdfs/Lhe/Lhe2029-edit.pdf",
+    "Fva1003f-no_edit.pdf": "pdfs/Fva/Fva1003f-no_edit.pdf",
+    "Fva1003f-edit.pdf": "pdfs/Fva/Fva1003f-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
