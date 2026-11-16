@@ -2363,20 +2363,6 @@
 	},
 	{
 		"Commentary ID": "Lhe2026",
-		"Source": "Gardane, Fior de mottetti tratti dalli mottetti del fiore, liber 1 (1539)",
-		"RISM link": "https://rism.online/sources/993104233",
-		"Fols./pp./no.": "pp. 12–13",
-		"Attribution": "Leritier, Leretier"
-	},
-	{
-		"Commentary ID": "Lhe2026",
-		"Source": "Gardane, Flos florum, primus liber (1545)",
-		"RISM link": "https://rism.online/sources/993104447",
-		"Fols./pp./no.": "pp. 10–11",
-		"Attribution": "Lerithier"
-	},
-	{
-		"Commentary ID": "Lhe2026",
 		"Source": "Kassel 24",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1837/",
 		"Fols./pp./no.": "fols. 111v–113r [S]; 119r–120v [A]; 117r–118v [T]; 111r–112v [B]"
@@ -2558,5 +2544,149 @@
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1393/",
 		"Fols./pp./no.": "fols. 35v–36r",
 		"Attribution": "Adrian"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Gardano, Fior de mottetti tratti dalli mottetti del fiore, liber 1 (1539)",
+		"RISM link": "https://rism.online/sources/993104233",
+		"Fols./pp./no.": "pp. 12–13",
+		"Attribution": "Leritier, Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2026",
+		"Source": "Gardano, Flos florum, primus liber (1545)",
+		"RISM link": "https://rism.online/sources/993104447",
+		"Fols./pp./no.": "pp. 10–11",
+		"Attribution": "Lerithier"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Barcelona 608",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/5045/",
+		"Fols./pp./no.": "fols. 45v–46r"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Bologna Q40",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2827/",
+		"Fols./pp./no.": "fols. 52v–58v"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Coimbra MM.32",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1697/",
+		"Fols./pp./no.": "fols. 41v–42r"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Gardano, Fior de mottetti tratti dalli mottetti del fiore, liber 1 (1539)",
+		"RISM link": "https://rism.online/sources/993104233",
+		"Fols./pp./no.": "pp. 3–4",
+		"Attribution": "Lerithier"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Gardano, Flos florum primus liber cum quatuor vocibus (1545)",
+		"RISM link": "https://rism.online/sources/993104447",
+		"Fols./pp./no.": "pp. 1–2",
+		"Attribution": "Lerethier"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Moderne, Secundus liber cum quatuor vocibus (1532)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104067",
+		"Fols./pp./no.": "pp. 12–14",
+		"Attribution": "Verdelot"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Petreius, Tomus tertius psalmorum selectorum (1542)",
+		"RISM link": "https://rism.online/sources/993104345",
+		"Fols./pp./no.": "no. 18",
+		"Attribution": "Lerithier/Verdeloth"
+	},
+	{
+		"Commentary ID": "Lhe2027",
+		"Source": "Rampazetto, Motteti del fiore a quattro voci (1564)",
+		"RISM link": "https://rism.online/sources/993120359",
+		"Fols./pp./no.": "pp. 3–5",
+		"Attribution": "Lerethier"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Attaingnant, Liber primus quinque et viginti musicales (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104109",
+		"Fols./pp./no.": "fols. 5r–5v",
+		"Attribution": "Io. Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Barcelona 608",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1538/",
+		"Fols./pp./no.": "fols. 85v–89r"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Barcelona 708",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/5046/",
+		"Fols./pp./no.": "fols. 35v–37r"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Gardano, Motetti del frutto (1539)",
+		"RISM link": "https://rism.online/sources/993104234",
+		"Fols./pp./no.": "pp. 7–8",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Gardano, Superius excelentiss. autorum (1549)",
+		"RISM link": "https://rism.online/sources/993104571",
+		"Fols./pp./no.": "pp. 7–8",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Padua D27",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1450/",
+		"Fols./pp./no.": "fols. 43v–45r"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Scotto, Excelentis. autorum diverse modulationes (1549)",
+		"RISM link": "https://rism.online/sources/993104572",
+		"Fols./pp./no.": "pp. 7–8",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Scotto, Moteti de la Fama, libro primo (1555)",
+		"RISM link": "https://rism.online/sources/990037982",
+		"Fols./pp./no.": "pp. 1–2",
+		"Attribution": "Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2028",
+		"Source": "Scotto, Motetti del frutto (1562)",
+		"RISM link": "https://rism.online/sources/993120302",
+		"Fols./pp./no.": "pp. 5–6",
+		"Attribution": "Leretier"
+	},
+	{
+		"Commentary ID": "Lhe2029",
+		"Source": "Attaingnant, Liber primus quinque et viginti musicales (1534)",
+		"Earliest Source": "yes",
+		"RISM link": "https://rism.online/sources/993104109",
+		"Fols./pp./no.": "fols. 5v–6v",
+		"Attribution": "Io. Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2029",
+		"Source": "Scotto, Moteti de la Fama, libro primo (1555)",
+		"RISM link": "https://rism.online/sources/990037982",
+		"Fols./pp./no.": "pp. 3–5",
+		"Attribution": "Io. Lheritier"
 	}
 ]

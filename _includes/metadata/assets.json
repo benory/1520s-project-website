@@ -13505,5 +13505,62 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva1003e-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva1003e-timemap.json"
+  },
+  "Lhe2027": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2027-In_te_Domine_speravi.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2027-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2027-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2027-timemap.json"
+  },
+  "Lhe2028": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2028-Alma_redemptoris_mater.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2028-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2028-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2028-timemap.json"
+  },
+  "Lhe2029": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2029-Angelus_Domini_descendit_de_celo.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2029-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2029-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Lhe2029-timemap.json"
   }
 }
