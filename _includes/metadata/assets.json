@@ -13638,5 +13638,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3016-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3016-timemap.json"
+  },
+  "Fva3017": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva3017.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva3017.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva3017.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva3017.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva3017-Pardonnez_moy.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva3017.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3017-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3017-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3017-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3017-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva3017-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3017-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3017-timemap.json"
   }
 }

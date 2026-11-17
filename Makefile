@@ -4,7 +4,7 @@ ASSET_TOOL_DIR ?= ../digital-library-build
 ASSET_PYTHON ?= $(ASSET_TOOL_DIR)/.venv/bin/python
 ASSET_IDS ?=
 ASSET_ARGS ?=
-SEARCH_WORKFLOW = $(ASSET_PYTHON) "$(CURDIR)/_scripts/update-search-service.py" --toolkit "$(ASSET_TOOL_DIR)"
+SEARCH_WORKFLOW = $(ASSET_PYTHON) "$(ASSET_TOOL_DIR)/tools/search/cloud_run/update.py" --project 1520s --website "$(CURDIR)"
 WORKFLOW = $(ASSET_PYTHON) "$(ASSET_TOOL_DIR)/tools/website/fast-assets.py" --project 1520s --website "$(CURDIR)" $(if $(ASSET_IDS),--ids "$(ASSET_IDS)")
 
 .PHONY: all assets assets-plan assets-audit download texts search search-update search-plan

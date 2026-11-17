@@ -2702,5 +2702,46 @@
 		"Source": "London 5242 (\"Chansonnier of Françoise de Foix\")",
 		"DIAMM link": "https://www.diamm.ac.uk/sources/1907/",
 		"Fols./pp./no.": "fols. 13v–15r"
+	},
+	{
+		"Commentary ID": "Fva3017",
+		"Source": "Cortona 95–96",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/242/",
+		"Fols./pp./no.": "fols. 51v–52v"
+	},
+	{
+		"Commentary ID": "Fva3017",
+		"Source": "Egenolff, Catones vocum quatuor tenor (1535)",
+		"RISM link": "https://rism.online/sources/993114957",
+		"Fols./pp./no.": "no. 12",
+		"Attribution": "Ant. Févin"
+	},
+	{
+		"Commentary ID": "Fva3017",
+		"Source": "Florence 2442",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/246/",
+		"Fols./pp./no.": "fols. 69r–70v",
+		"Attribution": "Anton feuuin"
+	},
+	{
+		"Commentary ID": "Fva3017",
+		"Source": "Herdringen 9820",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1207/",
+		"Fols./pp./no.": "fols. 110r–114r",
+		"Attribution": "Fevin"
+	},
+	{
+		"Commentary ID": "Fva3017",
+		"Source": "Paris 1817",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/2385/",
+		"Fols./pp./no.": "fols. 54v–55v"
+	},
+	{
+		"Commentary ID": "Fva3017",
+		"Source": "Zurich 169a",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/1198/",
+		"Fols./pp./no.": "p. 72",
+		"Attribution": "Anth. Fevin"
 	}
 ]
