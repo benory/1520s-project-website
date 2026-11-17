@@ -2056,7 +2056,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003g-Missa_pro_fidelibus_defunctis-Agnus.krn": "score-assets/Fva1003g.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003h-Missa_pro_fidelibus_defunctis-Communio.krn": "score-assets/Fva1003h.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3016-Tres_doulce_dame.krn": "score-assets/Fva3016.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3017-Pardonnez_moy.krn": "score-assets/Fva3017.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3017-Pardonnez_moy.krn": "score-assets/Fva3017.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3015-Naymes_james_une_villain.krn": "score-assets/Fva3015.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3558,7 +3559,9 @@
     "Fva3016-no_edit.pdf": "pdfs/Fva/Fva3016-no_edit.pdf",
     "Fva3016-edit.pdf": "pdfs/Fva/Fva3016-edit.pdf",
     "Fva3017-no_edit.pdf": "pdfs/Fva/Fva3017-no_edit.pdf",
-    "Fva3017-edit.pdf": "pdfs/Fva/Fva3017-edit.pdf"
+    "Fva3017-edit.pdf": "pdfs/Fva/Fva3017-edit.pdf",
+    "Fva3015-no_edit.pdf": "pdfs/Fva/Fva3015-no_edit.pdf",
+    "Fva3015-edit.pdf": "pdfs/Fva/Fva3015-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
