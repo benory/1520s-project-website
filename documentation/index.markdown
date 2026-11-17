@@ -38,6 +38,7 @@ order: 3
 	        <li><a href="#pitch-range-plots">Pitch range plots</a></li>
 	        <li><a href="#website">Website</a>
 	          <ul>
+	            <li><a href="#musical-search">Musical search</a></li>
 	            <li><a href="#cloudflare">Cloudflare</a></li>
 	            <li><a href="#javascript-tools">JavaScript tools</a></li>
 	          </ul>
@@ -214,8 +215,11 @@ order: 3
      and uses the markdown language <a href="https://jekyllrb.com" target="_blank">Jekyll</a>.
   </p>
 
+<h4 id="musical-search">Musical search</h4>
+	<p>The project’s Humdrum scores are indexed by pitch, interval, and note duration. The search engine runs on Google Cloud Run and uses the location of each match to report measure numbers and highlight the matching notes in the PDF scores.</p>
+
 <h4 id="cloudflare">Cloudflare</h4>
-	<p>Work pages include an error-report popup. Submissions are protected by <a href="https://www.cloudflare.com/application-services/products/turnstile/" target="_blank">Cloudflare Turnstile</a>, routed through a <a href="https://developers.cloudflare.com/workers/" target="_blank">Cloudflare Worker</a>, and saved to a Google Form. An Apps Script trigger sends plain-text notification emails to the project account.</p>
+	<p><a href="https://www.cloudflare.com/application-services/products/turnstile/" target="_blank">Cloudflare Turnstile</a> protects musical searches, error reports, and contact forms from automated abuse. A <a href="https://developers.cloudflare.com/workers/" target="_blank">Cloudflare Worker</a> sends error reports and contact messages to a Google Form, and an Apps Script trigger emails the project account when a submission arrives.</p>
 
 <h4 id="javascript-tools">JavaScript tools</h4>
 	<ul class="spaced-list">
