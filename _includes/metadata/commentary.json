@@ -2770,5 +2770,26 @@
 		"RISM link": "https://opac.rism.info/id/rismid/rism993114957?sid=101011018",
 		"Fols./pp./no.": "no. 42",
 		"Attribution": "Antoine de Févin"
+	},
+	{
+		"Commentary ID": "Lhe2021",
+		"Source": "Verona 760",
+		"Earliest Source": "yes",
+		"DIAMM link": "https://www.diamm.ac.uk/sources/974/",
+		"Fols./pp./no.": "fols. 24v–25r"
+	},
+	{
+		"Commentary ID": "Lhe2021",
+		"Source": "Attaingnant, Liber secundus: quatuor et viginiti musicales (1534)",
+		"RISM link": "https://rism.online/sources/993104111",
+		"Fols./pp./no.": "fol. 7r",
+		"Attribution": "Io. Lheritier"
+	},
+	{
+		"Commentary ID": "Lhe2021",
+		"Source": "Scotto, Moteti de la Fama, libro primo (1555)",
+		"RISM link": "https://rism.online/sources/990037982",
+		"Fols./pp./no.": "p. 7",
+		"Attribution": "Io. Lheritier"
 	}
 ]

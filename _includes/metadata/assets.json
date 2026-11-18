@@ -4716,10 +4716,10 @@
       "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Lhe2021.krn",
       "MEI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2021.mei",
       "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Lhe2021.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2021-Ave_Maria_gratia_plena.mscz",
       "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Lhe2021.musicxml",
       "PDF": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2021-no_edit.pdf",
-      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2021-edit.pdf",
-      "Sibelius": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Lhe/Lhe2021-Ave_Maria_gratia_plena.sib"
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Lhe/Lhe2021-edit.pdf"
     },
     "plots": {
       "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Lhe2021-activity-merged-notitle.png",

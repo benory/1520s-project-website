@@ -6765,7 +6765,7 @@
 	{
 		"ID": "Lhe2021",
 		"Composer": "Lhéritier, Jean",
-		"Title": "Ave Maria gratia plena",
+		"Title": "Ave Maria, gratia plena",
 		"Genre": "motet",
 		"Voices": "4",
 		"Original Voices": "4",
@@ -6780,6 +6780,8 @@
 		"Source Date": "~1530",
 		"Unique Source": "no",
 		"Texted": "no",
+		"Transcriber": "Simon Hensel",
+		"Date Added": "2026-11-18",
 		"Note Count": "785",
 		"Humdrum URL": "https://github.com/benory/1520s-project-scores/tree/main/humdrum/Lhe/Lhe2021-Ave_Maria_gratia_plena.krn",
 		"FILEBASE": "Lhe2021-Ave_Maria_gratia_plena"
