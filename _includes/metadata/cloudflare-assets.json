@@ -2059,7 +2059,9 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3017-Pardonnez_moy.krn": "score-assets/Fva3017.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3015-Naymes_james_une_villain.krn": "score-assets/Fva3015.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1001c-Missa_Sine_nomine-Credo--Bologna_Q19.krn": "score-assets/Ren1001c.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1002c-Missa_Benedictus_Dominus_Deus-Credo--Bologna_Q19.krn": "score-assets/Ren1002c.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1002c-Missa_Benedictus_Dominus_Deus-Credo--Bologna_Q19.krn": "score-assets/Ren1002c.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren2003-Magnificat_octavi_toni--Bologna_Q19.krn": "score-assets/Ren2003.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren2004-Magnificat_quarti_toni.krn": "score-assets/Ren2004.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3567,7 +3569,11 @@
     "Ren1001c-no_edit.pdf": "pdfs/Ren/Ren1001c-no_edit.pdf",
     "Ren1001c-edit.pdf": "pdfs/Ren/Ren1001c-edit.pdf",
     "Ren1002c-no_edit.pdf": "pdfs/Ren/Ren1002c-no_edit.pdf",
-    "Ren1002c-edit.pdf": "pdfs/Ren/Ren1002c-edit.pdf"
+    "Ren1002c-edit.pdf": "pdfs/Ren/Ren1002c-edit.pdf",
+    "Ren2003-no_edit.pdf": "pdfs/Ren/Ren2003-no_edit.pdf",
+    "Ren2003-edit.pdf": "pdfs/Ren/Ren2003-edit.pdf",
+    "Ren2004-no_edit.pdf": "pdfs/Ren/Ren2004-no_edit.pdf",
+    "Ren2004-edit.pdf": "pdfs/Ren/Ren2004-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {

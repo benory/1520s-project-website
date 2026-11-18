@@ -13713,5 +13713,43 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-timemap.json"
+  },
+  "Ren2003": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Ren2003.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Ren2003.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Ren2003.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Ren2003.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Ren/Ren2003-Magnificat_octavi_toni--Bologna_Q19.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Ren2003.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren2003-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren2003-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren2003-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren2003-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Ren2003-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ren2003-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ren2003-timemap.json"
+  },
+  "Ren2004": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Ren2004.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Ren2004.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Ren2004.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Ren2004.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Ren/Ren2004-Magnificat_quarti_toni.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Ren2004.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren2004-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren2004-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-timemap.json"
   }
 }
