@@ -13675,5 +13675,43 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3015-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3015-timemap.json"
+  },
+  "Ren1001c": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Ren/Ren1001c-Missa_Sine_nomine-Credo--Bologna_Q19.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren1001c-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren1001c-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ren1001c-timemap.json"
+  },
+  "Ren1002c": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Ren/Ren1002c-Missa_Benedictus_Dominus_Deus-Credo--Bologna_Q19.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren1002c-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Ren/Ren1002c-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ren1002c-timemap.json"
   }
 }

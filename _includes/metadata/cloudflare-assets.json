@@ -2057,7 +2057,9 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva1003h-Missa_pro_fidelibus_defunctis-Communio.krn": "score-assets/Fva1003h.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3016-Tres_doulce_dame.krn": "score-assets/Fva3016.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3017-Pardonnez_moy.krn": "score-assets/Fva3017.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3015-Naymes_james_une_villain.krn": "score-assets/Fva3015.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3015-Naymes_james_une_villain.krn": "score-assets/Fva3015.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1001c-Missa_Sine_nomine-Credo--Bologna_Q19.krn": "score-assets/Ren1001c.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1002c-Missa_Benedictus_Dominus_Deus-Credo--Bologna_Q19.krn": "score-assets/Ren1002c.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3561,7 +3563,11 @@
     "Fva3017-no_edit.pdf": "pdfs/Fva/Fva3017-no_edit.pdf",
     "Fva3017-edit.pdf": "pdfs/Fva/Fva3017-edit.pdf",
     "Fva3015-no_edit.pdf": "pdfs/Fva/Fva3015-no_edit.pdf",
-    "Fva3015-edit.pdf": "pdfs/Fva/Fva3015-edit.pdf"
+    "Fva3015-edit.pdf": "pdfs/Fva/Fva3015-edit.pdf",
+    "Ren1001c-no_edit.pdf": "pdfs/Ren/Ren1001c-no_edit.pdf",
+    "Ren1001c-edit.pdf": "pdfs/Ren/Ren1001c-edit.pdf",
+    "Ren1002c-no_edit.pdf": "pdfs/Ren/Ren1002c-no_edit.pdf",
+    "Ren1002c-edit.pdf": "pdfs/Ren/Ren1002c-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
