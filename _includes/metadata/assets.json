@@ -13751,5 +13751,24 @@
       "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-prange-duration.svg"
     },
     "timemap": "https://assets.1520s-project.org/1520s/score-assets/Ren2004-timemap.json"
+  },
+  "Fva3014": {
+    "audio": "https://assets.1520s-project.org/1520s/score-assets/Fva3014.mp3",
+    "downloads": {
+      "Humdrum": "https://assets.1520s-project.org/1520s/score-assets/Fva3014.krn",
+      "MEI": "https://assets.1520s-project.org/1520s/score-assets/Fva3014.mei",
+      "MIDI": "https://assets.1520s-project.org/1520s/score-assets/Fva3014.mid",
+      "MuseScore": "https://raw.githubusercontent.com/benory/1520s-project-scores/main/notation-files/Fva/Fva3014-Mauditz_soient.mscz",
+      "MusicXML": "https://assets.1520s-project.org/1520s/score-assets/Fva3014.musicxml",
+      "PDF": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3014-no_edit.pdf",
+      "PDF (editorial accidentals)": "https://assets.1520s-project.org/1520s/pdfs/Fva/Fva3014-edit.pdf"
+    },
+    "plots": {
+      "activity-merged-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3014-activity-merged-notitle.png",
+      "activity-separate-notitle": "https://assets.1520s-project.org/1520s/score-assets/Fva3014-activity-separate-notitle.png",
+      "prange-attack": "https://assets.1520s-project.org/1520s/score-assets/Fva3014-prange-attack.svg",
+      "prange-duration": "https://assets.1520s-project.org/1520s/score-assets/Fva3014-prange-duration.svg"
+    },
+    "timemap": "https://assets.1520s-project.org/1520s/score-assets/Fva3014-timemap.json"
   }
 }

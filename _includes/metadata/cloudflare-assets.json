@@ -2061,7 +2061,8 @@
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1001c-Missa_Sine_nomine-Credo--Bologna_Q19.krn": "score-assets/Ren1001c.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren1002c-Missa_Benedictus_Dominus_Deus-Credo--Bologna_Q19.krn": "score-assets/Ren1002c.krn",
     "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren2003-Magnificat_octavi_toni--Bologna_Q19.krn": "score-assets/Ren2003.krn",
-    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren2004-Magnificat_quarti_toni.krn": "score-assets/Ren2004.krn"
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Ren/Ren2004-Magnificat_quarti_toni.krn": "score-assets/Ren2004.krn",
+    "https://raw.githubusercontent.com/benory/1520s-project-scores/main/humdrum/Fva/Fva3014-Mauditz_soient.krn": "score-assets/Fva3014.krn"
   },
   "pdfs": {
     "Any1001a-no_edit.pdf": "pdfs/Any/Any1001a-no_edit.pdf",
@@ -3573,7 +3574,9 @@
     "Ren2003-no_edit.pdf": "pdfs/Ren/Ren2003-no_edit.pdf",
     "Ren2003-edit.pdf": "pdfs/Ren/Ren2003-edit.pdf",
     "Ren2004-no_edit.pdf": "pdfs/Ren/Ren2004-no_edit.pdf",
-    "Ren2004-edit.pdf": "pdfs/Ren/Ren2004-edit.pdf"
+    "Ren2004-edit.pdf": "pdfs/Ren/Ren2004-edit.pdf",
+    "Fva3014-no_edit.pdf": "pdfs/Fva/Fva3014-no_edit.pdf",
+    "Fva3014-edit.pdf": "pdfs/Fva/Fva3014-edit.pdf"
   },
   "blocked": [],
   "generatedPdfs": {
